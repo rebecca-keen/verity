@@ -1,39 +1,25 @@
 # Verity
 
-**Trusted clean-beauty med spas** — Miami launch, nationwide expansion.
+Trusted clean-beauty med spas — Miami launch, nationwide next.
 
-Built for Vercel. No backend setup required for the MVP demo.
+## Deploy (first time)
+
+See **START-FRESH.md** on your Desktop, or:
+
+1. **GitHub Desktop** → Add Local Repository → `/Users/rkeen/Projects/verity`
+2. Click **Publish repository**
+3. **Vercel** → Import repo → Deploy
+
+**Do not upload files via github.com browser** — it breaks folder structure.
 
 ## What's included
 
-- **Discovery** — verified Miami med spa listings
-- **Provider profiles** — trust panel, gallery, Instagram, products used
-- **Product reviews** — clean scores + linked spas
-- **Reviews** — verified visit badges
-- **Booking** — request-to-book flow
-- **AI Concierge** — smart spa matching (add `OPENAI_API_KEY` for GPT-enhanced replies)
+- Miami med spa discovery & profiles
+- Clean-beauty product reviews
+- AI Concierge matching
+- Request-to-book flow
+- Spa partner pricing page
 
-## Deploy to Vercel (easiest launch)
+## Optional: smarter AI
 
-1. Push this folder to GitHub
-2. Go to [vercel.com](https://vercel.com) → **Add New Project**
-3. Import the repo — Vercel auto-detects Next.js
-4. Click **Deploy**
-
-Optional: add `OPENAI_API_KEY` in Vercel → Settings → Environment Variables for AI Concierge.
-
-## Run locally
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000)
-
-## Next steps
-
-- [ ] Connect Supabase for real data + auth
-- [ ] Add Resend for booking confirmation emails
-- [ ] Add Stripe for spa subscriptions
-- [ ] Instagram Graph API for Partner tier auto-sync
+Add `OPENAI_API_KEY` in Vercel → Settings → Environment Variables
