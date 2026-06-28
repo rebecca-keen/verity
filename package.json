@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node -e \"const fs=require('fs'); if(!fs.existsSync('app/page.tsx')){console.error('BUILD ERROR: app/page.tsx not found. Check Vercel Root Directory is empty.'); process.exit(1)} else {console.log('OK: app/page.tsx found')}\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
