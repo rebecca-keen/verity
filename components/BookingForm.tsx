@@ -66,9 +66,10 @@ export function BookingForm({ spaSlug, spaName }: { spaSlug: string; spaName: st
         <option>Consultation</option>
         <option>Botox</option>
         <option>Dermal Fillers</option>
-        <option>Clean Facial</option>
+        <option>Luxury Facial</option>
         <option>Laser Treatment</option>
         <option>Microneedling</option>
+        <option>Body Contouring</option>
       </select>
       <div className="grid gap-4 sm:grid-cols-2">
         <input
@@ -91,7 +92,7 @@ export function BookingForm({ spaSlug, spaName }: { spaSlug: string; spaName: st
       <textarea
         name="notes"
         rows={3}
-        placeholder="Ingredient concerns, first visit, etc."
+        placeholder="Treatment goals, first visit, etc."
         className="w-full rounded-lg border border-stone/20 px-4 py-3 text-sm outline-none focus:border-gold"
       />
       <button

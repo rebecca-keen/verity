@@ -33,8 +33,8 @@ export default async function ProductDetailPage({
           <p className="mt-2 text-stone">{product.category}</p>
           <div className="mt-6 flex gap-8">
             <div>
-              <p className="text-xs text-stone">Clean Score</p>
-              <p className="text-3xl font-semibold text-sage">{product.cleanScore}/100</p>
+              <p className="text-xs text-stone">Trust Score</p>
+              <p className="text-3xl font-semibold text-sage">{product.trustScore}/100</p>
             </div>
             <div>
               <p className="text-xs text-stone">Rating</p>
@@ -42,7 +42,7 @@ export default async function ProductDetailPage({
             </div>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
-            {product.cleanTags.map((tag) => (
+            {product.productTags.map((tag) => (
               <span
                 key={tag}
                 className="rounded-full bg-sage/10 px-3 py-1 text-xs capitalize text-sage"
@@ -60,7 +60,9 @@ export default async function ProductDetailPage({
       </div>
 
       <section className="mt-16">
-        <h2 className="font-serif text-2xl text-charcoal">Miami spas that use this</h2>
+        <h2 className="font-serif text-2xl text-charcoal">
+          Miami spas that use this ({linkedSpas.length})
+        </h2>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {linkedSpas.map((spa) => (
             <SpaCard key={spa.slug} spa={spa} />
@@ -79,7 +81,7 @@ export default async function ProductDetailPage({
 
       <div className="mt-10 text-center">
         <Link href="/concierge" className="text-gold hover:underline">
-          Ask AI which product fits your skin goals →
+          Ask AI which product fits your goals →
         </Link>
       </div>
     </div>

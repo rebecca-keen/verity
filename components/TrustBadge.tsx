@@ -2,10 +2,10 @@ import type { Spa } from "@/lib/types";
 
 export function TrustBadge({
   verified,
-  cleanPartner,
+  premierPartner,
 }: {
   verified?: boolean;
-  cleanPartner?: boolean;
+  premierPartner?: boolean;
 }) {
   return (
     <div className="flex flex-wrap gap-2">
@@ -14,9 +14,9 @@ export function TrustBadge({
           Verified
         </span>
       )}
-      {cleanPartner && (
+      {premierPartner && (
         <span className="rounded-full border border-sage/40 bg-sage/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-sage">
-          Clean Partner
+          Premier Partner
         </span>
       )}
     </div>

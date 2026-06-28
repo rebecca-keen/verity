@@ -11,7 +11,8 @@ export default function ForSpasPage() {
       <p className="text-xs uppercase tracking-widest text-gold">B2B · Mindbody-style subscriptions</p>
       <h1 className="mt-2 font-serif text-4xl text-charcoal">Partner with Verity</h1>
       <p className="mt-4 text-lg text-stone">
-        Reach clean-beauty-minded clients who care about trust — not bargain hunters on Yelp.
+        Reach high-intent Miami clients who care about reputation and results — not bargain hunters on
+        Yelp.
       </p>
 
       <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -25,7 +26,7 @@ export default function ForSpasPage() {
             tier: "Partner",
             price: "$149/mo",
             features: [
-              "Verified + Clean Partner badge",
+              "Verified + Premier Partner badge",
               "Booking requests",
               "Product tagging",
               "Review responses",
@@ -40,6 +41,7 @@ export default function ForSpasPage() {
               "AI lead insights",
               "Unlimited gallery",
               "Multi-provider profiles",
+              "Top of neighborhood search",
             ],
           },
         ].map((plan) => (
@@ -57,9 +59,22 @@ export default function ForSpasPage() {
         ))}
       </div>
 
+      <section className="mt-16">
+        <h2 className="font-serif text-2xl text-charcoal">Additional revenue for Verity</h2>
+        <p className="mt-2 text-sm text-stone">
+          Beyond spa subscriptions, Verity monetizes through consumer Premium, booking commissions,
+          featured ads, and product affiliates.{" "}
+          <Link href="/premium" className="text-gold hover:underline">
+            See consumer Premium →
+          </Link>
+        </p>
+      </section>
+
       <div className="mt-12 luxury-border rounded-2xl bg-cream p-8 text-center">
-        <h2 className="font-serif text-2xl text-charcoal">Miami launch — limited partner spots</h2>
-        <p className="mt-2 text-stone">We&apos;re onboarding 30 verified spas for our Miami debut.</p>
+        <h2 className="font-serif text-2xl text-charcoal">Miami launch — partner spots open</h2>
+        <p className="mt-2 text-stone">
+          Join 24 verified spas already listed. Limited featured spots in each neighborhood.
+        </p>
         <a
           href="mailto:partners@verity.app?subject=Miami%20Partner%20Application"
           className="mt-6 inline-block rounded-full bg-charcoal px-8 py-3 text-sm font-medium tracking-wider text-ivory"

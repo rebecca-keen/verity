@@ -32,7 +32,7 @@ export default async function SpaDetailPage({
 
       <div className="mt-8 grid gap-10 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          <TrustBadge verified={spa.verified} cleanPartner={spa.cleanPartner} />
+          <TrustBadge verified={spa.verified} premierPartner={spa.premierPartner} />
           <h1 className="mt-4 font-serif text-4xl text-charcoal">{spa.name}</h1>
           <p className="text-stone">
             {spa.neighborhood}, {spa.city} · {spa.priceRange} · ★ {spa.rating} ({spa.reviewCount})
@@ -58,7 +58,7 @@ export default async function SpaDetailPage({
           <div className="mt-10">
             <h2 className="font-serif text-2xl text-charcoal">Products we use</h2>
             <p className="mt-1 text-sm text-stone">
-              Linked to clean-beauty reviews — a gap RealSelf and Yelp don&apos;t fill.
+              Linked to verified product reviews — see what this spa uses before you book.
             </p>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               {spaProducts.map((p) => (
@@ -86,10 +86,7 @@ export default async function SpaDetailPage({
             <p className="font-medium text-charcoal">Treatments</p>
             <div className="mt-2 flex flex-wrap gap-2">
               {spa.treatments.map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full bg-white px-3 py-1 text-xs capitalize"
-                >
+                <span key={t} className="rounded-full bg-white px-3 py-1 text-xs capitalize">
                   {t.replace("-", " ")}
                 </span>
               ))}

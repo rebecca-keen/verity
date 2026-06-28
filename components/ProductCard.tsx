@@ -22,8 +22,8 @@ export function ProductCard({ product }: { product: Product }) {
         <h3 className="mt-1 font-serif text-lg text-charcoal">{product.name}</h3>
         <div className="mt-3 flex items-center justify-between">
           <div>
-            <p className="text-xs text-stone">Clean Score</p>
-            <p className="text-lg font-semibold text-sage">{product.cleanScore}</p>
+            <p className="text-xs text-stone">Trust Score</p>
+            <p className="text-lg font-semibold text-sage">{product.trustScore}</p>
           </div>
           <div className="text-right">
             <p className="text-gold">★ {product.rating}</p>

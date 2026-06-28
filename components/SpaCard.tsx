@@ -19,7 +19,7 @@ export function SpaCard({ spa }: { spa: Spa }) {
         />
       </div>
       <div className="p-5">
-        <TrustBadge verified={spa.verified} cleanPartner={spa.cleanPartner} />
+        <TrustBadge verified={spa.verified} premierPartner={spa.premierPartner} />
         <h3 className="mt-3 font-serif text-xl text-charcoal">{spa.name}</h3>
         <p className="text-sm text-stone">
           {spa.neighborhood}, {spa.city}

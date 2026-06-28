@@ -11,9 +11,10 @@ export function AIConcierge() {
   const [loading, setLoading] = useState(false);
 
   const suggestions = [
-    "First-time facial, fragrance-free, Miami Beach",
     "Natural lip filler, transparent pricing, Wynwood",
-    "Laser for acne scars, clean post-care products, Brickell",
+    "Luxury laser treatment, Brickell",
+    "Affordable Botox near Kendall",
+    "First-time facial, Miami Beach",
   ];
 
   async function ask(text: string) {
@@ -41,8 +42,8 @@ export function AIConcierge() {
           Tell us what you&apos;re looking for
         </h2>
         <p className="mt-2 text-sm text-stone">
-          We match you to verified Miami med spas by treatment, neighborhood, and clean-beauty needs —
-          not paid ads.
+          We match you to verified Miami med spas by treatment, neighborhood, and budget — not paid
+          ads.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-2">
@@ -68,7 +69,7 @@ export function AIConcierge() {
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="e.g. Clean facial for sensitive skin in Coral Gables"
+            placeholder="e.g. Luxury facial in Coral Gables"
             className="flex-1 rounded-full border border-stone/20 px-5 py-3 text-sm outline-none focus:border-gold"
           />
           <button

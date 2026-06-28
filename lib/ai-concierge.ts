@@ -6,20 +6,22 @@ const KEYWORDS: Record<string, { treatments: Treatment[]; tags: string[] }> = {
   filler: { treatments: ["fillers"], tags: ["lips", "volume", "injectables"] },
   lip: { treatments: ["fillers"], tags: ["lips", "natural"] },
   laser: { treatments: ["laser"], tags: ["resurfacing", "pigmentation", "acne scars"] },
-  facial: { treatments: ["facial"], tags: ["clean", "sensitive", "first time"] },
+  facial: { treatments: ["facial"], tags: ["sensitive", "first time", "luxury"] },
   sensitive: { treatments: ["facial"], tags: ["fragrance-free", "gentle", "allergy"] },
-  fragrance: { treatments: ["facial"], tags: ["fragrance-free", "clean"] },
-  clean: { treatments: ["facial"], tags: ["clean", "ingredients", "transparency"] },
-  ingredient: { treatments: ["facial"], tags: ["transparency", "disclosure"] },
+  luxury: { treatments: ["laser", "fillers"], tags: ["premium", "exclusive"] },
+  premium: { treatments: ["laser", "fillers"], tags: ["premium"] },
   first: { treatments: ["facial", "botox"], tags: ["first time", "consultation"] },
   microneedling: { treatments: ["microneedling"], tags: ["texture", "collagen"] },
   body: { treatments: ["body-contouring"], tags: ["sculpting", "contouring"] },
   budget: { treatments: ["facial"], tags: ["affordable"] },
-  luxury: { treatments: ["laser", "fillers"], tags: ["premium"] },
+  affordable: { treatments: ["botox", "facial"], tags: ["affordable"] },
   brickell: { treatments: [], tags: ["brickell"] },
-  beach: { treatments: ["facial"], tags: ["miami beach"] },
-  coral: { treatments: ["botox", "fillers"], tags: ["coral gables"] },
+  beach: { treatments: ["facial"], tags: ["miami beach", "south beach"] },
+  coral: { treatments: ["botox", "fillers"], tags: ["coral gables", "coral way"] },
   wynwood: { treatments: ["fillers", "botox"], tags: ["wynwood"] },
+  aventura: { treatments: [], tags: ["aventura", "sunny isles"] },
+  kendall: { treatments: [], tags: ["kendall"] },
+  grove: { treatments: ["facial"], tags: ["coconut grove"] },
 };
 
 function scoreSpa(
@@ -34,9 +36,9 @@ function scoreSpa(
     score += 15;
     reasons.push("Verified license & medical director on file");
   }
-  if (spa.cleanPartner) {
+  if (spa.premierPartner) {
     score += 20;
-    reasons.push("Clean Beauty Partner — full product disclosure");
+    reasons.push("Premier Partner — full product disclosure & priority listing");
   }
 
   for (const t of wantedTreatments) {
@@ -48,13 +50,12 @@ function scoreSpa(
 
   const neighborhood = spa.neighborhood.toLowerCase();
   for (const tag of wantedTags) {
-    if (neighborhood.includes(tag)) {
+    if (neighborhood.includes(tag.toLowerCase())) {
       score += 15;
       reasons.push(`Located in ${spa.neighborhood}`);
     }
-    if (tag === "affordable" && spa.priceRange === "$$") score += 10;
+    if (tag === "affordable" && (spa.priceRange === "$$" || spa.priceRange === "$")) score += 10;
     if (tag === "premium" && spa.priceRange === "$$$$") score += 10;
-    if (tag === "fragrance-free" && spa.cleanPartner) score += 10;
     if (tag === "transparency" && spa.highlights.some((h) => h.toLowerCase().includes("disclosure"))) {
       score += 12;
     }
@@ -77,7 +78,7 @@ export function matchSpas(query: string): ConciergeMatch[] {
   }
 
   if (wantedTreatments.size === 0 && wantedTags.size === 0) {
-    wantedTags.add("clean");
+    wantedTags.add("luxury");
     wantedTreatments.add("facial");
   }
 
@@ -97,7 +98,7 @@ export function matchSpas(query: string): ConciergeMatch[] {
 
 export function buildConciergeReply(query: string, matches: ConciergeMatch[]): string {
   if (matches.length === 0) {
-    return "I couldn't find a strong match yet. Try telling me your neighborhood, treatment (Botox, facial, laser), and any ingredient concerns — like fragrance-free or clean products.";
+    return "I couldn't find a strong match yet. Try telling me your neighborhood, treatment (Botox, facial, laser), and budget — luxury or affordable.";
   }
 
   const top = matches[0];
@@ -111,7 +112,7 @@ export function buildConciergeReply(query: string, matches: ConciergeMatch[]): s
     "",
     `I'd start with **${top.spaName}** — they align best with your priorities.`,
     "",
-    "Want me to narrow by budget, neighborhood, or a specific product you're looking for?",
+    "Want me to narrow by budget, neighborhood, or a specific treatment?",
   ];
 
   return lines.join("\n");
@@ -126,7 +127,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
       const spaContext = spas
         .map(
           (s) =>
-            `${s.name} (${s.neighborhood}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Clean partner: ${s.cleanPartner}. Rating: ${s.rating}`
+            `${s.name} (${s.neighborhood}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Premier: ${s.premierPartner}. Rating: ${s.rating}`
         )
         .join("\n");
 
@@ -141,7 +142,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
           messages: [
             {
               role: "system",
-              content: `You are Verity Concierge, a luxury med spa advisor for Miami. You help users find reputable, clean-beauty-focused med spas. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
+              content: `You are Verity Concierge, a luxury med spa advisor for Miami. You help users find reputable, verified med spas. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
             },
             { role: "user", content: query },
           ],
@@ -155,7 +156,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
         if (reply) return { reply, matches };
       }
     } catch {
-      /* fall through to rule-based */
+      /* fall through */
     }
   }
 

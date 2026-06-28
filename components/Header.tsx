@@ -4,6 +4,7 @@ const links = [
   { href: "/spas", label: "Spas" },
   { href: "/products", label: "Products" },
   { href: "/concierge", label: "AI Concierge" },
+  { href: "/premium", label: "Premium" },
   { href: "/for-spas", label: "For Spas" },
 ];
 
@@ -14,7 +15,7 @@ export function Header() {
         <Link href="/" className="font-serif text-2xl tracking-wide text-charcoal">
           Verity
         </Link>
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {links.map((l) => (
             <Link
               key={l.href}

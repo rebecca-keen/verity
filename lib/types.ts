@@ -1,4 +1,4 @@
-export type CleanTag =
+export type ProductTag =
   | "fragrance-free"
   | "paraben-free"
   | "vegan"
@@ -19,8 +19,8 @@ export interface Product {
   name: string;
   brand: string;
   category: string;
-  cleanScore: number;
-  cleanTags: CleanTag[];
+  trustScore: number;
+  productTags: ProductTag[];
   description: string;
   rating: number;
   reviewCount: number;
@@ -49,7 +49,7 @@ export interface Spa {
   rating: number;
   reviewCount: number;
   verified: boolean;
-  cleanPartner: boolean;
+  premierPartner: boolean;
   medicalDirector: string;
   licenseId: string;
   yearsOpen: number;
