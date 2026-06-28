@@ -102,7 +102,7 @@ export const products: Product[] = [
   },
 ];
 
-type SpaSeed = Omit<Spa, "gallery"> & { gallery?: string[] };
+type SpaSeed = Omit<Spa, "gallery" | "image"> & { gallery?: string[]; image?: string };
 
 function seedSpa(data: SpaSeed, index: number): Spa {
   return {
