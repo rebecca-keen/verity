@@ -5,6 +5,7 @@ export const FLORIDA_METROS: Metro[] = [
   "tampa-bay",
   "central-florida",
   "north-florida",
+  "northwest-florida",
   "southwest-florida",
   "treasure-coast",
 ];
@@ -14,6 +15,7 @@ export const METRO_LABELS: Record<Metro, string> = {
   "tampa-bay": "Tampa Bay",
   "central-florida": "Central Florida",
   "north-florida": "North Florida",
+  "northwest-florida": "Northwest Florida",
   "southwest-florida": "Southwest Florida",
   "treasure-coast": "Treasure Coast",
 };
@@ -24,6 +26,7 @@ export const METRO_PRIMARY_CITY: Record<Metro, string> = {
   "tampa-bay": "Tampa",
   "central-florida": "Orlando",
   "north-florida": "Jacksonville",
+  "northwest-florida": "Destin",
   "southwest-florida": "Fort Myers",
   "treasure-coast": "Port St. Lucie",
 };
@@ -69,6 +72,7 @@ const METRO_AREA_CODES: Record<Metro, string[]> = {
   "tampa-bay": ["813", "727", "941"],
   "central-florida": ["407", "321", "863"],
   "north-florida": ["904", "352", "850"],
+  "northwest-florida": ["850", "448"],
   "southwest-florida": ["239", "941"],
   "treasure-coast": ["772", "561"],
 };

@@ -1,4 +1,5 @@
 import { additionalFloridaSpaSeeds } from "./additional-florida-spa-seeds";
+import { floridaCoastalRealSpas } from "./florida-coastal-real-spas";
 import { floridaRealSpas } from "./florida-real-spas";
 import { floridaSpaSeeds } from "./florida-spa-seeds";
 import { getSpaImages } from "./spa-images";
@@ -1264,6 +1265,7 @@ const spaSeeds: SpaSeed[] = [
 export const spas: Spa[] = [
   ...spaSeeds,
   ...floridaRealSpas,
+  ...floridaCoastalRealSpas,
   ...floridaSpaSeeds,
   ...additionalFloridaSpaSeeds,
 ].map((seed, i) => seedSpa(seed, i));

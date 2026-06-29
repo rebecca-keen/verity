@@ -1,6 +1,7 @@
 /** Unique hero + gallery images per spa (no duplicates across listings) */
 
 import { ADDITIONAL_FLORIDA_SPA_IMAGE_IDS } from "./additional-florida-spa-seeds";
+import { FLORIDA_COASTAL_REAL_SPA_IMAGES } from "./florida-coastal-real-spas";
 import { FLORIDA_REAL_SPA_IMAGES } from "./florida-real-spas";
 import { FLORIDA_SPA_IMAGE_IDS } from "./florida-spa-seeds";
 
@@ -485,6 +486,10 @@ for (const [slug, ids] of Object.entries(ADDITIONAL_FLORIDA_SPA_IMAGE_IDS)) {
 }
 
 for (const [slug, images] of Object.entries(FLORIDA_REAL_SPA_IMAGES)) {
+  SPA_IMAGE_SETS[slug] = images;
+}
+
+for (const [slug, images] of Object.entries(FLORIDA_COASTAL_REAL_SPA_IMAGES)) {
   SPA_IMAGE_SETS[slug] = images;
 }
 

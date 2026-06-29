@@ -26,6 +26,7 @@ export type Metro =
   | "tampa-bay"
   | "central-florida"
   | "north-florida"
+  | "northwest-florida"
   | "southwest-florida"
   | "treasure-coast";
 
