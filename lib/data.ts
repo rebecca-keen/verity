@@ -16,6 +16,7 @@ import {
   getTopRatedSpas,
   METRO_LABELS,
   parseMedicalDirector,
+  resolveProductSlugs,
   sortSpasForDisplay,
 } from "./spa-utils";
 import type { Metro, Product, ProductOrigin, ProviderType, Review, Spa, SpaSocials, Treatment } from "./types";
@@ -239,7 +240,13 @@ function seedSpa(data: SpaSeed, index: number): Spa {
     image: images.hero,
     imageSource: images.source,
     gallery: images.gallery,
-    productSlugs: data.productSlugs,
+    productSlugs: resolveProductSlugs({
+      slug: data.slug,
+      providerType: data.providerType,
+      treatments: data.treatments,
+      priceRange: data.priceRange,
+      productSlugs: data.productSlugs,
+    }),
     highlights: data.highlights,
   };
 }
@@ -330,7 +337,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "fillers", "body-contouring"],
     priceRange: "$$$",
     instagram: "forme_aesthetics",
-    productSlugs: ["skinceuticals-ce-ferulic"],
+    productSlugs: ["skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
     highlights: ["Transparent unit pricing", "Digital consent signatures", "Published credentials"],
   },
   {
@@ -414,7 +421,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["facial", "botox", "microneedling"],
     priceRange: "$$$",
     instagram: "grove_wellness_spa",
-    productSlugs: ["epicutis-arctigenin", "is-clinical-cleansing"],
+    productSlugs: ["epicutis-arctigenin", "is-clinical-cleansing", "isdin-eryfotona-actinica"],
     highlights: ["Serene setting", "Holistic consultations", "Grove village location"],
   },
   {
@@ -498,7 +505,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "fillers", "laser", "facial", "microneedling"],
     priceRange: "$$$$",
     instagram: "balharbour_skin",
-    productSlugs: ["skinceuticals-ce-ferulic", "epicutis-arctigenin", "revision-retinol"],
+    productSlugs: ["skinceuticals-discoloration-defense", "epicutis-arctigenin", "revision-retinol", "la-roche-posay-anthelios"],
     highlights: ["Private entrance", "VIP scheduling", "Concierge service"],
   },
   {
@@ -645,7 +652,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "fillers", "microneedling", "facial"],
     priceRange: "$$",
     instagram: "northmiami_beautylab",
-    productSlugs: ["epicutis-arctigenin", "is-clinical-cleansing"],
+    productSlugs: ["epicutis-arctigenin", "is-clinical-cleansing", "isdin-eryfotona-actinica"],
     highlights: ["Latest technology", "New patient specials", "Online booking"],
   },
   {
@@ -750,7 +757,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$$",
     instagram: "fisherisland_aesthetics",
-    productSlugs: ["skinceuticals-ce-ferulic", "epicutis-arctigenin", "revision-retinol"],
+    productSlugs: ["skinceuticals-discoloration-defense", "epicutis-arctigenin", "revision-retinol", "la-roche-posay-anthelios"],
     highlights: ["Members only", "Island location", "House calls available"],
   },
   {
@@ -771,7 +778,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["facial", "microneedling", "botox", "laser"],
     priceRange: "$$$",
     instagram: "brickellskinhaus",
-    productSlugs: ["is-clinical-cleansing", "eltamd-uv-clear", "laneige-water-bank"],
+    productSlugs: ["is-clinical-cleansing", "eltamd-uv-clear", "la-roche-posay-toleriane-hydrating"],
     highlights: ["Evening appointments", "Express facials", "Product menus online"],
   },
   {
@@ -792,7 +799,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "fillers", "microneedling"],
     priceRange: "$$$",
     instagram: "elev8_aesthetics_mia",
-    productSlugs: ["skinceuticals-ce-ferulic", "revision-retinol"],
+    productSlugs: ["skinceuticals-discoloration-defense", "revision-retinol", "la-roche-posay-anthelios"],
     highlights: ["Physician injectors only", "Preventative plans", "Digital intake"],
   },
   {
@@ -813,7 +820,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["facial", "laser", "botox", "fillers"],
     priceRange: "$$$",
     instagram: "gablesradiance",
-    productSlugs: ["caudalie-vinoperfect", "la-roche-posay-anthelios", "biologique-recherche-p50"],
+    productSlugs: ["skinceuticals-discoloration-defense", "la-roche-posay-anthelios", "isdin-essential-cleansing"],
     highlights: ["European protocols", "Sun-damage specialists", "Private treatment rooms"],
   },
   {
@@ -855,7 +862,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["laser", "facial", "botox", "microneedling"],
     priceRange: "$$$",
     instagram: "verde_medspa_gables",
-    productSlugs: ["eltamd-uv-clear", "skinceuticals-ce-ferulic", "dr-jart-cicapair"],
+    productSlugs: ["eltamd-uv-clear", "skinceuticals-ce-ferulic", "isdin-eryfotona-actinica"],
     highlights: ["Board-certified dermatology", "Laser suite on-site", "Insurance-friendly consults"],
   },
   {
@@ -876,7 +883,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "fillers", "facial", "laser"],
     priceRange: "$$$$",
     instagram: "atelier_aesthetics_dd",
-    productSlugs: ["biologique-recherche-p50", "comfort-zone-hydramemory", "amorepacific-vintage"],
+    productSlugs: ["isdin-essential-cleansing", "la-roche-posay-toleriane-hydrating", "alastin-restorative-skin-complex"],
     highlights: ["Design District flagship", "Custom facial cocktails", "VIP consultation lounge"],
   },
   {
@@ -960,7 +967,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["laser", "botox", "fillers", "facial"],
     priceRange: "$$$",
     instagram: "luna_derm_aventura",
-    productSlugs: ["dr-jart-cicapair", "eltamd-uv-clear", "bioderma-sensibio"],
+    productSlugs: ["isdin-eryfotona-actinica", "eltamd-uv-clear", "isdin-micellar-solution"],
     highlights: ["Rosacea specialists", "Medical peels", "FAAD dermatologists"],
   },
   {
@@ -981,7 +988,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "facial", "laser", "fillers"],
     priceRange: "$$",
     instagram: "oceanview_aesthetics",
-    productSlugs: ["beauty-of-joseon-sunscreen", "laneige-water-bank", "cosrx-snail-mucin"],
+    productSlugs: ["isdin-eryfotona-actinica", "la-roche-posay-toleriane-hydrating", "skinmedica-dermal-repair-cream"],
     highlights: ["Sun repair focus", "Walk-ins welcome", "K-beauty facials"],
   },
   {
@@ -1002,7 +1009,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "fillers", "laser"],
     priceRange: "$$$",
     instagram: "collins_aesthetics_mb",
-    productSlugs: ["skinceuticals-ce-ferulic", "revision-retinol"],
+    productSlugs: ["skinceuticals-discoloration-defense", "revision-retinol", "la-roche-posay-anthelios"],
     highlights: ["Collins Ave location", "Hotel concierge referrals", "Same-week appointments"],
   },
   {
@@ -1023,7 +1030,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["facial", "microneedling", "botox", "fillers"],
     priceRange: "$$",
     instagram: "wynwoodskincollective",
-    productSlugs: ["sulwhasoo-first-care", "cosrx-snail-mucin", "is-clinical-cleansing"],
+    productSlugs: ["alastin-regenerating-skin-nectar", "skinmedica-dermal-repair-cream", "is-clinical-cleansing"],
     highlights: ["Wynwood Walls nearby", "Event-ready packages", "Instagram-friendly space"],
   },
   {
@@ -1065,7 +1072,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["laser", "facial", "microneedling"],
     priceRange: "$$",
     instagram: "sb_laserbar",
-    productSlugs: ["la-roche-posay-anthelios", "dr-jart-cicapair"],
+    productSlugs: ["la-roche-posay-anthelios", "isdin-eryfotona-actinica"],
     highlights: ["Laser specialists", "Package pricing", "Walk-in consults"],
   },
   {
@@ -1086,7 +1093,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["facial", "botox", "body-contouring", "microneedling"],
     priceRange: "$$$",
     instagram: "grove_serenity_spa",
-    productSlugs: ["comfort-zone-hydramemory", "collistar-precious", "bioderma-sensibio"],
+    productSlugs: ["la-roche-posay-toleriane-hydrating", "skinmedica-tns-advanced-serum", "isdin-micellar-solution"],
     highlights: ["Wellness integration", "Grove village location", "Calm environment"],
   },
   {
@@ -1128,7 +1135,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "fillers", "facial", "body-contouring"],
     priceRange: "$$$",
     instagram: "pinecrest_glow",
-    productSlugs: ["skinmedica-ha5", "revision-retinol", "laneige-water-bank"],
+    productSlugs: ["skinmedica-ha5", "revision-retinol", "la-roche-posay-toleriane-hydrating"],
     highlights: ["Pinecrest community", "Mommy makeover consults", "Flexible scheduling"],
   },
   {
@@ -1149,7 +1156,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$$",
     instagram: "balharbour_luxury_spa",
-    productSlugs: ["amorepacific-vintage", "biologique-recherche-p50", "epicutis-arctigenin"],
+    productSlugs: ["alastin-restorative-skin-complex", "isdin-essential-cleansing", "epicutis-arctigenin"],
     highlights: ["Bal Harbour Shops", "Concierge service", "Premium product lines"],
   },
   {
@@ -1170,7 +1177,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["laser", "botox", "facial", "fillers"],
     priceRange: "$$$",
     instagram: "kb_skin_clinic",
-    productSlugs: ["la-roche-posay-anthelios", "eltamd-uv-clear", "caudalie-vinoperfect"],
+    productSlugs: ["la-roche-posay-anthelios", "eltamd-uv-clear", "skinceuticals-discoloration-defense"],
     highlights: ["Island clientele", "Sun damage repair", "Pediatric derm consults"],
   },
   {
@@ -1191,7 +1198,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["laser", "botox", "fillers", "microneedling"],
     priceRange: "$$$",
     instagram: "southmiami_derm_aesthetics",
-    productSlugs: ["skinceuticals-ce-ferulic", "dr-jart-cicapair", "bioderma-sensibio"],
+    productSlugs: ["skinceuticals-ce-ferulic", "isdin-eryfotona-actinica", "isdin-micellar-solution"],
     highlights: ["14 years in South Miami", "Scar revision", "Insurance dermatology"],
   },
   {
@@ -1212,7 +1219,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["body-contouring", "botox", "facial", "fillers"],
     priceRange: "$$",
     instagram: "kendall_aesthetics_hub",
-    productSlugs: ["cosrx-snail-mucin", "laneige-water-bank", "eltamd-uv-clear"],
+    productSlugs: ["skinmedica-dermal-repair-cream", "la-roche-posay-toleriane-hydrating", "eltamd-uv-clear"],
     highlights: ["Family-friendly pricing", "Body contouring", "Extended hours"],
   },
   {
@@ -1233,7 +1240,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["facial", "botox", "microneedling", "laser"],
     priceRange: "$$$",
     instagram: "edgewater_glow",
-    productSlugs: ["is-clinical-cleansing", "sulwhasoo-first-care", "beauty-of-joseon-sunscreen"],
+    productSlugs: ["is-clinical-cleansing", "alastin-regenerating-skin-nectar", "isdin-eryfotona-actinica"],
     highlights: ["Bayfront views", "Pre-event facials", "Edgewater location"],
   },
   {
@@ -1296,7 +1303,7 @@ const spaSeeds: SpaSeed[] = [
     treatments: ["botox", "facial", "body-contouring", "microneedling"],
     priceRange: "$$",
     instagram: "northmiami_med_aesthetics",
-    productSlugs: ["cosrx-snail-mucin", "eltamd-uv-clear", "is-clinical-cleansing"],
+    productSlugs: ["skinmedica-dermal-repair-cream", "eltamd-uv-clear", "is-clinical-cleansing"],
     highlights: ["No upselling policy", "Community pricing", "Extended weekend hours"],
   },
 ];

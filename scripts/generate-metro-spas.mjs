@@ -263,7 +263,11 @@ async function processRegion(regionKey, exportName, imagesExport, licensePrefix)
       treatments,
       priceRange: raw.priceRange || "$$$",
       instagram: raw.instagram || raw.name.toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 24),
-      productSlugs: raw.productSlugs || ["eltamd-uv-clear", "skinceuticals-ce-ferulic"],
+      productSlugs: raw.productSlugs || [
+        "eltamd-uv-clear",
+        "skinceuticals-discoloration-defense",
+        "la-roche-posay-anthelios",
+      ],
       highlights: raw.highlights || [
         `Google ${raw.rating}★ (${raw.reviewCount} reviews)`,
         "Verified Florida med spa",

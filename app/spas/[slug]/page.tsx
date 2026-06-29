@@ -67,7 +67,7 @@ export default async function SpaDetailPage({
             </p>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               {spaProducts.map((p) => (
-                <ProductCard key={p.slug} product={p} />
+                <ProductCard key={p.slug} product={p} showAmazonProminently />
               ))}
             </div>
           </div>

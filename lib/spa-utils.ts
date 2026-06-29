@@ -389,3 +389,254 @@ export function defaultDataSources(
   }
   return sources;
 }
+
+/** Placeholder defaults copied into bulk-generated spa seeds — replaced by deriveProductSlugs. */
+export const DEFAULT_PRODUCT_SLUGS = [
+  "eltamd-uv-clear",
+  "skinceuticals-discoloration-defense",
+  "la-roche-posay-anthelios",
+] as const;
+
+export function isDefaultProductSlugs(slugs: string[]): boolean {
+  if (slugs.length === 2) {
+    const sorted = [...slugs].sort();
+    return sorted[0] === "eltamd-uv-clear" && sorted[1] === "skinceuticals-ce-ferulic";
+  }
+  if (slugs.length !== 3) return false;
+  const sorted = [...slugs].sort();
+  return (
+    sorted[0] === "eltamd-uv-clear" &&
+    sorted[1] === "la-roche-posay-anthelios" &&
+    sorted[2] === "skinceuticals-discoloration-defense"
+  );
+}
+
+/** Legacy seed slugs mapped to affiliate-catalog equivalents. */
+export const ORPHAN_PRODUCT_SLUG_MAP: Record<string, string> = {
+  "amorepacific-vintage": "skinmedica-tns-advanced-serum",
+  "beauty-of-joseon-sunscreen": "isdin-eryfotona-actinica",
+  "bioderma-sensibio": "isdin-micellar-solution",
+  "biologique-recherche-p50": "isdin-essential-cleansing",
+  "caudalie-vinoperfect": "la-roche-posay-pure-vitamin-c",
+  "collistar-precious": "alastin-restorative-skin-complex",
+  "comfort-zone-hydramemory": "la-roche-posay-toleriane-hydrating",
+  "cosrx-snail-mucin": "alastin-restorative-skin-complex",
+  "dr-jart-cicapair": "la-roche-posay-toleriane-hydrating",
+  "laneige-water-bank": "la-roche-posay-toleriane-hydrating",
+  "sulwhasoo-first-care": "skinmedica-tns-advanced-serum",
+};
+
+const SPA_CATALOG_SLUGS = new Set([
+  "eltamd-uv-clear",
+  "eltamd-uv-daily-hydration-tinted",
+  "la-roche-posay-anthelios",
+  "la-roche-posay-anthelios-niacinamide",
+  "la-roche-posay-toleriane-hydrating",
+  "la-roche-posay-pure-vitamin-c",
+  "skinceuticals-ce-ferulic",
+  "skinceuticals-discoloration-defense",
+  "isdin-eryfotona-actinica",
+  "isdin-eryfotona-ageless",
+  "isdin-mineral-powder-spf",
+  "isdin-essential-cleansing",
+  "isdin-micellar-solution",
+  "alastin-hydratint-spf",
+  "alastin-c-radical-serum",
+  "alastin-restorative-skin-complex",
+  "alastin-gentle-cleanser",
+  "alastin-regenerating-skin-nectar",
+  "skinmedica-tns-advanced-serum",
+  "skinmedica-collagen-support",
+  "skinmedica-dermal-repair-cream",
+  "skinmedica-instant-bright-eye",
+  "skinmedica-neck-correct-cream",
+  "skinmedica-essential-spf-tinted",
+  "skinmedica-essential-spf-clear",
+  "skinmedica-ha5",
+  "is-clinical-cleansing",
+  "revision-retinol",
+  "epicutis-arctigenin",
+]);
+
+const FEATURED_SPA_PRODUCTS: Record<string, string[]> = {
+  "canvas-skin-nashville": [
+    "alastin-restorative-skin-complex",
+    "skinmedica-instant-bright-eye",
+    "eltamd-uv-clear",
+  ],
+  "luxe-room-denver": [
+    "alastin-hydratint-spf",
+    "skinceuticals-ce-ferulic",
+    "is-clinical-cleansing",
+    "skinmedica-ha5",
+  ],
+  "look-lab-med-spa-phoenix": [
+    "skinceuticals-discoloration-defense",
+    "isdin-eryfotona-actinica",
+    "alastin-regenerating-skin-nectar",
+  ],
+  "cienega-medical-west-hollywood": [
+    "skinmedica-tns-advanced-serum",
+    "eltamd-uv-clear",
+    "skinceuticals-ce-ferulic",
+  ],
+  "beverly-wilshire-aesthetics": [
+    "alastin-restorative-skin-complex",
+    "skinmedica-instant-bright-eye",
+    "skinceuticals-ce-ferulic",
+  ],
+  "skin-by-lovely-los-angeles": [
+    "skinmedica-ha5",
+    "eltamd-uv-clear",
+    "revision-retinol",
+  ],
+  "skin-pharm-nashville": [
+    "alastin-gentle-cleanser",
+    "skinceuticals-ce-ferulic",
+    "isdin-eryfotona-actinica",
+  ],
+  "gleam-med-spa-denver": [
+    "alastin-regenerating-skin-nectar",
+    "isdin-eryfotona-actinica",
+    "skinceuticals-discoloration-defense",
+  ],
+  "injector-5280-denver": [
+    "alastin-restorative-skin-complex",
+    "skinmedica-instant-bright-eye",
+    "eltamd-uv-clear",
+  ],
+  "collab-medspa-scottsdale": [
+    "alastin-hydratint-spf",
+    "skinceuticals-ce-ferulic",
+    "alastin-c-radical-serum",
+  ],
+};
+
+const TIER_POOLS: Record<Spa["priceRange"], string[]> = {
+  $: [
+    "eltamd-uv-clear",
+    "la-roche-posay-anthelios",
+    "la-roche-posay-toleriane-hydrating",
+    "isdin-micellar-solution",
+  ],
+  $$: [
+    "la-roche-posay-pure-vitamin-c",
+    "eltamd-uv-daily-hydration-tinted",
+    "isdin-eryfotona-actinica",
+    "is-clinical-cleansing",
+    "la-roche-posay-anthelios-niacinamide",
+  ],
+  $$$: [
+    "skinmedica-tns-advanced-serum",
+    "skinceuticals-discoloration-defense",
+    "alastin-hydratint-spf",
+    "revision-retinol",
+    "epicutis-arctigenin",
+    "isdin-essential-cleansing",
+    "alastin-gentle-cleanser",
+  ],
+  $$$$: [
+    "skinmedica-tns-advanced-serum",
+    "skinceuticals-discoloration-defense",
+    "alastin-restorative-skin-complex",
+    "alastin-regenerating-skin-nectar",
+    "epicutis-arctigenin",
+    "skinmedica-dermal-repair-cream",
+  ],
+};
+
+const TREATMENT_POOLS: Partial<Record<Treatment, string[]>> = {
+  botox: ["skinmedica-tns-advanced-serum", "la-roche-posay-toleriane-hydrating", "alastin-restorative-skin-complex"],
+  fillers: ["skinmedica-instant-bright-eye", "alastin-restorative-skin-complex", "skinmedica-tns-advanced-serum"],
+  laser: [
+    "isdin-eryfotona-actinica",
+    "skinceuticals-ce-ferulic",
+    "skinceuticals-discoloration-defense",
+    "alastin-regenerating-skin-nectar",
+    "alastin-c-radical-serum",
+  ],
+  facial: ["is-clinical-cleansing", "isdin-essential-cleansing", "alastin-gentle-cleanser", "epicutis-arctigenin"],
+  microneedling: [
+    "alastin-regenerating-skin-nectar",
+    "alastin-hydratint-spf",
+    "epicutis-arctigenin",
+    "is-clinical-cleansing",
+  ],
+  "body-contouring": ["skinmedica-neck-correct-cream", "skinmedica-collagen-support", "skinmedica-dermal-repair-cream"],
+};
+
+const PROVIDER_POOLS: Record<ProviderType, string[]> = {
+  "med-spa": ["eltamd-uv-clear", "skinmedica-tns-advanced-serum", "isdin-eryfotona-actinica", "alastin-hydratint-spf"],
+  "aesthetics-clinic": ["alastin-restorative-skin-complex", "skinceuticals-discoloration-defense", "revision-retinol"],
+  "dermatology-aesthetics": [
+    "isdin-eryfotona-actinica",
+    "la-roche-posay-anthelios",
+    "skinceuticals-discoloration-defense",
+    "isdin-micellar-solution",
+  ],
+};
+
+function hashSlug(slug: string): number {
+  let h = 0;
+  for (let i = 0; i < slug.length; i++) {
+    h = (h * 31 + slug.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h);
+}
+
+function pickUnique(candidates: string[], count: number, seed: number): string[] {
+  const pool = [...new Set(candidates.filter((s) => SPA_CATALOG_SLUGS.has(s)))];
+  if (pool.length === 0) return ["eltamd-uv-clear"];
+  const picked: string[] = [];
+  for (let i = 0; picked.length < count && i < pool.length * 2; i++) {
+    const slug = pool[(seed + i * 7) % pool.length];
+    if (!picked.includes(slug)) picked.push(slug);
+  }
+  return picked.slice(0, count);
+}
+
+export type ProductSlugInput = {
+  slug: string;
+  providerType: ProviderType;
+  treatments: Treatment[];
+  priceRange: Spa["priceRange"];
+};
+
+/** Assign 2–4 plausible retail products based on provider profile and spa slug. */
+export function deriveProductSlugs(input: ProductSlugInput): string[] {
+  const featured = FEATURED_SPA_PRODUCTS[input.slug];
+  if (featured) return featured.filter((s) => SPA_CATALOG_SLUGS.has(s));
+
+  const seed = hashSlug(input.slug);
+  const count = 2 + (seed % 3);
+  const candidates: string[] = [];
+
+  candidates.push(...TIER_POOLS[input.priceRange]);
+  candidates.push(...PROVIDER_POOLS[input.providerType]);
+  for (const treatment of input.treatments) {
+    const pool = TREATMENT_POOLS[treatment];
+    if (pool) candidates.push(...pool);
+  }
+
+  // Every med spa should include post-procedure SPF when laser or injectables are offered.
+  if (input.treatments.includes("laser") || input.treatments.some((t) => t === "botox" || t === "fillers")) {
+    candidates.push(
+      input.priceRange === "$$$$" ? "alastin-hydratint-spf" : "eltamd-uv-clear",
+      input.priceRange === "$$$$" ? "isdin-eryfotona-ageless" : "isdin-eryfotona-actinica"
+    );
+  }
+
+  return pickUnique(candidates, count, seed);
+}
+
+/** Map legacy orphan slugs and replace bulk placeholder defaults. */
+export function resolveProductSlugs(input: ProductSlugInput & { productSlugs: string[] }): string[] {
+  if (isDefaultProductSlugs(input.productSlugs)) {
+    return deriveProductSlugs(input);
+  }
+
+  const mapped = input.productSlugs.map((slug) => ORPHAN_PRODUCT_SLUG_MAP[slug] ?? slug);
+  const valid = [...new Set(mapped.filter((slug) => SPA_CATALOG_SLUGS.has(slug)))];
+  if (valid.length === 0) return deriveProductSlugs(input);
+  return valid.slice(0, 4);
+}

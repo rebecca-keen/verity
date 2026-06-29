@@ -33,11 +33,11 @@ const HIGHLIGHTS = [
 ];
 
 const PRODUCT_SETS = [
-  ["eltamd-uv-clear", "epicutis-arctigenin"],
-  ["skinceuticals-ce-ferulic", "eltamd-uv-clear"],
-  ["epicutis-arctigenin", "is-clinical-cleansing", "eltamd-uv-clear"],
-  ["revision-retinol", "skinmedica-ha5"],
-  ["eltamd-uv-clear", "revision-retinol"],
+  ["eltamd-uv-clear", "alastin-hydratint-spf"],
+  ["skinceuticals-discoloration-defense", "eltamd-uv-clear", "la-roche-posay-anthelios"],
+  ["isdin-eryfotona-actinica", "alastin-restorative-skin-complex", "eltamd-uv-clear"],
+  ["skinmedica-tns-advanced-serum", "la-roche-posay-anthelios"],
+  ["eltamd-uv-clear", "isdin-essential-cleansing"],
 ];
 
 const TREATMENT_SETS: Treatment[][] = [

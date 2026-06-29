@@ -4,7 +4,13 @@ import { getProductAffiliateUrl, getAmazonShopLabel } from "@/lib/affiliate";
 import { originLabels } from "@/lib/data";
 import type { Product } from "@/lib/types";
 
-export function ProductCard({ product }: { product: Product }) {
+export function ProductCard({
+  product,
+  showAmazonProminently = false,
+}: {
+  product: Product;
+  showAmazonProminently?: boolean;
+}) {
   const shopUrl = getProductAffiliateUrl(product.affiliateUrl, product.affiliatePartner);
   const shopLabel = getAmazonShopLabel(product.affiliatePartner);
 
@@ -32,23 +38,37 @@ export function ProductCard({ product }: { product: Product }) {
             )}
           </div>
         </div>
-        <div className="p-5 pb-3">
-          <p className="text-xs uppercase tracking-widest text-stone">{product.brand}</p>
-          <h3 className="mt-1 font-serif text-lg text-charcoal">{product.name}</h3>
-          <div className="mt-3 flex items-center justify-between">
-            <div>
-              <p className="text-xs text-stone">Trust Score</p>
-              <p className="text-lg font-semibold text-sage">{product.trustScore}</p>
-            </div>
-            <div className="text-right">
-              <p className="text-gold">★ {product.rating}</p>
-              <p className="text-xs text-stone">{product.reviewCount} reviews</p>
-            </div>
+      </Link>
+      <div className="px-5 pt-4">
+        <p className="text-xs uppercase tracking-widest text-stone">{product.brand}</p>
+        <h3 className="mt-1 font-serif text-lg text-charcoal">
+          <Link href={`/products/${product.slug}`} className="transition hover:text-gold">
+            {product.name}
+          </Link>
+        </h3>
+        {showAmazonProminently && shopUrl && (
+          <a
+            href={shopUrl}
+            target="_blank"
+            rel="sponsored noopener noreferrer"
+            className="mt-2 inline-flex items-center gap-1 text-xs font-medium uppercase tracking-wider text-gold transition hover:underline"
+          >
+            {shopLabel} →
+          </a>
+        )}
+        <div className="mt-3 flex items-center justify-between">
+          <div>
+            <p className="text-xs text-stone">Trust Score</p>
+            <p className="text-lg font-semibold text-sage">{product.trustScore}</p>
+          </div>
+          <div className="text-right">
+            <p className="text-gold">★ {product.rating}</p>
+            <p className="text-xs text-stone">{product.reviewCount} reviews</p>
           </div>
         </div>
-      </Link>
+      </div>
       {shopUrl && (
-        <div className="px-5 pb-5">
+        <div className="px-5 pb-5 pt-3">
           <a
             href={shopUrl}
             target="_blank"

@@ -1,4 +1,5 @@
 import type { Metro, ProviderType, Treatment, USStateCode } from "./types";
+import { deriveProductSlugs } from "./spa-utils";
 
 export type NationwideSpaSeed = {
   slug: string;
@@ -65,7 +66,6 @@ function seed(input: SeedInput): NationwideSpaSeed {
     treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: ig(input.name),
-    productSlugs: ["eltamd-uv-clear", "skinceuticals-ce-ferulic"],
     highlights: [
       input.reviewSource ? `${input.reviewSource} — ${input.rating}★` : `${input.rating}★ verified`,
       `${input.city} location`,
@@ -74,6 +74,14 @@ function seed(input: SeedInput): NationwideSpaSeed {
     medicalDirector: "Licensed Medical Director, MD",
     ...input,
     reviewSource: input.reviewSource ?? "Google Business Profile",
+    productSlugs:
+      input.productSlugs ??
+      deriveProductSlugs({
+        slug: input.slug,
+        providerType: input.providerType ?? "med-spa",
+        treatments: input.treatments ?? ["botox", "fillers", "laser", "facial"],
+        priceRange: input.priceRange ?? "$$$",
+      }),
   };
 }
 
