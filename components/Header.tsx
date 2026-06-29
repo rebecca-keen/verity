@@ -3,6 +3,7 @@ import Link from "next/link";
 const links = [
   { href: "/spas", label: "Providers" },
   { href: "/products", label: "Products" },
+  { href: "/products/recommended", label: "Shop" },
   { href: "/concierge", label: "AI Concierge" },
   { href: "/premium", label: "Premium" },
   { href: "/for-spas", label: "For Providers" },

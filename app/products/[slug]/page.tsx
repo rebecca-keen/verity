@@ -4,7 +4,7 @@ import Link from "next/link";
 import { SpaCard } from "@/components/SpaCard";
 import { ReviewCard } from "@/components/ReviewCard";
 import { getProduct, getProductReviews, getSpasForProduct, originLabels, products } from "@/lib/data";
-import { getProductAffiliateUrl } from "@/lib/affiliate";
+import { getProductAffiliateUrl, getAmazonShopLabel } from "@/lib/affiliate";
 import type { ProductOrigin } from "@/lib/types";
 
 const originStories: Record<ProductOrigin, string> = {
@@ -31,6 +31,9 @@ export default async function ProductDetailPage({
   const productReviews = getProductReviews(slug);
   const linkedSpas = getSpasForProduct(slug);
   const shopUrl = getProductAffiliateUrl(product.affiliateUrl, product.affiliatePartner);
+  const shopLabel = product.affiliatePartner
+    ? getAmazonShopLabel(product.affiliatePartner)
+    : `Shop ${product.brand}`;
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
@@ -97,7 +100,7 @@ export default async function ProductDetailPage({
                 rel="sponsored noopener noreferrer"
                 className="inline-block rounded-full bg-charcoal px-8 py-3 text-sm font-medium tracking-wider text-ivory transition hover:bg-charcoal/90"
               >
-                Shop {product.brand}
+                {shopLabel}
               </a>
               {product.affiliatePartner && (
                 <p className="mt-2 text-xs text-stone">

@@ -1,3 +1,4 @@
+import { amazonAffiliateProducts } from "./amazon-affiliate-products";
 import { additionalFloridaSpaSeeds } from "./additional-florida-spa-seeds";
 import { floridaCoastalRealSpas } from "./florida-coastal-real-spas";
 import { floridaRealSpas } from "./florida-real-spas";
@@ -27,7 +28,7 @@ export const originLabels: Record<ProductOrigin, string> = {
   EU: "European",
 };
 
-export const products: Product[] = [
+export const baseProducts: Product[] = [
   {
     slug: "eltamd-uv-clear",
     name: "UV Clear Broad-Spectrum SPF 46",
@@ -43,6 +44,7 @@ export const products: Product[] = [
     ingredients: ["Zinc Oxide", "Niacinamide", "Hyaluronic Acid"],
     origin: "US",
     premium: false,
+    recommended: true,
   },
   {
     slug: "skinceuticals-ce-ferulic",
@@ -59,6 +61,7 @@ export const products: Product[] = [
     ingredients: ["Vitamin C", "Vitamin E", "Ferulic Acid"],
     origin: "US",
     premium: true,
+    recommended: true,
   },
   {
     slug: "epicutis-arctigenin",
@@ -121,8 +124,11 @@ export const products: Product[] = [
     ingredients: ["Hyaluronic Acid", "Peptides", "Vitamin E"],
     origin: "US",
     premium: true,
+    recommended: true,
   },
 ];
+
+export const products: Product[] = [...baseProducts, ...amazonAffiliateProducts];
 
 type SpaSeed = {
   slug: string;

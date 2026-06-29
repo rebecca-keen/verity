@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getProductAffiliateUrl } from "@/lib/affiliate";
+import { getProductAffiliateUrl, getAmazonShopLabel } from "@/lib/affiliate";
 import { originLabels } from "@/lib/data";
 import type { Product } from "@/lib/types";
 
 export function ProductCard({ product }: { product: Product }) {
   const shopUrl = getProductAffiliateUrl(product.affiliateUrl, product.affiliatePartner);
+  const shopLabel = getAmazonShopLabel(product.affiliatePartner);
 
   return (
     <article className="group luxury-border overflow-hidden rounded-2xl bg-white transition hover:shadow-lg">
@@ -54,7 +55,7 @@ export function ProductCard({ product }: { product: Product }) {
             rel="sponsored noopener noreferrer"
             className="block w-full rounded-full border border-gold/40 bg-cream py-2 text-center text-xs font-medium uppercase tracking-wider text-charcoal transition hover:border-gold hover:bg-gold/10"
           >
-            Shop
+            {shopLabel}
           </a>
         </div>
       )}

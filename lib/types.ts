@@ -69,6 +69,8 @@ export interface Product {
   affiliatePartner?: string;
   origin?: ProductOrigin;
   premium?: boolean;
+  /** Curated for /products/recommended and luxury Amazon shop links */
+  recommended?: boolean;
 }
 
 export interface Review {

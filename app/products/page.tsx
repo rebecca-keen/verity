@@ -38,7 +38,17 @@ export default async function ProductsPage({
       </p>
       <p className="mt-2 text-sm text-stone/80">
         Purchases through Verity shop links may earn a commission that supports independent reviews.
+        As an Amazon Associate, Verity earns from qualifying purchases.
       </p>
+
+      <div className="mt-6">
+        <Link
+          href="/products/recommended"
+          className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-cream px-5 py-2 text-xs font-medium uppercase tracking-wider text-charcoal transition hover:border-gold hover:bg-gold/10"
+        >
+          Shop recommended derm brands →
+        </Link>
+      </div>
 
       <div className="mt-8 flex flex-wrap gap-2">
         {originFilters.map(({ value, label }) => {

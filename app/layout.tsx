@@ -35,6 +35,10 @@ export default function RootLayout({
           <p className="mt-4 text-sm text-stone">
             Questions? <ContactEmail />
           </p>
+          <p className="mt-4 max-w-xl mx-auto text-xs text-stone/80">
+            As an Amazon Associate, Verity Aesthetics earns from qualifying purchases. Product links
+            may be affiliate links at no extra cost to you.
+          </p>
           <p className="mt-4 text-xs">© {new Date().getFullYear()} Verity. Not medical advice.</p>
         </footer>
       </body>

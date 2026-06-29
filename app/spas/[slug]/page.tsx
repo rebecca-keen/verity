@@ -63,7 +63,7 @@ export default async function SpaDetailPage({
           <div className="mt-10">
             <h2 className="font-serif text-2xl text-charcoal">Products we use</h2>
             <p className="mt-1 text-sm text-stone">
-              Linked to verified product reviews — see what this provider uses before you book.
+              Linked to verified product reviews — shop on Amazon when available.
             </p>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               {spaProducts.map((p) => (
