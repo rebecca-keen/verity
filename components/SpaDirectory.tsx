@@ -2,8 +2,16 @@
 
 import { useMemo, useState } from "react";
 import { SpaCard } from "@/components/SpaCard";
-import { getNeighborhoodsByMetro, getSortedSpas, spas } from "@/lib/data";
-import { METRO_FILTERS, METRO_LABELS, PROVIDER_TYPE_FILTERS } from "@/lib/spa-utils";
+import { getSortedSpas, spas } from "@/lib/data";
+import {
+  getAreaFilterLabel,
+  getAreasByCity,
+  getCitiesByMetro,
+  getCityFilterLabel,
+  METRO_FILTERS,
+  METRO_LABELS,
+  PROVIDER_TYPE_FILTERS,
+} from "@/lib/spa-utils";
 import type { Metro, ProviderType, TreatmentCategory } from "@/lib/types";
 
 const CATEGORY_FILTERS: { label: string; value: TreatmentCategory | "All" }[] = [
@@ -16,28 +24,42 @@ const CATEGORY_FILTERS: { label: string; value: TreatmentCategory | "All" }[] = 
 
 export function SpaDirectory() {
   const [metro, setMetro] = useState<Metro | "All">("All");
-  const [neighborhood, setNeighborhood] = useState("All");
+  const [city, setCity] = useState<string | "All">("All");
+  const [area, setArea] = useState("All");
   const [category, setCategory] = useState<TreatmentCategory | "All">("All");
   const [providerType, setProviderType] = useState<ProviderType | "All">("All");
 
   const sorted = getSortedSpas();
 
-  const metroSpas = useMemo(
+  const regionSpas = useMemo(
     () => (metro === "All" ? sorted : sorted.filter((s) => s.metro === metro)),
     [sorted, metro]
   );
 
-  const neighborhoods = useMemo(() => getNeighborhoodsByMetro(metro), [metro]);
+  const cities = useMemo(() => getCitiesByMetro(spas, metro), [metro]);
 
-  const filtered = metroSpas.filter((s) => {
-    const matchHood = neighborhood === "All" || s.neighborhood === neighborhood;
+  const citySpas = useMemo(
+    () => (city === "All" ? regionSpas : regionSpas.filter((s) => s.city === city)),
+    [regionSpas, city]
+  );
+
+  const areas = useMemo(() => getAreasByCity(spas, metro, city), [metro, city]);
+
+  const filtered = citySpas.filter((s) => {
+    const matchArea = area === "All" || s.neighborhood === area;
     const matchCat = category === "All" || s.treatmentCategories.includes(category);
     const matchType = providerType === "All" || s.providerType === providerType;
-    return matchHood && matchCat && matchType;
+    return matchArea && matchCat && matchType;
   });
 
-  const metroLabel =
-    metro === "All" ? "Florida" : `${METRO_LABELS[metro]} & surrounding areas`;
+  const locationLabel = useMemo(() => {
+    if (metro === "All") return "Florida";
+    if (city === "All") return METRO_LABELS[metro];
+    if (area === "All") return getCityFilterLabel(city, metro);
+    return getAreaFilterLabel(area, city, metro);
+  }, [metro, city, area]);
+
+  const activeMetro = metro === "All" ? null : metro;
 
   return (
     <>
@@ -45,28 +67,112 @@ export function SpaDirectory() {
         Sorted by rating and review count — no paid placement in listings yet.
       </p>
 
-      <div className="mt-6 flex flex-wrap gap-2">
-        {METRO_FILTERS.map((f) => {
-          const count =
-            f.value === "All" ? spas.length : spas.filter((s) => s.metro === f.value).length;
-          return (
-            <button
-              key={f.value}
-              type="button"
-              onClick={() => {
-                setMetro(f.value);
-                setNeighborhood("All");
-              }}
-              className={`rounded-full px-4 py-2 text-xs transition ${
-                metro === f.value
-                  ? "bg-charcoal text-ivory"
-                  : "border border-stone/20 text-stone hover:border-gold"
-              }`}
-            >
-              {f.label} ({count})
-            </button>
-          );
-        })}
+      <div className="mt-6">
+        <p className="mb-2 text-xs uppercase tracking-widest text-gold">Region</p>
+        <div className="flex flex-wrap gap-2">
+          {METRO_FILTERS.map((f) => {
+            const count =
+              f.value === "All" ? spas.length : spas.filter((s) => s.metro === f.value).length;
+            return (
+              <button
+                key={f.value}
+                type="button"
+                onClick={() => {
+                  setMetro(f.value);
+                  setCity("All");
+                  setArea("All");
+                }}
+                className={`rounded-full px-4 py-2 text-xs transition ${
+                  metro === f.value
+                    ? "bg-charcoal text-ivory"
+                    : "border border-stone/20 text-stone hover:border-gold"
+                }`}
+              >
+                {f.label} ({count})
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="mt-6">
+        <p className="mb-2 text-xs uppercase tracking-widest text-gold">City</p>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              setCity("All");
+              setArea("All");
+            }}
+            className={`rounded-full px-4 py-2 text-xs transition ${
+              city === "All"
+                ? "bg-charcoal text-ivory"
+                : "border border-stone/20 text-stone hover:border-gold"
+            }`}
+          >
+            All cities ({regionSpas.length})
+          </button>
+          {cities.map((c) => {
+            const count = regionSpas.filter((s) => s.city === c).length;
+            const label = activeMetro ? getCityFilterLabel(c, activeMetro) : c;
+            return (
+              <button
+                key={c}
+                type="button"
+                onClick={() => {
+                  setCity(c);
+                  setArea("All");
+                }}
+                className={`rounded-full px-4 py-2 text-xs transition ${
+                  city === c
+                    ? "bg-charcoal text-ivory"
+                    : "border border-stone/20 text-stone hover:border-gold"
+                }`}
+              >
+                {label} ({count})
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="mt-6">
+        <p className="mb-2 text-xs uppercase tracking-widest text-gold">Area & neighborhood</p>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={() => setArea("All")}
+            className={`rounded-full px-4 py-2 text-xs transition ${
+              area === "All"
+                ? "bg-charcoal text-ivory"
+                : "border border-stone/20 text-stone hover:border-gold"
+            }`}
+          >
+            All areas ({citySpas.length})
+          </button>
+          {areas.map((n) => {
+            const count = citySpas.filter((s) => s.neighborhood === n).length;
+            const spaForLabel = citySpas.find((s) => s.neighborhood === n);
+            const label =
+              activeMetro && spaForLabel
+                ? getAreaFilterLabel(n, spaForLabel.city, activeMetro)
+                : n;
+            return (
+              <button
+                key={n}
+                type="button"
+                onClick={() => setArea(n)}
+                className={`rounded-full px-4 py-2 text-xs transition ${
+                  area === n
+                    ? "bg-charcoal text-ivory"
+                    : "border border-stone/20 text-stone hover:border-gold"
+                }`}
+              >
+                {label} ({count})
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2">
@@ -103,39 +209,8 @@ export function SpaDirectory() {
         ))}
       </div>
 
-      <div className="mt-6 flex flex-wrap gap-2">
-        <button
-          type="button"
-          onClick={() => setNeighborhood("All")}
-          className={`rounded-full px-4 py-2 text-xs transition ${
-            neighborhood === "All"
-              ? "bg-charcoal text-ivory"
-              : "border border-stone/20 text-stone hover:border-gold"
-          }`}
-        >
-          All neighborhoods ({metroSpas.length})
-        </button>
-        {neighborhoods.map((n) => {
-          const count = metroSpas.filter((s) => s.neighborhood === n).length;
-          return (
-            <button
-              key={n}
-              type="button"
-              onClick={() => setNeighborhood(n)}
-              className={`rounded-full px-4 py-2 text-xs transition ${
-                neighborhood === n
-                  ? "bg-charcoal text-ivory"
-                  : "border border-stone/20 text-stone hover:border-gold"
-              }`}
-            >
-              {n} ({count})
-            </button>
-          );
-        })}
-      </div>
-
       <p className="mt-6 text-sm text-stone">
-        Showing {filtered.length} verified providers in {metroLabel}
+        Showing {filtered.length} verified providers in {locationLabel}
       </p>
 
       <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

@@ -112,7 +112,7 @@ export default async function ProductDetailPage({
 
       <section className="mt-16">
         <h2 className="font-serif text-2xl text-charcoal">
-          Miami providers that use this ({linkedSpas.length})
+          Florida providers that use this ({linkedSpas.length})
         </h2>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {linkedSpas.map((spa) => (

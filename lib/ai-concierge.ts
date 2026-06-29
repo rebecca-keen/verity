@@ -1,5 +1,6 @@
 import { spas } from "./data";
 import type { ConciergeMatch, ProviderType, Treatment } from "./types";
+import { METRO_LABELS } from "./spa-utils";
 
 const KEYWORDS: Record<string, { treatments: Treatment[]; tags: string[] }> = {
   botox: { treatments: ["botox"], tags: ["injectables", "wrinkles", "preventive"] },
@@ -22,15 +23,36 @@ const KEYWORDS: Record<string, { treatments: Treatment[]; tags: string[] }> = {
   aventura: { treatments: [], tags: ["aventura", "sunny isles"] },
   kendall: { treatments: [], tags: ["kendall"] },
   grove: { treatments: ["facial"], tags: ["coconut grove"] },
-  tampa: { treatments: [], tags: ["tampa", "hyde park", "south tampa", "westshore", "clearwater", "st. petersburg"] },
-  orlando: { treatments: [], tags: ["orlando", "winter park", "dr. phillips", "lake nona", "downtown orlando"] },
-  jacksonville: { treatments: [], tags: ["jacksonville", "san marco", "riverside", "ponte vedra", "jacksonville beach"] },
+  miami: { treatments: [], tags: ["miami", "south florida", "brickell", "coral gables"] },
+  "fort lauderdale": { treatments: [], tags: ["fort lauderdale", "las olas", "broward", "hollywood"] },
+  broward: { treatments: [], tags: ["fort lauderdale", "broward", "hollywood", "pompano"] },
+  tampa: { treatments: [], tags: ["tampa", "hyde park", "south tampa", "westshore", "clearwater", "st. petersburg", "tampa bay"] },
+  "st. petersburg": { treatments: [], tags: ["st. petersburg", "st petersburg", "tampa bay"] },
+  "st petersburg": { treatments: [], tags: ["st. petersburg", "tampa bay"] },
+  clearwater: { treatments: [], tags: ["clearwater", "tampa bay"] },
+  sarasota: { treatments: [], tags: ["sarasota", "bradenton", "siesta key", "lakewood ranch"] },
+  bradenton: { treatments: [], tags: ["bradenton", "sarasota"] },
+  orlando: { treatments: [], tags: ["orlando", "winter park", "dr. phillips", "lake nona", "downtown orlando", "central florida"] },
+  "winter park": { treatments: [], tags: ["winter park", "orlando"] },
+  lakeland: { treatments: [], tags: ["lakeland", "central florida"] },
+  daytona: { treatments: [], tags: ["daytona beach", "ormond beach", "space coast"] },
+  jacksonville: { treatments: [], tags: ["jacksonville", "san marco", "riverside", "ponte vedra", "jacksonville beach", "north florida"] },
   jax: { treatments: [], tags: ["jacksonville", "jax beach"] },
-  naples: { treatments: [], tags: ["naples", "fifth avenue", "north naples", "bonita springs"] },
-  "palm beach": { treatments: [], tags: ["palm beach", "boca", "boca raton", "west palm", "delray"] },
+  gainesville: { treatments: [], tags: ["gainesville", "haile plantation", "north florida"] },
+  tallahassee: { treatments: [], tags: ["tallahassee", "college town", "north florida"] },
+  pensacola: { treatments: [], tags: ["pensacola", "gulf breeze", "navarre", "north florida"] },
+  naples: { treatments: [], tags: ["naples", "fifth avenue", "north naples", "bonita springs", "southwest florida"] },
+  "fort myers": { treatments: [], tags: ["fort myers", "cape coral", "southwest florida"] },
+  "cape coral": { treatments: [], tags: ["cape coral", "fort myers"] },
+  "palm beach": { treatments: [], tags: ["palm beach", "boca", "boca raton", "west palm", "delray", "south florida"] },
   boca: { treatments: [], tags: ["boca raton", "boca"] },
   "west palm": { treatments: [], tags: ["west palm beach"] },
   delray: { treatments: [], tags: ["delray beach"] },
+  "port st. lucie": { treatments: [], tags: ["port st. lucie", "stuart", "jensen beach", "treasure coast"] },
+  "port st lucie": { treatments: [], tags: ["port st. lucie", "treasure coast"] },
+  stuart: { treatments: [], tags: ["stuart", "treasure coast"] },
+  "key west": { treatments: [], tags: ["key west", "keys", "islamorada", "key largo"] },
+  keys: { treatments: [], tags: ["key west", "islamorada", "key largo"] },
   florida: { treatments: [], tags: [] },
   dermatology: { treatments: ["laser", "facial"], tags: ["dermatology"] },
   aesthetics: { treatments: ["botox", "fillers", "facial"], tags: ["aesthetics"] },
@@ -66,7 +88,7 @@ function scoreSpa(
 
   const neighborhood = spa.neighborhood.toLowerCase();
   const city = spa.city.toLowerCase();
-  const metroName = spa.metro.replace("-", " ");
+  const metroName = METRO_LABELS[spa.metro].toLowerCase();
   for (const tag of wantedTags) {
     const tagLower = tag.toLowerCase();
     if (
@@ -135,7 +157,7 @@ export function matchSpas(query: string): ConciergeMatch[] {
 
 export function buildConciergeReply(query: string, matches: ConciergeMatch[]): string {
   if (matches.length === 0) {
-    return "I couldn't find a strong match yet. Try telling me your neighborhood, treatment (Botox, facial, laser), provider type (med spa, aesthetics clinic, dermatology), and budget — luxury or affordable.";
+    return "I couldn't find a strong match yet. Try telling me your city or region, treatment (Botox, facial, laser), provider type (med spa, aesthetics clinic, dermatology), and budget — luxury or affordable.";
   }
 
   const top = matches[0];
@@ -149,7 +171,7 @@ export function buildConciergeReply(query: string, matches: ConciergeMatch[]): s
     "",
     `I'd start with **${top.spaName}** — they align best with your priorities.`,
     "",
-    "Want me to narrow by budget, neighborhood, or a specific treatment?",
+    "Want me to narrow by budget, city, area, or a specific treatment?",
   ];
 
   return lines.join("\n");
@@ -164,7 +186,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
       const spaContext = spas
         .map(
           (s) =>
-            `${s.name} (${s.neighborhood}, ${s.city}, ${s.metro} — ${s.providerType}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Rating: ${s.rating}`
+            `${s.name} (${s.neighborhood}, ${s.city}, ${METRO_LABELS[s.metro]} — ${s.providerType}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Rating: ${s.rating}`
         )
         .join("\n");
 
@@ -179,7 +201,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
           messages: [
             {
               role: "system",
-              content: `You are Verity Concierge, a luxury aesthetics advisor for Florida — Miami, Tampa, Orlando, Jacksonville, Naples, and Palm Beach. You help users find reputable, verified med spas, aesthetics clinics, and dermatology practices. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
+              content: `You are Verity Concierge, a luxury aesthetics advisor for Florida statewide — South Florida, Tampa Bay, Central Florida, North Florida, Southwest Florida, and Treasure Coast. You help users find reputable, verified med spas, aesthetics clinics, and dermatology practices. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
             },
             { role: "user", content: query },
           ],

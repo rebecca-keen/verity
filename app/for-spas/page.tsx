@@ -72,7 +72,7 @@ export default function ForSpasPage() {
       </h1>
       <p className="mt-4 text-lg text-stone">
         Verity is built for aesthetics clinics and med spas first — plus dermatology practices with
-        aesthetic services. Reach high-intent Miami clients researching injectables, lasers, facials,
+        aesthetic services. Reach high-intent Florida clients researching injectables, lasers, facials,
         and body contouring who care about reputation, medical oversight, and product transparency.
       </p>
 
@@ -169,12 +169,12 @@ export default function ForSpasPage() {
       </section>
 
       <div className="mt-12 luxury-border rounded-2xl bg-cream p-8 text-center">
-        <h2 className="font-serif text-2xl text-charcoal">Miami launch — partner spots open</h2>
+        <h2 className="font-serif text-2xl text-charcoal">Florida statewide — partner spots open</h2>
         <p className="mt-2 text-stone">
-          Join {spas.length} verified providers already listed. Limited featured spots in each neighborhood.
+          Join {spas.length} verified providers already listed across Florida. Limited featured spots in each city.
         </p>
         <a
-          href="mailto:partners@verity.app?subject=Miami%20Partner%20Application"
+          href="mailto:partners@verity.app?subject=Florida%20Partner%20Application"
           className="mt-6 inline-block rounded-full bg-charcoal px-8 py-3 text-sm font-medium tracking-wider text-ivory"
         >
           Apply to Partner

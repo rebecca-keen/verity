@@ -1,5 +1,6 @@
 /** Unique hero + gallery images per spa (no duplicates across listings) */
 
+import { ADDITIONAL_FLORIDA_SPA_IMAGE_IDS } from "./additional-florida-spa-seeds";
 import { FLORIDA_SPA_IMAGE_IDS } from "./florida-spa-seeds";
 
 function img(id: string, w = 800, h = 600) {
@@ -467,6 +468,14 @@ export const SPA_IMAGE_SETS: Record<
 };
 
 for (const [slug, ids] of Object.entries(FLORIDA_SPA_IMAGE_IDS)) {
+  SPA_IMAGE_SETS[slug] = {
+    hero: img(ids.heroId),
+    gallery: [gal(ids.g1), gal(ids.g2), gal(ids.g3)],
+    source: "Unsplash — Florida med spa stock imagery",
+  };
+}
+
+for (const [slug, ids] of Object.entries(ADDITIONAL_FLORIDA_SPA_IMAGE_IDS)) {
   SPA_IMAGE_SETS[slug] = {
     hero: img(ids.heroId),
     gallery: [gal(ids.g1), gal(ids.g2), gal(ids.g3)],

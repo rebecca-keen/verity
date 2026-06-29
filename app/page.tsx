@@ -11,15 +11,15 @@ export default function HomePage() {
     <>
       <section className="border-b border-stone/10 bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-20 text-center md:py-28">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold">Florida · Nationwide Next</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-gold">Florida · Verified providers</p>
           <h1 className="mx-auto mt-4 max-w-3xl font-serif text-4xl leading-tight text-charcoal md:text-6xl">
-            Trusted aesthetics clinics & med spas, verified
+            Trusted aesthetics across Florida
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-stone">
             {spas.length} verified aesthetics clinics, med spas, and dermatology practices across
-            Miami, Tampa, Orlando, Jacksonville, Naples, and Palm Beach. Research injectables,
-            lasers, facials, and body contouring with product transparency, medical director info,
-            and AI matching — Florida first, nationwide next.
+            Florida — from Miami and Fort Lauderdale to Tampa Bay, Orlando, Jacksonville, Naples,
+            Sarasota, and beyond. Research injectables, lasers, facials, and body contouring with
+            product transparency, medical director info, and AI matching statewide.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link

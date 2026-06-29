@@ -20,13 +20,14 @@ export type TreatmentCategory = "injectables" | "lasers" | "beauty" | "body";
 
 export type ProviderType = "med-spa" | "aesthetics-clinic" | "dermatology-aesthetics";
 
+/** Florida region group for filtering (not a single city). */
 export type Metro =
-  | "miami"
-  | "tampa"
-  | "orlando"
-  | "jacksonville"
-  | "naples"
-  | "palm-beach";
+  | "south-florida"
+  | "tampa-bay"
+  | "central-florida"
+  | "north-florida"
+  | "southwest-florida"
+  | "treasure-coast";
 
 export interface SpaSocials {
   instagram?: string;

@@ -1,34 +1,76 @@
 import type { Metro, ProviderType, Spa, Treatment, TreatmentCategory } from "./types";
 
+export const FLORIDA_METROS: Metro[] = [
+  "south-florida",
+  "tampa-bay",
+  "central-florida",
+  "north-florida",
+  "southwest-florida",
+  "treasure-coast",
+];
+
 export const METRO_LABELS: Record<Metro, string> = {
-  miami: "Miami",
-  tampa: "Tampa",
-  orlando: "Orlando",
-  jacksonville: "Jacksonville",
-  naples: "Naples",
-  "palm-beach": "Palm Beach",
+  "south-florida": "South Florida",
+  "tampa-bay": "Tampa Bay",
+  "central-florida": "Central Florida",
+  "north-florida": "North Florida",
+  "southwest-florida": "Southwest Florida",
+  "treasure-coast": "Treasure Coast",
+};
+
+/** Primary hub city per region — used for "Winter Park (Orlando area)" style labels. */
+export const METRO_PRIMARY_CITY: Record<Metro, string> = {
+  "south-florida": "Miami",
+  "tampa-bay": "Tampa",
+  "central-florida": "Orlando",
+  "north-florida": "Jacksonville",
+  "southwest-florida": "Fort Myers",
+  "treasure-coast": "Port St. Lucie",
 };
 
 export const METRO_FILTERS: { label: string; value: Metro | "All" }[] = [
   { label: "All Florida", value: "All" },
-  ...Object.entries(METRO_LABELS).map(([value, label]) => ({
-    label,
-    value: value as Metro,
+  ...FLORIDA_METROS.map((value) => ({
+    label: METRO_LABELS[value],
+    value,
   })),
 ];
 
-export function getNeighborhoodsForMetro(spaList: Spa[], metro: Metro | "All"): string[] {
+export function getCityFilterLabel(city: string, metro: Metro): string {
+  const primary = METRO_PRIMARY_CITY[metro];
+  if (city === primary) return city;
+  return `${city} (${primary} area)`;
+}
+
+export function getAreaFilterLabel(area: string, city: string, metro: Metro): string {
+  const primary = METRO_PRIMARY_CITY[metro];
+  if (city === primary) return area;
+  return `${area} (${city} area)`;
+}
+
+export function getCitiesByMetro(spaList: Spa[], metro: Metro | "All"): string[] {
   const scoped = metro === "All" ? spaList : spaList.filter((s) => s.metro === metro);
+  return [...new Set(scoped.map((s) => s.city))].sort();
+}
+
+export function getAreasByCity(spaList: Spa[], metro: Metro | "All", city: string | "All"): string[] {
+  let scoped = metro === "All" ? spaList : spaList.filter((s) => s.metro === metro);
+  if (city !== "All") scoped = scoped.filter((s) => s.city === city);
   return [...new Set(scoped.map((s) => s.neighborhood))].sort();
 }
 
+/** @deprecated Use getAreasByCity */
+export function getNeighborhoodsForMetro(spaList: Spa[], metro: Metro | "All"): string[] {
+  return getAreasByCity(spaList, metro, "All");
+}
+
 const METRO_AREA_CODES: Record<Metro, string[]> = {
-  miami: ["305", "786"],
-  tampa: ["813", "727"],
-  orlando: ["407", "321"],
-  jacksonville: ["904"],
-  naples: ["239"],
-  "palm-beach": ["561"],
+  "south-florida": ["305", "786", "954", "561"],
+  "tampa-bay": ["813", "727", "941"],
+  "central-florida": ["407", "321", "863"],
+  "north-florida": ["904", "352", "850"],
+  "southwest-florida": ["239", "941"],
+  "treasure-coast": ["772", "561"],
 };
 
 export function defaultPhoneForMetro(metro: Metro, index: number): string {
