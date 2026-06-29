@@ -1084,15 +1084,15 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Aurivita Med Spa official website",
   },
-            "skinspirations-clearwater": {
+              "skinspirations-clearwater": {
     hero: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/6a037510-1836-4310-a2c9-139933db016b/hero-idx-1225.jpg",
     gallery: [
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/5712d38f-e3ae-421e-9587-f4238e85740b/txt-pybff-idx.png",
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/29a5a04b-6341-4044-9eff-c678993814c8/StockCake-Laboratory_Research_Experiment-548922-standard.jpg",
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/4ca65d6d-0408-42a8-a562-f3fa5d00761d/ramy-mamdouh-Va1HQm_Ch3c-unsplash.jpg",
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/7346cb9a-487e-430b-8392-2f8b68d66cee/idx-male-01.jpg",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/853d2a28-cd7f-481e-b72b-90e839260d44/sp-package-03.webp",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/b0ff0067-acfd-43e0-aee7-6cda2fab9719/dr-elliott-md-patient-01.jpg",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/8479ba81-9312-4326-8924-cee2f6efa4e9/co-v-male-01.jpg",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/46e82890-9924-4910-9bb6-598e11838168/hero-pigment-03.jpg",
     ],
-    source: "Skinspirations official website",
+    source: "Skinspirations official website — services",
   },
     "tranquility-aesthetics-tarpon-springs": {
     hero: "https://static.wixstatic.com/media/838826_91f8aef70557402e9fea637a47bb802a~mv2.png/v1/fill/w_49,h_69,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Facetune_23-01-2025-10-04-32-2_edited.png",

@@ -818,15 +818,15 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Shores Medical Spa official website",
   },
-            "elite-aesthetics-daytona-beach": {
-    hero: "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/3e6251c2-47f9-4cb6-be66-bb139a915c16/EliteAesthetics-St.Augustine.jpg",
+              "elite-aesthetics-daytona-beach": {
+    hero: "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/9e1b8fab-8f4a-464f-96e7-050d5b799c86/IMG_3011+2.JPG",
     gallery: [
-      "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/1781639904644-0FE0LCYLBK5S5QJ2GXMS/unsplash-image-3AOpR7Vsgt4.jpg",
-      "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/9e1b8fab-8f4a-464f-96e7-050d5b799c86/IMG_3011+2.JPG",
       "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/3e806ab7-b81b-4459-a58c-e5f5129ee562/IMG_8699+5.JPG",
       "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/1a9c1614-01f6-4bf7-b909-1676fe8164d6/IMG_1055+3.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/3e6251c2-47f9-4cb6-be66-bb139a915c16/EliteAesthetics-St.Augustine.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/1780512318644-EHEGSOQC0PE7SANQWGZ8/image-asset.jpeg",
     ],
-    source: "Elite Aesthetics official website",
+    source: "Elite Aesthetics official website — services",
   },
           "anora-integrative-daytona": {
     hero: "https://anoraiha.com/wp-content/uploads/2024/10/Total-Wellness-Misc-8324.jpg",

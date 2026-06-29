@@ -1741,15 +1741,15 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Viva Day Spa + Med Spa Austin official website",
   },
-          "skinspirations-houston": {
+            "skinspirations-houston": {
     hero: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/6a037510-1836-4310-a2c9-139933db016b/hero-idx-1225.jpg",
     gallery: [
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/5712d38f-e3ae-421e-9587-f4238e85740b/txt-pybff-idx.png",
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/29a5a04b-6341-4044-9eff-c678993814c8/StockCake-Laboratory_Research_Experiment-548922-standard.jpg",
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/4ca65d6d-0408-42a8-a562-f3fa5d00761d/ramy-mamdouh-Va1HQm_Ch3c-unsplash.jpg",
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/7346cb9a-487e-430b-8392-2f8b68d66cee/idx-male-01.jpg",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/853d2a28-cd7f-481e-b72b-90e839260d44/sp-package-03.webp",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/b0ff0067-acfd-43e0-aee7-6cda2fab9719/dr-elliott-md-patient-01.jpg",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/8479ba81-9312-4326-8924-cee2f6efa4e9/co-v-male-01.jpg",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/46e82890-9924-4910-9bb6-598e11838168/hero-pigment-03.jpg",
     ],
-    source: "Skinspirations Houston official website",
+    source: "Skinspirations Houston official website — services",
   },
         "skinspirit-austin": {
     hero: "https://cdn.prod.website-files.com/64fb26e78d22031b6dda81de/6540bfbb8b854f25dbe5a42b_Skin-Spirit-Default-Open-Graph-Image.jpg",
@@ -2034,15 +2034,15 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Canvas Skin official website",
   },
-          "denver-dream-medspa": {
-    hero: "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/38f5e58d-fe52-43c9-a84f-3b63a45702fe/denver+dream+medspa+on+google+maps.webp",
+            "denver-dream-medspa": {
+    hero: "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1725720289071-Q10Y4S2C1E9V80F2J241/Academy+prompts+photo+%286%29.png",
     gallery: [
-      "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1778257049298-LO36J8WYEJRWTBE9MJLA/unsplash-image-FusqYeCcP-0.jpg",
-      "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/d808c173-7a3d-4752-be08-6e7e3abb9ab4/96.png",
-      "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/93b94415-1045-4df6-9aa7-5ac4ac03d5f3/31.png",
-      "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/687b961b-7932-4885-96f4-e5d78c4ec8a5/33.png",
+      "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1769031446744-8KJYH5FK09DHBAMNAUJB/35.png",
+      "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1781211675199-6E8N8HDJ4UIVHRTXKNRF/before+and+after+arm+hair+laser+hair+removal.png",
+      "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1781211675219-7RGPYCP9W8ODY92399OS/before+and+after+chin+hair+laser+hair+removal+PCOS.png",
+      "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1781211675185-HM7WAI6HSUEJKY911K4E/before+and+after+chin+hair+with+laser+hair+removal.png",
     ],
-    source: "Denver Dream Medspa official website",
+    source: "Denver Dream Medspa official website — services",
   },
     "dermatology-cosmetic-laser-brentwood": {
     hero: "https://www.laskinmd.com/wp-content/uploads/2018/02/dr-gene-rubinstein.jpg",
