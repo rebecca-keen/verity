@@ -15,7 +15,7 @@ export default async function BookingSuccessPage({
         You&apos;ll receive an email confirmation.
       </p>
       <Link
-        href="/spas"
+        href="/providers"
         className="mt-8 inline-block rounded-full bg-charcoal px-8 py-3 text-sm text-ivory"
       >
         Browse more spas

@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
       { source: "/products/recommended", destination: "/shop", permanent: true },
       { source: "/products", destination: "/shop", permanent: true },
       { source: "/products/:slug", destination: "/shop/:slug", permanent: true },
+      { source: "/spas", destination: "/providers", permanent: true },
+      { source: "/spas/:slug", destination: "/providers/:slug", permanent: true },
     ];
   },
   images: {

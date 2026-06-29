@@ -31,7 +31,7 @@ export default function HomePage() {
               AI Concierge
             </Link>
             <Link
-              href="/spas"
+              href="/providers"
               className="rounded-full border border-charcoal px-8 py-3 text-sm font-medium tracking-wider text-charcoal"
             >
               Browse Providers
@@ -164,7 +164,7 @@ export default function HomePage() {
             <p className="text-xs uppercase tracking-widest text-gold">Highly rated</p>
             <h2 className="mt-2 font-serif text-3xl text-charcoal">Featured verified providers</h2>
           </div>
-          <Link href="/spas" className="text-sm text-gold hover:underline">
+          <Link href="/providers" className="text-sm text-gold hover:underline">
             View all →
           </Link>
         </div>

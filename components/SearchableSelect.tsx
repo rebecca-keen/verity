@@ -14,6 +14,7 @@ type SearchableSelectProps = {
   disabled?: boolean;
   stepLabel?: string;
   emptyMessage?: string;
+  compact?: boolean;
 };
 
 export function SearchableSelect({
@@ -26,6 +27,7 @@ export function SearchableSelect({
   disabled = false,
   stepLabel,
   emptyMessage = "No matches",
+  compact = false,
 }: SearchableSelectProps) {
   const autoId = useId();
   const id = idProp ?? autoId;
@@ -69,14 +71,22 @@ export function SearchableSelect({
 
   return (
     <div ref={containerRef} className="relative">
-      <div className="mb-2 flex items-baseline gap-2">
-        {stepLabel && (
-          <span className="text-xs font-medium uppercase tracking-widest text-gold">{stepLabel}</span>
-        )}
-        <label htmlFor={`${id}-trigger`} className="text-xs uppercase tracking-widest text-stone">
+      {!compact && (
+        <div className="mb-2 flex items-baseline gap-2">
+          {stepLabel && (
+            <span className="text-xs font-medium uppercase tracking-widest text-gold">{stepLabel}</span>
+          )}
+          <label htmlFor={`${id}-trigger`} className="text-xs uppercase tracking-widest text-stone">
+            {label}
+          </label>
+        </div>
+      )}
+
+      {compact && (
+        <label htmlFor={`${id}-trigger`} className="sr-only">
           {label}
         </label>
-      </div>
+      )}
 
       <button
         id={`${id}-trigger`}
@@ -85,10 +95,11 @@ export function SearchableSelect({
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-controls={listboxId}
+        aria-label={compact ? label : undefined}
         onClick={() => !disabled && setOpen((v) => !v)}
-        className={`flex min-h-[48px] w-full items-center justify-between rounded-xl border bg-white px-4 py-3 text-left text-sm text-charcoal transition focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold disabled:cursor-not-allowed disabled:bg-stone/5 disabled:text-stone/60 ${
-          open ? "border-gold ring-1 ring-gold" : "border-stone/20"
-        }`}
+        className={`flex w-full items-center justify-between rounded-lg border bg-white text-left text-sm text-charcoal transition focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold disabled:cursor-not-allowed disabled:bg-stone/5 disabled:text-stone/60 ${
+          compact ? "min-h-[40px] px-3 py-2" : "min-h-[48px] rounded-xl px-4 py-3"
+        } ${open ? "border-gold ring-1 ring-gold" : "border-stone/20"}`}
       >
         <span className={value ? "text-charcoal" : "text-stone"}>{selectedLabel || placeholder}</span>
         <svg

@@ -5,20 +5,40 @@ import { TrustBadge } from "./TrustBadge";
 import { TreatmentCategories } from "./TreatmentCategories";
 import { ProviderTypeBadge } from "./ProviderTypeBadge";
 
+function SpaCardThumbnail({ spa }: { spa: Spa }) {
+  if (spa.logo) {
+    return (
+      <div className="flex h-full items-center justify-center bg-cream p-6">
+        <RemoteImage
+          src={spa.logo}
+          alt={`${spa.name} logo`}
+          fill
+          className="object-contain p-4"
+          sizes="(max-width: 768px) 100vw, 33vw"
+        />
+      </div>
+    );
+  }
+
+  const initial = spa.name.trim().charAt(0).toUpperCase() || "?";
+
+  return (
+    <div className="flex h-full items-center justify-center bg-cream">
+      <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-stone/10 bg-white shadow-sm">
+        <span className="font-serif text-3xl text-charcoal/70">{initial}</span>
+      </div>
+    </div>
+  );
+}
+
 export function SpaCard({ spa }: { spa: Spa }) {
   return (
     <Link
-      href={`/spas/${spa.slug}`}
+      href={`/providers/${spa.slug}`}
       className="group luxury-border relative block overflow-hidden rounded-2xl bg-white transition hover:shadow-lg"
     >
       <div className="relative h-48 overflow-hidden">
-        <RemoteImage
-          src={spa.image}
-          alt={spa.name}
-          fill
-          className="object-cover transition duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, 33vw"
-        />
+        <SpaCardThumbnail spa={spa} />
       </div>
       <div className="p-5">
         <TrustBadge verified={spa.verified} />

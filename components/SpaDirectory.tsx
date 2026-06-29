@@ -33,6 +33,8 @@ const CATEGORY_FILTERS: { label: string; value: TreatmentCategory | "All" }[] = 
   { label: "Body", value: "body" },
 ];
 
+const PAGE_SIZE = 24;
+
 type SpaDirectoryProps = {
   initialState?: string;
   initialCity?: string;
@@ -50,7 +52,8 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<TreatmentCategory | "All">("All");
   const [providerType, setProviderType] = useState<ProviderType | "All">("All");
-  const [areaExpanded, setAreaExpanded] = useState(false);
+  const [moreFiltersOpen, setMoreFiltersOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const sorted = getSortedSpas();
 
@@ -75,6 +78,9 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
     return results;
   }, [citySpas, neighborhood, category, providerType, search]);
 
+  const visibleSpas = filtered.slice(0, visibleCount);
+  const hasMore = visibleCount < filtered.length;
+
   const resultsLocation = useMemo(
     () => getResultsLocationLabel(state, city, neighborhood),
     [state, city, neighborhood]
@@ -82,13 +88,17 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
 
   const filtersActive = hasActiveFilters(state, city, neighborhood, search, category, providerType);
   const locationFiltersActive = hasActiveLocationFilters(state, city, neighborhood, search);
+  const refineFiltersActive =
+    neighborhood !== "All" || category !== "All" || providerType !== "All";
 
   const stateOptions = useMemo(
-    () =>
-      US_STATES.filter((s) => s.code !== "All").map((s) => ({
+    () => [
+      { value: "All", label: "All states" },
+      ...US_STATES.filter((s) => s.code !== "All").map((s) => ({
         value: s.code,
         label: s.label,
       })),
+    ],
     []
   );
 
@@ -112,7 +122,6 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
     setState(nextState);
     setCity(nextCity);
     setNeighborhood("All");
-    setAreaExpanded(false);
   }, []);
 
   const resetFilters = useCallback(() => {
@@ -122,7 +131,7 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
     setSearch("");
     setCategory("All");
     setProviderType("All");
-    setAreaExpanded(false);
+    setMoreFiltersOpen(false);
   }, []);
 
   useEffect(() => {
@@ -138,6 +147,10 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
     const qs = params.toString();
     router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
   }, [state, city, pathname, router]);
+
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [state, city, neighborhood, search, category, providerType]);
 
   const handleSearchChange = (value: string) => {
     setSearch(value);
@@ -158,17 +171,17 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
     }
   };
 
-  const chipClass = (active: boolean) =>
-    `min-h-[44px] rounded-full px-4 py-2.5 text-sm transition ${
-      active
-        ? "bg-charcoal text-ivory"
-        : "border border-stone/20 text-stone hover:border-gold hover:text-charcoal"
-    }`;
-
   const smallChipClass = (active: boolean) =>
-    `min-h-[40px] rounded-full px-3.5 py-2 text-xs transition ${
+    `rounded-full px-3 py-1.5 text-xs transition ${
       active
         ? "bg-gold/20 text-charcoal border border-gold/40"
+        : "border border-stone/20 text-stone hover:border-gold"
+    }`;
+
+  const filterChipClass = (active: boolean) =>
+    `rounded-full px-3 py-1.5 text-xs transition ${
+      active
+        ? "bg-charcoal text-ivory"
         : "border border-stone/20 text-stone hover:border-gold"
     }`;
 
@@ -178,13 +191,9 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
 
   return (
     <>
-      <p className="mt-4 text-sm text-stone">
-        Sorted by rating and review count — no paid placement in listings yet.
-      </p>
-
-      <div className="sticky top-0 z-20 -mx-6 mt-8 border-b border-stone/10 bg-ivory/95 px-6 py-5 backdrop-blur-sm">
-        <div className="space-y-5">
-          <div>
+      <div className="sticky top-[65px] z-20 -mx-6 mt-4 border-b border-stone/10 bg-ivory/95 px-6 py-3 backdrop-blur-sm">
+        <div className="flex flex-col gap-2 md:flex-row md:items-center">
+          <div className="min-w-0 flex-1">
             <label htmlFor="location-search" className="sr-only">
               Search city or provider name
             </label>
@@ -195,181 +204,159 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
               onChange={(e) => handleSearchChange(e.target.value)}
               onKeyDown={handleSearchKeyDown}
               placeholder="Search city or provider name"
-              className="min-h-[48px] w-full rounded-xl border border-stone/20 bg-white px-4 py-3 text-base text-charcoal placeholder:text-stone/70 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
+              className="min-h-[40px] w-full rounded-lg border border-stone/20 bg-white px-3 py-2 text-sm text-charcoal placeholder:text-stone/70 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
             />
-            <p className="mt-1.5 text-xs text-stone">
-              Try &ldquo;Tampa&rdquo;, &ldquo;Clearwater&rdquo;, or a provider name
-            </p>
           </div>
 
-          <div>
-            <p className="mb-2 text-xs uppercase tracking-widest text-stone">Popular</p>
-            <div className="flex flex-wrap gap-2">
-              {POPULAR_STATE_CODES.map((code) => (
-                <button
-                  key={code}
-                  type="button"
-                  onClick={() => applyLocation(code, "All")}
-                  className={chipClass(state === code && city === "All")}
-                  aria-pressed={state === code && city === "All"}
-                >
-                  {getStateLabel(code)}
-                </button>
-              ))}
-              <span className="hidden self-center text-stone/40 sm:inline" aria-hidden>
-                ·
-              </span>
-              {POPULAR_CITY_SHORTCUTS.map((shortcut) => (
-                <button
-                  key={`${shortcut.state}-${shortcut.city}`}
-                  type="button"
-                  onClick={() => applyLocation(shortcut.state, shortcut.city)}
-                  className={smallChipClass(state === shortcut.state && city === shortcut.city)}
-                  aria-pressed={state === shortcut.state && city === shortcut.city}
-                >
-                  {shortcut.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <div>
+          <div className="flex gap-2 md:w-auto md:shrink-0">
+            <div className="min-w-0 flex-1 md:w-36">
               <SearchableSelect
                 id="state-filter"
-                stepLabel="Step 1"
                 label="State"
-                value={state === "All" ? "" : state}
-                onChange={(v) => applyLocation(v as USStateCode, "All")}
+                value={state}
+                onChange={(v) => applyLocation(v as USStateCode | "All", "All")}
                 options={stateOptions}
-                placeholder="Select a state"
+                placeholder="State"
+                compact
               />
-              <div className="mt-2 flex flex-wrap gap-2">
-                <button
-                  type="button"
-                  onClick={() => applyLocation("All", "All")}
-                  className={smallChipClass(state === "All")}
-                  aria-pressed={state === "All"}
-                >
-                  All states
-                </button>
-              </div>
             </div>
 
-            {state !== "All" && (
+            <div className="min-w-0 flex-1 md:w-40">
               <SearchableSelect
                 id="city-filter"
-                stepLabel="Step 2"
                 label="City"
-                value={city}
+                value={state === "All" ? "" : city}
                 onChange={(v) => {
                   setCity(v);
                   setNeighborhood("All");
-                  setAreaExpanded(false);
                 }}
                 options={cityOptions}
-                placeholder="Search cities…"
+                placeholder={state === "All" ? "Select state" : "City"}
+                disabled={state === "All"}
+                compact
               />
-            )}
-
-            {state !== "All" && city !== "All" && neighborhoods.length > 0 && (
-              <div>
-                <button
-                  type="button"
-                  onClick={() => setAreaExpanded((v) => !v)}
-                  className="flex min-h-[44px] w-full items-center justify-between rounded-xl border border-stone/20 bg-white px-4 py-3 text-left text-sm text-charcoal transition hover:border-gold"
-                  aria-expanded={areaExpanded}
-                  aria-controls="area-filter-panel"
-                >
-                  <span>
-                    <span className="mr-2 text-xs font-medium uppercase tracking-widest text-gold">
-                      Step 3
-                    </span>
-                    <span className="text-xs uppercase tracking-widest text-stone">
-                      Refine by area
-                    </span>
-                    {neighborhood !== "All" && (
-                      <span className="ml-2 normal-case text-charcoal">· {neighborhood}</span>
-                    )}
-                  </span>
-                  <svg
-                    className={`h-4 w-4 text-stone transition ${areaExpanded ? "rotate-180" : ""}`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-
-                {areaExpanded && (
-                  <div id="area-filter-panel" className="mt-2">
-                    <SearchableSelect
-                      id="neighborhood-filter"
-                      label="Neighborhood or area"
-                      value={neighborhood}
-                      onChange={setNeighborhood}
-                      options={neighborhoodOptions}
-                      placeholder="Search areas…"
-                    />
-                  </div>
-                )}
-              </div>
-            )}
+            </div>
           </div>
+        </div>
+
+        <div className="mt-2 flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setMoreFiltersOpen((v) => !v)}
+            className="inline-flex min-h-[32px] items-center gap-1.5 rounded-full border border-stone/20 px-3 py-1 text-xs text-charcoal transition hover:border-gold"
+            aria-expanded={moreFiltersOpen}
+            aria-controls="more-filters-panel"
+          >
+            More filters
+            {refineFiltersActive && (
+              <span className="rounded-full bg-gold/30 px-1.5 py-0.5 text-[10px] font-medium text-charcoal">
+                Active
+              </span>
+            )}
+            <svg
+              className={`h-3.5 w-3.5 text-stone transition ${moreFiltersOpen ? "rotate-180" : ""}`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
 
           {filtersActive && (
             <button
               type="button"
               onClick={resetFilters}
-              className="min-h-[44px] rounded-full border border-stone/30 px-5 py-2.5 text-sm text-stone transition hover:border-gold hover:text-charcoal"
+              className="min-h-[32px] rounded-full px-3 py-1 text-xs text-stone transition hover:text-charcoal"
             >
-              Reset filters
+              Reset
             </button>
           )}
         </div>
+
+        {moreFiltersOpen && (
+          <div id="more-filters-panel" className="mt-3 space-y-3 border-t border-stone/10 pt-3">
+            <div>
+              <p className="mb-1.5 text-xs text-stone">Popular locations</p>
+              <div className="flex flex-wrap gap-1.5">
+                {POPULAR_STATE_CODES.map((code) => (
+                  <button
+                    key={code}
+                    type="button"
+                    onClick={() => applyLocation(code, "All")}
+                    className={smallChipClass(state === code && city === "All")}
+                    aria-pressed={state === code && city === "All"}
+                  >
+                    {getStateLabel(code)}
+                  </button>
+                ))}
+                {POPULAR_CITY_SHORTCUTS.map((shortcut) => (
+                  <button
+                    key={`${shortcut.state}-${shortcut.city}`}
+                    type="button"
+                    onClick={() => applyLocation(shortcut.state, shortcut.city)}
+                    className={smallChipClass(state === shortcut.state && city === shortcut.city)}
+                    aria-pressed={state === shortcut.state && city === shortcut.city}
+                  >
+                    {shortcut.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {state !== "All" && city !== "All" && neighborhoods.length > 0 && (
+              <div className="max-w-xs">
+                <SearchableSelect
+                  id="neighborhood-filter"
+                  label="Area"
+                  value={neighborhood}
+                  onChange={setNeighborhood}
+                  options={neighborhoodOptions}
+                  placeholder="All areas"
+                  compact
+                />
+              </div>
+            )}
+
+            <div>
+              <p className="mb-1.5 text-xs text-stone">Provider type</p>
+              <div className="flex flex-wrap gap-1.5">
+                {PROVIDER_TYPE_FILTERS.map((f) => (
+                  <button
+                    key={f.value}
+                    type="button"
+                    onClick={() => setProviderType(f.value)}
+                    className={filterChipClass(providerType === f.value)}
+                    aria-pressed={providerType === f.value}
+                  >
+                    {f.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <p className="mb-1.5 text-xs text-stone">Treatment</p>
+              <div className="flex flex-wrap gap-1.5">
+                {CATEGORY_FILTERS.map((f) => (
+                  <button
+                    key={f.value}
+                    type="button"
+                    onClick={() => setCategory(f.value)}
+                    className={smallChipClass(category === f.value)}
+                    aria-pressed={category === f.value}
+                  >
+                    {f.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
-      <div className="mt-6 flex flex-wrap gap-2">
-        <p className="mb-1 w-full text-xs uppercase tracking-widest text-stone">Provider type</p>
-        {PROVIDER_TYPE_FILTERS.map((f) => (
-          <button
-            key={f.value}
-            type="button"
-            onClick={() => setProviderType(f.value)}
-            className={`min-h-[44px] rounded-full px-4 py-2.5 text-xs transition ${
-              providerType === f.value
-                ? "bg-charcoal text-ivory"
-                : "border border-stone/20 text-stone hover:border-gold"
-            }`}
-            aria-pressed={providerType === f.value}
-          >
-            {f.label}
-          </button>
-        ))}
-      </div>
-
-      <div className="mt-4 flex flex-wrap gap-2">
-        <p className="mb-1 w-full text-xs uppercase tracking-widest text-stone">Treatment</p>
-        {CATEGORY_FILTERS.map((f) => (
-          <button
-            key={f.value}
-            type="button"
-            onClick={() => setCategory(f.value)}
-            className={`min-h-[44px] rounded-full px-4 py-2.5 text-xs transition ${
-              category === f.value
-                ? "bg-gold/20 text-charcoal border border-gold/40"
-                : "border border-stone/20 text-stone hover:border-gold"
-            }`}
-            aria-pressed={category === f.value}
-          >
-            {f.label}
-          </button>
-        ))}
-      </div>
-
-      <p className="mt-6 text-base text-charcoal">
+      <p className="mt-4 text-sm text-charcoal">
         {state === "All" && city === "All" ? (
           <>Showing {filtered.length} verified providers</>
         ) : (
@@ -381,7 +368,7 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
       </p>
 
       {showEmptyState && (
-        <div className="mt-4 rounded-xl border border-stone/15 bg-white/60 p-5">
+        <div className="mt-3 rounded-xl border border-stone/15 bg-white/60 p-4">
           {showPlaceholderStateMessage || (state !== "All" && isPlaceholderState(state)) ? (
             <>
               <p className="text-sm text-charcoal">
@@ -420,11 +407,23 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
         </div>
       )}
 
-      <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((spa) => (
+      <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {visibleSpas.map((spa) => (
           <SpaCard key={spa.slug} spa={spa} />
         ))}
       </div>
+
+      {hasMore && (
+        <div className="mt-6 text-center">
+          <button
+            type="button"
+            onClick={() => setVisibleCount((n) => n + PAGE_SIZE)}
+            className="rounded-full border border-stone/30 px-6 py-2.5 text-sm text-charcoal transition hover:border-gold"
+          >
+            Load more ({filtered.length - visibleCount} remaining)
+          </button>
+        </div>
+      )}
     </>
   );
 }

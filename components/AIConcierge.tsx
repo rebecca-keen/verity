@@ -195,7 +195,7 @@ export function AIConcierge() {
                 {matches.map((m) => (
                   <Link
                     key={m.spaSlug}
-                    href={`/spas/${m.spaSlug}`}
+                    href={`/providers/${m.spaSlug}`}
                     className="rounded-full border border-gold/30 bg-white px-4 py-2 text-sm text-charcoal transition hover:bg-gold/10"
                   >
                     {m.spaName} →
