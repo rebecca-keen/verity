@@ -1,5 +1,5 @@
-import { products } from "./data";
 import type { Product } from "./types";
+import { getRecommendedShopProducts, getShopProducts } from "./shop-utils";
 
 export const RECOMMENDED_BRANDS = [
   "ALASTIN Skincare",
@@ -16,12 +16,15 @@ export const RECOMMENDED_BRANDS = [
 export type RecommendedBrand = (typeof RECOMMENDED_BRANDS)[number];
 
 export function getRecommendedProducts(): Product[] {
-  return products.filter((p) => p.recommended);
+  return getRecommendedShopProducts();
 }
 
 export function getRecommendedProductsByBrand(): { brand: RecommendedBrand; products: Product[] }[] {
+  const recommended = getRecommendedShopProducts();
   return RECOMMENDED_BRANDS.map((brand) => ({
     brand,
-    products: products.filter((p) => p.recommended && p.brand === brand),
+    products: recommended.filter((p) => p.brand === brand),
   })).filter((group) => group.products.length > 0);
 }
+
+export { getShopProducts };

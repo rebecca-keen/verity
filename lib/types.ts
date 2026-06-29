@@ -69,7 +69,7 @@ export interface Product {
   affiliatePartner?: string;
   origin?: ProductOrigin;
   premium?: boolean;
-  /** Curated for /products/recommended and luxury Amazon shop links */
+  /** Curated for /shop recommended section and luxury Amazon shop links */
   recommended?: boolean;
 }
 
@@ -126,6 +126,8 @@ export interface Spa {
   dataSources: string[];
   image: string;
   imageSource: string;
+  /** Business logo URL for listing cards (not used as hero). */
+  logo?: string;
   gallery: string[];
   productSlugs: string[];
   highlights: string[];

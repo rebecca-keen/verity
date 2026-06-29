@@ -6,6 +6,13 @@ import type { NextConfig } from "next";
  * next/image remotePatterns covers product photos from Amazon and authorized retailer CDNs.
  */
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      { source: "/products/recommended", destination: "/shop", permanent: true },
+      { source: "/products", destination: "/shop", permanent: true },
+      { source: "/products/:slug", destination: "/shop/:slug", permanent: true },
+    ];
+  },
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "m.media-amazon.com" },

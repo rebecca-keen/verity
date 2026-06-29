@@ -3,10 +3,12 @@ import { ContactEmail } from "@/components/ContactEmail";
 import { SpaCard } from "@/components/SpaCard";
 import { ProductCard } from "@/components/ProductCard";
 import { AIConcierge } from "@/components/AIConcierge";
-import { products, getFeaturedPremiumSpasFromData } from "@/lib/data";
+import { getFeaturedPremiumSpasFromData } from "@/lib/data";
+import { getRecommendedShopProducts } from "@/lib/shop-utils";
 
 export default function HomePage() {
   const featured = getFeaturedPremiumSpasFromData(8);
+  const shopProducts = getRecommendedShopProducts().slice(0, 6);
 
   return (
     <>
@@ -177,15 +179,15 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex items-end justify-between">
             <div>
-              <p className="text-xs uppercase tracking-widest text-gold">Products</p>
-              <h2 className="mt-2 font-serif text-3xl text-charcoal">Product reviews</h2>
+              <p className="text-xs uppercase tracking-widest text-gold">Shop</p>
+              <h2 className="mt-2 font-serif text-3xl text-charcoal">Recommended skincare</h2>
             </div>
-            <Link href="/products" className="text-sm text-gold hover:underline">
+            <Link href="/shop" className="text-sm text-gold hover:underline">
               View all →
             </Link>
           </div>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {products.slice(0, 6).map((p) => (
+            {shopProducts.map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}
           </div>

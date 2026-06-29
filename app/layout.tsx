@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ContactEmail } from "@/components/ContactEmail";
 import { Header } from "@/components/Header";
 import "./globals.css";
@@ -25,12 +26,15 @@ export default function RootLayout({
             Aesthetics clinics, med spas & dermatology · Nationwide · Verified providers
           </p>
           <p className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs">
-            <a href="/for-spas" className="text-gold hover:underline">
+            <Link href="/shop" className="text-gold hover:underline">
+              Shop
+            </Link>
+            <Link href="/for-spas" className="text-gold hover:underline">
               For Providers
-            </a>
-            <a href="/premium" className="text-gold hover:underline">
+            </Link>
+            <Link href="/premium" className="text-gold hover:underline">
               Premium
-            </a>
+            </Link>
           </p>
           <p className="mt-4 text-sm text-stone">
             Questions? <ContactEmail />
