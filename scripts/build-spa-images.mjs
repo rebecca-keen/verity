@@ -56,6 +56,26 @@ const MAPPINGS = [
 
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36";
 
+function wixDisplayDimensions(url) {
+  const m = url.match(/\/(?:fill|fit)\/w_(\d+),h_(\d+)/i);
+  if (m) return { w: Number(m[1]), h: Number(m[2]) };
+  return null;
+}
+
+function isLikelyLogo(url) {
+  if (!url) return false;
+  if (/(?:^|[/_-])logo(?:[._-]|$)|[-_]logo[-_.]|logo[-_]?(?:white|dark|mark|icon|full)/i.test(url)) return true;
+  if (/\.svg(?:\?|$)/i.test(url)) return true;
+  const dims = wixDisplayDimensions(url);
+  if (dims) {
+    const { w, h } = dims;
+    if (w <= 400 && h <= 220 && w / Math.max(h, 1) >= 1.2) return true;
+    if (w <= 128 && h <= 128) return true;
+  }
+  if (/[-_](?:24x24|32x32|48x48|64x64|96x96|128x128)(?:\.|[-_]|,)/i.test(url)) return true;
+  return false;
+}
+
 function extractOgImage(html, base) {
   const patterns = [
     /property=["']og:image(?::secure_url)?["']\s+content=["']([^"']+)["']/i,
@@ -82,7 +102,7 @@ function extractPageImages(html, base) {
   )) {
     try {
       const u = new URL(m[1], base).href;
-      if (!skip.test(u)) imgs.add(u);
+      if (!skip.test(u) && !isLikelyLogo(u)) imgs.add(u);
     } catch {}
   }
   for (const m of html.matchAll(
@@ -90,7 +110,7 @@ function extractPageImages(html, base) {
   )) {
     try {
       const u = new URL(m[1], base).href;
-      if (!skip.test(u)) imgs.add(u);
+      if (!skip.test(u) && !isLikelyLogo(u)) imgs.add(u);
     } catch {}
   }
   return [...imgs];
@@ -125,7 +145,7 @@ async function fetchSiteImages(url) {
   const candidates = [];
   if (og) candidates.push({ url: og, type: "og" });
   for (const u of page) {
-    if (!candidates.some((c) => c.url === u)) candidates.push({ url: u, type: "page" });
+    if (!isLikelyLogo(u) && !candidates.some((c) => c.url === u)) candidates.push({ url: u, type: "page" });
   }
   const valid = [];
   for (const c of candidates) {
@@ -151,9 +171,9 @@ async function main() {
     }
     const site = siteCache[m.url];
     const heroEntry =
-      site.valid.find((v) => v.type === "og") ||
-      site.valid.find((v) => /masthead|hero|header|og|banner|desktop/i.test(v.url)) ||
-      site.valid[0];
+      site.valid.find((v) => v.type === "og" && !isLikelyLogo(v.url)) ||
+      site.valid.find((v) => !isLikelyLogo(v.url) && /masthead|hero|header|og|banner|desktop|photo|dsc|treatment|service/i.test(v.url)) ||
+      site.valid.find((v) => !isLikelyLogo(v.url));
 
     const hero = heroEntry?.url || null;
     const heroType = heroEntry?.type || "none";

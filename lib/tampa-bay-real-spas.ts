@@ -23,7 +23,7 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     yearsOpen: 20,
     treatments: ["botox", "fillers", "facial", "laser", "microneedling"],
     priceRange: "$$$",
-    instagram: "glowstpetemedspa",
+    instagram: "glow_stpete",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
     highlights: ["Google 5★ (988 reviews)", "Verified Florida med spa", "St. Petersburg location"],
     phone: "(727) 212-6989",
@@ -1467,13 +1467,15 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
   { hero: string; gallery: string[]; source: string }
 > = {
   "glow-st-pete-med-spa-st-petersburg": {
-    hero: "https://static.wixstatic.com/media/bb10b6_9193afff9f0c472884429bc1e8272f5a%7Emv2.webp/v1/fit/w_2500,h_1330,al_c/bb10b6_9193afff9f0c472884429bc1e8272f5a%7Emv2.webp",
+    hero: "https://static.wixstatic.com/media/3bc63e_72bcfc9ce4d94e56a4235ec757153cc2~mv2.jpg/v1/fit/w_2500,h_1330,al_c/3bc63e_72bcfc9ce4d94e56a4235ec757153cc2~mv2.jpg",
     gallery: [
-      "https://static.wixstatic.com/media/bb10b6_9193afff9f0c472884429bc1e8272f5a%7Emv2.webp/v1/fit/w_2500,h_1330,al_c/bb10b6_9193afff9f0c472884429bc1e8272f5a%7Emv2.webp",
-      "https://static.wixstatic.com/media/bb10b6_9193afff9f0c472884429bc1e8272f5a%7Emv2.webp/v1/fit/w_2500,h_1330,al_c/bb10b6_9193afff9f0c472884429bc1e8272f5a%7Emv2.webp",
-      "https://static.wixstatic.com/media/bb10b6_9193afff9f0c472884429bc1e8272f5a%7Emv2.webp/v1/fit/w_2500,h_1330,al_c/bb10b6_9193afff9f0c472884429bc1e8272f5a%7Emv2.webp",
+      "https://static.wixstatic.com/media/3bc63e_52dab41920bf4db3951e600940ba3c7a~mv2.jpg/v1/fit/w_2500,h_1330,al_c/DSC08669.jpg",
+      "https://static.wixstatic.com/media/3bc63e_625c02647cea4280a7e6a09121de52f2~mv2.jpg/v1/fit/w_2500,h_1330,al_c/3bc63e_625c02647cea4280a7e6a09121de52f2~mv2.jpg",
+      "https://static.wixstatic.com/media/3bc63e_69675c9b9e874cc6adbedbb3074f0e5b~mv2.jpg/v1/fit/w_2500,h_1330,al_c/3bc63e_69675c9b9e874cc6adbedbb3074f0e5b~mv2.jpg",
+      "https://static.wixstatic.com/media/3bc63e_197b1cdfc37c4e7e805e71342a6007ed~mv2.jpg/v1/fit/w_2500,h_1330,al_c/3bc63e_197b1cdfc37c4e7e805e71342a6007ed~mv2.jpg",
+      "https://static.wixstatic.com/media/3bc63e_b29adf0b23e44346acdfd3de29a243e6~mv2.jpg/v1/fit/w_2500,h_1330,al_c/3bc63e_b29adf0b23e44346acdfd3de29a243e6~mv2.jpg",
     ],
-    source: "Glow St. Pete Med Spa official website — homepage",
+    source: "Glow St Pete Med Spa official website — services",
   },
       "lan-aesthetics-tampa": {
     hero: "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/b981ddde-7c30-4a12-a815-8dd3b46b22e9/Kristin_Ibison_Photograhy-50.jpg",

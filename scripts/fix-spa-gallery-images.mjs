@@ -17,6 +17,7 @@ const LIB = path.join(ROOT, "lib");
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 VerityImageFix/1.0";
 const AUDIT = process.argv.includes("--audit");
 const FIX = process.argv.includes("--fix");
+const ALL = process.argv.includes("--all");
 const SLUG_FILTER = (() => {
   const i = process.argv.indexOf("--slug");
   return i >= 0 ? process.argv[i + 1] : null;
@@ -54,6 +55,39 @@ const CDN_HOSTS = new Set([
   "content.app-sources.com",
   "i.ytimg.com",
 ]);
+
+/** URL fragments that indicate employee/team headshots — reject these */
+const HEADSHOT_URL_RE =
+  /(?:^|[/_-])(?:team|staff|provider|doctor|physician|nurse|injector|about(?:-us)?|headshot|portrait|bio|employee|profile|meet-the|our-team|faculty|practitioner|expert|cutout|head-shot)(?:[/_-]|$)|(?:team|staff|provider|doctor|headshot|portrait|bio|cutout|profile)[_-]|[-_]cutout[-_.]|(?:^|[/_-])lr[-_]?(?:accent|image)[-_]?(?:cutout|medium)/i;
+
+/** Alt text patterns that indicate employee/team photos */
+const HEADSHOT_ALT_RE =
+  /\b(?:meet the team|our team|staff photo|team photo|headshot|portrait|provider photo|doctor|physician|nurse|injector|employee|our experts|exceptional experts|faculty|practitioner|profile photo|team member)\b/i;
+
+/** URL fragments that indicate treatment/service/facility imagery — prefer these */
+const PREFER_URL_RE =
+  /(?:treatment|service|laser|botox|filler|inject|facial|hydra|peel|microneed|gallery|testimonial|before-after|before_after|interior|lobby|spa|room|wellness|iv-therapy|iv therapy|exterior|location|device|procedure|result|rejuvenation|contour|sculpt)/i;
+
+/** URL/filename fragments that indicate brand logos — reject as hero */
+const LOGO_URL_RE =
+  /(?:^|[/_-])logo(?:[._-]|$)|[-_]logo[-_.]|logo[-_]?(?:white|dark|mark|icon|full|primary|secondary)|(?:^|[/_-])brand(?:[._-]|$)/i;
+
+const SITE_PATHS = [
+  "",
+  "/services",
+  "/treatments",
+  "/menu",
+  "/gallery",
+  "/testimonials",
+  "/results",
+  "/aesthetic-services",
+  "/med-spa-services",
+  "/injectablesandthreads",
+  "/lasersandmicroneedling",
+  "/facialservices",
+  "/skincare",
+  "/packages",
+];
 
 const SEED_FILES = [
   "nationwide-real-spas.ts",
@@ -109,6 +143,47 @@ function hashSlug(slug) {
   return h;
 }
 
+function mediaKey(url) {
+  if (!url) return "";
+  const wix = url.match(/media\/([^/?%]+)/i);
+  if (wix) return wix[1].replace(/%7E/gi, "~").split("~")[0];
+  const sq = url.match(/content\/v1\/[^/]+\/([a-f0-9-]+)/i);
+  if (sq) return sq[1];
+  try {
+    const u = new URL(url);
+    return `${u.hostname}${u.pathname}`.toLowerCase();
+  } catch {
+    return url.toLowerCase();
+  }
+}
+
+function isPlaceholderWebsite(website) {
+  if (!website?.trim()) return true;
+  return /slug\.com|example\.com|placeholder|yourwebsite|domain\.com|pending\.com/i.test(website);
+}
+
+function isValidWebsite(website) {
+  if (isPlaceholderWebsite(website)) return false;
+  try {
+    const u = new URL(website);
+    return u.protocol === "http:" || u.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+function uniqueGalleryUrls(hero, gallery) {
+  const seen = new Set();
+  const out = [];
+  for (const url of gallery || []) {
+    const key = mediaKey(url);
+    if (!key || key === mediaKey(hero) || seen.has(key)) continue;
+    seen.add(key);
+    out.push(url);
+  }
+  return out;
+}
+
 function fallbackUnsplashForSlug(slug, offset = 0) {
   const idx = (hashSlug(slug) + offset) % MEDSPA_UNSPLASH.length;
   return MEDSPA_UNSPLASH[idx];
@@ -117,10 +192,10 @@ function fallbackUnsplashForSlug(slug, offset = 0) {
 function parseSpasFromFile(filePath) {
   const content = fs.readFileSync(filePath, "utf8");
   const spas = [];
-  const re = /slug:\s*"([^"]+)"[\s\S]*?website:\s*"([^"]+)"/g;
+  const re = /slug:\s*"([^"]+)"[\s\S]*?name:\s*"([^"]+)"[\s\S]*?city:\s*"([^"]+)"[\s\S]*?website:\s*"([^"]+)"/g;
   let m;
   while ((m = re.exec(content)) !== null) {
-    spas.push({ slug: m[1], website: m[2], file: path.basename(filePath) });
+    spas.push({ slug: m[1], name: m[2], city: m[3], website: m[4], file: path.basename(filePath) });
   }
   return spas;
 }
@@ -206,6 +281,58 @@ function urlAllowedForWebsite(url, website) {
   return false;
 }
 
+function isSquareThumbUrl(url) {
+  return /[-_](?:150x150|180x180|192x192|240x240|270x270|300x300|320x320|400x400|500x500)(?:\.|[-_])/i.test(url);
+}
+
+function wixDisplayDimensions(url) {
+  const m = url.match(/\/(?:fill|fit)\/w_(\d+),h_(\d+)/i);
+  if (m) return { w: Number(m[1]), h: Number(m[2]) };
+  return null;
+}
+
+function isLikelyLogo(url, alt = "") {
+  if (!url) return false;
+  const combined = `${url} ${alt}`;
+  if (LOGO_URL_RE.test(combined)) return true;
+  if (/\.svg(?:\?|$)/i.test(url)) return true;
+  const dims = wixDisplayDimensions(url);
+  if (dims) {
+    const { w, h } = dims;
+    if (w <= 400 && h <= 220 && w / Math.max(h, 1) >= 1.2) return true;
+    if (w <= 128 && h <= 128) return true;
+  }
+  if (/[-_](?:24x24|32x32|48x48|64x64|96x96|128x128)(?:\.|[-_]|,)/i.test(url)) return true;
+  return false;
+}
+
+function isLikelyHeadshot(url, alt = "") {
+  if (!url) return false;
+  const combined = `${url} ${alt}`;
+  if (PREFER_URL_RE.test(url) && /(?:exterior|interior|lobby|location|inject|botox|facial|hydra|laser|therapy|treatment|service|wellness|iv[-_]|peel|microneed|contour|sculpt|device|procedure)/i.test(url)) {
+    return false;
+  }
+  if (HEADSHOT_URL_RE.test(url) || HEADSHOT_ALT_RE.test(alt)) return true;
+  if (isSquareThumbUrl(url) && /(?:portrait|head|face|team|staff|provider|doctor|bio|profile|cutout)/i.test(combined)) {
+    return true;
+  }
+  if (/Top%20provider|top-provider|top_provider/i.test(url)) return true;
+  if (/[-_]cutout[-_.]|3S1A\d{4}/i.test(url)) return true;
+  return false;
+}
+
+function imageScore(url, alt = "") {
+  let score = 0;
+  if (PREFER_URL_RE.test(url)) score += 10;
+  if (PREFER_URL_RE.test(alt)) score += 5;
+  if (/hero|masthead|banner|header|exterior|interior|lobby|location/i.test(url)) score += 3;
+  if (isLikelyHeadshot(url, alt)) score -= 100;
+  if (isLikelyLogo(url, alt)) score -= 100;
+  if (isSquareThumbUrl(url)) score -= 5;
+  if (/logo|icon|favicon|badge|avatar/i.test(url)) score -= 50;
+  return score;
+}
+
 function imageIssues(slug, images, website) {
   const issues = [];
   if (!images) {
@@ -220,12 +347,16 @@ function imageIssues(slug, images, website) {
     if (!url.includes("unsplash") && website && !urlAllowedForWebsite(url, website)) {
       issues.push(`cross-domain:${hostnameFromUrl(url)}`);
     }
+    if (isLikelyHeadshot(url)) issues.push("headshot-image");
+    if (url === images.hero && isLikelyLogo(url)) issues.push("logo-hero");
   }
   if (images.gallery.some((u) => u.includes("unsplash"))) issues.push("unsplash-in-gallery");
   if (website && (images.hero?.includes("unsplash") || images.gallery.some((u) => u.includes("unsplash")))) {
     issues.push("unsplash-with-website");
   }
   if (website && images.source?.toLowerCase().includes("unsplash")) issues.push("unsplash-source-label");
+  const uniqueGallery = uniqueGalleryUrls(images.hero, images.gallery);
+  if (website && uniqueGallery.length < 2) issues.push("weak-gallery");
   return [...new Set(issues)];
 }
 
@@ -269,33 +400,48 @@ function extractOgImage(html, base) {
 }
 
 function extractPageImages(html, base) {
-  const imgs = new Set();
+  const imgs = new Map();
   const skip = /logo|icon|favicon|avatar|badge|star|google-play|apple-store|\.svg|blank\.png/i;
+
+  function add(url, alt = "") {
+    if (!url || skip.test(url) || isLikelyLogo(url, alt)) return;
+    if (isLikelyHeadshot(url, alt)) return;
+    const prev = imgs.get(url);
+    if (!prev || alt.length > prev.alt.length) imgs.set(url, { url, alt: alt || prev?.alt || "" });
+  }
+
+  for (const m of html.matchAll(
+    /<img[^>]+(?:src|data-src|data-lazy-src)=["']([^"']+\.(?:jpg|jpeg|png|webp)(?:\?[^"']*)?)["'][^>]*>/gi
+  )) {
+    const tag = m[0];
+    const altM = tag.match(/\balt=["']([^"']*)["']/i);
+    try {
+      add(new URL(m[1], base).href, altM?.[1] || "");
+    } catch {}
+  }
+
   for (const m of html.matchAll(
     /(?:src|data-src|data-lazy-src|data-bg|content)=["']?(https?:\/\/[^"'\s)]+\.(?:jpg|jpeg|png|webp)(?:\?[^"'\s)]*)?)/gi
   )) {
     try {
-      const u = new URL(m[1].replace(/\);$/, ""), base).href;
-      if (!skip.test(u)) imgs.add(u);
+      add(new URL(m[1].replace(/\);$/, ""), base).href);
     } catch {}
   }
   for (const m of html.matchAll(
     /(?:src|data-src|data-lazy-src)=["']([^"']+\.(?:jpg|jpeg|png|webp)(?:\?[^"']*)?)["']/gi
   )) {
     try {
-      const u = new URL(m[1], base).href;
-      if (!skip.test(u)) imgs.add(u);
+      add(new URL(m[1], base).href);
     } catch {}
   }
-  return [...imgs];
+  return [...imgs.values()];
 }
 
 async function fetchSiteImages(website) {
-  const paths = ["", "/gallery", "/about", "/about-us", "/services"];
   const candidates = [];
   const seenHtml = new Set();
 
-  for (const p of paths) {
+  for (const p of SITE_PATHS) {
     const url = new URL(p, website).href;
     try {
       const res = await fetch(url, { redirect: "follow", headers: { "User-Agent": UA } });
@@ -304,15 +450,23 @@ async function fetchSiteImages(website) {
       if (seenHtml.has(html.slice(0, 500))) continue;
       seenHtml.add(html.slice(0, 500));
       const og = extractOgImage(html, url);
-      if (og) candidates.push({ url: og, type: "og" });
-      for (const u of extractPageImages(html, url)) {
-        if (!candidates.some((c) => c.url === u)) candidates.push({ url: u, type: "page" });
+      if (og && !isLikelyHeadshot(og)) candidates.push({ url: og, alt: "", type: "og", score: imageScore(og) });
+      for (const img of extractPageImages(html, url)) {
+        if (!candidates.some((c) => c.url === img.url)) {
+          candidates.push({
+            url: img.url,
+            alt: img.alt,
+            type: "page",
+            score: imageScore(img.url, img.alt),
+          });
+        }
       }
     } catch {}
   }
 
   const valid = [];
   for (const c of candidates) {
+    if (isLikelyHeadshot(c.url, c.alt) || isLikelyLogo(c.url, c.alt)) continue;
     if (!urlAllowedForWebsite(c.url, website)) continue;
     const check = await checkUrl(c.url);
     if (check.ok) valid.push(c);
@@ -321,17 +475,60 @@ async function fetchSiteImages(website) {
 }
 
 function pickImagesFromSite(valid, website) {
-  const domainFiltered = valid.filter((v) => urlAllowedForWebsite(v.url, website));
+  const domainFiltered = valid
+    .filter(
+      (v) =>
+        urlAllowedForWebsite(v.url, website) &&
+        !isLikelyHeadshot(v.url, v.alt) &&
+        !isLikelyLogo(v.url, v.alt)
+    )
+    .sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+
   const heroEntry =
-    domainFiltered.find((v) => v.type === "og") ||
-    domainFiltered.find((v) => /hero|masthead|header|banner|og|desktop|scaled/i.test(v.url)) ||
+    domainFiltered.find(
+      (v) =>
+        PREFER_URL_RE.test(v.url) &&
+        /hero|exterior|interior|lobby|location|treatment|service|photo|dsc/i.test(v.url)
+    ) ||
+    domainFiltered.find((v) => PREFER_URL_RE.test(v.url)) ||
+    domainFiltered.find(
+      (v) => /hero|masthead|header|banner|exterior|interior|lobby|location|desktop|scaled|photo|dsc/i.test(v.url)
+    ) ||
     domainFiltered[0];
   const hero = heroEntry?.url;
-  const gallery = domainFiltered
-    .filter((v) => v.url !== hero)
-    .slice(0, 4)
-    .map((v) => v.url);
+  const heroKey = mediaKey(hero);
+  const seen = new Set(heroKey ? [heroKey] : []);
+  const gallery = [];
+  for (const v of domainFiltered) {
+    const key = mediaKey(v.url);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    gallery.push(v.url);
+    if (gallery.length >= 5) break;
+  }
   return { hero, gallery };
+}
+
+async function searchAlternateWebsite(name, city) {
+  const q = encodeURIComponent(`${name} ${city} med spa official site`);
+  try {
+    const res = await fetch(`https://html.duckduckgo.com/html/?q=${q}`, {
+      headers: { "User-Agent": UA },
+    });
+    if (!res.ok) return null;
+    const html = await res.text();
+    for (const m of html.matchAll(/uddg=([^&"]+)/g)) {
+      try {
+        const url = decodeURIComponent(m[1]);
+        if (!isValidWebsite(url)) continue;
+        if (/facebook|instagram|yelp|google\.|healthgrades|realself|vitals|zocdoc|linkedin|twitter|tiktok|youtube|mapquest|yellowpages|bbb\.org/i.test(url)) {
+          continue;
+        }
+        return url;
+      } catch {}
+    }
+  } catch {}
+  return null;
 }
 
 function buildFallbackImages(slug, name) {
@@ -349,7 +546,7 @@ function buildFallbackImages(slug, name) {
 }
 
 function businessSource(spa) {
-  return `${spa?.name || "Provider"} official website`;
+  return `${spa?.name || "Provider"} official website — services`;
 }
 
 function isStockImageUrl(url) {
@@ -361,57 +558,69 @@ function stripUnsplash(urls) {
 }
 
 async function resolveImages(slug, spa, current) {
-  const website = spa?.website;
+  let website = spa?.website;
   const source = businessSource(spa);
 
-  if (website) {
-    const siteImages = await fetchSiteImages(website);
-    if (siteImages?.length) {
-      const picked = pickImagesFromSite(siteImages, website);
-      if (picked.hero) {
-        const gallery =
-          picked.gallery.length >= 2
-            ? picked.gallery.slice(0, 4)
-            : [
-                ...picked.gallery,
-                ...siteImages
-                  .map((v) => v.url)
-                  .filter((u) => u !== picked.hero && !picked.gallery.includes(u))
-                  .slice(0, 4 - picked.gallery.length),
-              ];
-        return {
-          hero: picked.hero,
-          gallery: gallery.length ? gallery.slice(0, 4) : [picked.hero],
-          source,
-        };
-      }
-    }
-
-    if (current?.hero && !current.hero.includes("unsplash")) {
-      const check = await checkUrl(current.hero);
-      if (check.ok && urlAllowedForWebsite(current.hero, website)) {
-        const gallery = [];
-        for (const g of stripUnsplash(current.gallery || [])) {
-          const gc = await checkUrl(g);
-          if (gc.ok && urlAllowedForWebsite(g, website)) gallery.push(g);
-        }
-        const unique = [...new Set(gallery)].slice(0, 4);
-        return {
-          hero: current.hero,
-          gallery: unique.length >= 2 ? unique : unique.length ? unique : [current.hero],
-          source: source.replace(/undefined official website/, businessSource(spa)),
-        };
-      }
-    }
-
-    return {
-      hero: current?.hero && !current.hero.includes("unsplash") ? current.hero : "",
-      gallery: [],
-      source,
-    };
+  if (!isValidWebsite(website)) {
+    return buildFallbackImages(slug, spa?.name || slug);
   }
 
-  return buildFallbackImages(slug, spa?.name || slug);
+  let siteImages = await fetchSiteImages(website);
+  if (!siteImages?.length && spa?.name && spa?.city) {
+    const alt = await searchAlternateWebsite(spa.name, spa.city);
+    if (alt && alt !== website) {
+      website = alt;
+      siteImages = await fetchSiteImages(website);
+    }
+  }
+
+  if (siteImages?.length) {
+    const picked = pickImagesFromSite(siteImages, website);
+    if (picked.hero) {
+      let gallery = uniqueGalleryUrls(picked.hero, picked.gallery);
+      if (gallery.length < 2) {
+        for (const v of siteImages) {
+          const key = mediaKey(v.url);
+          if (!key || key === mediaKey(picked.hero) || gallery.some((g) => mediaKey(g) === key)) continue;
+          gallery.push(v.url);
+          if (gallery.length >= 4) break;
+        }
+      }
+      gallery = uniqueGalleryUrls(picked.hero, gallery).slice(0, 4);
+      return {
+        hero: picked.hero,
+        gallery: gallery.length >= 2 ? gallery : gallery.length ? gallery : [],
+        source,
+      };
+    }
+  }
+
+  if (current?.hero && !isStockImageUrl(current.hero)) {
+    const check = await checkUrl(current.hero);
+    if (
+      check.ok &&
+      urlAllowedForWebsite(current.hero, website) &&
+      !isLikelyHeadshot(current.hero) &&
+      !isLikelyLogo(current.hero)
+    ) {
+      const gallery = [];
+      for (const g of stripUnsplash(current.gallery || [])) {
+        if (isLikelyHeadshot(g)) continue;
+        const gc = await checkUrl(g);
+        if (gc.ok && urlAllowedForWebsite(g, website)) gallery.push(g);
+      }
+      const unique = uniqueGalleryUrls(current.hero, gallery).slice(0, 4);
+      if (unique.length >= 2) {
+        return { hero: current.hero, gallery: unique, source };
+      }
+    }
+  }
+
+  return {
+    hero: current?.hero && !isStockImageUrl(current.hero) ? current.hero : "",
+    gallery: [],
+    source,
+  };
 }
 
 function formatImageEntry(slug, entry) {
@@ -445,6 +654,79 @@ function appendNationwideImageEntry(slug, entry) {
   }
   fs.writeFileSync(filePath, content);
   return true;
+}
+
+function appendSpaImagesEntry(slug, entry) {
+  const filePath = path.join(LIB, "spa-images.ts");
+  let content = fs.readFileSync(filePath, "utf8");
+  const blockStart = content.indexOf("export const SPA_IMAGE_SETS");
+  if (blockStart < 0) return false;
+  const closeIdx = content.indexOf("};", content.indexOf("> = {", blockStart));
+  if (closeIdx < 0) return false;
+  const formatted = formatImageEntry(slug, entry);
+  const slugRe = new RegExp(
+    `"${slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}":\\s*\\{[\\s\\S]*?\\},?\\n`,
+    "m"
+  );
+  if (slugRe.test(content)) {
+    content = content.replace(slugRe, `${formatted},\n`);
+  } else {
+    content = content.slice(0, closeIdx) + formatted + ",\n" + content.slice(closeIdx);
+  }
+  fs.writeFileSync(filePath, content);
+  return true;
+}
+
+function appendWebsiteFetchedEntry(slug, entry) {
+  const filePath = path.join(LIB, "website-fetched-spa-images.ts");
+  let content = fs.readFileSync(filePath, "utf8");
+  const formatted = formatImageEntry(slug, entry);
+  const slugRe = new RegExp(
+    `"${slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}":\\s*\\{[\\s\\S]*?\\},?\\n`,
+    "m"
+  );
+  if (slugRe.test(content)) {
+    content = content.replace(slugRe, `${formatted},\n`);
+  } else if (content.includes("> = {};")) {
+    content = content.replace("> = {};", `> = {\n${formatted},\n};`);
+  } else {
+    const closeIdx = content.lastIndexOf("};");
+    content = content.slice(0, closeIdx) + formatted + ",\n" + content.slice(closeIdx);
+  }
+  fs.writeFileSync(filePath, content);
+  return true;
+}
+
+function removeFloridaSeedImageId(filePath, slug) {
+  let content = fs.readFileSync(filePath, "utf8");
+  const exportName = filePath.includes("additional") ? "ADDITIONAL_FLORIDA_SPA_IMAGE_IDS" : "FLORIDA_SPA_IMAGE_IDS";
+  if (!content.includes(exportName)) return false;
+  const slugRe = new RegExp(
+    `\\s*"${slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}":\\s*\\{[^}]+\\},?\\n`,
+    "m"
+  );
+  if (!slugRe.test(content)) return false;
+  content = content.replace(slugRe, "\n");
+  fs.writeFileSync(filePath, content);
+  return true;
+}
+
+function writeImageEntry(slug, entry) {
+  const nationwidePath = path.join(LIB, "nationwide-real-spas.ts");
+  const isNationwide = parseSpasFromFile(nationwidePath).some((s) => s.slug === slug);
+  if (isNationwide && replaceUnsplashInFile(nationwidePath, slug, entry)) return true;
+  if (isNationwide && appendNationwideImageEntry(slug, entry)) return true;
+  if (replaceUnsplashInFile(path.join(LIB, "florida-real-spas.ts"), slug, entry)) return true;
+  if (replaceUnsplashInFile(path.join(LIB, "tampa-bay-real-spas.ts"), slug, entry)) return true;
+  if (replaceUnsplashInFile(path.join(LIB, "miami-metro-real-spas.ts"), slug, entry)) return true;
+  if (replaceUnsplashInFile(path.join(LIB, "florida-coastal-real-spas.ts"), slug, entry)) return true;
+  if (replaceUnsplashInFile(path.join(LIB, "spa-images.ts"), slug, entry)) return true;
+  if (appendWebsiteFetchedEntry(slug, entry)) {
+    removeFloridaSeedImageId(path.join(LIB, "florida-spa-seeds.ts"), slug);
+    removeFloridaSeedImageId(path.join(LIB, "additional-florida-spa-seeds.ts"), slug);
+    return true;
+  }
+  return false;
 }
 
 function replaceUnsplashInFile(filePath, slug, newImages) {
@@ -527,7 +809,7 @@ async function pool(items, fn, n = 8) {
 
 async function main() {
   if (!AUDIT && !FIX) {
-    console.error("Usage: node scripts/fix-spa-gallery-images.mjs --audit|--fix [--slug name] [--nationwide]");
+    console.error("Usage: node scripts/fix-spa-gallery-images.mjs --audit|--fix [--all] [--slug name] [--nationwide]");
     process.exit(1);
   }
 
@@ -535,6 +817,9 @@ async function main() {
   const imageSets = loadAllImageSets();
   let slugs = [...spas.keys()];
   if (SLUG_FILTER) slugs = slugs.filter((s) => s === SLUG_FILTER);
+  if (ALL && !SLUG_FILTER) {
+    slugs = slugs.filter((s) => isValidWebsite(spas.get(s)?.website));
+  }
   if (process.argv.includes("--nationwide")) {
     const nw = parseSpasFromFile(path.join(LIB, "nationwide-real-spas.ts")).map((s) => s.slug);
     slugs = SLUG_FILTER ? slugs : [...new Set([...slugs.filter((s) => nw.includes(s)), ...Object.keys(imageSets)])];
@@ -542,77 +827,97 @@ async function main() {
   if (process.argv.includes("--images-only")) {
     slugs = SLUG_FILTER ? slugs.filter((s) => imageSets[s]) : Object.keys(imageSets);
   }
+  if (process.argv.includes("--headshots")) {
+    slugs = slugs.filter((s) => {
+      const imgs = imageSets[s];
+      if (!imgs) return false;
+      return [imgs.hero, ...imgs.gallery].some((u) => isLikelyHeadshot(u));
+    });
+  }
+  if (process.argv.includes("--phoenix-az")) {
+    slugs = slugs.filter((s) => {
+      const spa = spas.get(s);
+      const blob = `${spa?.city || ""} ${spa?.neighborhood || ""} ${s}`;
+      return /phoenix|scottsdale|arcadia|paradise valley|tempe|mesa|chandler|glendale|tucson|-az\b/i.test(blob);
+    });
+  }
+  if (process.argv.includes("--sample") && !SLUG_FILTER) {
+    const n = Number(process.argv[process.argv.indexOf("--sample") + 1]) || 20;
+    const pool = slugs.filter((s) => isValidWebsite(spas.get(s)?.website));
+    slugs = pool.sort(() => Math.random() - 0.5).slice(0, n);
+  }
 
   const auditResults = [];
 
   await pool(
     slugs.map((slug) => ({ slug, spa: spas.get(slug), images: imageSets[slug] })),
     async ({ slug, spa, images }) => {
-      const issues = imageIssues(slug, images, spa?.website);
+      const website = spa?.website;
+      const issues = imageIssues(slug, images, website);
       let broken = [];
       if (AUDIT && images) {
         for (const url of [images.hero, ...images.gallery]) {
           const c = await checkUrl(url);
           if (!c.ok) broken.push({ url, status: c.status });
         }
-      } else if (!images && spa?.website) {
+      } else if (!images && isValidWebsite(website)) {
         issues.push("missing-images");
       }
       if (broken.length) issues.push(`broken:${broken.length}`);
-      if (issues.length) auditResults.push({ slug, website: spa?.website, issues, broken, images });
+      if (issues.length || (ALL && isValidWebsite(website))) {
+        auditResults.push({ slug, website, issues, broken, images });
+      }
     },
     12
   );
 
-  console.log(`Audited ${slugs.length} providers — ${auditResults.length} with issues\n`);
+  console.log(`Audited ${slugs.length} providers — ${auditResults.length} to process\n`);
 
   if (AUDIT) {
-    for (const r of auditResults.slice(0, 50)) {
+    const withIssues = auditResults.filter((r) => r.issues.length);
+    for (const r of withIssues.slice(0, 50)) {
       console.log(`${r.slug}: ${r.issues.join(", ")}`);
     }
-    if (auditResults.length > 50) console.log(`... and ${auditResults.length - 50} more`);
+    if (withIssues.length > 50) console.log(`... and ${withIssues.length - 50} more`);
     fs.writeFileSync(
       path.join(ROOT, "scripts/gallery-audit-report.json"),
-      JSON.stringify(auditResults, null, 2)
+      JSON.stringify(withIssues, null, 2)
     );
-    console.log(`\nWrote scripts/gallery-audit-report.json`);
+    console.log(`\nWrote scripts/gallery-audit-report.json (${withIssues.length} with issues)`);
     return;
   }
 
   const toFix = SLUG_FILTER
     ? auditResults.filter((r) => r.slug === SLUG_FILTER)
-    : auditResults;
+    : ALL
+      ? auditResults
+      : auditResults.filter((r) => r.issues.length);
 
   const fixed = [];
   const updates = {};
+  const skipped = [];
 
   await pool(
     toFix,
     async (item) => {
       const spa = spas.get(item.slug);
-      console.error(`Fixing ${item.slug} (${item.issues.join(", ")})...`);
+      console.error(`Fixing ${item.slug} (${item.issues.join(", ") || "refresh"})...`);
       const resolved = await resolveImages(item.slug, spa, item.images);
+      if (!resolved.hero && !resolved.gallery.length) {
+        skipped.push(item.slug);
+        return;
+      }
       updates[item.slug] = resolved;
       fixed.push(item.slug);
     },
-    6
+    5
   );
 
-  const nationwidePath = path.join(LIB, "nationwide-real-spas.ts");
-  let nationwideContent = fs.readFileSync(nationwidePath, "utf8");
-
   for (const [slug, entry] of Object.entries(updates)) {
-    const isNationwide = parseSpasFromFile(nationwidePath).some((s) => s.slug === slug);
-    if (isNationwide && replaceUnsplashInFile(nationwidePath, slug, entry)) continue;
-    if (isNationwide && appendNationwideImageEntry(slug, entry)) continue;
-    if (replaceUnsplashInFile(path.join(LIB, "spa-images.ts"), slug, entry)) continue;
-    if (replaceUnsplashInFile(path.join(LIB, "florida-real-spas.ts"), slug, entry)) continue;
-    if (replaceUnsplashInFile(path.join(LIB, "tampa-bay-real-spas.ts"), slug, entry)) continue;
-    if (replaceUnsplashInFile(path.join(LIB, "miami-metro-real-spas.ts"), slug, entry)) continue;
-    if (replaceUnsplashInFile(path.join(LIB, "florida-coastal-real-spas.ts"), slug, entry)) continue;
+    writeImageEntry(slug, entry);
   }
 
-  replaceFallbackIds(nationwidePath);
+  replaceFallbackIds(path.join(LIB, "nationwide-real-spas.ts"));
   replaceSpaImagesUnsplash(path.join(LIB, "spa-images.ts"));
   for (const slug of fixed) {
     replaceFloridaSeedIds(path.join(LIB, "florida-spa-seeds.ts"), slug);
@@ -621,10 +926,10 @@ async function main() {
 
   fs.writeFileSync(
     path.join(ROOT, "scripts/gallery-fix-report.json"),
-    JSON.stringify({ fixed: fixed.length, slugs: fixed, updates }, null, 2)
+    JSON.stringify({ fixed: fixed.length, skipped: skipped.length, slugs: fixed, skippedSlugs: skipped, updates }, null, 2)
   );
 
-  console.log(`Fixed ${fixed.length} provider galleries`);
+  console.log(`Fixed ${fixed.length} provider galleries (${skipped.length} skipped — no images found)`);
   console.log(`Wrote scripts/gallery-fix-report.json`);
 }
 
