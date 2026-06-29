@@ -2,10 +2,7 @@ import Image from "next/image";
 import type { Spa } from "@/lib/types";
 
 export function SpaGallery({ spa }: { spa: Spa }) {
-  const gridImages =
-    spa.premierPartner && spa.gallery.length > 0
-      ? spa.gallery
-      : spa.gallery.slice(0, spa.premierPartner ? 4 : 3);
+  const gridImages = spa.gallery.slice(0, 3);
 
   return (
     <div>

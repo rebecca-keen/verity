@@ -3,7 +3,7 @@ import {
   defaultCertifications,
   defaultDataSources,
   deriveTreatmentCategories,
-  getFeaturedPremiumSpas,
+  getTopRatedSpas,
   parseMedicalDirector,
   sortSpasForDisplay,
 } from "./spa-utils";
@@ -144,24 +144,16 @@ type SpaSeed = {
 
 function buildSocials(seed: SpaSeed): SpaSocials {
   if (seed.socials) return seed.socials;
-  const handle = seed.instagram;
-  const base = handle.replace(/_/g, "");
   return {
-    instagram: handle,
-    facebook: seed.premierPartner ? `${base}miami` : undefined,
-    tiktok: seed.premierPartner ? `${handle}_official` : undefined,
-    youtube: seed.featuredRank && seed.featuredRank <= 6 ? `${base}Aesthetics` : undefined,
+    instagram: seed.instagram,
   };
 }
 
 function seedSpa(data: SpaSeed, index: number): Spa {
   const images = getSpaImages(data.slug);
-  const featuredRank =
-    data.featuredRank ?? (data.premierPartner && index < 12 ? index + 1 : undefined);
-  const featuredPremium = data.premierPartner && featuredRank != null && featuredRank <= 12;
   const website = data.website ?? `https://www.${data.slug}.com`;
   const phone = data.phone ?? `(305) 555-${String(1000 + index).padStart(4, "0")}`;
-  const socials = buildSocials({ ...data, featuredRank });
+  const socials = buildSocials(data);
 
   return {
     slug: data.slug,
@@ -174,9 +166,8 @@ function seedSpa(data: SpaSeed, index: number): Spa {
     rating: data.rating,
     reviewCount: data.reviewCount,
     verified: data.verified,
-    premierPartner: data.premierPartner,
-    featuredPremium,
-    featuredRank,
+    premierPartner: false,
+    featuredPremium: false,
     medicalDirector: data.medicalDirector,
     medicalDirectorInfo: parseMedicalDirector(data.medicalDirector),
     licenseId: data.licenseId,
@@ -188,8 +179,8 @@ function seedSpa(data: SpaSeed, index: number): Spa {
     phone,
     socials,
     certifications:
-      data.certifications ?? defaultCertifications(data.premierPartner, featuredPremium),
-    dataSources: data.dataSources ?? defaultDataSources(data.premierPartner, website),
+      data.certifications ?? defaultCertifications(false, false),
+    dataSources: data.dataSources ?? defaultDataSources(false, website),
     image: images.hero,
     imageSource: images.source,
     gallery: images.gallery,
@@ -211,7 +202,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.9,
     reviewCount: 187,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Elena Morales, MD",
     licenseId: "ME-98421",
     yearsOpen: 6,
@@ -233,7 +224,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.8,
     reviewCount: 334,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. James Chen, MD",
     licenseId: "ME-87234",
     yearsOpen: 9,
@@ -255,7 +246,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.7,
     reviewCount: 262,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Sofia Reyes, NP (MSN)",
     licenseId: "ME-76102",
     yearsOpen: 4,
@@ -298,7 +289,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.9,
     reviewCount: 156,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Isabelle Fontaine, MD",
     licenseId: "ME-88201",
     yearsOpen: 7,
@@ -319,7 +310,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.7,
     reviewCount: 412,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Rachel Kim, MD",
     licenseId: "ME-89334",
     yearsOpen: 8,
@@ -361,7 +352,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.8,
     reviewCount: 145,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Patricia Dunn, MD",
     licenseId: "ME-85432",
     yearsOpen: 5,
@@ -382,7 +373,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.6,
     reviewCount: 389,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Michael Roth, MD",
     licenseId: "ME-90123",
     yearsOpen: 10,
@@ -424,7 +415,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.9,
     reviewCount: 178,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Susan Walsh, MD",
     licenseId: "ME-91234",
     yearsOpen: 12,
@@ -445,7 +436,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.9,
     reviewCount: 89,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Victoria Ashford, MD",
     licenseId: "ME-94567",
     yearsOpen: 8,
@@ -466,7 +457,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.8,
     reviewCount: 112,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Robert Ellis, MD",
     licenseId: "ME-87890",
     yearsOpen: 7,
@@ -529,7 +520,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.7,
     reviewCount: 234,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Amy Chang, MD",
     licenseId: "ME-89012",
     yearsOpen: 5,
@@ -571,7 +562,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.6,
     reviewCount: 289,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Ivan Petrov, MD",
     licenseId: "ME-90456",
     yearsOpen: 7,
@@ -613,7 +604,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.7,
     reviewCount: 356,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Maria Santos, MD",
     licenseId: "ME-84567",
     yearsOpen: 10,
@@ -676,7 +667,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.8,
     reviewCount: 134,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Helen Price, MD",
     licenseId: "ME-87321",
     yearsOpen: 8,
@@ -697,7 +688,7 @@ const spaSeeds: SpaSeed[] = [
     rating: 4.9,
     reviewCount: 67,
     verified: true,
-    premierPartner: true,
+    premierPartner: false,
     medicalDirector: "Dr. Charles Whitmore, MD",
     licenseId: "ME-95678",
     yearsOpen: 6,
@@ -804,5 +795,5 @@ export function getSortedSpas() {
 }
 
 export function getFeaturedPremiumSpasFromData(limit = 8) {
-  return getFeaturedPremiumSpas(spas, limit);
+  return getTopRatedSpas(spas, limit);
 }

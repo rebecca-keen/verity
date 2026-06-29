@@ -40,11 +40,6 @@ function scoreSpa(
     score += 15;
     reasons.push("Verified license & medical director on file");
   }
-  if (spa.premierPartner) {
-    score += 20;
-    reasons.push("Premier Partner — full product disclosure & priority listing");
-  }
-
   for (const t of wantedTreatments) {
     if (spa.treatments.includes(t)) {
       score += 25;
@@ -152,7 +147,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
       const spaContext = spas
         .map(
           (s) =>
-            `${s.name} (${s.neighborhood}, ${s.providerType}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Premier: ${s.premierPartner}. Rating: ${s.rating}`
+            `${s.name} (${s.neighborhood}, ${s.providerType}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Rating: ${s.rating}`
         )
         .join("\n");
 

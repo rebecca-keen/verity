@@ -76,7 +76,7 @@ export default function PremiumPage() {
             {
               title: "Featured placement",
               amount: "$500–2,000/month",
-              desc: "Top-of-search and homepage featured spots for Premier Partners.",
+              desc: "Top-of-search and homepage featured spots for paid partner listings.",
             },
             {
               title: "Lead generation",

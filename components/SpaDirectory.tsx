@@ -28,12 +28,10 @@ export function SpaDirectory() {
     return matchHood && matchCat && matchType;
   });
 
-  const premiumCount = spas.filter((s) => s.featuredPremium).length;
-
   return (
     <>
       <p className="mt-4 text-sm text-stone">
-        {premiumCount} Featured Premium listings appear first — paid partner placement.
+        Sorted by rating and review count — no paid placement in listings yet.
       </p>
 
       <div className="mt-6 flex flex-wrap gap-2">

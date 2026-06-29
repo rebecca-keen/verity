@@ -132,8 +132,8 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex items-end justify-between">
           <div>
-            <p className="text-xs uppercase tracking-widest text-gold">Featured Premium</p>
-            <h2 className="mt-2 font-serif text-3xl text-charcoal">Featured Miami providers</h2>
+            <p className="text-xs uppercase tracking-widest text-gold">Top rated in Miami</p>
+            <h2 className="mt-2 font-serif text-3xl text-charcoal">Highly rated providers</h2>
           </div>
           <Link href="/spas" className="text-sm text-gold hover:underline">
             View all {spas.length} →

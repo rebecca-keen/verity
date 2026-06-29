@@ -39,17 +39,18 @@ export function deriveTreatmentCategories(treatments: Treatment[]): TreatmentCat
 
 export function sortSpasForDisplay(spaList: Spa[]): Spa[] {
   return [...spaList].sort((a, b) => {
-    if (a.featuredPremium && !b.featuredPremium) return -1;
-    if (!a.featuredPremium && b.featuredPremium) return 1;
-    const rankA = a.featuredRank ?? 999;
-    const rankB = b.featuredRank ?? 999;
-    if (rankA !== rankB) return rankA - rankB;
-    return b.rating - a.rating;
+    if (b.rating !== a.rating) return b.rating - a.rating;
+    return b.reviewCount - a.reviewCount;
   });
 }
 
+export function getTopRatedSpas(spaList: Spa[], limit = 8): Spa[] {
+  return sortSpasForDisplay(spaList).slice(0, limit);
+}
+
+/** @deprecated Use getTopRatedSpas — no paid featured listings in seed data yet */
 export function getFeaturedPremiumSpas(spaList: Spa[], limit = 8): Spa[] {
-  return sortSpasForDisplay(spaList.filter((s) => s.featuredPremium)).slice(0, limit);
+  return getTopRatedSpas(spaList, limit);
 }
 
 export function parseMedicalDirector(medicalDirector: string): {

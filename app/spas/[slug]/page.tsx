@@ -31,21 +31,12 @@ export default async function SpaDetailPage({
     <div className="mx-auto max-w-6xl px-6 py-12">
       <div className="relative h-64 overflow-hidden rounded-2xl md:h-80">
         <Image src={spa.image} alt={spa.name} fill className="object-cover" priority sizes="100vw" />
-        {spa.featuredPremium && (
-          <div className="absolute left-0 right-0 top-0 bg-charcoal py-2 text-center text-xs font-semibold uppercase tracking-widest text-gold">
-            Featured Premium
-          </div>
-        )}
       </div>
       <p className="mt-2 text-xs text-stone">Photo source: {spa.imageSource}</p>
 
       <div className="mt-8 grid gap-10 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          <TrustBadge
-            verified={spa.verified}
-            premierPartner={spa.premierPartner}
-            featuredPremium={spa.featuredPremium}
-          />
+          <TrustBadge verified={spa.verified} />
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <ProviderTypeBadge type={spa.providerType} />
           </div>

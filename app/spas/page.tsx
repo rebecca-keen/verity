@@ -13,8 +13,8 @@ export default function SpasPage() {
       <h1 className="mt-2 font-serif text-4xl text-charcoal">Miami aesthetics clinics & med spas</h1>
       <p className="mt-3 max-w-2xl text-stone">
         {spas.length} verified aesthetics clinics, med spas, and dermatology practices across Greater
-        Miami and South Florida. Filter by provider type and neighborhood. Premier Partners disclose
-        every product used in treatment.
+        Miami and South Florida. Filter by provider type and neighborhood. Listings are sorted by
+        rating and review count.
       </p>
       <SpaDirectory />
     </div>

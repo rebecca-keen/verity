@@ -45,7 +45,12 @@ export default function ForSpasPage() {
         </div>
       </section>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-3">
+      <p className="mt-6 text-sm text-stone">
+        Subscription tiers below are for practices that want to join Verity — not current listing
+        status. Every provider on the directory today has a free verified profile.
+      </p>
+
+      <div className="mt-8 grid gap-6 md:grid-cols-3">
         {[
           {
             tier: "Listed",
@@ -56,7 +61,7 @@ export default function ForSpasPage() {
             tier: "Partner",
             price: "$149/mo",
             features: [
-              "Verified + Premier Partner badge",
+              "Verified badge + Premier Partner status",
               "Booking requests",
               "Product tagging",
               "Review responses",

@@ -11,12 +11,7 @@ export function SpaCard({ spa }: { spa: Spa }) {
       href={`/spas/${spa.slug}`}
       className="group luxury-border relative block overflow-hidden rounded-2xl bg-white transition hover:shadow-lg"
     >
-      {spa.featuredPremium && (
-        <div className="absolute left-0 right-0 top-0 z-10 bg-charcoal py-1 text-center text-[10px] font-semibold uppercase tracking-widest text-gold">
-          Featured Premium
-        </div>
-      )}
-      <div className={`relative h-48 overflow-hidden ${spa.featuredPremium ? "mt-6" : ""}`}>
+      <div className="relative h-48 overflow-hidden">
         <Image
           src={spa.image}
           alt={spa.name}
@@ -26,11 +21,7 @@ export function SpaCard({ spa }: { spa: Spa }) {
         />
       </div>
       <div className="p-5">
-        <TrustBadge
-          verified={spa.verified}
-          premierPartner={spa.premierPartner}
-          featuredPremium={false}
-        />
+        <TrustBadge verified={spa.verified} />
         <div className="mt-3">
           <ProviderTypeBadge type={spa.providerType} />
         </div>
