@@ -467,6 +467,12 @@ const SPA_CATALOG_SLUGS = new Set([
   "is-clinical-lip-polish",
   "is-clinical-liprotect-spf35",
   "revision-retinol",
+  "revision-nectifirm",
+  "revision-dermprotect",
+  "revision-firming-night",
+  "revision-replenisher",
+  "revision-night-cream",
+  "revision-intellishade-truphysical",
 ]);
 
 const FEATURED_SPA_PRODUCTS: Record<string, string[]> = {

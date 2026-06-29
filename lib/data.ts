@@ -78,6 +78,7 @@ export const baseProducts: Product[] = [
     ingredients: ["Retinol", "Bakuchiol", "Hyaluronic Acid"],
     origin: "US",
     premium: true,
+    recommended: true,
   },
   {
     slug: "skinmedica-ha5",
@@ -244,6 +245,7 @@ function seedSpa(data: SpaSeed, index: number): Spa {
     ],
     image: images.hero,
     imageSource: images.source,
+    logo: images.logo,
     gallery: images.gallery,
     productSlugs: resolveProductSlugs({
       slug: data.slug,

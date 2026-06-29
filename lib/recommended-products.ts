@@ -5,6 +5,7 @@ export const RECOMMENDED_BRANDS = [
   "ALASTIN Skincare",
   "Caudalie",
   "ISDIN",
+  "Revision Skincare",
   "SkinCeuticals",
   "SkinMedica",
   "La Roche-Posay",
