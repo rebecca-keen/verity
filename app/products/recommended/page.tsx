@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Recommended Products — Verity",
   description:
-    "Derm-recommended luxury skincare from EltaMD, iS Clinical, SkinMedica, La Roche-Posay, ISDIN, ALASTIN, and SkinCeuticals — shop on Amazon with verified reviews.",
+    "Derm-recommended luxury skincare from Caudalie, EltaMD, iS Clinical, SkinMedica, La Roche-Posay, ISDIN, ALASTIN, and SkinCeuticals — shop on Amazon with verified reviews.",
 };
 
 import Link from "next/link";

@@ -9,7 +9,7 @@ export const productImages: Record<string, string> = {
   "la-roche-posay-anthelios-niacinamide":
     "https://m.media-amazon.com/images/I/61FIrzjM7YL._SL1500_.jpg",
   "la-roche-posay-toleriane-hydrating":
-    "https://m.media-amazon.com/images/I/61uFnomGpxL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/613HS7eEFTL._SL1500_.jpg",
   "la-roche-posay-pure-vitamin-c":
     "https://m.media-amazon.com/images/I/612rQ+tTL6L._SL1500_.jpg",
   "skinceuticals-ce-ferulic":
@@ -66,6 +66,18 @@ export const productImages: Record<string, string> = {
     "https://m.media-amazon.com/images/I/41WzHtQ4R0L._SL1500_.jpg",
   "revision-retinol":
     "https://cdn.shopify.com/s/files/1/0532/6739/8806/files/RCProduct_8661198c-107e-4a04-946e-80444c6502cc.jpg?v=1717411891",
+  "caudalie-vinoperfect-serum":
+    "https://m.media-amazon.com/images/I/51pN-NVkrtL._SL1500_.jpg",
+  "caudalie-resveratrol-lift-essentials":
+    "https://m.media-amazon.com/images/I/71U3wiuegVL._SL1500_.jpg",
+  "caudalie-beauty-elixir":
+    "https://m.media-amazon.com/images/I/61U+2rW1rCL._SL1500_.jpg",
+  "caudalie-vinoperfect-moisturizer":
+    "https://m.media-amazon.com/images/I/514LGIFlu2L._SL1500_.jpg",
+  "la-roche-posay-lipikar-ap-max":
+    "https://m.media-amazon.com/images/I/61mA9yufbHL._SL1500_.jpg",
+  "la-roche-posay-hyalu-b5-suractivated":
+    "https://m.media-amazon.com/images/I/61NNU8kI+bL._SL1500_.jpg",
 };
 
 export function getProductImage(slug: string): string | undefined {

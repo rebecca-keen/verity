@@ -3,6 +3,7 @@ import type { Product } from "./types";
 
 export const RECOMMENDED_BRANDS = [
   "ALASTIN Skincare",
+  "Caudalie",
   "ISDIN",
   "SkinCeuticals",
   "SkinMedica",
