@@ -8,8 +8,12 @@ export function SpaGallery({ spa }: { spa: Spa }) {
   const [failed, setFailed] = useState<Set<string>>(() => new Set());
 
   const gridImages = useMemo(
-    () => spa.gallery.filter((src) => !failed.has(src)).slice(0, 3),
-    [spa.gallery, failed]
+    () =>
+      spa.gallery
+        .filter((src) => !failed.has(src))
+        .filter((src) => !spa.logo || src !== spa.logo)
+        .slice(0, 5),
+    [spa.gallery, spa.logo, failed]
   );
 
   function markFailed(src: string) {

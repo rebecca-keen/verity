@@ -18,6 +18,7 @@ const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 V
 const AUDIT = process.argv.includes("--audit");
 const FIX = process.argv.includes("--fix");
 const ALL = process.argv.includes("--all");
+const LOGOS = process.argv.includes("--logos");
 const SLUG_FILTER = (() => {
   const i = process.argv.indexOf("--slug");
   return i >= 0 ? process.argv[i + 1] : null;
@@ -235,7 +236,10 @@ function parseImageBlock(content, exportName) {
   let em;
   while ((em = entryRe.exec(block)) !== null) {
     const gallery = [...em[3].matchAll(/"([^"]+)"/g)].map((x) => x[1]);
-    images[em[1]] = { hero: em[2], gallery, source: em[4] };
+    const slugEntry = em[1];
+    const slugBlock = block.slice(em.index, em.index + em[0].length);
+    const logoM = slugBlock.match(/logo:\s*"([^"]+)"/);
+    images[slugEntry] = { hero: em[2], gallery, source: em[4], ...(logoM ? { logo: logoM[1] } : {}) };
   }
   return images;
 }
@@ -357,6 +361,8 @@ function imageIssues(slug, images, website) {
   if (website && images.source?.toLowerCase().includes("unsplash")) issues.push("unsplash-source-label");
   const uniqueGallery = uniqueGalleryUrls(images.hero, images.gallery);
   if (website && uniqueGallery.length < 2) issues.push("weak-gallery");
+  if (website && isValidWebsite(website) && !images.logo) issues.push("missing-logo");
+  if (images.gallery.some((u) => isLikelyLogo(u))) issues.push("logo-in-gallery");
   return [...new Set(issues)];
 }
 
@@ -435,6 +441,98 @@ function extractPageImages(html, base) {
     } catch {}
   }
   return [...imgs.values()];
+}
+
+function parseLinkSizes(tag) {
+  const sizesM = tag.match(/sizes=["']([^"']+)["']/i);
+  if (!sizesM) return 0;
+  const parts = sizesM[1].split(/\s+/);
+  let max = 0;
+  for (const p of parts) {
+    const m = p.match(/^(\d+)x(\d+)$/);
+    if (m) max = Math.max(max, Number(m[1]), Number(m[2]));
+  }
+  return max;
+}
+
+function extractLogoCandidates(html, base) {
+  const candidates = [];
+
+  function add(url, score, kind) {
+    if (!url) return;
+    try {
+      const abs = new URL(url, base).href;
+      if (/\.(?:gif|svg)(?:\?|$)/i.test(abs) && kind !== "header-logo") return;
+      candidates.push({ url: abs, score, kind });
+    } catch {}
+  }
+
+  for (const m of html.matchAll(/<link[^>]+>/gi)) {
+    const tag = m[0];
+    if (!/rel=["'][^"']*(?:apple-touch-icon|icon|shortcut icon|mask-icon)/i.test(tag)) continue;
+    const hrefM = tag.match(/href=["']([^"']+)["']/i);
+    if (!hrefM) continue;
+    let score = parseLinkSizes(tag);
+    if (/apple-touch-icon/i.test(tag)) score += 200;
+    else if (/icon/i.test(tag)) score += 100;
+    add(hrefM[1], score, "link-icon");
+  }
+
+  for (const m of html.matchAll(/<img[^>]+>/gi)) {
+    const tag = m[0];
+    if (!/(?:class|id|alt)=["'][^"']*logo[^"']*["']/i.test(tag)) continue;
+    const srcM = tag.match(/(?:src|data-src)=["']([^"']+)["']/i);
+    if (!srcM) continue;
+    add(srcM[1], 250, "header-logo");
+  }
+
+  for (const m of html.matchAll(/<img[^>]+>/gi)) {
+    const tag = m[0];
+    const srcM = tag.match(/(?:src|data-src)=["']([^"']+)["']/i);
+    if (!srcM || !LOGO_URL_RE.test(tag)) continue;
+    add(srcM[1], 180, "logo-img");
+  }
+
+  const og = extractOgImage(html, base);
+  if (og && isLikelyLogo(og)) add(og, 120, "og-logo");
+
+  return candidates.sort((a, b) => b.score - a.score);
+}
+
+async function fetchSiteLogo(website) {
+  const candidates = [];
+  const seenHtml = new Set();
+
+  for (const p of ["", "/"]) {
+    const url = new URL(p || "", website).href;
+    try {
+      const res = await fetch(url, { redirect: "follow", headers: { "User-Agent": UA } });
+      if (!res.ok) continue;
+      const html = await res.text();
+      if (seenHtml.has(html.slice(0, 500))) continue;
+      seenHtml.add(html.slice(0, 500));
+      for (const c of extractLogoCandidates(html, url)) {
+        if (!candidates.some((x) => mediaKey(x.url) === mediaKey(c.url))) candidates.push(c);
+      }
+    } catch {}
+  }
+
+  for (const c of candidates) {
+    if (!urlAllowedForWebsite(c.url, website)) continue;
+    const check = await checkUrl(c.url);
+    if (check.ok) return c.url;
+  }
+
+  try {
+    const domain = websiteRoot(website);
+    if (domain) {
+      const clearbit = `https://logo.clearbit.com/${domain}`;
+      const check = await checkUrl(clearbit);
+      if (check.ok) return clearbit;
+    }
+  } catch {}
+
+  return null;
 }
 
 async function fetchSiteImages(website) {
@@ -625,8 +723,11 @@ async function resolveImages(slug, spa, current) {
 
 function formatImageEntry(slug, entry) {
   const galleryLines = entry.gallery.map((g) => `      "${g.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}",`).join("\n");
+  const logoLine = entry.logo
+    ? `\n    logo: "${entry.logo.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}",`
+    : "";
   return `  "${slug}": {
-    hero: "${entry.hero.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}",
+    hero: "${entry.hero.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}",${logoLine}
     gallery: [
 ${galleryLines}
     ],
@@ -847,6 +948,14 @@ async function main() {
     slugs = pool.sort(() => Math.random() - 0.5).slice(0, n);
   }
 
+  if (process.argv.includes("--logos-only")) {
+    slugs = slugs.filter((s) => {
+      const imgs = imageSets[s];
+      const spa = spas.get(s);
+      return isValidWebsite(spa?.website) && (!imgs?.logo || imageIssues(s, imgs, spa?.website).includes("missing-logo"));
+    });
+  }
+
   const auditResults = [];
 
   await pool(
@@ -889,9 +998,11 @@ async function main() {
 
   const toFix = SLUG_FILTER
     ? auditResults.filter((r) => r.slug === SLUG_FILTER)
-    : ALL
-      ? auditResults
-      : auditResults.filter((r) => r.issues.length);
+    : LOGOS
+      ? auditResults.filter((r) => isValidWebsite(r.website))
+      : ALL
+        ? auditResults
+        : auditResults.filter((r) => r.issues.length);
 
   const fixed = [];
   const updates = {};
@@ -901,9 +1012,48 @@ async function main() {
     toFix,
     async (item) => {
       const spa = spas.get(item.slug);
+      const needsHeroFix = item.issues.some((i) =>
+        ["logo-hero", "headshot-image", "unsplash-with-website", "weak-gallery", "cross-domain", "missing-images"].some((x) =>
+          i.startsWith(x)
+        )
+      );
+      const needsLogo = LOGOS || item.issues.includes("missing-logo") || !item.images?.logo;
+
       console.error(`Fixing ${item.slug} (${item.issues.join(", ") || "refresh"})...`);
-      const resolved = await resolveImages(item.slug, spa, item.images);
-      if (!resolved.hero && !resolved.gallery.length) {
+
+      let resolved = item.images ?? { hero: "", gallery: [], source: businessSource(spa) };
+      if (needsHeroFix || !resolved.hero || item.issues.includes("logo-hero")) {
+        resolved = await resolveImages(item.slug, spa, item.images);
+      }
+
+      if (needsLogo && isValidWebsite(spa?.website)) {
+        const existingLogo = item.images?.logo;
+        if (existingLogo) {
+          const lc = await checkUrl(existingLogo);
+          if (lc.ok) resolved.logo = existingLogo;
+        }
+        if (!resolved.logo) {
+          const logo = await fetchSiteLogo(spa.website);
+          if (logo) resolved.logo = logo;
+        }
+      }
+
+      if (resolved.logo) {
+        const logoKey = mediaKey(resolved.logo);
+        if (mediaKey(resolved.hero) === logoKey) {
+          const refetched = await resolveImages(item.slug, spa, item.images);
+          if (refetched.hero && mediaKey(refetched.hero) !== logoKey) {
+            resolved.hero = refetched.hero;
+            resolved.gallery = refetched.gallery;
+            resolved.source = refetched.source;
+          }
+        }
+        resolved.gallery = (resolved.gallery || []).filter(
+          (u) => mediaKey(u) !== logoKey && !isLikelyLogo(u)
+        );
+      }
+
+      if (!resolved.hero && !resolved.gallery?.length && !resolved.logo) {
         skipped.push(item.slug);
         return;
       }

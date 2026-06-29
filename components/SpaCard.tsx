@@ -1,35 +1,9 @@
 import Link from "next/link";
 import type { Spa } from "@/lib/types";
-import { RemoteImage } from "./RemoteImage";
 import { TrustBadge } from "./TrustBadge";
 import { TreatmentCategories } from "./TreatmentCategories";
 import { ProviderTypeBadge } from "./ProviderTypeBadge";
-
-function SpaCardThumbnail({ spa }: { spa: Spa }) {
-  if (spa.logo) {
-    return (
-      <div className="flex h-full items-center justify-center bg-cream p-6">
-        <RemoteImage
-          src={spa.logo}
-          alt={`${spa.name} logo`}
-          fill
-          className="object-contain p-4"
-          sizes="(max-width: 768px) 100vw, 33vw"
-        />
-      </div>
-    );
-  }
-
-  const initial = spa.name.trim().charAt(0).toUpperCase() || "?";
-
-  return (
-    <div className="flex h-full items-center justify-center bg-cream">
-      <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-stone/10 bg-white shadow-sm">
-        <span className="font-serif text-3xl text-charcoal/70">{initial}</span>
-      </div>
-    </div>
-  );
-}
+import { SpaCardThumbnail } from "./SpaCardThumbnail";
 
 export function SpaCard({ spa }: { spa: Spa }) {
   return (
