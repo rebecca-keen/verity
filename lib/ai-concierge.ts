@@ -88,13 +88,15 @@ function scoreSpa(
 
   const neighborhood = spa.neighborhood.toLowerCase();
   const city = spa.city.toLowerCase();
-  const metroName = METRO_LABELS[spa.metro].toLowerCase();
+  const metroName = spa.metro ? METRO_LABELS[spa.metro].toLowerCase() : "";
+  const stateName = spa.state.toLowerCase();
   for (const tag of wantedTags) {
     const tagLower = tag.toLowerCase();
     if (
       neighborhood.includes(tagLower) ||
       city.includes(tagLower) ||
-      metroName.includes(tagLower)
+      metroName.includes(tagLower) ||
+      stateName.includes(tagLower)
     ) {
       score += 15;
       reasons.push(`Located in ${spa.neighborhood}, ${spa.city}`);
@@ -162,7 +164,7 @@ export function buildConciergeReply(query: string, matches: ConciergeMatch[]): s
 
   const top = matches[0];
   const lines = [
-    "Based on what you shared, here are my top Florida matches for med spas and aesthetics clinics:",
+    "Based on what you shared, here are my top matches for med spas and aesthetics clinics:",
     "",
     ...matches.map(
       (m, i) =>
@@ -186,7 +188,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
       const spaContext = spas
         .map(
           (s) =>
-            `${s.name} (${s.neighborhood}, ${s.city}, ${METRO_LABELS[s.metro]} — ${s.providerType}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Rating: ${s.rating}`
+            `${s.name} (${s.neighborhood}, ${s.city}, ${s.state}${s.metro ? ` · ${METRO_LABELS[s.metro]}` : ""} — ${s.providerType}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Rating: ${s.rating}`
         )
         .join("\n");
 
@@ -201,7 +203,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
           messages: [
             {
               role: "system",
-              content: `You are Verity Concierge, a luxury aesthetics advisor for Florida statewide — South Florida, Tampa Bay, Central Florida, North Florida, Southwest Florida, and Treasure Coast. You help users find reputable, verified med spas, aesthetics clinics, and dermatology practices. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
+              content: `You are Verity Concierge, a luxury aesthetics advisor for verified med spas, aesthetics clinics, and dermatology practices across the United States. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
             },
             { role: "user", content: query },
           ],

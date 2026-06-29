@@ -1,4 +1,122 @@
-import type { Metro, ProviderType, Spa, Treatment, TreatmentCategory } from "./types";
+import type { Metro, ProviderType, Spa, Treatment, TreatmentCategory, USStateCode } from "./types";
+
+export type { USStateCode };
+
+/** All 50 US states + DC for directory filters. */
+export const US_STATES: { code: USStateCode | "All"; label: string }[] = [
+  { code: "All", label: "All States" },
+  { code: "AL", label: "Alabama" },
+  { code: "AK", label: "Alaska" },
+  { code: "AZ", label: "Arizona" },
+  { code: "AR", label: "Arkansas" },
+  { code: "CA", label: "California" },
+  { code: "CO", label: "Colorado" },
+  { code: "CT", label: "Connecticut" },
+  { code: "DE", label: "Delaware" },
+  { code: "DC", label: "District of Columbia" },
+  { code: "FL", label: "Florida" },
+  { code: "GA", label: "Georgia" },
+  { code: "HI", label: "Hawaii" },
+  { code: "ID", label: "Idaho" },
+  { code: "IL", label: "Illinois" },
+  { code: "IN", label: "Indiana" },
+  { code: "IA", label: "Iowa" },
+  { code: "KS", label: "Kansas" },
+  { code: "KY", label: "Kentucky" },
+  { code: "LA", label: "Louisiana" },
+  { code: "ME", label: "Maine" },
+  { code: "MD", label: "Maryland" },
+  { code: "MA", label: "Massachusetts" },
+  { code: "MI", label: "Michigan" },
+  { code: "MN", label: "Minnesota" },
+  { code: "MS", label: "Mississippi" },
+  { code: "MO", label: "Missouri" },
+  { code: "MT", label: "Montana" },
+  { code: "NE", label: "Nebraska" },
+  { code: "NV", label: "Nevada" },
+  { code: "NH", label: "New Hampshire" },
+  { code: "NJ", label: "New Jersey" },
+  { code: "NM", label: "New Mexico" },
+  { code: "NY", label: "New York" },
+  { code: "NC", label: "North Carolina" },
+  { code: "ND", label: "North Dakota" },
+  { code: "OH", label: "Ohio" },
+  { code: "OK", label: "Oklahoma" },
+  { code: "OR", label: "Oregon" },
+  { code: "PA", label: "Pennsylvania" },
+  { code: "RI", label: "Rhode Island" },
+  { code: "SC", label: "South Carolina" },
+  { code: "SD", label: "South Dakota" },
+  { code: "TN", label: "Tennessee" },
+  { code: "TX", label: "Texas" },
+  { code: "UT", label: "Utah" },
+  { code: "VT", label: "Vermont" },
+  { code: "VA", label: "Virginia" },
+  { code: "WA", label: "Washington" },
+  { code: "WV", label: "West Virginia" },
+  { code: "WI", label: "Wisconsin" },
+  { code: "WY", label: "Wyoming" },
+];
+
+export function getStateLabel(code: string): string {
+  return US_STATES.find((s) => s.code === code)?.label ?? code;
+}
+
+export function filterSpasByState(spaList: Spa[], state: USStateCode | "All"): Spa[] {
+  if (state === "All") return spaList;
+  return spaList.filter((s) => s.state === state);
+}
+
+export function getCitiesByState(spaList: Spa[], state: USStateCode | "All"): string[] {
+  const scoped = filterSpasByState(spaList, state);
+  return [...new Set(scoped.map((s) => s.city))].sort();
+}
+
+export function filterSpasByCity(spaList: Spa[], city: string | "All"): Spa[] {
+  if (city === "All") return spaList;
+  return spaList.filter((s) => s.city === city);
+}
+
+export function getNeighborhoodsByStateAndCity(
+  spaList: Spa[],
+  state: USStateCode | "All",
+  city: string | "All"
+): string[] {
+  let scoped = filterSpasByState(spaList, state);
+  if (city !== "All") scoped = scoped.filter((s) => s.city === city);
+  return [...new Set(scoped.map((s) => s.neighborhood))].sort();
+}
+
+export function searchSpasByText(spaList: Spa[], query: string): Spa[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return spaList;
+  return spaList.filter(
+    (s) =>
+      s.name.toLowerCase().includes(q) ||
+      s.city.toLowerCase().includes(q) ||
+      s.neighborhood.toLowerCase().includes(q) ||
+      s.tagline.toLowerCase().includes(q)
+  );
+}
+
+export function getSpaLocationLabel(spa: Spa): string {
+  if (spa.metro) {
+    return `${spa.neighborhood}, ${spa.city} · ${METRO_LABELS[spa.metro]}`;
+  }
+  return `${spa.neighborhood}, ${spa.city}, ${spa.state}`;
+}
+
+export function getLocationFilterLabel(
+  state: USStateCode | "All",
+  city: string | "All",
+  neighborhood: string | "All"
+): string {
+  if (state === "All") return "the United States";
+  const stateName = getStateLabel(state);
+  if (city === "All") return stateName;
+  if (neighborhood === "All") return `${city}, ${stateName}`;
+  return `${neighborhood}, ${city}`;
+}
 
 export const FLORIDA_METROS: Metro[] = [
   "south-florida",

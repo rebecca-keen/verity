@@ -3,7 +3,7 @@ import { ContactEmail } from "@/components/ContactEmail";
 import { SpaCard } from "@/components/SpaCard";
 import { ProductCard } from "@/components/ProductCard";
 import { AIConcierge } from "@/components/AIConcierge";
-import { spas, products, getFeaturedPremiumSpasFromData } from "@/lib/data";
+import { products, getFeaturedPremiumSpasFromData } from "@/lib/data";
 
 export default function HomePage() {
   const featured = getFeaturedPremiumSpasFromData(8);
@@ -12,15 +12,14 @@ export default function HomePage() {
     <>
       <section className="border-b border-stone/10 bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-20 text-center md:py-28">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold">Florida · Verified providers</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-gold">United States · Verified providers</p>
           <h1 className="mx-auto mt-4 max-w-3xl font-serif text-4xl leading-tight text-charcoal md:text-6xl">
-            Trusted aesthetics across Florida
+            Trusted aesthetics &amp; med spas, verified
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-stone">
-            {spas.length} verified aesthetics clinics, med spas, and dermatology practices across
-            Florida — from Miami and Fort Lauderdale to Tampa Bay, Orlando, Jacksonville, Naples,
-            Sarasota, and beyond. Research injectables, lasers, facials, and body contouring with
-            product transparency, medical director info, and AI matching statewide.
+            Find verified aesthetics clinics, med spas, and dermatology practices across the United States.
+            Research injectables, lasers, facials, and body contouring with product transparency, medical
+            director info, and AI matching — starting with curated listings in top metros nationwide.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
@@ -33,7 +32,7 @@ export default function HomePage() {
               href="/spas"
               className="rounded-full border border-charcoal px-8 py-3 text-sm font-medium tracking-wider text-charcoal"
             >
-              Browse {spas.length} Providers
+              Browse Providers
             </Link>
           </div>
         </div>
@@ -105,7 +104,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="text-xs uppercase tracking-widest text-gold">For providers</p>
-              <h2 className="mt-2 font-serif text-2xl text-charcoal">Get featured across Florida</h2>
+              <h2 className="mt-2 font-serif text-2xl text-charcoal">Get featured nationwide</h2>
               <p className="mt-3 max-w-2xl text-sm text-stone">
                 Free verified listings today. Featured placement available for practices who want top
                 visibility in their city.
@@ -160,11 +159,11 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex items-end justify-between">
           <div>
-            <p className="text-xs uppercase tracking-widest text-gold">Top rated in Florida</p>
-            <h2 className="mt-2 font-serif text-3xl text-charcoal">Highly rated providers</h2>
+            <p className="text-xs uppercase tracking-widest text-gold">Highly rated</p>
+            <h2 className="mt-2 font-serif text-3xl text-charcoal">Featured verified providers</h2>
           </div>
           <Link href="/spas" className="text-sm text-gold hover:underline">
-            View all {spas.length} →
+            View all →
           </Link>
         </div>
         <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

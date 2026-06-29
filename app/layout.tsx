@@ -4,9 +4,9 @@ import { Header } from "@/components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Verity — Trusted Aesthetics Across Florida",
+  title: "Verity — Trusted Aesthetics & Med Spas Nationwide",
   description:
-    "Find verified aesthetics clinics, med spas, and dermatology practices across Florida — Miami, Tampa Bay, Orlando, Jacksonville, Southwest Florida, Treasure Coast, and more. Product transparency, medical director info, verified reviews, and AI-powered matching.",
+    "Find verified aesthetics clinics, med spas, and dermatology practices across the United States. Product transparency, medical director info, verified reviews, and AI-powered matching by state and city.",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
         <footer className="border-t border-stone/15 bg-cream py-12 text-center text-sm text-stone">
           <p className="font-serif text-lg text-charcoal">Verity</p>
           <p className="mt-2">
-            Aesthetics clinics, med spas & dermatology · Florida statewide · Verified providers
+            Aesthetics clinics, med spas & dermatology · Nationwide · Verified providers
           </p>
           <p className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs">
             <a href="/for-spas" className="text-gold hover:underline">

@@ -28,6 +28,7 @@ export function SpaCard({ spa }: { spa: Spa }) {
         <h3 className="mt-2 font-serif text-xl text-charcoal">{spa.name}</h3>
         <p className="text-sm text-stone">
           {spa.neighborhood}, {spa.city}
+          {spa.state ? `, ${spa.state}` : ""}
         </p>
         <p className="mt-2 line-clamp-2 text-sm text-stone">{spa.tagline}</p>
         <div className="mt-3">

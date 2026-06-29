@@ -20,6 +20,15 @@ export type TreatmentCategory = "injectables" | "lasers" | "beauty" | "body";
 
 export type ProviderType = "med-spa" | "aesthetics-clinic" | "dermatology-aesthetics";
 
+/** Two-letter US state or DC code. */
+export type USStateCode =
+  | "AL" | "AK" | "AZ" | "AR" | "CA" | "CO" | "CT" | "DE" | "DC"
+  | "FL" | "GA" | "HI" | "ID" | "IL" | "IN" | "IA" | "KS" | "KY"
+  | "LA" | "ME" | "MD" | "MA" | "MI" | "MN" | "MS" | "MO" | "MT"
+  | "NE" | "NV" | "NH" | "NJ" | "NM" | "NY" | "NC" | "ND" | "OH"
+  | "OK" | "OR" | "PA" | "RI" | "SC" | "SD" | "TN" | "TX" | "UT"
+  | "VT" | "VA" | "WA" | "WV" | "WI" | "WY";
+
 /** Florida region group for filtering (not a single city). */
 export type Metro =
   | "south-florida"
@@ -73,17 +82,28 @@ export interface Review {
   productSlug?: string;
 }
 
+export interface ReviewSources {
+  google?: number;
+  yelp?: number;
+  realself?: number;
+}
+
 export interface Spa {
   slug: string;
   name: string;
   providerType: ProviderType;
+  /** Two-letter US state code (e.g. FL, CA). */
+  state: string;
   neighborhood: string;
   city: string;
-  metro: Metro;
+  /** Florida region group — present for FL listings only. */
+  metro?: Metro;
   tagline: string;
   description: string;
   rating: number;
   reviewCount: number;
+  /** Per-platform ratings when available; aggregate `rating` is the listing score. */
+  reviewSources?: ReviewSources;
   verified: boolean;
   premierPartner: boolean;
   featuredPremium: boolean;

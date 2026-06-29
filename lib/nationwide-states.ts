@@ -1,0 +1,76 @@
+import type { USStateCode } from "./types";
+import type { NationwideSpaSeed } from "./nationwide-real-spas";
+
+/** Placeholder seed arrays for states without curated real listings yet. */
+export const NATIONWIDE_STATE_PLACEHOLDERS: Record<USStateCode, NationwideSpaSeed[]> = {
+  AL: [],
+  AK: [],
+  AZ: [],
+  AR: [],
+  CA: [],
+  CO: [],
+  CT: [],
+  DE: [],
+  DC: [],
+  FL: [],
+  GA: [],
+  HI: [],
+  ID: [],
+  IL: [],
+  IN: [],
+  IA: [],
+  KS: [],
+  KY: [],
+  LA: [],
+  ME: [],
+  MD: [],
+  MA: [],
+  MI: [],
+  MN: [],
+  MS: [],
+  MO: [],
+  MT: [],
+  NE: [],
+  NV: [],
+  NH: [],
+  NJ: [],
+  NM: [],
+  NY: [],
+  NC: [],
+  ND: [],
+  OH: [],
+  OK: [],
+  OR: [],
+  PA: [],
+  RI: [],
+  SC: [],
+  SD: [],
+  TN: [],
+  TX: [],
+  UT: [],
+  VT: [],
+  VA: [],
+  WA: [],
+  WV: [],
+  WI: [],
+  WY: [],
+};
+
+/** States with curated real provider seed data (FL via florida-* files; others via nationwide-real-spas.ts). */
+export const STATES_WITH_REAL_DATA: USStateCode[] = [
+  "FL",
+  "CA",
+  "TX",
+  "NY",
+  "GA",
+  "AZ",
+  "CO",
+  "IL",
+  "NV",
+  "NC",
+  "TN",
+];
+
+export function isPlaceholderState(state: USStateCode): boolean {
+  return !STATES_WITH_REAL_DATA.includes(state);
+}

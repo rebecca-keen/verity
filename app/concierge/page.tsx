@@ -3,7 +3,7 @@ import { AIConcierge } from "@/components/AIConcierge";
 export const metadata = {
   title: "AI Concierge — Verity",
   description:
-    "Get matched to trusted aesthetics clinics, med spas, and dermatology practices across Florida.",
+    "Get matched to trusted aesthetics clinics, med spas, and dermatology practices across the United States.",
 };
 
 export default function ConciergePage() {
@@ -15,7 +15,7 @@ export default function ConciergePage() {
           <h1 className="mt-2 font-serif text-4xl">Verity Concierge</h1>
           <p className="mx-auto mt-3 max-w-xl text-stone/80">
             Describe your treatment goals — injectables, lasers, facials, body contouring — plus your
-            budget and city. We recommend verified aesthetics clinics and med spas across Florida, not
+            budget and city. We recommend verified aesthetics clinics and med spas nationwide, not
             sponsored listings.
           </p>
         </div>

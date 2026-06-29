@@ -4,6 +4,10 @@ import { ADDITIONAL_FLORIDA_SPA_IMAGE_IDS } from "./additional-florida-spa-seeds
 import { FLORIDA_COASTAL_REAL_SPA_IMAGES } from "./florida-coastal-real-spas";
 import { FLORIDA_REAL_SPA_IMAGES } from "./florida-real-spas";
 import { MIAMI_METRO_REAL_SPA_IMAGES } from "./miami-metro-real-spas";
+import {
+  NATIONWIDE_REAL_SPA_IMAGES,
+  NATIONWIDE_SPA_IMAGE_FALLBACKS,
+} from "./nationwide-real-spas";
 import { TAMPA_BAY_REAL_SPA_IMAGES } from "./tampa-bay-real-spas";
 import { FLORIDA_SPA_IMAGE_IDS } from "./florida-spa-seeds";
 
@@ -501,6 +505,20 @@ for (const [slug, images] of Object.entries(TAMPA_BAY_REAL_SPA_IMAGES)) {
 
 for (const [slug, images] of Object.entries(MIAMI_METRO_REAL_SPA_IMAGES)) {
   SPA_IMAGE_SETS[slug] = images;
+}
+
+for (const [slug, images] of Object.entries(NATIONWIDE_REAL_SPA_IMAGES)) {
+  SPA_IMAGE_SETS[slug] = images;
+}
+
+for (const [slug, photoId] of Object.entries(NATIONWIDE_SPA_IMAGE_FALLBACKS)) {
+  if (!SPA_IMAGE_SETS[slug]) {
+    SPA_IMAGE_SETS[slug] = {
+      hero: img(photoId),
+      gallery: [gal(photoId), gal("photo-1516975080664-ed2fc6a32937"), gal("photo-1570172619644-dfd03ed5d881")],
+      source: "Unsplash — verified med spa stock imagery",
+    };
+  }
 }
 
 export function getSpaImages(slug: string) {

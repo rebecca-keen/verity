@@ -2,6 +2,7 @@ import { additionalFloridaSpaSeeds } from "./additional-florida-spa-seeds";
 import { floridaCoastalRealSpas } from "./florida-coastal-real-spas";
 import { floridaRealSpas } from "./florida-real-spas";
 import { miamiMetroRealSpas } from "./miami-metro-real-spas";
+import { nationwideRealSpas } from "./nationwide-real-spas";
 import { tampaBayRealSpas } from "./tampa-bay-real-spas";
 import { floridaSpaSeeds } from "./florida-spa-seeds";
 import { getSpaImages } from "./spa-images";
@@ -127,6 +128,7 @@ type SpaSeed = {
   slug: string;
   name: string;
   providerType: ProviderType;
+  state?: string;
   neighborhood: string;
   city: string;
   metro?: Metro;
@@ -134,6 +136,8 @@ type SpaSeed = {
   description: string;
   rating: number;
   reviewCount: number;
+  googleRating?: number;
+  yelpRating?: number;
   verified: boolean;
   premierPartner: boolean;
   featuredRank?: number;
@@ -153,33 +157,44 @@ type SpaSeed = {
   dataSources?: string[];
 };
 
-function buildSocials(seed: SpaSeed, metro: Metro): SpaSocials {
+function buildSocials(seed: SpaSeed, metro?: Metro): SpaSocials {
   if (seed.socials) return seed.socials;
   const ig = seed.instagram;
   const compact = ig.replace(/_/g, "");
-  const metroLabel = METRO_LABELS[metro].replace(/\s/g, "");
+  const locationLabel = metro ? METRO_LABELS[metro].replace(/\s/g, "") : seed.state ?? "US";
   return {
     instagram: ig,
     facebook: ig,
     tiktok: compact,
-    youtube: `${compact.slice(0, 18)}${metroLabel}`,
+    youtube: `${compact.slice(0, 18)}${locationLabel}`,
   };
 }
 
 function seedSpa(data: SpaSeed, index: number): Spa {
-  const metro = data.metro ?? "south-florida";
+  const state = data.state ?? "FL";
+  const metro = data.metro;
   const images = getSpaImages(data.slug);
   const website = data.website ?? `https://www.${data.slug}.com`;
-  const phone = data.phone ?? defaultPhoneForMetro(metro, index);
+  const phone =
+    data.phone ?? (metro ? defaultPhoneForMetro(metro, index) : `(555) 555-${String(1000 + (index % 9000)).padStart(4, "0")}`);
   const socials = buildSocials(data, metro);
+  const reviewSources =
+    data.googleRating || data.yelpRating
+      ? {
+          ...(data.googleRating ? { google: data.googleRating } : {}),
+          ...(data.yelpRating ? { yelp: data.yelpRating } : {}),
+        }
+      : undefined;
 
   return {
     slug: data.slug,
     name: data.name,
     providerType: data.providerType,
+    state,
     neighborhood: data.neighborhood,
     city: data.city,
     metro,
+    reviewSources,
     tagline: data.tagline,
     description: data.description,
     rating: data.rating,
@@ -1278,6 +1293,7 @@ export const spas: Spa[] = [
   ...miamiMetroRealSpas,
   ...floridaSpaSeeds,
   ...additionalFloridaSpaSeeds,
+  ...nationwideRealSpas,
 ].map((seed, i) => seedSpa(seed, i));
 
 export const metros = Object.keys(METRO_LABELS) as Metro[];
