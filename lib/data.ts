@@ -128,7 +128,17 @@ export const baseProducts: Product[] = [
   },
 ];
 
-export const products: Product[] = [...baseProducts, ...amazonAffiliateProducts];
+function mergeAffiliateProducts(base: Product[], affiliate: Product[]): Product[] {
+  const bySlug = new Map<string, Product>();
+  for (const product of base) bySlug.set(product.slug, product);
+  for (const product of affiliate) {
+    const existing = bySlug.get(product.slug);
+    bySlug.set(product.slug, existing ? { ...existing, ...product } : product);
+  }
+  return [...bySlug.values()];
+}
+
+export const products: Product[] = mergeAffiliateProducts(baseProducts, amazonAffiliateProducts);
 
 type SpaSeed = {
   slug: string;

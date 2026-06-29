@@ -13,6 +13,25 @@ function amazon(asin: string): string {
 /** Luxury derm-brand products with Amazon affiliate links (tag applied at runtime). */
 export const amazonAffiliateProducts: Product[] = [
   {
+    slug: "eltamd-uv-clear",
+    name: "UV Clear Broad-Spectrum SPF 46",
+    brand: "EltaMD",
+    category: "SPF",
+    trustScore: 92,
+    productTags: ["fragrance-free", "paraben-free", "dermatologist-tested"],
+    description:
+      "Oil-free sunscreen loved by med spas for post-procedure protection. Niacinamide helps calm sensitive skin.",
+    rating: 4.5,
+    reviewCount: 69094,
+    image: IMG_SPF,
+    ingredients: ["Zinc Oxide", "Niacinamide", "Hyaluronic Acid"],
+    origin: "US",
+    premium: false,
+    recommended: true,
+    affiliateUrl: amazon("B002MSN3QQ"),
+    affiliatePartner: AMAZON,
+  },
+  {
     slug: "eltamd-uv-daily-hydration-tinted",
     name: "UV Daily Hydration+ Tinted Face Sunscreen",
     brand: "EltaMD",
