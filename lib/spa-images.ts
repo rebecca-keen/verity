@@ -20,10 +20,14 @@ function gal(id: string) {
   return img(id, 600, 400);
 }
 
-export const SPA_IMAGE_SETS: Record<
-  string,
-  { hero: string; gallery: string[]; source: string }
-> = {
+export type SpaImageSet = {
+  hero: string;
+  gallery: string[];
+  logo?: string;
+  source: string;
+};
+
+export const SPA_IMAGE_SETS: Record<string, SpaImageSet> = {
   "aether-aesthetics-coral-gables": {
     hero: "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
     gallery: [
@@ -560,12 +564,19 @@ for (const [slug, entry] of Object.entries(SPA_IMAGE_SETS)) {
   }
 }
 
-export function getSpaImages(slug: string) {
-  return (
-    SPA_IMAGE_SETS[slug] ?? {
-      hero: img("photo-1516975080664-ed2fc6a32937"),
-      gallery: [gal("photo-1544161515-4ab6ce6db874"), gal("photo-1612349317150-e413f6a5b16d")],
-      source: "Verity placeholder — pending spa upload",
-    }
-  );
+export function getSpaImages(slug: string): SpaImageSet {
+  const entry = SPA_IMAGE_SETS[slug];
+  if (entry) {
+    return {
+      hero: entry.hero,
+      gallery: entry.gallery,
+      source: entry.source,
+      ...(entry.logo ? { logo: entry.logo } : {}),
+    };
+  }
+  return {
+    hero: img("photo-1516975080664-ed2fc6a32937"),
+    gallery: [gal("photo-1544161515-4ab6ce6db874"), gal("photo-1612349317150-e413f6a5b16d")],
+    source: "Verity placeholder — pending spa upload",
+  };
 }
