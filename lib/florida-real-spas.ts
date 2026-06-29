@@ -1039,13 +1039,12 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Living Young Center official website — homepage",
   },
-  "moraitis-med-spa-palm-harbor": {
-    hero: "https://moraitisplasticsurgery.com/wp-content/uploads/2025/02/fallback-logo.jpg",
+        "moraitis-med-spa-palm-harbor": {
+    hero: "https://moraitisplasticsurgery.com/wp-content/uploads/2025/02/Blog-Fallback-Img1.jpg",
     gallery: [
-      "https://moraitisplasticsurgery.com/wp-content/uploads/2025/02/fallback-logo.jpg",
-      "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
+      "https://moraitisplasticsurgery.com/wp-content/uploads/2025/02/Blog-Fallback-Img1.jpg",
     ],
-    source: "Moraitis Plastic Surgery official website — homepage",
+    source: "Provider official website",
   },
   "lueur-aesthetics-clearwater": {
     hero: "https://lueuraesthetics360.com/wp-content/uploads/2026/04/2783.jpg",
@@ -1056,41 +1055,41 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Lueur Aesthetics official website — homepage",
   },
-  "ageless-advanced-aesthetics-clearwater": {
+        "ageless-advanced-aesthetics-clearwater": {
     hero: "https://static.wixstatic.com/media/11ded8_eb0bb4d6735d4c8e833a56412bf9616c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/11ded8_eb0bb4d6735d4c8e833a56412bf9616c%7Emv2.png",
     gallery: [
-      "https://static.wixstatic.com/media/11ded8_eb0bb4d6735d4c8e833a56412bf9616c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/11ded8_eb0bb4d6735d4c8e833a56412bf9616c%7Emv2.png",
-      "https://medspabellaclearwater.com/images/og-image.jpg",
-      "https://lueuraesthetics360.com/wp-content/uploads/2026/04/2783.jpg",
+      "https://static.wixstatic.com/media/11ded8_e9cb99f6cd524e82a4a09bcbf62545f2~mv2.png/v1/fill/w_105,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20design%202_edited_edited_edited_p.png",
+      "https://static.wixstatic.com/media/11ded8_852f4678e80046a18a9ab62a4db47435~mv2.jpg/v1/fill/w_101,h_59,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/11ded8_852f4678e80046a18a9ab62a4db47435~mv2.jpg",
+      "https://static.wixstatic.com/media/11ded8_4731fad1f4574669808935f754949a62~mv2.png/v1/fill/w_42,h_53,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/11ded8_4731fad1f4574669808935f754949a62~mv2.png",
+      "https://static.wixstatic.com/media/11ded8_28733b978bd04533929eb2950f24d964~mv2.png/v1/fill/w_42,h_53,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/11ded8_28733b978bd04533929eb2950f24d964~mv2.png",
     ],
-    source: "Ageless Advanced Aesthetics official website — homepage",
+    source: "Provider official website",
   },
-  "medspa-bella-clearwater": {
+        "medspa-bella-clearwater": {
     hero: "https://medspabellaclearwater.com/images/og-image.jpg",
     gallery: [
-      "https://medspabellaclearwater.com/images/og-image.jpg",
-      "https://lueuraesthetics360.com/wp-content/uploads/2026/04/2783.jpg",
-      "https://static.wixstatic.com/media/11ded8_eb0bb4d6735d4c8e833a56412bf9616c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/11ded8_eb0bb4d6735d4c8e833a56412bf9616c%7Emv2.png",
+      "https://medspabellaclearwater.com/images/dianna-bryan-md-optimized-376a7923c337e6c7ac54e32d46fb2cbc.jpg",
     ],
-    source: "Medspa Bella official website — homepage",
+    source: "Provider official website",
   },
-  "aurivita-medspa-clearwater": {
+        "aurivita-medspa-clearwater": {
     hero: "https://aurivitamedspa.com/wp-content/uploads/2025/12/all-about-you.webp",
     gallery: [
-      "https://aurivitamedspa.com/wp-content/uploads/2025/12/all-about-you.webp",
       "https://aurivitamedspa.com/wp-content/uploads/2025/09/Group-1321317858.png",
-      "https://medspabellaclearwater.com/images/og-image.jpg",
+      "https://aurivitamedspa.com/wp-content/uploads/elementor/thumbs/Group-1321317858-rgtqks74hmjwfueddolhr1auhvsyff0ot1tdslev7g.png",
+      "https://aurivitamedspa.com/wp-content/uploads/2025/09/Rectangle-3-6.png",
     ],
-    source: "Aurivita Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "skinspirations-clearwater": {
-    hero: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/6a037510-1836-4310-a2c9-139933db016b/hero-idx-122.jpg",
+          "skinspirations-clearwater": {
+    hero: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/6a037510-1836-4310-a2c9-139933db016b/hero-idx-1225.jpg",
     gallery: [
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/6a037510-1836-4310-a2c9-139933db016b/hero-idx-122.jpg",
-      "https://static1.squarespace.com/static/67e3275166f1bf2a1f8f49c7/t/6849daafe2aa2046d32bf573/1749670575762/Skinspirations-socialshare.jpg?format=1500w",
-      "https://medspabellaclearwater.com/images/og-image.jpg",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/5712d38f-e3ae-421e-9587-f4238e85740b/txt-pybff-idx.png",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/29a5a04b-6341-4044-9eff-c678993814c8/StockCake-Laboratory_Research_Experiment-548922-standard.jpg",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/4ca65d6d-0408-42a8-a562-f3fa5d00761d/ramy-mamdouh-Va1HQm_Ch3c-unsplash.jpg",
+      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/7346cb9a-487e-430b-8392-2f8b68d66cee/idx-male-01.jpg",
     ],
-    source: "Skinspirations official website — homepage",
+    source: "Provider official website",
   },
   "tranquility-aesthetics-tarpon-springs": {
     hero: "https://static.wixstatic.com/media/838826_dbd1dde14ee941318a2bb14c1070df4e~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01/838826_dbd1dde14ee941318a2bb14c1070df4e~mv2.jpg",
@@ -1101,14 +1100,15 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Tranquility Aesthetics official website — homepage",
   },
-  "envy-me-aesthetics-tarpon-springs": {
+        "envy-me-aesthetics-tarpon-springs": {
     hero: "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/69862db0b148745252b7d5c9_ENVYME-OPENGRAPH.png",
     gallery: [
-      "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/69862db0b148745252b7d5c9_ENVYME-OPENGRAPH.png",
-      "https://static.wixstatic.com/media/838826_dbd1dde14ee941318a2bb14c1070df4e~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01/838826_dbd1dde14ee941318a2bb14c1070df4e~mv2.jpg",
-      "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
+      "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/699e46e2e0f611156ba264a9_homepage-hero-placeholder5.jpg",
+      "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1%2F69d96328a06104a84e89f463_home_hero-vdeo_poster.0000000.jpg",
+      "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/699e432a94b34a5a10b57afb_By-Kalli-Sticker-2.png",
+      "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/69dd61ea08e4de52858a8021_ca3b42f991ebc94f5d8e5986d2803e76_home-about-img.jpg",
     ],
-    source: "Envy Me Aesthetics official website — homepage",
+    source: "Provider official website",
   },
   "tonicity-health-safety-harbor": {
     hero: "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
@@ -1119,41 +1119,40 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Tonicity Health & Med Spa official website — homepage",
   },
-  "core-wellness-safety-harbor": {
+        "core-wellness-safety-harbor": {
     hero: "https://static.wixstatic.com/media/f20ff3_e706dee7a3f4421c9b3ea673c1fd7bf8~mv2.png/v1/fill/w_2000,h_789,al_c/f20ff3_e706dee7a3f4421c9b3ea673c1fd7bf8~mv2.png",
     gallery: [
-      "https://static.wixstatic.com/media/f20ff3_e706dee7a3f4421c9b3ea673c1fd7bf8~mv2.png/v1/fill/w_2000,h_789,al_c/f20ff3_e706dee7a3f4421c9b3ea673c1fd7bf8~mv2.png",
-      "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
-      "https://tonicityhealth.com/wp-content/uploads/2021/03/Skin-Treatment-2.jpg",
+      "https://static.wixstatic.com/media/f20ff3_72f1a8d047aa4c3d81cb3d4d654926dd~mv2.png/v1/fill/w_97,h_96,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f20ff3_72f1a8d047aa4c3d81cb3d4d654926dd~mv2.png",
+      "https://static.wixstatic.com/media/f20ff3_3d6e79fcf18a4c2198f5d89000b54764~mv2.jpg/v1/fill/w_122,h_88,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/f20ff3_3d6e79fcf18a4c2198f5d89000b54764~mv2.jpg",
+      "https://static.wixstatic.com/media/f20ff3_33a8f780047845ceaaa59ffcfb9c4fdf~mv2.png",
+      "https://static.wixstatic.com/media/f20ff3_d1e3fa82032947328d3f89f618cf4a1d~mv2.jpg/v1/fill/w_119,h_120,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/f20ff3_d1e3fa82032947328d3f89f618cf4a1d~mv2.jpg",
     ],
-    source: "Core Wellness & MedSpa official website — homepage",
+    source: "Provider official website",
   },
-  "elemence-med-spa-largo": {
-    hero: "https://drksmedspa.com/wp-content/uploads/2022/11/skin-care.png",
+        "elemence-med-spa-largo": {
+    hero: "https://elemencemedspa.com/wp-content/uploads/2025/10/woman-spending-time-spa-getting-relaxing-massage-scaled.webp",
     gallery: [
-      "https://drksmedspa.com/wp-content/uploads/2022/11/skin-care.png",
-      "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
-      "https://static.wixstatic.com/media/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg/v1/crop/x_0,y_38,w_802,h_662/fill/w_801,h_662,al_c,q_85,usm_0.66_1.00_0.01/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg",
+      "https://elemencemedspa.com/wp-content/uploads/elementor/thumbs/luchiana-2127557762-r9irhzipyi87uorxdmhxyr1am8hluvvh85sjifu3lc.webp",
+      "https://elemencemedspa.com/wp-content/uploads/2025/07/IMG_1531-1-570x696.jpg",
+      "https://elemencemedspa.com/wp-content/uploads/2025/07/DSC_9073_Original-570x696.jpg",
+      "https://elemencemedspa.com/wp-content/uploads/2025/07/cassie-beals-570x696.jpeg",
     ],
-    source: "Elemence Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "dunedin-medical-aesthetics-laser": {
-    hero: "https://static.wixstatic.com/media/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg/v1/crop/x_0,y_38,w_802,h_662/fill/w_801,h_662,al_c,q_85,usm_0.66_1.00_0.01/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg",
+        "dunedin-medical-aesthetics-laser": {
+    hero: "https://static.wixstatic.com/media/6a0e16_c7960460417f41ba8acdca384475bd26~mv2.jpg/v1/fill/w_117,h_117,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a0e16_c7960460417f41ba8acdca384475bd26~mv2.jpg",
     gallery: [
-      "https://static.wixstatic.com/media/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg/v1/crop/x_0,y_38,w_802,h_662/fill/w_801,h_662,al_c,q_85,usm_0.66_1.00_0.01/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg",
-      "https://static.wixstatic.com/media/6a0e16_2b500bdb608845149980ae0156155ad9f000.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01/6a0e16_2b500bdb608845149980ae0156155ad9f000.jpg",
-      "https://dunedinwellspa.com/wp-content/uploads/2023/12/Hero_2.png",
+      "https://static.wixstatic.com/media/6a0e16_2b500bdb608845149980ae0156155ad9f000.jpg/v1/fill/w_147,h_83,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/6a0e16_2b500bdb608845149980ae0156155ad9f000.jpg",
+      "https://static.wixstatic.com/media/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg/v1/crop/x_0,y_38,w_802,h_662/fill/w_489,h_404,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fotona%20face%20lift%20picture.jpg",
     ],
-    source: "Dunedin Medical Aesthetics Spa & Laser official website — homepage",
+    source: "Provider official website",
   },
-  "bloom-iv-dunedin": {
+        "bloom-iv-dunedin": {
     hero: "https://lirp.cdn-website.com/faa64f10/dms3rep/multi/opt/GettyImages-1270488640-1920w.jpg",
     gallery: [
-      "https://lirp.cdn-website.com/faa64f10/dms3rep/multi/opt/GettyImages-1270488640-1920w.jpg",
-      "https://lirp.cdn-website.com/faa64f10/dms3rep/multi/opt/GettyImages-1081205870-1920w.PNG",
-      "https://dunedinwellspa.com/wp-content/uploads/2023/12/Hero_2.png",
+
     ],
-    source: "Bloom IV Hydration & Wellness official website — homepage",
+    source: "Provider official website",
   },
   "dunedin-well-spa": {
     hero: "https://dunedinwellspa.com/wp-content/uploads/2023/12/Hero_2.png",
@@ -1164,14 +1163,15 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Dunedin Well Spa official website — homepage",
   },
-  "living-young-st-petersburg": {
+        "living-young-st-petersburg": {
     hero: "https://livingyoungcenter.com/wp-content/uploads/2022/03/og-image-01.jpg",
     gallery: [
-      "https://livingyoungcenter.com/wp-content/uploads/2022/03/og-image-01.jpg",
-      "https://iconciergemedspa.com/wp-content/uploads/2026/02/iConcierge-Provider-Lifestyle-1030-.jpg",
-      "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2025/07/St-Pete-Wellness-MedSpa-Logo-2025.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/TOP-1-scaled.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/Screenshot-2025-02-28-at-12.37.28-PM.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
     ],
-    source: "Living Young Center official website — homepage",
+    source: "Provider official website",
   },
   "iconcierge-medspa-st-pete": {
     hero: "https://iconciergemedspa.com/wp-content/uploads/2026/02/iConcierge-Provider-Lifestyle-1030-.jpg",
@@ -1182,59 +1182,62 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "iConcierge Med Spa official website — homepage",
   },
-  "st-pete-wellness-medspa": {
+        "st-pete-wellness-medspa": {
     hero: "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2025/07/St-Pete-Wellness-MedSpa-Logo-2025.png",
     gallery: [
-      "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2025/07/St-Pete-Wellness-MedSpa-Logo-2025.png",
-      "https://iconciergemedspa.com/wp-content/uploads/2026/02/iConcierge-Provider-Lifestyle-1030-.jpg",
-      "https://livingyoungcenter.com/wp-content/uploads/2022/03/og-image-01.jpg",
+      "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2023/01/cropped-unnamed-3.png?fit=270%2C270&#038;ssl=1",
+      "https://stpetewellnessmedspa.com/wp-content/uploads/2023/01/unnamed-2.png",
+      "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2024/11/Image-1.jpeg?fit=500%2C138&amp;ssl=1",
+      "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2024/11/Image-3.jpeg?fit=270%2C66&amp;ssl=1",
     ],
-    source: "St. Pete Wellness Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "living-young-seminole": {
+        "living-young-seminole": {
     hero: "https://livingyoungcenter.com/wp-content/uploads/2022/03/og-image-01.jpg",
     gallery: [
-      "https://livingyoungcenter.com/wp-content/uploads/2022/03/og-image-01.jpg",
-      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-76e642d/livingyoungcenter.com/wp-content/uploads/2025/09/TOP-1-1024x1024.png",
-      "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/TOP-1-scaled.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/Screenshot-2025-02-28-at-12.37.28-PM.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
     ],
-    source: "Living Young Center official website — homepage",
+    source: "Provider official website",
   },
-  "living-young-odessa": {
+        "living-young-odessa": {
     hero: "https://livingyoungcenter.com/wp-content/uploads/2022/03/og-image-01.jpg",
     gallery: [
-      "https://livingyoungcenter.com/wp-content/uploads/2022/03/og-image-01.jpg",
-      "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider1_orig.webp",
-      "https://liviamedspa.com/wp-content/uploads/2026/04/Hero-Apirl4.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/TOP-1-scaled.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/Screenshot-2025-02-28-at-12.37.28-PM.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
+      "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
     ],
-    source: "Living Young Center official website — homepage",
+    source: "Provider official website",
   },
-  "livia-medspa-tampa": {
+        "livia-medspa-tampa": {
     hero: "https://liviamedspa.com/wp-content/uploads/2026/04/Hero-Apirl4.png",
     gallery: [
-      "https://liviamedspa.com/wp-content/uploads/2026/04/Hero-Apirl4.png",
-      "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider1_orig.webp",
-      "https://erasablemedspa.com/wp-content/uploads/2024/02/DSC03002-Edit.jpg",
+      "https://liviamedspa.com/wp-content/uploads/2026/04/AdobeStock_1954168906-768x512.jpeg",
+      "https://liviamedspa.com/wp-content/uploads/2026/04/glo2-thumbnail-768x512.jpg",
+      "https://liviamedspa.com/wp-content/uploads/2026/04/videoframe_3521-768x432.png",
+      "https://liviamedspa.com/wp-content/uploads/2026/04/AdobeStock_1921576874-768x438.jpeg",
     ],
-    source: "LIVIA Medical Spa official website — homepage",
+    source: "Provider official website",
   },
-  "tre-medspa-tampa": {
+        "tre-medspa-tampa": {
     hero: "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider1_orig.webp",
     gallery: [
-      "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider1_orig.webp",
-      "https://liviamedspa.com/wp-content/uploads/2026/04/Hero-Apirl4.png",
-      "https://taowellnessmedspa.com/wp-content/uploads/2024/09/staff-member-at-tao-wellness-med-spa-1.png",
+      "https://www.tremedspa.com/files/theme/slide2.jpg",
+      "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider3_orig.webp",
+      "https://www.tremedspa.com/uploads/7/3/5/3/73536135/3533983.jpg",
+      "https://www.tremedspa.com/uploads/7/3/5/3/73536135/botox-injection-botox-vs-fillers.jpg",
     ],
-    source: "Tre MedSpa official website — homepage",
+    source: "Provider official website",
   },
-  "tao-wellness-medspa-tampa": {
-    hero: "https://taowellnessmedspa.com/wp-content/uploads/2024/09/staff-member-at-tao-wellness-med-spa-1.png",
+        "tao-wellness-medspa-tampa": {
+    hero: "https://taowellnessmedspa.com/wp-content/uploads/2024/09/beautiful-elegant-woman-with-gold-jewlery-tao-wellness-medspa-2.png",
     gallery: [
       "https://taowellnessmedspa.com/wp-content/uploads/2024/09/staff-member-at-tao-wellness-med-spa-1.png",
-      "https://liviamedspa.com/wp-content/uploads/2026/04/Hero-Apirl4.png",
-      "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider1_orig.webp",
     ],
-    source: "TAO Wellness Med Spa official website — homepage",
+    source: "Provider official website",
   },
   "cell-renew-medspa-tampa": {
     hero: "https://dfjzm6sgcd78n.cloudfront.net/images/gallery/gallery-4-after.jpg",
@@ -1254,130 +1257,136 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Erasable Med Spa official website — homepage",
   },
-  "arviva-aesthetics-tampa": {
+        "arviva-aesthetics-tampa": {
     hero: "https://arvivaesthetics.com/wp-content/uploads/2016/10/homepage-sm.jpg",
     gallery: [
-      "https://arvivaesthetics.com/wp-content/uploads/2016/10/homepage-sm.jpg",
-      "https://liviamedspa.com/wp-content/uploads/2026/04/Hero-Apirl4.png",
-      "https://erasablemedspa.com/wp-content/uploads/2024/02/DSC03002-Edit.jpg",
+      "https://arvivaesthetics.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_MX.png",
+      "https://arvivaesthetics.com/wp-content/uploads/2024/08/1-Homepage%20Slider.jpg",
+      "https://arvivaesthetics.com/wp-content/uploads/2016/10/home-image.jpg",
+      "https://arvivaesthetics.com/wp-content/uploads/2020/07/Canva-Group-of-Friends-Having-Fun-Together-Outdoors.jpg",
     ],
-    source: "Arviv Medical Aesthetics official website — homepage",
+    source: "Provider official website",
   },
-  "4ever-young-tampa": {
+        "4ever-young-tampa": {
     hero: "https://4everyoungantiaging.com/wp-content/uploads/2024/05/4ey-about.jpg",
     gallery: [
-      "https://4everyoungantiaging.com/wp-content/uploads/2024/05/4ey-about.jpg",
-      "https://4everyoungantiaging.com/wp-content/uploads/2024/08/group-234-1.png.webp",
-      "https://arvivaesthetics.com/wp-content/uploads/2016/10/homepage-sm.jpg",
+      "https://4everyoungantiaging.com/wp-content/uploads/2024/05/cropped-4EverYoung-270x270.png",
+      "https://4everyoungantiaging.com/wp-content/uploads/2024/08/group-234-1.png",
+      "https://4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/christine-k.jpeg",
+      "https://4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/david-r.webp",
     ],
-    source: "4Ever Young official website — homepage",
+    source: "Provider official website",
   },
-  "windermere-medical-spa-orlando": {
+        "windermere-medical-spa-orlando": {
     hero: "https://windermeremedicalspa.com/storage/2024/07/Windermere-Medical-Spa-Logo-Orlando-FL.webp",
     gallery: [
-      "https://windermeremedicalspa.com/storage/2024/07/Windermere-Medical-Spa-Logo-Orlando-FL.webp",
-      "https://lirp.cdn-website.com/9384f7e6/dms3rep/multi/opt/IMG_7262-1920w.jpg",
-      "https://rejuvinorlando.com/wp-content/uploads/2026/03/amir-fazeli-01.jpg",
+      "https://windermeremedicalspa.com/storage/elementor/thumbs/sculptra-windermere-medical-spa-in-orlando-fl-qiq20wdwpszni3p8bu1afitih49xve69oyjk4tp3gw.webp",
+      "https://windermeremedicalspa.com/storage/elementor/thumbs/lasers-winder-mere-medspa-orlando-fl-qiq20z7fab3igxl4vd96503w99w1ihhgpci0knkwy8.webp",
+      "https://windermeremedicalspa.com/storage/elementor/thumbs/skin-windermere-medical-spa-in-orlando-fl-qiq20nxd0ao2lm1ip8dnb2yd4nfmy48onso6tc1n0w.webp",
+      "https://windermeremedicalspa.com/storage/elementor/thumbs/sculptra-windermere-medical-spa-in-orlando-fl-qiq20wdwpt0sfadszze7hqhj8t6cf64mvxj86qr1k0.webp",
     ],
-    source: "Windermere Medical Spa official website — homepage",
+    source: "Provider official website",
   },
-  "rejuvin-dr-fazeli-orlando": {
-    hero: "https://rejuvinorlando.com/wp-content/uploads/2026/03/amir-fazeli-01.jpg",
+        "rejuvin-dr-fazeli-orlando": {
+    hero: "https://rejuvinorlando.com/wp-content/uploads/2026/03/technology-02.jpg",
     gallery: [
       "https://rejuvinorlando.com/wp-content/uploads/2026/03/amir-fazeli-01.jpg",
+      "https://rejuvinorlando.com/wp-content/uploads/2026/04/amir-fazeli-01.png",
       "https://rejuvinorlando.com/wp-content/uploads/2026/03/weight-loss-01.jpg",
-      "https://www.thenurmedspa.com/nur-banner.jpg",
+      "https://rejuvinorlando.com/wp-content/uploads/2026/03/hormone-optimization-02-987496476.jpg",
     ],
-    source: "Rejuvin by Dr. Fazeli official website — homepage",
+    source: "Provider official website",
   },
-  "nur-medspa-orlando": {
+        "nur-medspa-orlando": {
     hero: "https://www.thenurmedspa.com/nur-banner.jpg",
     gallery: [
       "https://www.thenurmedspa.com/nur-banner.jpg",
-      "https://rejuvinorlando.com/wp-content/uploads/2026/03/amir-fazeli-01.jpg",
-      "https://luxemedspaaesthetics.com/_static_/background/og-image.jpg",
     ],
-    source: "NUR Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "luxe-medspa-orlando": {
+        "luxe-medspa-orlando": {
     hero: "https://luxemedspaaesthetics.com/_static_/background/og-image.jpg",
     gallery: [
-      "https://luxemedspaaesthetics.com/_static_/background/og-image.jpg",
-      "https://www.thenurmedspa.com/nur-banner.jpg",
-      "https://windermeremedicalspa.com/storage/2024/07/Windermere-Medical-Spa-Logo-Orlando-FL.webp",
+      "https://luxemedspaaesthetics.com/_static_/feature/intro.jpg",
+      "https://luxemedspaaesthetics.com/_static_/background/feat-procedure.jpg",
+      "https://luxemedspaaesthetics.com/_static_/feature/injectables.jpg",
+      "https://luxemedspaaesthetics.com/_static_/feature/facial-rejuvenation.jpg",
     ],
-    source: "Luxe Med Spa Aesthetics official website — homepage",
+    source: "Provider official website",
   },
-  "jax-aesthetics-wellness-jacksonville": {
+        "jax-aesthetics-wellness-jacksonville": {
     hero: "https://jaxaestheticscenter.com/wp-content/uploads/video-cover.png",
     gallery: [
-      "https://jaxaestheticscenter.com/wp-content/uploads/botox-1.jpg",
+      "https://jaxaestheticscenter.com/wp-content/uploads/cropped-diamond2-270x270.png",
+      "https://i.ytimg.com/vi/mQ3BAtPFqX0/hqdefault.jpg",
       "https://jaxaestheticscenter.com/wp-content/uploads/body-sculpting-1.jpg",
-      "https://focusaestheticsjax.com/wp-content/uploads/Focus-Aesthetics-Featured-Image.jpg",
+      "https://jaxaestheticscenter.com/wp-content/uploads/contouring-1.jpg",
     ],
-    source: "Jax Aesthetics & Wellness Center official website — homepage",
+    source: "Provider official website",
   },
-  "focus-aesthetics-jacksonville": {
+        "focus-aesthetics-jacksonville": {
     hero: "https://focusaestheticsjax.com/wp-content/uploads/Focus-Aesthetics-Featured-Image.jpg",
     gallery: [
       "https://focusaestheticsjax.com/wp-content/uploads/Focus-Aesthetics-Featured-Image.jpg",
-      "https://jaxaestheticscenter.com/wp-content/uploads/video-cover.png",
-      "https://conciergecosmeticsandaesthetics.com/wp-content/uploads/2023/06/concierge-header.jpg",
     ],
-    source: "Focus Aesthetics official website — homepage",
+    source: "Provider official website",
   },
-  "concierge-cosmetics-jacksonville": {
+        "concierge-cosmetics-jacksonville": {
     hero: "https://conciergecosmeticsandaesthetics.com/wp-content/uploads/2023/06/concierge-header.jpg",
     gallery: [
       "https://conciergecosmeticsandaesthetics.com/wp-content/uploads/2023/06/concierge-header.jpg",
       "https://conciergecosmeticsandaesthetics.com/wp-content/uploads/2022/01/concierge-office-staff.jpg",
-      "https://focusaestheticsjax.com/wp-content/uploads/Focus-Aesthetics-Featured-Image.jpg",
     ],
-    source: "Concierge Cosmetics & Aesthetics official website — homepage",
+    source: "Provider official website",
   },
-  "modern-aesthetic-centers-jacksonville": {
-    hero: "https://www.macflorida.com/assets/img/masthead/home/01.jpg",
+        "modern-aesthetic-centers-jacksonville": {
+    hero: "https://www.macflorida.com/assets/img/og-feat.jpg",
     gallery: [
       "https://www.macflorida.com/assets/img/masthead/home/01.jpg",
-      "https://www.macflorida.com/assets/img/og-feat.jpg",
-      "https://jaxaestheticscenter.com/wp-content/uploads/video-cover.png",
+      "https://www.macflorida.com/assets/img/masthead/home/02.jpg",
+      "https://www.macflorida.com/assets/img/masthead/home/03.jpg",
+      "https://www.macflorida.com/assets/img/masthead/home/04.jpg",
     ],
-    source: "Modern Aesthetic Centers official website — homepage",
+    source: "Provider official website",
   },
-  "cma-medicine-jacksonville": {
-    hero: "https://cmamedicine.com/wp-content/uploads/2024/07/Dr-Schallen-A5-Hero-web-002.webp",
+        "cma-medicine-jacksonville": {
+    hero: "https://cmamedicine.com/wp-content/uploads/2024/07/Dr-Schallen-A5-Hero-web-002.webp?wsr",
     gallery: [
-      "https://cmamedicine.com/wp-content/uploads/2024/07/Dr-Schallen-A5-Hero-web-002.webp",
-      "https://jaxaestheticscenter.com/wp-content/uploads/video-cover.png",
-      "https://focusaestheticsjax.com/wp-content/uploads/Focus-Aesthetics-Featured-Image.jpg",
+      "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2026/06/biote-certified-provider-seal.webp?fit=318%2C318&#038;ssl=1",
+      "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2026/04/Glace-004.png?resize=500%2C500&#038;ssl=1",
+      "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2026/04/glace-preview.webp?resize=500%2C500&#038;ssl=1",
+      "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/07/shutterstock_524915704-scaled.jpg?resize=500%2C500&#038;ssl=1",
     ],
-    source: "CMA Medicine official website — homepage",
+    source: "Provider official website",
   },
-  "inside-out-medspa-naples": {
+        "inside-out-medspa-naples": {
     hero: "https://insideoutmedspa.com/wp-content/uploads/2026/01/award.webp",
     gallery: [
-      "https://insideoutmedspa.com/wp-content/uploads/2026/01/award.webp",
-      "https://insideoutmedspa.com/wp-content/uploads/2025/12/Inside-Out-Medspa-Logo-Large.webp",
-      "https://arvivaesthetics.com/wp-content/uploads/2016/10/homepage-sm.jpg",
+      "https://insideoutmedspa.com/wp-content/uploads/elementor/thumbs/injectabal-sq-rmfl5nhepcxva2f5tfxce2nrxmfswqy7jag9kamkp0.jpg",
+      "https://insideoutmedspa.com/wp-content/uploads/elementor/thumbs/Microneedling-with-RF-Morpheus8-rmfl5nhepcxva2f5tfxce2nrxmfswqy7jag9kamkp0.webp",
+      "https://insideoutmedspa.com/wp-content/uploads/elementor/thumbs/Facial-rmfl5nhepcxva2f5tfxce2nrxmfswqy7jag9kamkp0.webp",
+      "https://insideoutmedspa.com/wp-content/uploads/elementor/thumbs/Laser-Hair-removal-2-Color-rmfl5nhepcxva2f5tfxce2nrxmfswqy7jag9kamkp0.webp",
     ],
-    source: "Inside Out Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "4ever-young-fort-myers": {
+        "4ever-young-fort-myers": {
     hero: "https://4everyoungantiaging.com/wp-content/uploads/2024/05/4ey-about.jpg",
     gallery: [
-      "https://4everyoungantiaging.com/wp-content/uploads/2024/05/4ey-about.jpg",
-      "https://insideoutmedspa.com/wp-content/uploads/2026/01/award.webp",
-      "https://4everyoungantiaging.com/wp-content/uploads/2024/08/group-234-1.png.webp",
+      "https://4everyoungantiaging.com/wp-content/uploads/2024/05/cropped-4EverYoung-270x270.png",
+      "https://4everyoungantiaging.com/wp-content/uploads/2024/08/group-234-1.png",
+      "https://4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/christine-k.jpeg",
+      "https://4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/david-r.webp",
     ],
-    source: "4Ever Young official website — homepage",
+    source: "Provider official website",
   },
-  "simplicity-medspa-tampa-bay": {
-    hero: "https://static1.squarespace.com/static/69b070b0bf4c126463da8661/t/69b0749c759a770b2a8ad2e1/1773171868047/og-image.png",
+        "simplicity-medspa-tampa-bay": {
+    hero: "https://images.squarespace-cdn.com/content/v1/69b070b0bf4c126463da8661/1773170886477-3D794WVQPSI9PO6MSER8/iStock-1496615019.jpg",
     gallery: [
-      "https://static1.squarespace.com/static/69b070b0bf4c126463da8661/t/69b0749c759a770b2a8ad2e1/1773171868047/og-image.png",
-      "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/6a037510-1836-4310-a2c9-139933db016b/hero-idx-122.jpg",
-      "https://livingyoungcenter.com/wp-content/uploads/2022/03/og-image-01.jpg",
+      "https://images.squarespace-cdn.com/content/v1/69b070b0bf4c126463da8661/c78d2ab6-d31d-45bc-b3e8-8a895793277c/Tox.png",
+      "https://images.squarespace-cdn.com/content/v1/69b070b0bf4c126463da8661/252a3304-0819-4c90-b578-4a967211c660/Dermal+Filler.png",
+      "https://images.squarespace-cdn.com/content/v1/69b070b0bf4c126463da8661/e42dc69c-6911-4d02-9a7c-76d204744693/Lips.png",
+      "https://images.squarespace-cdn.com/content/v1/69b070b0bf4c126463da8661/da8151fa-18e7-4a3d-b0b9-faedc8f994cd/Weight+Management.png",
     ],
-    source: "Simplicity Med Spa official website — homepage",
+    source: "Provider official website",
   },
 };

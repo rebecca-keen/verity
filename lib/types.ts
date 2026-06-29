@@ -138,6 +138,14 @@ export interface ConciergeMatch {
   matchScore: number;
 }
 
+export interface ConciergeFilters {
+  state?: USStateCode | "All";
+  city?: string;
+  providerType?: ProviderType | "All";
+  treatmentCategory?: TreatmentCategory | "All";
+  providerName?: string;
+}
+
 export interface BookingRequest {
   spaSlug: string;
   name: string;

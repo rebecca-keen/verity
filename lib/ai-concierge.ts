@@ -1,10 +1,21 @@
 import { spas } from "./data";
-import type { ConciergeMatch, ProviderType, Treatment } from "./types";
+import type {
+  ConciergeFilters,
+  ConciergeMatch,
+  ProviderType,
+  Treatment,
+  TreatmentCategory,
+} from "./types";
 import { METRO_LABELS } from "./spa-utils";
+
+const RESULT_LIMIT = 10;
+const MIN_SCORE = 15;
 
 const KEYWORDS: Record<string, { treatments: Treatment[]; tags: string[] }> = {
   botox: { treatments: ["botox"], tags: ["injectables", "wrinkles", "preventive"] },
   filler: { treatments: ["fillers"], tags: ["lips", "volume", "injectables"] },
+  injectable: { treatments: ["botox", "fillers"], tags: ["injectables"] },
+  injectables: { treatments: ["botox", "fillers"], tags: ["injectables"] },
   lip: { treatments: ["fillers"], tags: ["lips", "natural"] },
   laser: { treatments: ["laser"], tags: ["resurfacing", "pigmentation", "acne scars"] },
   facial: { treatments: ["facial"], tags: ["sensitive", "first time", "luxury"] },
@@ -87,12 +98,152 @@ const KEYWORDS: Record<string, { treatments: Treatment[]; tags: string[] }> = {
   clinic: { treatments: ["botox", "fillers"], tags: ["aesthetics"] },
 };
 
+const CATEGORY_TREATMENTS: Record<TreatmentCategory, Treatment[]> = {
+  injectables: ["botox", "fillers"],
+  lasers: ["laser"],
+  beauty: ["facial", "microneedling"],
+  body: ["body-contouring"],
+};
+
+function normalizeText(value: string): string {
+  return value
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .trim();
+}
+
+function extractNameSearchTerms(query: string, filters: ConciergeFilters): string[] {
+  const terms = new Set<string>();
+  if (filters.providerName?.trim()) {
+    terms.add(filters.providerName.trim());
+  }
+
+  const lower = query.toLowerCase();
+  const stopWords = new Set([
+    "a",
+    "an",
+    "the",
+    "in",
+    "at",
+    "for",
+    "and",
+    "or",
+    "my",
+    "me",
+    "i",
+    "want",
+    "need",
+    "looking",
+    "find",
+    "near",
+    "around",
+    "best",
+    "good",
+    "spa",
+    "med",
+    "medspa",
+  ]);
+
+  for (const spa of spas) {
+    const nameNorm = normalizeText(spa.name);
+    if (nameNorm.length >= 3 && lower.includes(nameNorm)) {
+      terms.add(spa.name);
+    }
+  }
+
+  const quoted = query.match(/"([^"]+)"/g);
+  if (quoted) {
+    for (const segment of quoted) {
+      terms.add(segment.replace(/"/g, "").trim());
+    }
+  }
+
+  const words = query.split(/\s+/).filter(Boolean);
+  for (let i = 0; i < words.length; i++) {
+    for (let len = Math.min(4, words.length - i); len >= 2; len--) {
+      const phrase = words.slice(i, i + len).join(" ");
+      const phraseNorm = normalizeText(phrase);
+      if (stopWords.has(phraseNorm) || phraseNorm.length < 3) continue;
+      if (Object.keys(KEYWORDS).some((key) => phraseNorm.includes(key))) continue;
+      terms.add(phrase);
+    }
+  }
+
+  return [...terms];
+}
+
+function nameMatchBoost(
+  spa: (typeof spas)[0],
+  searchTerms: string[]
+): { boost: number; reason?: string } {
+  const nameNorm = normalizeText(spa.name);
+  const slugNorm = spa.slug.replace(/-/g, " ");
+
+  for (const term of searchTerms) {
+    const termNorm = normalizeText(term);
+    if (termNorm.length < 2) continue;
+
+    if (nameNorm === termNorm || nameNorm.includes(termNorm) || termNorm.includes(nameNorm)) {
+      return { boost: 100, reason: `Matches "${spa.name}" by name` };
+    }
+    if (slugNorm.includes(termNorm.replace(/\s+/g, "-")) || slugNorm.includes(termNorm)) {
+      return { boost: 95, reason: `Matches "${spa.name}" by name` };
+    }
+
+    const words = termNorm.split(/\s+/).filter((word) => word.length >= 2);
+    if (words.length > 0 && words.every((word) => nameNorm.includes(word) || slugNorm.includes(word))) {
+      return { boost: 90, reason: `Matches "${spa.name}" by name` };
+    }
+  }
+
+  return { boost: 0 };
+}
+
+function cityMatches(spa: (typeof spas)[0], cityFilter: string): boolean {
+  const cityNorm = normalizeText(cityFilter);
+  const spaCity = normalizeText(spa.city);
+  const neighborhood = normalizeText(spa.neighborhood);
+  const metroName = spa.metro ? normalizeText(METRO_LABELS[spa.metro]) : "";
+
+  if (spaCity.includes(cityNorm) || cityNorm.includes(spaCity)) return true;
+  if (neighborhood.includes(cityNorm)) return true;
+  if (metroName.includes(cityNorm) || cityNorm.includes(metroName.replace(/\s+/g, " "))) return true;
+  if (cityNorm === "tampa" && spa.metro === "tampa-bay" && spaCity.includes("tampa")) return true;
+  return false;
+}
+
+function passesHardFilters(spa: (typeof spas)[0], filters: ConciergeFilters): boolean {
+  if (filters.state && filters.state !== "All" && spa.state !== filters.state) {
+    return false;
+  }
+
+  if (filters.city?.trim() && !cityMatches(spa, filters.city)) {
+    return false;
+  }
+
+  if (filters.providerType && filters.providerType !== "All" && spa.providerType !== filters.providerType) {
+    return false;
+  }
+
+  if (
+    filters.treatmentCategory &&
+    filters.treatmentCategory !== "All" &&
+    !spa.treatmentCategories.includes(filters.treatmentCategory)
+  ) {
+    return false;
+  }
+
+  return true;
+}
+
 function scoreSpa(
   spa: (typeof spas)[0],
   wantedTreatments: Set<Treatment>,
   wantedTags: Set<string>,
-  wantedProviderTypes: Set<ProviderType>
-): { score: number; reasons: string[] } {
+  wantedProviderTypes: Set<ProviderType>,
+  filters: ConciergeFilters
+): { score: number; reasons: string[]; nameMatched: boolean } {
   let score = 0;
   const reasons: string[] = [];
 
@@ -100,10 +251,18 @@ function scoreSpa(
     score += 15;
     reasons.push("Verified license & medical director on file");
   }
-  for (const t of wantedTreatments) {
-    if (spa.treatments.includes(t)) {
+
+  for (const treatment of wantedTreatments) {
+    if (spa.treatments.includes(treatment)) {
       score += 25;
-      reasons.push(`Offers ${t.replace("-", " ")}`);
+      reasons.push(`Offers ${treatment.replace("-", " ")}`);
+    }
+  }
+
+  if (filters.treatmentCategory && filters.treatmentCategory !== "All") {
+    if (spa.treatmentCategories.includes(filters.treatmentCategory)) {
+      score += 30;
+      reasons.push(`Specializes in ${filters.treatmentCategory.replace("-", " ")}`);
     }
   }
 
@@ -112,6 +271,21 @@ function scoreSpa(
       score += 12;
       reasons.push(`Matches your ${type.replace("-", " ")} preference`);
     }
+  }
+
+  if (filters.providerType && filters.providerType !== "All" && spa.providerType === filters.providerType) {
+    score += 20;
+    reasons.push(`Your selected provider type: ${filters.providerType.replace("-", " ")}`);
+  }
+
+  if (filters.state && filters.state !== "All" && spa.state === filters.state) {
+    score += 18;
+    reasons.push(`Located in ${filters.state}`);
+  }
+
+  if (filters.city?.trim() && cityMatches(spa, filters.city)) {
+    score += 22;
+    reasons.push(`Located in ${spa.city}`);
   }
 
   const neighborhood = spa.neighborhood.toLowerCase();
@@ -137,14 +311,38 @@ function scoreSpa(
   }
 
   score += spa.rating * 4;
-  return { score, reasons: [...new Set(reasons)].slice(0, 3) };
+  return { score, reasons: [...new Set(reasons)].slice(0, 3), nameMatched: false };
 }
 
-export function matchSpas(query: string): ConciergeMatch[] {
-  const lower = query.toLowerCase();
+function buildCombinedQuery(query: string, filters: ConciergeFilters): string {
+  const parts = [query.trim()];
+  if (filters.city?.trim()) parts.push(`in ${filters.city.trim()}`);
+  if (filters.state && filters.state !== "All") parts.push(`in ${filters.state}`);
+  if (filters.providerName?.trim()) parts.push(filters.providerName.trim());
+  if (filters.treatmentCategory && filters.treatmentCategory !== "All") {
+    parts.push(filters.treatmentCategory);
+  }
+  if (filters.providerType && filters.providerType !== "All") {
+    parts.push(filters.providerType.replace("-", " "));
+  }
+  return parts.filter(Boolean).join(" ");
+}
+
+export function matchSpas(query: string, filters: ConciergeFilters = {}): ConciergeMatch[] {
+  const combined = buildCombinedQuery(query, filters);
+  const lower = combined.toLowerCase();
   const wantedTreatments = new Set<Treatment>();
   const wantedTags = new Set<string>();
   const wantedProviderTypes = new Set<ProviderType>();
+
+  if (filters.providerType && filters.providerType !== "All") {
+    wantedProviderTypes.add(filters.providerType);
+  }
+  if (filters.treatmentCategory && filters.treatmentCategory !== "All") {
+    for (const treatment of CATEGORY_TREATMENTS[filters.treatmentCategory]) {
+      wantedTreatments.add(treatment);
+    }
+  }
 
   if (lower.includes("dermatology") || lower.includes("derm ")) {
     wantedProviderTypes.add("dermatology-aesthetics");
@@ -166,28 +364,66 @@ export function matchSpas(query: string): ConciergeMatch[] {
     }
   }
 
-  if (wantedTreatments.size === 0 && wantedTags.size === 0) {
+  const hasExplicitFilters =
+    Boolean(filters.state && filters.state !== "All") ||
+    Boolean(filters.city?.trim()) ||
+    Boolean(filters.providerType && filters.providerType !== "All") ||
+    Boolean(filters.treatmentCategory && filters.treatmentCategory !== "All") ||
+    Boolean(filters.providerName?.trim());
+
+  if (!hasExplicitFilters && wantedTreatments.size === 0 && wantedTags.size === 0) {
     wantedTags.add("luxury");
     wantedTreatments.add("facial");
   }
 
-  return spas
+  const nameSearchTerms = extractNameSearchTerms(combined, filters);
+  const candidateSpas = spas.filter((spa) => passesHardFilters(spa, filters));
+
+  const matches = candidateSpas
     .map((spa) => {
-      const { score, reasons } = scoreSpa(spa, wantedTreatments, wantedTags, wantedProviderTypes);
+      const { score, reasons } = scoreSpa(
+        spa,
+        wantedTreatments,
+        wantedTags,
+        wantedProviderTypes,
+        filters
+      );
+      const nameMatch = nameMatchBoost(spa, nameSearchTerms);
+      const totalScore = score + nameMatch.boost;
+      const finalReasons = nameMatch.reason ? [nameMatch.reason, ...reasons] : reasons;
+
       return {
         spaSlug: spa.slug,
         spaName: spa.name,
-        reason: reasons.join(". ") || `Highly rated verified provider in ${spa.city}`,
-        matchScore: Math.min(99, score),
+        reason: finalReasons.join(". ") || `Highly rated verified provider in ${spa.city}`,
+        matchScore: Math.min(99, totalScore),
+        nameMatched: nameMatch.boost > 0,
       };
     })
+    .filter((match) => match.nameMatched || match.matchScore >= MIN_SCORE)
+    .sort((a, b) => {
+      if (a.nameMatched !== b.nameMatched) return a.nameMatched ? -1 : 1;
+      return b.matchScore - a.matchScore;
+    })
+    .slice(0, RESULT_LIMIT)
+    .map(({ nameMatched: _nameMatched, ...match }) => match);
+
+  if (matches.length > 0) return matches;
+
+  return candidateSpas
+    .map((spa) => ({
+      spaSlug: spa.slug,
+      spaName: spa.name,
+      reason: `Verified provider in ${spa.city}`,
+      matchScore: Math.min(99, spa.rating * 10 + (spa.verified ? 10 : 0)),
+    }))
     .sort((a, b) => b.matchScore - a.matchScore)
-    .slice(0, 3);
+    .slice(0, RESULT_LIMIT);
 }
 
 export function buildConciergeReply(query: string, matches: ConciergeMatch[]): string {
   if (matches.length === 0) {
-    return "I couldn't find a strong match yet. Try telling me your city or region, treatment (Botox, facial, laser), provider type (med spa, aesthetics clinic, dermatology), and budget — luxury or affordable.";
+    return "I couldn't find a strong match yet. Try adjusting your filters — state, city, provider type, treatment category — or search by business name (e.g. \"Lan Aesthetics\").";
   }
 
   const top = matches[0];
@@ -207,8 +443,11 @@ export function buildConciergeReply(query: string, matches: ConciergeMatch[]): s
   return lines.join("\n");
 }
 
-export async function askConcierge(query: string): Promise<{ reply: string; matches: ConciergeMatch[] }> {
-  const matches = matchSpas(query);
+export async function askConcierge(
+  query: string,
+  filters: ConciergeFilters = {}
+): Promise<{ reply: string; matches: ConciergeMatch[] }> {
+  const matches = matchSpas(query, filters);
 
   const apiKey = process.env.OPENAI_API_KEY;
   if (apiKey) {
@@ -233,7 +472,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
               role: "system",
               content: `You are Verity Concierge, a luxury aesthetics advisor for verified med spas, aesthetics clinics, and dermatology practices across the United States. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
             },
-            { role: "user", content: query },
+            { role: "user", content: buildCombinedQuery(query, filters) },
           ],
           max_tokens: 400,
         }),

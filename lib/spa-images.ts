@@ -508,16 +508,50 @@ for (const [slug, images] of Object.entries(MIAMI_METRO_REAL_SPA_IMAGES)) {
 }
 
 for (const [slug, images] of Object.entries(NATIONWIDE_REAL_SPA_IMAGES)) {
-  SPA_IMAGE_SETS[slug] = images;
+  if (images.hero) SPA_IMAGE_SETS[slug] = images;
 }
+
+const nationwideWebsiteSlugs = new Set(Object.keys(NATIONWIDE_REAL_SPA_IMAGES));
 
 for (const [slug, photoId] of Object.entries(NATIONWIDE_SPA_IMAGE_FALLBACKS)) {
   if (!SPA_IMAGE_SETS[slug]) {
+    if (nationwideWebsiteSlugs.has(slug)) {
+      SPA_IMAGE_SETS[slug] = {
+        hero: img("photo-1516975080664-ed2fc6a32937"),
+        gallery: [gal("photo-1544161515-4ab6ce6db874")],
+        source: "Verity placeholder — pending business photo upload",
+      };
+      continue;
+    }
     SPA_IMAGE_SETS[slug] = {
       hero: img(photoId),
       gallery: [gal(photoId), gal("photo-1516975080664-ed2fc6a32937"), gal("photo-1570172619644-dfd03ed5d881")],
-      source: "Unsplash — verified med spa stock imagery",
+      source: "Unsplash — med spa stock imagery (no verified website images)",
     };
+  }
+}
+
+function isStockImageUrl(url: string) {
+  const lower = url.toLowerCase();
+  return (
+    lower.includes("images.unsplash.com") ||
+    /[-_/]unsplash[-_.]/i.test(lower) ||
+    /unsplash-image/i.test(lower)
+  );
+}
+
+/** Spas citing an official website must not show Unsplash in hero/gallery. */
+for (const [slug, entry] of Object.entries(SPA_IMAGE_SETS)) {
+  if (!entry.source.toLowerCase().includes("official website")) continue;
+  entry.gallery = entry.gallery.filter((u) => !isStockImageUrl(u));
+  if (isStockImageUrl(entry.hero)) {
+    entry.hero = entry.gallery.find((u) => !isStockImageUrl(u)) ?? entry.gallery[0] ?? entry.hero;
+  }
+  if (entry.source.toLowerCase().includes("unsplash")) {
+    entry.source = entry.source.replace(/Unsplash[^)]*\)?/i, "").replace(/\s*\+\s*/g, " ").trim();
+    if (!entry.source.includes("official website")) {
+      entry.source = `${entry.source} official website`.replace(/\s+/g, " ").trim();
+    }
   }
 }
 

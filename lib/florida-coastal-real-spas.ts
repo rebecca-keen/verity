@@ -714,221 +714,230 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; source: string }
 > = {
-  "injections-and-co-sarasota": {
-    hero: "https://static1.squarespace.com/static/69ea555a6ac8e97c4fb73eec/t/69f94114cf92946273231fc7/1777942804345/INJECTIONS.png?format=1500w",
+        "injections-and-co-sarasota": {
+    hero: "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/1776964965130-T3VAOG0FG94FR28EMLS5/Untitled+design+-+2026-03-24T192740.008.png",
     gallery: [
-      "https://static1.squarespace.com/static/69ea555a6ac8e97c4fb73eec/t/69f94114cf92946273231fc7/1777942804345/INJECTIONS.png?format=1500w",
-      "https://eternal-medspa.com/wp-content/uploads/2026/05/RankMath_FBImage.png",
-      "https://rosemedaesthetics.com/storage/2022/12/rose-medical-logo.png",
+      "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/722d180c-1b33-4af9-8fe1-6e0081db48f4/Untitled+design+%284%29.jpg",
+      "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/1776964976385-LXE203RYDP84YMBP1VZK/Leaf.png",
+      "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/9375917a-e1a3-483c-98bf-931f2a2e2d0a/Alison-chafin-injecting-daxxify-to-female-client-in-sarasota.jpg",
+      "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/23a075b8-6c83-43e7-a03d-53bdfd9dfd84/Screenshot+2026-06-19+at+8.03.36%E2%80%AFPM.png",
     ],
-    source: "Injections and Co. official website — homepage",
+    source: "Provider official website",
   },
-  "eternal-medspa-sarasota": {
+        "eternal-medspa-sarasota": {
     hero: "https://eternal-medspa.com/wp-content/uploads/2026/05/RankMath_FBImage.png",
     gallery: [
-      "https://eternal-medspa.com/wp-content/uploads/2026/05/RankMath_FBImage.png",
-      "https://static1.squarespace.com/static/69ea555a6ac8e97c4fb73eec/t/69f94114cf92946273231fc7/1777942804345/INJECTIONS.png?format=1500w",
-      "https://rosemedaesthetics.com/storage/2022/12/rose-medical-logo.png",
+      "https://eternal-medspa.com/wp-content/uploads/2026/05/1.png",
+      "https://eternal-medspa.com/wp-content/uploads/2026/05/2.png",
+      "https://eternal-medspa.com/wp-content/uploads/2026/05/3.png",
+      "https://eternal-medspa.com/wp-content/uploads/2026/05/3-4.png",
     ],
-    source: "Eternal MedSpa official website — homepage",
+    source: "Provider official website",
   },
-  "lush-injectables-sarasota": {
-    hero: "https://static1.squarespace.com/static/69b848a18f7dda73137bd7b2/t/69bb0765c0ab603054d7dfb1/1774380905980/2+%283%29.png?format=1500w",
+        "lush-injectables-sarasota": {
+    hero: "https://images.squarespace-cdn.com/content/v1/69b848a18f7dda73137bd7b2/ba014242-005d-49aa-9c8f-9c114e74f0ca/Top+Tier+Medspa+in+Sarasota%2C+FL+34243.png",
     gallery: [
-      "https://static1.squarespace.com/static/69b848a18f7dda73137bd7b2/t/69bb0765c0ab603054d7dfb1/1774380905980/2+%283%29.png?format=1500w",
-      "https://eternal-medspa.com/wp-content/uploads/2026/05/RankMath_FBImage.png",
-      "https://rosemedaesthetics.com/storage/2022/12/rose-medical-logo.png",
+      "https://images.squarespace-cdn.com/content/v1/69b848a18f7dda73137bd7b2/f0c796dd-da1f-4657-b4db-a68d47eacbc4/Top+Tier+Medspa+in+Sarasota%2C+FL%2C+34243.png",
+      "https://images.squarespace-cdn.com/content/v1/69b848a18f7dda73137bd7b2/f24db3ec-ae9a-4445-b671-54f4e9f000f8/Lush+Injectables++Medspa+in+Sarasota%2C+FL%2C+34243++Botox%2C+Fillers%2C+PRP.png",
+      "https://images.squarespace-cdn.com/content/v1/69b848a18f7dda73137bd7b2/ea931dfd-9c4d-4105-b8bf-8a6c3094f6d0/Lush+Injectables++Medspa+in+Sarasota%2C+FL%2C+34243++Botox%2C+Fillers%2C+PRP.png",
+      "https://images.squarespace-cdn.com/content/v1/69b848a18f7dda73137bd7b2/5a07516d-17a3-441b-8ed3-1c27ea4238c5/Lush+Injectables++Medspa+in+Sarasota%2C+FL%2C+34243++Botox%2C+Fillers%2C+PRP.png",
     ],
-    source: "Lush Injectables official website — homepage",
+    source: "Provider official website",
   },
-  "rose-medical-aesthetics-sarasota": {
+        "rose-medical-aesthetics-sarasota": {
     hero: "https://rosemedaesthetics.com/storage/2022/12/rose-medical-logo.png",
     gallery: [
-      "https://rosemedaesthetics.com/storage/2022/12/rose-medical-logo.png",
-      "https://eternal-medspa.com/wp-content/uploads/2026/05/RankMath_FBImage.png",
-      "https://static1.squarespace.com/static/69ea555a6ac8e97c4fb73eec/t/69f94114cf92946273231fc7/1777942804345/INJECTIONS.png?format=1500w",
+      "https://rosemedaesthetics.com/storage/2025/02/rosemedaesthetics-homepage-aa.webp",
+      "https://rosemedaesthetics.com/storage/2025/02/rosemedaesthetics-homepage-ab.webp",
+      "https://rosemedaesthetics.com/storage/2025/04/RoseMedicalAesthetics-Rosalie-aa.webp",
+      "https://rosemedaesthetics.com/storage/2024/02/beforeafter-4.webp",
     ],
-    source: "Rose Medical Aesthetics official website — homepage",
+    source: "Provider official website",
   },
-  "bowtique-medspa-sarasota": {
+        "bowtique-medspa-sarasota": {
     hero: "https://www.datocms-assets.com/144122/1729620892-open-graph-card.png",
     gallery: [
-      "https://www.datocms-assets.com/144122/1729620892-open-graph-card.png",
-      "https://rosemedaesthetics.com/storage/2022/12/rose-medical-logo.png",
-      "https://eternal-medspa.com/wp-content/uploads/2026/05/RankMath_FBImage.png",
+      "https://www.datocms-assets.com/144122/1729196982-img-11.jpg?auto=format,compress&w=2200",
+      "https://www.datocms-assets.com/144122/1729196981-img-31.jpg?auto=format,compress&w=2200",
+      "https://www.datocms-assets.com/144122/1729196980-rectangle-39.jpg?auto=format,compress&w=726",
+      "https://www.datocms-assets.com/144122/1729196981-rectangle-38-1.jpg?auto=format,compress&w=1024",
     ],
-    source: "Bowtique Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "fort-lauderdale-medspa": {
-    hero: "https://angelaesthetics.com/wp-content/uploads/2023/05/AA-Home-Featured-1024x576.jpg",
+        "fort-lauderdale-medspa": {
+    hero: "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/09/Caroline_Medspa-40-683x1024.jpg",
     gallery: [
-      "https://angelaesthetics.com/wp-content/uploads/2023/05/AA-Home-Featured-1024x576.jpg",
-      "https://modiglianimed.com/wp-content/uploads/2024/11/AnyConv.com__Suzana-Alexandrescu-Photoroom.webp",
-      "https://essentialaestheticsfl.com/storage/2024/06/Essential-Aesthetics-Health-Featured-Logo.webp",
+      "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/10/Botox.jpg",
+      "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/10/Filler.jpg",
+      "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/10/Weight-Loss.jpg",
+      "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/09/Sculptra.jpg",
     ],
-    source: "The Fort Lauderdale MedSpa official website — homepage",
+    source: "Provider official website",
   },
-  "modigliani-medspa-fort-lauderdale": {
+        "modigliani-medspa-fort-lauderdale": {
     hero: "https://modiglianimed.com/wp-content/uploads/2024/11/AnyConv.com__Suzana-Alexandrescu-Photoroom.webp",
     gallery: [
-      "https://modiglianimed.com/wp-content/uploads/2024/11/AnyConv.com__Suzana-Alexandrescu-Photoroom.webp",
-      "https://essentialaestheticsfl.com/storage/2024/06/Essential-Aesthetics-Health-Featured-Logo.webp",
-      "https://angelaesthetics.com/wp-content/uploads/2023/05/AA-Home-Featured-1024x576.jpg",
+      "https://modiglianimed.com/wp-content/uploads/2024/11/AnyConv.com__slide-1-Photoroom.webp",
     ],
-    source: "Modigliani Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "essential-aesthetics-fort-lauderdale": {
+        "essential-aesthetics-fort-lauderdale": {
     hero: "https://essentialaestheticsfl.com/storage/2024/06/Essential-Aesthetics-Health-Featured-Logo.webp",
     gallery: [
       "https://essentialaestheticsfl.com/storage/2024/06/Essential-Aesthetics-Health-Featured-Logo.webp",
-      "https://modiglianimed.com/wp-content/uploads/2024/11/AnyConv.com__Suzana-Alexandrescu-Photoroom.webp",
-      "https://angelaesthetics.com/wp-content/uploads/2023/05/AA-Home-Featured-1024x576.jpg",
     ],
-    source: "Essential Aesthetics & Health official website — homepage",
+    source: "Provider official website",
   },
-  "aesthetic-label-fort-lauderdale": {
-    hero: "https://static1.squarespace.com/static/64d191dec9c18976ce5d9a5c/t/679a3c0e8536b5556e5ecbed/1738161166955/The-Aesthetic-Label-Favicon-Dark.png?format=1500w",
+        "aesthetic-label-fort-lauderdale": {
+    hero: "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/80ccf552-bec2-4e9f-b589-e11c2622c64f/IMG_1713.JPEG",
     gallery: [
-      "https://static1.squarespace.com/static/64d191dec9c18976ce5d9a5c/t/679a3c0e8536b5556e5ecbed/1738161166955/The-Aesthetic-Label-Favicon-Dark.png?format=1500w",
-      "https://modiglianimed.com/wp-content/uploads/2024/11/AnyConv.com__Suzana-Alexandrescu-Photoroom.webp",
-      "https://angelaesthetics.com/wp-content/uploads/2023/05/AA-Home-Featured-1024x576.jpg",
+      "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/7bddd9a3-2e19-4a57-a0fb-fa46f1005a20/Tezza-0274.jpg",
+      "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/60151c94-cf66-46cf-9bd7-eb9c71215529/dlux-aesthetics-sms.png",
+      "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/2920075f-8bb0-4330-a1ef-0a32fddd55ae/dlux-aesthetics-hover.png",
+      "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/7d7750f3-558a-4770-afe0-f584a32723fd/Tezza-3115.png",
     ],
-    source: "The Aesthetic Label official website — homepage",
+    source: "Provider official website",
   },
-  "angel-aesthetics-fort-lauderdale": {
+        "angel-aesthetics-fort-lauderdale": {
     hero: "https://angelaesthetics.com/wp-content/uploads/2023/05/AA-Home-Featured-1024x576.jpg",
     gallery: [
-      "https://angelaesthetics.com/wp-content/uploads/2023/05/AA-Home-Featured-1024x576.jpg",
-      "https://modiglianimed.com/wp-content/uploads/2024/11/AnyConv.com__Suzana-Alexandrescu-Photoroom.webp",
-      "https://essentialaestheticsfl.com/storage/2024/06/Essential-Aesthetics-Health-Featured-Logo.webp",
+      "https://angelaesthetics.com/wp-content/uploads/2026/01/front-image-angel.png",
+      "https://angelaesthetics.com/wp-content/uploads/2025/10/AA-Home-HydraFacial.jpg",
+      "https://angelaesthetics.com/wp-content/uploads/2020/02/Services-fillers-Sculptra.jpg",
+      "https://angelaesthetics.com/wp-content/uploads/2020/02/pixelperfect-3.jpg",
     ],
-    source: "Angel Aesthetics official website — homepage",
+    source: "Provider official website",
   },
-  "shores-medspa-daytona": {
+        "shores-medspa-daytona": {
     hero: "https://shoresmedspa.com/wp-content/uploads/2021/12/Shores-Medical-Spa-Logo-Vertical-Small-e1640098195324.png",
     gallery: [
-      "https://shoresmedspa.com/wp-content/uploads/2021/12/Shores-Medical-Spa-Logo-Vertical-Small-e1640098195324.png",
-      "https://static1.squarespace.com/static/63c078125c78db54a10a5401/t/63d7e4e20cd5912d1cc4f93c/1675093218326/Elite+Aesthetics+Skin+%26+Wellness+Logo.png?format=1500w",
-      "https://shoresmedspa.com/wp-content/uploads/2021/12/Shores-Medical-Spa-Logo-Vertical-Small-e1640098195324.png",
+      "https://shoresmedspa.com/wp-content/uploads/2022/01/output-onlinepngtools-1-e1641228858101.png",
+      "https://shoresmedspa.com/wp-content/uploads/2020/11/Shores-medical-SPA-11.jpg",
+      "https://shoresmedspa.com/wp-content/uploads/2020/11/2.jpg",
+      "https://shoresmedspa.com/wp-content/uploads/2020/11/4.jpg",
     ],
-    source: "Shores Medical Spa official website — homepage",
+    source: "Provider official website",
   },
-  "elite-aesthetics-daytona-beach": {
-    hero: "https://static1.squarespace.com/static/63c078125c78db54a10a5401/t/63d7e4e20cd5912d1cc4f93c/1675093218326/Elite+Aesthetics+Skin+%26+Wellness+Logo.png?format=1500w",
+          "elite-aesthetics-daytona-beach": {
+    hero: "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/1781639904644-0FE0LCYLBK5S5QJ2GXMS/unsplash-image-3AOpR7Vsgt4.jpg",
     gallery: [
-      "https://static1.squarespace.com/static/63c078125c78db54a10a5401/t/63d7e4e20cd5912d1cc4f93c/1675093218326/Elite+Aesthetics+Skin+%26+Wellness+Logo.png?format=1500w",
-      "https://shoresmedspa.com/wp-content/uploads/2021/12/Shores-Medical-Spa-Logo-Vertical-Small-e1640098195324.png",
-      "https://static1.squarespace.com/static/63c078125c78db54a10a5401/t/63d7e4e20cd5912d1cc4f93c/1675093218326/Elite+Aesthetics+Skin+%26+Wellness+Logo.png?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/9e1b8fab-8f4a-464f-96e7-050d5b799c86/IMG_3011+2.JPG",
+      "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/3e806ab7-b81b-4459-a58c-e5f5129ee562/IMG_8699+5.JPG",
+      "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/1a9c1614-01f6-4bf7-b909-1676fe8164d6/IMG_1055+3.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/3e6251c2-47f9-4cb6-be66-bb139a915c16/EliteAesthetics-St.Augustine.jpg",
     ],
-    source: "Elite Aesthetics official website — homepage",
+    source: "Provider official website",
   },
-  "anora-integrative-daytona": {
-    hero: "https://shoresmedspa.com/wp-content/uploads/2021/12/Shores-Medical-Spa-Logo-Vertical-Small-e1640098195324.png",
+        "anora-integrative-daytona": {
+    hero: "https://anoraiha.com/wp-content/uploads/2024/10/Total-Wellness-Misc-8324.jpg",
     gallery: [
-      "https://shoresmedspa.com/wp-content/uploads/2021/12/Shores-Medical-Spa-Logo-Vertical-Small-e1640098195324.png",
-      "https://static1.squarespace.com/static/63c078125c78db54a10a5401/t/63d7e4e20cd5912d1cc4f93c/1675093218326/Elite+Aesthetics+Skin+%26+Wellness+Logo.png?format=1500w",
-      "https://shoresmedspa.com/wp-content/uploads/2021/12/Shores-Medical-Spa-Logo-Vertical-Small-e1640098195324.png",
+      "https://anoraiha.com/wp-content/uploads/2024/10/cropped-FAV-270x270.png",
+      "https://anoraiha.com/wp-content/uploads/2024/10/Total-Wellness-MISC-1.jpg",
+      "https://anoraiha.com/wp-content/uploads/2026/01/Untitled-design-29.png",
+      "https://anoraiha.com/wp-content/uploads/2024/10/Total-Wellness-MISC-7.jpg",
     ],
-    source: "Anora Integrative Health official website — homepage",
+    source: "Provider official website",
   },
-  "total-anti-aging-daytona": {
-    hero: "https://static1.squarespace.com/static/63c078125c78db54a10a5401/t/63d7e4e20cd5912d1cc4f93c/1675093218326/Elite+Aesthetics+Skin+%26+Wellness+Logo.png?format=1500w",
+        "total-anti-aging-daytona": {
+    hero: "https://www.daytonasantiaging.com/wp-content/uploads/2023/08/Total-Aging-and-Wellness-Daytona-Beach-FL-featured.jpg",
     gallery: [
-      "https://static1.squarespace.com/static/63c078125c78db54a10a5401/t/63d7e4e20cd5912d1cc4f93c/1675093218326/Elite+Aesthetics+Skin+%26+Wellness+Logo.png?format=1500w",
-      "https://shoresmedspa.com/wp-content/uploads/2021/12/Shores-Medical-Spa-Logo-Vertical-Small-e1640098195324.png",
-      "https://static1.squarespace.com/static/63c078125c78db54a10a5401/t/63d7e4e20cd5912d1cc4f93c/1675093218326/Elite+Aesthetics+Skin+%26+Wellness+Logo.png?format=1500w",
+      "https://www.daytonasantiaging.com/wp-content/uploads/2023/07/Total-Aging-and-Wellness-Daytona-Beach-FL-aesthetics-fillers.jpg",
+      "https://www.daytonasantiaging.com/wp-content/uploads/2024/06/Total-Aging-and-Wellness-Daytona-Beach-FL-hero-500x500.webp",
+      "https://www.daytonasantiaging.com/wp-content/uploads/2023/07/Total-Aging-and-Wellness-Daytona-Beach-FL-aesthetics-semaglutide-weight-loss.jpg",
+      "https://www.daytonasantiaging.com/wp-content/uploads/2024/06/Total-Aging-and-Wellness-Daytona-Beach-FL-wellness-iv-therapy.webp",
     ],
-    source: "Total Anti-Aging & Wellness official website — homepage",
+    source: "Provider official website",
   },
-  "key-west-medspa-duval": {
+        "key-west-medspa-duval": {
     hero: "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/408%20closing%20goggle%20aspect%20ratio.jpg",
     gallery: [
       "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/408%20closing%20goggle%20aspect%20ratio.jpg",
-      "https://keywest.health/images/brand/key-west-health-med-spa-logo.png",
-      "https://keywestmedispa.com/wp-content/uploads/2021/02/UTP-Logo-Face-1-1.png",
     ],
-    source: "Key West Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "keys-medspa-key-west": {
-    hero: "https://keywest.health/images/brand/key-west-health-med-spa-logo.png",
+        "keys-medspa-key-west": {
+    hero: "https://www.keysmedspa.com/wp-content/uploads/2020/01/Gynecology_Img.jpg",
     gallery: [
-      "https://keywest.health/images/brand/key-west-health-med-spa-logo.png",
-      "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/408%20closing%20goggle%20aspect%20ratio.jpg",
-      "https://divinekeywest.com/wp-content/uploads/2020/11/Logo.png",
+      "https://www.keysmedspa.com/wp-content/uploads/2020/02/shutterstock_1062047588-1920x1275.jpg",
+      "https://www.keysmedspa.com/wp-content/themes/keysmedspa/dist/images/divider.jpg",
+      "https://www.keysmedspa.com/wp-content/uploads/2020/01/GEORGE-1.jpg",
+      "https://www.keysmedspa.com/wp-content/uploads/2020/01/Procedure_Img.jpg",
     ],
-    source: "Keys Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "divine-medical-spa-key-west": {
-    hero: "https://divinekeywest.com/wp-content/uploads/2020/11/Logo.png",
+        "divine-medical-spa-key-west": {
+    hero: "https://divinekeywest.com/wp-content/uploads/2020/11/OksanaS-bio.jpg",
     gallery: [
-      "https://divinekeywest.com/wp-content/uploads/2020/11/Logo.png",
-      "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/408%20closing%20goggle%20aspect%20ratio.jpg",
-      "https://keywest.health/images/brand/key-west-health-med-spa-logo.png",
+      "https://divinekeywest.com/wp-content/uploads/2020/11/New-Project-4.png",
+      "https://divinekeywest.com/wp-content/uploads/2023/02/DIVINE-WEDDING-GLOW-TREATMENT.jpg",
+      "https://divinekeywest.com/wp-content/uploads/2023/02/DIVINE-SOOTHING-EXPRESS-TREATMENT.jpg",
+      "https://divinekeywest.com/wp-content/uploads/2023/02/DIVINE-BACHELORETTE-PARTY-SPECIAL.jpg",
     ],
-    source: "Divine Medical Spa official website — homepage",
+    source: "Provider official website",
   },
-  "key-west-health-aesthetics": {
-    hero: "https://keywest.health/images/brand/key-west-health-med-spa-logo.png",
+        "key-west-health-aesthetics": {
+    hero: "https://keywest.health/images/services/keywest-dermatology.jpg",
     gallery: [
-      "https://keywest.health/images/brand/key-west-health-med-spa-logo.png",
-      "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/408%20closing%20goggle%20aspect%20ratio.jpg",
-      "https://keywestmedispa.com/wp-content/uploads/2021/02/UTP-Logo-Face-1-1.png",
+      "https://keywest.health/images/brand/dr-shannon-smeltzer-dnp-key-west.png",
+      "https://keywest.health/images/services/keywest-advanced-aesthetics.jpg",
+      "https://keywest.health/images/services/key-west-diamond-glow.png",
+      "https://keywest.health/images/services/keywest-acne-treatment.jpg",
     ],
-    source: "Key West Health official website — homepage",
+    source: "Provider official website",
   },
-  "under-the-palms-key-west": {
+        "under-the-palms-key-west": {
     hero: "https://keywestmedispa.com/wp-content/uploads/2021/02/UTP-Logo-Face-1-1.png",
     gallery: [
-      "https://keywestmedispa.com/wp-content/uploads/2021/02/UTP-Logo-Face-1-1.png",
-      "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/408%20closing%20goggle%20aspect%20ratio.jpg",
-      "https://keywest.health/images/brand/key-west-health-med-spa-logo.png",
+      "https://keywestmedispa.com/wp-content/uploads/2023/04/Under-the-Palms-WEB-1024x536.png",
+      "https://keywestmedispa.com/wp-content/uploads/2021/04/10-3-150x150.png",
+      "https://keywestmedispa.com/wp-content/uploads/2021/04/16-150x150.png",
+      "https://keywestmedispa.com/wp-content/uploads/2021/04/6-6-150x150.png",
     ],
-    source: "Under the Palms MediSpa official website — homepage",
+    source: "Provider official website",
   },
-  "sb-medspa-destin": {
+        "sb-medspa-destin": {
     hero: "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/625886ca9e83cea1a2de140d_office-tour-3-1.jpg",
     gallery: [
-      "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/625886ca9e83cea1a2de140d_office-tour-3-1.jpg",
-      "https://destinbotox.com/wp-content/uploads/2024/04/og-image-01b.jpg",
-      "https://www.theplasticdoc.com/og-image.jpg",
+      "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/6772f267e0a75be79565a7f4_about-2.jpg",
+      "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/6772f267e0a75be79565a7f1_home-about.jpg",
+      "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/Softwave.png",
+      "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/Hydrafacial.png",
     ],
-    source: "SB Medspa official website — homepage",
+    source: "Provider official website",
   },
-  "sei-bellissima-destin": {
+        "sei-bellissima-destin": {
     hero: "https://destinbotox.com/wp-content/uploads/2024/04/og-image-01b.jpg",
     gallery: [
-      "https://destinbotox.com/wp-content/uploads/2024/04/og-image-01b.jpg",
-      "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/625886ca9e83cea1a2de140d_office-tour-3-1.jpg",
-      "https://www.theplasticdoc.com/og-image.jpg",
+
     ],
-    source: "Sei Bellissima Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "destin-medical-spa": {
+        "destin-medical-spa": {
     hero: "https://destinbotox.com/wp-content/uploads/2024/04/og-image-01b.jpg",
     gallery: [
-      "https://destinbotox.com/wp-content/uploads/2024/04/og-image-01b.jpg",
-      "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/625886ca9e83cea1a2de140d_office-tour-3-1.jpg",
-      "https://www.theplasticdoc.com/og-image.jpg",
+      "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-34.jpg",
+      "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-33.jpg",
+      "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-32.jpg",
+      "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-31.jpg",
     ],
-    source: "Destin Medical Spa official website — homepage",
+    source: "Provider official website",
   },
-  "destin-plastic-surgery-medspa": {
+        "destin-plastic-surgery-medspa": {
     hero: "https://www.theplasticdoc.com/og-image.jpg",
     gallery: [
-      "https://www.theplasticdoc.com/og-image.jpg",
-      "https://destinbotox.com/wp-content/uploads/2024/04/og-image-01b.jpg",
-      "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/625886ca9e83cea1a2de140d_office-tour-3-1.jpg",
+      "https://www.theplasticdoc.com/content/uploads/2017/04/surgery-center-1200x579.jpg",
     ],
-    source: "Destin Plastic Surgery official website — homepage",
+    source: "Provider official website",
   },
-  "baldwin-medspa-panama-city": {
+        "baldwin-medspa-panama-city": {
     hero: "https://baldwinmedspa.com/wp-content/uploads/2026/05/Dr-Rubina-Azam.jpeg",
     gallery: [
-      "https://baldwinmedspa.com/wp-content/uploads/2026/05/Dr-Rubina-Azam.jpeg",
-      "https://destinbotox.com/wp-content/uploads/2024/04/og-image-01b.jpg",
-      "https://www.theplasticdoc.com/og-image.jpg",
+      "https://baldwinmedspa.com/wp-content/uploads/2026/03/cropped-11-270x270.png",
+      "https://baldwinmedspa.com/wp-content/uploads/2025/10/BraingutADHD.png",
+      "https://baldwinmedspa.com/wp-content/uploads/2025/10/2-scaled.png",
+      "https://baldwinmedspa.com/wp-content/uploads/2025/10/5.png",
     ],
-    source: "Baldwin Med Spa official website — homepage",
+    source: "Provider official website",
   },
   "tao-medical-spa-melbourne": {
     hero: "https://www.discovertao.com/assets/img/og-feat.jpg",
@@ -939,31 +948,34 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "TAO Medical Spa official website — homepage",
   },
-  "essentials-medispa-melbourne": {
-    hero: "https://www.discovertao.com/assets/img/og-feat.jpg",
+        "essentials-medispa-melbourne": {
+    hero: "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/05/Essentials-lockup_earth-1.png",
     gallery: [
-      "https://www.discovertao.com/assets/img/og-feat.jpg",
-      "https://www.discovertao.com/assets/img/og-feat.jpg",
-      "https://www.discovertao.com/assets/img/og-feat.jpg",
+      "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/07/relax-3.png",
+      "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/07/relax-1.png",
+      "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/08/LASER-Spa-Service-Button.jpg",
+      "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/07/relax-4.png",
     ],
-    source: "Essentials Medispa & Salon official website — homepage",
+    source: "Provider official website",
   },
-  "couture-medspa-kissimmee": {
-    hero: "https://www.discovertao.com/assets/img/og-feat.jpg",
+        "couture-medspa-kissimmee": {
+    hero: "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/66e1ea19858b3f9ff5cb340d_herophotocms.webp",
     gallery: [
-      "https://www.discovertao.com/assets/img/og-feat.jpg",
-      "https://www.discovertao.com/assets/img/og-feat.jpg",
-      "https://www.discovertao.com/assets/img/og-feat.jpg",
+      "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/66e1ea19858b3f9ff5cb33bb_skinpen%20service.webp",
+      "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/68dfce60a22b1f2edcff6be2_078572c2cc1e4fee98401eb9c7037105.png",
+      "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/68dfce60172ff9db81104e34_f937208868c145eb93a3348fe1b6885a.png",
+      "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/66e1ea19858b3f9ff5cb3430_presidential-associate-002.webp",
     ],
-    source: "Couture Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "fountain-of-you-melbourne": {
-    hero: "https://www.discovertao.com/assets/img/og-feat.jpg",
+        "fountain-of-you-melbourne": {
+    hero: "https://fountainofyou.md/wp-content/uploads/2025/10/FOY-2-1366x1025.jpg",
     gallery: [
-      "https://www.discovertao.com/assets/img/og-feat.jpg",
-      "https://www.discovertao.com/assets/img/og-feat.jpg",
-      "https://www.discovertao.com/assets/img/og-feat.jpg",
+      "https://fountainofyou.md/wp-content/uploads/2025/10/FOY-group-photo-5.jpg",
+      "https://fountainofyou.md/wp-content/uploads/2025/10/FOY-12-1366x1025.jpg",
+      "https://fountainofyou.md/wp-content/uploads/2025/11/botox-med-spa-melbourne-fl-2.png",
+      "https://fountainofyou.md/wp-content/uploads/2025/11/sculptra-med-spa-melbourne-fl.png",
     ],
-    source: "Fountain of You official website — homepage",
+    source: "Provider official website",
   },
 };

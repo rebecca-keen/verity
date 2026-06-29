@@ -61,6 +61,8 @@ const SEED_FILES = [
   "florida-coastal-real-spas.ts",
   "tampa-bay-real-spas.ts",
   "miami-metro-real-spas.ts",
+  "florida-spa-seeds.ts",
+  "additional-florida-spa-seeds.ts",
   "data.ts",
 ];
 
@@ -220,6 +222,10 @@ function imageIssues(slug, images, website) {
     }
   }
   if (images.gallery.some((u) => u.includes("unsplash"))) issues.push("unsplash-in-gallery");
+  if (website && (images.hero?.includes("unsplash") || images.gallery.some((u) => u.includes("unsplash")))) {
+    issues.push("unsplash-with-website");
+  }
+  if (website && images.source?.toLowerCase().includes("unsplash")) issues.push("unsplash-source-label");
   return [...new Set(issues)];
 }
 
@@ -338,59 +344,71 @@ function buildFallbackImages(slug, name) {
     gallery: [galUnsplash(g1), galUnsplash(g2), galUnsplash(g3)].filter(
       (u, i, a) => a.indexOf(u) === i
     ),
-    source: `Unsplash — verified med spa stock imagery (${name})`,
+    source: `Unsplash — med spa stock imagery (${name})`,
   };
+}
+
+function businessSource(spa) {
+  return `${spa?.name || "Provider"} official website`;
+}
+
+function isStockImageUrl(url) {
+  return url.includes("images.unsplash.com") || /unsplash-image/i.test(url);
+}
+
+function stripUnsplash(urls) {
+  return urls.filter((u) => u && !isStockImageUrl(u));
 }
 
 async function resolveImages(slug, spa, current) {
   const website = spa?.website;
-  let siteImages = null;
+  const source = businessSource(spa);
 
   if (website) {
-    siteImages = await fetchSiteImages(website);
-  }
-
-  if (siteImages?.length) {
-    const picked = pickImagesFromSite(siteImages, website);
-    if (picked.hero) {
-      const gallery =
-        picked.gallery.length >= 2
-          ? picked.gallery.slice(0, 4)
-          : [
-              ...picked.gallery,
-              ...siteImages
-                .map((v) => v.url)
-                .filter((u) => u !== picked.hero && !picked.gallery.includes(u))
-                .slice(0, 4 - picked.gallery.length),
-            ];
-      const host = hostnameFromUrl(website);
-      return {
-        hero: picked.hero,
-        gallery: gallery.length ? gallery.slice(0, 4) : [picked.hero],
-        source: `${spa.name} official website`,
-      };
-    }
-  }
-
-  if (current?.hero && !current.hero.includes("unsplash")) {
-    const check = await checkUrl(current.hero);
-    if (check.ok) {
-      const gallery = [];
-      for (const g of current.gallery || []) {
-        if (g.includes("unsplash")) continue;
-        const gc = await checkUrl(g);
-        if (gc.ok && urlAllowedForWebsite(g, website)) gallery.push(g);
-      }
-      if (gallery.length < 2) {
-        const fb = buildFallbackImages(slug, spa?.name || slug);
+    const siteImages = await fetchSiteImages(website);
+    if (siteImages?.length) {
+      const picked = pickImagesFromSite(siteImages, website);
+      if (picked.hero) {
+        const gallery =
+          picked.gallery.length >= 2
+            ? picked.gallery.slice(0, 4)
+            : [
+                ...picked.gallery,
+                ...siteImages
+                  .map((v) => v.url)
+                  .filter((u) => u !== picked.hero && !picked.gallery.includes(u))
+                  .slice(0, 4 - picked.gallery.length),
+              ];
         return {
-          hero: current.hero,
-          gallery: gallery.length ? [...gallery, ...fb.gallery].slice(0, 4) : fb.gallery,
-          source: current.source || `${spa?.name} official website`,
+          hero: picked.hero,
+          gallery: gallery.length ? gallery.slice(0, 4) : [picked.hero],
+          source,
         };
       }
-      return { hero: current.hero, gallery: gallery.slice(0, 4), source: current.source };
     }
+
+    if (current?.hero && !current.hero.includes("unsplash")) {
+      const check = await checkUrl(current.hero);
+      if (check.ok && urlAllowedForWebsite(current.hero, website)) {
+        const gallery = [];
+        for (const g of stripUnsplash(current.gallery || [])) {
+          const gc = await checkUrl(g);
+          if (gc.ok && urlAllowedForWebsite(g, website)) gallery.push(g);
+        }
+        const unique = [...new Set(gallery)].slice(0, 4);
+        return {
+          hero: current.hero,
+          gallery: unique.length >= 2 ? unique : unique.length ? unique : [current.hero],
+          source: source.replace(/undefined official website/, businessSource(spa)),
+        };
+      }
+    }
+
+    return {
+      hero: current?.hero && !current.hero.includes("unsplash") ? current.hero : "",
+      gallery: [],
+      source,
+    };
   }
 
   return buildFallbackImages(slug, spa?.name || slug);
@@ -527,22 +545,24 @@ async function main() {
 
   const auditResults = [];
 
-  for (const slug of slugs) {
-    const spa = spas.get(slug);
-    const images = imageSets[slug];
-    const issues = imageIssues(slug, images, spa?.website);
-    let broken = [];
-    if (images) {
-      for (const url of [images.hero, ...images.gallery]) {
-        const c = await checkUrl(url);
-        if (!c.ok) broken.push({ url, status: c.status });
+  await pool(
+    slugs.map((slug) => ({ slug, spa: spas.get(slug), images: imageSets[slug] })),
+    async ({ slug, spa, images }) => {
+      const issues = imageIssues(slug, images, spa?.website);
+      let broken = [];
+      if (AUDIT && images) {
+        for (const url of [images.hero, ...images.gallery]) {
+          const c = await checkUrl(url);
+          if (!c.ok) broken.push({ url, status: c.status });
+        }
+      } else if (!images && spa?.website) {
+        issues.push("missing-images");
       }
-    } else if (spa?.website) {
-      issues.push("missing-images");
-    }
-    if (broken.length) issues.push(`broken:${broken.length}`);
-    if (issues.length) auditResults.push({ slug, website: spa?.website, issues, broken, images });
-  }
+      if (broken.length) issues.push(`broken:${broken.length}`);
+      if (issues.length) auditResults.push({ slug, website: spa?.website, issues, broken, images });
+    },
+    12
+  );
 
   console.log(`Audited ${slugs.length} providers — ${auditResults.length} with issues\n`);
 

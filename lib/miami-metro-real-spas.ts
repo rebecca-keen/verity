@@ -1250,14 +1250,15 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Shay Novi Aesthetics & Wellness official website — homepage",
   },
-  "lux-medspa-brickell-miami": {
-    hero: "http://static1.squarespace.com/static/656939589adab62013609eab/t/686474b00ca01d00cb8a88a6/1751413936653/lux-medspa-brickell-founder-alan-araujo.jpg?format=1500w",
+        "lux-medspa-brickell-miami": {
+    hero: "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/0f096125-0259-4fd4-9e87-cbabcc8aa3f3/Best-Couples-Massage-in-Brickell-Miami-Lux-MedSpa-10%3A10-Review.jpg?format=750w",
     gallery: [
-      "http://static1.squarespace.com/static/656939589adab62013609eab/t/686474b00ca01d00cb8a88a6/1751413936653/lux-medspa-brickell-founder-alan-araujo.jpg?format=1500w",
-      "http://static1.squarespace.com/static/656939589adab62013609eab/t/686474b00ca01d00cb8a88a6/1751413936653/lux-medspa-brickell-founder-alan-araujo.jpg?format=1500w",
-      "http://static1.squarespace.com/static/656939589adab62013609eab/t/686474b00ca01d00cb8a88a6/1751413936653/lux-medspa-brickell-founder-alan-araujo.jpg?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/3c3bdee4-aa24-4bcc-9851-440527efbad7/real-client-reaction-after-lux-medspoa-brickell-facial.jpg?format=750w",
+      "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/943d0c31-99c9-442c-a3ca-20a2b1e27287/birthday-celebration-best-spa-gift-card-idea-miami-facial.jpg?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/c192f8d1-6a56-4944-b733-2d48d80d00cd/therapeutic-massage-miami-lux-medspa-brickell.jpg?format=1000w",
+      "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/01dd7c96-d8e0-4b06-8327-4b5d467987ac/spa-day-enjoy-couples-massage-at-our-lux-couples-massage-room.jpg?format=1000w",
     ],
-    source: "LUX MedSpa Brickell official website — homepage",
+    source: "Provider official website",
   },
   "infinity-beauty-lab-med-spa-miami": {
     hero: "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
@@ -1412,14 +1413,12 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Charette Cosmetics Medical Spa - Miami Beach official website — homepage",
   },
-  "bodywelle-miami-beach": {
+        "bodywelle-miami-beach": {
     hero: "https://alonsomartinmd.com/wp-content/uploads/2025/07/bodywelle-bg-miami-beach.jpg",
     gallery: [
-      "https://alonsomartinmd.com/wp-content/uploads/2025/07/bodywelle-bg-miami-beach.jpg",
-      "https://alonsomartinmd.com/wp-content/uploads/2025/07/bodywelle-bg-miami-beach.jpg",
-      "https://alonsomartinmd.com/wp-content/uploads/2025/07/bodywelle-bg-miami-beach.jpg",
+
     ],
-    source: "BODYWELLE official website — homepage",
+    source: "Provider official website",
   },
   "skin-spa-new-york-miami-beach-medical-spa-miami-beach": {
     hero: "http://skinspanewyork.com/cdn/shop/files/newsletter-header.png?v=1748060296",
@@ -1502,14 +1501,15 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Meraki Med Miami official website — homepage",
   },
-  "nuyou-medical-aesthetics-miami": {
-    hero: "http://static1.squarespace.com/static/6540846c9a348a20ed212bb7/t/66ed1dcdce9154004652740f/1726815693871/Oval+Head+Shot+Logo+1+%281%29.jpg?format=1500w",
+        "nuyou-medical-aesthetics-miami": {
+    hero: "https://images.squarespace-cdn.com/content/v1/6540846c9a348a20ed212bb7/34689224-0680-4f39-ac86-368c79adca92/whyus-sectionbg%402x-scaled+%281%29+3.jpg",
     gallery: [
-      "http://static1.squarespace.com/static/6540846c9a348a20ed212bb7/t/66ed1dcdce9154004652740f/1726815693871/Oval+Head+Shot+Logo+1+%281%29.jpg?format=1500w",
-      "http://static1.squarespace.com/static/6540846c9a348a20ed212bb7/t/66ed1dcdce9154004652740f/1726815693871/Oval+Head+Shot+Logo+1+%281%29.jpg?format=1500w",
-      "http://static1.squarespace.com/static/6540846c9a348a20ed212bb7/t/66ed1dcdce9154004652740f/1726815693871/Oval+Head+Shot+Logo+1+%281%29.jpg?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/6540846c9a348a20ed212bb7/176a96c6-233f-42e1-9f1b-fae24bfcc5ec/photo-output+2.JPEG",
+      "https://images.squarespace-cdn.com/content/v1/6540846c9a348a20ed212bb7/d295c737-40cd-475b-b23d-2bf5720dedb7/savingPNG+219.PNG",
+      "https://images.squarespace-cdn.com/content/v1/6540846c9a348a20ed212bb7/2d68560a-4fce-45de-a0ca-d8705c3e5c11/savingPNG+10.PNG",
+      "https://images.squarespace-cdn.com/content/v1/6540846c9a348a20ed212bb7/29e62652-a0fa-478a-8d57-577f747cd99d/Signature+%282%29.png",
     ],
-    source: "NuYou Medical Aesthetics official website — homepage",
+    source: "Provider official website",
   },
   "white-coat-med-spa-miami": {
     hero: "https://whitecoatmedspa.com/wp-content/uploads/2023/02/servicios-OXINA-BOTULINICA-Y-RELLENOS.png",
@@ -1556,14 +1556,12 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Get Refreshed official website — homepage",
   },
-  "aesthetic305-miami": {
+        "aesthetic305-miami": {
     hero: "https://miamiaestheticinstitute.com/wp-content/uploads/2020/01/featured-blog.jpg",
     gallery: [
-      "https://miamiaestheticinstitute.com/wp-content/uploads/2020/01/featured-blog.jpg",
-      "https://miamiaestheticinstitute.com/wp-content/uploads/2020/01/featured-blog.jpg",
-      "https://miamiaestheticinstitute.com/wp-content/uploads/2020/01/featured-blog.jpg",
+
     ],
-    source: "Aesthetic305 official website — homepage",
+    source: "Provider official website",
   },
   "laria-medspa-miami": {
     hero: "https://lariamedspa.com/wp-content/uploads/2023/11/logo-featuredimg.png",
@@ -1574,14 +1572,12 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Laria MedSpa official website — homepage",
   },
-  "monaco-medspa-miami": {
+        "monaco-medspa-miami": {
     hero: "https://lirp.cdn-website.com/cee2bf2b/dms3rep/multi/opt/PhotoRetouch1752622202476-1920w.jpg",
     gallery: [
-      "https://lirp.cdn-website.com/cee2bf2b/dms3rep/multi/opt/PhotoRetouch1752622202476-1920w.jpg",
-      "https://lirp.cdn-website.com/cee2bf2b/dms3rep/multi/opt/PhotoRetouch1752622202476-1920w.jpg",
-      "https://lirp.cdn-website.com/cee2bf2b/dms3rep/multi/opt/PhotoRetouch1752622202476-1920w.jpg",
+
     ],
-    source: "Monaco MedSpa official website — homepage",
+    source: "Provider official website",
   },
   "serenity-medical-spa-miami": {
     hero: "https://serenitymedicalspa.com/wp-content/uploads/2023/11/294280474_10158540543185264_3624624063560670121_n.png",
@@ -1619,14 +1615,12 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "The Beauty Clinic Aventura official website — homepage",
   },
-  "xs-medspa-fort-lauderdale": {
+        "xs-medspa-fort-lauderdale": {
     hero: "https://refreshmedical.com/wp-content/uploads/2025/04/Final-05-07-removebg-preview-1.png",
     gallery: [
-      "https://refreshmedical.com/wp-content/uploads/2025/04/Final-05-07-removebg-preview-1.png",
-      "https://refreshmedical.com/wp-content/uploads/2025/04/Final-05-07-removebg-preview-1.png",
-      "https://refreshmedical.com/wp-content/uploads/2025/04/Final-05-07-removebg-preview-1.png",
+
     ],
-    source: "XS MedSpa official website — homepage",
+    source: "Provider official website",
   },
   "novaskin-med-spa-miami": {
     hero: "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",

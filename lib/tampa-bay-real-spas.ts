@@ -37,9 +37,9 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     neighborhood: "1503 W Swann Ave",
     city: "Tampa",
     metro: "tampa-bay",
-    tagline: "Boutique med spa in Hyde Park Village.",
+    tagline: "The art and science of beauty in Hyde Park Village.",
     description:
-      "ÉLAN Aesthetics is a verified med spa in Tampa, FL offering medical-grade injectables, laser, and skin rejuvenation with Google rating 5 from 438 reviews.",
+      "ÉLAN Aesthetics is a female-founded boutique med spa in Tampa's Hyde Park Village. Results-driven injectables, laser, and skin rejuvenation with a natural, education-first approach — every visit is part of your long-term anti-aging journey, not a rushed injection appointment.",
     rating: 5,
     reviewCount: 438,
     verified: true,
@@ -49,9 +49,9 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     yearsOpen: 10,
     treatments: ["botox", "fillers", "facial", "laser", "microneedling"],
     priceRange: "$$$",
-    instagram: "lanaesthetics",
+    instagram: "elan.aesthetics",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
-    highlights: ["Google 5★ (438 reviews)", "Verified Florida med spa", "Tampa location"],
+    highlights: ["Google 5★ (438 reviews)", "Hyde Park Village boutique med spa", "Female-founded · natural results"],
     phone: "(813) 440-8743",
     website: "https://www.elan-aesthetics.com/",
     reviewSource: "Google Business Profile",
@@ -1475,23 +1475,25 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Glow St. Pete Med Spa official website — homepage",
   },
-  "lan-aesthetics-tampa": {
-    hero: "http://static1.squarespace.com/static/64108914b580a31faa358ff7/t/6a22d1755babdb2b82317a1f/1780666741673/Elan+Cobrand.png?format=1500w",
+      "lan-aesthetics-tampa": {
+    hero: "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/b981ddde-7c30-4a12-a815-8dd3b46b22e9/Kristin_Ibison_Photograhy-50.jpg",
     gallery: [
-      "http://static1.squarespace.com/static/64108914b580a31faa358ff7/t/6a22d1755babdb2b82317a1f/1780666741673/Elan+Cobrand.png?format=1500w",
-      "http://static1.squarespace.com/static/64108914b580a31faa358ff7/t/6a22d1755babdb2b82317a1f/1780666741673/Elan+Cobrand.png?format=1500w",
-      "http://static1.squarespace.com/static/64108914b580a31faa358ff7/t/6a22d1755babdb2b82317a1f/1780666741673/Elan+Cobrand.png?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/cc0df588-4f2e-4205-8674-3f2c443778c7/ELAN-Branding--FortDesoto-Florida-2025-PHOTOSWITHJILL-20.jpg",
+      "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/058e4be1-3d88-4f76-b5eb-848c2ba870b3/ELAN_Cofounders.jpg",
+      "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/1ccb4595-cca5-4ac2-a6e3-65f4957dc547/ELAN-Branding--FortDesoto-Florida-2025-PHOTOSWITHJILL-80.jpg",
+      "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/a39ca836-c3df-4dec-90cc-2bea39fe5d4e/ELAN+Lobby.png",
     ],
-    source: "ÉLAN Aesthetics official website — homepage",
+    source: "ÉLAN Aesthetics official website",
   },
-  "mynt-aesthetics-land-o-lakes": {
-    hero: "http://static1.squarespace.com/static/62b0b6294e70b4066e03bf56/t/631fb2e0397c9c404c7fc0c8/1663021804563/MYNT_Logos%28F%29-06.png?format=1500w",
+            "mynt-aesthetics-land-o-lakes": {
+    hero: "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/f23e2a1e-83b4-4ef8-a070-ab67e987a55c/Home_Header3.jpg",
     gallery: [
-      "http://static1.squarespace.com/static/62b0b6294e70b4066e03bf56/t/631fb2e0397c9c404c7fc0c8/1663021804563/MYNT_Logos%28F%29-06.png?format=1500w",
-      "http://static1.squarespace.com/static/62b0b6294e70b4066e03bf56/t/631fb2e0397c9c404c7fc0c8/1663021804563/MYNT_Logos%28F%29-06.png?format=1500w",
-      "http://static1.squarespace.com/static/62b0b6294e70b4066e03bf56/t/631fb2e0397c9c404c7fc0c8/1663021804563/MYNT_Logos%28F%29-06.png?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/1a2886e9-4506-4fb3-99e7-d3fd9283b6a3/humphrey-muleba-NfpkqJ9314E-unsplash.jpg",
+      "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/1655776303711-AIRAD81YC9YJVQDATCPG/karelys-ruiz-PqyzuzFiQfY-unsplash+%281%29.jpg",
+      "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/1655776379160-XHC5XT8FEYH99GCCLDL3/alexander-krivitskiy-zle2_jp-AUw-unsplash.jpg",
+      "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/1663624577218-LZTKQGNB69QWAI6RIV20/IMG_8251.jpg",
     ],
-    source: "Mynt Aesthetics official website — homepage",
+    source: "Provider official website",
   },
   "coco-med-spa-st-petersburg": {
     hero: "https://static.wixstatic.com/media/47c0ec_c143fc914d5348d1873539607aea0928%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/47c0ec_c143fc914d5348d1873539607aea0928%7Emv2.jpg",
@@ -1574,14 +1576,15 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "VIO Med Spa | Valrico official website — homepage",
   },
-  "fraiche-medspa-brandon": {
-    hero: "http://static1.squarespace.com/static/61c9fda3686756092c9a3bed/t/69371f4b4334620801ccc24c/1765220171599/White+logo+-+no+background.png?format=1500w",
+        "fraiche-medspa-brandon": {
+    hero: "https://images.squarespace-cdn.com/content/v1/61c9fda3686756092c9a3bed/854ff6f8-8a06-4309-8655-e1ceff116db3/DiolazeXL_LoveYourBlank_0422.png",
     gallery: [
-      "http://static1.squarespace.com/static/61c9fda3686756092c9a3bed/t/69371f4b4334620801ccc24c/1765220171599/White+logo+-+no+background.png?format=1500w",
-      "http://static1.squarespace.com/static/61c9fda3686756092c9a3bed/t/69371f4b4334620801ccc24c/1765220171599/White+logo+-+no+background.png?format=1500w",
-      "http://static1.squarespace.com/static/61c9fda3686756092c9a3bed/t/69371f4b4334620801ccc24c/1765220171599/White+logo+-+no+background.png?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/61c9fda3686756092c9a3bed/81e5bebd-0c05-4fb1-8fd6-24dc089fe6b2/DSC_6744.jpg",
+      "https://images.squarespace-cdn.com/content/v1/61c9fda3686756092c9a3bed/1640627620111-D47UD2J94P0YZJ2EULXY/pexels-maycon-marmo-4346013.jpg",
+      "https://images.squarespace-cdn.com/content/v1/61c9fda3686756092c9a3bed/e85ae2f9-04bb-4458-8ee1-d91023f077d6/Group-32%402x-300x225.png",
+      "https://images.squarespace-cdn.com/content/v1/61c9fda3686756092c9a3bed/3eeafc8f-2ada-456f-8ef5-3373ea89d8c5/Capture.JPG",
     ],
-    source: "Fraiche Medspa official website — homepage",
+    source: "Provider official website",
   },
   "sei-tu-bella-aesthetics-tampa": {
     hero: "https://seitubellaaesthetics.com/storage/2025/03/sei-tu-bella-aesthetics-featured-image.webp",
@@ -1637,23 +1640,25 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Elase Medical Spa - St. Pete official website — homepage",
   },
-  "silk-med-spa-tampa": {
-    hero: "http://static1.squarespace.com/static/6012ddb25b47f734009ce739/t/6812884a715da62f2c1ee9b7/1746045002156/DSC00810+%281%29.JPG?format=1500w",
+        "silk-med-spa-tampa": {
+    hero: "https://images.squarespace-cdn.com/content/v1/6012ddb25b47f734009ce739/4177e3ae-15c8-4bde-b057-9d3f80ebf8eb/IMG_8040.JPG",
     gallery: [
-      "http://static1.squarespace.com/static/6012ddb25b47f734009ce739/t/6812884a715da62f2c1ee9b7/1746045002156/DSC00810+%281%29.JPG?format=1500w",
-      "http://static1.squarespace.com/static/6012ddb25b47f734009ce739/t/6812884a715da62f2c1ee9b7/1746045002156/DSC00810+%281%29.JPG?format=1500w",
-      "http://static1.squarespace.com/static/6012ddb25b47f734009ce739/t/6812884a715da62f2c1ee9b7/1746045002156/DSC00810+%281%29.JPG?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/6012ddb25b47f734009ce739/8944f6d2-bb57-46b2-a845-8d21f6d8aa5b/IMG_4703+2.JPG",
+      "https://images.squarespace-cdn.com/content/v1/6012ddb25b47f734009ce739/da0add6c-2164-488c-9b68-519081b960cb/IMG_8474.JPG",
+      "https://images.squarespace-cdn.com/content/v1/6012ddb25b47f734009ce739/5d42c79f-10f4-4c7d-b31c-1a75c31275fb/IMG_9580.JPG",
+      "https://images.squarespace-cdn.com/content/v1/6012ddb25b47f734009ce739/535b5946-043b-4b0a-801a-7cbd79bf80de/IMG_9581.JPG",
     ],
-    source: "Silk Med Spa official website — homepage",
+    source: "Provider official website",
   },
-  "alonso-aesthetics-wellness-tampa": {
-    hero: "http://static1.squarespace.com/static/66ba02418da4e64882d236e3/t/66c344e6dfcd4933e2e33113/1724073190175/ALONSO+AW+LOGO+AI+RGB-2.png?format=1500w",
+        "alonso-aesthetics-wellness-tampa": {
+    hero: "https://images.squarespace-cdn.com/content/v1/66ba02418da4e64882d236e3/079a916a-5280-497b-99f9-b50a94d50b3a/0Z6A0629.jpg",
     gallery: [
-      "http://static1.squarespace.com/static/66ba02418da4e64882d236e3/t/66c344e6dfcd4933e2e33113/1724073190175/ALONSO+AW+LOGO+AI+RGB-2.png?format=1500w",
-      "http://static1.squarespace.com/static/66ba02418da4e64882d236e3/t/66c344e6dfcd4933e2e33113/1724073190175/ALONSO+AW+LOGO+AI+RGB-2.png?format=1500w",
-      "http://static1.squarespace.com/static/66ba02418da4e64882d236e3/t/66c344e6dfcd4933e2e33113/1724073190175/ALONSO+AW+LOGO+AI+RGB-2.png?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/66ba02418da4e64882d236e3/4f57323b-fdd6-4774-99da-a6007d1a2d3b/0Z6A0160.jpg",
+      "https://images.squarespace-cdn.com/content/v1/66ba02418da4e64882d236e3/a799fd17-a704-49b4-8053-342d1a2c3837/0Z6A0121.jpg",
+      "https://images.squarespace-cdn.com/content/v1/66ba02418da4e64882d236e3/0fdced40-d7fa-49a9-814b-99fcaf980d90/SkinPen.png",
+      "https://images.squarespace-cdn.com/content/v1/66ba02418da4e64882d236e3/f50eebb4-0943-48e5-bb81-54ae64b392ab/IMG_1402.JPG",
     ],
-    source: "Alonso Aesthetics & Wellness official website — homepage",
+    source: "Provider official website",
   },
   "livia-med-spa-tampa": {
     hero: "https://liviamedspa.com/wp-content/uploads/2025/12/AdobeStock_1671771096-scaled.jpeg",
@@ -1664,14 +1669,15 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Livia Med Spa official website — homepage",
   },
-  "spindrift-aesthetics-st-petersburg": {
-    hero: "http://static1.squarespace.com/static/64f1efe6de9bb40c4616eedc/t/68cef7668ab2c818b675c40d/1758394214116/Color+logo+-+no+background.png?format=1500w",
+        "spindrift-aesthetics-st-petersburg": {
+    hero: "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/01f56657-563a-434d-9fc6-fec5ed39edc2/IMG_7925.JPG",
     gallery: [
-      "http://static1.squarespace.com/static/64f1efe6de9bb40c4616eedc/t/68cef7668ab2c818b675c40d/1758394214116/Color+logo+-+no+background.png?format=1500w",
-      "http://static1.squarespace.com/static/64f1efe6de9bb40c4616eedc/t/68cef7668ab2c818b675c40d/1758394214116/Color+logo+-+no+background.png?format=1500w",
-      "http://static1.squarespace.com/static/64f1efe6de9bb40c4616eedc/t/68cef7668ab2c818b675c40d/1758394214116/Color+logo+-+no+background.png?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/8fad1616-da58-44bf-bf44-09c27fbf9e3d/pexels-itslauravillela-30822276.jpg",
+      "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/354ef3f1-ccce-4df8-97d0-9cbcfa1f6eb7/IMG_7919.JPG",
+      "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/e6ff3e67-1fe5-4012-83b8-a58dcb3093a1/PS0A3007.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/1618497259178-6XJGK9GR6YAVBQL5L519/20140301_Trade-151_012-2.jpg",
     ],
-    source: "Spindrift Aesthetics official website — homepage",
+    source: "Provider official website",
   },
   "the-aesthetics-lounge-and-spa-tampa-tampa": {
     hero: "https://theaestheticsloungeandspa.com/wp-content/uploads/elementor/thumbs/DSC02019-1-rhcu1km7y1jf7g11p92tgmz6r37v5uqpjf0oiyb628.jpg",
@@ -1736,14 +1742,14 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Serenity Beauty Secrets official website — homepage",
   },
-  "the-aesthetics-lab-tampa": {
-    hero: "http://static1.squarespace.com/static/59b04b7ff5e231fa3dd11f30/t/59b0514bccc5c58e1651c1b9/1504727371403/Logo+copy.png?format=1500w",
+        "the-aesthetics-lab-tampa": {
+    hero: "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508222950753-JBY2A3976XTX7GSJ1CVI/_N4A8789.jpg.jpeg",
     gallery: [
-      "http://static1.squarespace.com/static/59b04b7ff5e231fa3dd11f30/t/59b0514bccc5c58e1651c1b9/1504727371403/Logo+copy.png?format=1500w",
-      "http://static1.squarespace.com/static/59b04b7ff5e231fa3dd11f30/t/59b0514bccc5c58e1651c1b9/1504727371403/Logo+copy.png?format=1500w",
-      "http://static1.squarespace.com/static/59b04b7ff5e231fa3dd11f30/t/59b0514bccc5c58e1651c1b9/1504727371403/Logo+copy.png?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508481430527-6CVO88U7ZDTLSMPUM6IV/_N4A8752.jpg",
+      "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508481665048-BV87A6XK3IKLZA6B4KW2/_N4A8731.jpg",
+      "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508113985391-GDLPMA0LSDUJXH8X9T0J/Aesthetics+Lab.jpeg",
     ],
-    source: "The Aesthetics Lab official website — homepage",
+    source: "Provider official website",
   },
   "allegra-wellness-spa-riverview": {
     hero: "https://allegrawellnessspa.com/wp-content/uploads/2024/02/BodyStyler-Allegra-Spa-3.jpg",
@@ -1763,14 +1769,12 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Indulgence Medical Day Spa official website — homepage",
   },
-  "skin-science-tampa": {
+        "skin-science-tampa": {
     hero: "https://skinsciencemedicalspa.com/wp-content/uploads/2024/09/og-image-4.jpg",
     gallery: [
-      "https://skinsciencemedicalspa.com/wp-content/uploads/2024/09/og-image-4.jpg",
-      "https://skinsciencemedicalspa.com/wp-content/uploads/2024/09/og-image-4.jpg",
-      "https://skinsciencemedicalspa.com/wp-content/uploads/2024/09/og-image-4.jpg",
+
     ],
-    source: "Skin Science official website — homepage",
+    source: "Provider official website",
   },
   "revive-body-lounge-apollo-beach": {
     hero: "https://img1.wsimg.com/isteam/ip/19900a79-381c-4795-909f-2412b5319099/246A0341.jpeg",
@@ -1835,14 +1839,15 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Interface Aesthetics - Whitnie Padron, APRN official website — homepage",
   },
-  "skin-nv-tampa-med-spa-tampa": {
-    hero: "http://static1.squarespace.com/static/6957de3ff3f62c42463177b8/t/6957e1bef35c976facfe13cf/1767367102410/The+Art+%2B+Science+of+Beauty+%281%29.png?format=1500w",
+        "skin-nv-tampa-med-spa-tampa": {
+    hero: "https://images.squarespace-cdn.com/content/v1/6957de3ff3f62c42463177b8/6ea289f3-fe48-459f-a178-059c610acd26/SkinNV-19.jpg",
     gallery: [
-      "http://static1.squarespace.com/static/6957de3ff3f62c42463177b8/t/6957e1bef35c976facfe13cf/1767367102410/The+Art+%2B+Science+of+Beauty+%281%29.png?format=1500w",
-      "http://static1.squarespace.com/static/6957de3ff3f62c42463177b8/t/6957e1bef35c976facfe13cf/1767367102410/The+Art+%2B+Science+of+Beauty+%281%29.png?format=1500w",
-      "http://static1.squarespace.com/static/6957de3ff3f62c42463177b8/t/6957e1bef35c976facfe13cf/1767367102410/The+Art+%2B+Science+of+Beauty+%281%29.png?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/6957de3ff3f62c42463177b8/01b88f82-55be-4efb-895b-dae90768b321/The+Art+%2B+Science+of+Beauty+%281%29.png",
+      "https://images.squarespace-cdn.com/content/v1/6957de3ff3f62c42463177b8/45f8f8b2-8231-4b17-bceb-42621a23cf11/The+Art+%2B+Science+of+Beauty+%281%29.png?format=1500w",
+      "https://images.squarespace-cdn.com/content/v1/6957de3ff3f62c42463177b8/3b8d63f7-c665-4d64-88d5-9a7e899b3e9c/SkinNV-85.jpg",
+      "https://images.squarespace-cdn.com/content/v1/6957de3ff3f62c42463177b8/88c83c8d-1162-4728-81f8-9401e9beeb13/SkinNV-293.jpg",
     ],
-    source: "Skin NV Tampa Med Spa official website — homepage",
+    source: "Provider official website",
   },
   "florida-aesthetics-and-wellness-brandon": {
     hero: "https://floridaaesthetics.com/images/FA-OG-Image.jpg",
@@ -1889,14 +1894,12 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Venus Med Spa official website — homepage",
   },
-  "fusion-medispa-odessa": {
+        "fusion-medispa-odessa": {
     hero: "http://fusionmedispa.net/cdn/shop/files/Logo_1_1.jpg?v=1763658025",
     gallery: [
-      "http://fusionmedispa.net/cdn/shop/files/Logo_1_1.jpg?v=1763658025",
-      "http://fusionmedispa.net/cdn/shop/files/Logo_1_1.jpg?v=1763658025",
-      "http://fusionmedispa.net/cdn/shop/files/Logo_1_1.jpg?v=1763658025",
+
     ],
-    source: "Fusion Medispa official website — homepage",
+    source: "Provider official website",
   },
   "venus-med-spa-tampa": {
     hero: "https://www.venusmedspa.com/wp-content/uploads/2023/02/tox-1.png",

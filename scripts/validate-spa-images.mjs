@@ -46,7 +46,7 @@ function parseImageSets() {
       "TAMPA_BAY_REAL_SPA_IMAGES",
       "MIAMI_METRO_REAL_SPA_IMAGES",
     ]) {
-  const marker = `export const ${name}`;
+      const marker = `export const ${name}`;
       const start = content.indexOf(marker);
       if (start < 0) continue;
       const valueStart = content.indexOf("> = {", start);
@@ -65,22 +65,36 @@ function parseImageSets() {
 }
 
 function isAllowed(url, website) {
-  if (url.includes("images.unsplash.com")) return { ok: true, reason: "unsplash-fallback" };
   const id = url.match(/photo-[a-zA-Z0-9_-]+/)?.[0];
   if (id && BAD_UNSPLASH.has(id)) return { ok: false, reason: "bad-unsplash-gym" };
+
   let siteRoot = "";
   try {
     siteRoot = rootDomain(new URL(website).hostname);
   } catch {
+    if (url.includes("images.unsplash.com")) return { ok: true, reason: "unsplash-no-website" };
     return { ok: false, reason: "invalid-website" };
   }
+
+  if (url.includes("images.unsplash.com")) {
+    return { ok: false, reason: "unsplash-with-website" };
+  }
+
   let host = "";
   try {
     host = rootDomain(new URL(url).hostname);
   } catch {
     return { ok: false, reason: "invalid-url" };
   }
+
   if (host === siteRoot) return { ok: true, reason: "same-domain" };
+
+  const fullUrl = url.toLowerCase();
+  const siteName = siteRoot.split(".")[0];
+  if (fullUrl.includes(siteRoot) || (siteName.length > 4 && fullUrl.includes(siteName))) {
+    return { ok: true, reason: "domain-in-path" };
+  }
+
   const cdnOk =
     url.includes("cdn.") ||
     url.includes("cloudfront.net") ||
@@ -89,7 +103,13 @@ function isAllowed(url, website) {
     url.includes("wsimg.com") ||
     url.includes("website-files.com") ||
     url.includes("filesafe.space") ||
-    url.includes("amazonaws.com");
+    url.includes("amazonaws.com") ||
+    url.includes("datocms-assets.com") ||
+    url.includes("cdn-website.com") ||
+    url.includes("app-sources.com") ||
+    url.includes("ytimg.com") ||
+    url.includes("wp.com") ||
+    url.includes("rabbitloader");
   if (cdnOk) return { ok: true, reason: "known-cdn" };
   return { ok: false, reason: `domain-mismatch:${host} vs ${siteRoot}` };
 }
@@ -112,6 +132,7 @@ async function main() {
   const mismatches = [];
   const broken = [];
   const badUnsplash = [];
+  const unsplashWithWebsite = [];
 
   for (const [slug, imgs] of Object.entries(images)) {
     const spa = spas.get(slug);
@@ -120,6 +141,7 @@ async function main() {
       const verdict = isAllowed(url, website);
       if (!verdict.ok) {
         mismatches.push({ slug, url, website, reason: verdict.reason });
+        if (verdict.reason === "unsplash-with-website") unsplashWithWebsite.push({ slug, url });
       }
       if (url.match(/photo-[a-zA-Z0-9_-]+/) && BAD_UNSPLASH.has(url.match(/photo-[a-zA-Z0-9_-]+/)[0])) {
         badUnsplash.push({ slug, url });
@@ -134,9 +156,11 @@ async function main() {
     mismatches: mismatches.length,
     broken: broken.length,
     badUnsplash: badUnsplash.length,
+    unsplashWithWebsite: unsplashWithWebsite.length,
     mismatchDetails: mismatches,
     brokenDetails: broken,
     badUnsplashDetails: badUnsplash,
+    unsplashWithWebsiteDetails: unsplashWithWebsite,
   };
 
   if (JSON_OUT) {
@@ -146,6 +170,7 @@ async function main() {
 
   console.log(`Validated ${report.providers} providers`);
   console.log(`  Domain mismatches: ${report.mismatches}`);
+  console.log(`  Unsplash with website: ${report.unsplashWithWebsite}`);
   console.log(`  Broken URLs: ${report.broken}`);
   console.log(`  Bad gym Unsplash: ${report.badUnsplash}`);
   if (mismatches.length) {
