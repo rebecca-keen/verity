@@ -11,14 +11,15 @@ export default function HomePage() {
     <>
       <section className="border-b border-stone/10 bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-20 text-center md:py-28">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold">Miami · Nationwide Next</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-gold">Florida · Nationwide Next</p>
           <h1 className="mx-auto mt-4 max-w-3xl font-serif text-4xl leading-tight text-charcoal md:text-6xl">
             Trusted aesthetics clinics & med spas, verified
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-stone">
             {spas.length} verified aesthetics clinics, med spas, and dermatology practices across
-            Greater Miami. Research injectables, lasers, facials, and body contouring with product
-            transparency, medical director info, and AI matching — Miami first, nationwide next.
+            Miami, Tampa, Orlando, Jacksonville, Naples, and Palm Beach. Research injectables,
+            lasers, facials, and body contouring with product transparency, medical director info,
+            and AI matching — Florida first, nationwide next.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
@@ -135,7 +136,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex items-end justify-between">
           <div>
-            <p className="text-xs uppercase tracking-widest text-gold">Top rated in Miami</p>
+            <p className="text-xs uppercase tracking-widest text-gold">Top rated in Florida</p>
             <h2 className="mt-2 font-serif text-3xl text-charcoal">Highly rated providers</h2>
           </div>
           <Link href="/spas" className="text-sm text-gold hover:underline">

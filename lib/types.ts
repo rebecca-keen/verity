@@ -20,6 +20,14 @@ export type TreatmentCategory = "injectables" | "lasers" | "beauty" | "body";
 
 export type ProviderType = "med-spa" | "aesthetics-clinic" | "dermatology-aesthetics";
 
+export type Metro =
+  | "miami"
+  | "tampa"
+  | "orlando"
+  | "jacksonville"
+  | "naples"
+  | "palm-beach";
+
 export interface SpaSocials {
   instagram?: string;
   facebook?: string;
@@ -69,6 +77,7 @@ export interface Spa {
   providerType: ProviderType;
   neighborhood: string;
   city: string;
+  metro: Metro;
   tagline: string;
   description: string;
   rating: number;

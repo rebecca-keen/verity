@@ -1,13 +1,17 @@
+import { floridaSpaSeeds } from "./florida-spa-seeds";
 import { getSpaImages } from "./spa-images";
 import {
   defaultCertifications,
   defaultDataSources,
+  defaultPhoneForMetro,
   deriveTreatmentCategories,
+  getNeighborhoodsForMetro,
   getTopRatedSpas,
+  METRO_LABELS,
   parseMedicalDirector,
   sortSpasForDisplay,
 } from "./spa-utils";
-import type { Product, ProductOrigin, ProviderType, Review, Spa, SpaSocials, Treatment } from "./types";
+import type { Metro, Product, ProductOrigin, ProviderType, Review, Spa, SpaSocials, Treatment } from "./types";
 
 export const originLabels: Record<ProductOrigin, string> = {
   US: "American",
@@ -120,6 +124,7 @@ type SpaSeed = {
   providerType: ProviderType;
   neighborhood: string;
   city: string;
+  metro?: Metro;
   tagline: string;
   description: string;
   rating: number;
@@ -142,23 +147,25 @@ type SpaSeed = {
   dataSources?: string[];
 };
 
-function buildSocials(seed: SpaSeed): SpaSocials {
+function buildSocials(seed: SpaSeed, metro: Metro): SpaSocials {
   if (seed.socials) return seed.socials;
   const ig = seed.instagram;
   const compact = ig.replace(/_/g, "");
+  const metroLabel = METRO_LABELS[metro].replace(/\s/g, "");
   return {
     instagram: ig,
     facebook: ig,
     tiktok: compact,
-    youtube: `${compact.slice(0, 18)}Miami`,
+    youtube: `${compact.slice(0, 18)}${metroLabel}`,
   };
 }
 
 function seedSpa(data: SpaSeed, index: number): Spa {
+  const metro = data.metro ?? "miami";
   const images = getSpaImages(data.slug);
   const website = data.website ?? `https://www.${data.slug}.com`;
-  const phone = data.phone ?? `(305) 555-${String(1000 + index).padStart(4, "0")}`;
-  const socials = buildSocials(data);
+  const phone = data.phone ?? defaultPhoneForMetro(metro, index);
+  const socials = buildSocials(data, metro);
 
   return {
     slug: data.slug,
@@ -166,6 +173,7 @@ function seedSpa(data: SpaSeed, index: number): Spa {
     providerType: data.providerType,
     neighborhood: data.neighborhood,
     city: data.city,
+    metro,
     tagline: data.tagline,
     description: data.description,
     rating: data.rating,
@@ -213,7 +221,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-98421",
     yearsOpen: 6,
     treatments: ["botox", "fillers", "facial", "microneedling"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "aetheraesthetics_mia",
     productSlugs: ["eltamd-uv-clear", "epicutis-arctigenin", "is-clinical-cleansing"],
     highlights: ["Full product disclosure", "Board-certified medical director", "Lot-tracked injectables"],
@@ -236,7 +244,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-87234",
     yearsOpen: 9,
     treatments: ["laser", "facial", "microneedling", "body-contouring"],
-    priceRange: "$$$$",
+    priceRange: "$$",
     instagram: "lumiere_medspa_brickell",
     productSlugs: ["skinceuticals-ce-ferulic", "eltamd-uv-clear"],
     highlights: ["Laser specialists", "Patch testing available", "Verified visit reviews"],
@@ -259,7 +267,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-76102",
     yearsOpen: 4,
     treatments: ["facial", "microneedling", "botox"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "saltandglow_miami",
     productSlugs: ["epicutis-arctigenin", "is-clinical-cleansing", "eltamd-uv-clear"],
     highlights: ["No-pressure consultations", "Product lists before visit", "Beach-adjacent location"],
@@ -282,7 +290,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-91045",
     yearsOpen: 5,
     treatments: ["botox", "fillers", "body-contouring"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "forme_aesthetics",
     productSlugs: ["skinceuticals-ce-ferulic"],
     highlights: ["Transparent unit pricing", "Digital consent signatures", "Published credentials"],
@@ -304,7 +312,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-88201",
     yearsOpen: 7,
     treatments: ["botox", "fillers", "laser", "facial"],
-    priceRange: "$$$$",
+    priceRange: "$$",
     instagram: "maison_skin_lab",
     productSlugs: ["skinceuticals-ce-ferulic", "revision-retinol", "skinmedica-ha5"],
     highlights: ["Bespoke treatment plans", "Private suites", "Celebrity clientele"],
@@ -326,7 +334,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-89334",
     yearsOpen: 8,
     treatments: ["botox", "fillers"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "injector_studio_mia",
     productSlugs: ["eltamd-uv-clear"],
     highlights: ["Injectables specialists", "Same-day appointments", "Transparent pricing"],
@@ -348,7 +356,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-77201",
     yearsOpen: 11,
     treatments: ["botox", "fillers", "laser", "body-contouring"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "coastal_aesthetics_sb",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-ce-ferulic"],
     highlights: ["Walk-in consultations", "Multilingual staff", "Tourist-friendly booking"],
@@ -370,7 +378,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-85432",
     yearsOpen: 5,
     treatments: ["facial", "botox", "microneedling"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "grove_wellness_spa",
     productSlugs: ["epicutis-arctigenin", "is-clinical-cleansing"],
     highlights: ["Serene setting", "Holistic consultations", "Grove village location"],
@@ -392,7 +400,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-90123",
     yearsOpen: 10,
     treatments: ["botox", "fillers", "laser", "body-contouring", "facial"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "aventura_med_aesthetics",
     productSlugs: ["skinceuticals-ce-ferulic", "skinmedica-ha5", "revision-retinol"],
     highlights: ["Full treatment menu", "Free parking", "Extended hours"],
@@ -414,7 +422,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-88765",
     yearsOpen: 6,
     treatments: ["botox", "fillers", "laser", "microneedling"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "doral_beauty_institute",
     productSlugs: ["eltamd-uv-clear", "is-clinical-cleansing"],
     highlights: ["Competitive pricing", "Spanish/English staff", "Laser hair removal"],
@@ -436,7 +444,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-91234",
     yearsOpen: 12,
     treatments: ["botox", "fillers", "facial", "laser"],
-    priceRange: "$$$$",
+    priceRange: "$$",
     instagram: "pinecrest_aesthetic",
     productSlugs: ["revision-retinol", "skinmedica-ha5", "epicutis-arctigenin"],
     highlights: ["Age-appropriate results", "Family-friendly scheduling", "Plastic surgeon-led"],
@@ -458,7 +466,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-94567",
     yearsOpen: 8,
     treatments: ["botox", "fillers", "laser", "facial", "microneedling"],
-    priceRange: "$$$$",
+    priceRange: "$$",
     instagram: "balharbour_skin",
     productSlugs: ["skinceuticals-ce-ferulic", "epicutis-arctigenin", "revision-retinol"],
     highlights: ["Private entrance", "VIP scheduling", "Concierge service"],
@@ -480,7 +488,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-87890",
     yearsOpen: 7,
     treatments: ["botox", "fillers", "facial"],
-    priceRange: "$$$$",
+    priceRange: "$$",
     instagram: "keybiscayne_medspa",
     productSlugs: ["eltamd-uv-clear", "epicutis-arctigenin"],
     highlights: ["Island location", "Personalized care", "Member loyalty program"],
@@ -502,7 +510,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-82345",
     yearsOpen: 13,
     treatments: ["botox", "fillers", "laser", "facial", "body-contouring"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "southmiami_aesthetics",
     productSlugs: ["is-clinical-cleansing", "eltamd-uv-clear"],
     highlights: ["Established reputation", "Flexible payment plans", "Loyalty rewards"],
@@ -524,7 +532,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-85678",
     yearsOpen: 9,
     treatments: ["botox", "fillers", "laser", "microneedling", "body-contouring"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "kendall_rejuvenation",
     productSlugs: ["eltamd-uv-clear", "skinmedica-ha5"],
     highlights: ["Accessible pricing", "High patient volume", "Extended weekend hours"],
@@ -546,7 +554,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-89012",
     yearsOpen: 5,
     treatments: ["laser", "microneedling", "facial"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "edgewater_laser_skin",
     productSlugs: ["skinceuticals-ce-ferulic", "eltamd-uv-clear"],
     highlights: ["Laser specialists", "Bay views", "Free skin analysis"],
@@ -568,7 +576,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-86789",
     yearsOpen: 4,
     treatments: ["botox", "fillers", "facial"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "midtown_medspa_mia",
     productSlugs: ["revision-retinol", "eltamd-uv-clear"],
     highlights: ["Preventive Botox", "After-work hours", "Social media savvy team"],
@@ -590,7 +598,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-90456",
     yearsOpen: 7,
     treatments: ["botox", "fillers", "laser", "body-contouring", "facial"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "sunnyisles_aesthetics",
     productSlugs: ["skinceuticals-ce-ferulic", "skinmedica-ha5"],
     highlights: ["Multilingual staff", "International clientele", "Body contouring specialists"],
@@ -612,7 +620,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-88123",
     yearsOpen: 3,
     treatments: ["botox", "fillers", "microneedling", "facial"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "northmiami_beautylab",
     productSlugs: ["epicutis-arctigenin", "is-clinical-cleansing"],
     highlights: ["Latest technology", "New patient specials", "Online booking"],
@@ -634,7 +642,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-84567",
     yearsOpen: 10,
     treatments: ["facial", "botox", "fillers", "microneedling"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "coralway_skin",
     productSlugs: ["is-clinical-cleansing", "epicutis-arctigenin", "eltamd-uv-clear"],
     highlights: ["Award-winning facials", "Central location", "Established 2014"],
@@ -678,7 +686,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-89876",
     yearsOpen: 6,
     treatments: ["botox", "fillers", "facial", "body-contouring"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "cutlerbay_aesthetics",
     productSlugs: ["is-clinical-cleansing", "skinmedica-ha5"],
     highlights: ["Family-friendly", "Free consultations", "Body contouring"],
@@ -700,7 +708,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-87321",
     yearsOpen: 8,
     treatments: ["botox", "fillers", "facial", "microneedling"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "miamishores_aesthetics",
     productSlugs: ["epicutis-arctigenin", "revision-retinol"],
     highlights: ["Village setting", "Small-batch attention", "Referral-only reputation"],
@@ -722,7 +730,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-95678",
     yearsOpen: 6,
     treatments: ["botox", "fillers", "laser", "facial"],
-    priceRange: "$$$$",
+    priceRange: "$$",
     instagram: "fisherisland_aesthetics",
     productSlugs: ["skinceuticals-ce-ferulic", "epicutis-arctigenin", "revision-retinol"],
     highlights: ["Members only", "Island location", "House calls available"],
@@ -744,7 +752,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-90112",
     yearsOpen: 5,
     treatments: ["facial", "microneedling", "botox", "laser"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "brickellskinhaus",
     productSlugs: ["is-clinical-cleansing", "eltamd-uv-clear", "laneige-water-bank"],
     highlights: ["Evening appointments", "Express facials", "Product menus online"],
@@ -766,7 +774,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-91456",
     yearsOpen: 4,
     treatments: ["botox", "fillers", "microneedling"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "elev8_aesthetics_mia",
     productSlugs: ["skinceuticals-ce-ferulic", "revision-retinol"],
     highlights: ["Physician injectors only", "Preventative plans", "Digital intake"],
@@ -788,7 +796,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-88734",
     yearsOpen: 7,
     treatments: ["facial", "laser", "botox", "fillers"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "gablesradiance",
     productSlugs: ["caudalie-vinoperfect", "la-roche-posay-anthelios", "biologique-recherche-p50"],
     highlights: ["European protocols", "Sun-damage specialists", "Private treatment rooms"],
@@ -810,7 +818,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-89901",
     yearsOpen: 6,
     treatments: ["botox", "fillers"],
-    priceRange: "$$$$",
+    priceRange: "$$",
     instagram: "zenith_aesthetics_gables",
     productSlugs: ["epicutis-arctigenin", "skinmedica-ha5"],
     highlights: ["Consultation-first approach", "Miracle Mile location", "Published pricing"],
@@ -832,7 +840,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-86543",
     yearsOpen: 12,
     treatments: ["laser", "facial", "botox", "microneedling"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "verde_medspa_gables",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-ce-ferulic", "dr-jart-cicapair"],
     highlights: ["Board-certified dermatology", "Laser suite on-site", "Insurance-friendly consults"],
@@ -854,7 +862,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-90876",
     yearsOpen: 5,
     treatments: ["botox", "fillers", "facial", "laser"],
-    priceRange: "$$$$",
+    priceRange: "$$",
     instagram: "atelier_aesthetics_dd",
     productSlugs: ["biologique-recherche-p50", "comfort-zone-hydramemory", "amorepacific-vintage"],
     highlights: ["Design District flagship", "Custom facial cocktails", "VIP consultation lounge"],
@@ -876,7 +884,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-91234",
     yearsOpen: 4,
     treatments: ["microneedling", "laser", "facial", "body-contouring"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "regime_skinlab",
     productSlugs: ["revision-retinol", "is-clinical-cleansing", "skinmedica-ha5"],
     highlights: ["Treatment series tracking", "Progress photos", "Product pairing guides"],
@@ -898,7 +906,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-87654",
     yearsOpen: 8,
     treatments: ["body-contouring", "botox", "fillers", "laser"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "symetry_medspa",
     productSlugs: ["skinmedica-ha5", "eltamd-uv-clear"],
     highlights: ["Body contouring focus", "Postpartum packages", "Aventura Mall nearby"],
@@ -920,7 +928,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-89012",
     yearsOpen: 6,
     treatments: ["laser", "microneedling", "botox"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "pulse_aesthetics_aventura",
     productSlugs: ["skinceuticals-ce-ferulic", "la-roche-posay-anthelios"],
     highlights: ["Multi-platform lasers", "Device specialists", "Free laser consults"],
@@ -942,7 +950,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-85432",
     yearsOpen: 10,
     treatments: ["laser", "botox", "fillers", "facial"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "luna_derm_aventura",
     productSlugs: ["dr-jart-cicapair", "eltamd-uv-clear", "bioderma-sensibio"],
     highlights: ["Rosacea specialists", "Medical peels", "FAAD dermatologists"],
@@ -964,7 +972,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-86789",
     yearsOpen: 9,
     treatments: ["botox", "facial", "laser", "fillers"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "oceanview_aesthetics",
     productSlugs: ["beauty-of-joseon-sunscreen", "laneige-water-bank", "cosrx-snail-mucin"],
     highlights: ["Sun repair focus", "Walk-ins welcome", "K-beauty facials"],
@@ -986,7 +994,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-88123",
     yearsOpen: 7,
     treatments: ["botox", "fillers", "laser"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "collins_aesthetics_mb",
     productSlugs: ["skinceuticals-ce-ferulic", "revision-retinol"],
     highlights: ["Collins Ave location", "Hotel concierge referrals", "Same-week appointments"],
@@ -1008,7 +1016,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-90567",
     yearsOpen: 4,
     treatments: ["facial", "microneedling", "botox", "fillers"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "wynwoodskincollective",
     productSlugs: ["sulwhasoo-first-care", "cosrx-snail-mucin", "is-clinical-cleansing"],
     highlights: ["Wynwood Walls nearby", "Event-ready packages", "Instagram-friendly space"],
@@ -1030,7 +1038,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-91890",
     yearsOpen: 3,
     treatments: ["botox", "fillers", "body-contouring"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "canvas_aesthetics_wyn",
     productSlugs: ["epicutis-arctigenin", "eltamd-uv-clear"],
     highlights: ["Conservative filler ethos", "Creative clientele", "Transparent aftercare"],
@@ -1052,7 +1060,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-87345",
     yearsOpen: 8,
     treatments: ["laser", "facial", "microneedling"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "sb_laserbar",
     productSlugs: ["la-roche-posay-anthelios", "dr-jart-cicapair"],
     highlights: ["Laser specialists", "Package pricing", "Walk-in consults"],
@@ -1074,7 +1082,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-89678",
     yearsOpen: 6,
     treatments: ["facial", "botox", "body-contouring", "microneedling"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "grove_serenity_spa",
     productSlugs: ["comfort-zone-hydramemory", "collistar-precious", "bioderma-sensibio"],
     highlights: ["Wellness integration", "Grove village location", "Calm environment"],
@@ -1096,7 +1104,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-84201",
     yearsOpen: 11,
     treatments: ["laser", "microneedling", "botox", "fillers"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "doral_laser_institute",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-ce-ferulic"],
     highlights: ["Laser institute", "West Dade hub", "Spanish/English staff"],
@@ -1118,7 +1126,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-88765",
     yearsOpen: 5,
     treatments: ["botox", "fillers", "facial", "body-contouring"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "pinecrest_glow",
     productSlugs: ["skinmedica-ha5", "revision-retinol", "laneige-water-bank"],
     highlights: ["Pinecrest community", "Mommy makeover consults", "Flexible scheduling"],
@@ -1140,7 +1148,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-92345",
     yearsOpen: 7,
     treatments: ["botox", "fillers", "laser", "facial"],
-    priceRange: "$$$$",
+    priceRange: "$$",
     instagram: "balharbour_luxury_spa",
     productSlugs: ["amorepacific-vintage", "biologique-recherche-p50", "epicutis-arctigenin"],
     highlights: ["Bal Harbour Shops", "Concierge service", "Premium product lines"],
@@ -1162,7 +1170,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-87123",
     yearsOpen: 9,
     treatments: ["laser", "botox", "facial", "fillers"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "kb_skin_clinic",
     productSlugs: ["la-roche-posay-anthelios", "eltamd-uv-clear", "caudalie-vinoperfect"],
     highlights: ["Island clientele", "Sun damage repair", "Pediatric derm consults"],
@@ -1184,7 +1192,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-85678",
     yearsOpen: 14,
     treatments: ["laser", "botox", "fillers", "microneedling"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "southmiami_derm_aesthetics",
     productSlugs: ["skinceuticals-ce-ferulic", "dr-jart-cicapair", "bioderma-sensibio"],
     highlights: ["14 years in South Miami", "Scar revision", "Insurance dermatology"],
@@ -1206,7 +1214,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-88901",
     yearsOpen: 6,
     treatments: ["body-contouring", "botox", "facial", "fillers"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "kendall_aesthetics_hub",
     productSlugs: ["cosrx-snail-mucin", "laneige-water-bank", "eltamd-uv-clear"],
     highlights: ["Family-friendly pricing", "Body contouring", "Extended hours"],
@@ -1228,7 +1236,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-90234",
     yearsOpen: 4,
     treatments: ["facial", "botox", "microneedling", "laser"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "edgewater_glow",
     productSlugs: ["is-clinical-cleansing", "sulwhasoo-first-care", "beauty-of-joseon-sunscreen"],
     highlights: ["Bayfront views", "Pre-event facials", "Edgewater location"],
@@ -1250,7 +1258,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-91567",
     yearsOpen: 5,
     treatments: ["botox", "fillers"],
-    priceRange: "$$$",
+    priceRange: "$$",
     instagram: "midtown_injectables",
     productSlugs: ["eltamd-uv-clear", "revision-retinol"],
     highlights: ["Walk-in Botox hours", "Midtown Miami", "Lip specialist team"],
@@ -1272,7 +1280,7 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-87890",
     yearsOpen: 7,
     treatments: ["botox", "fillers", "laser", "body-contouring"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "sunnyisles_beauty",
     productSlugs: ["skinmedica-ha5", "la-roche-posay-anthelios"],
     highlights: ["Multilingual staff", "Laser hair removal", "Collins Ave access"],
@@ -1294,16 +1302,22 @@ const spaSeeds: SpaSeed[] = [
     licenseId: "ME-86321",
     yearsOpen: 8,
     treatments: ["botox", "facial", "body-contouring", "microneedling"],
-    priceRange: "$$",
+    priceRange: "$",
     instagram: "northmiami_med_aesthetics",
     productSlugs: ["cosrx-snail-mucin", "eltamd-uv-clear", "is-clinical-cleansing"],
     highlights: ["No upselling policy", "Community pricing", "Extended weekend hours"],
   },
 ];
 
-export const spas: Spa[] = spaSeeds.map((seed, i) => seedSpa(seed, i));
+export const spas: Spa[] = [...spaSeeds, ...floridaSpaSeeds].map((seed, i) => seedSpa(seed, i));
 
-export const neighborhoods = [...new Set(spas.map((s) => s.neighborhood))].sort();
+export const metros = Object.keys(METRO_LABELS) as Metro[];
+
+export const neighborhoods = getNeighborhoodsForMetro(spas, "All");
+
+export function getNeighborhoodsByMetro(metro: Metro | "All") {
+  return getNeighborhoodsForMetro(spas, metro);
+}
 
 export const reviews: Review[] = [
   {

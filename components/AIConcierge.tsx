@@ -12,9 +12,9 @@ export function AIConcierge() {
 
   const suggestions = [
     "Aesthetics clinic for lip filler in Wynwood",
-    "Luxury laser resurfacing, Brickell",
-    "Affordable Botox med spa near Kendall",
-    "Body contouring or first facial, Miami Beach",
+    "Luxury laser resurfacing in Tampa, South Tampa",
+    "Affordable Botox med spa near Winter Park, Orlando",
+    "Body contouring or first facial, Naples or Palm Beach",
   ];
 
   async function ask(text: string) {
@@ -42,8 +42,8 @@ export function AIConcierge() {
           Tell us what you&apos;re looking for
         </h2>
         <p className="mt-2 text-sm text-stone">
-          We match you to verified Miami aesthetics clinics, med spas, and dermatology practices by
-          treatment, neighborhood, and budget — not paid ads.
+          We match you to verified Florida aesthetics clinics, med spas, and dermatology practices by
+          treatment, metro, neighborhood, and budget — not paid ads.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-2">

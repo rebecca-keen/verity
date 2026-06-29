@@ -1,4 +1,41 @@
-import type { ProviderType, Spa, Treatment, TreatmentCategory } from "./types";
+import type { Metro, ProviderType, Spa, Treatment, TreatmentCategory } from "./types";
+
+export const METRO_LABELS: Record<Metro, string> = {
+  miami: "Miami",
+  tampa: "Tampa",
+  orlando: "Orlando",
+  jacksonville: "Jacksonville",
+  naples: "Naples",
+  "palm-beach": "Palm Beach",
+};
+
+export const METRO_FILTERS: { label: string; value: Metro | "All" }[] = [
+  { label: "All Florida", value: "All" },
+  ...Object.entries(METRO_LABELS).map(([value, label]) => ({
+    label,
+    value: value as Metro,
+  })),
+];
+
+export function getNeighborhoodsForMetro(spaList: Spa[], metro: Metro | "All"): string[] {
+  const scoped = metro === "All" ? spaList : spaList.filter((s) => s.metro === metro);
+  return [...new Set(scoped.map((s) => s.neighborhood))].sort();
+}
+
+const METRO_AREA_CODES: Record<Metro, string[]> = {
+  miami: ["305", "786"],
+  tampa: ["813", "727"],
+  orlando: ["407", "321"],
+  jacksonville: ["904"],
+  naples: ["239"],
+  "palm-beach": ["561"],
+};
+
+export function defaultPhoneForMetro(metro: Metro, index: number): string {
+  const codes = METRO_AREA_CODES[metro];
+  const code = codes[index % codes.length];
+  return `(${code}) 555-${String(1000 + (index % 9000)).padStart(4, "0")}`;
+}
 
 const PROVIDER_TYPE_LABELS: Record<ProviderType, string> = {
   "med-spa": "Med Spa",

@@ -3,7 +3,7 @@ import { AIConcierge } from "@/components/AIConcierge";
 export const metadata = {
   title: "AI Concierge — Verity",
   description:
-    "Get matched to trusted aesthetics clinics, med spas, and dermatology practices in Miami.",
+    "Get matched to trusted aesthetics clinics, med spas, and dermatology practices across Florida.",
 };
 
 export default function ConciergePage() {

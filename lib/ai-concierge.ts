@@ -22,6 +22,16 @@ const KEYWORDS: Record<string, { treatments: Treatment[]; tags: string[] }> = {
   aventura: { treatments: [], tags: ["aventura", "sunny isles"] },
   kendall: { treatments: [], tags: ["kendall"] },
   grove: { treatments: ["facial"], tags: ["coconut grove"] },
+  tampa: { treatments: [], tags: ["tampa", "hyde park", "south tampa", "westshore", "clearwater", "st. petersburg"] },
+  orlando: { treatments: [], tags: ["orlando", "winter park", "dr. phillips", "lake nona", "downtown orlando"] },
+  jacksonville: { treatments: [], tags: ["jacksonville", "san marco", "riverside", "ponte vedra", "jacksonville beach"] },
+  jax: { treatments: [], tags: ["jacksonville", "jax beach"] },
+  naples: { treatments: [], tags: ["naples", "fifth avenue", "north naples", "bonita springs"] },
+  "palm beach": { treatments: [], tags: ["palm beach", "boca", "boca raton", "west palm", "delray"] },
+  boca: { treatments: [], tags: ["boca raton", "boca"] },
+  "west palm": { treatments: [], tags: ["west palm beach"] },
+  delray: { treatments: [], tags: ["delray beach"] },
+  florida: { treatments: [], tags: [] },
   dermatology: { treatments: ["laser", "facial"], tags: ["dermatology"] },
   aesthetics: { treatments: ["botox", "fillers", "facial"], tags: ["aesthetics"] },
   clinic: { treatments: ["botox", "fillers"], tags: ["aesthetics"] },
@@ -55,10 +65,17 @@ function scoreSpa(
   }
 
   const neighborhood = spa.neighborhood.toLowerCase();
+  const city = spa.city.toLowerCase();
+  const metroName = spa.metro.replace("-", " ");
   for (const tag of wantedTags) {
-    if (neighborhood.includes(tag.toLowerCase())) {
+    const tagLower = tag.toLowerCase();
+    if (
+      neighborhood.includes(tagLower) ||
+      city.includes(tagLower) ||
+      metroName.includes(tagLower)
+    ) {
       score += 15;
-      reasons.push(`Located in ${spa.neighborhood}`);
+      reasons.push(`Located in ${spa.neighborhood}, ${spa.city}`);
     }
     if (tag === "affordable" && (spa.priceRange === "$$" || spa.priceRange === "$")) score += 10;
     if (tag === "premium" && spa.priceRange === "$$$$") score += 10;
@@ -108,7 +125,7 @@ export function matchSpas(query: string): ConciergeMatch[] {
       return {
         spaSlug: spa.slug,
         spaName: spa.name,
-        reason: reasons.join(". ") || "Highly rated verified provider in Miami",
+        reason: reasons.join(". ") || `Highly rated verified provider in ${spa.city}`,
         matchScore: Math.min(99, score),
       };
     })
@@ -123,7 +140,7 @@ export function buildConciergeReply(query: string, matches: ConciergeMatch[]): s
 
   const top = matches[0];
   const lines = [
-    "Based on what you shared, here are my top Miami matches for med spas and aesthetics clinics:",
+    "Based on what you shared, here are my top Florida matches for med spas and aesthetics clinics:",
     "",
     ...matches.map(
       (m, i) =>
@@ -147,7 +164,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
       const spaContext = spas
         .map(
           (s) =>
-            `${s.name} (${s.neighborhood}, ${s.providerType}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Rating: ${s.rating}`
+            `${s.name} (${s.neighborhood}, ${s.city}, ${s.metro} — ${s.providerType}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Rating: ${s.rating}`
         )
         .join("\n");
 
@@ -162,7 +179,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
           messages: [
             {
               role: "system",
-              content: `You are Verity Concierge, a luxury aesthetics advisor for Miami. You help users find reputable, verified med spas, aesthetics clinics, and dermatology practices. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
+              content: `You are Verity Concierge, a luxury aesthetics advisor for Florida — Miami, Tampa, Orlando, Jacksonville, Naples, and Palm Beach. You help users find reputable, verified med spas, aesthetics clinics, and dermatology practices. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
             },
             { role: "user", content: query },
           ],
