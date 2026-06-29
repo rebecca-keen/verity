@@ -118,6 +118,90 @@ export function getLocationFilterLabel(
   return `${neighborhood}, ${city}`;
 }
 
+/** Human-readable location for results copy — e.g. "Tampa, FL" or "Florida". */
+export function getResultsLocationLabel(
+  state: USStateCode | "All",
+  city: string | "All",
+  neighborhood: string | "All"
+): string {
+  if (state === "All") return "across the United States";
+  if (city === "All") return getStateLabel(state);
+  if (neighborhood === "All") return `${city}, ${state}`;
+  return `${neighborhood}, ${city}`;
+}
+
+export const POPULAR_STATE_CODES: USStateCode[] = ["FL", "CA", "TX", "NY"];
+
+export const POPULAR_CITY_SHORTCUTS: { label: string; state: USStateCode; city: string }[] = [
+  { label: "Miami", state: "FL", city: "Miami" },
+  { label: "Tampa", state: "FL", city: "Tampa" },
+  { label: "Los Angeles", state: "CA", city: "Los Angeles" },
+  { label: "NYC", state: "NY", city: "New York" },
+  { label: "Atlanta", state: "GA", city: "Atlanta" },
+];
+
+/** Match a city name from search text and return state + city when unambiguous. */
+export function resolveLocationFromQuery(
+  spaList: Spa[],
+  query: string
+): { state: USStateCode; city: string } | null {
+  const q = query.trim().toLowerCase();
+  if (q.length < 2) return null;
+
+  const exact = spaList.filter((s) => s.city.toLowerCase() === q);
+  if (exact.length > 0) {
+    const keys = new Set(exact.map((s) => `${s.state}:${s.city}`));
+    if (keys.size === 1) {
+      return { state: exact[0].state as USStateCode, city: exact[0].city };
+    }
+    return null;
+  }
+
+  const partial = spaList.filter((s) => s.city.toLowerCase().startsWith(q));
+  const partialKeys = new Set(partial.map((s) => `${s.state}:${s.city}`));
+  if (partialKeys.size === 1 && partial.length > 0) {
+    return { state: partial[0].state as USStateCode, city: partial[0].city };
+  }
+
+  return null;
+}
+
+export function hasActiveLocationFilters(
+  state: USStateCode | "All",
+  city: string | "All",
+  neighborhood: string | "All",
+  search: string
+): boolean {
+  return state !== "All" || city !== "All" || neighborhood !== "All" || search.trim().length > 0;
+}
+
+export function hasActiveFilters(
+  state: USStateCode | "All",
+  city: string | "All",
+  neighborhood: string | "All",
+  search: string,
+  category: TreatmentCategory | "All",
+  providerType: ProviderType | "All"
+): boolean {
+  return (
+    hasActiveLocationFilters(state, city, neighborhood, search) ||
+    category !== "All" ||
+    providerType !== "All"
+  );
+}
+
+export function parseLocationSearchParams(
+  stateParam: string | undefined,
+  cityParam: string | undefined
+): { state: USStateCode | "All"; city: string | "All" } {
+  const validState =
+    stateParam && US_STATES.some((s) => s.code === stateParam && s.code !== "All")
+      ? (stateParam as USStateCode)
+      : "All";
+  const city = cityParam?.trim() ? cityParam : "All";
+  return { state: validState, city };
+}
+
 export const FLORIDA_METROS: Metro[] = [
   "south-florida",
   "tampa-bay",
