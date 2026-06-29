@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { BookingForm } from "@/components/BookingForm";
+import { DirectContactPanel } from "@/components/DirectContactPanel";
 import { ProductCard } from "@/components/ProductCard";
 import { ReviewCard } from "@/components/ReviewCard";
 import { SpaGallery } from "@/components/SpaGallery";
@@ -48,14 +48,15 @@ export default async function SpaDetailPage({
             <TreatmentCategories categories={spa.treatmentCategories} />
           </div>
           <p className="mt-2 font-serif text-xl text-stone">{spa.tagline}</p>
-          <p className="mt-4 leading-relaxed text-stone">{spa.description}</p>
+
+          <div className="mt-6">
+            <SpaSocialLinks spa={spa} prominent />
+          </div>
+
+          <p className="mt-6 leading-relaxed text-stone">{spa.description}</p>
 
           <div className="mt-10">
             <SpaGallery spa={spa} />
-          </div>
-
-          <div className="mt-10">
-            <SpaSocialLinks spa={spa} />
           </div>
 
           <div className="mt-10">
@@ -84,7 +85,7 @@ export default async function SpaDetailPage({
 
         <div className="space-y-6">
           <TrustPanel spa={spa} />
-          <BookingForm spaSlug={spa.slug} spaName={spa.name} />
+          <DirectContactPanel spa={spa} />
           <div className="luxury-border rounded-2xl bg-cream p-5 text-sm text-stone">
             <p className="font-medium text-charcoal">Treatments</p>
             <div className="mt-2 flex flex-wrap gap-2">

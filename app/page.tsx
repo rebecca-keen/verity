@@ -59,7 +59,7 @@ export default function HomePage() {
             <h3 className="mt-2 font-serif text-xl text-charcoal">Grow your practice</h3>
             <p className="mt-3 text-sm leading-relaxed text-stone">
               Aesthetics clinics, med spas, and dermatology practices use Verity for verified profiles,
-              featured placement, booking requests, and lead generation — subscription tiers from free
+              direct contact links, and optional featured placement — subscription tiers from free
               listings to Premium featured spots.
             </p>
             <Link href="/for-spas" className="mt-4 inline-block text-sm text-gold hover:underline">
@@ -105,13 +105,16 @@ export default function HomePage() {
             <Link href="/premium" className="text-sm text-gold hover:underline">
               Verity Premium →
             </Link>
+            <Link href="/affiliates" className="text-sm text-gold hover:underline">
+              How we earn →
+            </Link>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { title: "Provider subscriptions", price: "$149–299/mo", desc: "Partner & Premium listings" },
-              { title: "Verity Premium", price: "$12/mo", desc: "Consumer priority booking & AI" },
-              { title: "Booking fees", price: "3–5%", desc: "Commission on completed bookings" },
-              { title: "Featured placement", price: "$500+/mo", desc: "Top-of-search visibility" },
+              { title: "Featured listing", price: "$500+/mo", desc: "Top placement — paid tier, waitlist" },
+              { title: "Verified badge", price: "$149–299/mo", desc: "Partner subscription for practices" },
+              { title: "Verity Premium", price: "$12/mo", desc: "Consumer priority AI & favorites" },
+              { title: "Product affiliates", price: "5–15%", desc: "Shop link commissions" },
             ].map((item) => (
               <div key={item.title} className="luxury-border rounded-xl bg-white p-5">
                 <p className="font-medium text-charcoal">{item.title}</p>

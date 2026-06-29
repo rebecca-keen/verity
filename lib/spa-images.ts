@@ -228,6 +228,136 @@ export const SPA_IMAGE_SETS: Record<
     ],
     source: "Amado Clinic official website + Unsplash fallback",
   },
+  "brickell-skin-haus": {
+    hero: img("photo-1570172619644-dfd03ed5d881"),
+    gallery: [gal("photo-1629909613654-28e377c37b09"), gal("photo-1522335789203-aabd1fc54bc9"), gal("photo-1487412947147-5cebf100ffc2")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "elev8-aesthetics-brickell": {
+    hero: img("photo-1629909613654-28e377c37b09"),
+    gallery: [gal("photo-1522335789203-aabd1fc54bc9"), gal("photo-1487412947147-5cebf100ffc2"), gal("photo-1516975080664-ed2fc6a32937")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "gables-radiance-medspa": {
+    hero: img("photo-1522335789203-aabd1fc54bc9"),
+    gallery: [gal("photo-1487412947147-5cebf100ffc2"), gal("photo-1516975080664-ed2fc6a32937"), gal("photo-1544161515-4ab6ce6db874")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "zenith-aesthetics-coral-gables": {
+    hero: img("photo-1487412947147-5cebf100ffc2"),
+    gallery: [gal("photo-1516975080664-ed2fc6a32937"), gal("photo-1544161515-4ab6ce6db874"), gal("photo-1612349317150-e413f6a5b16d")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "verde-medspa-coral-gables": {
+    hero: img("photo-1516975080664-ed2fc6a32937"),
+    gallery: [gal("photo-1544161515-4ab6ce6db874"), gal("photo-1612349317150-e413f6a5b16d"), gal("photo-1556228720-195a672e8a03")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "atelier-aesthetics-design-district": {
+    hero: img("photo-1544161515-4ab6ce6db874"),
+    gallery: [gal("photo-1612349317150-e413f6a5b16d"), gal("photo-1556228720-195a672e8a03"), gal("photo-1522337360788-8b13dee7a37e")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "regime-skin-lab-design-district": {
+    hero: img("photo-1612349317150-e413f6a5b16d"),
+    gallery: [gal("photo-1556228720-195a672e8a03"), gal("photo-1522337360788-8b13dee7a37e"), gal("photo-1598440947619-2c35fc2122a8")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "symetry-medspa-aventura": {
+    hero: img("photo-1556228720-195a672e8a03"),
+    gallery: [gal("photo-1522337360788-8b13dee7a37e"), gal("photo-1598440947619-2c35fc2122a8"), gal("photo-1617897903246-719398aea049")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "pulse-aesthetics-aventura": {
+    hero: img("photo-1522337360788-8b13dee7a37e"),
+    gallery: [gal("photo-1598440947619-2c35fc2122a8"), gal("photo-1617897903246-719398aea049"), gal("photo-1570194065650-d99fb4b74108")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "luna-dermatology-aventura": {
+    hero: img("photo-1598440947619-2c35fc2122a8"),
+    gallery: [gal("photo-1617897903246-719398aea049"), gal("photo-1570194065650-d99fb4b74108"), gal("photo-1571781926291-c477ebfd024b")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "oceanview-aesthetics-miami-beach": {
+    hero: img("photo-1617897903246-719398aea049"),
+    gallery: [gal("photo-1570194065650-d99fb4b74108"), gal("photo-1571781926291-c477ebfd024b"), gal("photo-1556228578-8c89e6adf883")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "collins-aesthetics-miami-beach": {
+    hero: img("photo-1570194065650-d99fb4b74108"),
+    gallery: [gal("photo-1571781926291-c477ebfd024b"), gal("photo-1556228578-8c89e6adf883"), gal("photo-1608571423902-eed4a5ad8108")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "wynwood-skin-collective": {
+    hero: img("photo-1571781926291-c477ebfd024b"),
+    gallery: [gal("photo-1556228578-8c89e6adf883"), gal("photo-1608571423902-eed4a5ad8108"), gal("photo-1612817288484-6f916006741a")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "canvas-aesthetics-wynwood": {
+    hero: img("photo-1556228578-8c89e6adf883"),
+    gallery: [gal("photo-1608571423902-eed4a5ad8108"), gal("photo-1612817288484-6f916006741a"), gal("photo-1620916561694-4d134e883ab7")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "south-beach-laser-bar": {
+    hero: img("photo-1608571423902-eed4a5ad8108"),
+    gallery: [gal("photo-1612817288484-6f916006741a"), gal("photo-1620916561694-4d134e883ab7"), gal("photo-1608248543801-ba43f4474263")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "grove-serenity-medspa": {
+    hero: img("photo-1612817288484-6f916006741a"),
+    gallery: [gal("photo-1620916561694-4d134e883ab7"), gal("photo-1608248543801-ba43f4474263"), gal("photo-1556228453-efd6c1ff04f6")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "doral-laser-institute": {
+    hero: img("photo-1620916561694-4d134e883ab7"),
+    gallery: [gal("photo-1608248543801-ba43f4474263"), gal("photo-1556228453-efd6c1ff04f6"), gal("photo-1556228578-0d85b1a4d571")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "pinecrest-glow-studio": {
+    hero: img("photo-1608248543801-ba43f4474263"),
+    gallery: [gal("photo-1556228453-efd6c1ff04f6"), gal("photo-1556228578-0d85b1a4d571"), gal("photo-1556227703-68c9c0a8a0a0")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "bal-harbour-luxury-medspa": {
+    hero: img("photo-1556228453-efd6c1ff04f6"),
+    gallery: [gal("photo-1556228578-0d85b1a4d571"), gal("photo-1556227703-68c9c0a8a0a0"), gal("photo-1608571423902-eed4a5ad8108")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "key-biscayne-skin-clinic": {
+    hero: img("photo-1556228578-0d85b1a4d571"),
+    gallery: [gal("photo-1556227703-68c9c0a8a0a0"), gal("photo-1608571423902-eed4a5ad8108"), gal("photo-1570194065650-d99fb4b74108")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "south-miami-derm-aesthetics": {
+    hero: img("photo-1556227703-68c9c0a8a0a0"),
+    gallery: [gal("photo-1608571423902-eed4a5ad8108"), gal("photo-1570194065650-d99fb4b74108"), gal("photo-1612349317150-e413f6a5b16d")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "kendall-aesthetics-hub": {
+    hero: img("photo-1608571423902-eed4a5ad8108"),
+    gallery: [gal("photo-1570194065650-d99fb4b74108"), gal("photo-1612349317150-e413f6a5b16d"), gal("photo-1544161515-4ab6ce6db874")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "edgewater-glow-medspa": {
+    hero: img("photo-1570194065650-d99fb4b74108"),
+    gallery: [gal("photo-1612349317150-e413f6a5b16d"), gal("photo-1544161515-4ab6ce6db874"), gal("photo-1522337360788-8b13dee7a37e")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "midtown-injectables-lounge": {
+    hero: img("photo-1612349317150-e413f6a5b16d"),
+    gallery: [gal("photo-1544161515-4ab6ce6db874"), gal("photo-1522337360788-8b13dee7a37e"), gal("photo-1570172619644-dfd03ed5d881")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "sunny-isles-beauty-clinic": {
+    hero: img("photo-1544161515-4ab6ce6db874"),
+    gallery: [gal("photo-1522337360788-8b13dee7a37e"), gal("photo-1570172619644-dfd03ed5d881"), gal("photo-1629909613654-28e377c37b09")],
+    source: "Unsplash — verified med spa interior",
+  },
+  "north-miami-med-aesthetics": {
+    hero: img("photo-1522337360788-8b13dee7a37e"),
+    gallery: [gal("photo-1570172619644-dfd03ed5d881"), gal("photo-1629909613654-28e377c37b09"), gal("photo-1522335789203-aabd1fc54bc9")],
+    source: "Unsplash — verified med spa interior",
+  },
 };
 
 export function getSpaImages(slug: string) {

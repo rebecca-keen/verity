@@ -23,7 +23,7 @@ export default function PremiumPage() {
           <ul className="mt-6 space-y-3 text-sm text-stone">
             <li>✓ Browse all {spas.length} Miami providers</li>
             <li>✓ Read reviews & product info</li>
-            <li>✓ Request bookings</li>
+            <li>✓ Contact providers directly (call, website, Instagram)</li>
             <li>✓ Basic AI Concierge</li>
           </ul>
         </div>
@@ -103,6 +103,10 @@ export default function PremiumPage() {
       <p className="mt-10 text-center text-sm text-stone">
         <Link href="/for-spas" className="text-gold hover:underline">
           Provider owner? See partner pricing →
+        </Link>
+        {" · "}
+        <Link href="/affiliates" className="text-gold hover:underline">
+          Product affiliate transparency →
         </Link>
       </p>
     </div>

@@ -37,7 +37,10 @@ export default async function ProductsPage({
         clinical staples to Korean, French, and Italian luxury skincare.
       </p>
       <p className="mt-2 text-sm text-stone/80">
-        Purchases through Verity shop links may earn a commission that supports independent reviews.
+        Purchases through Verity shop links may earn a commission that supports independent reviews.{" "}
+        <Link href="/affiliates" className="text-gold hover:underline">
+          How we earn →
+        </Link>
       </p>
 
       <div className="mt-8 flex flex-wrap gap-2">

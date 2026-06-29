@@ -23,6 +23,17 @@ export default function RootLayout({
           <p className="mt-2">
             Aesthetics clinics, med spas & dermatology · Miami · Expanding nationwide
           </p>
+          <p className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs">
+            <a href="/for-spas" className="text-gold hover:underline">
+              For Providers
+            </a>
+            <a href="/affiliates" className="text-gold hover:underline">
+              Affiliate Program
+            </a>
+            <a href="/premium" className="text-gold hover:underline">
+              Premium
+            </a>
+          </p>
           <p className="mt-4 text-xs">© {new Date().getFullYear()} Verity. Not medical advice.</p>
         </footer>
       </body>
