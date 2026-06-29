@@ -16,6 +16,10 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "cdn.prod.website-files.com" },
       { protocol: "https", hostname: "assets.cdn.filesafe.space" },
       { protocol: "https", hostname: "img1.wsimg.com" },
+      {
+        protocol: "https",
+        hostname: "influx-site-assets.s3.us-west-2.amazonaws.com",
+      },
       { protocol: "https", hostname: "**.cdninstagram.com" },
     ],
   },
