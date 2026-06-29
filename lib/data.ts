@@ -174,27 +174,20 @@ type SpaSeed = {
   dataSources?: string[];
 };
 
-function buildSocials(seed: SpaSeed, metro?: Metro): SpaSocials {
+function buildSocials(seed: SpaSeed): SpaSocials {
   if (seed.socials) return seed.socials;
-  const ig = seed.instagram;
-  const compact = ig.replace(/_/g, "");
-  const locationLabel = metro ? METRO_LABELS[metro].replace(/\s/g, "") : seed.state ?? "US";
-  return {
-    instagram: ig,
-    facebook: ig,
-    tiktok: compact,
-    youtube: `${compact.slice(0, 18)}${locationLabel}`,
-  };
+  if (seed.instagram?.trim()) return { instagram: seed.instagram.trim() };
+  return {};
 }
 
 function seedSpa(data: SpaSeed, index: number): Spa {
   const state = data.state ?? "FL";
   const metro = data.metro;
   const images = getSpaImages(data.slug);
-  const website = data.website ?? `https://www.${data.slug}.com`;
+  const website = data.website?.trim() ?? "";
   const phone =
     data.phone ?? (metro ? defaultPhoneForMetro(metro, index) : `(555) 555-${String(1000 + (index % 9000)).padStart(4, "0")}`);
-  const socials = buildSocials(data, metro);
+  const socials = buildSocials(data);
   const reviewSources =
     data.googleRating || data.yelpRating
       ? {

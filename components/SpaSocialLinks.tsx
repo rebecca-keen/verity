@@ -1,20 +1,18 @@
 import type { Spa } from "@/lib/types";
-
-const SOCIAL_CONFIG = [
-  { key: "instagram" as const, label: "Instagram", prefix: "https://instagram.com/" },
-  { key: "facebook" as const, label: "Facebook", prefix: "https://facebook.com/" },
-  { key: "tiktok" as const, label: "TikTok", prefix: "https://tiktok.com/@" },
-  { key: "youtube" as const, label: "YouTube", prefix: "https://youtube.com/@" },
-];
+import {
+  getGoogleMapsSearchUrl,
+  getPublicPhone,
+  getPublicSocialLinks,
+  getPublicWebsite,
+  getPhoneTelHref,
+} from "@/lib/spa-link-utils";
 
 export function SpaSocialLinks({ spa, prominent = false }: { spa: Spa; prominent?: boolean }) {
-  const links = SOCIAL_CONFIG.map(({ key, label, prefix }) => ({
-    key,
-    label,
-    href: spa.socials[key] ? `${prefix}${spa.socials[key]}` : null,
-  })).filter((l) => l.href);
+  const website = getPublicWebsite(spa);
+  const phone = getPublicPhone(spa);
+  const links = getPublicSocialLinks(spa);
 
-  if (links.length === 0 && !spa.website) return null;
+  if (links.length === 0 && !website && !phone) return null;
 
   return (
     <section className={prominent ? "luxury-border rounded-2xl bg-cream p-6" : ""}>
@@ -24,7 +22,7 @@ export function SpaSocialLinks({ spa, prominent = false }: { spa: Spa; prominent
         {links.map((link) => (
           <a
             key={link.key}
-            href={link.href!}
+            href={link.href}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`${spa.name} on ${link.label}`}
@@ -34,19 +32,21 @@ export function SpaSocialLinks({ spa, prominent = false }: { spa: Spa; prominent
             {link.label}
           </a>
         ))}
-        <a
-          href={spa.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-xs font-medium text-charcoal transition hover:bg-gold/20"
-        >
-          <GlobeIcon />
-          Website
-        </a>
+        {website && (
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-xs font-medium text-charcoal transition hover:bg-gold/20"
+          >
+            <GlobeIcon />
+            Visit website
+          </a>
+        )}
       </div>
-      {!prominent && (
+      {!prominent && phone && (
         <p className="mt-3 text-xs text-stone">
-          {spa.phone} · {spa.neighborhood}, {spa.city}
+          {phone} · {spa.neighborhood}, {spa.city}
         </p>
       )}
     </section>

@@ -1,15 +1,17 @@
 import type { Spa } from "@/lib/types";
-
-function mapsSearchUrl(spa: Spa) {
-  const query = encodeURIComponent(`${spa.name}, ${spa.neighborhood}, ${spa.city}, FL`);
-  return `https://www.google.com/maps/search/?api=1&query=${query}`;
-}
+import {
+  getGoogleMapsSearchUrl,
+  getPublicPhone,
+  getPublicSocialLinks,
+  getPublicWebsite,
+  getPhoneTelHref,
+} from "@/lib/spa-link-utils";
 
 export function DirectContactPanel({ spa }: { spa: Spa }) {
-  const instagramHandle = spa.socials.instagram;
-  const instagramUrl = instagramHandle
-    ? `https://instagram.com/${instagramHandle}`
-    : null;
+  const phone = getPublicPhone(spa);
+  const website = getPublicWebsite(spa);
+  const instagram = getPublicSocialLinks(spa).find((link) => link.key === "instagram");
+  const mapsUrl = getGoogleMapsSearchUrl(spa);
 
   return (
     <div className="luxury-border space-y-4 rounded-2xl bg-white p-6">
@@ -19,25 +21,38 @@ export function DirectContactPanel({ spa }: { spa: Spa }) {
       </p>
 
       <div className="space-y-3">
-        <a
-          href={`tel:${spa.phone.replace(/[^\d+]/g, "")}`}
-          className="flex w-full items-center justify-center gap-2 rounded-full bg-charcoal py-3 text-sm font-medium tracking-wider text-ivory transition hover:bg-charcoal/90"
-        >
-          Call {spa.phone}
-        </a>
-
-        <a
-          href={spa.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex w-full items-center justify-center gap-2 rounded-full border border-charcoal py-3 text-sm font-medium tracking-wider text-charcoal transition hover:bg-cream"
-        >
-          Visit website & book
-        </a>
-
-        {instagramUrl && (
+        {phone && (
           <a
-            href={instagramUrl}
+            href={getPhoneTelHref(phone)}
+            className="flex w-full items-center justify-center gap-2 rounded-full bg-charcoal py-3 text-sm font-medium tracking-wider text-ivory transition hover:bg-charcoal/90"
+          >
+            Call {phone}
+          </a>
+        )}
+
+        {website ? (
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-full items-center justify-center gap-2 rounded-full border border-charcoal py-3 text-sm font-medium tracking-wider text-charcoal transition hover:bg-cream"
+          >
+            Visit website & book
+          </a>
+        ) : (
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-full items-center justify-center gap-2 rounded-full border border-charcoal py-3 text-sm font-medium tracking-wider text-charcoal transition hover:bg-cream"
+          >
+            Find on Google Maps
+          </a>
+        )}
+
+        {instagram && (
+          <a
+            href={instagram.href}
             target="_blank"
             rel="noopener noreferrer"
             className="flex w-full items-center justify-center gap-2 rounded-full border border-gold/40 bg-gold/10 py-3 text-sm font-medium tracking-wider text-charcoal transition hover:bg-gold/20"
@@ -47,7 +62,7 @@ export function DirectContactPanel({ spa }: { spa: Spa }) {
         )}
 
         <a
-          href={mapsSearchUrl(spa)}
+          href={mapsUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="flex w-full items-center justify-center gap-2 rounded-full border border-stone/20 py-3 text-sm text-stone transition hover:border-gold hover:text-charcoal"

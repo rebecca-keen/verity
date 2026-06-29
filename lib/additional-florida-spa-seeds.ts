@@ -433,7 +433,7 @@ function buildSeeds(): FloridaSpaSeed[] {
         productSlugs: PRODUCT_SETS[i % PRODUCT_SETS.length],
         highlights: HIGHLIGHTS[i % HIGHLIGHTS.length],
         phone: `(${config.areaCode}) 555-${String(2000 + idx).padStart(4, "0")}`,
-        website: `https://www.${entry.slug}.com`,
+        website: "",
       });
     });
   }
