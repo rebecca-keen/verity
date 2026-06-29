@@ -702,7 +702,7 @@ const spaSeeds: SpaSeed[] = [
     instagram: "fisherisland_aesthetics",
     productSlugs: ["skinceuticals-ce-ferulic", "epicutis-arctigenin", "revision-retinol"],
     highlights: ["Members only", "Island location", "House calls available"],
-
+  },
   {
     slug: "brickell-skin-haus",
     name: "Brickell Skin Haus",
@@ -1248,7 +1248,6 @@ const spaSeeds: SpaSeed[] = [
     instagram: "northmiami_med_aesthetics",
     productSlugs: ["cosrx-snail-mucin", "eltamd-uv-clear", "is-clinical-cleansing"],
     highlights: ["No upselling policy", "Community pricing", "Extended weekend hours"],
-  },
   },
 ];
 
