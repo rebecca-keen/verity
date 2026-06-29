@@ -1,0 +1,3734 @@
+{
+  "aether-aesthetics-coral-gables": {
+    "slug": "aether-aesthetics-coral-gables",
+    "website": "https://plenitudemedspa.com/",
+    "businessName": "Plénitude MedSpa",
+    "hero": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+    "heroType": "page",
+    "gallery": [
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg"
+    ],
+    "source": "Plénitude MedSpa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-3.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-4.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-1.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "lumiere-medspa-brickell": {
+    "slug": "lumiere-medspa-brickell",
+    "website": "https://novaskinmedspa.com/",
+    "businessName": "Novaskin Med Spa",
+    "hero": "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",
+    "heroType": "og",
+    "gallery": [],
+    "source": "Novaskin Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",
+        "type": "og"
+      }
+    ]
+  },
+  "salt-glow-miami-beach": {
+    "slug": "salt-glow-miami-beach",
+    "website": "https://www.miamiskinspa.com/",
+    "businessName": "Miami Skin Spa",
+    "hero": "https://www.miamiskinspa.com/og-default.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+      "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+      "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp"
+    ],
+    "source": "Miami Skin Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.miamiskinspa.com/og-default.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-0.Drv_3tan_Z2gyiio.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-1.B6ev22ez_2ebiUX.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-0.usNrYkB5_UmSdw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-1.2ZhIj-Wg_Z13qQW7.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-0.D6XUoXcy_9G0Tw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-1.utp3Fbru_Z1bYzHu.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-0.OLGbl2mJ_ZQLXGR.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-1.CrfjmHdR_Zy9GSy.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-mariana-orig.CP7sbZmm_Z1lMD8o.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-morgan-orig.9InS63RH_Jj8oJ.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-amy-orig.DaYJ3qwS_Z1iF1Rm.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "forme-aesthetics-wynwood": {
+    "slug": "forme-aesthetics-wynwood",
+    "website": "https://www.thesurfacelevel.com/",
+    "businessName": "Surface Level Med Spa",
+    "hero": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+    "heroType": "og",
+    "gallery": [
+      "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+      "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+      "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618"
+    ],
+    "source": "Surface Level Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+        "type": "og"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1623.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Hospitality.png?1729121357737",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/outcome.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/culture.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/community.png?1729121822985",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/investment.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/luxury.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level-community.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/experience.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1689.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1634565.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue-rain.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/light-texture.jpg?1729292611827",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/placeholder-vid.jpg?1750954423887",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-01-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-02-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-03-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-microneedling-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/botox-procedure.jpg?1748023444336",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-skin-tightening-procedure.jpg?1748023676953",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/dermal-fillers-procedure.jpg?1748024085371",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1736.jpg?1748034470359",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/collage.jpg?1751043374660",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/skincare.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1621.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1622.jpg?1750955420130",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/Group-598.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "maison-skin-design-district": {
+    "slug": "maison-skin-design-district",
+    "website": "https://brickellcosmetic.com/",
+    "businessName": "Brickell Cosmetic Center",
+    "hero": "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://brickellcosmetic.com/wp-content/uploads/2025/04/two-header-mobile-2-min.jpg",
+      "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-desktop.jpg",
+      "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-desktop.jpg"
+    ],
+    "source": "Brickell Cosmetic Center official website — homepage",
+    "allValid": [
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/two-header-mobile-2-min.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img1-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img1-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/banner-desktop-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/banner-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-bg.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/img-treatment-20-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-30-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-40-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-50-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/img-treatment-60-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-20-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-30-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-40-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-50-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-60-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/02/new-product-home-img1-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/02/product-home-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatmentss-bg-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatmentss-bg-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/05/vip-bg-img-brickell-1-1024x683.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/05/qr-image-brickell.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://static.legitscript.com/seals/4690033.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/cross.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/search-new.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/offers-btn-updated.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img11-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img22-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img33-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/brickell-header-mobile-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/botox-img066-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/hydrafacial-img055-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/clear-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/ipl-treatment-img11-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/botox-img066-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/hydrafacial-img055-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/clear-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/ipl-treatment-img11-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/vip-app-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/vip-app-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/patientgain.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2021/05/smm-app.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2021/05/question-app.png",
+        "type": "page"
+      }
+    ]
+  },
+  "injector-studio-brickell": {
+    "slug": "injector-studio-brickell",
+    "website": "https://www.miamiskinspa.com/",
+    "businessName": "Miami Skin Spa",
+    "hero": "https://www.miamiskinspa.com/og-default.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+      "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+      "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp"
+    ],
+    "source": "Miami Skin Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.miamiskinspa.com/og-default.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-0.Drv_3tan_Z2gyiio.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-1.B6ev22ez_2ebiUX.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-0.usNrYkB5_UmSdw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-1.2ZhIj-Wg_Z13qQW7.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-0.D6XUoXcy_9G0Tw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-1.utp3Fbru_Z1bYzHu.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-0.OLGbl2mJ_ZQLXGR.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-1.CrfjmHdR_Zy9GSy.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-mariana-orig.CP7sbZmm_Z1lMD8o.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-morgan-orig.9InS63RH_Jj8oJ.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-amy-orig.DaYJ3qwS_Z1iF1Rm.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "coastal-aesthetics-south-beach": {
+    "slug": "coastal-aesthetics-south-beach",
+    "website": "https://skinneymedspa.com/miami/",
+    "businessName": "SKINNEY Medspa",
+    "hero": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg"
+    ],
+    "source": "SKINNEY Medspa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-212-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-305-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Locations-The-Hamptons-Medspa.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Shops-Gift-Card.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/tiffany-f-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/skinney-t-01.png",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/christen-w-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/susie-m-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-212-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-305-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-2026-02-1024x755.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/30-east-60th-street-new-york-10022-medspa-location-2026-02-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-2026-02-1024x683.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "grove-wellness-coconut-grove": {
+    "slug": "grove-wellness-coconut-grove",
+    "website": "https://plenitudemedspa.com/",
+    "businessName": "Plénitude MedSpa",
+    "hero": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+    "heroType": "page",
+    "gallery": [
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg"
+    ],
+    "source": "Plénitude MedSpa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-3.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-4.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-1.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "aventura-med-aesthetics": {
+    "slug": "aventura-med-aesthetics",
+    "website": "https://www.aventuramedspa.com/",
+    "businessName": "Aventura Med Spa",
+    "hero": "https://cdn.aventuramedspa.com/site/social/og-image.png",
+    "heroType": "og",
+    "gallery": [],
+    "source": "Aventura Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://cdn.aventuramedspa.com/site/social/og-image.png",
+        "type": "og"
+      }
+    ]
+  },
+  "doral-beauty-institute": {
+    "slug": "doral-beauty-institute",
+    "website": "https://www.fbmedspa.com/",
+    "businessName": "FaceBeauty Med Spa",
+    "hero": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+    "heroType": "page",
+    "gallery": [
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp"
+    ],
+    "source": "FaceBeauty Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/FaceBeauty-Med-Spa-Facials-e1733929684550.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/02/dysport-inection-doral-fl.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/20241118_194534970_iOS.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/online-patient-portal-facebeauty-med-spa.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2026/04/11-768x1024.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/Horarios-Facebeauty-new-819x1024.png",
+        "type": "page"
+      }
+    ]
+  },
+  "pinecrest-plastic-spa": {
+    "slug": "pinecrest-plastic-spa",
+    "website": "https://www.fbmedspa.com/",
+    "businessName": "FaceBeauty Med Spa",
+    "hero": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+    "heroType": "page",
+    "gallery": [
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp"
+    ],
+    "source": "FaceBeauty Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/FaceBeauty-Med-Spa-Facials-e1733929684550.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/02/dysport-inection-doral-fl.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/20241118_194534970_iOS.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/online-patient-portal-facebeauty-med-spa.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2026/04/11-768x1024.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/Horarios-Facebeauty-new-819x1024.png",
+        "type": "page"
+      }
+    ]
+  },
+  "bal-harbour-skin-clinic": {
+    "slug": "bal-harbour-skin-clinic",
+    "website": "https://skinneymedspa.com/miami/",
+    "businessName": "SKINNEY Medspa",
+    "hero": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg"
+    ],
+    "source": "SKINNEY Medspa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-212-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-305-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Locations-The-Hamptons-Medspa.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Shops-Gift-Card.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/tiffany-f-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/skinney-t-01.png",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/christen-w-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/susie-m-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-212-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-305-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-2026-02-1024x755.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/30-east-60th-street-new-york-10022-medspa-location-2026-02-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-2026-02-1024x683.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "key-biscayne-med-spa": {
+    "slug": "key-biscayne-med-spa",
+    "website": "https://brickellcosmetic.com/",
+    "businessName": "Brickell Cosmetic Center",
+    "hero": "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://brickellcosmetic.com/wp-content/uploads/2025/04/two-header-mobile-2-min.jpg",
+      "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-desktop.jpg",
+      "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-desktop.jpg"
+    ],
+    "source": "Brickell Cosmetic Center official website — homepage",
+    "allValid": [
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/two-header-mobile-2-min.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img1-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img1-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/banner-desktop-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/banner-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-bg.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/img-treatment-20-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-30-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-40-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-50-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/img-treatment-60-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-20-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-30-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-40-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-50-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-60-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/02/new-product-home-img1-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/02/product-home-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatmentss-bg-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatmentss-bg-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/05/vip-bg-img-brickell-1-1024x683.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/05/qr-image-brickell.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://static.legitscript.com/seals/4690033.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/cross.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/search-new.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/offers-btn-updated.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img11-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img22-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img33-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/brickell-header-mobile-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/botox-img066-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/hydrafacial-img055-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/clear-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/ipl-treatment-img11-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/botox-img066-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/hydrafacial-img055-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/clear-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/ipl-treatment-img11-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/vip-app-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/vip-app-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/patientgain.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2021/05/smm-app.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2021/05/question-app.png",
+        "type": "page"
+      }
+    ]
+  },
+  "south-miami-aesthetics": {
+    "slug": "south-miami-aesthetics",
+    "website": "https://novaskinmedspa.com/",
+    "businessName": "Novaskin Med Spa",
+    "hero": "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",
+    "heroType": "og",
+    "gallery": [],
+    "source": "Novaskin Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",
+        "type": "og"
+      }
+    ]
+  },
+  "kendall-rejuvenation": {
+    "slug": "kendall-rejuvenation",
+    "website": "https://www.kendallmedspa.com/",
+    "businessName": "Kendall Med Spa",
+    "hero": "https://img1.wsimg.com/isteam/stock/8qqw22e",
+    "heroType": "og",
+    "gallery": [],
+    "source": "Kendall Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://img1.wsimg.com/isteam/stock/8qqw22e",
+        "type": "og"
+      }
+    ]
+  },
+  "edgewater-laser-skin": {
+    "slug": "edgewater-laser-skin",
+    "website": "https://skinneymedspa.com/miami/",
+    "businessName": "SKINNEY Medspa",
+    "hero": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg"
+    ],
+    "source": "SKINNEY Medspa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-212-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-305-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Locations-The-Hamptons-Medspa.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Shops-Gift-Card.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/tiffany-f-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/skinney-t-01.png",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/christen-w-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/susie-m-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-212-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-305-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-2026-02-1024x755.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/30-east-60th-street-new-york-10022-medspa-location-2026-02-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-2026-02-1024x683.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "midtown-miami-medspa": {
+    "slug": "midtown-miami-medspa",
+    "website": "https://www.thesurfacelevel.com/",
+    "businessName": "Surface Level Med Spa",
+    "hero": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+    "heroType": "og",
+    "gallery": [
+      "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+      "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+      "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618"
+    ],
+    "source": "Surface Level Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+        "type": "og"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1623.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Hospitality.png?1729121357737",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/outcome.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/culture.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/community.png?1729121822985",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/investment.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/luxury.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level-community.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/experience.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1689.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1634565.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue-rain.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/light-texture.jpg?1729292611827",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/placeholder-vid.jpg?1750954423887",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-01-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-02-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-03-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-microneedling-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/botox-procedure.jpg?1748023444336",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-skin-tightening-procedure.jpg?1748023676953",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/dermal-fillers-procedure.jpg?1748024085371",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1736.jpg?1748034470359",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/collage.jpg?1751043374660",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/skincare.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1621.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1622.jpg?1750955420130",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/Group-598.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "sunny-isles-aesthetics": {
+    "slug": "sunny-isles-aesthetics",
+    "website": "https://www.amadoclinic.com/",
+    "businessName": "Amado Clinic",
+    "hero": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg"
+    ],
+    "source": "Amado Clinic official website — homepage",
+    "allValid": [
+      {
+        "url": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg",
+        "type": "page"
+      }
+    ]
+  },
+  "north-miami-beauty-lab": {
+    "slug": "north-miami-beauty-lab",
+    "website": "https://www.infinitybeautylab.com/",
+    "businessName": "Infinity Beauty Lab",
+    "hero": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg"
+    ],
+    "source": "Infinity Beauty Lab official website — homepage",
+    "allValid": [
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863a90850b04113b27769_Top%20provider.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684a0a7dfc68718ac7f07a7f_Infinity%20(3).webp",
+        "type": "page"
+      }
+    ]
+  },
+  "coral-way-skin-studio": {
+    "slug": "coral-way-skin-studio",
+    "website": "https://plenitudemedspa.com/",
+    "businessName": "Plénitude MedSpa",
+    "hero": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+    "heroType": "page",
+    "gallery": [
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg"
+    ],
+    "source": "Plénitude MedSpa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-3.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-4.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-1.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "homestead-wellness-medspa": {
+    "slug": "homestead-wellness-medspa",
+    "website": "https://www.amadoclinic.com/",
+    "businessName": "Amado Clinic",
+    "hero": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg"
+    ],
+    "source": "Amado Clinic official website — homepage",
+    "allValid": [
+      {
+        "url": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg",
+        "type": "page"
+      }
+    ]
+  },
+  "cutler-bay-aesthetics": {
+    "slug": "cutler-bay-aesthetics",
+    "website": "https://www.amadoclinic.com/",
+    "businessName": "Amado Clinic",
+    "hero": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg"
+    ],
+    "source": "Amado Clinic official website — homepage",
+    "allValid": [
+      {
+        "url": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg",
+        "type": "page"
+      }
+    ]
+  },
+  "miami-shores-aesthetics": {
+    "slug": "miami-shores-aesthetics",
+    "website": "https://www.infinitybeautylab.com/",
+    "businessName": "Infinity Beauty Lab",
+    "hero": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg"
+    ],
+    "source": "Infinity Beauty Lab official website — homepage",
+    "allValid": [
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863a90850b04113b27769_Top%20provider.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684a0a7dfc68718ac7f07a7f_Infinity%20(3).webp",
+        "type": "page"
+      }
+    ]
+  },
+  "fisher-island-aesthetics": {
+    "slug": "fisher-island-aesthetics",
+    "website": "https://skinneymedspa.com/miami/",
+    "businessName": "SKINNEY Medspa",
+    "hero": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg"
+    ],
+    "source": "SKINNEY Medspa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-212-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-305-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Locations-The-Hamptons-Medspa.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Shops-Gift-Card.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/tiffany-f-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/skinney-t-01.png",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/christen-w-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/susie-m-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-212-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-305-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-2026-02-1024x755.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/30-east-60th-street-new-york-10022-medspa-location-2026-02-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-2026-02-1024x683.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "brickell-skin-haus": {
+    "slug": "brickell-skin-haus",
+    "website": "https://brickellcosmetic.com/",
+    "businessName": "Brickell Cosmetic Center",
+    "hero": "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://brickellcosmetic.com/wp-content/uploads/2025/04/two-header-mobile-2-min.jpg",
+      "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-desktop.jpg",
+      "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-desktop.jpg"
+    ],
+    "source": "Brickell Cosmetic Center official website — homepage",
+    "allValid": [
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/two-header-mobile-2-min.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img1-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img1-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/banner-desktop-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/banner-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-bg.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/img-treatment-20-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-30-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-40-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-50-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/img-treatment-60-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-20-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-30-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-40-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-50-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-60-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/02/new-product-home-img1-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/02/product-home-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatmentss-bg-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatmentss-bg-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/05/vip-bg-img-brickell-1-1024x683.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/05/qr-image-brickell.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://static.legitscript.com/seals/4690033.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/cross.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/search-new.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/offers-btn-updated.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img11-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img22-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img33-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/brickell-header-mobile-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/botox-img066-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/hydrafacial-img055-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/clear-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/ipl-treatment-img11-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/botox-img066-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/hydrafacial-img055-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/clear-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/ipl-treatment-img11-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/vip-app-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/vip-app-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/patientgain.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2021/05/smm-app.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2021/05/question-app.png",
+        "type": "page"
+      }
+    ]
+  },
+  "elev8-aesthetics-brickell": {
+    "slug": "elev8-aesthetics-brickell",
+    "website": "https://novaskinmedspa.com/",
+    "businessName": "Novaskin Med Spa",
+    "hero": "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",
+    "heroType": "og",
+    "gallery": [],
+    "source": "Novaskin Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",
+        "type": "og"
+      }
+    ]
+  },
+  "gables-radiance-medspa": {
+    "slug": "gables-radiance-medspa",
+    "website": "https://plenitudemedspa.com/",
+    "businessName": "Plénitude MedSpa",
+    "hero": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+    "heroType": "page",
+    "gallery": [
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg"
+    ],
+    "source": "Plénitude MedSpa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-3.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-4.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-1.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "zenith-aesthetics-coral-gables": {
+    "slug": "zenith-aesthetics-coral-gables",
+    "website": "https://www.miamiskinspa.com/",
+    "businessName": "Miami Skin Spa",
+    "hero": "https://www.miamiskinspa.com/og-default.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+      "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+      "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp"
+    ],
+    "source": "Miami Skin Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.miamiskinspa.com/og-default.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-0.Drv_3tan_Z2gyiio.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-1.B6ev22ez_2ebiUX.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-0.usNrYkB5_UmSdw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-1.2ZhIj-Wg_Z13qQW7.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-0.D6XUoXcy_9G0Tw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-1.utp3Fbru_Z1bYzHu.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-0.OLGbl2mJ_ZQLXGR.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-1.CrfjmHdR_Zy9GSy.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-mariana-orig.CP7sbZmm_Z1lMD8o.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-morgan-orig.9InS63RH_Jj8oJ.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-amy-orig.DaYJ3qwS_Z1iF1Rm.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "verde-medspa-coral-gables": {
+    "slug": "verde-medspa-coral-gables",
+    "website": "https://www.thesurfacelevel.com/",
+    "businessName": "Surface Level Med Spa",
+    "hero": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+    "heroType": "og",
+    "gallery": [
+      "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+      "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+      "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618"
+    ],
+    "source": "Surface Level Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+        "type": "og"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1623.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Hospitality.png?1729121357737",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/outcome.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/culture.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/community.png?1729121822985",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/investment.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/luxury.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level-community.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/experience.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1689.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1634565.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue-rain.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/light-texture.jpg?1729292611827",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/placeholder-vid.jpg?1750954423887",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-01-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-02-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-03-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-microneedling-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/botox-procedure.jpg?1748023444336",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-skin-tightening-procedure.jpg?1748023676953",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/dermal-fillers-procedure.jpg?1748024085371",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1736.jpg?1748034470359",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/collage.jpg?1751043374660",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/skincare.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1621.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1622.jpg?1750955420130",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/Group-598.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "atelier-aesthetics-design-district": {
+    "slug": "atelier-aesthetics-design-district",
+    "website": "https://www.thesurfacelevel.com/",
+    "businessName": "Surface Level Med Spa",
+    "hero": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+    "heroType": "og",
+    "gallery": [
+      "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+      "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+      "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618"
+    ],
+    "source": "Surface Level Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+        "type": "og"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1623.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Hospitality.png?1729121357737",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/outcome.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/culture.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/community.png?1729121822985",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/investment.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/luxury.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level-community.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/experience.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1689.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1634565.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue-rain.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/light-texture.jpg?1729292611827",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/placeholder-vid.jpg?1750954423887",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-01-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-02-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-03-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-microneedling-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/botox-procedure.jpg?1748023444336",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-skin-tightening-procedure.jpg?1748023676953",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/dermal-fillers-procedure.jpg?1748024085371",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1736.jpg?1748034470359",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/collage.jpg?1751043374660",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/skincare.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1621.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1622.jpg?1750955420130",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/Group-598.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "regime-skin-lab-design-district": {
+    "slug": "regime-skin-lab-design-district",
+    "website": "https://skinneymedspa.com/miami/",
+    "businessName": "SKINNEY Medspa",
+    "hero": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg"
+    ],
+    "source": "SKINNEY Medspa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-212-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-305-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Locations-The-Hamptons-Medspa.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Shops-Gift-Card.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/tiffany-f-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/skinney-t-01.png",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/christen-w-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/susie-m-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-212-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-305-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-2026-02-1024x755.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/30-east-60th-street-new-york-10022-medspa-location-2026-02-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-2026-02-1024x683.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "symetry-medspa-aventura": {
+    "slug": "symetry-medspa-aventura",
+    "website": "https://www.aventuramedspa.com/",
+    "businessName": "Aventura Med Spa",
+    "hero": "https://cdn.aventuramedspa.com/site/social/og-image.png",
+    "heroType": "og",
+    "gallery": [],
+    "source": "Aventura Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://cdn.aventuramedspa.com/site/social/og-image.png",
+        "type": "og"
+      }
+    ]
+  },
+  "pulse-aesthetics-aventura": {
+    "slug": "pulse-aesthetics-aventura",
+    "website": "https://www.fbmedspa.com/",
+    "businessName": "FaceBeauty Med Spa",
+    "hero": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+    "heroType": "page",
+    "gallery": [
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp"
+    ],
+    "source": "FaceBeauty Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/FaceBeauty-Med-Spa-Facials-e1733929684550.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/02/dysport-inection-doral-fl.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/20241118_194534970_iOS.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/online-patient-portal-facebeauty-med-spa.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2026/04/11-768x1024.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/Horarios-Facebeauty-new-819x1024.png",
+        "type": "page"
+      }
+    ]
+  },
+  "luna-dermatology-aventura": {
+    "slug": "luna-dermatology-aventura",
+    "website": "https://www.fbmedspa.com/",
+    "businessName": "FaceBeauty Med Spa",
+    "hero": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+    "heroType": "page",
+    "gallery": [
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp"
+    ],
+    "source": "FaceBeauty Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/FaceBeauty-Med-Spa-Facials-e1733929684550.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/02/dysport-inection-doral-fl.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/20241118_194534970_iOS.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/online-patient-portal-facebeauty-med-spa.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2026/04/11-768x1024.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/Horarios-Facebeauty-new-819x1024.png",
+        "type": "page"
+      }
+    ]
+  },
+  "oceanview-aesthetics-miami-beach": {
+    "slug": "oceanview-aesthetics-miami-beach",
+    "website": "https://www.miamiskinspa.com/",
+    "businessName": "Miami Skin Spa",
+    "hero": "https://www.miamiskinspa.com/og-default.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+      "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+      "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp"
+    ],
+    "source": "Miami Skin Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.miamiskinspa.com/og-default.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-0.Drv_3tan_Z2gyiio.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-1.B6ev22ez_2ebiUX.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-0.usNrYkB5_UmSdw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-1.2ZhIj-Wg_Z13qQW7.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-0.D6XUoXcy_9G0Tw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-1.utp3Fbru_Z1bYzHu.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-0.OLGbl2mJ_ZQLXGR.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-1.CrfjmHdR_Zy9GSy.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-mariana-orig.CP7sbZmm_Z1lMD8o.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-morgan-orig.9InS63RH_Jj8oJ.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-amy-orig.DaYJ3qwS_Z1iF1Rm.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "collins-aesthetics-miami-beach": {
+    "slug": "collins-aesthetics-miami-beach",
+    "website": "https://skinneymedspa.com/miami/",
+    "businessName": "SKINNEY Medspa",
+    "hero": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg"
+    ],
+    "source": "SKINNEY Medspa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-212-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-305-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Locations-The-Hamptons-Medspa.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Shops-Gift-Card.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/tiffany-f-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/skinney-t-01.png",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/christen-w-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/susie-m-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-212-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-305-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-2026-02-1024x755.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/30-east-60th-street-new-york-10022-medspa-location-2026-02-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-2026-02-1024x683.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "wynwood-skin-collective": {
+    "slug": "wynwood-skin-collective",
+    "website": "https://www.thesurfacelevel.com/",
+    "businessName": "Surface Level Med Spa",
+    "hero": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+    "heroType": "og",
+    "gallery": [
+      "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+      "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+      "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618"
+    ],
+    "source": "Surface Level Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+        "type": "og"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1623.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Hospitality.png?1729121357737",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/outcome.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/culture.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/community.png?1729121822985",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/investment.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/luxury.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level-community.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/experience.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1689.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1634565.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue-rain.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/light-texture.jpg?1729292611827",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/placeholder-vid.jpg?1750954423887",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-01-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-02-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-03-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-microneedling-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/botox-procedure.jpg?1748023444336",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-skin-tightening-procedure.jpg?1748023676953",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/dermal-fillers-procedure.jpg?1748024085371",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1736.jpg?1748034470359",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/collage.jpg?1751043374660",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/skincare.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1621.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1622.jpg?1750955420130",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/Group-598.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "canvas-aesthetics-wynwood": {
+    "slug": "canvas-aesthetics-wynwood",
+    "website": "https://www.amadoclinic.com/",
+    "businessName": "Amado Clinic",
+    "hero": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg"
+    ],
+    "source": "Amado Clinic official website — homepage",
+    "allValid": [
+      {
+        "url": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg",
+        "type": "page"
+      }
+    ]
+  },
+  "south-beach-laser-bar": {
+    "slug": "south-beach-laser-bar",
+    "website": "https://novaskinmedspa.com/",
+    "businessName": "Novaskin Med Spa",
+    "hero": "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",
+    "heroType": "og",
+    "gallery": [],
+    "source": "Novaskin Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",
+        "type": "og"
+      }
+    ]
+  },
+  "grove-serenity-medspa": {
+    "slug": "grove-serenity-medspa",
+    "website": "https://plenitudemedspa.com/",
+    "businessName": "Plénitude MedSpa",
+    "hero": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+    "heroType": "page",
+    "gallery": [
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+      "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg"
+    ],
+    "source": "Plénitude MedSpa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/salt-room-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-2.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-3.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-4.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://plenitudemedspa.com/wp-content/uploads/2025/11/instagram-post-1.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "doral-laser-institute": {
+    "slug": "doral-laser-institute",
+    "website": "https://www.fbmedspa.com/",
+    "businessName": "FaceBeauty Med Spa",
+    "hero": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+    "heroType": "page",
+    "gallery": [
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+      "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp"
+    ],
+    "source": "FaceBeauty Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Tightening-on-Knees-qh1z1upaqglufi664mbh4gezlebsj6lsv4z7tyxi4g.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Photo-Facial-qh1z1rvs5yhzgoa9l33lez4lt8pow3alur0re51on4.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/elementor/thumbs/Secret-RF-Skin-Rejuvenation-qh1z1trgjmkk3w7ja3wujynj00gfbhi2j0bqcoywao.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/04/thin-lip-treatment-doral.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/FaceBeauty-Med-Spa-Facials-e1733929684550.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/02/dysport-inection-doral-fl.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/20241118_194534970_iOS.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2023/09/online-patient-portal-facebeauty-med-spa.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2026/04/11-768x1024.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.fbmedspa.com/wp-content/uploads/2024/12/Horarios-Facebeauty-new-819x1024.png",
+        "type": "page"
+      }
+    ]
+  },
+  "pinecrest-glow-studio": {
+    "slug": "pinecrest-glow-studio",
+    "website": "https://www.infinitybeautylab.com/",
+    "businessName": "Infinity Beauty Lab",
+    "hero": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg"
+    ],
+    "source": "Infinity Beauty Lab official website — homepage",
+    "allValid": [
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863a90850b04113b27769_Top%20provider.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684a0a7dfc68718ac7f07a7f_Infinity%20(3).webp",
+        "type": "page"
+      }
+    ]
+  },
+  "bal-harbour-luxury-medspa": {
+    "slug": "bal-harbour-luxury-medspa",
+    "website": "https://skinneymedspa.com/miami/",
+    "businessName": "SKINNEY Medspa",
+    "hero": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg"
+    ],
+    "source": "SKINNEY Medspa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-212-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-305-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Locations-The-Hamptons-Medspa.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Shops-Gift-Card.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/tiffany-f-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/skinney-t-01.png",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/christen-w-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/susie-m-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-212-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-305-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-2026-02-1024x755.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/30-east-60th-street-new-york-10022-medspa-location-2026-02-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-2026-02-1024x683.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "key-biscayne-skin-clinic": {
+    "slug": "key-biscayne-skin-clinic",
+    "website": "https://brickellcosmetic.com/",
+    "businessName": "Brickell Cosmetic Center",
+    "hero": "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://brickellcosmetic.com/wp-content/uploads/2025/04/two-header-mobile-2-min.jpg",
+      "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-desktop.jpg",
+      "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-desktop.jpg"
+    ],
+    "source": "Brickell Cosmetic Center official website — homepage",
+    "allValid": [
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/two-header-mobile-2-min.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img1-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img2-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img1-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/banner-desktop-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/banner-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-bg.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/img-treatment-20-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-30-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-40-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatments-50-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/img-treatment-60-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-20-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-30-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-40-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-50-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatment-60-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/02/new-product-home-img1-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/02/product-home-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatmentss-bg-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/treatmentss-bg-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/05/vip-bg-img-brickell-1-1024x683.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2026/05/qr-image-brickell.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://static.legitscript.com/seals/4690033.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/cross.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/search-new.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/05/offers-btn-updated.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img11-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img22-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/11/brickell-header-img33-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/brickell-header-mobile-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/botox-img066-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/hydrafacial-img055-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/clear-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/ipl-treatment-img11-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/botox-img066-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/03/hydrafacial-img055-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/clear-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/ipl-treatment-img11-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/vip-app-mobile.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/04/vip-app-desktop.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2025/02/patientgain.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2021/05/smm-app.png",
+        "type": "page"
+      },
+      {
+        "url": "https://brickellcosmetic.com/wp-content/uploads/2021/05/question-app.png",
+        "type": "page"
+      }
+    ]
+  },
+  "south-miami-derm-aesthetics": {
+    "slug": "south-miami-derm-aesthetics",
+    "website": "https://skinneymedspa.com/miami/",
+    "businessName": "SKINNEY Medspa",
+    "hero": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+      "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg"
+    ],
+    "source": "SKINNEY Medspa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/02/skinney-medspa-black-share-logo-23.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/skinney-medspa-manhattan-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-212-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-305-2024-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Locations-The-Hamptons-Medspa.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/Mega-Menu-Skinney-Medspa-Shops-Gift-Card.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/tiffany-f-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/skinney-t-01.png",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/christen-w-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2023/02/susie-m-01.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-212-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/30-east-60th-street-new-york-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/06/saks-fifth-avenue-611-fifth-avenue-new-york-ny-10022-medspa-location-212-2024-08-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-305-23-01-1-1024x768.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/flagship-flatiron-125-fifth-avenue-2nd-floor-new-york-ny-10003-medspa-location-2026-02-1024x755.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/30-east-60th-street-new-york-10022-medspa-location-2026-02-1024x768.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://skinneymedspa.com/wp-content/uploads/2026/02/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-2026-02-1024x683.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "kendall-aesthetics-hub": {
+    "slug": "kendall-aesthetics-hub",
+    "website": "https://www.kendallmedspa.com/",
+    "businessName": "Kendall Med Spa",
+    "hero": "https://img1.wsimg.com/isteam/stock/8qqw22e",
+    "heroType": "og",
+    "gallery": [],
+    "source": "Kendall Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://img1.wsimg.com/isteam/stock/8qqw22e",
+        "type": "og"
+      }
+    ]
+  },
+  "edgewater-glow-medspa": {
+    "slug": "edgewater-glow-medspa",
+    "website": "https://www.thesurfacelevel.com/",
+    "businessName": "Surface Level Med Spa",
+    "hero": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+    "heroType": "og",
+    "gallery": [
+      "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+      "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+      "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618"
+    ],
+    "source": "Surface Level Med Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/og-feat.png",
+        "type": "og"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/masthead-01.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/masthead/option-2.jpg?1751399839898",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next_feature.jpg?1750965375618",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1623.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Hospitality.png?1729121357737",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/outcome.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/culture.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/community.png?1729121822985",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/investment.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/luxury.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level-community.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/experience.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1689.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1634565.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue-rain.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/light-texture.jpg?1729292611827",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/placeholder-vid.jpg?1750954423887",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-01-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-02-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/level-03-feature.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/facials-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-microneedling-procedure.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/botox-procedure.jpg?1748023444336",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/rf-skin-tightening-procedure.jpg?1748023676953",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/dermal-fillers-procedure.jpg?1748024085371",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/next-level.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1736.jpg?1748034470359",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/collage.jpg?1751043374660",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/skincare.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1621.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/feature/Frame-1622.jpg?1750955420130",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/Group-598.png",
+        "type": "page"
+      },
+      {
+        "url": "https://www.thesurfacelevel.com/_static_/background/blue.jpg",
+        "type": "page"
+      }
+    ]
+  },
+  "midtown-injectables-lounge": {
+    "slug": "midtown-injectables-lounge",
+    "website": "https://www.miamiskinspa.com/",
+    "businessName": "Miami Skin Spa",
+    "hero": "https://www.miamiskinspa.com/og-default.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+      "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+      "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp"
+    ],
+    "source": "Miami Skin Spa official website — homepage",
+    "allValid": [
+      {
+        "url": "https://www.miamiskinspa.com/og-default.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/services-injectables.Frtuh_Sn_Z19UROG.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-0.Drv_3tan_Z2gyiio.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/morpheus8-front-1.B6ev22ez_2ebiUX.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-0.usNrYkB5_UmSdw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/lumecca-ipl-1.2ZhIj-Wg_Z13qQW7.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-0.D6XUoXcy_9G0Tw.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/pico-genesis-1.utp3Fbru_Z1bYzHu.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-0.OLGbl2mJ_ZQLXGR.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/emsculpt-neo-1.CrfjmHdR_Zy9GSy.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-mariana-orig.CP7sbZmm_Z1lMD8o.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-morgan-orig.9InS63RH_Jj8oJ.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://www.miamiskinspa.com/_astro/team-amy-orig.DaYJ3qwS_Z1iF1Rm.webp",
+        "type": "page"
+      }
+    ]
+  },
+  "sunny-isles-beauty-clinic": {
+    "slug": "sunny-isles-beauty-clinic",
+    "website": "https://www.amadoclinic.com/",
+    "businessName": "Amado Clinic",
+    "hero": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+    "heroType": "og",
+    "gallery": [
+      "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg"
+    ],
+    "source": "Amado Clinic official website — homepage",
+    "allValid": [
+      {
+        "url": "https://medicaldev.aliee.ai/assets/tenants/amadoclinic/logo_69e8ed718066f8.81052195.jpg",
+        "type": "og"
+      },
+      {
+        "url": "https://medical.aliee.ai/assets/tenants/amadoclinic/doctors/doctor_6a207441b153d4.53581900.jpeg",
+        "type": "page"
+      }
+    ]
+  },
+  "north-miami-med-aesthetics": {
+    "slug": "north-miami-med-aesthetics",
+    "website": "https://www.infinitybeautylab.com/",
+    "businessName": "Infinity Beauty Lab",
+    "hero": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
+    "heroType": "og",
+    "gallery": [
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg"
+    ],
+    "source": "Infinity Beauty Lab official website — homepage",
+    "allValid": [
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
+        "type": "og"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863a90850b04113b27769_Top%20provider.webp",
+        "type": "page"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684a0a7dfc68718ac7f07a7f_Infinity%20(3).webp",
+        "type": "page"
+      }
+    ]
+  }
+}

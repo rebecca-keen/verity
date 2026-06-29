@@ -197,6 +197,7 @@ function seedSpa(data: SpaSeed, index: number): Spa {
 const spaSeeds: SpaSeed[] = [
   {
     slug: "aether-aesthetics-coral-gables",
+    website: "https://plenitudemedspa.com/",
     name: "Aether Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Coral Gables",
@@ -219,6 +220,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "lumiere-medspa-brickell",
+    website: "https://novaskinmedspa.com/",
     name: "Lumière Medspa",
     providerType: "med-spa",
     neighborhood: "Brickell",
@@ -241,6 +243,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "salt-glow-miami-beach",
+    website: "https://www.miamiskinspa.com/",
     name: "Salt & Glow",
     providerType: "med-spa",
     neighborhood: "Miami Beach",
@@ -263,6 +266,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "forme-aesthetics-wynwood",
+    website: "https://www.thesurfacelevel.com/",
     name: "Forme Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Wynwood",
@@ -285,6 +289,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "maison-skin-design-district",
+    website: "https://brickellcosmetic.com/",
     name: "Maison Skin Lab",
     providerType: "aesthetics-clinic",
     neighborhood: "Design District",
@@ -306,6 +311,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "injector-studio-brickell",
+    website: "https://www.miamiskinspa.com/",
     name: "The Injector Studio",
     providerType: "aesthetics-clinic",
     neighborhood: "Brickell",
@@ -327,6 +333,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "coastal-aesthetics-south-beach",
+    website: "https://skinneymedspa.com/miami/",
     name: "Coastal Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "South Beach",
@@ -348,6 +355,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "grove-wellness-coconut-grove",
+    website: "https://plenitudemedspa.com/",
     name: "Grove Wellness Spa",
     providerType: "med-spa",
     neighborhood: "Coconut Grove",
@@ -369,6 +377,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "aventura-med-aesthetics",
+    website: "https://www.aventuramedspa.com/",
     name: "Aventura Med Aesthetics",
     providerType: "med-spa",
     neighborhood: "Aventura",
@@ -390,6 +399,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "doral-beauty-institute",
+    website: "https://www.fbmedspa.com/",
     name: "Doral Beauty Institute",
     providerType: "aesthetics-clinic",
     neighborhood: "Doral",
@@ -411,6 +421,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "pinecrest-plastic-spa",
+    website: "https://www.fbmedspa.com/",
     name: "Pinecrest Aesthetic Studio",
     providerType: "dermatology-aesthetics",
     neighborhood: "Pinecrest",
@@ -432,6 +443,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "bal-harbour-skin-clinic",
+    website: "https://skinneymedspa.com/miami/",
     name: "Bal Harbour Skin Clinic",
     providerType: "dermatology-aesthetics",
     neighborhood: "Bal Harbour",
@@ -453,6 +465,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "key-biscayne-med-spa",
+    website: "https://brickellcosmetic.com/",
     name: "Key Biscayne Med Spa",
     providerType: "med-spa",
     neighborhood: "Key Biscayne",
@@ -474,6 +487,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "south-miami-aesthetics",
+    website: "https://novaskinmedspa.com/",
     name: "South Miami Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "South Miami",
@@ -495,6 +509,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "kendall-rejuvenation",
+    website: "https://www.kendallmedspa.com/",
     name: "Kendall Rejuvenation Center",
     providerType: "med-spa",
     neighborhood: "Kendall",
@@ -516,6 +531,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "edgewater-laser-skin",
+    website: "https://skinneymedspa.com/miami/",
     name: "Edgewater Laser & Skin",
     providerType: "dermatology-aesthetics",
     neighborhood: "Edgewater",
@@ -537,6 +553,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "midtown-miami-medspa",
+    website: "https://www.thesurfacelevel.com/",
     name: "Midtown Med Spa",
     providerType: "med-spa",
     neighborhood: "Midtown",
@@ -558,6 +575,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "sunny-isles-aesthetics",
+    website: "https://www.amadoclinic.com/",
     name: "Sunny Isles Aesthetics",
     providerType: "med-spa",
     neighborhood: "Sunny Isles",
@@ -579,6 +597,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "north-miami-beauty-lab",
+    website: "https://www.infinitybeautylab.com/",
     name: "North Miami Beauty Lab",
     providerType: "aesthetics-clinic",
     neighborhood: "North Miami",
@@ -600,6 +619,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "coral-way-skin-studio",
+    website: "https://plenitudemedspa.com/",
     name: "Coral Way Skin Studio",
     providerType: "aesthetics-clinic",
     neighborhood: "Coral Way",
@@ -621,6 +641,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "homestead-wellness-medspa",
+    website: "https://www.amadoclinic.com/",
     name: "Homestead Wellness Med Spa",
     providerType: "med-spa",
     neighborhood: "Homestead",
@@ -642,6 +663,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "cutler-bay-aesthetics",
+    website: "https://www.amadoclinic.com/",
     name: "Cutler Bay Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Cutler Bay",
@@ -663,6 +685,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "miami-shores-aesthetics",
+    website: "https://www.infinitybeautylab.com/",
     name: "Miami Shores Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Miami Shores",
@@ -684,6 +707,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "fisher-island-aesthetics",
+    website: "https://skinneymedspa.com/miami/",
     name: "Fisher Island Aesthetics",
     providerType: "dermatology-aesthetics",
     neighborhood: "Fisher Island",
@@ -705,6 +729,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "brickell-skin-haus",
+    website: "https://brickellcosmetic.com/",
     name: "Brickell Skin Haus",
     providerType: "med-spa",
     neighborhood: "Brickell",
@@ -726,6 +751,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "elev8-aesthetics-brickell",
+    website: "https://novaskinmedspa.com/",
     name: "Elev8 Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Brickell",
@@ -747,6 +773,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "gables-radiance-medspa",
+    website: "https://plenitudemedspa.com/",
     name: "Gables Radiance Medspa",
     providerType: "med-spa",
     neighborhood: "Coral Gables",
@@ -768,6 +795,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "zenith-aesthetics-coral-gables",
+    website: "https://www.miamiskinspa.com/",
     name: "Zenith Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Coral Gables",
@@ -789,6 +817,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "verde-medspa-coral-gables",
+    website: "https://www.thesurfacelevel.com/",
     name: "Verde Medspa",
     providerType: "dermatology-aesthetics",
     neighborhood: "Coral Gables",
@@ -810,6 +839,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "atelier-aesthetics-design-district",
+    website: "https://www.thesurfacelevel.com/",
     name: "Atelier Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Design District",
@@ -831,6 +861,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "regime-skin-lab-design-district",
+    website: "https://skinneymedspa.com/miami/",
     name: "Regime Skin Lab",
     providerType: "med-spa",
     neighborhood: "Design District",
@@ -852,6 +883,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "symetry-medspa-aventura",
+    website: "https://www.aventuramedspa.com/",
     name: "Symetry Medspa",
     providerType: "med-spa",
     neighborhood: "Aventura",
@@ -873,6 +905,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "pulse-aesthetics-aventura",
+    website: "https://www.fbmedspa.com/",
     name: "Pulse Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Aventura",
@@ -894,6 +927,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "luna-dermatology-aventura",
+    website: "https://www.fbmedspa.com/",
     name: "Luna Dermatology Aesthetics",
     providerType: "dermatology-aesthetics",
     neighborhood: "Aventura",
@@ -915,6 +949,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "oceanview-aesthetics-miami-beach",
+    website: "https://www.miamiskinspa.com/",
     name: "Oceanview Aesthetics",
     providerType: "med-spa",
     neighborhood: "Miami Beach",
@@ -936,6 +971,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "collins-aesthetics-miami-beach",
+    website: "https://skinneymedspa.com/miami/",
     name: "Collins Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Miami Beach",
@@ -957,6 +993,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "wynwood-skin-collective",
+    website: "https://www.thesurfacelevel.com/",
     name: "Wynwood Skin Collective",
     providerType: "med-spa",
     neighborhood: "Wynwood",
@@ -978,6 +1015,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "canvas-aesthetics-wynwood",
+    website: "https://www.amadoclinic.com/",
     name: "Canvas Aesthetics",
     providerType: "aesthetics-clinic",
     neighborhood: "Wynwood",
@@ -999,6 +1037,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "south-beach-laser-bar",
+    website: "https://novaskinmedspa.com/",
     name: "South Beach Laser Bar",
     providerType: "med-spa",
     neighborhood: "South Beach",
@@ -1020,6 +1059,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "grove-serenity-medspa",
+    website: "https://plenitudemedspa.com/",
     name: "Grove Serenity Medspa",
     providerType: "med-spa",
     neighborhood: "Coconut Grove",
@@ -1041,6 +1081,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "doral-laser-institute",
+    website: "https://www.fbmedspa.com/",
     name: "Doral Laser Institute",
     providerType: "dermatology-aesthetics",
     neighborhood: "Doral",
@@ -1062,6 +1103,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "pinecrest-glow-studio",
+    website: "https://www.infinitybeautylab.com/",
     name: "Pinecrest Glow Studio",
     providerType: "aesthetics-clinic",
     neighborhood: "Pinecrest",
@@ -1083,6 +1125,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "bal-harbour-luxury-medspa",
+    website: "https://skinneymedspa.com/miami/",
     name: "Bal Harbour Luxury Medspa",
     providerType: "med-spa",
     neighborhood: "Bal Harbour",
@@ -1104,6 +1147,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "key-biscayne-skin-clinic",
+    website: "https://brickellcosmetic.com/",
     name: "Key Biscayne Skin Clinic",
     providerType: "dermatology-aesthetics",
     neighborhood: "Key Biscayne",
@@ -1125,6 +1169,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "south-miami-derm-aesthetics",
+    website: "https://skinneymedspa.com/miami/",
     name: "South Miami Derm Aesthetics",
     providerType: "dermatology-aesthetics",
     neighborhood: "South Miami",
@@ -1146,6 +1191,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "kendall-aesthetics-hub",
+    website: "https://www.kendallmedspa.com/",
     name: "Kendall Aesthetics Hub",
     providerType: "med-spa",
     neighborhood: "Kendall",
@@ -1167,6 +1213,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "edgewater-glow-medspa",
+    website: "https://www.thesurfacelevel.com/",
     name: "Edgewater Glow Medspa",
     providerType: "med-spa",
     neighborhood: "Edgewater",
@@ -1188,6 +1235,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "midtown-injectables-lounge",
+    website: "https://www.miamiskinspa.com/",
     name: "Midtown Injectables Lounge",
     providerType: "aesthetics-clinic",
     neighborhood: "Midtown",
@@ -1209,6 +1257,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "sunny-isles-beauty-clinic",
+    website: "https://www.amadoclinic.com/",
     name: "Sunny Isles Beauty Clinic",
     providerType: "aesthetics-clinic",
     neighborhood: "Sunny Isles",
@@ -1230,6 +1279,7 @@ const spaSeeds: SpaSeed[] = [
   },
   {
     slug: "north-miami-med-aesthetics",
+    website: "https://www.infinitybeautylab.com/",
     name: "North Miami Med Aesthetics",
     providerType: "med-spa",
     neighborhood: "North Miami",
