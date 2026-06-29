@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
-/** Image hosts: CDN wildcards cover most med spa site assets; named domains for top providers. */
+/**
+ * Image hosts: CDN wildcards cover most med spa assets.
+ * Provider hero/gallery images use native <img> via RemoteImage (195+ root domains — exceeds the 50-pattern cap).
+ * next/image + remotePatterns is used for Unsplash product/placeholder images only.
+ */
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -15,45 +19,25 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.cdn-website.com" },
       { protocol: "https", hostname: "**.websitepro-cdn.com" },
       { protocol: "https", hostname: "**.website-files.com" },
-      { protocol: "https", hostname: "cdn.prod.website-files.com" },
       { protocol: "https", hostname: "**.amazonaws.com" },
       { protocol: "https", hostname: "**.shopify.com" },
       { protocol: "https", hostname: "assets.cdn.filesafe.space" },
       { protocol: "https", hostname: "img1.wsimg.com" },
       { protocol: "https", hostname: "datocms-assets.com" },
       { protocol: "https", hostname: "content.app-sources.com" },
-      { protocol: "https", hostname: "i0.wp.com" },
-      { protocol: "https", hostname: "olympiaaesthetics.com" },
-      { protocol: "https", hostname: "livingyoungcenter.com" },
-      { protocol: "https", hostname: "lueuraesthetics360.com" },
-      { protocol: "https", hostname: "liviamedspa.com" },
-      { protocol: "https", hostname: "arvivaesthetics.com" },
-      { protocol: "https", hostname: "4everyoungantiaging.com" },
+      { protocol: "https", hostname: "**.pcdn.co" },
+      { protocol: "https", hostname: "i.ytimg.com" },
+      // High-traffic direct WordPress hosts (also covered by RemoteImage native img fallback)
+      { protocol: "https", hostname: "skinneymedspa.com" },
+      { protocol: "https", hostname: "plenitudemedspa.com" },
       { protocol: "https", hostname: "www.miamiskinspa.com" },
-      { protocol: "https", hostname: "www.thesurfacelevel.com" },
-      { protocol: "https", hostname: "brickellcosmetic.com" },
       { protocol: "https", hostname: "novaskinmedspa.com" },
-      { protocol: "https", hostname: "cdn.aventuramedspa.com" },
+      { protocol: "https", hostname: "brickellcosmetic.com" },
       { protocol: "https", hostname: "www.fbmedspa.com" },
-      { protocol: "https", hostname: "www.glowstpete.com" },
-      { protocol: "https", hostname: "www.elan-aesthetics.com" },
-      { protocol: "https", hostname: "visojuve.com" },
-      { protocol: "https", hostname: "viomedspa.com" },
-      { protocol: "https", hostname: "elase.com" },
-      { protocol: "https", hostname: "viivwellnesshaus.com" },
-      { protocol: "https", hostname: "mwellcenter.com" },
-      { protocol: "https", hostname: "stpetewellnessmedspa.com" },
-      { protocol: "https", hostname: "redbamboomedispa.com" },
-      { protocol: "https", hostname: "bevelup.com" },
-      { protocol: "https", hostname: "hermannaesthetics.com" },
-      { protocol: "https", hostname: "aventuramedspa.com" },
-      { protocol: "https", hostname: "contourclinique.com" },
-      { protocol: "https", hostname: "inertiatampa.com" },
-      { protocol: "https", hostname: "perfectlybarelaser.com" },
-      { protocol: "https", hostname: "padgettmedical.com" },
-      { protocol: "https", hostname: "phdermatology.com" },
-      { protocol: "https", hostname: "luxinjectables.com" },
-      { protocol: "https", hostname: "venusmedspa.com" },
+      { protocol: "https", hostname: "livingyoungcenter.com" },
+      { protocol: "https", hostname: "www.thesurfacelevel.com" },
+      { protocol: "https", hostname: "olympiaaesthetics.com" },
+      { protocol: "https", hostname: "jaxaestheticscenter.com" },
     ],
   },
 };

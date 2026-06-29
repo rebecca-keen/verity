@@ -1024,9 +1024,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
   "olympia-aesthetics-palm-harbor": {
     hero: "https://olympiaaesthetics.com/wp-content/uploads/2023/11/black.png",
     gallery: [
-      "https://olympiaaesthetics.com/wp-content/uploads/2025/11/salt-room-small.jpg",
-      "https://olympiaaesthetics.com/wp-content/uploads/2025/11/red-light-teraphy-small.jpg",
-      "https://olympiaaesthetics.com/wp-content/uploads/2025/11/iv-drops-small.jpg",
+      "https://olympiaaesthetics.com/wp-content/uploads/elementor/thumbs/Olympia-156-rjm252d0md94exhibj0g6b3aovmcq7x1kikrqj8vao.png",
+      "https://olympiaaesthetics.com/wp-content/uploads/2025/11/Black-Logo-Icon-for-Website-1024x506.png",
+      "https://olympiaaesthetics.com/wp-content/uploads/2023/11/black.png",
     ],
     source: "Olympia Aesthetics & Wellness official website — homepage",
   },
@@ -1043,7 +1043,6 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     hero: "https://moraitisplasticsurgery.com/wp-content/uploads/2025/02/fallback-logo.jpg",
     gallery: [
       "https://moraitisplasticsurgery.com/wp-content/uploads/2025/02/fallback-logo.jpg",
-      "https://olympiaaesthetics.com/wp-content/uploads/2025/11/salt-room-small.jpg",
       "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
     ],
     source: "Moraitis Plastic Surgery official website — homepage",
@@ -1312,8 +1311,8 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
   "jax-aesthetics-wellness-jacksonville": {
     hero: "https://jaxaestheticscenter.com/wp-content/uploads/video-cover.png",
     gallery: [
-      "https://jaxaestheticscenter.com/wp-content/uploads/video-cover.png",
-      "https://jaxaestheticscenter.com/wp-content/uploads/2024/03/slider/cache/ec2e35ee6c99cf796e1b52e18e7db4fe/background-1.jpg",
+      "https://jaxaestheticscenter.com/wp-content/uploads/botox-1.jpg",
+      "https://jaxaestheticscenter.com/wp-content/uploads/body-sculpting-1.jpg",
       "https://focusaestheticsjax.com/wp-content/uploads/Focus-Aesthetics-Featured-Image.jpg",
     ],
     source: "Jax Aesthetics & Wellness Center official website — homepage",

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Spa } from "@/lib/types";
+import { RemoteImage } from "./RemoteImage";
 import { TrustBadge } from "./TrustBadge";
 import { TreatmentCategories } from "./TreatmentCategories";
 import { ProviderTypeBadge } from "./ProviderTypeBadge";
@@ -12,7 +12,7 @@ export function SpaCard({ spa }: { spa: Spa }) {
       className="group luxury-border relative block overflow-hidden rounded-2xl bg-white transition hover:shadow-lg"
     >
       <div className="relative h-48 overflow-hidden">
-        <Image
+        <RemoteImage
           src={spa.image}
           alt={spa.name}
           fill

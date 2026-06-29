@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
+import { RemoteImage } from "@/components/RemoteImage";
 import { ContactEmail } from "@/components/ContactEmail";
 import { DirectContactPanel } from "@/components/DirectContactPanel";
 import { ProductCard } from "@/components/ProductCard";
@@ -31,7 +31,7 @@ export default async function SpaDetailPage({
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
       <div className="relative h-64 overflow-hidden rounded-2xl md:h-80">
-        <Image src={spa.image} alt={spa.name} fill className="object-cover" priority sizes="100vw" />
+        <RemoteImage src={spa.image} alt={spa.name} fill className="object-cover" priority sizes="100vw" />
       </div>
       <p className="mt-2 text-xs text-stone">Photo source: {spa.imageSource}</p>
 

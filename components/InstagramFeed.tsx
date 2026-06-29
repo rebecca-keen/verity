@@ -1,11 +1,11 @@
-import Image from "next/image";
+import { RemoteImage } from "./RemoteImage";
 
 export function InstagramFeed({ handle }: { handle: string }) {
   const placeholders = [
-    "https://images.unsplash.com/photo-1616394584738-fc6e612e781b?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1515377905703-c4788e51ad09?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=300&h=300&fit=crop",
   ];
 
   return (
@@ -27,7 +27,7 @@ export function InstagramFeed({ handle }: { handle: string }) {
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
         {placeholders.map((src, i) => (
           <div key={i} className="relative aspect-square overflow-hidden rounded-lg">
-            <Image src={src} alt="" fill className="object-cover" sizes="150px" />
+            <RemoteImage src={src} alt="" fill className="object-cover" sizes="150px" />
           </div>
         ))}
       </div>

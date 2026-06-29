@@ -1,8 +1,27 @@
-import Image from "next/image";
+"use client";
+
+import { useMemo, useState } from "react";
 import type { Spa } from "@/lib/types";
+import { RemoteImage } from "./RemoteImage";
 
 export function SpaGallery({ spa }: { spa: Spa }) {
-  const gridImages = spa.gallery.slice(0, 3);
+  const [failed, setFailed] = useState<Set<string>>(() => new Set());
+
+  const gridImages = useMemo(
+    () => spa.gallery.filter((src) => !failed.has(src)).slice(0, 3),
+    [spa.gallery, failed]
+  );
+
+  function markFailed(src: string) {
+    setFailed((prev) => {
+      if (prev.has(src)) return prev;
+      const next = new Set(prev);
+      next.add(src);
+      return next;
+    });
+  }
+
+  if (gridImages.length === 0) return null;
 
   return (
     <div>
@@ -23,7 +42,14 @@ export function SpaGallery({ spa }: { spa: Spa }) {
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
         {gridImages.map((src, i) => (
           <div key={`${src}-${i}`} className="relative aspect-[4/3] overflow-hidden rounded-lg">
-            <Image src={src} alt={`${spa.name} photo ${i + 1}`} fill className="object-cover" sizes="200px" />
+            <RemoteImage
+              src={src}
+              alt={`${spa.name} photo ${i + 1}`}
+              fill
+              className="object-cover"
+              sizes="200px"
+              onFailed={() => markFailed(src)}
+            />
           </div>
         ))}
       </div>
