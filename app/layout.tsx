@@ -28,9 +28,6 @@ export default function RootLayout({
             <a href="/for-spas" className="text-gold hover:underline">
               For Providers
             </a>
-            <a href="/affiliates" className="text-gold hover:underline">
-              Affiliate Program
-            </a>
             <a href="/premium" className="text-gold hover:underline">
               Premium
             </a>

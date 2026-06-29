@@ -115,10 +115,6 @@ export default function PremiumPage() {
         <Link href="/for-spas" className="text-gold hover:underline">
           Provider owner? See partner pricing →
         </Link>
-        {" · "}
-        <Link href="/affiliates" className="text-gold hover:underline">
-          Product affiliate transparency →
-        </Link>
       </p>
     </div>
   );

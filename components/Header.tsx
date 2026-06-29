@@ -6,7 +6,6 @@ const links = [
   { href: "/concierge", label: "AI Concierge" },
   { href: "/premium", label: "Premium" },
   { href: "/for-spas", label: "For Providers" },
-  { href: "/affiliates", label: "Affiliate Program" },
 ];
 
 export function Header() {
