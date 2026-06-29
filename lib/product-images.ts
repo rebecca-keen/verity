@@ -21,7 +21,7 @@ export const productImages: Record<string, string> = {
   "isdin-eryfotona-actinica":
     "https://m.media-amazon.com/images/I/61c8lSfCzoL._SL1500_.jpg",
   "isdin-eryfotona-ageless":
-    "https://m.media-amazon.com/images/I/81c2KLVFlaL._SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51uaeyG-AKL._SL1500_.jpg",
   "isdin-mineral-powder-spf":
     "https://m.media-amazon.com/images/I/51UlG1RlI8L._SL1500_.jpg",
   "isdin-essential-cleansing":
@@ -65,7 +65,7 @@ export const productImages: Record<string, string> = {
   "is-clinical-liprotect-spf35":
     "https://m.media-amazon.com/images/I/41WzHtQ4R0L._SL1500_.jpg",
   "revision-retinol":
-    "https://m.media-amazon.com/images/I/71G5OkSr2zL._AC_SL1500_.jpg",
+    "https://cdn.shopify.com/s/files/1/0532/6739/8806/files/RCProduct_8661198c-107e-4a04-946e-80444c6502cc.jpg?v=1717411891",
 };
 
 export function getProductImage(slug: string): string | undefined {
