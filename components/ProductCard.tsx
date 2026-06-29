@@ -22,7 +22,7 @@ export function ProductCard({
             src={product.image}
             alt={product.name}
             fill
-            className="object-cover transition duration-500 group-hover:scale-105"
+            className="object-contain p-4 transition duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, 25vw"
           />
           <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">

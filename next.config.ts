@@ -3,12 +3,20 @@ import type { NextConfig } from "next";
 /**
  * Image hosts: CDN wildcards cover most med spa assets.
  * Provider hero/gallery images use native <img> via RemoteImage (195+ root domains — exceeds the 50-pattern cap).
- * next/image + remotePatterns is used for Unsplash product/placeholder images only.
+ * next/image remotePatterns covers product photos from Amazon and authorized retailer CDNs.
  */
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
-      { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "m.media-amazon.com" },
+      { protocol: "https", hostname: "cdn.shopify.com" },
+      { protocol: "https", hostname: "epicutis.com" },
+      { protocol: "https", hostname: "bluemercury.com" },
+      { protocol: "https", hostname: "www.dermstore.com" },
+      { protocol: "https", hostname: "static.thcdn.com" },
+      { protocol: "https", hostname: "www.skinceuticals.com" },
+      { protocol: "https", hostname: "www.skinmedica.com" },
+      { protocol: "https", hostname: "www.eltamd.com" },
       { protocol: "https", hostname: "**.cdninstagram.com" },
       { protocol: "https", hostname: "**.squarespace.com" },
       { protocol: "http", hostname: "**.squarespace.com" },

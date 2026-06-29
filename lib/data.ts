@@ -1,4 +1,5 @@
 import { amazonAffiliateProducts } from "./amazon-affiliate-products";
+import { productImages } from "./product-images";
 import { additionalFloridaSpaSeeds } from "./additional-florida-spa-seeds";
 import { floridaCoastalRealSpas } from "./florida-coastal-real-spas";
 import { floridaRealSpas } from "./florida-real-spas";
@@ -41,7 +42,7 @@ export const baseProducts: Product[] = [
       "Oil-free sunscreen loved by med spas for post-procedure protection. Niacinamide helps calm sensitive skin.",
     rating: 4.8,
     reviewCount: 342,
-    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&h=600&fit=crop",
+    image: productImages["eltamd-uv-clear"]!,
     ingredients: ["Zinc Oxide", "Niacinamide", "Hyaluronic Acid"],
     origin: "US",
     premium: false,
@@ -58,7 +59,7 @@ export const baseProducts: Product[] = [
       "Gentle resurfacing cleanser used in luxury facial protocols across South Florida.",
     rating: 4.6,
     reviewCount: 456,
-    image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&h=600&fit=crop",
+    image: productImages["is-clinical-cleansing"]!,
     ingredients: ["Willow Bark", "Sugar Cane Extract", "Chamomile"],
     origin: "US",
     premium: false,
@@ -73,7 +74,7 @@ export const baseProducts: Product[] = [
     description: "Clinical retinol used in anti-aging protocols at premier Miami med spas.",
     rating: 4.7,
     reviewCount: 312,
-    image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=600&h=600&fit=crop",
+    image: productImages["revision-retinol"]!,
     ingredients: ["Retinol", "Bakuchiol", "Hyaluronic Acid"],
     origin: "US",
     premium: true,
@@ -88,10 +89,44 @@ export const baseProducts: Product[] = [
     description: "Five-type hyaluronic acid complex for deep hydration after injectables and lasers.",
     rating: 4.8,
     reviewCount: 567,
-    image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
+    image: productImages["skinmedica-ha5"]!,
     ingredients: ["Hyaluronic Acid", "Peptides", "Vitamin E"],
     origin: "US",
     premium: true,
+  },
+  {
+    slug: "skinceuticals-ce-ferulic",
+    name: "C E Ferulic with 15% L-Ascorbic Acid",
+    brand: "SkinCeuticals",
+    category: "Serum",
+    trustScore: 94,
+    productTags: ["dermatologist-tested", "cruelty-free"],
+    description:
+      "Gold-standard antioxidant vitamin C serum with ferulic acid — the benchmark brightening treatment at physician-led med spas.",
+    rating: 4.8,
+    reviewCount: 7248,
+    image: productImages["skinceuticals-ce-ferulic"]!,
+    ingredients: ["L-Ascorbic Acid", "Vitamin E", "Ferulic Acid"],
+    origin: "US",
+    premium: true,
+    recommended: true,
+  },
+  {
+    slug: "epicutis-arctigenin",
+    name: "Arctigenin Brightening Treatment",
+    brand: "Epicutis",
+    category: "Serum",
+    trustScore: 91,
+    productTags: ["fragrance-free", "cruelty-free", "dermatologist-tested"],
+    description:
+      "Clean brightening treatment with proprietary ABSO arctigenin extract — safe for all skin types and post-procedure use.",
+    rating: 4.7,
+    reviewCount: 420,
+    image: productImages["epicutis-arctigenin"]!,
+    ingredients: ["Arctium Lappa Seed Oil", "Squalane", "Ferulic Acid", "Tocopherol"],
+    origin: "US",
+    premium: true,
+    recommended: true,
   },
 ];
 
@@ -105,7 +140,16 @@ function mergeAffiliateProducts(base: Product[], affiliate: Product[]): Product[
   return [...bySlug.values()];
 }
 
-export const products: Product[] = mergeAffiliateProducts(baseProducts, amazonAffiliateProducts);
+function withOfficialImages(catalog: Product[]): Product[] {
+  return catalog.map((product) => ({
+    ...product,
+    image: productImages[product.slug] ?? product.image,
+  }));
+}
+
+export const products: Product[] = withOfficialImages(
+  mergeAffiliateProducts(baseProducts, amazonAffiliateProducts),
+);
 
 type SpaSeed = {
   slug: string;

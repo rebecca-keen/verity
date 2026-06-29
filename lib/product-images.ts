@@ -1,0 +1,75 @@
+/** Official brand / retailer product photos (Amazon, Bluemercury, Epicutis CDN). */
+export const productImages: Record<string, string> = {
+  "eltamd-uv-clear":
+    "https://m.media-amazon.com/images/I/71aXlh7do4L._SL1500_.jpg",
+  "eltamd-uv-daily-hydration-tinted":
+    "https://m.media-amazon.com/images/I/710-6Av05RL._SL1500_.jpg",
+  "la-roche-posay-anthelios":
+    "https://m.media-amazon.com/images/I/61V3cyyyFUL._SL1500_.jpg",
+  "la-roche-posay-anthelios-niacinamide":
+    "https://m.media-amazon.com/images/I/61FIrzjM7YL._SL1500_.jpg",
+  "la-roche-posay-toleriane-hydrating":
+    "https://m.media-amazon.com/images/I/61uFnomGpxL._SL1500_.jpg",
+  "la-roche-posay-pure-vitamin-c":
+    "https://m.media-amazon.com/images/I/612rQ+tTL6L._SL1500_.jpg",
+  "skinceuticals-ce-ferulic":
+    "https://cdn.shopify.com/s/files/1/0283/0185/2747/files/variant_images-size-DefaultTitle-635494263008-1.jpg?v=1781791334",
+  "skinceuticals-discoloration-defense":
+    "https://m.media-amazon.com/images/I/61cJk1ybOnL._SL1500_.jpg",
+  "epicutis-arctigenin":
+    "https://cdn.shopify.com/s/files/1/0895/9757/5488/files/ABT-1.jpg?v=1760655635",
+  "isdin-eryfotona-actinica":
+    "https://m.media-amazon.com/images/I/61c8lSfCzoL._SL1500_.jpg",
+  "isdin-eryfotona-ageless":
+    "https://m.media-amazon.com/images/I/81c2KLVFlaL._SL1500_.jpg",
+  "isdin-mineral-powder-spf":
+    "https://m.media-amazon.com/images/I/51UlG1RlI8L._SL1500_.jpg",
+  "isdin-essential-cleansing":
+    "https://m.media-amazon.com/images/I/61g6b4bxhsL._SL1500_.jpg",
+  "isdin-micellar-solution":
+    "https://m.media-amazon.com/images/I/51sFlaoZkoL._SL1500_.jpg",
+  "alastin-hydratint-spf":
+    "https://m.media-amazon.com/images/I/61zLgWlpUBL._SL1500_.jpg",
+  "alastin-c-radical-serum":
+    "https://m.media-amazon.com/images/I/61UuSerc-ML._SL1500_.jpg",
+  "alastin-restorative-skin-complex":
+    "https://m.media-amazon.com/images/I/7132XQ6Z9qL._SL1500_.jpg",
+  "alastin-gentle-cleanser":
+    "https://m.media-amazon.com/images/I/51Y2tF0mheL._SL1500_.jpg",
+  "alastin-regenerating-skin-nectar":
+    "https://m.media-amazon.com/images/I/61hze4tTO4L._SL1500_.jpg",
+  "skinmedica-tns-advanced-serum":
+    "https://m.media-amazon.com/images/I/61BcbR3OT7L._SL1500_.jpg",
+  "skinmedica-collagen-support":
+    "https://m.media-amazon.com/images/I/51JvfNbzE-L._SL1500_.jpg",
+  "skinmedica-ha5":
+    "https://cdn.shopify.com/s/files/1/0283/0185/2747/files/global_images-300236515911-1.jpg?v=1774547283",
+  "skinmedica-dermal-repair-cream":
+    "https://m.media-amazon.com/images/I/61yCwVztTJL._SL1500_.jpg",
+  "skinmedica-instant-bright-eye":
+    "https://m.media-amazon.com/images/I/61wuZBdF5HL._SL1500_.jpg",
+  "skinmedica-neck-correct-cream":
+    "https://m.media-amazon.com/images/I/51kbFH+ZXaL._SL1500_.jpg",
+  "skinmedica-essential-spf-tinted":
+    "https://m.media-amazon.com/images/I/61f3UtNXLnL._SL1500_.jpg",
+  "skinmedica-essential-spf-clear":
+    "https://m.media-amazon.com/images/I/61qkNJYPkFL._SL1500_.jpg",
+  "is-clinical-cleansing":
+    "https://m.media-amazon.com/images/I/61M8xE5TnkL._SL1500_.jpg",
+  "is-clinical-pro-heal-serum":
+    "https://m.media-amazon.com/images/I/61TmatuKk8L._SL1500_.jpg",
+  "is-clinical-genexc-eye-gel":
+    "https://m.media-amazon.com/images/I/51FMQ9KvE9L._SL1500_.jpg",
+  "is-clinical-youth-eye-complex":
+    "https://m.media-amazon.com/images/I/6187q29z3uL._SL1500_.jpg",
+  "is-clinical-lip-polish":
+    "https://m.media-amazon.com/images/I/51-WardmZHL._SL1500_.jpg",
+  "is-clinical-liprotect-spf35":
+    "https://m.media-amazon.com/images/I/41WzHtQ4R0L._SL1500_.jpg",
+  "revision-retinol":
+    "https://m.media-amazon.com/images/I/71G5OkSr2zL._AC_SL1500_.jpg",
+};
+
+export function getProductImage(slug: string): string | undefined {
+  return productImages[slug];
+}

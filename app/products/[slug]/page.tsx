@@ -39,7 +39,7 @@ export default async function ProductDetailPage({
     <div className="mx-auto max-w-6xl px-6 py-12">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="relative aspect-square overflow-hidden rounded-2xl bg-cream">
-          <Image src={product.image} alt={product.name} fill className="object-cover" sizes="50vw" />
+          <Image src={product.image} alt={product.name} fill className="object-contain p-6" sizes="50vw" />
           <div className="absolute left-4 top-4 flex flex-wrap gap-2">
             {product.origin && (
               <span className="rounded-full bg-charcoal/80 px-3 py-1 text-xs uppercase tracking-wider text-ivory backdrop-blur-sm">
