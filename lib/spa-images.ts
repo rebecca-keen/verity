@@ -334,7 +334,7 @@ export const SPA_IMAGE_SETS: Record<
     gallery: [
       "https://www.miamiskinspa.com/_astro/morpheus8-front-1.B6ev22ez_2ebiUX.webp",
       "https://www.miamiskinspa.com/_astro/lumecca-ipl-1.2ZhIj-Wg_Z13qQW7.webp",
-      img("photo-1571019614242-c5c5dee9f50b"),
+      img("photo-1570172619644-dfd03ed5d881"),
     ],
     source: "Miami Skin Spa official website",
   },
@@ -451,7 +451,7 @@ export const SPA_IMAGE_SETS: Record<
     gallery: [
       "https://www.miamiskinspa.com/_astro/lumecca-ipl-1.2ZhIj-Wg_Z13qQW7.webp",
       "https://www.miamiskinspa.com/_astro/morpheus8-front-0.Drv_3tan_Z2gyiio.webp",
-      img("photo-1571019614242-c5c5dee9f50b"),
+      img("photo-1570172619644-dfd03ed5d881"),
     ],
     source: "Miami Skin Spa official website",
   },

@@ -1291,9 +1291,10 @@ export const reviews: Review[] = [
     id: "r1",
     author: "Camila R.",
     rating: 5,
-    text: "They emailed me every product before my facial — zero surprises. Exactly the transparency I wanted.",
+    text: "They emailed me every product before my facial at Aether Aesthetics — zero surprises. Exactly the transparency I wanted.",
     date: "2026-05-12",
     verified: true,
+    spaSlug: "aether-aesthetics-coral-gables",
     treatment: "Luxury Facial",
     productSlug: "is-clinical-pro-heal-serum",
   },
@@ -1301,9 +1302,10 @@ export const reviews: Review[] = [
     id: "r2",
     author: "Jennifer L.",
     rating: 5,
-    text: "Finally a platform where I could see which SPF my spa actually uses. EltaMD post-laser was perfect.",
+    text: "Finally a platform where I could see which SPF Lumière Medspa actually uses. EltaMD post-laser was perfect.",
     date: "2026-04-28",
     verified: true,
+    spaSlug: "lumiere-medspa-brickell",
     treatment: "Laser Resurfacing",
     productSlug: "eltamd-uv-clear",
   },
@@ -1311,18 +1313,20 @@ export const reviews: Review[] = [
     id: "r3",
     author: "Alex M.",
     rating: 4,
-    text: "Loved the natural lip filler at Forme. Spa confirmed my booking within 2 hours.",
+    text: "Loved the natural lip filler at Forme Aesthetics in Wynwood. Spa confirmed my booking within 2 hours.",
     date: "2026-03-15",
     verified: true,
+    spaSlug: "forme-aesthetics-wynwood",
     treatment: "Lip Filler",
   },
   {
     id: "r4",
     author: "Diana K.",
     rating: 5,
-    text: "The trust score on Epicutis helped me compare spas. Salt & Glow was the perfect match.",
+    text: "The trust score on Epicutis helped me compare spas. Salt & Glow Miami Beach was the perfect match.",
     date: "2026-05-01",
     verified: true,
+    spaSlug: "salt-glow-miami-beach",
     productSlug: "is-clinical-pro-heal-serum",
   },
   {
@@ -1332,6 +1336,7 @@ export const reviews: Review[] = [
     text: "Used Verity Premium for priority booking at Bal Harbour Skin Clinic. Worth every penny.",
     date: "2026-05-20",
     verified: true,
+    spaSlug: "bal-harbour-skin-clinic",
     treatment: "Botox",
   },
 ];
@@ -1347,10 +1352,7 @@ export function getProduct(slug: string) {
 export function getSpaReviews(spaSlug: string) {
   const spa = getSpa(spaSlug);
   if (!spa) return [];
-  const productSet = new Set(spa.productSlugs);
-  return reviews.filter(
-    (r) => r.treatment || (r.productSlug && productSet.has(r.productSlug))
-  );
+  return reviews.filter((r) => r.spaSlug === spaSlug);
 }
 
 export function getProductReviews(productSlug: string) {

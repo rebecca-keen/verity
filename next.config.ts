@@ -38,6 +38,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "www.thesurfacelevel.com" },
       { protocol: "https", hostname: "olympiaaesthetics.com" },
       { protocol: "https", hostname: "jaxaestheticscenter.com" },
+      { protocol: "https", hostname: "www.luxeroomcosmetic.com" },
+      { protocol: "https", hostname: "luxeroomcosmetic.com" },
     ],
   },
 };

@@ -80,6 +80,8 @@ export interface Review {
   text: string;
   date: string;
   verified: boolean;
+  /** Spa this review belongs to — required for spa detail pages */
+  spaSlug?: string;
   treatment?: string;
   productSlug?: string;
 }
