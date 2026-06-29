@@ -316,7 +316,7 @@ function isLikelyHeadshot(url, alt = "") {
   if (isSquareThumbUrl(url) && /(?:portrait|head|face|team|staff|provider|doctor|bio|profile|cutout)/i.test(combined)) {
     return true;
   }
-  if (/Top%20provider|top-provider|top_provider/i.test(url)) return true;
+  if (/Top%20provider|top-provider|top_provider|placeholder\.png/i.test(url)) return true;
   if (/[-_]cutout[-_.]|3S1A\d{4}/i.test(url)) return true;
   return false;
 }

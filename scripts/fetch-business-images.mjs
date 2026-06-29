@@ -5,6 +5,7 @@
  *
  * Usage:
  *   node scripts/fetch-business-images.mjs [--slug name] [--limit N] [--dry-run]
+ *   node scripts/fetch-business-images.mjs --headshots [--phoenix-az] [--sample 20]
  */
 import { spawn } from "child_process";
 import path from "path";
@@ -14,11 +15,16 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 
 const args = process.argv.slice(2);
-const fixArgs = ["scripts/fix-spa-gallery-images.mjs", "--fix"];
+const fixArgs = ["scripts/fix-spa-gallery-images.mjs", "--fix", "--all"];
 
-if (args.includes("--slug")) {
-  const i = args.indexOf("--slug");
-  fixArgs.push("--slug", args[i + 1]);
+for (const flag of ["--slug", "--headshots", "--phoenix-az", "--sample", "--nationwide"]) {
+  if (args.includes(flag)) {
+    fixArgs.push(flag);
+    if (flag === "--slug" || flag === "--sample") {
+      const i = args.indexOf(flag);
+      if (args[i + 1]) fixArgs.push(args[i + 1]);
+    }
+  }
 }
 
 if (args.includes("--dry-run")) {
@@ -26,7 +32,7 @@ if (args.includes("--dry-run")) {
   console.log("Dry run — audit only, no file writes.");
 }
 
-console.log("Fetching business website images (rate-limited, ~6 concurrent)...");
+console.log("Fetching business website images (treatment/service pages, no headshots)...");
 console.log(`Running: node ${fixArgs.join(" ")}`);
 
 const child = spawn("node", fixArgs, { cwd: ROOT, stdio: "inherit" });

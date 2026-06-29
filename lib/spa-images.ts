@@ -10,6 +10,7 @@ import {
 } from "./nationwide-real-spas";
 import { TAMPA_BAY_REAL_SPA_IMAGES } from "./tampa-bay-real-spas";
 import { FLORIDA_SPA_IMAGE_IDS } from "./florida-spa-seeds";
+import { WEBSITE_FETCHED_SPA_IMAGES } from "./website-fetched-spa-images";
 
 function img(id: string, w = 800, h = 600) {
   return `https://images.unsplash.com/${id}?w=${w}&h=${h}&fit=crop`;
@@ -190,9 +191,9 @@ export const SPA_IMAGE_SETS: Record<
     gallery: [
       "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
       "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg",
-      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863a90850b04113b27769_Top%20provider.webp",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
     ],
-    source: "Infinity Beauty Lab official website",
+    source: "Infinity Beauty Lab official website — services",
   },
   "coral-way-skin-studio": {
     hero: img("photo-1556228578-0d85b1a4d571"),
@@ -393,13 +394,13 @@ export const SPA_IMAGE_SETS: Record<
     source: "FaceBeauty Med Spa official website",
   },
   "pinecrest-glow-studio": {
-    hero: "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863a90850b04113b27769_Top%20provider.webp",
+    hero: "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
     gallery: [
-      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
       "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg",
-      img("photo-1494790108377-be9c29b29330"),
+      img("photo-1515377905703-c4788e51af15"),
     ],
-    source: "Infinity Beauty Lab official website",
+    source: "Infinity Beauty Lab official website — services",
   },
   "bal-harbour-luxury-medspa": {
     hero: "https://skinneymedspa.com/wp-content/uploads/2024/03/saks-fifth-avenue-miami-9700-collins-avenue-bal-harbour-fl-33154-medspa-location-305-2024-01.webp",
@@ -468,10 +469,10 @@ export const SPA_IMAGE_SETS: Record<
     hero: "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg",
     gallery: [
       "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683a4e4027d44bc11ea68fd9_qt%3Dq_95.webp",
-      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863a90850b04113b27769_Top%20provider.webp",
+      "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
       img("photo-1515377905703-c4788e51af15"),
     ],
-    source: "Infinity Beauty Lab official website",
+    source: "Infinity Beauty Lab official website — services",
   },
 };
 
@@ -504,6 +505,10 @@ for (const [slug, images] of Object.entries(TAMPA_BAY_REAL_SPA_IMAGES)) {
 }
 
 for (const [slug, images] of Object.entries(MIAMI_METRO_REAL_SPA_IMAGES)) {
+  SPA_IMAGE_SETS[slug] = images;
+}
+
+for (const [slug, images] of Object.entries(WEBSITE_FETCHED_SPA_IMAGES)) {
   SPA_IMAGE_SETS[slug] = images;
 }
 
