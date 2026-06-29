@@ -571,7 +571,7 @@ export function getSpaImages(slug: string): SpaImageSet {
       hero: entry.hero,
       gallery: entry.gallery,
       source: entry.source,
-      ...(entry.logo ? { logo: entry.logo } : {}),
+      logo: entry.logo,
     };
   }
   return {
