@@ -61,8 +61,8 @@ export default function HomePage() {
             <h3 className="mt-2 font-serif text-xl text-charcoal">Grow your practice</h3>
             <p className="mt-3 text-sm leading-relaxed text-stone">
               Aesthetics clinics, med spas, and dermatology practices use Verity for verified profiles,
-              direct contact links, and optional featured placement — subscription tiers from free
-              listings to Premium featured spots.
+              direct contact links, and optional featured placement — free listings today, with top
+              visibility for practices who want to stand out in their city.
             </p>
             <Link href="/for-spas" className="mt-4 inline-block text-sm text-gold hover:underline">
               Partner with Verity →
@@ -102,28 +102,48 @@ export default function HomePage() {
 
       <section className="py-12">
         <div className="mx-auto max-w-6xl px-6">
-          <div className="flex flex-wrap items-center justify-between gap-4">
+          <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="text-xs uppercase tracking-widest text-gold">Monetization</p>
-              <h2 className="mt-2 font-serif text-2xl text-charcoal">How Verity makes money</h2>
+              <p className="text-xs uppercase tracking-widest text-gold">For providers</p>
+              <h2 className="mt-2 font-serif text-2xl text-charcoal">Get featured across Florida</h2>
+              <p className="mt-3 max-w-2xl text-sm text-stone">
+                Free verified listings today. Featured placement available for practices who want top
+                visibility in their city.
+              </p>
             </div>
-            <Link href="/premium" className="text-sm text-gold hover:underline">
-              Verity Premium →
-            </Link>
-            <Link href="/affiliates" className="text-sm text-gold hover:underline">
-              How we earn →
+            <Link href="/for-spas" className="text-sm text-gold hover:underline">
+              List your practice →
             </Link>
           </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "Featured listing", price: "$500+/mo", desc: "Top placement — paid tier, waitlist" },
-              { title: "Verified badge", price: "$149–299/mo", desc: "Partner subscription for practices" },
-              { title: "Verity Premium", price: "$12/mo", desc: "Consumer priority AI & favorites" },
-              { title: "Product affiliates", price: "5–15%", desc: "Shop link commissions" },
+              {
+                title: "Verified listing",
+                price: "Free",
+                desc: "Get verified, show treatments, socials, and contact links",
+              },
+              {
+                title: "Featured in your city",
+                price: "Contact us",
+                desc: "Top of search in your city — limited spots per neighborhood",
+              },
+              {
+                title: "Update your profile",
+                price: "Email us",
+                desc: "Questions about listing or featured placement? Reach out anytime.",
+              },
             ].map((item) => (
               <div key={item.title} className="luxury-border rounded-xl bg-white p-5">
                 <p className="font-medium text-charcoal">{item.title}</p>
-                <p className="mt-1 text-lg text-gold">{item.price}</p>
+                <p className="mt-1 text-lg text-gold">
+                  {item.title === "Update your profile" ? (
+                    <ContactEmail subject="Update my Verity profile" />
+                  ) : item.title === "Featured in your city" ? (
+                    <ContactEmail subject="Featured placement inquiry" />
+                  ) : (
+                    item.price
+                  )}
+                </p>
                 <p className="mt-1 text-xs text-stone">{item.desc}</p>
               </div>
             ))}

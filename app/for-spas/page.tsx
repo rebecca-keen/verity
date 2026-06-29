@@ -59,12 +59,6 @@ const addOns = [
   { title: "Booking commission", price: "3–5%", desc: "If integrated later — only on completed bookings through Verity." },
 ];
 
-const consumerRevenue = [
-  { title: "Verity Premium", price: "$12/mo", desc: "Priority AI concierge, saved favorites, alerts." },
-  { title: "Product affiliates", price: "5–15%", desc: "Commission on skincare purchased via shop links." },
-  { title: "Sponsored content", price: "Varies", desc: "Clearly labeled newsletter and editorial features." },
-];
-
 export default function ForSpasPage() {
   return (
     <div className="mx-auto max-w-4xl px-6 py-12">
@@ -104,11 +98,11 @@ export default function ForSpasPage() {
       </section>
 
       <section className="mt-16">
-        <h2 className="font-serif text-2xl text-charcoal">Provider pricing tiers</h2>
+        <h2 className="font-serif text-2xl text-charcoal">What you get</h2>
         <p className="mt-2 text-sm text-stone">
-          Honest disclosure: every provider on the directory today has a <strong>free listed</strong>{" "}
-          profile. Paid placement and featured tiers below are available when you apply — they are not
-          active for current listings.
+          Every provider on the directory today has a <strong>free listed</strong> profile. Optional
+          tiers below add visibility and tools when you&apos;re ready — they are not active for current
+          listings.
         </p>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {providerTiers.map((plan) => (
@@ -129,7 +123,7 @@ export default function ForSpasPage() {
       </section>
 
       <section className="mt-16">
-        <h2 className="font-serif text-2xl text-charcoal">Add-ons & other B2B revenue</h2>
+        <h2 className="font-serif text-2xl text-charcoal">Optional add-ons</h2>
         <div className="mt-6 space-y-3">
           {addOns.map((item) => (
             <div key={item.title} className="luxury-border rounded-xl bg-cream p-5">
@@ -141,33 +135,6 @@ export default function ForSpasPage() {
             </div>
           ))}
         </div>
-      </section>
-
-      <section className="mt-16">
-        <h2 className="font-serif text-2xl text-charcoal">Consumer & platform revenue</h2>
-        <p className="mt-2 text-sm text-stone">
-          Verity also earns from consumers and platform partnerships — keeping reviews independent.
-        </p>
-        <div className="mt-6 space-y-3">
-          {consumerRevenue.map((item) => (
-            <div key={item.title} className="luxury-border rounded-xl bg-white p-5">
-              <div className="flex flex-wrap items-start justify-between gap-2">
-                <p className="font-medium text-charcoal">{item.title}</p>
-                <p className="text-sm font-medium text-gold">{item.price}</p>
-              </div>
-              <p className="mt-1 text-sm text-stone">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-        <p className="mt-4 text-sm text-stone">
-          <Link href="/affiliates" className="text-gold hover:underline">
-            How product affiliates work →
-          </Link>
-          {" · "}
-          <Link href="/premium" className="text-gold hover:underline">
-            Verity Premium →
-          </Link>
-        </p>
       </section>
 
       <section className="mt-16 luxury-border rounded-2xl bg-white p-8">
