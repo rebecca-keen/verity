@@ -40,10 +40,8 @@ export const productImages: Record<string, string> = {
     "https://m.media-amazon.com/images/I/61hze4tTO4L._SL1500_.jpg",
   "skinmedica-tns-advanced-serum":
     "https://m.media-amazon.com/images/I/61BcbR3OT7L._SL1500_.jpg",
-  "skinmedica-collagen-support":
-    "https://m.media-amazon.com/images/I/51JvfNbzE-L._SL1500_.jpg",
   "skinmedica-ha5":
-    "https://cdn.shopify.com/s/files/1/0283/0185/2747/files/global_images-300236515911-1.jpg?v=1774547283",
+    "https://m.media-amazon.com/images/I/51JvfNbzE-L._SL1500_.jpg",
   "skinmedica-dermal-repair-cream":
     "https://m.media-amazon.com/images/I/61yCwVztTJL._SL1500_.jpg",
   "skinmedica-instant-bright-eye":

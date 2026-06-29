@@ -426,6 +426,7 @@ export const ORPHAN_PRODUCT_SLUG_MAP: Record<string, string> = {
   "laneige-water-bank": "la-roche-posay-toleriane-hydrating",
   "skinceuticals-ce-ferulic": "alastin-c-radical-serum",
   "sulwhasoo-first-care": "skinmedica-tns-advanced-serum",
+  "skinmedica-collagen-support": "skinmedica-ha5",
 };
 
 const SPA_CATALOG_SLUGS = new Set([
@@ -447,7 +448,6 @@ const SPA_CATALOG_SLUGS = new Set([
   "alastin-gentle-cleanser",
   "alastin-regenerating-skin-nectar",
   "skinmedica-tns-advanced-serum",
-  "skinmedica-collagen-support",
   "skinmedica-dermal-repair-cream",
   "skinmedica-instant-bright-eye",
   "skinmedica-neck-correct-cream",
@@ -568,7 +568,7 @@ const TREATMENT_POOLS: Partial<Record<Treatment, string[]>> = {
     "is-clinical-pro-heal-serum",
     "is-clinical-cleansing",
   ],
-  "body-contouring": ["skinmedica-neck-correct-cream", "skinmedica-collagen-support", "skinmedica-dermal-repair-cream"],
+  "body-contouring": ["skinmedica-neck-correct-cream", "skinmedica-ha5", "skinmedica-dermal-repair-cream"],
 };
 
 const PROVIDER_POOLS: Record<ProviderType, string[]> = {
