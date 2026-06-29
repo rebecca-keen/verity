@@ -23,6 +23,8 @@ export type FloridaSpaSeed = {
   highlights: string[];
   phone: string;
   website: string;
+  /** Verified review source (e.g. Google Business Profile). */
+  reviewSource?: string;
 };
 
 export const floridaSpaSeeds: FloridaSpaSeed[] = [

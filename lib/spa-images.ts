@@ -3,6 +3,8 @@
 import { ADDITIONAL_FLORIDA_SPA_IMAGE_IDS } from "./additional-florida-spa-seeds";
 import { FLORIDA_COASTAL_REAL_SPA_IMAGES } from "./florida-coastal-real-spas";
 import { FLORIDA_REAL_SPA_IMAGES } from "./florida-real-spas";
+import { MIAMI_METRO_REAL_SPA_IMAGES } from "./miami-metro-real-spas";
+import { TAMPA_BAY_REAL_SPA_IMAGES } from "./tampa-bay-real-spas";
 import { FLORIDA_SPA_IMAGE_IDS } from "./florida-spa-seeds";
 
 function img(id: string, w = 800, h = 600) {
@@ -490,6 +492,14 @@ for (const [slug, images] of Object.entries(FLORIDA_REAL_SPA_IMAGES)) {
 }
 
 for (const [slug, images] of Object.entries(FLORIDA_COASTAL_REAL_SPA_IMAGES)) {
+  SPA_IMAGE_SETS[slug] = images;
+}
+
+for (const [slug, images] of Object.entries(TAMPA_BAY_REAL_SPA_IMAGES)) {
+  SPA_IMAGE_SETS[slug] = images;
+}
+
+for (const [slug, images] of Object.entries(MIAMI_METRO_REAL_SPA_IMAGES)) {
   SPA_IMAGE_SETS[slug] = images;
 }
 

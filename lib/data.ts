@@ -1,6 +1,8 @@
 import { additionalFloridaSpaSeeds } from "./additional-florida-spa-seeds";
 import { floridaCoastalRealSpas } from "./florida-coastal-real-spas";
 import { floridaRealSpas } from "./florida-real-spas";
+import { miamiMetroRealSpas } from "./miami-metro-real-spas";
+import { tampaBayRealSpas } from "./tampa-bay-real-spas";
 import { floridaSpaSeeds } from "./florida-spa-seeds";
 import { getSpaImages } from "./spa-images";
 import {
@@ -145,6 +147,7 @@ type SpaSeed = {
   highlights: string[];
   website?: string;
   phone?: string;
+  reviewSource?: string;
   socials?: SpaSocials;
   certifications?: string[];
   dataSources?: string[];
@@ -196,7 +199,12 @@ function seedSpa(data: SpaSeed, index: number): Spa {
     socials,
     certifications:
       data.certifications ?? defaultCertifications(false, false),
-    dataSources: data.dataSources ?? defaultDataSources(false, website),
+    dataSources: data.dataSources ?? [
+      ...defaultDataSources(false, website),
+      ...( "reviewSource" in data && data.reviewSource
+        ? [`${data.reviewSource} — rating ${data.rating}`]
+        : []),
+    ],
     image: images.hero,
     imageSource: images.source,
     gallery: images.gallery,
@@ -1266,6 +1274,8 @@ export const spas: Spa[] = [
   ...spaSeeds,
   ...floridaRealSpas,
   ...floridaCoastalRealSpas,
+  ...tampaBayRealSpas,
+  ...miamiMetroRealSpas,
   ...floridaSpaSeeds,
   ...additionalFloridaSpaSeeds,
 ].map((seed, i) => seedSpa(seed, i));
