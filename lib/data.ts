@@ -1,4 +1,5 @@
 import { additionalFloridaSpaSeeds } from "./additional-florida-spa-seeds";
+import { floridaRealSpas } from "./florida-real-spas";
 import { floridaSpaSeeds } from "./florida-spa-seeds";
 import { getSpaImages } from "./spa-images";
 import {
@@ -1260,9 +1261,12 @@ const spaSeeds: SpaSeed[] = [
   },
 ];
 
-export const spas: Spa[] = [...spaSeeds, ...floridaSpaSeeds, ...additionalFloridaSpaSeeds].map(
-  (seed, i) => seedSpa(seed, i)
-);
+export const spas: Spa[] = [
+  ...spaSeeds,
+  ...floridaRealSpas,
+  ...floridaSpaSeeds,
+  ...additionalFloridaSpaSeeds,
+].map((seed, i) => seedSpa(seed, i));
 
 export const metros = Object.keys(METRO_LABELS) as Metro[];
 
