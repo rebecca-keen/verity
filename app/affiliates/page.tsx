@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactEmail } from "@/components/ContactEmail";
 
 export const metadata = {
   title: "Affiliate Program — How Verity Earns",
@@ -103,6 +104,16 @@ NEXT_PUBLIC_SEPHORA_AFF_ID=your-id`}
             Verity Premium →
           </Link>
         </div>
+      </section>
+
+      <section className="mt-12 luxury-border rounded-2xl bg-cream p-8 text-center">
+        <h2 className="font-serif text-xl text-charcoal">Questions?</h2>
+        <p className="mt-2 text-sm text-stone">
+          Affiliate transparency, partnerships, or general inquiries — reach us anytime.
+        </p>
+        <p className="mt-4 text-sm text-stone">
+          <ContactEmail />
+        </p>
       </section>
 
       <p className="mt-10 text-center text-sm text-stone">

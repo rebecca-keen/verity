@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactEmail } from "@/components/ContactEmail";
 import { SpaCard } from "@/components/SpaCard";
 import { ProductCard } from "@/components/ProductCard";
 import { AIConcierge } from "@/components/AIConcierge";
@@ -66,6 +67,9 @@ export default function HomePage() {
             <Link href="/for-spas" className="mt-4 inline-block text-sm text-gold hover:underline">
               Partner with Verity →
             </Link>
+            <p className="mt-3 text-xs text-stone">
+              Questions about listing? <ContactEmail subject="List my practice on Verity" />
+            </p>
           </div>
         </div>
       </section>

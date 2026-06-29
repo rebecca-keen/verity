@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { ContactEmail } from "@/components/ContactEmail";
 import { DirectContactPanel } from "@/components/DirectContactPanel";
 import { ProductCard } from "@/components/ProductCard";
 import { ReviewCard } from "@/components/ReviewCard";
@@ -101,6 +102,11 @@ export default async function SpaDetailPage({
           </div>
         </div>
       </div>
+
+      <p className="mt-12 border-t border-stone/10 pt-8 text-center text-xs text-stone">
+        Listing incorrect? Email{" "}
+        <ContactEmail subject={`Listing correction: ${spa.name}`} />
+      </p>
     </div>
   );
 }

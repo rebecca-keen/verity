@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ContactEmail } from "@/components/ContactEmail";
 import { Header } from "@/components/Header";
 import "./globals.css";
 
@@ -33,6 +34,9 @@ export default function RootLayout({
             <a href="/premium" className="text-gold hover:underline">
               Premium
             </a>
+          </p>
+          <p className="mt-4 text-sm text-stone">
+            Questions? <ContactEmail />
           </p>
           <p className="mt-4 text-xs">© {new Date().getFullYear()} Verity. Not medical advice.</p>
         </footer>

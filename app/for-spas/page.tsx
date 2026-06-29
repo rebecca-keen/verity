@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { ContactEmail } from "@/components/ContactEmail";
 import { spas } from "@/lib/data";
+import { contactMailtoUrl } from "@/lib/constants";
 
 export const metadata = {
   title: "For Providers — Verity",
@@ -168,13 +170,51 @@ export default function ForSpasPage() {
         </p>
       </section>
 
+      <section className="mt-16 luxury-border rounded-2xl bg-white p-8">
+        <h2 className="font-serif text-2xl text-charcoal">Get in touch</h2>
+        <p className="mt-2 text-stone">
+          Ready to join the directory or have questions about our partner program? Email us — we
+          typically respond within one business day.
+        </p>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2">
+          <div className="luxury-border rounded-xl bg-cream p-6">
+            <h3 className="font-medium text-charcoal">Want to be listed?</h3>
+            <p className="mt-2 text-sm text-stone">
+              Apply for a free directory profile or ask about featured placement in your neighborhood.
+            </p>
+            <a
+              href={contactMailtoUrl("List my practice on Verity")}
+              className="mt-4 inline-block rounded-full bg-charcoal px-6 py-2.5 text-sm font-medium tracking-wider text-ivory transition hover:bg-charcoal/90"
+            >
+              List my practice
+            </a>
+          </div>
+          <div className="luxury-border rounded-xl bg-cream p-6">
+            <h3 className="font-medium text-charcoal">Preferred program questions</h3>
+            <p className="mt-2 text-sm text-stone">
+              Verified Partner, Featured Premium, or à la carte placement — ask about pricing and
+              availability.
+            </p>
+            <a
+              href={contactMailtoUrl("Preferred program inquiry")}
+              className="mt-4 inline-block rounded-full border border-charcoal px-6 py-2.5 text-sm font-medium tracking-wider text-charcoal transition hover:bg-cream"
+            >
+              Ask about the program
+            </a>
+          </div>
+        </div>
+        <p className="mt-6 text-center text-sm text-stone">
+          Or email us directly at <ContactEmail />
+        </p>
+      </section>
+
       <div className="mt-12 luxury-border rounded-2xl bg-cream p-8 text-center">
         <h2 className="font-serif text-2xl text-charcoal">Florida statewide — partner spots open</h2>
         <p className="mt-2 text-stone">
           Join {spas.length} verified providers already listed across Florida. Limited featured spots in each city.
         </p>
         <a
-          href="mailto:partners@verity.app?subject=Florida%20Partner%20Application"
+          href={contactMailtoUrl("List my practice on Verity")}
           className="mt-6 inline-block rounded-full bg-charcoal px-8 py-3 text-sm font-medium tracking-wider text-ivory"
         >
           Apply to Partner
