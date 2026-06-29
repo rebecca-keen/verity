@@ -8,6 +8,7 @@ export const RECOMMENDED_BRANDS = [
   "SkinMedica",
   "La Roche-Posay",
   "EltaMD",
+  "iS Clinical",
 ] as const;
 
 export type RecommendedBrand = (typeof RECOMMENDED_BRANDS)[number];

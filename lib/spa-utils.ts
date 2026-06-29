@@ -422,7 +422,9 @@ export const ORPHAN_PRODUCT_SLUG_MAP: Record<string, string> = {
   "comfort-zone-hydramemory": "la-roche-posay-toleriane-hydrating",
   "cosrx-snail-mucin": "alastin-restorative-skin-complex",
   "dr-jart-cicapair": "la-roche-posay-toleriane-hydrating",
+  "epicutis-arctigenin": "is-clinical-pro-heal-serum",
   "laneige-water-bank": "la-roche-posay-toleriane-hydrating",
+  "skinceuticals-ce-ferulic": "alastin-c-radical-serum",
   "sulwhasoo-first-care": "skinmedica-tns-advanced-serum",
 };
 
@@ -433,7 +435,6 @@ const SPA_CATALOG_SLUGS = new Set([
   "la-roche-posay-anthelios-niacinamide",
   "la-roche-posay-toleriane-hydrating",
   "la-roche-posay-pure-vitamin-c",
-  "skinceuticals-ce-ferulic",
   "skinceuticals-discoloration-defense",
   "isdin-eryfotona-actinica",
   "isdin-eryfotona-ageless",
@@ -454,8 +455,12 @@ const SPA_CATALOG_SLUGS = new Set([
   "skinmedica-essential-spf-clear",
   "skinmedica-ha5",
   "is-clinical-cleansing",
+  "is-clinical-pro-heal-serum",
+  "is-clinical-genexc-eye-gel",
+  "is-clinical-youth-eye-complex",
+  "is-clinical-lip-polish",
+  "is-clinical-liprotect-spf35",
   "revision-retinol",
-  "epicutis-arctigenin",
 ]);
 
 const FEATURED_SPA_PRODUCTS: Record<string, string[]> = {
@@ -466,7 +471,7 @@ const FEATURED_SPA_PRODUCTS: Record<string, string[]> = {
   ],
   "luxe-room-denver": [
     "alastin-hydratint-spf",
-    "skinceuticals-ce-ferulic",
+    "alastin-c-radical-serum",
     "is-clinical-cleansing",
     "skinmedica-ha5",
   ],
@@ -478,12 +483,12 @@ const FEATURED_SPA_PRODUCTS: Record<string, string[]> = {
   "cienega-medical-west-hollywood": [
     "skinmedica-tns-advanced-serum",
     "eltamd-uv-clear",
-    "skinceuticals-ce-ferulic",
+    "alastin-c-radical-serum",
   ],
   "beverly-wilshire-aesthetics": [
     "alastin-restorative-skin-complex",
     "skinmedica-instant-bright-eye",
-    "skinceuticals-ce-ferulic",
+    "alastin-c-radical-serum",
   ],
   "skin-by-lovely-los-angeles": [
     "skinmedica-ha5",
@@ -492,7 +497,7 @@ const FEATURED_SPA_PRODUCTS: Record<string, string[]> = {
   ],
   "skin-pharm-nashville": [
     "alastin-gentle-cleanser",
-    "skinceuticals-ce-ferulic",
+    "alastin-c-radical-serum",
     "isdin-eryfotona-actinica",
   ],
   "gleam-med-spa-denver": [
@@ -507,8 +512,8 @@ const FEATURED_SPA_PRODUCTS: Record<string, string[]> = {
   ],
   "collab-medspa-scottsdale": [
     "alastin-hydratint-spf",
-    "skinceuticals-ce-ferulic",
     "alastin-c-radical-serum",
+    "is-clinical-pro-heal-serum",
   ],
 };
 
@@ -531,7 +536,7 @@ const TIER_POOLS: Record<Spa["priceRange"], string[]> = {
     "skinceuticals-discoloration-defense",
     "alastin-hydratint-spf",
     "revision-retinol",
-    "epicutis-arctigenin",
+    "is-clinical-pro-heal-serum",
     "isdin-essential-cleansing",
     "alastin-gentle-cleanser",
   ],
@@ -540,7 +545,8 @@ const TIER_POOLS: Record<Spa["priceRange"], string[]> = {
     "skinceuticals-discoloration-defense",
     "alastin-restorative-skin-complex",
     "alastin-regenerating-skin-nectar",
-    "epicutis-arctigenin",
+    "is-clinical-pro-heal-serum",
+    "is-clinical-youth-eye-complex",
     "skinmedica-dermal-repair-cream",
   ],
 };
@@ -550,16 +556,16 @@ const TREATMENT_POOLS: Partial<Record<Treatment, string[]>> = {
   fillers: ["skinmedica-instant-bright-eye", "alastin-restorative-skin-complex", "skinmedica-tns-advanced-serum"],
   laser: [
     "isdin-eryfotona-actinica",
-    "skinceuticals-ce-ferulic",
+    "alastin-c-radical-serum",
     "skinceuticals-discoloration-defense",
     "alastin-regenerating-skin-nectar",
-    "alastin-c-radical-serum",
+    "is-clinical-pro-heal-serum",
   ],
-  facial: ["is-clinical-cleansing", "isdin-essential-cleansing", "alastin-gentle-cleanser", "epicutis-arctigenin"],
+  facial: ["is-clinical-cleansing", "isdin-essential-cleansing", "alastin-gentle-cleanser", "is-clinical-pro-heal-serum"],
   microneedling: [
     "alastin-regenerating-skin-nectar",
     "alastin-hydratint-spf",
-    "epicutis-arctigenin",
+    "is-clinical-pro-heal-serum",
     "is-clinical-cleansing",
   ],
   "body-contouring": ["skinmedica-neck-correct-cream", "skinmedica-collagen-support", "skinmedica-dermal-repair-cream"],

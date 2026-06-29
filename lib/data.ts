@@ -48,39 +48,6 @@ export const baseProducts: Product[] = [
     recommended: true,
   },
   {
-    slug: "skinceuticals-ce-ferulic",
-    name: "C E Ferulic",
-    brand: "SkinCeuticals",
-    category: "Serum",
-    trustScore: 88,
-    productTags: ["dermatologist-tested", "cruelty-free"],
-    description:
-      "Gold-standard antioxidant serum used before and after laser treatments at top Miami med spas.",
-    rating: 4.7,
-    reviewCount: 891,
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=600&fit=crop",
-    ingredients: ["Vitamin C", "Vitamin E", "Ferulic Acid"],
-    origin: "US",
-    premium: true,
-    recommended: true,
-  },
-  {
-    slug: "epicutis-arctigenin",
-    name: "Arctigenin Brightening Treatment",
-    brand: "Epicutis",
-    category: "Serum",
-    trustScore: 94,
-    productTags: ["fragrance-free", "paraben-free", "vegan", "cruelty-free"],
-    description:
-      "Premium post-procedure serum popular at luxury Miami facials. Ideal for sensitive and post-treatment skin.",
-    rating: 4.9,
-    reviewCount: 128,
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=600&fit=crop",
-    ingredients: ["Arctigenin", "Squalane", "Ferulic Acid", "Chia Seed Oil"],
-    origin: "US",
-    premium: true,
-  },
-  {
     slug: "is-clinical-cleansing",
     name: "Cleansing Complex",
     brand: "iS Clinical",
@@ -125,7 +92,6 @@ export const baseProducts: Product[] = [
     ingredients: ["Hyaluronic Acid", "Peptides", "Vitamin E"],
     origin: "US",
     premium: true,
-    recommended: true,
   },
 ];
 
@@ -1329,7 +1295,7 @@ export const reviews: Review[] = [
     date: "2026-05-12",
     verified: true,
     treatment: "Luxury Facial",
-    productSlug: "epicutis-arctigenin",
+    productSlug: "is-clinical-pro-heal-serum",
   },
   {
     id: "r2",
@@ -1357,7 +1323,7 @@ export const reviews: Review[] = [
     text: "The trust score on Epicutis helped me compare spas. Salt & Glow was the perfect match.",
     date: "2026-05-01",
     verified: true,
-    productSlug: "epicutis-arctigenin",
+    productSlug: "is-clinical-pro-heal-serum",
   },
   {
     id: "r5",
