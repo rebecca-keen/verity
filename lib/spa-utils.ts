@@ -234,7 +234,7 @@ export const METRO_PRIMARY_CITY: Record<Metro, string> = {
 };
 
 export const METRO_FILTERS: { label: string; value: Metro | "All" }[] = [
-  { label: "All Florida", value: "All" },
+  { label: "All regions", value: "All" },
   ...FLORIDA_METROS.map((value) => ({
     label: METRO_LABELS[value],
     value,

@@ -11,11 +11,11 @@ export function AIConcierge() {
   const [loading, setLoading] = useState(false);
 
   const suggestions = [
-    "Aesthetics clinic for lip filler in Wynwood, Miami",
-    "Luxury laser resurfacing in Tampa or St. Petersburg",
-    "Affordable Botox med spa near Winter Park, Orlando",
-    "Body contouring in Fort Lauderdale or Naples",
-    "Med spa near Sarasota or Fort Myers",
+    "Lip filler in Tampa or Los Angeles",
+    "Luxury laser resurfacing in New York City",
+    "Affordable Botox med spa in Chicago",
+    "Body contouring in Atlanta or Miami",
+    "Med spa for microneedling in Dallas or Austin",
   ];
 
   async function ask(text: string) {
@@ -43,8 +43,8 @@ export function AIConcierge() {
           Tell us what you&apos;re looking for
         </h2>
         <p className="mt-2 text-sm text-stone">
-          We match you to verified Florida aesthetics clinics, med spas, and dermatology practices by
-          treatment, region, city, and budget — not paid ads.
+          We match you to verified aesthetics clinics, med spas, and dermatology practices across the
+          United States by treatment, state, city, and budget — not paid ads.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-2">
@@ -70,7 +70,7 @@ export function AIConcierge() {
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="e.g. Aesthetics clinic for Botox in Coral Gables"
+            placeholder="Describe your goals and city — e.g. lip filler in Tampa or Botox in Los Angeles"
             className="flex-1 rounded-full border border-stone/20 px-5 py-3 text-sm outline-none focus:border-gold"
           />
           <button

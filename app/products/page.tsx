@@ -33,7 +33,7 @@ export default async function ProductsPage({
       <p className="text-xs uppercase tracking-widest text-gold">Products</p>
       <h1 className="mt-2 font-serif text-4xl text-charcoal">Product reviews</h1>
       <p className="mt-3 max-w-2xl text-stone">
-        Trust scores, ingredients, and which Florida providers use each product — from American
+        Trust scores, ingredients, and which verified providers use each product — from American
         clinical staples to Korean, French, and Italian luxury skincare.
       </p>
       <p className="mt-2 text-sm text-stone/80">
