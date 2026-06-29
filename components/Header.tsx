@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const links = [
-  { href: "/spas", label: "Spas" },
+  { href: "/spas", label: "Providers" },
   { href: "/products", label: "Products" },
   { href: "/concierge", label: "AI Concierge" },
   { href: "/premium", label: "Premium" },
-  { href: "/for-spas", label: "For Spas" },
+  { href: "/for-spas", label: "For Providers" },
 ];
 
 export function Header() {
@@ -30,7 +30,7 @@ export function Header() {
           href="/concierge"
           className="rounded-full bg-charcoal px-5 py-2 text-xs font-medium tracking-wider text-ivory transition hover:bg-charcoal/90"
         >
-          Find My Spa
+          Find My Match
         </Link>
       </div>
     </header>

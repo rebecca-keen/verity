@@ -6,6 +6,8 @@ export type ProductTag =
   | "cruelty-free"
   | "dermatologist-tested";
 
+export type ProductOrigin = "US" | "KR" | "FR" | "IT" | "EU";
+
 export type Treatment =
   | "botox"
   | "fillers"
@@ -13,6 +15,24 @@ export type Treatment =
   | "facial"
   | "microneedling"
   | "body-contouring";
+
+export type TreatmentCategory = "injectables" | "lasers" | "beauty" | "body";
+
+export type ProviderType = "med-spa" | "aesthetics-clinic" | "dermatology-aesthetics";
+
+export interface SpaSocials {
+  instagram?: string;
+  facebook?: string;
+  tiktok?: string;
+  youtube?: string;
+}
+
+export interface MedicalDirectorInfo {
+  name: string;
+  credentials: string;
+  boardCertifications: string[];
+  specialty?: string;
+}
 
 export interface Product {
   slug: string;
@@ -26,6 +46,10 @@ export interface Product {
   reviewCount: number;
   image: string;
   ingredients: string[];
+  affiliateUrl?: string;
+  affiliatePartner?: string;
+  origin?: ProductOrigin;
+  premium?: boolean;
 }
 
 export interface Review {
@@ -42,6 +66,7 @@ export interface Review {
 export interface Spa {
   slug: string;
   name: string;
+  providerType: ProviderType;
   neighborhood: string;
   city: string;
   tagline: string;
@@ -50,21 +75,25 @@ export interface Spa {
   reviewCount: number;
   verified: boolean;
   premierPartner: boolean;
+  featuredPremium: boolean;
+  featuredRank?: number;
   medicalDirector: string;
+  medicalDirectorInfo: MedicalDirectorInfo;
   licenseId: string;
   yearsOpen: number;
   treatments: Treatment[];
+  treatmentCategories: TreatmentCategory[];
   priceRange: "$" | "$$" | "$$$" | "$$$$";
-  instagram: string;
+  website: string;
+  phone: string;
+  socials: SpaSocials;
+  certifications: string[];
+  dataSources: string[];
   image: string;
+  imageSource: string;
   gallery: string[];
   productSlugs: string[];
   highlights: string[];
-}
-
-export interface ConciergeMessage {
-  role: "user" | "assistant";
-  content: string;
 }
 
 export interface ConciergeMatch {

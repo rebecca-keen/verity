@@ -1,5 +1,5 @@
 import { spas } from "./data";
-import type { ConciergeMatch, Treatment } from "./types";
+import type { ConciergeMatch, ProviderType, Treatment } from "./types";
 
 const KEYWORDS: Record<string, { treatments: Treatment[]; tags: string[] }> = {
   botox: { treatments: ["botox"], tags: ["injectables", "wrinkles", "preventive"] },
@@ -22,12 +22,16 @@ const KEYWORDS: Record<string, { treatments: Treatment[]; tags: string[] }> = {
   aventura: { treatments: [], tags: ["aventura", "sunny isles"] },
   kendall: { treatments: [], tags: ["kendall"] },
   grove: { treatments: ["facial"], tags: ["coconut grove"] },
+  dermatology: { treatments: ["laser", "facial"], tags: ["dermatology"] },
+  aesthetics: { treatments: ["botox", "fillers", "facial"], tags: ["aesthetics"] },
+  clinic: { treatments: ["botox", "fillers"], tags: ["aesthetics"] },
 };
 
 function scoreSpa(
   spa: (typeof spas)[0],
   wantedTreatments: Set<Treatment>,
-  wantedTags: Set<string>
+  wantedTags: Set<string>,
+  wantedProviderTypes: Set<ProviderType>
 ): { score: number; reasons: string[] } {
   let score = 0;
   const reasons: string[] = [];
@@ -45,6 +49,13 @@ function scoreSpa(
     if (spa.treatments.includes(t)) {
       score += 25;
       reasons.push(`Offers ${t.replace("-", " ")}`);
+    }
+  }
+
+  for (const type of wantedProviderTypes) {
+    if (spa.providerType === type) {
+      score += 12;
+      reasons.push(`Matches your ${type.replace("-", " ")} preference`);
     }
   }
 
@@ -69,6 +80,20 @@ export function matchSpas(query: string): ConciergeMatch[] {
   const lower = query.toLowerCase();
   const wantedTreatments = new Set<Treatment>();
   const wantedTags = new Set<string>();
+  const wantedProviderTypes = new Set<ProviderType>();
+
+  if (lower.includes("dermatology") || lower.includes("derm ")) {
+    wantedProviderTypes.add("dermatology-aesthetics");
+  }
+  if (lower.includes("aesthetics clinic") || lower.includes("aesthetics practice")) {
+    wantedProviderTypes.add("aesthetics-clinic");
+  }
+  if (lower.includes("med spa") || lower.includes("medspa")) {
+    wantedProviderTypes.add("med-spa");
+  }
+  if (lower.includes("aesthetics") && !lower.includes("dermatology")) {
+    wantedProviderTypes.add("aesthetics-clinic");
+  }
 
   for (const [key, config] of Object.entries(KEYWORDS)) {
     if (lower.includes(key)) {
@@ -84,11 +109,11 @@ export function matchSpas(query: string): ConciergeMatch[] {
 
   return spas
     .map((spa) => {
-      const { score, reasons } = scoreSpa(spa, wantedTreatments, wantedTags);
+      const { score, reasons } = scoreSpa(spa, wantedTreatments, wantedTags, wantedProviderTypes);
       return {
         spaSlug: spa.slug,
         spaName: spa.name,
-        reason: reasons.join(". ") || "Highly rated verified med spa in Miami",
+        reason: reasons.join(". ") || "Highly rated verified provider in Miami",
         matchScore: Math.min(99, score),
       };
     })
@@ -98,12 +123,12 @@ export function matchSpas(query: string): ConciergeMatch[] {
 
 export function buildConciergeReply(query: string, matches: ConciergeMatch[]): string {
   if (matches.length === 0) {
-    return "I couldn't find a strong match yet. Try telling me your neighborhood, treatment (Botox, facial, laser), and budget — luxury or affordable.";
+    return "I couldn't find a strong match yet. Try telling me your neighborhood, treatment (Botox, facial, laser), provider type (med spa, aesthetics clinic, dermatology), and budget — luxury or affordable.";
   }
 
   const top = matches[0];
   const lines = [
-    "Based on what you shared, here are my top Miami matches:",
+    "Based on what you shared, here are my top Miami matches for med spas and aesthetics clinics:",
     "",
     ...matches.map(
       (m, i) =>
@@ -127,7 +152,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
       const spaContext = spas
         .map(
           (s) =>
-            `${s.name} (${s.neighborhood}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Premier: ${s.premierPartner}. Rating: ${s.rating}`
+            `${s.name} (${s.neighborhood}, ${s.providerType}): ${s.tagline}. Treatments: ${s.treatments.join(", ")}. Premier: ${s.premierPartner}. Rating: ${s.rating}`
         )
         .join("\n");
 
@@ -142,7 +167,7 @@ export async function askConcierge(query: string): Promise<{ reply: string; matc
           messages: [
             {
               role: "system",
-              content: `You are Verity Concierge, a luxury med spa advisor for Miami. You help users find reputable, verified med spas. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
+              content: `You are Verity Concierge, a luxury aesthetics advisor for Miami. You help users find reputable, verified med spas, aesthetics clinics, and dermatology practices. Be warm, concise, and trust-focused. Never give medical advice. Recommend from this list only:\n${spaContext}\n\nTop algorithmic matches: ${JSON.stringify(matches)}`,
             },
             { role: "user", content: query },
           ],

@@ -1,0 +1,26 @@
+import type { Spa, TreatmentCategory } from "@/lib/types";
+import { getCategoryLabel } from "@/lib/spa-utils";
+
+const CATEGORY_COLORS: Record<TreatmentCategory, string> = {
+  injectables: "bg-charcoal text-ivory",
+  lasers: "bg-gold/20 text-charcoal border border-gold/30",
+  beauty: "bg-sage/15 text-sage border border-sage/30",
+  body: "bg-stone/10 text-stone border border-stone/20",
+};
+
+export function TreatmentCategories({ categories }: { categories: TreatmentCategory[] }) {
+  if (categories.length === 0) return null;
+
+  return (
+    <div className="flex flex-wrap gap-2">
+      {categories.map((cat) => (
+        <span
+          key={cat}
+          className={`rounded-full px-3 py-1 text-[10px] font-semibold uppercase tracking-wider ${CATEGORY_COLORS[cat]}`}
+        >
+          {getCategoryLabel(cat)}
+        </span>
+      ))}
+    </div>
+  );
+}

@@ -22,7 +22,7 @@ export function InstagramFeed({ handle }: { handle: string }) {
         </a>
       </div>
       <p className="mt-1 text-xs text-stone">
-        Connected profile — full auto-sync for Partner spas
+        Connected profile — full auto-sync for Partner providers
       </p>
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
         {placeholders.map((src, i) => (

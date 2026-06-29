@@ -3,7 +3,7 @@ import { spas } from "@/lib/data";
 
 export const metadata = {
   title: "Verity Premium — For Consumers",
-  description: "Priority booking, AI concierge, saved spas, and exclusive Miami med spa access.",
+  description: "Priority booking, AI concierge, saved providers, and exclusive Miami aesthetics access.",
 };
 
 export default function PremiumPage() {
@@ -12,7 +12,8 @@ export default function PremiumPage() {
       <p className="text-xs uppercase tracking-widest text-gold">For consumers</p>
       <h1 className="mt-2 font-serif text-4xl text-charcoal">Verity Premium</h1>
       <p className="mt-4 text-lg text-stone">
-        Skip the research. Get priority access to Miami&apos;s best verified med spas.
+        Skip the research. Get priority access to Miami&apos;s best verified aesthetics clinics, med
+        spas, and dermatology practices.
       </p>
 
       <div className="mt-12 grid gap-8 md:grid-cols-2">
@@ -20,7 +21,7 @@ export default function PremiumPage() {
           <p className="text-xs uppercase tracking-widest text-stone">Free</p>
           <p className="mt-2 font-serif text-3xl text-charcoal">$0</p>
           <ul className="mt-6 space-y-3 text-sm text-stone">
-            <li>✓ Browse all {spas.length} Miami med spas</li>
+            <li>✓ Browse all {spas.length} Miami providers</li>
             <li>✓ Read reviews & product info</li>
             <li>✓ Request bookings</li>
             <li>✓ Basic AI Concierge</li>
@@ -33,10 +34,10 @@ export default function PremiumPage() {
             $12<span className="text-base text-stone">/mo</span>
           </p>
           <ul className="mt-6 space-y-3 text-sm text-stone">
-            <li>✓ Priority booking — spas see you first</li>
+            <li>✓ Priority booking — providers see you first</li>
             <li>✓ Unlimited AI Concierge sessions</li>
-            <li>✓ Save favorite spas & products</li>
-            <li>✓ Price alerts & new spa notifications</li>
+            <li>✓ Save favorite providers & products</li>
+            <li>✓ Price alerts & new provider notifications</li>
             <li>✓ Trust Score deep dives on products</li>
             <li>✓ Early access to new Miami listings</li>
           </ul>
@@ -52,20 +53,20 @@ export default function PremiumPage() {
       <section className="mt-16">
         <h2 className="font-serif text-2xl text-charcoal">How Verity makes money</h2>
         <p className="mt-2 text-stone">
-          Verity earns from both sides — spas and consumers — so the platform stays independent and
+          Verity earns from both sides — providers and consumers — so the platform stays independent and
           trust-first.
         </p>
         <div className="mt-8 space-y-4">
           {[
             {
-              title: "Spa subscriptions",
-              amount: "$149–299/month per spa",
+              title: "Provider subscriptions",
+              amount: "$149–299/month per practice",
               desc: "Partner & Premium listings, booking tools, Instagram sync, analytics.",
             },
             {
               title: "Verity Premium",
               amount: "$12/month per consumer",
-              desc: "Priority booking, unlimited AI, saved spas, alerts.",
+              desc: "Priority booking, unlimited AI, saved providers, alerts.",
             },
             {
               title: "Booking commission",
@@ -80,12 +81,12 @@ export default function PremiumPage() {
             {
               title: "Lead generation",
               amount: "$25–75 per qualified lead",
-              desc: "Spas pay for high-intent booking requests in competitive neighborhoods.",
+              desc: "Providers pay for high-intent booking requests in competitive neighborhoods.",
             },
             {
               title: "Product affiliate",
               amount: "5–15% commission",
-              desc: "When consumers buy products linked to spa profiles.",
+              desc: "When consumers buy premium skincare through Verity shop links — revenue supports independent reviews.",
             },
           ].map((item) => (
             <div key={item.title} className="luxury-border rounded-xl bg-white p-5">
@@ -101,7 +102,7 @@ export default function PremiumPage() {
 
       <p className="mt-10 text-center text-sm text-stone">
         <Link href="/for-spas" className="text-gold hover:underline">
-          Spa owner? See partner pricing →
+          Provider owner? See partner pricing →
         </Link>
       </p>
     </div>

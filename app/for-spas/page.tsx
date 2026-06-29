@@ -1,19 +1,49 @@
 import Link from "next/link";
+import { spas } from "@/lib/data";
 
 export const metadata = {
-  title: "For Spas — Verity",
-  description: "List your med spa on Verity. Verified profiles, booking, and product transparency.",
+  title: "For Providers — Verity",
+  description:
+    "List your aesthetics clinic, med spa, or dermatology practice on Verity. Verified profiles, featured placement, booking, and lead generation.",
 };
 
 export default function ForSpasPage() {
   return (
     <div className="mx-auto max-w-4xl px-6 py-12">
-      <p className="text-xs uppercase tracking-widest text-gold">B2B · Mindbody-style subscriptions</p>
-      <h1 className="mt-2 font-serif text-4xl text-charcoal">Partner with Verity</h1>
+      <p className="text-xs uppercase tracking-widest text-gold">B2B · Aesthetics clinics & med spas</p>
+      <h1 className="mt-2 font-serif text-4xl text-charcoal">
+        Partner with Verity — aesthetics clinics & med spas
+      </h1>
       <p className="mt-4 text-lg text-stone">
-        Reach high-intent Miami clients who care about reputation and results — not bargain hunters on
-        Yelp.
+        Verity is built for aesthetics clinics and med spas first — plus dermatology practices with
+        aesthetic services. Reach high-intent Miami clients researching injectables, lasers, facials,
+        and body contouring who care about reputation, medical oversight, and product transparency.
       </p>
+
+      <section className="mt-12">
+        <h2 className="font-serif text-2xl text-charcoal">Who it&apos;s for</h2>
+        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          {[
+            {
+              title: "Aesthetics clinics",
+              desc: "Board-supervised injectables, laser suites, and treatment rooms — showcase credentials and product menus.",
+            },
+            {
+              title: "Med spas",
+              desc: "Full-service facial, body, and wellness menus with verified medical director info and booking tools.",
+            },
+            {
+              title: "Dermatology practices",
+              desc: "Aesthetic dermatology and laser-focused practices seeking trust-first discovery and qualified leads.",
+            },
+          ].map((item) => (
+            <div key={item.title} className="luxury-border rounded-xl bg-cream p-5">
+              <h3 className="font-medium text-charcoal">{item.title}</h3>
+              <p className="mt-2 text-sm text-stone">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <div className="mt-12 grid gap-6 md:grid-cols-3">
         {[
@@ -62,7 +92,7 @@ export default function ForSpasPage() {
       <section className="mt-16">
         <h2 className="font-serif text-2xl text-charcoal">Additional revenue for Verity</h2>
         <p className="mt-2 text-sm text-stone">
-          Beyond spa subscriptions, Verity monetizes through consumer Premium, booking commissions,
+          Beyond provider subscriptions, Verity monetizes through consumer Premium, booking commissions,
           featured ads, and product affiliates.{" "}
           <Link href="/premium" className="text-gold hover:underline">
             See consumer Premium →
@@ -73,7 +103,7 @@ export default function ForSpasPage() {
       <div className="mt-12 luxury-border rounded-2xl bg-cream p-8 text-center">
         <h2 className="font-serif text-2xl text-charcoal">Miami launch — partner spots open</h2>
         <p className="mt-2 text-stone">
-          Join 24 verified spas already listed. Limited featured spots in each neighborhood.
+          Join {spas.length} verified providers already listed. Limited featured spots in each neighborhood.
         </p>
         <a
           href="mailto:partners@verity.app?subject=Miami%20Partner%20Application"

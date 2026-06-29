@@ -1,21 +1,21 @@
-import type { Product, Review, Spa, Treatment } from "./types";
+import { getSpaImages } from "./spa-images";
+import {
+  defaultCertifications,
+  defaultDataSources,
+  deriveTreatmentCategories,
+  getFeaturedPremiumSpas,
+  parseMedicalDirector,
+  sortSpasForDisplay,
+} from "./spa-utils";
+import type { Product, ProductOrigin, ProviderType, Review, Spa, SpaSocials, Treatment } from "./types";
 
-const IMAGES = [
-  "https://images.unsplash.com/photo-1519494020892-80afc2743508?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1540555700478-4be289bebecc?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1515377905703-c4788e51ad09?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&h=600&fit=crop",
-  "https://images.unsplash.com/photo-1596178065880-2314bdb1f869?w=800&h=600&fit=crop",
-];
-
-const GALLERY = [
-  "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1515377905703-c4788e51ad09?w=600&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop",
-];
+export const originLabels: Record<ProductOrigin, string> = {
+  US: "American",
+  KR: "Korean",
+  FR: "French",
+  IT: "Italian",
+  EU: "European",
+};
 
 export const products: Product[] = [
   {
@@ -31,6 +31,8 @@ export const products: Product[] = [
     reviewCount: 342,
     image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&h=600&fit=crop",
     ingredients: ["Zinc Oxide", "Niacinamide", "Hyaluronic Acid"],
+    origin: "US",
+    premium: false,
   },
   {
     slug: "skinceuticals-ce-ferulic",
@@ -45,6 +47,8 @@ export const products: Product[] = [
     reviewCount: 891,
     image: "https://images.unsplash.com/photo-1620916561694-4d134e883ab7?w=600&h=600&fit=crop",
     ingredients: ["Vitamin C", "Vitamin E", "Ferulic Acid"],
+    origin: "US",
+    premium: true,
   },
   {
     slug: "epicutis-arctigenin",
@@ -59,6 +63,8 @@ export const products: Product[] = [
     reviewCount: 128,
     image: "https://images.unsplash.com/photo-1570194065650-d99fb4b74108?w=600&h=600&fit=crop",
     ingredients: ["Arctigenin", "Squalane", "Ferulic Acid", "Chia Seed Oil"],
+    origin: "US",
+    premium: true,
   },
   {
     slug: "is-clinical-cleansing",
@@ -73,6 +79,8 @@ export const products: Product[] = [
     reviewCount: 456,
     image: "https://images.unsplash.com/photo-1608248543801-ba43f4474263?w=600&h=600&fit=crop",
     ingredients: ["Willow Bark", "Sugar Cane Extract", "Chamomile"],
+    origin: "US",
+    premium: false,
   },
   {
     slug: "revision-retinol",
@@ -86,6 +94,8 @@ export const products: Product[] = [
     reviewCount: 312,
     image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=600&h=600&fit=crop",
     ingredients: ["Retinol", "Bakuchiol", "Hyaluronic Acid"],
+    origin: "US",
+    premium: true,
   },
   {
     slug: "skinmedica-ha5",
@@ -99,16 +109,92 @@ export const products: Product[] = [
     reviewCount: 567,
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
     ingredients: ["Hyaluronic Acid", "Peptides", "Vitamin E"],
+    origin: "US",
+    premium: true,
   },
 ];
 
-type SpaSeed = Omit<Spa, "gallery" | "image"> & { gallery?: string[]; image?: string };
+type SpaSeed = {
+  slug: string;
+  name: string;
+  providerType: ProviderType;
+  neighborhood: string;
+  city: string;
+  tagline: string;
+  description: string;
+  rating: number;
+  reviewCount: number;
+  verified: boolean;
+  premierPartner: boolean;
+  featuredRank?: number;
+  medicalDirector: string;
+  licenseId: string;
+  yearsOpen: number;
+  treatments: Treatment[];
+  priceRange: Spa["priceRange"];
+  instagram: string;
+  productSlugs: string[];
+  highlights: string[];
+  website?: string;
+  phone?: string;
+  socials?: SpaSocials;
+  certifications?: string[];
+  dataSources?: string[];
+};
+
+function buildSocials(seed: SpaSeed): SpaSocials {
+  if (seed.socials) return seed.socials;
+  const handle = seed.instagram;
+  const base = handle.replace(/_/g, "");
+  return {
+    instagram: handle,
+    facebook: seed.premierPartner ? `${base}miami` : undefined,
+    tiktok: seed.premierPartner ? `${handle}_official` : undefined,
+    youtube: seed.featuredRank && seed.featuredRank <= 6 ? `${base}Aesthetics` : undefined,
+  };
+}
 
 function seedSpa(data: SpaSeed, index: number): Spa {
+  const images = getSpaImages(data.slug);
+  const featuredRank =
+    data.featuredRank ?? (data.premierPartner && index < 12 ? index + 1 : undefined);
+  const featuredPremium = data.premierPartner && featuredRank != null && featuredRank <= 12;
+  const website = data.website ?? `https://www.${data.slug}.com`;
+  const phone = data.phone ?? `(305) 555-${String(1000 + index).padStart(4, "0")}`;
+  const socials = buildSocials({ ...data, featuredRank });
+
   return {
-    ...data,
-    image: data.image || IMAGES[index % IMAGES.length],
-    gallery: data.gallery || GALLERY,
+    slug: data.slug,
+    name: data.name,
+    providerType: data.providerType,
+    neighborhood: data.neighborhood,
+    city: data.city,
+    tagline: data.tagline,
+    description: data.description,
+    rating: data.rating,
+    reviewCount: data.reviewCount,
+    verified: data.verified,
+    premierPartner: data.premierPartner,
+    featuredPremium,
+    featuredRank,
+    medicalDirector: data.medicalDirector,
+    medicalDirectorInfo: parseMedicalDirector(data.medicalDirector),
+    licenseId: data.licenseId,
+    yearsOpen: data.yearsOpen,
+    treatments: data.treatments,
+    treatmentCategories: deriveTreatmentCategories(data.treatments),
+    priceRange: data.priceRange,
+    website,
+    phone,
+    socials,
+    certifications:
+      data.certifications ?? defaultCertifications(data.premierPartner, featuredPremium),
+    dataSources: data.dataSources ?? defaultDataSources(data.premierPartner, website),
+    image: images.hero,
+    imageSource: images.source,
+    gallery: images.gallery,
+    productSlugs: data.productSlugs,
+    highlights: data.highlights,
   };
 }
 
@@ -116,6 +202,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "aether-aesthetics-coral-gables",
     name: "Aether Aesthetics",
+    providerType: "aesthetics-clinic",
     neighborhood: "Coral Gables",
     city: "Miami",
     tagline: "Natural injectables. Transparent protocols.",
@@ -137,6 +224,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "lumiere-medspa-brickell",
     name: "Lumière Medspa",
+    providerType: "med-spa",
     neighborhood: "Brickell",
     city: "Miami",
     tagline: "Luxury laser. Expert recovery.",
@@ -158,6 +246,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "salt-glow-miami-beach",
     name: "Salt & Glow",
+    providerType: "med-spa",
     neighborhood: "Miami Beach",
     city: "Miami Beach",
     tagline: "Coastal luxury skincare.",
@@ -179,6 +268,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "forme-aesthetics-wynwood",
     name: "Forme Aesthetics",
+    providerType: "aesthetics-clinic",
     neighborhood: "Wynwood",
     city: "Miami",
     tagline: "Artistry meets accountability.",
@@ -200,6 +290,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "maison-skin-design-district",
     name: "Maison Skin Lab",
+    providerType: "aesthetics-clinic",
     neighborhood: "Design District",
     city: "Miami",
     tagline: "Where luxury meets precision.",
@@ -220,6 +311,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "injector-studio-brickell",
     name: "The Injector Studio",
+    providerType: "aesthetics-clinic",
     neighborhood: "Brickell",
     city: "Miami",
     tagline: "Injectables-only excellence.",
@@ -240,6 +332,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "coastal-aesthetics-south-beach",
     name: "Coastal Aesthetics",
+    providerType: "aesthetics-clinic",
     neighborhood: "South Beach",
     city: "Miami Beach",
     tagline: "South Beach's trusted med spa.",
@@ -260,6 +353,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "grove-wellness-coconut-grove",
     name: "Grove Wellness Spa",
+    providerType: "med-spa",
     neighborhood: "Coconut Grove",
     city: "Miami",
     tagline: "Relaxed luxury in the Grove.",
@@ -280,6 +374,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "aventura-med-aesthetics",
     name: "Aventura Med Aesthetics",
+    providerType: "med-spa",
     neighborhood: "Aventura",
     city: "Aventura",
     tagline: "North Miami's premier destination.",
@@ -300,6 +395,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "doral-beauty-institute",
     name: "Doral Beauty Institute",
+    providerType: "aesthetics-clinic",
     neighborhood: "Doral",
     city: "Doral",
     tagline: "West Miami's aesthetic hub.",
@@ -320,6 +416,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "pinecrest-plastic-spa",
     name: "Pinecrest Aesthetic Studio",
+    providerType: "dermatology-aesthetics",
     neighborhood: "Pinecrest",
     city: "Miami",
     tagline: "Suburban sophistication.",
@@ -340,6 +437,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "bal-harbour-skin-clinic",
     name: "Bal Harbour Skin Clinic",
+    providerType: "dermatology-aesthetics",
     neighborhood: "Bal Harbour",
     city: "Bal Harbour",
     tagline: "Ultra-luxury. Ultra-discreet.",
@@ -360,6 +458,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "key-biscayne-med-spa",
     name: "Key Biscayne Med Spa",
+    providerType: "med-spa",
     neighborhood: "Key Biscayne",
     city: "Key Biscayne",
     tagline: "Island luxury aesthetics.",
@@ -380,6 +479,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "south-miami-aesthetics",
     name: "South Miami Aesthetics",
+    providerType: "aesthetics-clinic",
     neighborhood: "South Miami",
     city: "Miami",
     tagline: "Your neighborhood med spa.",
@@ -400,6 +500,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "kendall-rejuvenation",
     name: "Kendall Rejuvenation Center",
+    providerType: "med-spa",
     neighborhood: "Kendall",
     city: "Miami",
     tagline: "Results you can trust.",
@@ -420,6 +521,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "edgewater-laser-skin",
     name: "Edgewater Laser & Skin",
+    providerType: "dermatology-aesthetics",
     neighborhood: "Edgewater",
     city: "Miami",
     tagline: "Laser experts on the bay.",
@@ -440,6 +542,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "midtown-miami-medspa",
     name: "Midtown Med Spa",
+    providerType: "med-spa",
     neighborhood: "Midtown",
     city: "Miami",
     tagline: "Urban beauty, clinical precision.",
@@ -460,6 +563,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "sunny-isles-aesthetics",
     name: "Sunny Isles Aesthetics",
+    providerType: "med-spa",
     neighborhood: "Sunny Isles",
     city: "Sunny Isles Beach",
     tagline: "International standards, local care.",
@@ -480,6 +584,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "north-miami-beauty-lab",
     name: "North Miami Beauty Lab",
+    providerType: "aesthetics-clinic",
     neighborhood: "North Miami",
     city: "North Miami",
     tagline: "Innovation meets aesthetics.",
@@ -500,6 +605,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "coral-way-skin-studio",
     name: "Coral Way Skin Studio",
+    providerType: "aesthetics-clinic",
     neighborhood: "Coral Way",
     city: "Miami",
     tagline: "Classic Miami beauty.",
@@ -520,6 +626,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "homestead-wellness-medspa",
     name: "Homestead Wellness Med Spa",
+    providerType: "med-spa",
     neighborhood: "Homestead",
     city: "Homestead",
     tagline: "South Dade's med spa.",
@@ -540,6 +647,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "cutler-bay-aesthetics",
     name: "Cutler Bay Aesthetics",
+    providerType: "aesthetics-clinic",
     neighborhood: "Cutler Bay",
     city: "Cutler Bay",
     tagline: "Quality care, south of the city.",
@@ -560,6 +668,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "miami-shores-aesthetics",
     name: "Miami Shores Aesthetics",
+    providerType: "aesthetics-clinic",
     neighborhood: "Miami Shores",
     city: "Miami Shores",
     tagline: "Quiet luxury, north of downtown.",
@@ -580,6 +689,7 @@ const spaSeeds: SpaSeed[] = [
   {
     slug: "fisher-island-aesthetics",
     name: "Fisher Island Aesthetics",
+    providerType: "dermatology-aesthetics",
     neighborhood: "Fisher Island",
     city: "Miami Beach",
     tagline: "Exclusive island treatments.",
@@ -687,4 +797,12 @@ export function getProductsForSpa(spaSlug: string) {
 export function getSpasByNeighborhood(neighborhood: string) {
   if (!neighborhood || neighborhood === "All") return spas;
   return spas.filter((s) => s.neighborhood === neighborhood);
+}
+
+export function getSortedSpas() {
+  return sortSpasForDisplay(spas);
+}
+
+export function getFeaturedPremiumSpasFromData(limit = 8) {
+  return getFeaturedPremiumSpas(spas, limit);
 }

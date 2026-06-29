@@ -2,9 +2,12 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { BookingForm } from "@/components/BookingForm";
-import { InstagramFeed } from "@/components/InstagramFeed";
 import { ProductCard } from "@/components/ProductCard";
 import { ReviewCard } from "@/components/ReviewCard";
+import { SpaGallery } from "@/components/SpaGallery";
+import { SpaSocialLinks } from "@/components/SpaSocialLinks";
+import { TreatmentCategories } from "@/components/TreatmentCategories";
+import { ProviderTypeBadge } from "@/components/ProviderTypeBadge";
 import { TrustBadge, TrustPanel } from "@/components/TrustBadge";
 import { getSpa, getProductsForSpa, getSpaReviews, spas } from "@/lib/data";
 
@@ -28,37 +31,46 @@ export default async function SpaDetailPage({
     <div className="mx-auto max-w-6xl px-6 py-12">
       <div className="relative h-64 overflow-hidden rounded-2xl md:h-80">
         <Image src={spa.image} alt={spa.name} fill className="object-cover" priority sizes="100vw" />
+        {spa.featuredPremium && (
+          <div className="absolute left-0 right-0 top-0 bg-charcoal py-2 text-center text-xs font-semibold uppercase tracking-widest text-gold">
+            Featured Premium
+          </div>
+        )}
       </div>
+      <p className="mt-2 text-xs text-stone">Photo source: {spa.imageSource}</p>
 
       <div className="mt-8 grid gap-10 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          <TrustBadge verified={spa.verified} premierPartner={spa.premierPartner} />
-          <h1 className="mt-4 font-serif text-4xl text-charcoal">{spa.name}</h1>
+          <TrustBadge
+            verified={spa.verified}
+            premierPartner={spa.premierPartner}
+            featuredPremium={spa.featuredPremium}
+          />
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <ProviderTypeBadge type={spa.providerType} />
+          </div>
+          <h1 className="mt-3 font-serif text-4xl text-charcoal">{spa.name}</h1>
           <p className="text-stone">
             {spa.neighborhood}, {spa.city} · {spa.priceRange} · ★ {spa.rating} ({spa.reviewCount})
           </p>
+          <div className="mt-3">
+            <TreatmentCategories categories={spa.treatmentCategories} />
+          </div>
           <p className="mt-2 font-serif text-xl text-stone">{spa.tagline}</p>
           <p className="mt-4 leading-relaxed text-stone">{spa.description}</p>
 
           <div className="mt-10">
-            <h2 className="font-serif text-2xl text-charcoal">Gallery</h2>
-            <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3">
-              {spa.gallery.map((src) => (
-                <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-xl">
-                  <Image src={src} alt="" fill className="object-cover" sizes="300px" />
-                </div>
-              ))}
-            </div>
+            <SpaGallery spa={spa} />
           </div>
 
           <div className="mt-10">
-            <InstagramFeed handle={spa.instagram} />
+            <SpaSocialLinks spa={spa} />
           </div>
 
           <div className="mt-10">
             <h2 className="font-serif text-2xl text-charcoal">Products we use</h2>
             <p className="mt-1 text-sm text-stone">
-              Linked to verified product reviews — see what this spa uses before you book.
+              Linked to verified product reviews — see what this provider uses before you book.
             </p>
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               {spaProducts.map((p) => (
