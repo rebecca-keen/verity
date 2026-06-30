@@ -1474,8 +1474,6 @@ export const FLORIDA_SPA_IMAGE_IDS: Record<string, { heroId: string; g1: string;
   "ponte-vedra-skin-institute": { heroId: "photo-1629909613654-28e377c37b09", g1: "photo-1544161515-4ab6ce6db874", g2: "photo-1612817288484-6f916006741a", g3: "photo-1516975080664-ed2fc6a32937" },
   "jax-beach-medspa": { heroId: "photo-1584515933487-779824d29309", g1: "photo-1519823551278-64ac92734fb1", g2: "photo-1612349317150-e413f6a5b16d", g3: "photo-1522337360788-8b13dee7a37e" },
   "san-jose-aesthetics-hub": { heroId: "photo-1544161515-4ab6ce6db874", g1: "photo-1612349317150-e413f6a5b16d", g2: "photo-1522337360788-8b13dee7a37e", g3: "photo-1469334031218-e382a71b716b" },
-  "fifth-avenue-aesthetics-naples": { heroId: "photo-1540555700478-4be289fbecef", g1: "photo-1576091160399-112ba8d25d1d", g2: "photo-1494790108377-be9c29b29330", g3: "photo-1506794778202-cad84cf45f1d" },
-  "bonita-springs-glow": { heroId: "photo-1556228578-0d85b1a4d571", g1: "photo-1516975080664-ed2fc6a32937", g2: "photo-1506794778202-cad84cf45f1d", g3: "photo-1580618672591-eb180b1a973f" },
   "vanderbilt-beach-med-spa": { heroId: "photo-1556228720-195a672e8a03", g1: "photo-1507003211169-0a1dd7228f2d", g2: "photo-1531746020798-e6953c6e8e04", g3: "photo-1629909613654-28e377c37b09" },
   "golden-gate-beauty-lab": { heroId: "photo-1516975080664-ed2fc6a32937", g1: "photo-1469334031218-e382a71b716b", g2: "photo-1560066984-138dadb4c035", g3: "photo-1560066984-138dadb4c035" },
   "boca-raton-medspa": { heroId: "photo-1507003211169-0a1dd7228f2d", g1: "photo-1506794778202-cad84cf45f1d", g2: "photo-1534528741775-53994a69daeb", g3: "photo-1584515933487-779824d29309" },

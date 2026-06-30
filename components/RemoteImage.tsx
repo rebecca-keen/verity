@@ -53,7 +53,9 @@ export function RemoteImage({
     );
   }
 
-  const imgClass = fill ? `absolute inset-0 h-full w-full object-cover ${className}` : className;
+  const imgClass = fill
+    ? `absolute inset-0 h-full w-full ${className.includes("object-") ? "" : "object-cover "}${className}`
+    : className;
 
   return (
     // Native img bypasses next/image remotePatterns — required for 195+ provider CDNs.

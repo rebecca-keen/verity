@@ -1462,21 +1462,21 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
-    "cienega-medical-west-hollywood": {
+          "cienega-medical-west-hollywood": {
     hero: "https://cienegaspa.com/wp-content/uploads/2024/01/cienega-med-spa-hero.jpg",
     gallery: [
 
     ],
     source: "Cienega Medical official website — services",
   },
-    "beverly-wilshire-aesthetics": {
+          "beverly-wilshire-aesthetics": {
     hero: "https://www.bwaesthetics.com/wp-content/uploads/2025/10/BWA-Total-Transformation-Supreme-Skin%E2%84%A2-scaled-e1776707415668.jpg",
     gallery: [
 
     ],
     source: "Beverly Wilshire Aesthetics official website — services",
   },
-    "la-jolla-cosmetic-med-spa": {
+          "la-jolla-cosmetic-med-spa": {
     hero: "https://www.ljcmedspa.com/content/themes/etna-interactive-site/images/banners-mobile/botox.jpg",
     logo: "https://www.ljcmedspa.com/content/themes/etna-interactive-site/images/logo-spa.png",
     gallery: [
@@ -1487,7 +1487,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "La Jolla Cosmetic Medical Spa official website — services",
   },
-    "ovation-med-spa-houston": {
+          "ovation-med-spa-houston": {
     hero: "https://www.ovationmedspa.com/wp-content/uploads/727a9e72-df47-4e4c-9294-03df883f177f.jpeg",
     logo: "https://www.ovationmedspa.com/wp-content/uploads/2022/11/cropped-Ovation-Favicon-192x192.png",
     gallery: [
@@ -1498,7 +1498,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Ovation Med Spa official website — services",
   },
-    "rejuve-med-spa-dallas": {
+          "rejuve-med-spa-dallas": {
     hero: "https://www.rejuvemedspa.com/storage/2026/04/ipl-photofacial-redness-dallas.webp",
     logo: "https://www.rejuvemedspa.com/storage/2026/01/Rejuve-Med-Spa-Favicon.webp",
     gallery: [
@@ -1509,7 +1509,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Rejuve Med-Spa & Wellness official website — services",
   },
-    "beaux-medspa-austin": {
+          "beaux-medspa-austin": {
     hero: "https://beauxmedspa.com/wp-content/uploads/2025/02/Biohacking-Aesthetic-Treatments-60x60.jpg",
     logo: "https://beauxmedspa.com/wp-content/uploads/2025/01/X-black-site-icon.png",
     gallery: [
@@ -1520,7 +1520,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "BEAUX MedSpa official website — services",
   },
-    "dripology-bowery-nyc": {
+          "dripology-bowery-nyc": {
     hero: "https://dripology.co/wp-content/uploads/2026/01/The-Drip-Menu-Transparent.webp",
     logo: "https://dripology.co/wp-content/uploads/2026/01/cropped-Dripology-Logo-192x192.png",
     gallery: [
@@ -1529,7 +1529,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Dripology official website — services",
   },
-    "skinly-aesthetics-nyc": {
+          "skinly-aesthetics-nyc": {
     hero: "https://skinlyaesthetics.com/wp-content/webp-express/webp-images/uploads/2022/12/Kybella-treatment-and-CoolSculpting-freezing-under-the-chin-fat-reduction.jpg.webp",
     logo: "https://skinlyaesthetics.com/wp-content/uploads/2024/02/cropped-favicon-1-192x192.jpg",
     gallery: [
@@ -1540,7 +1540,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skinly Aesthetics NYC official website — services",
   },
-    "natural-body-spa-brookhaven": {
+          "natural-body-spa-brookhaven": {
     hero: "https://www.naturalbody.com/wp-content/uploads/2025/04/NEW-Alpharetta-interior-at-Natural-Body-Spa-Med-Spa-in-Atlanta-GA_210x210-374x374.jpg",
     logo: "https://www.naturalbody.com/apple-touch-icon.png",
     gallery: [
@@ -1551,7 +1551,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Natural Body Spa + Med Spa official website — services",
   },
-    "ellemes-med-spa-atlanta": {
+          "ellemes-med-spa-atlanta": {
     hero: "https://i0.wp.com/ellemesmedspa.com/wp-content/uploads/2025/02/botox-treatment.png?w=640&quality=60&strip=all&ssl=1",
     logo: "https://i0.wp.com/ellemesmedspa.com/wp-content/uploads/2021/01/android-chrome-512x512-1.png?fit=192%2C192&#038;ssl=1",
     gallery: [
@@ -1562,7 +1562,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "ELLEMES Medical Spa official website — services",
   },
-    "zahav-medspa-scottsdale": {
+          "zahav-medspa-scottsdale": {
     hero: "https://zahavmedspa.com/wp-content/uploads/2024/05/B1DFB790-A8CA-418E-A3CC-1699403AC5B7-1.jpg",
     logo: "https://zahavmedspa.com/wp-content/uploads/2023/05/cropped-Zahav-Logo-10-192x192.jpg",
     gallery: [
@@ -1572,7 +1572,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Zahav Medspa official website — services",
   },
-    "collab-medspa-scottsdale": {
+          "collab-medspa-scottsdale": {
     hero: "https://collabmedspa.com/wp-content/uploads/2026/06/Best-Med-Spa-Location-Scottsdale-AZ.webp",
     logo: "https://collabmedspa.com/wp-content/uploads/2026/04/Untitled-design-2-300x300.png",
     gallery: [
@@ -1583,7 +1583,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Collab Medspa official website — services",
   },
-    "luxe-room-denver": {
+          "luxe-room-denver": {
     hero: "https://www.luxeroomcosmetic.com/wp-content/uploads/2022/08/incollage_save-323-1-scaled.jpg",
     logo: "https://www.luxeroomcosmetic.com/wp-content/uploads/2022/09/Logo.png",
     gallery: [
@@ -1594,7 +1594,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "The Luxe Room official website",
   },
-    "injector-5280-denver": {
+          "injector-5280-denver": {
     hero: "https://www.injector5280.com/wp-content/uploads/2025/08/skincare-services-240x300.jpg",
     logo: "https://www.injector5280.com/wp-content/uploads/2025/10/cropped-favicon-192x192.png",
     gallery: [
@@ -1605,7 +1605,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Injector 5280 official website — services",
   },
-    "pure-med-spa-chicago": {
+          "pure-med-spa-chicago": {
     hero: "https://www.puremedicalspa.com/cgi-sys/images/x.png",
     logo: "https://www.puremedicalspa.com/wp-content/uploads/fbrfg/apple-touch-icon.png",
     gallery: [
@@ -1613,7 +1613,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "PURE Medical Spa official website — services",
   },
-    "las-vegas-dermatology": {
+          "las-vegas-dermatology": {
     hero: "https://lasvegasdermatology.com/wp-content/uploads/2020/11/botox2-copy.jpg",
     logo: "https://lasvegasdermatology.com/wp-content/uploads/2023/02/image.jpg",
     gallery: [
@@ -1624,7 +1624,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Las Vegas Dermatology official website — services",
   },
-    "vio-med-spa-charlotte": {
+          "vio-med-spa-charlotte": {
     hero: "https://viomedspa.com/charlotte/wp-content/uploads/2026/03/Hero-micro.jpg",
     logo: "https://viomedspa.com/charlotte/wp-content/uploads/2026/04/512x512.png",
     gallery: [
@@ -1635,14 +1635,14 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "VIO Med Spa Charlotte official website — services",
   },
-    "slk-aesthetic-medicine-nashville": {
+          "slk-aesthetic-medicine-nashville": {
     hero: "https://slkclinic.com/wp-content/uploads/2022/10/slk_white.png",
     gallery: [
 
     ],
     source: "SLK Aesthetic Medicine official website — services",
   },
-    "61five-health-wellness-nashville": {
+          "61five-health-wellness-nashville": {
     hero: "https://61five.com/wp-content/uploads/2023/01/IMG_0001.jpg",
     logo: "https://61five.com/wp-content/uploads/2021/05/61Five-Nashville-300x300.png",
     gallery: [
@@ -1652,7 +1652,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "61Five Health & Wellness official website",
   },
-  "alastin-skincare-medspa-beverly-hills": {
+        "alastin-skincare-medspa-beverly-hills": {
     hero: "https://alastin.com/cdn/shop/files/Hydratint_Shadow.png?v=1758537886&amp;width=900",
     logo: "https://alastin.com/cdn/shop/files/Alastin_Logo_Full_bG_XL_Dark_Purple_RGB_navbar_small.svg?v=1738173020",
     gallery: [
@@ -1663,7 +1663,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Alastin Skincare Med Spa official website — services",
   },
-  "skinperfect-medical-sherman-oaks": {
+        "skinperfect-medical-sherman-oaks": {
     hero: "https://skinperfectmedical.com/wp-content/themes/skinperfectmedical_com/static/images/location-brea-2.jpeg",
     logo: "https://skinperfectmedical.com/wp-content/themes/skinperfectmedical_com/static/images/skinperfect_20y_logo.png",
     gallery: [
@@ -1674,7 +1674,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Perfect Medical official website — services",
   },
-  "skin-by-lovely-los-angeles": {
+        "skin-by-lovely-los-angeles": {
     hero: "https://www.skinbylovely.com/wp-content/uploads/2024/03/menu-image-all-locations.jpg",
     logo: "https://www.skinbylovely.com/favicons/apple-touch-icon.png",
     gallery: [
@@ -1685,7 +1685,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin by Lovely official website — services",
   },
-  "skin-deep-med-spa-santa-monica": {
+        "skin-deep-med-spa-santa-monica": {
     hero: "https://www.skindeepmedspa.com/wp-content/uploads/2021/02/hero-banner.jpg",
     logo: "https://www.skindeepmedspa.com/wp-content/uploads/2021/02/favicon.png",
     gallery: [
@@ -1696,7 +1696,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Deep Med Spa official website — services",
   },
-  "novaskin-medspa-miami-import": {
+        "novaskin-medspa-miami-import": {
     hero: "https://novaskinmedspa.com/wp-content/uploads/2025/07/laser-treatments-600x400-1.jpg",
     logo: "https://novaskinmedspa.com/wp-content/uploads/2026/02/logo-new.svg",
     gallery: [
@@ -1707,7 +1707,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "NovaSkin Med Spa official website — services",
   },
-  "dermatology-cosmetic-laser-brentwood": {
+        "dermatology-cosmetic-laser-brentwood": {
     hero: "https://www.laskinmd.com/wp-content/uploads/2019/08/laskinmd-tca-cross-treatment-500x360.jpg",
     gallery: [
       "https://www.laskinmd.com/wp-content/uploads/2018/10/coolsculpting-studio-city-500x360.jpg",
@@ -1717,7 +1717,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Dermatology & Cosmetic Laser Center official website — services",
   },
-  "sente-bella-medspa-downtown-sd": {
+        "sente-bella-medspa-downtown-sd": {
     hero: "https://sentebellaspa.com/wp-content/uploads/2022/11/MedSpa1.webp",
     gallery: [
       "https://sentebellaspa.com/wp-content/uploads/2022/11/Spa1.webp",
@@ -1727,7 +1727,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Sente Bella MedSpa official website — services",
   },
-  "laser-clinique-san-diego": {
+        "laser-clinique-san-diego": {
     hero: "https://www.datocms-assets.com/44663/1616178683-homepage-injectable.jpg?auto=format,compress&w=500",
     logo: "https://www.datocms-assets.com/44663/1616451788-logo3.png?auto=format,compress&w=100",
     gallery: [
@@ -1738,7 +1738,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Laser Clinique official website — services",
   },
-  "persona-med-spa-houston": {
+        "persona-med-spa-houston": {
     hero: "https://cdn.prod.website-files.com/63cc46fa156c324ab6d90ce5/659893d1f4323adcd2beda68_procedure_1024.jpg",
     logo: "https://cdn.prod.website-files.com/63cc46fa156c324ab6d90ce5/65822101f4316cedb7340ef9_llogo-tertiary.svg",
     gallery: [
@@ -1749,7 +1749,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Persona Med Spa official website — services",
   },
-  "skinspirations-houston": {
+        "skinspirations-houston": {
     hero: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/6a037510-1836-4310-a2c9-139933db016b/hero-idx-1225.jpg",
     logo: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/caaaaab5-49c7-4349-a887-f117fa50682c/ss-logo-02dk.png?format=1500w",
     gallery: [
@@ -1760,7 +1760,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skinspirations Houston official website — services",
   },
-  "skinspirations-dallas": {
+        "skinspirations-dallas": {
     hero: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/a81d5a40-e6c6-459b-a7c4-80804f33a426/hero-services-01.jpg",
     logo: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/caaaaab5-49c7-4349-a887-f117fa50682c/ss-logo-02dk.png?format=1500w",
     gallery: [
@@ -1771,7 +1771,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skinspirations Dallas official website — services",
   },
-  "juvia-med-spa-dallas": {
+        "juvia-med-spa-dallas": {
     hero: "https://cdn.prod.website-files.com/67bca5d7af7688bd3bd390f9/67fe609cf8365a4a79617e29_DSC05356.JPG",
     logo: "https://cdn.prod.website-files.com/67bca5d7af7688bd3bd390f9/67bde86e5ee879fdbb826247_Webclip.png",
     gallery: [
@@ -1782,7 +1782,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Juvia Med Spa official website — services",
   },
-  "viva-day-spa-dallas": {
+        "viva-day-spa-dallas": {
     hero: "https://www.vivadayspa.com/wp-content/uploads/2023/12/Viva-Day-Spa_New-Years-Resolutions_2000x635.jpg",
     logo: "https://www.vivadayspa.com/apple-touch-icon.png",
     gallery: [
@@ -1790,7 +1790,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Viva Day Spa + Med Spa Dallas official website — services",
   },
-  "skinspirit-austin": {
+        "skinspirit-austin": {
     hero: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc938_treatments-hero.png",
     logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6c4_logo-long.svg",
     gallery: [
@@ -1801,7 +1801,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "SkinSpirit Austin official website — services",
   },
-  "viva-day-spa-austin": {
+        "viva-day-spa-austin": {
     hero: "https://www.vivadayspa.com/wp-content/uploads/2023/12/Viva-Day-Spa_New-Years-Resolutions_2000x635.jpg",
     logo: "https://www.vivadayspa.com/apple-touch-icon.png",
     gallery: [
@@ -1809,7 +1809,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Viva Day Spa + Med Spa Austin official website — services",
   },
-  "radiant-beauty-health-manhattan": {
+        "radiant-beauty-health-manhattan": {
     hero: "https://static.wixstatic.com/media/d2dccf_23d598c3e72a407a9b0fd2f8c2e0e3f5~mv2.jpg/v1/crop/x_0,y_534,w_1280,h_1279/fill/w_359,h_359,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0580%20(1).jpg",
     gallery: [
       "https://static.wixstatic.com/media/d2dccf_83f76a0858f94472aad68b0d0c14f688%7Emv2.png/v1/fit/w_2500,h_1330,al_c/d2dccf_83f76a0858f94472aad68b0d0c14f688%7Emv2.png",
@@ -1819,7 +1819,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Radiant Beauty & Health official website — services",
   },
-  "eden-med-spa-downtown-nyc": {
+        "eden-med-spa-downtown-nyc": {
     hero: "https://edenmedspanyc.com/wp-content/uploads/2024/04/front-lobby.jpg",
     logo: "https://edenmedspanyc.com/wp-content/uploads/2024/04/eden-logo.png",
     gallery: [
@@ -1830,14 +1830,14 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Eden Med Spa official website — services",
   },
-  "dermalogix-med-spa-houston": {
+        "dermalogix-med-spa-houston": {
     hero: "https://htxmdspa.com/wp-content/uploads/2026/02/MedSpa_Post_Template-1.jpg",
     gallery: [
 
     ],
     source: "Dermalogix Med Spa official website — services",
   },
-  "manhattan-aesthetics-36th-st": {
+        "manhattan-aesthetics-36th-st": {
     hero: "https://www.manhattan-aesthetics.com/wp-content/themes/manhattan-aesthetics-2024/img/body-treatments.jpg",
     gallery: [
       "https://www.manhattan-aesthetics.com/wp-content/themes/manhattan-aesthetics-2024/img/face-treatments.jpg",
@@ -1847,7 +1847,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Manhattan Aesthetics official website — services",
   },
-  "manhattan-laser-spa-ues": {
+        "manhattan-laser-spa-ues": {
     hero: "https://manhattan-laser.com/wp-content/uploads/2025/02/Anti-Wrinkle-Injections-Anti-Wrinkle-Treatment-for-Wrinkles-Can-Make-You-Happier-Blog-Image.jpg",
     logo: "https://www.manhattanlaserspa.com/mlsfavicon.png",
     gallery: [
@@ -1858,7 +1858,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Manhattan Laser Spa official website — services",
   },
-  "vital-medical-care-aesthetics-li": {
+        "vital-medical-care-aesthetics-li": {
     hero: "https://vmaesthetics.com/wp-content/uploads/2021/08/Doc-best.jpeg",
     gallery: [
       "https://vmaesthetics.com/wp-content/uploads/2024/03/481235788_932213962326456_1976091433915229598_n.jpg",
@@ -1866,7 +1866,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Vital Medical Care & Aesthetics official website — services",
   },
-  "tenth-avenue-aesthetics-li": {
+        "tenth-avenue-aesthetics-li": {
     hero: "https://tenthavenueaesthetics.com/wp-content/uploads/2024/05/Wrinkle-Relaxers-services-in-east-northport-islip-ny-by-Tenth-Avenue.webp",
     logo: "https://tenthavenueaesthetics.com/wp-content/uploads/2024/04/tenth-avenue-aesthetics-favicon-img-in-east-northport-ny-and-islip-ny.png",
     gallery: [
@@ -1877,7 +1877,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Tenth Avenue Aesthetics official website — services",
   },
-  "inara-med-spa-long-island": {
+        "inara-med-spa-long-island": {
     hero: "https://inaramedspa.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-07-19-at-09.36.23_b55f5e9d.jpg",
     logo: "https://inaramedspa.com/wp-content/uploads/2024/11/inara-medical-spa-300x300.png",
     gallery: [
@@ -1886,7 +1886,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Inara Med Spa official website — services",
   },
-  "viva-md-atlanta": {
+        "viva-md-atlanta": {
     hero: "https://static.wixstatic.com/media/af61e4_8d42f150ac404fd1b9f92992ce845546~mv2.png/v1/crop/x_0,y_1,w_635,h_798/fill/w_328,h_412,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/skincare-woman-and-needle-for-botox-cosm.png",
     logo: "https://static.wixstatic.com/media/42d1cc_88991e53b1cd4f049a6e6e8d5ffcd082%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/42d1cc_88991e53b1cd4f049a6e6e8d5ffcd082%7Emv2.jpg",
     gallery: [
@@ -1897,7 +1897,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "VIVA MD official website — services",
   },
-  "the-k-spa-atlanta": {
+        "the-k-spa-atlanta": {
     hero: "https://www.thekspa.com/wp-content/uploads/2018/03/botox-wrinkle-treatments.jpg",
     logo: "https://www.thekspa.com/wp-content/uploads/2022/01/favicon-300x300.png",
     gallery: [
@@ -1908,7 +1908,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "The K Spa official website — services",
   },
-  "bella-medspa-atlanta": {
+        "bella-medspa-atlanta": {
     hero: "https://bellamedspa.com/storage/2025/09/allergannumber1-In-Clarksville-TN.webp",
     logo: "https://bellamedspa.com/storage/2025/09/Favicon.png",
     gallery: [
@@ -1919,7 +1919,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Bella Medspa official website — services",
   },
-  "radiance-med-spa-atlanta": {
+        "radiance-med-spa-atlanta": {
     hero: "https://www.radiancemedspa.com/wp-content/uploads/2025/08/bbl-hero-for-men-belleairbluffs-fl-card.jpg",
     logo: "https://www.radiancemedspa.com/wp-content/uploads/2025/01/cropped-cropped-small-logo-4-radiance-medspa-in-Belleair-Bluff-Florida-e1685048412501-192x192.webp",
     gallery: [
@@ -1930,7 +1930,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Radiance Med Spa official website — services",
   },
-  "skinceuticals-skinlab-atlanta": {
+        "skinceuticals-skinlab-atlanta": {
     hero: "https://www.skinatl.com/wp-content/uploads/2024/01/SL-ATL-Injectable-treatment-op.jpg",
     gallery: [
       "https://www.skinatl.com/wp-content/uploads/2024/02/sig-facials-and-peels-scaled-e1708031060663-1.jpg",
@@ -1940,7 +1940,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "SkinCeuticals SkinLab Atlanta official website — services",
   },
-  "scottsdale-med-spa": {
+        "scottsdale-med-spa": {
     hero: "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/07/DSC03078-scaled-1.webp?fit=800%2C534&amp;ssl=1",
     logo: "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/10/cropped-Logo.webp?fit=192%2C192&#038;ssl=1",
     gallery: [
@@ -1951,7 +1951,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Scottsdale Med Spa official website — services",
   },
-  "look-lab-med-spa-phoenix": {
+        "look-lab-med-spa-phoenix": {
     hero: "https://looklab.com/wp-content/uploads/2026/01/Look-Lab-Provider-Lifestyle-Exterior-Location-1-8694.jpg",
     logo: "https://looklab.com/wp-content/uploads/2025/11/cropped-Favicon-192x192.png",
     gallery: [
@@ -1962,7 +1962,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Look Lab Med Spa official website — services",
   },
-  "alchemy-med-bar-scottsdale": {
+        "alchemy-med-bar-scottsdale": {
     hero: "https://images.squarespace-cdn.com/content/v1/69c9b6912e55d654085fdf4c/44be48c5-6ff6-4a72-b0fc-cdeafd634514/DSC_3609-2.jpg",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/69c9b6912e55d654085fdf4c/99ee75cd-44b0-40c2-a579-1996734508e2/Blog+Banner+for+Website+Content+%281%29.png",
@@ -1972,7 +1972,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Alchemy Med Bar & Medical Spa official website — services",
   },
-  "north-scottsdale-med-spa": {
+        "north-scottsdale-med-spa": {
     hero: "https://images.squarespace-cdn.com/content/v1/6835f653958ab2782be44660/aeb84c30-8739-4fc8-9c53-b096634a9623/Medspa+in+Phoenix%2C+AZ%2C+85054+%7C+Laser+Treatments+Near+Me.png",
     logo: "https://images.squarespace-cdn.com/content/v1/6835f653958ab2782be44660/065f7905-f697-433b-92b8-84b0a89bd67a/North+Scottsdale+Med+Spa+Logo.png",
     gallery: [
@@ -1983,7 +1983,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "North Scottsdale Med Spa official website — services",
   },
-  "zona-med-spa-scottsdale": {
+        "zona-med-spa-scottsdale": {
     hero: "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/07/DSC03078-scaled-1.webp?fit=800%2C534&amp;ssl=1",
     logo: "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/10/cropped-Logo.webp?fit=192%2C192&#038;ssl=1",
     gallery: [
@@ -1994,7 +1994,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Zona Med Spa official website — services",
   },
-  "denver-dream-medspa": {
+        "denver-dream-medspa": {
     hero: "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1725720289071-Q10Y4S2C1E9V80F2J241/Academy+prompts+photo+%286%29.png",
     logo: "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/fb1fd9ec-7872-4b13-a8ba-5c35e584e36c/SITE+Dream+Medspa+Logo+%282%29.webp?format=1500w",
     gallery: [
@@ -2005,17 +2005,15 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Denver Dream Medspa official website — services",
   },
-  "four-seasons-med-spa-austin": {
-    hero: "https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-176,3894-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/AUS/AUS_973_original.jpg",
+        "four-seasons-med-spa-austin": {
+    hero: "https://img1.wsimg.com/isteam/ip/ff1625fb-a69f-4041-b5e2-bb72a863aebf/four%20saesons%20png.png",
+    logo: "https://img1.wsimg.com/isteam/ip/ff1625fb-a69f-4041-b5e2-bb72a863aebf/favicon/021fc623-1488-42dd-bd96-f5a4c204e429.png/:/rs=w:180,h:180,m",
     gallery: [
-      "https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-264,1658-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/AUS/AUS_977_original.jpg",
-      "https://www.fourseasons.com/alt/img-opt/~70.880.0,0000-0,0000-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/BAH/BAH_1851_original.jpg",
-      "https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-349,5857-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/AUS/AUS_1977_original.jpg",
-      "https://www.fourseasons.com/alt/img-opt/~75.701.1306,7693-0,0000-1412,2500-1883,0000/publish/content/dam/fourseasons/images/web/AUS/AUS_1095_original.jpg",
+
     ],
     source: "Four Seasons Med Spa Austin official website — services",
   },
-  "gleam-med-spa-denver": {
+        "gleam-med-spa-denver": {
     hero: "https://gleammedspa.com/wp-content/uploads/2024/09/Gleam-Medical-Spa-Potenza-1217.jpg",
     logo: "https://gleammedspa.com/wp-content/uploads/2024/08/gleam-medspa_favicon.png",
     gallery: [
@@ -2023,7 +2021,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Gleam Med Spa official website — services",
   },
-  "goldcoast-medspa-chicago": {
+        "goldcoast-medspa-chicago": {
     hero: "https://www.goldcoastmedspa.com/wp-content/uploads/2023/11/service-2.png",
     logo: "https://www.goldcoastmedspa.com/wp-content/uploads/2023/11/cropped-favicon-192x192.png",
     gallery: [
@@ -2034,14 +2032,14 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "GOLDCOAST medspa official website — services",
   },
-  "river-north-wellness-med-spa": {
+        "river-north-wellness-med-spa": {
     hero: "https://i0.wp.com/box2308.temp.domains/~mikenowa/rivernorthwellness/wp/wp-content/uploads/2021/07/Bonnywelcomepage-1024x751.png?resize=750%2C550",
     gallery: [
 
     ],
     source: "River North Wellness and Med Spa official website — services",
   },
-  "kalon-laser-aesthetics-denver": {
+        "kalon-laser-aesthetics-denver": {
     hero: "https://www.kalonlaser.com/_static_/feature/cosmetic-services.jpg",
     logo: "https://www.kalonlaser.com/_static_/logos/logo.png",
     gallery: [
@@ -2052,7 +2050,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Kalon Laser Aesthetics official website — services",
   },
-  "esse-medspa-denver": {
+        "esse-medspa-denver": {
     hero: "https://static.wixstatic.com/media/d27ab1_4a6e581117fd4a03bda14a44a8a77725%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/d27ab1_4a6e581117fd4a03bda14a44a8a77725%7Emv2.jpg",
     logo: "https://static.wixstatic.com/media/d27ab1_f98ca29fa70d456690fc6733b1a50c8f%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/d27ab1_f98ca29fa70d456690fc6733b1a50c8f%7Emv2.png",
     gallery: [
@@ -2060,7 +2058,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Esse Medspa official website — services",
   },
-  "old-town-med-spa-chicago": {
+        "old-town-med-spa-chicago": {
     hero: "https://www.oldtownmedspa.com/wp-content/uploads/2024/04/welcome-img@1.2x.jpg",
     logo: "https://www.oldtownmedspa.com/wp-content/uploads/2022/05/cropped-logo-pair-300x300.png",
     gallery: [
@@ -2071,7 +2069,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Old Town Med Spa official website — services",
   },
-  "simply-radiant-med-spa-las-vegas": {
+        "simply-radiant-med-spa-las-vegas": {
     hero: "https://simplyradiant-lv.com/wp-content/uploads/services-cosmetic.jpg",
     gallery: [
       "https://simplyradiant-lv.com/wp-content/uploads/services-medical.jpg",
@@ -2081,7 +2079,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Simply Radiant Med Spa official website — services",
   },
-  "skinovatio-ravenswood-chicago": {
+        "skinovatio-ravenswood-chicago": {
     hero: "https://www.skinovatio.com/wp-content/uploads/2025/02/Chemical-Peel.png",
     logo: "https://www.skinovatio.com/wp-content/uploads/2025/01/favicon.png",
     gallery: [
@@ -2092,7 +2090,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skinovatio Medical Spa official website — services",
   },
-  "aesthetics-lab-las-vegas": {
+        "aesthetics-lab-las-vegas": {
     hero: "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508222950753-JBY2A3976XTX7GSJ1CVI/_N4A8789.jpg.jpeg",
     logo: "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1504727354064-2JZ2W1XXY6YGFOKX7JLA/Logo+copy.png",
     gallery: [
@@ -2101,7 +2099,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "The Aesthetics Lab official website — services",
   },
-  "lume-med-spa-lakeview": {
+        "lume-med-spa-lakeview": {
     hero: "https://lume-wellness.com/wp-content/uploads/2025/01/EmFace-RF-1new.jpg",
     gallery: [
       "https://lume-wellness.com/wp-content/uploads/2025/01/rf-microneedling.webp",
@@ -2111,7 +2109,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Lume Med Spa Lakeview official website — services",
   },
-  "skin-society-las-vegas": {
+        "skin-society-las-vegas": {
     hero: "https://cdn.prod.website-files.com/65a6cb75d160d3528039e306/65a6d92c573f785b5445d8d1_Med%20Spa%20In%20Las%20Vegas%20%20Skin%20Las%20Vegas%20Med%20Spa.webp",
     gallery: [
       "https://cdn.prod.website-files.com/65a6cb75d160d3528039e306/6934b6ef7471cc9649c995cc_Skin%20Las%20Vegas%20Med%20Spa%20-%20Best%20Med%20Spa%20Near%20you.avif",
@@ -2121,7 +2119,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Society Las Vegas official website — services",
   },
-  "bluepoint-medical-spa-las-vegas": {
+        "bluepoint-medical-spa-las-vegas": {
     hero: "https://bluepointmedicalspa.com/wp-content/uploads/2026/03/Frame-1-12.png",
     gallery: [
       "https://bluepointmedicalspa.com/wp-content/uploads/2025/12/Vector-1.png",
@@ -2131,7 +2129,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "bluepoint medical spa official website — services",
   },
-  "prestige-med-spa-charlotte": {
+        "prestige-med-spa-charlotte": {
     hero: "https://prestigemedicalspacharlotte.com/wp-content/uploads/2026/04/spa-salon-CGTPC6A.jpg",
     logo: "https://prestigemedicalspacharlotte.com/wp-content/uploads/2026/06/cropped-1533691-192x192.webp",
     gallery: [
@@ -2142,7 +2140,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Prestige Med Spa and Wellness official website — services",
   },
-  "bodylase-charlotte": {
+        "bodylase-charlotte": {
     hero: "https://getbodylase.com/wp-content/uploads/2026/03/Bodylase-Service_RHA-1.webp",
     gallery: [
       "https://getbodylase.com/wp-content/uploads/2026/03/Top-10-Med-Spa-service-providers.webp",
@@ -2152,7 +2150,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "BodyLase Med Spa official website — services",
   },
-  "blue-water-spa-raleigh": {
+        "blue-water-spa-raleigh": {
     hero: "https://www.bluewaterspa.com/images/injectable_bwnb.jpg",
     logo: "https://www.bluewaterspa.com/wp-content/uploads/2018/08/cropped-hdbtTGD2_400x400-192x192.jpg",
     gallery: [
@@ -2163,7 +2161,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Blue Water Spa official website — services",
   },
-  "elase-med-spa-raleigh": {
+        "elase-med-spa-raleigh": {
     hero: "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00010-1-160x107.jpg",
     gallery: [
       "https://elase.com/wp-content/uploads/2024/02/spa_shoot3546-960x640.jpg",
@@ -2173,7 +2171,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Elase Med Spa official website — services",
   },
-  "nashville-skin-company": {
+        "nashville-skin-company": {
     hero: "https://cdn.prod.website-files.com/678e714af48f130856f60309/68caf43ee32af0f96aaa0987_NASHVILLE%E2%80%99S%20TOP%20MED%20SPA.avif",
     logo: "https://cdn.prod.website-files.com/678e714af48f130856f60309/68e6c1e6c61313c29bee6581_pixel%20webclip%20website.jpg",
     gallery: [
@@ -2184,7 +2182,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Nashville Skin Company official website — services",
   },
-  "ageless-remedies-raleigh": {
+        "ageless-remedies-raleigh": {
     hero: "https://www.datocms-assets.com/161788/1750958706-service-card_injectables.jpg?auto=format,compress&w=1226",
     logo: "https://www.datocms-assets.com/161788/1749087543-logo_horizontal.svg",
     gallery: [
@@ -2195,7 +2193,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Ageless Remedies Med Spa official website — services",
   },
-  "evolve-medspa-nashville": {
+        "evolve-medspa-nashville": {
     hero: "https://evolvemedspa.com/wp-content/uploads/2025/06/fall-deals-hero.jpg",
     logo: "https://evolvemedspa.com/wp-content/uploads/2024/05/evolve-med-spa-icon-300x300.png",
     gallery: [
@@ -2206,7 +2204,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Evolve Medspa official website — services",
   },
-  "canvas-skin-nashville": {
+        "canvas-skin-nashville": {
     hero: "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/1777037922407-NPPBI948N1I0I7VNXV01/image-asset.jpeg",
     logo: "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/d1f6dec2-7722-4909-a557-78992c8fab42/cs_logo__primary_stone.png?format=1500w",
     gallery: [
@@ -2217,7 +2215,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Canvas Skin official website — services",
   },
-  "skin-pharm-nashville": {
+        "skin-pharm-nashville": {
     hero: "https://skinpharm.com/cdn/shop/files/Botox_Mobile_e04898ca-2633-4a4e-8b92-4fa5e9e457fc_1600x.png?v=1733766951",
     logo: "https://skinpharm.com/cdn/shop/files/apple-touch-icon_228x228.png?v=1621530082",
     gallery: [
@@ -2228,7 +2226,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Pharm official website — services",
   },
-  "flawless-medspa-las-vegas": {
+        "flawless-medspa-las-vegas": {
     hero: "https://www.flawlessmedspas.com/wp-content/uploads/2022/11/services-offer-desktop-1.jpg",
     gallery: [
       "https://www.flawlessmedspas.com/wp-content/uploads/2025/05/header-img-01-desktop-1.jpg",
@@ -2237,6 +2235,13 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
       "https://www.flawlessmedspas.com/wp-content/uploads/2025/07/header-img-1-mobile.jpg",
     ],
     source: "Flawless Medspa Las Vegas official website — services",
+  },
+      "nsi-wellness-aesthetics-nashville": {
+    hero: "https://www.discovermedspa.com/opengraph-image",
+    gallery: [
+
+    ],
+    source: "NSI Wellness | Aesthetics official website — services",
   },
 };
 

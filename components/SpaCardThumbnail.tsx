@@ -11,6 +11,29 @@ function isGenericStock(url: string) {
   );
 }
 
+function SpaPlaceholderIcon() {
+  return (
+    <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-stone/10 bg-white/80 shadow-sm">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="h-8 w-8 text-stone/50"
+        aria-hidden
+      >
+        <path d="M3 21h18" />
+        <path d="M5 21V7l7-4 7 4v14" />
+        <path d="M9 21v-6h6v6" />
+        <path d="M9 9h.01" />
+        <path d="M15 9h.01" />
+      </svg>
+    </div>
+  );
+}
+
 export function SpaCardThumbnail({ spa }: { spa: Spa }) {
   const [logoFailed, setLogoFailed] = useState(false);
   const [heroFailed, setHeroFailed] = useState(false);
@@ -19,15 +42,17 @@ export function SpaCardThumbnail({ spa }: { spa: Spa }) {
 
   if (spa.logo && !logoFailed) {
     return (
-      <div className="flex h-full items-center justify-center bg-cream p-6">
-        <RemoteImage
-          src={spa.logo}
-          alt={`${spa.name} logo`}
-          fill
-          className="object-contain p-4"
-          sizes="(max-width: 768px) 100vw, 33vw"
-          onFailed={() => setLogoFailed(true)}
-        />
+      <div className="flex h-full items-center justify-center bg-gradient-to-b from-cream to-white p-6">
+        <div className="relative h-[70%] w-[85%] max-w-[280px]">
+          <RemoteImage
+            src={spa.logo}
+            alt={`${spa.name} logo`}
+            fill
+            className="object-contain drop-shadow-sm"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            onFailed={() => setLogoFailed(true)}
+          />
+        </div>
       </div>
     );
   }
@@ -45,13 +70,9 @@ export function SpaCardThumbnail({ spa }: { spa: Spa }) {
     );
   }
 
-  const initial = spa.name.trim().charAt(0).toUpperCase() || "?";
-
   return (
-    <div className="flex h-full items-center justify-center bg-cream">
-      <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-stone/10 bg-white shadow-sm">
-        <span className="font-serif text-3xl text-charcoal/70">{initial}</span>
-      </div>
+    <div className="flex h-full items-center justify-center bg-gradient-to-b from-cream to-stone/5">
+      <SpaPlaceholderIcon />
     </div>
   );
 }
