@@ -18,9 +18,7 @@ import type { ProductOrigin } from "@/lib/types";
 const originFilters: { value: ProductOrigin | "all"; label: string }[] = [
   { value: "all", label: "All" },
   { value: "US", label: "American" },
-  { value: "KR", label: "Korean" },
   { value: "FR", label: "French" },
-  { value: "IT", label: "Italian" },
 ];
 
 export default async function ShopPage({
@@ -47,7 +45,7 @@ export default async function ShopPage({
       <h1 className="mt-2 font-serif text-4xl text-charcoal">Recommended skincare</h1>
       <p className="mt-3 max-w-2xl text-stone">
         Luxury derm-brand products curated for post-procedure care, daily SPF, and clinical anti-aging
-        — the same categories verified med spas list on Verity.
+        — the same categories listed med spas reference on Verity.
       </p>
       <p className="mt-2 text-sm text-stone/80">
         As an Amazon Associate, Verity earns from qualifying purchases. Prices and availability on

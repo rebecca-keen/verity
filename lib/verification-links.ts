@@ -73,3 +73,13 @@ export function getStateBoardName(state: string): string {
   const code = state.trim().toUpperCase();
   return STATE_BOARDS[code]?.name ?? DEFAULT_BOARD.name;
 }
+
+/** Human-readable certification line for a state's licensing authority. */
+export function getStateBoardCertificationLabel(state: string): string {
+  return `${getStateBoardName(state)} — user verification recommended`;
+}
+
+/** Data source line referencing the state board lookup. */
+export function getStateBoardDataSourceLabel(state: string): string {
+  return `${getStateBoardName(state)} — verification recommended`;
+}

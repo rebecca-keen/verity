@@ -1,11 +1,14 @@
 import Link from "next/link";
 import type { Spa } from "@/lib/types";
+import { formatGoogleRating } from "@/lib/spa-display";
 import { TrustBadge } from "./TrustBadge";
 import { TreatmentCategories } from "./TreatmentCategories";
 import { ProviderTypeBadge } from "./ProviderTypeBadge";
 import { SpaCardThumbnail } from "./SpaCardThumbnail";
 
 export function SpaCard({ spa }: { spa: Spa }) {
+  const googleRating = formatGoogleRating(spa);
+
   return (
     <Link
       href={`/providers/${spa.slug}`}
@@ -15,7 +18,7 @@ export function SpaCard({ spa }: { spa: Spa }) {
         <SpaCardThumbnail spa={spa} />
       </div>
       <div className="p-5">
-        <TrustBadge verified={spa.verified} />
+        <TrustBadge listingStatus={spa.listingStatus} premierPartner={spa.premierPartner} />
         <div className="mt-3">
           <ProviderTypeBadge type={spa.providerType} />
         </div>
@@ -29,8 +32,14 @@ export function SpaCard({ spa }: { spa: Spa }) {
           <TreatmentCategories categories={spa.treatmentCategories} />
         </div>
         <div className="mt-4 flex items-center justify-between text-sm">
-          <span className="text-gold">★ {spa.rating}</span>
-          <span className="text-stone">{spa.reviewCount} reviews</span>
+          {googleRating ? (
+            <span className="text-gold">{googleRating}</span>
+          ) : (
+            <span className="text-gold">★ {spa.rating}</span>
+          )}
+          {googleRating && spa.reviewCount > 0 && (
+            <span className="text-stone">{spa.reviewCount} Google reviews</span>
+          )}
           <span className="text-stone">{spa.priceRange}</span>
         </div>
       </div>

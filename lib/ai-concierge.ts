@@ -247,9 +247,12 @@ function scoreSpa(
   let score = 0;
   const reasons: string[] = [];
 
-  if (spa.verified) {
-    score += 15;
-    reasons.push("Verified license & medical director on file");
+  if (spa.listingStatus === "verified-partner") {
+    score += 10;
+    reasons.push("Verified Verity partner");
+  } else if (spa.listingStatus === "listed") {
+    score += 5;
+    reasons.push("Listed in Verity directory");
   }
 
   for (const treatment of wantedTreatments) {
@@ -415,7 +418,7 @@ export function matchSpas(query: string, filters: ConciergeFilters = {}): Concie
       spaSlug: spa.slug,
       spaName: spa.name,
       reason: `Verified provider in ${spa.city}`,
-      matchScore: Math.min(99, spa.rating * 10 + (spa.verified ? 10 : 0)),
+      matchScore: Math.min(99, spa.rating * 10 + (spa.listingStatus === "verified-partner" ? 10 : 0)),
     }))
     .sort((a, b) => b.matchScore - a.matchScore)
     .slice(0, RESULT_LIMIT);

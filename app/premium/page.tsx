@@ -13,8 +13,8 @@ export default function PremiumPage() {
       <p className="text-xs uppercase tracking-widest text-gold">For consumers</p>
       <h1 className="mt-2 font-serif text-4xl text-charcoal">Verity Premium</h1>
       <p className="mt-4 text-lg text-stone">
-        Skip the research. Get priority access to the best verified aesthetics clinics, med spas, and
-        dermatology practices nationwide.
+        Skip the research. Get priority access to listed aesthetics clinics, med spas, and
+        dermatology practices as we expand nationwide.
       </p>
 
       <div className="mt-12 grid gap-8 md:grid-cols-2">
@@ -22,7 +22,7 @@ export default function PremiumPage() {
           <p className="text-xs uppercase tracking-widest text-stone">Free</p>
           <p className="mt-2 font-serif text-3xl text-charcoal">$0</p>
           <ul className="mt-6 space-y-3 text-sm text-stone">
-            <li>✓ Browse all {spas.length} verified providers nationwide</li>
+            <li>✓ Browse all {spas.length} listed providers</li>
             <li>✓ Read reviews & product info</li>
             <li>✓ Contact providers directly (call, website, Instagram)</li>
             <li>✓ Basic AI Concierge</li>
@@ -39,7 +39,7 @@ export default function PremiumPage() {
             <li>✓ Unlimited AI Concierge sessions</li>
             <li>✓ Save favorite providers & products</li>
             <li>✓ Price alerts & new provider notifications</li>
-            <li>✓ Trust Score deep dives on products</li>
+            <li>✓ Editor&apos;s pick product highlights</li>
             <li>✓ Early access to new listings in your city</li>
           </ul>
           <button

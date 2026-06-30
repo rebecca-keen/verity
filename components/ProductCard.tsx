@@ -87,10 +87,13 @@ export function ProductCard({
           </a>
         )}
         <div className="mt-3 flex items-center justify-between">
-          <div>
-            <p className="text-xs text-stone">Trust Score</p>
-            <p className="text-lg font-semibold text-sage">{product.trustScore}</p>
-          </div>
+          {product.recommended ? (
+            <span className="rounded-full bg-sage/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-sage">
+              Editor&apos;s pick
+            </span>
+          ) : (
+            <span />
+          )}
           <div className="text-right">
             <p className="text-gold">★ {product.rating}</p>
             <p className="text-xs text-stone">{product.reviewCount} reviews</p>

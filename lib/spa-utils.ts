@@ -1,4 +1,5 @@
 import type { Metro, ProviderType, Spa, Treatment, TreatmentCategory, USStateCode } from "./types";
+import { getStateBoardName } from "./verification-links";
 
 export type { USStateCode };
 
@@ -354,13 +355,15 @@ export function parseMedicalDirector(medicalDirector: string): {
 }
 
 /** @deprecated Use getHonestCertifications from spa-trust.ts */
-export function defaultCertifications(_premierPartner: boolean, _featuredPremium: boolean): string[] {
-  return ["Listing sourced from public records", "Medical director — confirm with practice"];
+export function defaultCertifications(state: string, _premierPartner: boolean, _featuredPremium: boolean): string[] {
+  const boardName = getStateBoardName(state);
+  return ["Listing sourced from public records", `${boardName} — user verification recommended`, "Medical director — confirm with practice"];
 }
 
 /** @deprecated Use getHonestDataSources from spa-trust.ts */
-export function defaultDataSources(_premierPartner: boolean, website: string): string[] {
-  const sources = ["Google Business Profile", "State licensing board — verification recommended"];
+export function defaultDataSources(state: string, _premierPartner: boolean, website: string): string[] {
+  const boardName = getStateBoardName(state);
+  const sources = ["Google Business Profile", `${boardName} — verification recommended`];
   if (website) sources.push("Provider official website");
   return sources;
 }

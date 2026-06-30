@@ -6,7 +6,7 @@ export function ReviewCard({ review }: { review: Review }) {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="font-medium text-charcoal">{review.author}</span>
-          {review.verified && (
+          {review.verifiedVisit && (
             <span className="rounded-full bg-gold/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-gold">
               Verified Visit
             </span>

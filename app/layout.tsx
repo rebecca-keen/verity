@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Verity — Trusted Aesthetics & Med Spas Nationwide",
     description:
-    "Find curated aesthetics clinics, med spas, and dermatology practices across the United States. Product transparency, medical director info, verified reviews, and AI-powered matching by state and city.",
+    "Find curated aesthetics clinics, med spas, and dermatology practices across the United States. Product transparency, medical director info, public ratings, and AI-powered matching by state and city.",
 };
 
 export default function RootLayout({
@@ -26,6 +26,12 @@ export default function RootLayout({
             Aesthetics clinics, med spas & dermatology · Nationwide · Curated listings
           </p>
           <p className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs">
+            <Link href="/providers" className="text-gold hover:underline">
+              Providers
+            </Link>
+            <Link href="/concierge" className="text-gold hover:underline">
+              Concierge
+            </Link>
             <Link href="/shop" className="text-gold hover:underline">
               Shop
             </Link>
@@ -34,6 +40,12 @@ export default function RootLayout({
             </Link>
             <Link href="/how-we-verify" className="text-gold hover:underline">
               How we verify
+            </Link>
+            <Link href="/privacy" className="text-gold hover:underline">
+              Privacy
+            </Link>
+            <Link href="/terms" className="text-gold hover:underline">
+              Terms
             </Link>
             <Link href="/premium" className="text-gold hover:underline">
               Premium

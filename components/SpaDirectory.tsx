@@ -358,7 +358,7 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
 
       <p className="mt-4 text-sm text-charcoal">
         {state === "All" && city === "All" ? (
-          <>Showing {filtered.length} verified providers</>
+          <>Showing {filtered.length} listed providers</>
         ) : (
           <>
             Showing {filtered.length} provider{filtered.length !== 1 ? "s" : ""} in{" "}

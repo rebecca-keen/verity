@@ -71,6 +71,12 @@ export default function ForSpasPage() {
         and body contouring who care about reputation, medical oversight, and product transparency.
       </p>
 
+      <p className="mt-6 rounded-xl border border-stone/15 bg-cream p-4 text-sm text-stone">
+        Listings on Verity are sourced from public records and practice websites. A &quot;Listed&quot; badge
+        does not confirm state licensure — providers are responsible for accurate credentials. Verity
+        does not provide medical advice or guarantee patient outcomes.
+      </p>
+
       <section className="mt-12">
         <h2 className="font-serif text-2xl text-charcoal">Who it&apos;s for</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
@@ -177,7 +183,7 @@ export default function ForSpasPage() {
       <div className="mt-12 luxury-border rounded-2xl bg-cream p-8 text-center">
         <h2 className="font-serif text-2xl text-charcoal">Nationwide — partner spots open</h2>
         <p className="mt-2 text-stone">
-          Join verified providers listed across the United States. Limited featured spots in each city.
+          Join listed providers across the United States. Limited featured spots in each city.
         </p>
         <a
           href={contactMailtoUrl("List my practice on Verity")}

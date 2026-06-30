@@ -85,8 +85,11 @@ export function AIConcierge() {
           Tell us what you&apos;re looking for
         </h2>
         <p className="mt-2 text-sm text-stone">
-          We match you to verified aesthetics clinics, med spas, and dermatology practices across the
-          United States by treatment, state, city, and budget — not paid ads.
+          We match you to listed aesthetics clinics, med spas, and dermatology practices across the
+          United States by treatment, state, city, and budget — matches listed providers from public sources.
+        </p>
+        <p className="mt-2 text-xs text-stone/80">
+          Featured partner listings may appear when our partner program launches.
         </p>
 
         <div className="mt-6 rounded-xl border border-stone/10 bg-cream/40 p-4">

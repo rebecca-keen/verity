@@ -20,6 +20,21 @@ export function generateStaticParams() {
   return getShopProducts().map((p) => ({ slug: p.slug }));
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<import("next").Metadata> {
+  const { slug } = await params;
+  const product = getShopProduct(slug);
+  if (!product) return { title: "Shop — Verity" };
+
+  return {
+    title: `${product.name} — ${product.brand} | Verity Shop`,
+    description: product.description,
+  };
+}
+
 export default async function ShopProductDetailPage({
   params,
 }: {
@@ -58,11 +73,12 @@ export default async function ShopProductDetailPage({
           <p className="text-xs uppercase tracking-widest text-stone">{product.brand}</p>
           <h1 className="mt-2 font-serif text-4xl text-charcoal">{product.name}</h1>
           <p className="mt-2 text-stone">{product.category}</p>
-          <div className="mt-6 flex gap-8">
-            <div>
-              <p className="text-xs text-stone">Trust Score</p>
-              <p className="text-3xl font-semibold text-sage">{product.trustScore}/100</p>
-            </div>
+          <div className="mt-6 flex flex-wrap items-center gap-4">
+            {product.recommended && (
+              <span className="rounded-full bg-sage/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-sage">
+                Editor&apos;s pick
+              </span>
+            )}
             <div>
               <p className="text-xs text-stone">Rating</p>
               <p className="text-3xl text-gold">★ {product.rating}</p>
@@ -116,7 +132,7 @@ export default async function ShopProductDetailPage({
 
       <section className="mt-16">
         <h2 className="font-serif text-2xl text-charcoal">
-          Verified providers that use this ({linkedSpas.length})
+          Listed providers that reference this ({linkedSpas.length})
         </h2>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {linkedSpas.map((spa) => (

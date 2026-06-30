@@ -7,14 +7,16 @@ import {
 import { getStateBoardName, getStateBoardUrl } from "@/lib/verification-links";
 
 export function TrustBadge({
-  verified,
+  listingStatus,
   premierPartner,
   featuredPremium,
 }: {
-  verified?: boolean;
+  listingStatus?: Spa["listingStatus"];
   premierPartner?: boolean;
   featuredPremium?: boolean;
 }) {
+  const status = listingStatus ?? "listed";
+
   return (
     <div className="flex flex-wrap gap-2">
       {featuredPremium && (
@@ -22,15 +24,22 @@ export function TrustBadge({
           Featured Premium
         </span>
       )}
-      {verified && (
+      {status === "verified-partner" ? (
         <span
-          className="rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-gold"
-          title="Listing reviewed and sourced from public records — not a state license confirmation"
+          className="rounded-full border border-sage/40 bg-sage/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-sage"
+          title="Paid Verity partner with enhanced profile review"
         >
-          Verified listing
+          Verified Partner
+        </span>
+      ) : (
+        <span
+          className="rounded-full border border-stone/25 bg-cream px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-stone"
+          title="Public directory listing — not a state license confirmation"
+        >
+          Listed
         </span>
       )}
-      {premierPartner && (
+      {premierPartner && status !== "verified-partner" && (
         <span className="rounded-full border border-sage/40 bg-sage/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-sage">
           Premier Partner
         </span>

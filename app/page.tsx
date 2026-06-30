@@ -21,7 +21,7 @@ export default function HomePage() {
           <p className="mx-auto mt-6 max-w-2xl text-lg text-stone">
             Find curated aesthetics clinics, med spas, and dermatology practices across the United States.
             Research injectables, lasers, facials, and body contouring with product transparency, medical
-            director info where publicly listed, and AI matching — starting with listings in top metros nationwide.
+            director info where publicly listed, and AI matching — expanding nationwide with curated listings in top metros.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
@@ -50,8 +50,8 @@ export default function HomePage() {
             <p className="mt-3 text-sm leading-relaxed text-stone">
               Whether you&apos;re comparing Botox and fillers, booking a laser series, or choosing your
               first facial or body contouring treatment — Verity helps luxury-minded buyers find
-              verified providers with transparent products, publicly listed medical director info, and real
-              reviews.
+              listed providers with transparent products, publicly listed medical director info, and public
+              review ratings.
             </p>
             <Link href="/concierge" className="mt-4 inline-block text-sm text-gold hover:underline">
               Try AI Concierge →
@@ -85,7 +85,7 @@ export default function HomePage() {
               },
               {
                 title: "Product transparency",
-                desc: "See exactly what products providers use. Read verified product reviews.",
+                desc: "See exactly what products providers use. Shop editor-picked skincare with Amazon links.",
               },
               {
                 title: "AI concierge",
@@ -108,7 +108,7 @@ export default function HomePage() {
               <p className="text-xs uppercase tracking-widest text-gold">For providers</p>
               <h2 className="mt-2 font-serif text-2xl text-charcoal">Get featured nationwide</h2>
               <p className="mt-3 max-w-2xl text-sm text-stone">
-                Free verified listings today. Featured placement available for practices who want top
+                Free listed profiles today. Featured placement available for practices who want top
                 visibility in their city.
               </p>
             </div>
@@ -119,9 +119,9 @@ export default function HomePage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: "Verified listing",
+                title: "Listed profile",
                 price: "Free",
-                desc: "Get verified, show treatments, socials, and contact links",
+                desc: "Get listed, show treatments, socials, and contact links",
               },
               {
                 title: "Featured in your city",
@@ -162,7 +162,7 @@ export default function HomePage() {
         <div className="flex items-end justify-between">
           <div>
             <p className="text-xs uppercase tracking-widest text-gold">Highly rated</p>
-            <h2 className="mt-2 font-serif text-3xl text-charcoal">Featured verified providers</h2>
+            <h2 className="mt-2 font-serif text-3xl text-charcoal">Featured listed providers</h2>
           </div>
           <Link href="/providers" className="text-sm text-gold hover:underline">
             View all →

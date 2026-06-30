@@ -1,4 +1,5 @@
 import { getStateBoardName, getStateBoardUrl } from "./verification-links";
+import { isPlaceholderPhone, isValidWebsiteUrl } from "./spa-link-utils";
 import type { MedicalDirectorInfo, Spa } from "./types";
 
 /** Internal / placeholder license IDs — not confirmed from a state board. */
@@ -16,6 +17,7 @@ const GENERIC_MD_PATTERNS = [
   /^licensed medical director/i,
   /^physician-directed team$/i,
   /^medical director on file$/i,
+  /^physician-led clinical team$/i,
 ];
 
 export function isGenericMedicalDirector(medicalDirector: string): boolean {
@@ -43,7 +45,7 @@ export function parseMedicalDirector(medicalDirector: string): MedicalDirectorIn
 export function resolveMedicalDirectorInfo(spa: Spa): MedicalDirectorInfo & {
   displayNote: string;
 } {
-  const hasWebsite = Boolean(spa.website?.trim());
+  const hasWebsite = Boolean(getPublicWebsite(spa));
   const named = hasNamedMedicalDirector(spa.medicalDirector);
 
   if (hasWebsite && named) {
@@ -66,6 +68,11 @@ export function resolveMedicalDirectorInfo(spa: Spa): MedicalDirectorInfo & {
   };
 }
 
+function getPublicWebsite(spa: Pick<Spa, "website" | "slug">): string {
+  if (!isValidWebsiteUrl(spa.website, spa.slug)) return "";
+  return spa.website.trim();
+}
+
 export function resolveLicenseVerification(spa: Spa): {
   label: string;
   linkText: string;
@@ -84,19 +91,24 @@ export function resolveLicenseVerification(spa: Spa): {
   };
 }
 
-export function getHonestCertifications(spa: Pick<Spa, "website" | "premierPartner" | "featuredPremium">): string[] {
+export function getHonestCertifications(
+  spa: Pick<Spa, "website" | "state" | "premierPartner" | "featuredPremium">,
+): string[] {
+  const boardName = getStateBoardName(spa.state);
   const certs = ["Listing sourced from public records"];
-  if (spa.website?.trim()) {
+  if (spa.website?.trim() && isValidWebsiteUrl(spa.website)) {
     certs.push("Practice website on file");
   }
+  certs.push(`${boardName} — user verification recommended`);
   certs.push("Medical director — confirm with practice");
   return certs;
 }
 
 export function getHonestDataSources(
-  spa: Pick<Spa, "website" | "reviewSources">,
+  spa: Pick<Spa, "website" | "reviewSources" | "state">,
   reviewSource?: string,
 ): string[] {
+  const boardName = getStateBoardName(spa.state);
   const sources: string[] = [];
 
   if (spa.reviewSources?.google) {
@@ -108,32 +120,61 @@ export function getHonestDataSources(
   if (reviewSource?.trim()) {
     sources.push(reviewSource.trim());
   }
-  if (spa.website?.trim()) {
+  if (spa.website?.trim() && isValidWebsiteUrl(spa.website)) {
     sources.push("Provider official website");
   }
   sources.push("User submissions via hello@verityaesthetics.app");
-  sources.push("State licensing board — verification recommended");
+  sources.push(`${boardName} — verification recommended`);
 
   return [...new Set(sources)];
 }
 
+const MARKETING_CLAIMS = [
+  /celebrity clientele/i,
+  /members only/i,
+  /vip scheduling/i,
+  /verified visit reviews/i,
+  /verified florida med spa/i,
+];
+
+function sanitizeHighlights(highlights: string[]): string[] {
+  return highlights
+    .filter((h) => !MARKETING_CLAIMS.some((pattern) => pattern.test(h)))
+    .map((h) =>
+      h
+        .replace(/Verified Florida med spa/gi, "Public listing")
+        .replace(/★ verified\b/gi, "★ public rating")
+        .replace(/Google & Yelp verified/gi, "Google & Yelp ratings")
+        .replace(/Medical director on file/gi, "Medical director — confirm with practice"),
+    );
+}
+
+function resolveListingStatus(
+  spa: Pick<Spa, "listingStatus" | "premierPartner">,
+): Spa["listingStatus"] {
+  if (spa.listingStatus === "verified-partner" || spa.premierPartner) {
+    return "verified-partner";
+  }
+  return "listed";
+}
+
 /** Apply honest trust metadata when building spa records from seeds. */
 export function normalizeSpaTrust<T extends Spa>(spa: T): T {
+  const listingStatus = resolveListingStatus(spa);
   const medicalDirectorInfo = resolveMedicalDirectorInfo(spa);
   const certifications = getHonestCertifications(spa);
   const dataSources = getHonestDataSources(spa);
-  const highlights = spa.highlights.map((h) =>
-    h
-      .replace(/Verified Florida med spa/gi, "Public listing")
-      .replace(/★ verified\b/gi, "★ public rating")
-      .replace(/Medical director on file/gi, "Medical director — confirm with practice"),
-  );
+  const highlights = sanitizeHighlights(spa.highlights);
+  const phone = isPlaceholderPhone(spa.phone) ? "" : spa.phone.trim();
 
   return {
     ...spa,
+    listingStatus,
+    verified: false,
     medicalDirector: medicalDirectorInfo.source === "practice-website" ? spa.medicalDirector : "",
     medicalDirectorInfo,
     licenseId: isPlaceholderLicenseId(spa.licenseId) ? "" : spa.licenseId,
+    phone,
     certifications,
     dataSources,
     highlights,

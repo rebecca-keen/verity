@@ -22,7 +22,7 @@ const sections = [
     title: "What we don't claim",
     items: [
       "We do not guarantee treatment outcomes or safety",
-      "A \"verified listing\" badge means the business record was reviewed — not that we confirmed a state medical license",
+      "A \"Listed\" badge means the business appears in our public directory — not that we confirmed a state medical license",
       "Board certifications and license numbers are not independently audited unless noted",
       "Listings are aggregated from public sources and may be incomplete or out of date",
     ],

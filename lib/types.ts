@@ -82,6 +82,8 @@ export interface Review {
   text: string;
   date: string;
   verified: boolean;
+  /** True only for confirmed Verity visit reviews — not seed/demo data. */
+  verifiedVisit?: boolean;
   /** Spa this review belongs to — required for spa detail pages */
   spaSlug?: string;
   treatment?: string;
@@ -110,6 +112,9 @@ export interface Spa {
   reviewCount: number;
   /** Per-platform ratings when available; aggregate `rating` is the listing score. */
   reviewSources?: ReviewSources;
+  /** Directory tier — "listed" is public-sourced; "verified-partner" is a paid audit tier (future). */
+  listingStatus: "listed" | "verified-partner";
+  /** @deprecated Use listingStatus — do not treat as license confirmation. */
   verified: boolean;
   premierPartner: boolean;
   featuredPremium: boolean;

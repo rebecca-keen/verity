@@ -15,8 +15,11 @@ export default function ConciergePage() {
           <h1 className="mt-2 font-serif text-4xl">Verity Concierge</h1>
           <p className="mx-auto mt-3 max-w-xl text-stone/80">
             Describe your treatment goals — injectables, lasers, facials, body contouring — plus your
-            budget and city. We recommend verified aesthetics clinics and med spas nationwide, not
-            sponsored listings.
+            budget and city. We recommend listed aesthetics clinics and med spas from our directory —
+            matches are drawn from public sources, not paid placement.
+          </p>
+          <p className="mx-auto mt-2 max-w-xl text-xs text-stone/70">
+            Featured partner listings may appear when our partner program launches.
           </p>
         </div>
         <AIConcierge />
