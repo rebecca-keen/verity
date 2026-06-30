@@ -526,8 +526,8 @@ for (const [slug, photoId] of Object.entries(NATIONWIDE_SPA_IMAGE_FALLBACKS)) {
   if (!SPA_IMAGE_SETS[slug]) {
     if (nationwideWebsiteSlugs.has(slug)) {
       SPA_IMAGE_SETS[slug] = {
-        hero: img("photo-1516975080664-ed2fc6a32937"),
-        gallery: [gal("photo-1544161515-4ab6ce6db874")],
+        hero: "",
+        gallery: [],
         source: "Verity placeholder — pending business photo upload",
       };
       continue;
@@ -545,8 +545,17 @@ function isStockImageUrl(url: string) {
   return (
     lower.includes("images.unsplash.com") ||
     /[-_/]unsplash[-_.]/i.test(lower) ||
-    /unsplash-image/i.test(lower)
+    /unsplash-image/i.test(lower) ||
+    /placeholder\.png/i.test(lower)
   );
+}
+
+/** Strip stock/placeholder URLs from all provider image sets. */
+for (const entry of Object.values(SPA_IMAGE_SETS)) {
+  entry.gallery = entry.gallery.filter((u) => u && !isStockImageUrl(u));
+  if (entry.hero && isStockImageUrl(entry.hero)) {
+    entry.hero = entry.gallery.find((u) => !isStockImageUrl(u)) ?? "";
+  }
 }
 
 /** Spas citing an official website must not show Unsplash in hero/gallery. */
@@ -567,16 +576,21 @@ for (const [slug, entry] of Object.entries(SPA_IMAGE_SETS)) {
 export function getSpaImages(slug: string): SpaImageSet {
   const entry = SPA_IMAGE_SETS[slug];
   if (entry) {
+    const gallery = entry.gallery.filter((u) => u && !isStockImageUrl(u));
+    const hero =
+      entry.hero && !isStockImageUrl(entry.hero)
+        ? entry.hero
+        : gallery.find((u) => !isStockImageUrl(u)) ?? "";
     return {
-      hero: entry.hero,
-      gallery: entry.gallery,
+      hero,
+      gallery,
       source: entry.source,
-      logo: entry.logo,
+      ...(entry.logo ? { logo: entry.logo } : {}),
     };
   }
   return {
-    hero: img("photo-1516975080664-ed2fc6a32937"),
-    gallery: [gal("photo-1544161515-4ab6ce6db874"), gal("photo-1612349317150-e413f6a5b16d")],
+    hero: "",
+    gallery: [],
     source: "Verity placeholder — pending spa upload",
   };
 }

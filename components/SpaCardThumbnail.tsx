@@ -1,14 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { Spa } from "@/lib/types";
 import { RemoteImage } from "./RemoteImage";
 
 function isGenericStock(url: string) {
   return (
     url.includes("images.unsplash.com") ||
+    /placeholder\.png/i.test(url) ||
     /placeholder|pending spa upload|stock imagery/i.test(url)
   );
+}
+
+/** Logo → hero → gallery; skip stock/unsplash/placeholder. */
+function cardImageUrls(spa: Spa): string[] {
+  const seen = new Set<string>();
+  const urls: string[] = [];
+  const push = (url?: string) => {
+    if (!url || seen.has(url) || isGenericStock(url)) return;
+    seen.add(url);
+    urls.push(url);
+  };
+  push(spa.logo);
+  push(spa.image);
+  for (const url of spa.gallery ?? []) push(url);
+  return urls;
 }
 
 function SpaPlaceholderIcon() {
@@ -35,44 +51,48 @@ function SpaPlaceholderIcon() {
 }
 
 export function SpaCardThumbnail({ spa }: { spa: Spa }) {
-  const [logoFailed, setLogoFailed] = useState(false);
-  const [heroFailed, setHeroFailed] = useState(false);
+  const urls = useMemo(() => cardImageUrls(spa), [spa]);
+  const [idx, setIdx] = useState(0);
+  const src = idx < urls.length ? urls[idx] : undefined;
+  const isLogo = src === spa.logo;
 
-  const heroCandidate = spa.image && !isGenericStock(spa.image) ? spa.image : null;
-
-  if (spa.logo && !logoFailed) {
-    return (
-      <div className="flex h-full items-center justify-center bg-gradient-to-b from-cream to-white p-6">
-        <div className="relative h-[70%] w-[85%] max-w-[280px]">
-          <RemoteImage
-            src={spa.logo}
-            alt={`${spa.name} logo`}
-            fill
-            className="object-contain drop-shadow-sm"
-            sizes="(max-width: 768px) 100vw, 33vw"
-            onFailed={() => setLogoFailed(true)}
-          />
+  if (src) {
+    if (isLogo) {
+      return (
+        <div className="flex h-full items-center justify-center bg-gradient-to-b from-cream to-white p-6">
+          <div className="relative h-[70%] w-[85%] max-w-[280px]">
+            <RemoteImage
+              src={src}
+              alt={`${spa.name} logo`}
+              fill
+              className="object-contain drop-shadow-sm"
+              sizes="(max-width: 768px) 100vw, 33vw"
+              onFailed={() => setIdx((i) => i + 1)}
+            />
+          </div>
         </div>
-      </div>
-    );
-  }
+      );
+    }
 
-  if (heroCandidate && !heroFailed) {
     return (
       <RemoteImage
-        src={heroCandidate}
+        src={src}
         alt={spa.name}
         fill
         className="object-cover transition duration-300 group-hover:scale-105"
         sizes="(max-width: 768px) 100vw, 33vw"
-        onFailed={() => setHeroFailed(true)}
+        onFailed={() => setIdx((i) => i + 1)}
       />
     );
   }
 
-  return (
-    <div className="flex h-full items-center justify-center bg-gradient-to-b from-cream to-stone/5">
-      <SpaPlaceholderIcon />
-    </div>
-  );
+  if (!spa.website) {
+    return (
+      <div className="flex h-full items-center justify-center bg-gradient-to-b from-cream to-stone/5">
+        <SpaPlaceholderIcon />
+      </div>
+    );
+  }
+
+  return <div className="h-full bg-gradient-to-b from-cream to-stone/5" aria-hidden />;
 }

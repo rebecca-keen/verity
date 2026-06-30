@@ -3,17 +3,17 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
-      "bay-shore-aesthetics-hyde-park": {
-    hero: "https://www.elixiraestheticsmedspa.com/assets/img/feature/home/skin-treatments.jpg",
+          "bay-shore-aesthetics-hyde-park": {
+    hero: "https://drshoremedspa.com/wp-content/uploads/2026/01/client-receiving-a-customized-facial-treatment-in-a-medspa-showcasing-personalized-skincare-products-09ba0192-cc9f-45a2-b087-49b172179a20.jpg",
     gallery: [
-      "https://www.elixiraestheticsmedspa.com/assets/img/feature/home/injectables-fillers.png",
-      "https://www.elixiraestheticsmedspa.com/assets/img/feature/home/skin-care.jpg",
-      "https://www.elixiraestheticsmedspa.com/assets/img/new_images/Owners%20Website%20Group%20Photo.JPG",
-      "https://www.elixiraestheticsmedspa.com/assets/img/selector/02.jpg",
+      "https://drshoremedspa.com/wp-content/uploads/2025/11/01.png",
+      "https://drshoremedspa.com/wp-content/uploads/2026/01/client-undergoing-a-body-contouring-treatment-in-a-medspa-highlighting-advanced-technology-and-personalized-care-86cdc722-7ad8-40e7-b64f-2335468c7d35.jpg",
+      "https://drshoremedspa.com/wp-content/uploads/2026/06/diverse-individuals-applying-vitamin-a-skincare-products-in-a-bright-bathroom-highlighting-skincare-benefits-5f951eb2-daa0-4862-b7f3-c4c94b4bc896.jpg",
+      "https://drshoremedspa.com/wp-content/uploads/2026/06/med-spa-treatment-room-with-calming-decor-and-skincare-products-emphasizing-natural-beauty-enhancement-8b52ba5d-99de-4766-9775-73ec2e983246.jpg",
     ],
     source: "Bay Shore Aesthetics official website — services",
   },
-        "westshore-laser-aesthetics": {
+            "westshore-laser-aesthetics": {
     hero: "https://mylaserspa.com/wp-content/uploads/2018/11/cellulite-treatment-tampa-bay_bg-150x150.jpg",
     gallery: [
       "https://mylaserspa.com/wp-content/uploads/2025/07/Group-1577708883.png",
@@ -23,17 +23,17 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Westshore Laser Aesthetics official website — services",
   },
-        "south-tampa-medspa": {
-    hero: "https://elase.com/wp-content/uploads/2024/02/STampa_etreatmentRoom-960x1006.jpg",
+            "south-tampa-medspa": {
+    hero: "https://cdn.prod.website-files.com/60b90c535257eb1567bdeeb6/60fb3040e941fcb75888c25d_Chin%20_%20Jawline%20Filler%20Treatment%20with%20Restylane%20Lyft%202_1024.jpg",
     gallery: [
-      "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00010-1-160x107.jpg",
-      "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00246-160x240.jpg",
-      "https://elase.com/wp-content/uploads/2024/02/spa_shoot3546-960x640.jpg",
-      "https://elase.com/wp-content/uploads/2024/02/Elase-2024-Spa-00011-960x640.jpg",
+      "https://cdn.prod.website-files.com/60b90c535257eb78febdeeaa/669ea681ee58479323ce802f_testimonials-header.jpg",
+      "https://cdn.prod.website-files.com/60b90c535257eb78febdeeaa/669f7ea5561fa01d2b1a9edb_medical-spa-tampa.JPG",
+      "https://cdn.prod.website-files.com/60b90c535257eb1567bdeeb6/611573a40962fca1d3909d96_chemical-peel.jpg",
+      "https://cdn.prod.website-files.com/60b90c535257eb1567bdeeb6/611573acbc9304571937fcce_dermal-filler.jpg",
     ],
     source: "South Tampa Medspa official website — services",
   },
-      "clearwater-glow-medspa": {
+          "clearwater-glow-medspa": {
     hero: "https://images.squarespace-cdn.com/content/v1/5ec1e524a7776f6f39957006/0962f7cd-eb6a-42fe-a701-4c6fb1d5d2bb/Untitled+design.png?format=1500w",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/5ec1e524a7776f6f39957006/b33a2b2d-0968-4679-bd64-ae3aa782e46a/Untitled+design.png?format=1500w",
@@ -43,7 +43,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Clearwater Glow Medspa official website — services",
   },
-      "tampa-bay-derm-aesthetics": {
+          "tampa-bay-derm-aesthetics": {
     hero: "https://tbderm.com/images/home-hero-face.webp",
     gallery: [
       "https://tbderm.com/images/cosmetic-dermatology.webp",
@@ -53,14 +53,14 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Tampa Bay Derm Aesthetics official website — services",
   },
-      "channelside-aesthetics-clinic": {
+          "channelside-aesthetics-clinic": {
     hero: "https://rootstampa.com/wp-content/uploads/2022/12/December-Specials.png",
     gallery: [
 
     ],
     source: "Channelside Aesthetics Clinic official website — services",
   },
-    "st-pete-skin-institute": {
+      "st-pete-skin-institute": {
     hero: "https://skinspastpete.com/wp-content/uploads/2019/12/DSC00360-scaled.jpg",
     gallery: [
       "https://skinspastpete.com/wp-content/uploads/2019/12/222.png",
@@ -70,17 +70,17 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "St. Pete Skin Institute official website — services",
   },
-      "hyde-park-injectables-lounge": {
-    hero: "https://premierecenter.com/wp-content/uploads/2026/05/procedures-breast-img@2x.jpg.webp",
+          "hyde-park-injectables-lounge": {
+    hero: "https://static.wixstatic.com/media/de5048_1d37e5725a2b4da68d8493d3a014bdc6~mv2.jpg/v1/fill/w_147,h_220,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/HPMS-251.jpg",
     gallery: [
-      "https://premierecenter.com/wp-content/uploads/2026/05/procedures-men-img@2x.jpg.webp",
-      "https://premierecenter.com/wp-content/uploads/2026/05/procedures-face-img@2x.jpg.webp",
-      "https://premierecenter.com/wp-content/uploads/2026/05/procedures-body-img@2x.jpg.webp",
-      "https://premierecenter.com/wp-content/uploads/2026/05/procedures-medspa-img@2x.jpg.webp",
+      "https://static.wixstatic.com/media/de5048_641dd9aeab864695900a0e328f1ccf4d~mv2.jpg/v1/crop/x_1105,y_2372,w_3759,h_3855/fill/w_147,h_151,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/HPMS-107.jpg",
+      "https://static.wixstatic.com/media/de5048_2e05e3620c40445a887e3f74181295f3~mv2.jpg/v1/crop/x_324,y_1076,w_3447,h_3986/fill/w_147,h_170,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/HPMS-311%20copy.jpg",
+      "https://static.wixstatic.com/media/de5048_533da358b505409e82ed8b2e9f6b906a~mv2.jpg/v1/fill/w_147,h_259,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/IMG_1489.jpg",
+      "https://static.wixstatic.com/media/de5048_09590d7938174283ad9d98d906240460~mv2.jpg/v1/fill/w_147,h_220,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/HPMS-343.jpg",
     ],
     source: "Hyde Park Injectables Lounge official website — services",
   },
-      "winter-park-aesthetics": {
+          "winter-park-aesthetics": {
     hero: "https://windermeremedicalspa.com/storage/elementor/thumbs/sculptra-windermere-medical-spa-in-orlando-fl-qiq20wdwpszni3p8bu1afitih49xve69oyjk4tp3gw.webp",
     gallery: [
       "https://windermeremedicalspa.com/storage/elementor/thumbs/lasers-winder-mere-medspa-orlando-fl-qiq20z7fab3igxl4vd96503w99w1ihhgpci0knkwy8.webp",
@@ -90,7 +90,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Winter Park Aesthetics official website — services",
   },
-      "dr-phillips-medspa": {
+          "dr-phillips-medspa": {
     hero: "https://static.wixstatic.com/media/1d05f1_ccc505c3776545a7983302741c38d1f9~mv2.jpg/v1/fill/w_2500,h_2655,al_c/1d05f1_ccc505c3776545a7983302741c38d1f9~mv2.jpg",
     gallery: [
       "https://static.wixstatic.com/media/68416e_c08983071ebb4587a606157b502dad74~mv2.jpg/v1/fill/w_200,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/GettyImages-1324474258_edited_edited.jpg",
@@ -100,7 +100,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Dr. Phillips Medspa official website — services",
   },
-      "carrollwood-med-aesthetics": {
+          "carrollwood-med-aesthetics": {
     hero: "https://www.glowaestheticsbar.com/wp-content/uploads/2024/10/GLOW-services-collage3.png",
     gallery: [
       "https://www.glowaestheticsbar.com/wp-content/uploads/2024/05/Glow-Services-Title.png",
@@ -110,14 +110,17 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Carrollwood Med Aesthetics official website — services",
   },
-      "davis-islands-skin-studio": {
-    hero: "https://static.wixstatic.com/media/2c5ea0df86d745dbb67a788f51522112.jpg/v1/crop/x_0,y_12,w_5760,h_3817/fill/w_468,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Facial.jpg",
+          "davis-islands-skin-studio": {
+    hero: "https://premierecenter.com/wp-content/uploads/2026/05/procedures-breast-img@2x.jpg.webp",
     gallery: [
-      "https://static.wixstatic.com/media/2ea699_5dd4f271a1ad4cdbbd8a6d78af2453ce%7Emv2_d_1847_1243_s_2.png/v1/fit/w_2500,h_1330,al_c/2ea699_5dd4f271a1ad4cdbbd8a6d78af2453ce%7Emv2_d_1847_1243_s_2.png",
+      "https://premierecenter.com/wp-content/uploads/2026/05/procedures-men-img@2x.jpg.webp",
+      "https://premierecenter.com/wp-content/uploads/2026/05/procedures-face-img@2x.jpg.webp",
+      "https://premierecenter.com/wp-content/uploads/2026/05/procedures-body-img@2x.jpg.webp",
+      "https://premierecenter.com/wp-content/uploads/2026/05/procedures-medspa-img@2x.jpg.webp",
     ],
     source: "Davis Islands Skin Studio official website — services",
   },
-    "lake-nona-skin-lab": {
+        "lake-nona-skin-lab": {
     hero: "https://nonamedspa-com.b-cdn.net/wp-content/uploads/elementor/thumbs/DSC09532-scaled-rn0qxzm7gijp1uxf8f5luv03w0w0wvxfnowqmhp7jw.jpg",
     gallery: [
       "https://nonamedspa-com.b-cdn.net/wp-content/uploads/elementor/thumbs/injectables-b-at-nona-med-spa-in-orlando-fl-rn0qxzm7gijp1uxf8f5luv03w0w0wvxfnowqmhp7jw.webp",
@@ -127,7 +130,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Lake Nona Skin Lab official website — services",
   },
-      "baldwin-park-beauty-clinic": {
+          "baldwin-park-beauty-clinic": {
     hero: "https://static.wixstatic.com/media/daf1ed_838d04e533334788a881b763c84506fd~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/_J5A8611.jpg",
     gallery: [
       "https://static.wixstatic.com/media/cff1ce_67b7f2cfe9574513bd9a78557201d7b1~mv2.png/v1/fill/w_2500,h_2500,al_c/cff1ce_67b7f2cfe9574513bd9a78557201d7b1~mv2.png",
@@ -137,7 +140,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Baldwin Park Beauty Clinic official website — services",
   },
-      "downtown-orlando-injectables": {
+          "downtown-orlando-injectables": {
     hero: "https://downtownorlando.theaestheticsloungeandspa.com/wp-content/uploads/elementor/thumbs/The-Aesthetics-Lounge-Spa-rfkipqwqs3p78642cz3njabb2c323skw2y8646bgtg.webp",
     gallery: [
       "https://downtownorlando.theaestheticsloungeandspa.com/wp-content/uploads/2025/12/why-us-section-image-819x1024.webp",
@@ -157,7 +160,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Millenia Laser Aesthetics official website — services",
   },
-      "windermere-aesthetics": {
+          "windermere-aesthetics": {
     hero: "https://windermeremedicalspa.com/storage/elementor/thumbs/sculptra-windermere-medical-spa-in-orlando-fl-qiq20wdwpszni3p8bu1afitih49xve69oyjk4tp3gw.webp",
     gallery: [
       "https://windermeremedicalspa.com/storage/elementor/thumbs/lasers-winder-mere-medspa-orlando-fl-qiq20z7fab3igxl4vd96503w99w1ihhgpci0knkwy8.webp",
@@ -167,34 +170,33 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Windermere Aesthetics official website — services",
   },
-      "college-park-derm-aesthetics": {
-    hero: "https://thespaorlando.com/wp-content/uploads/2026/01/the-spa-orlando-location-outside-sign.jpg",
+          "college-park-derm-aesthetics": {
+    hero: "https://www.dermorlando.com/media/banners/assets/transparent.jpg",
     gallery: [
-      "https://thespaorlando.com/wp-content/uploads/2026/01/Untitled-design-61.png",
-      "https://thespaorlando.com/wp-content/uploads/2026/01/massage-therapy-example-2.jpg",
-      "https://thespaorlando.com/wp-content/uploads/2026/01/nail-care-example.jpg",
-      "https://thespaorlando.com/wp-content/uploads/2026/01/facial-and-skincare-example.jpg",
+      "https://www.dermorlando.com/media/site/images/btn-mobile-appointment.png",
+      "https://www.dermorlando.com/media/pcon/home-cta-text-etherealbeauty_img_1.png",
+      "https://www.dermorlando.com/media/temp/img-CapAccredited.png",
     ],
     source: "College Park Derm Aesthetics official website — services",
   },
-      "oviedo-glow-medspa": {
+          "oviedo-glow-medspa": {
     hero: "https://www.oviedomedspa.com/wp-content/uploads/2024/04/1.24-147-4-Edit.jpg",
     gallery: [
       "https://www.oviedomedspa.com/wp-content/uploads/2024/03/Oviedo-Med-Spa-1412485973.jpg",
     ],
     source: "Oviedo Glow Medspa official website — services",
   },
-      "riverside-injectables-lounge": {
-    hero: "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/916b1bec-5170-4a19-92ed-a60010d49d5a/pexels-cottonbro-studio-6627110.jpg",
+          "riverside-injectables-lounge": {
+    hero: "https://theivlounge.com/wp-content/uploads/2025/06/20250619_1451_NAD-Injections-Insights_simple_compose_01jy4re6fkfzybgnr08e0czmwx-768x512.webp",
     gallery: [
-      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/79e4bfbb-b895-489d-a835-a47478b7b1bb/pexels-adrian-mohammad-1224158.jpg",
-      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/298f3d98-dbb0-45e6-b65a-8b0b90796d99/pexels-arina-krasnikova-6663571.jpg",
-      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/7d781742-9f2f-4846-8275-ab7e9cecb54b/JacksonvilleMedspa121.jpg",
-      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/8fe14c0a-3262-4a44-a285-bb63462209c0/305892228_195238216258673_1969830163876583102_n.jpg",
+      "https://theivlounge.com/wp-content/uploads/2024/05/im1-2.webp",
+      "https://theivlounge.com/wp-content/uploads/2024/05/im2.webp",
+      "https://theivlounge.com/wp-content/uploads/2024/05/im3-1.webp",
+      "https://theivlounge.com/wp-content/uploads/2024/05/im4.webp",
     ],
     source: "Riverside Injectables Lounge official website — services",
   },
-      "celebration-skin-studio": {
+          "celebration-skin-studio": {
     hero: "https://celebrationwellnessspa.com/wp-content/uploads/2023/02/hero-bg-01-removebg-preview-e1675439154852.png",
     gallery: [
       "https://celebrationwellnessspa.com/wp-content/uploads/2026/02/Angela-and-Astrid-3-768x1152.jpg",
@@ -204,14 +206,15 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Celebration Skin Studio official website — services",
   },
-      "altamonte-aesthetics-hub": {
-    hero: "https://www.thenurmedspa.com/nur-banner.jpg",
+          "altamonte-aesthetics-hub": {
+    hero: "https://alumawellness.com/storage/2023/08/Layer-Aluma-Wellness-in-Altamonte-Springs-FL.png",
     gallery: [
-
+      "https://alumawellness.com/storage/elementor/thumbs/orlando-style-mag1-rbum7tjrfu5h1sgr40yds9rdjzerrmv9lmu6o1a03k.png",
+      "https://alumawellness.com/storage/elementor/thumbs/best-of-business-2026-scaled-rkcqa6mfut5qcb3j5g810rizhpdn1n5f70r1wx2ps0.png",
     ],
     source: "Altamonte Aesthetics Hub official website — services",
   },
-    "san-marco-aesthetics": {
+        "san-marco-aesthetics": {
     hero: "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2021/05/services-for-men.png?resize=500%2C500&#038;ssl=1",
     gallery: [
       "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/hair-removal-treatments-003.webp?resize=500%2C500&#038;ssl=1",
@@ -221,17 +224,17 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "San Marco Aesthetics official website — services",
   },
-    "mandarin-derm-aesthetics": {
-    hero: "https://www.macflorida.com/assets/img/feature/home/wellness-services.jpg",
+      "mandarin-derm-aesthetics": {
+    hero: "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/916b1bec-5170-4a19-92ed-a60010d49d5a/pexels-cottonbro-studio-6627110.jpg",
     gallery: [
-      "https://www.macflorida.com/assets/img/feature/home/injectables-fillers.jpg",
-      "https://www.macflorida.com/assets/img/feature/home/skin-hair-rejuvenation.jpg",
-      "https://www.macflorida.com/assets/img/feature/home/laser-energy-for-face-body.jpg",
-      "https://www.macflorida.com/assets/img/masthead/home/01.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/79e4bfbb-b895-489d-a835-a47478b7b1bb/pexels-adrian-mohammad-1224158.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/298f3d98-dbb0-45e6-b65a-8b0b90796d99/pexels-arina-krasnikova-6663571.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/7d781742-9f2f-4846-8275-ab7e9cecb54b/JacksonvilleMedspa121.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/8fe14c0a-3262-4a44-a285-bb63462209c0/305892228_195238216258673_1969830163876583102_n.jpg",
     ],
     source: "Mandarin Derm Aesthetics official website — services",
   },
-      "ortega-med-spa": {
+          "ortega-med-spa": {
     hero: "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/916b1bec-5170-4a19-92ed-a60010d49d5a/pexels-cottonbro-studio-6627110.jpg",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/79e4bfbb-b895-489d-a835-a47478b7b1bb/pexels-adrian-mohammad-1224158.jpg",
@@ -241,37 +244,37 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Ortega Med Spa official website — services",
   },
-      "atlantic-beach-glow": {
-    hero: "https://elase.com/wp-content/uploads/2026/04/25-Website_PeptideTreatments_Imagery-Headers3.webp",
+          "atlantic-beach-glow": {
+    hero: "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/916b1bec-5170-4a19-92ed-a60010d49d5a/pexels-cottonbro-studio-6627110.jpg",
     gallery: [
-      "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00010-1-640x427.jpg",
-      "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00150-2-scaled.jpg",
-      "https://elase.com/wp-content/uploads/2025/08/25-Website_Wellness_Imagery-1080x13503-1-640x800.jpg",
-      "https://elase.com/wp-content/uploads/2025/08/25-Website_Wellness_Imagery-1080x1350-2-640x800.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/79e4bfbb-b895-489d-a835-a47478b7b1bb/pexels-adrian-mohammad-1224158.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/298f3d98-dbb0-45e6-b65a-8b0b90796d99/pexels-arina-krasnikova-6663571.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/7d781742-9f2f-4846-8275-ab7e9cecb54b/JacksonvilleMedspa121.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/8fe14c0a-3262-4a44-a285-bb63462209c0/305892228_195238216258673_1969830163876583102_n.jpg",
     ],
     source: "Atlantic Beach Glow official website — services",
   },
-      "avondale-aesthetics-clinic": {
+          "avondale-aesthetics-clinic": {
     hero: "https://elase.com/wp-content/uploads/2024/02/Elase-2024-Spa-00126-160x240.jpg",
     gallery: [
       "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00010-1-160x107.jpg",
-      "https://elase.com/wp-content/uploads/2024/02/spa_shoot3546-960x640.jpg",
-      "https://elase.com/wp-content/uploads/2024/02/Elase-2024-Spa-00011-960x640.jpg",
-      "https://elase.com/wp-content/uploads/2024/02/Elase-2024-Spa-00142-160x107.jpg",
-    ],
-    source: "Avondale Aesthetics Clinic official website — services",
-  },
-      "st-johns-town-center-beauty": {
-    hero: "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00010-1-160x107.jpg",
-    gallery: [
       "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00246-160x240.jpg",
       "https://elase.com/wp-content/uploads/2024/02/spa_shoot3546-960x640.jpg",
       "https://elase.com/wp-content/uploads/2024/02/Elase-2024-Spa-00011-960x640.jpg",
-      "https://elase.com/wp-content/uploads/2024/02/Elase-2024-Spa-00101-960x1440.jpg",
+    ],
+    source: "Avondale Aesthetics Clinic official website — services",
+  },
+          "st-johns-town-center-beauty": {
+    hero: "https://elase.com/wp-content/uploads/2024/02/Elase-2024-Spa-00126-160x240.jpg",
+    gallery: [
+      "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00010-1-160x107.jpg",
+      "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00246-160x240.jpg",
+      "https://elase.com/wp-content/uploads/2024/02/spa_shoot3546-960x640.jpg",
+      "https://elase.com/wp-content/uploads/2024/02/Elase-2024-Spa-00011-960x640.jpg",
     ],
     source: "St. Johns Town Center Beauty official website — services",
   },
-      "riverside-dermatology-aesthetics": {
+        "riverside-dermatology-aesthetics": {
     hero: "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2021/05/services-for-men.png?resize=500%2C500&#038;ssl=1",
     gallery: [
       "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/hair-removal-treatments-003.webp?resize=500%2C500&#038;ssl=1",
@@ -281,17 +284,17 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Riverside Dermatology Aesthetics official website — services",
   },
-  "pelican-bay-skin-institute": {
-    hero: "https://naplesawi.com/wp-content/uploads/2025/05/Personal-Wellness.webp",
+      "pelican-bay-skin-institute": {
+    hero: "https://naples.thelaserloungespa.com/wp-content/uploads/2022/06/Main-Treatment-Page-2-768x1049.png",
     gallery: [
-      "https://naplesawi.com/wp-content/uploads/2025/04/wellness.webp",
-      "https://naplesawi.com/wp-content/uploads/2025/04/complexion-perfection-2024-03-13-04-08-18-utc-1.webp",
-      "https://naplesawi.com/wp-content/uploads/2026/05/Gulfshore-Magazine-Best-of-2026-1024x576.webp",
-      "https://naplesawi.com/wp-content/uploads/2026/01/google-rating-image.webp",
+      "https://naples.thelaserloungespa.com/wp-content/uploads/2023/03/1-1-1024x1024-1-1024x1024.jpg",
+      "https://naples.thelaserloungespa.com/wp-content/uploads/2023/03/4-2.jpg",
+      "https://naples.thelaserloungespa.com/wp-content/uploads/2023/01/327417454_1115874395746545_4872794254567207340_n-scaled.jpeg",
+      "https://naples.thelaserloungespa.com/wp-content/plugins/revslider/public/assets/assets/dummy.png",
     ],
     source: "Pelican Bay Skin Institute official website — services",
   },
-    "naples-park-aesthetics": {
+        "naples-park-aesthetics": {
     hero: "https://naplesawi.com/wp-content/uploads/2025/05/Personal-Wellness.webp",
     gallery: [
       "https://naplesawi.com/wp-content/uploads/2025/04/wellness.webp",
@@ -301,7 +304,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Naples Park Aesthetics official website — services",
   },
-      "north-naples-medspa": {
+          "north-naples-medspa": {
     hero: "https://northnaples.thelaserloungespa.com/wp-content/uploads/2025/06/DSC01582-768x512.jpg",
     gallery: [
       "https://northnaples.thelaserloungespa.com/wp-content/uploads/2024/04/TLLS-North-Naples.webp",
@@ -311,7 +314,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "North Naples Medspa official website — services",
   },
-    "old-naples-injectables": {
+        "old-naples-injectables": {
     hero: "https://upload.opalcollection.com/app/uploads/sites/37/2026/02/26201231/Spa-lobby_Olde-Naples-Hotel-1920x1065.jpeg",
     gallery: [
       "https://upload.opalcollection.com/app/uploads/sites/37/2026/02/26201231/Spa-lobby_Olde-Naples-Hotel-570x316.jpeg",
@@ -321,7 +324,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Old Naples Injectables official website — services",
   },
-    "marco-island-aesthetics": {
+        "marco-island-aesthetics": {
     hero: "https://images.squarespace-cdn.com/content/v1/66cdd9e8e692d31909da7157/f8816c34-e4f2-4d07-b982-cbb5926bbb49/IMG_9107.JPG",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/66cdd9e8e692d31909da7157/1781027831443-JB5QM0BY162JVK9IAFP0/image-asset.jpeg",
@@ -331,17 +334,17 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Marco Island Aesthetics official website — services",
   },
-    "naples-derm-aesthetics": {
-    hero: "https://www.medspaon5th.com/images/iv-therapy-treatment.jpg",
+        "naples-derm-aesthetics": {
+    hero: "https://naplesawi.com/wp-content/uploads/2025/05/Personal-Wellness.webp",
     gallery: [
-      "https://www.medspaon5th.com/images/spa-model-face.jpeg",
-      "https://www.medspaon5th.com/images/founders-shelby-zach.png",
-      "https://www.medspaon5th.com/images/dr-kathleen-broderick.jpg",
-      "https://www.medspaon5th.com/images/sexual-health-intimate.jpg",
+      "https://naplesawi.com/wp-content/uploads/2025/04/wellness.webp",
+      "https://naplesawi.com/wp-content/uploads/2025/04/complexion-perfection-2024-03-13-04-08-18-utc-1.webp",
+      "https://naplesawi.com/wp-content/uploads/2026/05/Gulfshore-Magazine-Best-of-2026-1024x576.webp",
+      "https://naplesawi.com/wp-content/uploads/2026/01/google-rating-image.webp",
     ],
     source: "Naples Derm Aesthetics official website — services",
   },
-    "mercato-aesthetics-collective": {
+        "mercato-aesthetics-collective": {
     hero: "https://naplesawi.com/wp-content/uploads/2025/05/Personal-Wellness.webp",
     gallery: [
       "https://naplesawi.com/wp-content/uploads/2025/04/wellness.webp",
@@ -351,7 +354,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Mercato Aesthetics Collective official website — services",
   },
-    "estero-laser-clinic": {
+        "estero-laser-clinic": {
     hero: "https://estero.thelaserloungespa.com/wp-content/uploads/2025/09/TLLS-Estero-1-768x366.png",
     gallery: [
       "https://estero.thelaserloungespa.com/wp-content/uploads/elementor/thumbs/3-rfkr2wexdw7gpg2lkq9rqn6clvtnf4bv6pi4uhouxc.jpg",
@@ -361,17 +364,17 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Estero Laser Clinic official website — services",
   },
-    "nocatee-skin-lab": {
-    hero: "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/916b1bec-5170-4a19-92ed-a60010d49d5a/pexels-cottonbro-studio-6627110.jpg",
+      "nocatee-skin-lab": {
+    hero: "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2021/05/services-for-men.png?resize=500%2C500&#038;ssl=1",
     gallery: [
-      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/79e4bfbb-b895-489d-a835-a47478b7b1bb/pexels-adrian-mohammad-1224158.jpg",
-      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/298f3d98-dbb0-45e6-b65a-8b0b90796d99/pexels-arina-krasnikova-6663571.jpg",
-      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/7d781742-9f2f-4846-8275-ab7e9cecb54b/JacksonvilleMedspa121.jpg",
-      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/8fe14c0a-3262-4a44-a285-bb63462209c0/305892228_195238216258673_1969830163876583102_n.jpg",
+      "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/hair-removal-treatments-003.webp?resize=500%2C500&#038;ssl=1",
+      "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/body-sculpting.webp?resize=500%2C500&#038;ssl=1",
+      "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/hair-treatments.webp?resize=500%2C500&#038;ssl=1",
+      "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/laser-hair-removal-002.webp?resize=500%2C500&#038;ssl=1",
     ],
     source: "Nocatee Skin Lab official website — services",
   },
-    "west-palm-aesthetics": {
+        "west-palm-aesthetics": {
     hero: "https://cms-site-bucket.s3.us-west-2.amazonaws.com/site-assets/alluraaesthetics.com/navigation/Lobby---Side-View-RIGHT.jpg",
     gallery: [
       "https://alluraaesthetics.com/_static_/masthead/body-contouring-02.jpg",
@@ -381,7 +384,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "West Palm Aesthetics official website — services",
   },
-    "palm-beach-gardens-skin-lab": {
+        "palm-beach-gardens-skin-lab": {
     hero: "https://images.squarespace-cdn.com/content/v1/5e39c5983f93b45da3006613/1621439287545-SXOXTFQBSAP0VUB0NRRB/columbus-ohio-microblading-eyebrow-services.jpg",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/5e39c5983f93b45da3006613/1586116172292-C4EXOLHY3QZTI9JFQNXC/Peels.jpg",
@@ -391,7 +394,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Palm Beach Gardens Skin Lab official website — services",
   },
-    "east-boca-injectables": {
+        "east-boca-injectables": {
     hero: "https://beautysmartmd.com/wp-content/uploads/2020/01/tattoo-removal-treatments-mobile-1024x1024.webp",
     gallery: [
       "https://beautysmartmd.com/wp-content/uploads/2019/09/trying-out-radio-frequency-microneedling-with-vivace23-768x1024.webp",
@@ -401,7 +404,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "East Boca Injectables official website — services",
   },
-    "delray-beach-glow": {
+        "delray-beach-glow": {
     hero: "https://glowdelray.com/wp-content/uploads/2025/03/Group-8-3.png",
     gallery: [
       "https://glowdelray.com/wp-content/uploads/2025/03/fa281e61227f7ba211c634648e1400d1.jpg",
@@ -411,7 +414,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Delray Beach Glow official website — services",
   },
-    "worth-avenue-aesthetics": {
+        "worth-avenue-aesthetics": {
     hero: "https://worth-avenue.com/wp-content/uploads/2017/12/PROMOTION-HERO.jpg",
     gallery: [
       "https://worth-avenue.com/wp-content/uploads/2017/12/bloghero.jpg",
@@ -431,7 +434,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Juno Beach Med Spa official website — services",
   },
-    "wellington-derm-aesthetics": {
+        "wellington-derm-aesthetics": {
     hero: "https://alluraaesthetics.com/_static_/location/Office-4.jpg",
     gallery: [
       "https://alluraaesthetics.com/_static_/location/iStock-974894168.jpg?1749157654102",
@@ -441,7 +444,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Wellington Derm Aesthetics official website — services",
   },
-    "royal-palm-beach-beauty": {
+        "royal-palm-beach-beauty": {
     hero: "https://pbantiaging.com/wp-content/uploads/2025/03/denza-antiaging-laser-treatment-e1742575064833-1024x1024.png",
     gallery: [
       "https://pbantiaging.com/wp-content/uploads/elementor/thumbs/med-spa-lake-worth-scaled-rj1pt3xu0cybkbx5mwwrmg44exaza7vuo2r36aajkw.jpg",
@@ -451,14 +454,14 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Royal Palm Beach Beauty official website — services",
   },
-    "lighthouse-point-skin-studio": {
+        "lighthouse-point-skin-studio": {
     hero: "https://rebuildmedspa.com/images/hero.png",
     gallery: [
       "https://rebuildmedspa.com/images/elizabeth-celestin.jpg",
     ],
     source: "Lighthouse Point Skin Studio official website — services",
   },
-    "boynton-aesthetics-clinic": {
+        "boynton-aesthetics-clinic": {
     hero: "https://alluraaesthetics.com/_static_/location/Office-2.jpg",
     gallery: [
       "https://alluraaesthetics.com/_static_/location/iStock-974894168.jpg?1749157654102",
@@ -468,7 +471,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Boynton Aesthetics Clinic official website — services",
   },
-    "lake-worth-med-aesthetics": {
+        "lake-worth-med-aesthetics": {
     hero: "https://static.wixstatic.com/media/830f2d_cb44c35cb998477d89e3819e5a3444a0~mv2.jpg/v1/fill/w_333,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/830f2d_cb44c35cb998477d89e3819e5a3444a0~mv2.webp",
     gallery: [
       "https://static.wixstatic.com/media/cb6c2a_f314d10afd244e27859074cb4a43ddf8~mv2.png/v1/fill/w_333,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/cb6c2a_f314d10afd244e27859074cb4a43ddf8~mv2.webp",
@@ -488,7 +491,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Fifth Avenue Aesthetics official website — services",
   },
-  "bonita-springs-glow": {
+      "bonita-springs-glow": {
     hero: "http://bonitamedspa.com/wp-content/uploads/2024/02/Injectables-Treatments.jpeg",
     gallery: [
       "http://bonitamedspa.com/wp-content/uploads/2024/05/Bullet-Point-BMS-New.png",
@@ -498,7 +501,7 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
     ],
     source: "Bonita Springs Glow official website — services",
   },
-  "ybor-aesthetics-collective": {
+    "ybor-aesthetics-collective": {
     hero: "https://soho-wellness.com/wp-content/uploads/2025/07/Injectables-Service-Carousel.png",
     gallery: [
       "https://soho-wellness.com/wp-content/uploads/2025/07/About-Us.png",
@@ -507,5 +510,23 @@ export const WEBSITE_FETCHED_SPA_IMAGES: Record<
       "https://soho-wellness.com/wp-content/uploads/2025/07/Advanced-Skin-Treatments-Service-Carousel.png",
     ],
     source: "Ybor Aesthetics Collective official website — services",
+  },
+    "san-jose-aesthetics-hub": {
+    hero: "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/916b1bec-5170-4a19-92ed-a60010d49d5a/pexels-cottonbro-studio-6627110.jpg",
+    gallery: [
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/79e4bfbb-b895-489d-a835-a47478b7b1bb/pexels-adrian-mohammad-1224158.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/298f3d98-dbb0-45e6-b65a-8b0b90796d99/pexels-arina-krasnikova-6663571.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/7d781742-9f2f-4846-8275-ab7e9cecb54b/JacksonvilleMedspa121.jpg",
+      "https://images.squarespace-cdn.com/content/v1/63d99569b7654148d6958d63/8fe14c0a-3262-4a44-a285-bb63462209c0/305892228_195238216258673_1969830163876583102_n.jpg",
+    ],
+    source: "San Jose Aesthetics Hub official website — services",
+  },
+  "vanderbilt-beach-med-spa": {
+    hero: "https://www.chamberofcommerce.com/show_image.php?zc=2&w=250&src=/images/image-system/no-image.png",
+    gallery: [
+      "https://www.chamberofcommerce.com/images/qoute_left.png",
+      "https://www.chamberofcommerce.com/images/qoute_right.png",
+    ],
+    source: "Vanderbilt Beach Med Spa official website — services",
   },
 };

@@ -3,9 +3,6 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const FALLBACK =
-  "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=600&fit=crop";
-
 type RemoteImageProps = {
   src: string;
   alt: string;
@@ -13,7 +10,7 @@ type RemoteImageProps = {
   className?: string;
   sizes?: string;
   priority?: boolean;
-  /** When set, failed loads call this instead of swapping to the global fallback. */
+  /** When set, failed loads call this instead of hiding the image. */
   onFailed?: () => void;
 };
 
@@ -36,13 +33,14 @@ export function RemoteImage({
     setFailed(true);
   }
 
-  const resolved = failed ? FALLBACK : src;
-  const isUnsplash = resolved.includes("images.unsplash.com");
+  if (failed) return null;
+
+  const isUnsplash = src.includes("images.unsplash.com");
 
   if (isUnsplash) {
     return (
       <Image
-        src={resolved}
+        src={src}
         alt={alt}
         fill={fill}
         className={className}
@@ -61,7 +59,7 @@ export function RemoteImage({
     // Native img bypasses next/image remotePatterns — required for 195+ provider CDNs.
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={resolved}
+      src={src}
       alt={alt}
       className={imgClass}
       loading={priority ? "eager" : "lazy"}
