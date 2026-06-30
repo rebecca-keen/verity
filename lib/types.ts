@@ -51,6 +51,8 @@ export interface MedicalDirectorInfo {
   credentials: string;
   boardCertifications: string[];
   specialty?: string;
+  /** Where the medical director name was sourced, if known. */
+  source?: "practice-website" | "unknown";
 }
 
 export interface Product {

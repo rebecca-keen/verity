@@ -9,8 +9,6 @@ import { tampaBayRealSpas } from "./tampa-bay-real-spas";
 import { floridaSpaSeeds } from "./florida-spa-seeds";
 import { getSpaImages } from "./spa-images";
 import {
-  defaultCertifications,
-  defaultDataSources,
   defaultPhoneForMetro,
   deriveTreatmentCategories,
   getAreasByCity,
@@ -20,6 +18,7 @@ import {
   resolveProductSlugs,
   sortSpasForDisplay,
 } from "./spa-utils";
+import { getHonestCertifications, getHonestDataSources, normalizeSpaTrust } from "./spa-trust";
 import type { Metro, Product, ProductOrigin, ProviderType, Review, Spa, SpaSocials, Treatment } from "./types";
 
 export const originLabels: Record<ProductOrigin, string> = {
@@ -209,7 +208,7 @@ function seedSpa(data: SpaSeed, index: number): Spa {
         }
       : undefined;
 
-  return {
+  return normalizeSpaTrust({
     slug: data.slug,
     name: data.name,
     providerType: data.providerType,
@@ -236,13 +235,10 @@ function seedSpa(data: SpaSeed, index: number): Spa {
     phone,
     socials,
     certifications:
-      data.certifications ?? defaultCertifications(false, false),
-    dataSources: data.dataSources ?? [
-      ...defaultDataSources(false, website),
-      ...( "reviewSource" in data && data.reviewSource
-        ? [`${data.reviewSource} — rating ${data.rating}`]
-        : []),
-    ],
+      data.certifications ?? getHonestCertifications({ website, premierPartner: false, featuredPremium: false }),
+    dataSources:
+      data.dataSources ??
+      getHonestDataSources({ website, reviewSources }, data.reviewSource),
     image: images.hero,
     imageSource: images.source,
     logo: images.logo,
@@ -255,7 +251,7 @@ function seedSpa(data: SpaSeed, index: number): Spa {
       productSlugs: data.productSlugs,
     }),
     highlights: data.highlights,
-  };
+  });
 }
 
 const spaSeeds: SpaSeed[] = [

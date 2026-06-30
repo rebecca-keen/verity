@@ -338,6 +338,7 @@ export function getFeaturedPremiumSpas(spaList: Spa[], limit = 8): Spa[] {
   return getTopRatedSpas(spaList, limit);
 }
 
+/** @deprecated Use resolveMedicalDirectorInfo from spa-trust.ts */
 export function parseMedicalDirector(medicalDirector: string): {
   name: string;
   credentials: string;
@@ -345,48 +346,22 @@ export function parseMedicalDirector(medicalDirector: string): {
   specialty?: string;
 } {
   const [name, ...rest] = medicalDirector.split(",").map((s) => s.trim());
-  const creds = rest.join(", ") || "Licensed Medical Professional";
-  const boards: string[] = [];
-  if (creds.includes("MD")) boards.push("Florida Medical License");
-  if (creds.includes("NP")) boards.push("Advanced Practice Registered Nurse");
-  if (medicalDirector.toLowerCase().includes("plastic")) {
-    boards.push("American Board of Plastic Surgery");
-  } else if (medicalDirector.toLowerCase().includes("derm")) {
-    boards.push("American Board of Dermatology");
-  } else if (creds.includes("MD")) {
-    boards.push("American Board of Aesthetic Medicine");
-  }
-  return { name, credentials: creds, boardCertifications: boards };
+  return {
+    name: name || medicalDirector.trim(),
+    credentials: rest.join(", ") || "",
+    boardCertifications: [],
+  };
 }
 
-export function defaultCertifications(premierPartner: boolean, featuredPremium: boolean): string[] {
-  const base = [
-    "Florida DBPR Licensed Facility",
-    "Medical Director on File",
-    "Licensed Aesthetic Providers",
-  ];
-  if (premierPartner) {
-    base.push("Verity Premier Partner", "HIPAA Compliant Practice", "Product Disclosure Verified");
-  }
-  if (featuredPremium) {
-    base.push("Featured Premium Listing", "Verity Trust Review — Annual Audit");
-  }
-  return base;
+/** @deprecated Use getHonestCertifications from spa-trust.ts */
+export function defaultCertifications(_premierPartner: boolean, _featuredPremium: boolean): string[] {
+  return ["Listing sourced from public records", "Medical director — confirm with practice"];
 }
 
-export function defaultDataSources(
-  premierPartner: boolean,
-  website: string
-): string[] {
-  const sources = [
-    "Florida Department of Health — DBPR License Database",
-    "Google Business Profile",
-    "Florida Board of Medicine — Provider Lookup",
-  ];
-  if (website) sources.push("Spa official website");
-  if (premierPartner) {
-    sources.push("Spa-submitted credentials", "Verity verification team review");
-  }
+/** @deprecated Use getHonestDataSources from spa-trust.ts */
+export function defaultDataSources(_premierPartner: boolean, website: string): string[] {
+  const sources = ["Google Business Profile", "State licensing board — verification recommended"];
+  if (website) sources.push("Provider official website");
   return sources;
 }
 

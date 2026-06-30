@@ -1,4 +1,10 @@
+import Link from "next/link";
 import type { Spa } from "@/lib/types";
+import {
+  resolveLicenseVerification,
+  resolveMedicalDirectorInfo,
+} from "@/lib/spa-trust";
+import { getStateBoardName, getStateBoardUrl } from "@/lib/verification-links";
 
 export function TrustBadge({
   verified,
@@ -17,8 +23,11 @@ export function TrustBadge({
         </span>
       )}
       {verified && (
-        <span className="rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-gold">
-          Verified
+        <span
+          className="rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-gold"
+          title="Listing reviewed and sourced from public records — not a state license confirmation"
+        >
+          Verified listing
         </span>
       )}
       {premierPartner && (
@@ -31,32 +40,60 @@ export function TrustBadge({
 }
 
 export function TrustPanel({ spa }: { spa: Spa }) {
+  const md = resolveMedicalDirectorInfo(spa);
+  const license = resolveLicenseVerification(spa);
+  const boardName = getStateBoardName(spa.state);
+  const boardUrl = getStateBoardUrl(spa.state);
+
   return (
     <div className="luxury-border rounded-2xl bg-cream p-6">
       <h3 className="font-serif text-lg text-charcoal">Trust & credentials</h3>
       <p className="mt-1 text-sm text-stone">
-        Aggregated from multiple verified sources — not self-reported alone.
+        Aggregated from public sources. Medical licenses and director credentials should be confirmed
+        with the practice or your state board.
       </p>
 
       <div className="mt-5 rounded-xl bg-white p-4">
         <p className="text-xs uppercase tracking-widest text-gold">Medical director</p>
-        <p className="mt-1 font-medium text-charcoal">{spa.medicalDirectorInfo.name}</p>
-        <p className="text-sm text-stone">{spa.medicalDirectorInfo.credentials}</p>
-        {spa.medicalDirectorInfo.boardCertifications.length > 0 && (
-          <ul className="mt-2 space-y-1">
-            {spa.medicalDirectorInfo.boardCertifications.map((b) => (
-              <li key={b} className="text-xs text-stone">
-                ✓ {b}
-              </li>
-            ))}
-          </ul>
+        {md.source === "practice-website" ? (
+          <>
+            <p className="mt-1 font-medium text-charcoal">{md.name}</p>
+            {md.credentials && <p className="text-sm text-stone">{md.credentials}</p>}
+            <p className="mt-2 text-xs text-stone">{md.displayNote}</p>
+          </>
+        ) : (
+          <>
+            <p className="mt-1 font-medium text-charcoal">{md.name}</p>
+            <p className="text-sm text-stone">{md.credentials}</p>
+            <p className="mt-2 text-xs text-stone">{md.displayNote}</p>
+          </>
         )}
+        <a
+          href={boardUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-block text-xs text-gold hover:underline"
+        >
+          Look up provider on {boardName} →
+        </a>
       </div>
 
       <dl className="mt-5 space-y-3 text-sm">
         <div className="flex justify-between border-b border-stone/10 pb-2">
-          <dt className="text-stone">License ID</dt>
-          <dd className="font-medium text-charcoal">{spa.licenseId}</dd>
+          <dt className="text-stone">{license.label}</dt>
+          <dd className="text-right font-medium text-charcoal">
+            {license.showLicenseId && spa.licenseId ? (
+              <span className="block">{spa.licenseId}</span>
+            ) : null}
+            <a
+              href={license.linkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:underline"
+            >
+              {license.linkText} →
+            </a>
+          </dd>
         </div>
         <div className="flex justify-between border-b border-stone/10 pb-2">
           <dt className="text-stone">Years operating</dt>
@@ -99,6 +136,10 @@ export function TrustPanel({ spa }: { spa: Spa }) {
           </li>
         ))}
       </ul>
+
+      <Link href="/how-we-verify" className="mt-5 inline-block text-sm text-gold hover:underline">
+        How we verify →
+      </Link>
     </div>
   );
 }

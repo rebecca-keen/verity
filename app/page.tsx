@@ -14,14 +14,14 @@ export default function HomePage() {
     <>
       <section className="border-b border-stone/10 bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-20 text-center md:py-28">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold">United States · Verified providers</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-gold">United States · Curated listings</p>
           <h1 className="mx-auto mt-4 max-w-3xl font-serif text-4xl leading-tight text-charcoal md:text-6xl">
-            Trusted aesthetics &amp; med spas, verified
+            Trusted aesthetics &amp; med spas, clearly sourced
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-stone">
-            Find verified aesthetics clinics, med spas, and dermatology practices across the United States.
+            Find curated aesthetics clinics, med spas, and dermatology practices across the United States.
             Research injectables, lasers, facials, and body contouring with product transparency, medical
-            director info, and AI matching — starting with curated listings in top metros nationwide.
+            director info where publicly listed, and AI matching — starting with listings in top metros nationwide.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
@@ -50,7 +50,7 @@ export default function HomePage() {
             <p className="mt-3 text-sm leading-relaxed text-stone">
               Whether you&apos;re comparing Botox and fillers, booking a laser series, or choosing your
               first facial or body contouring treatment — Verity helps luxury-minded buyers find
-              verified providers with transparent products, medical director credentials, and real
+              verified providers with transparent products, publicly listed medical director info, and real
               reviews.
             </p>
             <Link href="/concierge" className="mt-4 inline-block text-sm text-gold hover:underline">
@@ -61,7 +61,7 @@ export default function HomePage() {
             <p className="text-xs uppercase tracking-widest text-gold">For providers</p>
             <h3 className="mt-2 font-serif text-xl text-charcoal">Grow your practice</h3>
             <p className="mt-3 text-sm leading-relaxed text-stone">
-              Aesthetics clinics, med spas, and dermatology practices use Verity for verified profiles,
+              Aesthetics clinics, med spas, and dermatology practices use Verity for curated listings,
               direct contact links, and optional featured placement — free listings today, with top
               visibility for practices who want to stand out in their city.
             </p>
@@ -80,8 +80,8 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-3">
             {[
               {
-                title: "Verified trust",
-                desc: "License, medical director, and standards — not just star ratings.",
+                title: "Sourced trust",
+                desc: "License lookup links, medical director info where listed, and honest sourcing — not just star ratings.",
               },
               {
                 title: "Product transparency",
