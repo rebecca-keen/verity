@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { Spa } from "@/lib/types";
+import { isPartnerBadgeLogo } from "@/lib/spa-logo-utils";
 import { RemoteImage } from "./RemoteImage";
 
 function isGenericStock(url: string) {
@@ -21,7 +22,7 @@ function cardImageUrls(spa: Spa): string[] {
     seen.add(url);
     urls.push(url);
   };
-  push(spa.logo);
+  if (spa.logo && !isPartnerBadgeLogo(spa.logo)) push(spa.logo);
   push(spa.image);
   for (const url of spa.gallery ?? []) push(url);
   return urls;

@@ -73,6 +73,15 @@ const PREFER_URL_RE =
 const LOGO_URL_RE =
   /(?:^|[/_-])logo(?:[._-]|$)|[-_]logo[-_.]|logo[-_]?(?:white|dark|mark|icon|full|primary|secondary)|(?:^|[/_-])brand(?:[._-]|$)/i;
 
+/** Partner badges and non-brand marks — reject as provider logo */
+const PARTNER_BADGE_LOGO_RE =
+  /alle[-+]|allergan|galderma|cobrand|proud[-_]?member|member[-_]?logo|fb-icon|diamond\d|care[-_]?credit|synchrony|spacc_|\/INJECTIONS\.png/i;
+
+function isPartnerBadgeLogo(url) {
+  if (!url) return false;
+  return PARTNER_BADGE_LOGO_RE.test(url);
+}
+
 const SITE_PATHS = [
   "",
   "/services",
@@ -494,7 +503,7 @@ function extractLogoCandidates(html, base) {
   }
 
   const og = extractOgImage(html, base);
-  if (og && isLikelyLogo(og)) add(og, 120, "og-logo");
+  if (og && !isPartnerBadgeLogo(og)) add(og, isLikelyLogo(og) ? 120 : 110, "og-image");
 
   return candidates.sort((a, b) => b.score - a.score);
 }
@@ -518,6 +527,7 @@ async function fetchSiteLogo(website) {
   }
 
   for (const c of candidates) {
+    if (isPartnerBadgeLogo(c.url)) continue;
     if (!urlAllowedForWebsite(c.url, website)) continue;
     const check = await checkUrl(c.url);
     if (check.ok) return c.url;
@@ -1028,7 +1038,7 @@ async function main() {
 
       if (needsLogo && isValidWebsite(spa?.website)) {
         const existingLogo = item.images?.logo;
-        if (existingLogo) {
+        if (existingLogo && !isPartnerBadgeLogo(existingLogo)) {
           const lc = await checkUrl(existingLogo);
           if (lc.ok) resolved.logo = existingLogo;
         }

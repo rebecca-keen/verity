@@ -716,7 +716,7 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
 > = {
               "injections-and-co-sarasota": {
     hero: "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/3b2e9e8d-655e-456c-b781-f4505abde71a/PRP+Hair+treatment+at+Injections+and+Co+in+Sarasota.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/2ff93966-2a60-4f25-87b2-ec59a78ada38/INJECTIONS.png?format=1500w",
+    logo: "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/722d180c-1b33-4af9-8fe1-6e0081db48f4/Untitled+design+%284%29.jpg?format=1500w",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/9375917a-e1a3-483c-98bf-931f2a2e2d0a/Alison-chafin-injecting-daxxify-to-female-client-in-sarasota.jpg",
       "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/70624b63-c0f6-448f-a361-39e1dbe7af21/Alison_Chafin_sarasota_medical_spa_with_dermal_filler.png",
@@ -984,7 +984,7 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
   },
               "couture-medspa-kissimmee": {
     hero: "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/66e1ea19858b3f9ff5cb33bb_skinpen%20service.webp",
-    logo: "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/66e1ea19858b3f9ff5cb33ca_fb-icon.svg",
+    logo: "https://cdn.prod.website-files.com/6606ee791d9236dcc0ef7cc6/66d086bb0b2ddf57a760fa7e_icon-256.png",
     gallery: [
       "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb338b/66e1ea19858b3f9ff5cb3546_N%20Eslava%20after%201%20sculptra.webp",
       "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb338b/66e1ea19858b3f9ff5cb3606_Dana%20Laing%20after%203%20treatments%20(1).webp",
