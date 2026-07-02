@@ -1391,9 +1391,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Sanctuary Medical Aesthetic Center official website",
   },
-                "lov-medspa-miami-aventura": {
+                  "lov-medspa-miami-aventura": {
     hero: "https://www.lovmedspa.com/og-image.jpg",
-    logo: "https://lovmedspa.com/favicon.ico?favicon.2vob68tjqpejf.ico?dpl=dpl_7qyPip94irHraYsrDuerT3PuVkDx",
+    logo: "https://www.lovmedspa.com/icon.png",
     gallery: [
 
     ],
@@ -1442,8 +1442,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Charette Cosmetics Medical Spa - Miami Beach official website — services",
   },
-                      "bodywelle-miami-beach": {
+                        "bodywelle-miami-beach": {
     hero: "https://alonsomartinmd.com/wp-content/uploads/elementor/thumbs/chemical-peel-treatment-types-01-rn6jq8e9qmz7hsgbe8mflexk9k7abu1m8l0yrfpbgw.jpg",
+    logo: "https://alonsomartinmd.com/wp-content/uploads/2025/07/favicon-1-300x300.png",
     gallery: [
 
     ],
@@ -1612,8 +1613,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Get Refreshed official website — services",
   },
-                      "aesthetic305-miami": {
+                        "aesthetic305-miami": {
     hero: "https://www.medaestheticsmiami.com/wp-content/uploads/2023/04/services-advanced500.jpg",
+    logo: "https://www.medaestheticsmiami.com/wp-content/uploads/2022/10/medam-logo-vertical-216.png",
     gallery: [
       "https://www.medaestheticsmiami.com/wp-content/uploads/2023/04/swich-facials.jpg",
       "https://www.medaestheticsmiami.com/wp-content/uploads/2023/04/services-laser500.jpg",
@@ -1633,8 +1635,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Laria MedSpa official website — services",
   },
-                      "monaco-medspa-miami": {
+                        "monaco-medspa-miami": {
     hero: "https://lirp.cdn-website.com/cee2bf2b/dms3rep/multi/opt/PhotoRetouch1752622202476-1920w.jpg",
+    logo: "https://irp.cdn-website.com/cee2bf2b/dms3rep/multi/Home-screen-icon-Monaco-MedSpa.png",
     gallery: [
 
     ],
@@ -1684,8 +1687,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "The Beauty Clinic Aventura official website",
   },
-                      "xs-medspa-fort-lauderdale": {
+                        "xs-medspa-fort-lauderdale": {
     hero: "https://medspaflorida.com/wp-content/uploads/2025/07/Medspa_florida3-2-1.png",
+    logo: "https://refreshmedical.com/wp-content/uploads/2025/04/Final-05-07-removebg-preview-1-100x100.png",
     gallery: [
 
     ],

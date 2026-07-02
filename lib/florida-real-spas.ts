@@ -1118,8 +1118,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Envy Me Aesthetics official website — services",
   },
-              "tonicity-health-safety-harbor": {
+                "tonicity-health-safety-harbor": {
     hero: "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
+    logo: "https://tonicityhealth.com/wp-content/uploads/2021/03/Logo-300x300.png",
     gallery: [
       "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
       "https://tonicityhealth.com/wp-content/uploads/2021/03/Skin-Treatment-2.jpg",
@@ -1127,8 +1128,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Tonicity Health & Med Spa official website — homepage",
   },
-              "core-wellness-safety-harbor": {
+                "core-wellness-safety-harbor": {
     hero: "https://static.wixstatic.com/media/f20ff3_e706dee7a3f4421c9b3ea673c1fd7bf8~mv2.png/v1/fill/w_2000,h_789,al_c/f20ff3_e706dee7a3f4421c9b3ea673c1fd7bf8~mv2.png",
+    logo: "https://static.wixstatic.com/media/f20ff3_33a8f780047845ceaaa59ffcfb9c4fdf~mv2.png/v1/fill/w_787,h_750,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20design%20(2).png",
     gallery: [
       "https://static.wixstatic.com/media/f20ff3_33a8f780047845ceaaa59ffcfb9c4fdf~mv2.png/v1/fill/w_787,h_750,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20design%20(2).png",
     ],
@@ -1145,15 +1147,17 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Elemence Med Spa official website — services",
   },
-              "dunedin-medical-aesthetics-laser": {
+                "dunedin-medical-aesthetics-laser": {
     hero: "https://static.wixstatic.com/media/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg/v1/crop/x_0,y_38,w_802,h_662/fill/w_489,h_404,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fotona%20face%20lift%20picture.jpg",
+    logo: "https://static.parastorage.com/client/pfavico.ico",
     gallery: [
 
     ],
     source: "Dunedin Medical Aesthetics Spa & Laser official website — services",
   },
-              "bloom-iv-dunedin": {
+                "bloom-iv-dunedin": {
     hero: "https://lirp.cdn-website.com/faa64f10/dms3rep/multi/opt/GettyImages-1270488640-1920w.jpg",
+    logo: "https://irp.cdn-website.com/faa64f10/dms3rep/multi/bloom-fav.png",
     gallery: [
 
     ],
@@ -1232,8 +1236,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "LIVIA Medical Spa & Aesthetics official website — services",
   },
-              "tre-medspa-tampa": {
+                "tre-medspa-tampa": {
     hero: "https://www.tremedspa.com/uploads/7/3/5/3/73536135/published/8031713.jpg?1488882462",
+    logo: "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider1_orig.webp",
     gallery: [
       "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider1_orig.webp",
       "https://www.tremedspa.com/files/theme/slide2.jpg",

@@ -835,8 +835,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Total Anti-Aging & Wellness official website — services",
   },
-              "key-west-medspa-duval": {
+                "key-west-medspa-duval": {
     hero: "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/408%20closing%20goggle%20aspect%20ratio.jpg",
+    logo: "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/2550def6-5c4a-4e0c-87b2-c88376682563.jpg/:/rs=w:57,h:57,m",
     gallery: [
 
     ],
@@ -855,7 +856,7 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
   },
               "divine-medical-spa-key-west": {
     hero: "https://divinekeywest.com/wp-content/uploads/2023/02/DIVINE-WEDDING-GLOW-TREATMENT.jpg",
-    logo: "http://divinekeywest.com/wp-content/uploads/2020/11/Logo.png",
+    logo: "https://divinekeywest.com/wp-content/uploads/2020/11/Logo.png",
     gallery: [
       "https://divinekeywest.com/wp-content/uploads/2023/02/DIVINE-SOOTHING-EXPRESS-TREATMENT.jpg",
       "https://divinekeywest.com/wp-content/uploads/2020/11/New-Project-4.png",
@@ -896,8 +897,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "SB Medspa — Dr. Bawa & Associates official website — services",
   },
-              "destin-medical-spa": {
+                "destin-medical-spa": {
     hero: "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-34.jpg",
+    logo: "https://destinbotox.com/wp-content/uploads/2024/04/og-image-01b.jpg",
     gallery: [
       "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-33.jpg",
       "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-32.jpg",

@@ -1776,8 +1776,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Glow Aesthetics Bar official website — services",
   },
-              "serenity-beauty-secrets-tampa": {
+                "serenity-beauty-secrets-tampa": {
     hero: "https://img1.wsimg.com/isteam/getty/2177794323",
+    logo: "https://img1.wsimg.com/isteam/ip/d1c052f2-129b-4422-be35-51b6ce7d822a/Serenity%20beauty%20secrets%20(Instagram%20Post)%20(2).PNG/:/rs=w:57,h:57,m",
     gallery: [
 
     ],
@@ -1815,15 +1816,17 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Indulgence Medical Day Spa official website — services",
   },
-                    "skin-science-tampa": {
+                      "skin-science-tampa": {
     hero: "https://skinsciencetampa.com/wp-content/uploads/2025/03/quote.jpg",
+    logo: "https://skinsciencemedicalspa.com/wp-content/uploads/2024/11/cropped-black-favicon-192x192.png",
     gallery: [
       "https://skinsciencetampa.com/wp-content/uploads/2025/03/3.jpg",
     ],
     source: "Skin Science official website — services",
   },
-              "revive-body-lounge-apollo-beach": {
+                "revive-body-lounge-apollo-beach": {
     hero: "https://img1.wsimg.com/isteam/ip/19900a79-381c-4795-909f-2412b5319099/246A0341.jpeg",
+    logo: "https://img1.wsimg.com/isteam/ip/19900a79-381c-4795-909f-2412b5319099/IMG_8668.png/:/rs=w:57,h:57,m",
     gallery: [
 
     ],
@@ -1960,8 +1963,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Venus Med Spa official website — services",
   },
-                    "fusion-medispa-odessa": {
+                      "fusion-medispa-odessa": {
     hero: "https://fusionmedispa.net/cdn/shop/articles/quality_med_spa_services_bb3247ff-ae59-4844-8a96-4e743e621510.jpg?v=1780402247&width=533",
+    logo: "https://fusionmedispa.net/cdn/shop/files/favicon.png?v=1725878038",
     gallery: [
       "https://fusionmedispa.net/cdn/shop/files/Fusion_Medispa_Black.png?v=1725548669&width=120",
       "https://fusionmedispa.net/cdn/shop/articles/top_beauty_clinic.jpg?v=1780402182&width=533",
@@ -2025,7 +2029,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Aria Med Spa official website — services",
   },
-              "kristals-cosmetics-med-spa-clearwater": {
+                "kristals-cosmetics-med-spa-clearwater": {
     hero: "https://www.kristalsmedspa.com/og-image.jpg",
     logo: "https://www.kristalsmedspa.com/brand-logo.png",
     gallery: [
@@ -2033,9 +2037,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Kristals Cosmetics Med SPA official website — services",
   },
-              "adare-longevity-aesthetics-st-petersburg": {
+                "adare-longevity-aesthetics-st-petersburg": {
     hero: "https://www.adarelife.com/assets/clinic-lobby-bright-CaEOnnKq.jpg",
-    logo: "https://www.adarelife.com/favicon-512.png",
+    logo: "https://www.adarelife.com/favicon.ico",
     gallery: [
       "https://www.adarelife.com/assets/wellness-editorial-ZMwgMoSN.jpg",
       "https://www.adarelife.com/assets/body-contouring-abs-7V-sN1cH.jpg",
