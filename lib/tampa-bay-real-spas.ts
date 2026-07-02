@@ -2046,7 +2046,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
   },
               "baymed-hair-tampa": {
     hero: "https://baymedhair.com/wp-content/uploads/2026/05/co2-laser-for-body-skin-tightening7-1024x1024.jpg",
-    logo: "https://baymedhair.com/wp-content/uploads/2023/01/cropped-logo-192x192.png",
+    logo: "https://baymedhair.com/wp-content/uploads/2024/02/logo.png",
     gallery: [
       "https://baymedhair.com/wp-content/uploads/2026/05/co2-laser-for-body-skin-tightening3-1024x1024.jpg",
       "https://baymedhair.com/wp-content/uploads/2026/05/co2-laser-for-body-skin-tightening4-1024x1024.jpg",

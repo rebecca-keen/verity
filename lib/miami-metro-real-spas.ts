@@ -1693,7 +1693,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
   },
                 "novaskin-med-spa-miami": {
     hero: "https://novaskinmedspa.com/wp-content/uploads/2025/07/laser-treatments-600x400-1.jpg",
-    logo: "https://novaskinmedspa.com/wp-content/uploads/2026/02/logo-new.svg",
+    logo: "https://novaskinmedspa.com/wp-content/uploads/2026/01/LOGO-2.svg",
     gallery: [
       "https://novaskinmedspa.com/wp-content/uploads/2025/07/skin-tightening-600x400-1.png",
       "https://novaskinmedspa.com/wp-content/uploads/2025/07/hair-loss-treatment-miami-600x400-1.jpg",
