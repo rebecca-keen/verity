@@ -286,7 +286,7 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     instagram: "zeeaesthetics",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
     highlights: ["Google 5★ (219 reviews)", "Verified Florida med spa", "Tampa location"],
-    phone: "(813) 555-0100",
+    phone: "(813) 825-4072",
     website: "https://zeeaesthetics.com/",
     reviewSource: "Google Business Profile",
   },
@@ -1480,7 +1480,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
   },
                   "lan-aesthetics-tampa": {
     hero: "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/b981ddde-7c30-4a12-a815-8dd3b46b22e9/Kristin_Ibison_Photograhy-50.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/d1aa6727-603c-49ba-bdaa-bebe90567f11/Untitled+design+%283%29.png?format=1500w",
+    logo: "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/961052ed-fcd8-43af-9b27-d7b3b7497933/favicon.ico?format=500w",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/cc0df588-4f2e-4205-8674-3f2c443778c7/ELAN-Branding--FortDesoto-Florida-2025-PHOTOSWITHJILL-20.jpg",
       "https://images.squarespace-cdn.com/content/v1/64108914b580a31faa358ff7/058e4be1-3d88-4f76-b5eb-848c2ba870b3/ELAN_Cofounders.jpg",
@@ -1491,7 +1491,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
   },
                         "mynt-aesthetics-land-o-lakes": {
     hero: "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/f23e2a1e-83b4-4ef8-a070-ab67e987a55c/Home_Header3.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/t/631fb2e0397c9c404c7fc0c8/1663021804563/MYNT_Logos(F)-06.png?format=1500w",
+    logo: "https://static1.squarespace.com/static/62b0b6294e70b4066e03bf56/t/631fb2e0397c9c404c7fc0c8/1663021804563/MYNT_Logos%28F%29-06.png?format=1500w",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/1781046285117-CQUYZ87S6Y1UTFRVP0MI/image-asset.jpeg",
       "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/1781017676228-7QD49YQ2WRBOATSX7G8I/image-asset.jpeg",
@@ -1578,7 +1578,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
   },
               "zee-aesthetics-tampa": {
     hero: "https://img1.wsimg.com/isteam/ip/ff2dcfc8-381b-4384-be7f-6d00b5fab056/IMG_0866.JPG",
-    logo: "https://img1.wsimg.com/isteam/ip/ff2dcfc8-381b-4384-be7f-6d00b5fab056/Zee%20SM%20CIRCLE-34df8c1.PNG/:/rs=w:180,h:180,m",
+    logo: "https://img1.wsimg.com/isteam/ip/ff2dcfc8-381b-4384-be7f-6d00b5fab056/Zee%20SM%20FILE.png",
     gallery: [
       "https://img1.wsimg.com/isteam/ip/ff2dcfc8-381b-4384-be7f-6d00b5fab056/IMG_0542.JPG",
       "https://img1.wsimg.com/isteam/ip/ff2dcfc8-381b-4384-be7f-6d00b5fab056/IMG_0552.JPG",
@@ -1703,7 +1703,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
   },
                     "spindrift-aesthetics-st-petersburg": {
     hero: "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/01f56657-563a-434d-9fc6-fec5ed39edc2/IMG_7925.JPG",
-    logo: "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/t/68cef7668ab2c818b675c40d/1758394214116/Color+logo+-+no+background.png?format=1500w",
+    logo: "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/ced1ce23-e8b5-423b-9fdb-3f0162707043/Color+logo+-+no+background.png?format=1500w",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/8fad1616-da58-44bf-bf44-09c27fbf9e3d/pexels-itslauravillela-30822276.jpg",
       "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/354ef3f1-ccce-4df8-97d0-9cbcfa1f6eb7/IMG_7919.JPG",

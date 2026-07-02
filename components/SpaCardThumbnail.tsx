@@ -55,7 +55,7 @@ export function SpaCardThumbnail({ spa }: { spa: Spa }) {
   const urls = useMemo(() => cardImageUrls(spa), [spa]);
   const [idx, setIdx] = useState(0);
   const src = idx < urls.length ? urls[idx] : undefined;
-  const isLogo = src === spa.logo;
+  const isLogo = !!spa.logo && !isPartnerBadgeLogo(spa.logo) && src === spa.logo;
 
   if (src) {
     if (isLogo) {

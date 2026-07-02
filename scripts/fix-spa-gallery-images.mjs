@@ -75,7 +75,7 @@ const LOGO_URL_RE =
 
 /** Partner badges and non-brand marks — reject as provider logo */
 const PARTNER_BADGE_LOGO_RE =
-  /alle[-+]|allergan|galderma|cobrand|proud[-_]?member|member[-_]?logo|fb-icon|diamond\d|care[-_]?credit|synchrony|spacc_|\/INJECTIONS\.png/i;
+  /alle[-+]|allergan|galderma|cobrand|proud[-_]?member|member[-_]?logo|fb-icon|cropped-diamond|diamond\d|care[-_]?credit|synchrony|spacc_|tec-logo/i;
 
 function isPartnerBadgeLogo(url) {
   if (!url) return false;
@@ -371,6 +371,7 @@ function imageIssues(slug, images, website) {
   const uniqueGallery = uniqueGalleryUrls(images.hero, images.gallery);
   if (website && uniqueGallery.length < 2) issues.push("weak-gallery");
   if (website && isValidWebsite(website) && !images.logo) issues.push("missing-logo");
+  if (images.logo && isPartnerBadgeLogo(images.logo)) issues.push("bad-logo");
   if (images.gallery.some((u) => isLikelyLogo(u))) issues.push("logo-in-gallery");
   return [...new Set(issues)];
 }
@@ -482,28 +483,28 @@ function extractLogoCandidates(html, base) {
     const hrefM = tag.match(/href=["']([^"']+)["']/i);
     if (!hrefM) continue;
     let score = parseLinkSizes(tag);
-    if (/apple-touch-icon/i.test(tag)) score += 200;
-    else if (/icon/i.test(tag)) score += 100;
+    if (/apple-touch-icon/i.test(tag)) score += 280;
+    else if (/icon/i.test(tag)) score += 220;
     add(hrefM[1], score, "link-icon");
   }
+
+  const og = extractOgImage(html, base);
+  if (og && !isPartnerBadgeLogo(og)) add(og, isLikelyLogo(og) ? 300 : 260, "og-image");
 
   for (const m of html.matchAll(/<img[^>]+>/gi)) {
     const tag = m[0];
     if (!/(?:class|id|alt)=["'][^"']*logo[^"']*["']/i.test(tag)) continue;
     const srcM = tag.match(/(?:src|data-src)=["']([^"']+)["']/i);
-    if (!srcM) continue;
-    add(srcM[1], 250, "header-logo");
+    if (!srcM || isPartnerBadgeLogo(srcM[1])) continue;
+    add(srcM[1], 240, "header-logo");
   }
 
   for (const m of html.matchAll(/<img[^>]+>/gi)) {
     const tag = m[0];
     const srcM = tag.match(/(?:src|data-src)=["']([^"']+)["']/i);
-    if (!srcM || !LOGO_URL_RE.test(tag)) continue;
-    add(srcM[1], 180, "logo-img");
+    if (!srcM || !LOGO_URL_RE.test(tag) || isPartnerBadgeLogo(srcM[1])) continue;
+    add(srcM[1], 80, "logo-img");
   }
-
-  const og = extractOgImage(html, base);
-  if (og && !isPartnerBadgeLogo(og)) add(og, isLikelyLogo(og) ? 120 : 110, "og-image");
 
   return candidates.sort((a, b) => b.score - a.score);
 }
@@ -1027,7 +1028,12 @@ async function main() {
           i.startsWith(x)
         )
       );
-      const needsLogo = LOGOS || item.issues.includes("missing-logo") || !item.images?.logo;
+      const needsLogo =
+        LOGOS ||
+        item.issues.includes("missing-logo") ||
+        item.issues.includes("bad-logo") ||
+        !item.images?.logo ||
+        isPartnerBadgeLogo(item.images?.logo);
 
       console.error(`Fixing ${item.slug} (${item.issues.join(", ") || "refresh"})...`);
 

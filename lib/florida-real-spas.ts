@@ -1335,7 +1335,7 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
   },
               "jax-aesthetics-wellness-jacksonville": {
     hero: "https://jaxaestheticscenter.com/wp-content/uploads/botox-1.jpg",
-    logo: "https://jaxaestheticscenter.com/wp-content/uploads/TEC-Logo-NEW.png",
+    logo: "https://jaxaestheticscenter.com/wp-content/uploads/TAC-Logo-RGB-horz2.png",
     gallery: [
       "https://jaxaestheticscenter.com/wp-content/uploads/body-sculpting-1.jpg",
       "https://jaxaestheticscenter.com/wp-content/uploads/contouring-1.jpg",
