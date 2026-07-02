@@ -590,22 +590,6 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
   }),
   // ── New York — Long Island ───────────────────────────────────
   seed({
-    slug: "vital-medical-care-aesthetics-li",
-    name: "Vital Medical Care & Aesthetics",
-    state: "NY",
-    neighborhood: "Great Neck",
-    city: "Long Island",
-    tagline: "Long Island injectables and wellness.",
-    description:
-      "Great Neck med spa offering Botox, fillers, IV therapy, and body contouring with 4.7 Google rating.",
-    rating: 4.7,
-    reviewCount: 189,
-    googleRating: 4.7,
-    phone: "(516) 555-0133",
-    website: "https://www.vitalmedicalcare.com/",
-    yearsOpen: 8,
-  }),
-  seed({
     slug: "tenth-avenue-aesthetics-li",
     name: "Tenth Avenue Aesthetics",
     state: "NY",
@@ -1242,22 +1226,6 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     yearsOpen: 15,
   }),
   seed({
-    slug: "glo-de-vie-med-spa-raleigh",
-    name: "Glo de Vie Med Spa",
-    state: "NC",
-    neighborhood: "Cary",
-    city: "Raleigh",
-    tagline: "Cary/Raleigh injectables and laser.",
-    description:
-      "Cary med spa serving Raleigh-Durham with injectables, laser hair removal, and skin rejuvenation.",
-    rating: 4.7,
-    reviewCount: 189,
-    googleRating: 4.7,
-    phone: "(919) 555-0188",
-    website: "https://www.glodeviemedspa.com/",
-    yearsOpen: 9,
-  }),
-  seed({
     slug: "elase-med-spa-raleigh",
     name: "Elase Med Spa",
     state: "NC",
@@ -1760,14 +1728,6 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Manhattan Aesthetics official website — services",
   },
-    "vital-medical-care-aesthetics-li": {
-    hero: "https://vmaesthetics.com/wp-content/uploads/2021/08/Doc-best.jpeg",
-    gallery: [
-      "https://vmaesthetics.com/wp-content/uploads/2024/03/481235788_932213962326456_1976091433915229598_n.jpg",
-      "https://vmaesthetics.com/wp-content/uploads/2024/03/cropped-481235788_932213962326456_1976091433915229598_n-270x270.jpg",
-    ],
-    source: "Vital Medical Care & Aesthetics official website — services",
-  },
     "manhattan-laser-spa-ues": {
     hero: "https://manhattan-laser.com/wp-content/uploads/2025/02/Anti-Wrinkle-Injections-Anti-Wrinkle-Treatment-for-Wrinkles-Can-Make-You-Happier-Blog-Image.jpg",
     logo: "https://www.manhattanlaserspa.com/mlsfavicon.png",
@@ -2201,7 +2161,6 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "eden-med-spa-downtown-nyc": "photo-1570172619644-dfd03ed5d881",
   "manhattan-laser-spa-ues": "photo-1515377905703-c4788e51af15",
   "miracleface-medspa-midtown": "photo-1522335789203-aabd1fc54bc9",
-  "vital-medical-care-aesthetics-li": "photo-1556228578-0d85b1a4d571",
   "tenth-avenue-aesthetics-li": "photo-1608571423902-eed4a5ad8108",
   "inara-med-spa-long-island": "photo-1556228720-195a672e8a03",
   "viva-md-atlanta": "photo-1570172619644-dfd03ed5d881",
@@ -2230,7 +2189,6 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "prestige-med-spa-charlotte": "photo-1556228578-0d85b1a4d571",
   "bodylase-charlotte": "photo-1608571423902-eed4a5ad8108",
   "blue-water-spa-raleigh": "photo-1556228720-195a672e8a03",
-  "glo-de-vie-med-spa-raleigh": "photo-1570172619644-dfd03ed5d881",
   "elase-med-spa-raleigh": "photo-1519823551278-64ac92734fb1",
   "ageless-remedies-raleigh": "photo-1487412947147-5cebf100ffc2",
   "evolve-medspa-nashville": "photo-1629909613654-28e377c37b09",

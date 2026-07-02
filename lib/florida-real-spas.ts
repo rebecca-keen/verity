@@ -1305,7 +1305,7 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
   },
               "rejuvin-dr-fazeli-orlando": {
     hero: "https://rejuvinorlando.com/wp-content/uploads/2026/03/wellness-02.jpg",
-    logo: "https://rejuvinorlando.com/wp-content/uploads/2026/03/favicon-300x300.png",
+    logo: "https://rejuvinorlando.com/wp-content/uploads/2026/03/logo-rejuvin-01.png",
     gallery: [
       "https://rejuvinorlando.com/wp-content/plugins/accessibility-onetap/assets/images/spanish.png",
       "https://rejuvinorlando.com/wp-content/uploads/2026/03/download-app-01.jpg",
