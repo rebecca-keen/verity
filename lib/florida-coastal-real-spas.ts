@@ -962,7 +962,7 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
   },
               "tao-medical-spa-melbourne": {
     hero: "https://www.discovertao.com/assets/img/feature/home/injectables-fillers.jpg",
-    logo: "https://www.discovertao.com/assets/img/logo-white.svg",
+    logo: "https://www.discovertao.com/assets/img/logo.svg",
     gallery: [
       "https://www.discovertao.com/assets/img/feature/home/laser-energy.jpg",
       "https://www.discovertao.com/assets/img/feature/home/wellness.jpg",

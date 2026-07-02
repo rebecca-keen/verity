@@ -1042,7 +1042,7 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     reviewCount: 548,
     googleRating: 4.9,
     phone: "(773) 555-0188",
-    website: "https://www.essencemedspa.com/",
+    website: "https://essenceskinclinic.com/",
     yearsOpen: 9,
   }),
   seed({
@@ -1323,22 +1323,6 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     yearsOpen: 7,
   }),
   seed({
-    slug: "nsi-wellness-aesthetics-nashville",
-    name: "NSI Wellness | Aesthetics",
-    state: "TN",
-    neighborhood: "Midtown",
-    city: "Nashville",
-    tagline: "Family-owned Nashville rejuvenation medicine.",
-    description:
-      "Midtown Nashville family-owned practice with 4.9 Google rating for injectables and wellness.",
-    rating: 4.9,
-    reviewCount: 327,
-    googleRating: 4.9,
-    phone: "(615) 555-0188",
-    website: "https://www.nsiwellness.com/",
-    yearsOpen: 6,
-  }),
-  seed({
     slug: "evolve-medspa-nashville",
     name: "Evolve Medspa",
     state: "TN",
@@ -1426,9 +1410,13 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
       "cienega-medical-west-hollywood": {
-    hero: "https://cienegaspa.com/wp-content/uploads/2024/01/cienega-med-spa-hero.jpg",
+    hero: "https://cienegaspa.com/wp-content/uploads/2016/06/cienega-medical-west-hollywood-reception-botox-mural.jpg",
+    logo: "https://cienegaspa.com/wp-content/uploads/2026/03/cienega-water-droplet-brand-icon-solid-300x300.png",
     gallery: [
-
+      "https://cienegaspa.com/wp-content/uploads/2016/06/cienega-medical-santa-monica-reception-area.jpg",
+      "https://cienegaspa.com/wp-content/uploads/2021/09/cienega-medical-front-desk-reception-los-angeles.jpg.jpeg",
+      "https://cienegaspa.com/wp-content/uploads/2025/12/cienega-medical-staff-headshot-los-angeles.jpg",
+      "https://cienegaspa.com/wp-content/uploads/2025/08/dr-neal-dermatologist-medical-director-cienega-medical-los-angeles.jpg",
     ],
     source: "Cienega Medical official website — services",
   },
@@ -2000,6 +1988,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Old Town Med Spa official website — services",
   },
+    "essence-medspa-chicago": {
+    hero: "https://essenceskinclinic.com/wp-content/uploads/2023/08/essence-homepage-section-1-1024x1024.jpg",
+    logo: "https://essenceskinclinic.com/wp-content/uploads/2023/09/essence-gold-logo-removebg-preview.png",
+    gallery: [
+      "https://essenceskinclinic.com/wp-content/uploads/2023/08/essence-botox-service.jpg",
+      "https://essenceskinclinic.com/wp-content/uploads/2023/08/essence-semaglutide-service.jpg",
+      "https://essenceskinclinic.com/wp-content/uploads/2023/08/essence-cool-sculpting-service.jpg",
+      "https://essenceskinclinic.com/wp-content/uploads/2023/08/essence-alma-ted-service.jpg",
+    ],
+    source: "Essence Skin Clinic official website — services",
+  },
     "skinovatio-ravenswood-chicago": {
     hero: "https://www.skinovatio.com/wp-content/uploads/2025/02/Chemical-Peel.png",
     logo: "https://www.skinovatio.com/wp-content/uploads/2025/01/favicon.png",
@@ -2237,7 +2236,6 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "esse-medspa-denver": "photo-1556228720-195a672e8a03",
   "goldcoast-medspa-chicago": "photo-1570172619644-dfd03ed5d881",
   "old-town-med-spa-chicago": "photo-1519823551278-64ac92734fb1",
-  "essence-medspa-chicago": "photo-1487412947147-5cebf100ffc2",
   "river-north-wellness-med-spa": "photo-1516975080664-ed2fc6a32937",
   "skinovatio-ravenswood-chicago": "photo-1629909613654-28e377c37b09",
   "lume-med-spa-lakeview": "photo-1544161515-4ab6ce6db874",
@@ -2252,7 +2250,6 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "glo-de-vie-med-spa-raleigh": "photo-1570172619644-dfd03ed5d881",
   "elase-med-spa-raleigh": "photo-1519823551278-64ac92734fb1",
   "ageless-remedies-raleigh": "photo-1487412947147-5cebf100ffc2",
-  "nsi-wellness-aesthetics-nashville": "photo-1516975080664-ed2fc6a32937",
   "evolve-medspa-nashville": "photo-1629909613654-28e377c37b09",
   "nashville-skin-company": "photo-1544161515-4ab6ce6db874",
   "skin-pharm-nashville": "photo-1612817288484-6f916006741a",
