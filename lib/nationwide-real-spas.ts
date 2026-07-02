@@ -1626,6 +1626,16 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Deep Med Spa official website — services",
   },
+    "bold-confidence-aesthetics-san-diego": {
+    hero: "https://static.showit.co/1200/Mtp3bCF0XOJ2VersrTaurA/272273/boldconfidence2025_126.jpg",
+    logo: "https://static.showit.co/file/NG030rhy-tR3EBtFVX-Hpw/272273/bca-logo-seafoam-green.png",
+    gallery: [
+      "https://static.showit.co/1200/z0PrjwzEnCVWrM5eMQBOrQ/272273/bold_confidence_aesthetics_san_deigo_laura_32.jpg",
+      "https://static.showit.co/1200/H9W7dOz5Cr98-codv8BjCw/272273/bold_confident80.jpg",
+      "https://static.showit.co/1200/Aohkq2Mst-LwfeGr0nMnTQ/272273/boldconfidence2025_90.jpg",
+    ],
+    source: "Bold Confidence Aesthetics official website — services",
+  },
     "sente-bella-medspa-downtown-sd": {
     hero: "https://sentebellaspa.com/wp-content/uploads/2022/11/MedSpa1.webp",
     gallery: [
