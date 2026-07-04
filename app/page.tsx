@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContactEmail } from "@/components/ContactEmail";
+import { ContactLink } from "@/components/ContactLink";
 import { SpaCard } from "@/components/SpaCard";
 import { ProductCard } from "@/components/ProductCard";
 import { AIConcierge } from "@/components/AIConcierge";
@@ -69,7 +70,10 @@ export default function HomePage() {
               Partner with Verity →
             </Link>
             <p className="mt-3 text-xs text-stone">
-              Questions about listing? <ContactEmail subject="List my practice on Verity" />
+              Questions about listing?{" "}
+              <ContactLink subject="List my practice on Verity" topic="List my practice">
+                Contact us
+              </ContactLink>
             </p>
           </div>
         </div>
@@ -138,9 +142,13 @@ export default function HomePage() {
                 <p className="font-medium text-charcoal">{item.title}</p>
                 <p className="mt-1 text-lg text-gold">
                   {item.title === "Update your profile" ? (
-                    <ContactEmail subject="Update my Verity profile" />
+                    <ContactLink subject="Update my Verity profile" topic="Update my profile">
+                      Contact us
+                    </ContactLink>
                   ) : item.title === "Featured in your city" ? (
-                    <ContactEmail subject="Featured placement inquiry" />
+                    <ContactLink subject="Featured placement inquiry" topic="Featured placement">
+                      Contact us
+                    </ContactLink>
                   ) : (
                     item.price
                   )}

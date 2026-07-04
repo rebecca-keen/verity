@@ -41,6 +41,9 @@ export default function RootLayout({
             <Link href="/how-we-verify" className="text-gold hover:underline">
               How we verify
             </Link>
+            <Link href="/contact" className="text-gold hover:underline">
+              Contact
+            </Link>
             <Link href="/privacy" className="text-gold hover:underline">
               Privacy
             </Link>
@@ -52,7 +55,8 @@ export default function RootLayout({
             </Link>
           </p>
           <p className="mt-4 text-sm text-stone">
-            Questions? <ContactEmail />
+            Questions? <Link href="/contact" className="text-gold hover:underline">Contact us</Link>
+            {" "}· <ContactEmail />
           </p>
           <p className="mt-4 max-w-xl mx-auto text-xs text-stone/80">
             As an Amazon Associate, Verity Aesthetics earns from qualifying purchases. Product links

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContactEmail } from "@/components/ContactEmail";
+import { ContactLink } from "@/components/ContactLink";
 
 export const metadata = {
   title: "How We Verify — Verity",
@@ -34,7 +35,7 @@ const sections = [
       "Yelp",
       "State licensing boards (for user lookup — not automated verification)",
       "Provider official websites",
-      "User submissions and corrections via hello@verityaesthetics.app",
+      "User submissions and corrections via our contact form",
     ],
   },
   {
@@ -48,7 +49,7 @@ const sections = [
   {
     title: "How to report errors",
     items: [
-      "Email hello@verityaesthetics.app with the provider name, URL, and what should be corrected",
+      "Use our contact form with the provider name, URL, and what should be corrected",
       "We review submissions and update listings on a rolling basis",
       "For urgent credential concerns, contact your state medical board directly",
     ],
@@ -56,7 +57,7 @@ const sections = [
   {
     title: "For providers",
     items: [
-      "Claim or update your listing by emailing hello@verityaesthetics.app",
+      "Claim or update your listing via our contact form",
       "Include your practice name, website, and any credentials you'd like displayed",
       "We welcome corrections to medical director names, license references, and treatment menus",
     ],
@@ -92,8 +93,10 @@ export default function HowWeVerifyPage() {
       <div className="mt-12 rounded-2xl border border-gold/30 bg-charcoal px-8 py-10 text-center">
         <p className="font-serif text-xl text-ivory">Questions or corrections?</p>
         <p className="mt-3 text-sm text-stone/90">
-          Reach our team at{" "}
-          <ContactEmail className="text-gold" subject="Listing correction — Verity" />
+          <ContactLink subject="Listing correction — Verity" topic="Listing correction" className="text-gold">
+            Send us a message
+          </ContactLink>
+          {" "}or reach us at <ContactEmail className="text-gold" />
         </p>
         <Link
           href="/providers"

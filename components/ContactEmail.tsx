@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, contactMailtoUrl } from "@/lib/constants";
+import { PUBLIC_BUSINESS_EMAIL, contactMailtoUrl } from "@/lib/constants";
 
 type ContactEmailProps = {
   subject?: string;
@@ -7,7 +7,7 @@ type ContactEmailProps = {
 };
 
 export function ContactEmail({ subject, className = "", children }: ContactEmailProps) {
-  const label = children ?? CONTACT_EMAIL;
+  const label = children ?? PUBLIC_BUSINESS_EMAIL;
 
   return (
     <a

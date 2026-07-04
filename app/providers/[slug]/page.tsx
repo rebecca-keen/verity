@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { RemoteImage } from "@/components/RemoteImage";
-import { ContactEmail } from "@/components/ContactEmail";
+import { ContactLink } from "@/components/ContactLink";
 import { DirectContactPanel } from "@/components/DirectContactPanel";
 import { ProductCard } from "@/components/ProductCard";
 import { ReviewCard } from "@/components/ReviewCard";
@@ -13,7 +13,7 @@ import { ProviderTypeBadge } from "@/components/ProviderTypeBadge";
 import { TrustBadge, TrustPanel } from "@/components/TrustBadge";
 import { getSpa, getProductsForSpa, getSpaReviews, spas } from "@/lib/data";
 import { formatGoogleRating } from "@/lib/spa-display";
-import { contactMailtoUrl } from "@/lib/constants";
+import { contactFormUrl } from "@/lib/constants";
 
 export function generateStaticParams() {
   return spas.map((spa) => ({ slug: spa.slug }));
@@ -138,12 +138,16 @@ export default async function ProviderDetailPage({
             <p className="mt-2">
               Claim or update this listing — email us with your practice name and website.
             </p>
-            <a
-              href={contactMailtoUrl(`Claim listing: ${spa.name}`)}
+            <Link
+              href={contactFormUrl({
+                subject: `Claim listing: ${spa.name}`,
+                topic: "Claim a listing",
+                spa: spa.name,
+              })}
               className="mt-4 inline-block text-gold hover:underline"
             >
               Claim listing →
-            </a>
+            </Link>
           </div>
           <div className="luxury-border rounded-2xl bg-cream p-5 text-sm text-stone">
             <p className="font-medium text-charcoal">Treatments</p>
@@ -168,8 +172,10 @@ export default async function ProviderDetailPage({
       </p>
 
       <p className="mt-6 border-t border-stone/10 pt-8 text-center text-xs text-stone">
-        Listing incorrect? Email{" "}
-        <ContactEmail subject={`Listing correction: ${spa.name}`} />
+        Listing incorrect?{" "}
+        <ContactLink subject={`Listing correction: ${spa.name}`} topic="Listing correction" spa={spa.name}>
+          Report a correction
+        </ContactLink>
       </p>
     </div>
   );

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { ContactLink } from "@/components/ContactLink";
 import { SearchableSelect } from "@/components/SearchableSelect";
 import { SpaCard } from "@/components/SpaCard";
 import { getSortedSpas, spas } from "@/lib/data";
@@ -376,9 +377,9 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
               </p>
               <p className="mt-2 text-sm text-stone">
                 Know a great practice?{" "}
-                <a href="mailto:hello@verityaesthetics.app" className="text-gold underline-offset-2 hover:underline">
-                  hello@verityaesthetics.app
-                </a>
+                <ContactLink topic="Suggest a provider" subject="Suggest a provider">
+                  Suggest a listing
+                </ContactLink>
               </p>
             </>
           ) : locationFiltersActive ? (

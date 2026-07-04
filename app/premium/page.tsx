@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactEmail } from "@/components/ContactEmail";
+import { ContactLink } from "@/components/ContactLink";
 import { spas } from "@/lib/data";
 
 export const metadata = {
@@ -107,7 +107,9 @@ export default function PremiumPage() {
           Launch timing, features, or provider partner programs — we&apos;re happy to help.
         </p>
         <p className="mt-4 text-sm text-stone">
-          <ContactEmail subject="Verity Premium inquiry">Email us →</ContactEmail>
+          <ContactLink subject="Verity Premium inquiry" topic="Premium inquiry">
+            Contact us →
+          </ContactLink>
         </p>
       </section>
 

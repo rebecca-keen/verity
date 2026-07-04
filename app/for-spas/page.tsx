@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ContactEmail } from "@/components/ContactEmail";
-import { contactMailtoUrl } from "@/lib/constants";
+import { ContactLink } from "@/components/ContactLink";
+import { contactFormUrl } from "@/lib/constants";
 
 export const metadata = {
   title: "For Providers — Verity",
@@ -154,12 +155,12 @@ export default function ForSpasPage() {
             <p className="mt-2 text-sm text-stone">
               Apply for a free directory profile or ask about featured placement in your neighborhood.
             </p>
-            <a
-              href={contactMailtoUrl("List my practice on Verity")}
+            <Link
+              href={contactFormUrl({ subject: "List my practice on Verity", topic: "List my practice" })}
               className="mt-4 inline-block rounded-full bg-charcoal px-6 py-2.5 text-sm font-medium tracking-wider text-ivory transition hover:bg-charcoal/90"
             >
               List my practice
-            </a>
+            </Link>
           </div>
           <div className="luxury-border rounded-xl bg-cream p-6">
             <h3 className="font-medium text-charcoal">Preferred program questions</h3>
@@ -167,16 +168,17 @@ export default function ForSpasPage() {
               Verified Partner, Featured Premium, or à la carte placement — ask about pricing and
               availability.
             </p>
-            <a
-              href={contactMailtoUrl("Preferred program inquiry")}
+            <Link
+              href={contactFormUrl({ subject: "Preferred program inquiry", topic: "Featured placement" })}
               className="mt-4 inline-block rounded-full border border-charcoal px-6 py-2.5 text-sm font-medium tracking-wider text-charcoal transition hover:bg-cream"
             >
               Ask about the program
-            </a>
+            </Link>
           </div>
         </div>
         <p className="mt-6 text-center text-sm text-stone">
-          Or email us directly at <ContactEmail />
+          Or reach us at <ContactEmail /> ·{" "}
+          <ContactLink subject="General inquiry">Send a message</ContactLink>
         </p>
       </section>
 
@@ -185,12 +187,12 @@ export default function ForSpasPage() {
         <p className="mt-2 text-stone">
           Join listed providers across the United States. Limited featured spots in each city.
         </p>
-        <a
-          href={contactMailtoUrl("List my practice on Verity")}
+        <Link
+          href={contactFormUrl({ subject: "List my practice on Verity", topic: "List my practice" })}
           className="mt-6 inline-block rounded-full bg-charcoal px-8 py-3 text-sm font-medium tracking-wider text-ivory"
         >
           Apply to Partner
-        </a>
+        </Link>
       </div>
 
       <p className="mt-8 text-center text-sm text-stone">
