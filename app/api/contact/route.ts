@@ -6,19 +6,14 @@ function formatField(label: string, value: unknown): string {
   return text ? `${label}: ${text}` : "";
 }
 
+/** Server-only inbox — never exposed in the client bundle. */
+const DEFAULT_CONTACT_EMAIL = "rebeccakeen@gmail.com";
+
 export async function POST(request: Request) {
-  const contactEmail = process.env.CONTACT_EMAIL;
+  const contactEmail = process.env.CONTACT_EMAIL?.trim() || DEFAULT_CONTACT_EMAIL;
   const resendApiKey = process.env.RESEND_API_KEY;
   const fromAddress =
     process.env.CONTACT_FROM || "Verity Aesthetics <onboarding@resend.dev>";
-
-  if (!contactEmail || !resendApiKey) {
-    console.error("Contact form misconfigured: missing CONTACT_EMAIL or RESEND_API_KEY");
-    return NextResponse.json(
-      { error: "Contact form is temporarily unavailable." },
-      { status: 500 }
-    );
-  }
 
   let body: Record<string, unknown>;
   try {
@@ -63,19 +58,58 @@ export async function POST(request: Request) {
     message,
   ].filter(Boolean);
 
-  const resend = new Resend(resendApiKey);
-
   try {
-    const { error } = await resend.emails.send({
-      from: fromAddress,
-      to: contactEmail,
-      replyTo: email,
-      subject: emailSubject,
-      text: lines.join("\n"),
-    });
+    if (resendApiKey) {
+      const resend = new Resend(resendApiKey);
+      const { error } = await resend.emails.send({
+        from: fromAddress,
+        to: contactEmail,
+        replyTo: email,
+        subject: emailSubject,
+        text: lines.join("\n"),
+      });
 
-    if (error) {
-      console.error("Resend error:", error);
+      if (error) {
+        console.error("Resend error:", error);
+        return NextResponse.json(
+          { error: "Unable to send your message. Please try again shortly." },
+          { status: 502 }
+        );
+      }
+
+      return NextResponse.json({ ok: true });
+    }
+
+    const formSubmitResponse = await fetch(
+      `https://formsubmit.co/ajax/${encodeURIComponent(contactEmail)}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: emailSubject,
+          _replyto: email,
+          _captcha: "false",
+          _template: "table",
+          name,
+          email,
+          topic,
+          subject: subjectLine,
+          "Practice / listing": spaName,
+          message,
+        }),
+      }
+    );
+
+    const formSubmitResult = (await formSubmitResponse.json().catch(() => ({}))) as {
+      success?: string;
+      message?: string;
+    };
+
+    if (!formSubmitResponse.ok || formSubmitResult.success !== "true") {
+      console.error("FormSubmit error:", formSubmitResult);
       return NextResponse.json(
         { error: "Unable to send your message. Please try again shortly." },
         { status: 502 }

@@ -104,7 +104,43 @@ Click through these pages:
 
 ---
 
-## PART 4 — Optional: smarter AI
+## PART 4 — Contact form (required for “Contact us” to work)
+
+The site uses a contact form at `/contact`. Your email is **not** shown publicly — submissions are emailed server-side to **rebeccakeen@gmail.com**.
+
+### Local testing (on your Mac)
+
+1. Open `/Users/rkeen/Projects/verity/.env.local` in Cursor (this file is gitignored and stays on your Mac only).
+2. Paste your Resend API key on the line after `RESEND_API_KEY=` (no quotes, no spaces).
+3. Confirm these lines are present (already set in the template):
+   - `CONTACT_EMAIL=rebeccakeen@gmail.com`
+   - `CONTACT_FROM=Verity Aesthetics <onboarding@resend.dev>`
+4. Restart the dev server: stop it if running, then run `npm run dev` in the project folder.
+5. Open http://localhost:3000/contact, submit a test message, and check **rebeccakeen@gmail.com**.
+
+With `onboarding@resend.dev`, Resend only delivers to the email you used to sign up for Resend (use **rebeccakeen@gmail.com**).
+
+### Production (Vercel)
+
+1. Go to https://vercel.com → your **verity** project → **Settings** → **Environment Variables**
+2. Add these variables for **Production** (and Preview if you want staging to work too):
+
+| Name | Value |
+|------|-------|
+| `RESEND_API_KEY` | Your Resend API key |
+| `CONTACT_EMAIL` | `rebeccakeen@gmail.com` (optional — this is the default) |
+| `CONTACT_FROM` | `Verity Aesthetics <onboarding@resend.dev>` (optional — same default) |
+
+3. Click **Save**
+4. Go to **Deployments** → open the latest deployment → **⋯** → **Redeploy**
+
+Until `RESEND_API_KEY` is set on Vercel, the live site falls back to FormSubmit (still delivers to **rebeccakeen@gmail.com**). The first FormSubmit message requires a one-time activation link in your inbox.
+
+For branded “from” addresses later, verify your domain in Resend and set `CONTACT_FROM=Verity <hello@yourdomain.com>`.
+
+---
+
+## PART 5 — Optional: smarter AI
 
 1. Vercel → your project → **Settings** → **Environment Variables**
 2. Add:
