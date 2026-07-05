@@ -9,11 +9,64 @@ function formatField(label: string, value: unknown): string {
 /** Server-only inbox — never exposed in the client bundle. */
 const DEFAULT_CONTACT_EMAIL = "rebeccakeen@gmail.com";
 
+const DEFAULT_FROM_ADDRESS = "Verity Aesthetics <hello@verityaesthetics.app>";
+
+type ContactPayload = {
+  name: string;
+  email: string;
+  topic: string;
+  subjectLine: string;
+  message: string;
+  spaName: string;
+  emailSubject: string;
+  lines: string[];
+};
+
+async function sendViaFormSubmit(
+  contactEmail: string,
+  payload: ContactPayload
+): Promise<{ ok: true } | { ok: false; detail: unknown }> {
+  const { name, email, topic, subjectLine, message, spaName, emailSubject } = payload;
+
+  const formSubmitResponse = await fetch(
+    `https://formsubmit.co/ajax/${encodeURIComponent(contactEmail)}`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        _subject: emailSubject,
+        _replyto: email,
+        _captcha: "false",
+        _template: "table",
+        name,
+        email,
+        topic,
+        subject: subjectLine,
+        "Practice / listing": spaName,
+        message,
+      }),
+    }
+  );
+
+  const formSubmitResult = (await formSubmitResponse.json().catch(() => ({}))) as {
+    success?: string;
+    message?: string;
+  };
+
+  if (!formSubmitResponse.ok || formSubmitResult.success !== "true") {
+    return { ok: false, detail: formSubmitResult };
+  }
+
+  return { ok: true };
+}
+
 export async function POST(request: Request) {
   const contactEmail = process.env.CONTACT_EMAIL?.trim() || DEFAULT_CONTACT_EMAIL;
   const resendApiKey = process.env.RESEND_API_KEY;
-  const fromAddress =
-    process.env.CONTACT_FROM || "Verity Aesthetics <onboarding@resend.dev>";
+  const fromAddress = process.env.CONTACT_FROM || DEFAULT_FROM_ADDRESS;
 
   let body: Record<string, unknown>;
   try {
@@ -58,6 +111,17 @@ export async function POST(request: Request) {
     message,
   ].filter(Boolean);
 
+  const payload: ContactPayload = {
+    name,
+    email,
+    topic,
+    subjectLine,
+    message,
+    spaName,
+    emailSubject,
+    lines,
+  };
+
   try {
     if (resendApiKey) {
       const resend = new Resend(resendApiKey);
@@ -69,54 +133,28 @@ export async function POST(request: Request) {
         text: lines.join("\n"),
       });
 
-      if (error) {
-        console.error("Resend error:", error);
-        return NextResponse.json(
-          { error: "Unable to send your message. Please try again shortly." },
-          { status: 502 }
-        );
+      if (!error) {
+        return NextResponse.json({ ok: true });
       }
 
+      console.error("Resend error — falling back to FormSubmit:", {
+        name: error.name,
+        message: error.message,
+        from: fromAddress,
+      });
+    }
+
+    const formSubmitResult = await sendViaFormSubmit(contactEmail, payload);
+
+    if (formSubmitResult.ok) {
       return NextResponse.json({ ok: true });
     }
 
-    const formSubmitResponse = await fetch(
-      `https://formsubmit.co/ajax/${encodeURIComponent(contactEmail)}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          _subject: emailSubject,
-          _replyto: email,
-          _captcha: "false",
-          _template: "table",
-          name,
-          email,
-          topic,
-          subject: subjectLine,
-          "Practice / listing": spaName,
-          message,
-        }),
-      }
+    console.error("FormSubmit error:", formSubmitResult.detail);
+    return NextResponse.json(
+      { error: "Unable to send your message. Please try again shortly." },
+      { status: 502 }
     );
-
-    const formSubmitResult = (await formSubmitResponse.json().catch(() => ({}))) as {
-      success?: string;
-      message?: string;
-    };
-
-    if (!formSubmitResponse.ok || formSubmitResult.success !== "true") {
-      console.error("FormSubmit error:", formSubmitResult);
-      return NextResponse.json(
-        { error: "Unable to send your message. Please try again shortly." },
-        { status: 502 }
-      );
-    }
-
-    return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Contact form error:", err);
     return NextResponse.json(

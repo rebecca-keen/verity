@@ -114,11 +114,11 @@ The site uses a contact form at `/contact`. Your email is **not** shown publicly
 2. Paste your Resend API key on the line after `RESEND_API_KEY=` (no quotes, no spaces).
 3. Confirm these lines are present (already set in the template):
    - `CONTACT_EMAIL=rebeccakeen@gmail.com`
-   - `CONTACT_FROM=Verity Aesthetics <onboarding@resend.dev>`
+   - `CONTACT_FROM=Verity Aesthetics <hello@verityaesthetics.app>`
 4. Restart the dev server: stop it if running, then run `npm run dev` in the project folder.
 5. Open http://localhost:3000/contact, submit a test message, and check **rebeccakeen@gmail.com**.
 
-With `onboarding@resend.dev`, Resend only delivers to the email you used to sign up for Resend (use **rebeccakeen@gmail.com**).
+The sender must use your verified domain in Resend (`verityaesthetics.app`). Local testing without domain verification can use `onboarding@resend.dev`, but that only delivers to your Resend account email.
 
 ### Production (Vercel)
 
@@ -129,14 +129,12 @@ With `onboarding@resend.dev`, Resend only delivers to the email you used to sign
 |------|-------|
 | `RESEND_API_KEY` | Your Resend API key |
 | `CONTACT_EMAIL` | `rebeccakeen@gmail.com` (optional — this is the default) |
-| `CONTACT_FROM` | `Verity Aesthetics <onboarding@resend.dev>` (optional — same default) |
+| `CONTACT_FROM` | `Verity Aesthetics <hello@verityaesthetics.app>` |
 
 3. Click **Save**
 4. Go to **Deployments** → open the latest deployment → **⋯** → **Redeploy**
 
-Until `RESEND_API_KEY` is set on Vercel, the live site falls back to FormSubmit (still delivers to **rebeccakeen@gmail.com**). The first FormSubmit message requires a one-time activation link in your inbox.
-
-For branded “from” addresses later, verify your domain in Resend and set `CONTACT_FROM=Verity <hello@yourdomain.com>`.
+**Important:** `CONTACT_FROM` must use an address on your verified domain (`verityaesthetics.app`). If Resend rejects the send (wrong from address, missing key, etc.), the site automatically falls back to FormSubmit (still delivers to **rebeccakeen@gmail.com**). The first FormSubmit message requires a one-time activation link in your inbox.
 
 ---
 
