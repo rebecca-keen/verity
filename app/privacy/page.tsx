@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { ContactLink } from "@/components/ContactLink";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Privacy Policy — Verity",
   description: "How Verity collects, uses, and shares information on our aesthetics provider directory and shop.",
-};
+  path: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

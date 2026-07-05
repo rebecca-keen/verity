@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { ContactLink } from "@/components/ContactLink";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Terms of Use — Verity",
   description: "Terms governing use of Verity's aesthetics provider directory, AI Concierge, and affiliate shop.",
-};
+  path: "/terms",
+});
 
 export default function TermsPage() {
   return (

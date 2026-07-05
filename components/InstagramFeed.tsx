@@ -27,7 +27,7 @@ export function InstagramFeed({ handle }: { handle: string }) {
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
         {placeholders.map((src, i) => (
           <div key={i} className="relative aspect-square overflow-hidden rounded-lg">
-            <RemoteImage src={src} alt="" fill className="object-cover" sizes="150px" />
+            <RemoteImage src={src} alt={`Instagram preview ${i + 1} for @${handle}`} fill className="object-cover" sizes="150px" />
           </div>
         ))}
       </div>

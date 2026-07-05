@@ -1,13 +1,10 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import { JsonLd } from "@/components/JsonLd";
+import { organizationJsonLd, rootMetadata, websiteJsonLd } from "@/lib/seo";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Verity — Trusted Aesthetics & Med Spas Nationwide",
-    description:
-    "Find curated aesthetics clinics, med spas, and dermatology practices across the United States. Product transparency, medical director info, public ratings, and AI-powered matching by state and city.",
-};
+export const metadata = rootMetadata;
 
 export default function RootLayout({
   children,
@@ -17,6 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen font-sans">
+        <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <Header />
         <main>{children}</main>
         <footer className="border-t border-stone/15 bg-cream py-12 text-center text-sm text-stone">

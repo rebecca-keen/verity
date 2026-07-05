@@ -1,10 +1,12 @@
 import { SpaDirectory } from "@/components/SpaDirectory";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Find providers — Verity",
   description:
     "Browse listed aesthetics clinics, med spas, and dermatology practices across the United States. Filter by state, city, and neighborhood.",
-};
+  path: "/providers",
+});
 
 export default async function ProvidersPage({
   searchParams,

@@ -1,10 +1,12 @@
 import { AIConcierge } from "@/components/AIConcierge";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "AI Concierge — Verity",
   description:
     "Get matched to trusted aesthetics clinics, med spas, and dermatology practices across the United States.",
-};
+  path: "/concierge",
+});
 
 export default function ConciergePage() {
   return (

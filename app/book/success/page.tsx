@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Booking — Verity",
+  description: "Verity does not process bookings on-site. Contact providers directly from their profiles.",
+  path: "/book/success",
+  noIndex: true,
+});
 
 export default async function BookingSuccessPage() {
   return (

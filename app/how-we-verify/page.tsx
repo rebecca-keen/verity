@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { ContactLink } from "@/components/ContactLink";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "How We Verify — Verity",
   description:
     "How Verity sources and presents aesthetics clinic and med spa listings — what we verify, what we don't claim, and how to report errors.",
-};
+  path: "/how-we-verify",
+});
 
 const sections = [
   {

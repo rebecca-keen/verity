@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { ContactLink } from "@/components/ContactLink";
 import { spas } from "@/lib/data";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Verity Premium — For Consumers",
   description: "Priority booking, AI concierge, saved providers, and exclusive nationwide aesthetics access.",
-};
+  path: "/premium",
+});
 
 export default function PremiumPage() {
   return (

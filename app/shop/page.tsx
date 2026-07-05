@@ -1,12 +1,7 @@
-export const metadata = {
-  title: "Shop — Verity",
-  description:
-    "Derm-recommended skincare with verified reviews. Shop luxury brands on Amazon — EltaMD, SkinCeuticals, La Roche-Posay, and more.",
-};
-
 import Link from "next/link";
 import { ProductCard } from "@/components/ProductCard";
 import { originLabels } from "@/lib/data";
+import { pageMetadata } from "@/lib/seo";
 import {
   filterShopProductsByOrigin,
   getRecommendedShopProducts,
@@ -14,6 +9,13 @@ import {
   getShopProductsByBrand,
 } from "@/lib/shop-utils";
 import type { ProductOrigin } from "@/lib/types";
+
+export const metadata = pageMetadata({
+  title: "Shop — Verity",
+  description:
+    "Derm-recommended skincare with verified reviews. Shop luxury brands on Amazon — EltaMD, SkinCeuticals, La Roche-Posay, and more.",
+  path: "/shop",
+});
 
 const originFilters: { value: ProductOrigin | "all"; label: string }[] = [
   { value: "all", label: "All" },

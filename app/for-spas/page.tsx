@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { ContactLink } from "@/components/ContactLink";
 import { contactFormUrl } from "@/lib/constants";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "For Providers — Verity",
   description:
     "List your aesthetics clinic, med spa, or dermatology practice on Verity. Verified profiles, featured placement, and lead generation.",
-};
+  path: "/for-spas",
+});
 
 const providerTiers = [
   {

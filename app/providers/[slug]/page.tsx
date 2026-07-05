@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
 import { RemoteImage } from "@/components/RemoteImage";
 import { ContactLink } from "@/components/ContactLink";
 import { DirectContactPanel } from "@/components/DirectContactPanel";
@@ -14,6 +15,7 @@ import { TrustBadge, TrustPanel } from "@/components/TrustBadge";
 import { getSpa, getProductsForSpa, getSpaReviews, spas } from "@/lib/data";
 import { formatGoogleRating } from "@/lib/spa-display";
 import { contactFormUrl } from "@/lib/constants";
+import { localBusinessJsonLd, pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return spas.map((spa) => ({ slug: spa.slug }));
@@ -31,10 +33,11 @@ export async function generateMetadata({
   const google = formatGoogleRating(spa);
   const ratingNote = google ? ` · ${google}` : "";
 
-  return {
+  return pageMetadata({
     title: `${spa.name} — Verity`,
     description: `${spa.tagline} ${spa.neighborhood}, ${spa.city}, ${spa.state}${ratingNote}. Listed aesthetics provider on Verity.`,
-  };
+    path: `/providers/${slug}`,
+  });
 }
 
 export default async function ProviderDetailPage({
@@ -52,6 +55,7 @@ export default async function ProviderDetailPage({
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
+      <JsonLd data={localBusinessJsonLd(spa)} />
       <div className="relative h-64 overflow-hidden rounded-2xl md:h-80">
         <RemoteImage src={spa.image} alt={spa.name} fill className="object-cover" priority sizes="100vw" />
       </div>
@@ -68,7 +72,7 @@ export default async function ProviderDetailPage({
               <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg border border-stone/10 bg-cream p-1">
                 <RemoteImage
                   src={spa.logo}
-                  alt=""
+                  alt={`${spa.name} logo`}
                   fill
                   className="object-contain"
                   sizes="48px"

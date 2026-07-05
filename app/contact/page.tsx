@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Contact — Verity",
   description: "Get in touch with the Verity team about listings, corrections, and partner programs.",
-};
+  path: "/contact",
+});
 
 type ContactPageProps = {
   searchParams: Promise<{

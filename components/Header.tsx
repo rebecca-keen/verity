@@ -9,6 +9,7 @@ const links = [
   { href: "/concierge", label: "Concierge" },
   { href: "/premium", label: "Premium" },
   { href: "/for-spas", label: "For Providers" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const mobilePrimary = links.slice(0, 3);
@@ -23,7 +24,7 @@ export function Header() {
           Verity
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex" aria-label="Main navigation">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -58,7 +59,7 @@ export function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-stone/10 bg-ivory px-6 py-4 lg:hidden">
+        <nav className="border-t border-stone/10 bg-ivory px-6 py-4 lg:hidden" aria-label="Mobile navigation">
           <ul className="space-y-3">
             {mobilePrimary.map((l) => (
               <li key={l.href}>
