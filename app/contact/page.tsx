@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
-import { ContactEmail } from "@/components/ContactEmail";
 
 export const metadata: Metadata = {
   title: "Contact — Verity",
@@ -38,10 +37,6 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
           defaultSpaName={defaultSpaName}
         />
       </div>
-
-      <p className="mt-8 text-center text-sm text-stone">
-        General inquiries can also reach us at <ContactEmail />.
-      </p>
 
       <p className="mt-6 text-center text-sm text-stone">
         <Link href="/" className="text-gold hover:underline">

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ContactEmail } from "@/components/ContactEmail";
 import { ContactLink } from "@/components/ContactLink";
 
 export const metadata = {
@@ -96,7 +95,7 @@ export default function HowWeVerifyPage() {
           <ContactLink subject="Listing correction — Verity" topic="Listing correction" className="text-gold">
             Send us a message
           </ContactLink>
-          {" "}or reach us at <ContactEmail className="text-gold" />
+          {" "}via our contact form.
         </p>
         <Link
           href="/providers"

@@ -136,7 +136,7 @@ export default async function ProviderDetailPage({
           <div className="luxury-border rounded-2xl bg-cream p-5 text-sm text-stone">
             <p className="font-medium text-charcoal">Is this your practice?</p>
             <p className="mt-2">
-              Claim or update this listing — email us with your practice name and website.
+              Claim or update this listing — contact us with your practice name and website.
             </p>
             <Link
               href={contactFormUrl({

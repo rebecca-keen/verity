@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ContactEmail } from "@/components/ContactEmail";
 import { ContactLink } from "@/components/ContactLink";
 import { SpaCard } from "@/components/SpaCard";
 import { ProductCard } from "@/components/ProductCard";
@@ -134,7 +133,7 @@ export default function HomePage() {
               },
               {
                 title: "Update your profile",
-                price: "Email us",
+                price: "Contact us",
                 desc: "Questions about listing or featured placement? Reach out anytime.",
               },
             ].map((item) => (

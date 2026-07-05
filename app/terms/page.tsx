@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactLink } from "@/components/ContactLink";
 
 export const metadata = {
   title: "Terms of Use — Verity",
@@ -44,7 +45,11 @@ export default function TermsPage() {
           <p className="mt-3">
             &quot;Listed&quot; badges indicate a public directory entry — not an audited license confirmation.
             Ratings may reflect Google, Yelp, or other public sources. Listings may be incomplete or
-            outdated. Report errors to hello@verityaesthetics.app.
+            outdated. Report errors via our{" "}
+            <ContactLink subject="Listing correction" topic="Listing correction">
+              contact form
+            </ContactLink>
+            .
           </p>
         </section>
 

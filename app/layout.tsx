@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ContactEmail } from "@/components/ContactEmail";
 import { Header } from "@/components/Header";
 import "./globals.css";
 
@@ -55,8 +54,10 @@ export default function RootLayout({
             </Link>
           </p>
           <p className="mt-4 text-sm text-stone">
-            Questions? <Link href="/contact" className="text-gold hover:underline">Contact us</Link>
-            {" "}· <ContactEmail />
+            Questions?{" "}
+            <Link href="/contact" className="text-gold hover:underline">
+              Contact us
+            </Link>
           </p>
           <p className="mt-4 max-w-xl mx-auto text-xs text-stone/80">
             As an Amazon Associate, Verity Aesthetics earns from qualifying purchases. Product links

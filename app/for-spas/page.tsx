@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ContactEmail } from "@/components/ContactEmail";
 import { ContactLink } from "@/components/ContactLink";
 import { contactFormUrl } from "@/lib/constants";
 
@@ -146,8 +145,9 @@ export default function ForSpasPage() {
       <section className="mt-16 luxury-border rounded-2xl bg-white p-8">
         <h2 className="font-serif text-2xl text-charcoal">Get in touch</h2>
         <p className="mt-2 text-stone">
-          Ready to join the directory or have questions about our partner program? Email us — we
-          typically respond within one business day.
+          Ready to join the directory or have questions about our partner program?{" "}
+          <ContactLink subject="Provider inquiry" topic="List my practice">Send us a message</ContactLink>
+          {" "}— we typically respond within one business day.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           <div className="luxury-border rounded-xl bg-cream p-6">
@@ -177,7 +177,6 @@ export default function ForSpasPage() {
           </div>
         </div>
         <p className="mt-6 text-center text-sm text-stone">
-          Or reach us at <ContactEmail /> ·{" "}
           <ContactLink subject="General inquiry">Send a message</ContactLink>
         </p>
       </section>

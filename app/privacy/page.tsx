@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactLink } from "@/components/ContactLink";
 
 export const metadata = {
   title: "Privacy Policy — Verity",
@@ -35,8 +36,8 @@ export default function PrivacyPage() {
               Concierge to generate provider matches.
             </li>
             <li>
-              <strong className="text-charcoal">Email correspondence:</strong> if you email
-              hello@verityaesthetics.app for listing corrections, claims, or partner inquiries.
+              <strong className="text-charcoal">Contact form submissions:</strong> messages you send
+              via our contact form for listing corrections, claims, or partner inquiries.
             </li>
             <li>
               <strong className="text-charcoal">Affiliate clicks:</strong> when you follow Amazon or
@@ -71,9 +72,11 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-serif text-xl text-charcoal">Your choices</h2>
           <p className="mt-3">
-            You may request correction or removal of a business listing by emailing
-            hello@verityaesthetics.app. Browser settings can limit cookies; blocking cookies may
-            affect site functionality.
+            You may request correction or removal of a business listing via our{" "}
+            <ContactLink subject="Listing correction" topic="Listing correction">
+              contact form
+            </ContactLink>
+            . Browser settings can limit cookies; blocking cookies may affect site functionality.
           </p>
         </section>
 
@@ -81,9 +84,7 @@ export default function PrivacyPage() {
           <h2 className="font-serif text-xl text-charcoal">Contact</h2>
           <p className="mt-3">
             Questions about this policy:{" "}
-            <a href="mailto:hello@verityaesthetics.app" className="text-gold hover:underline">
-              hello@verityaesthetics.app
-            </a>
+            <ContactLink subject="Privacy policy question">contact us</ContactLink>
           </p>
         </section>
 

@@ -123,7 +123,7 @@ export function getHonestDataSources(
   if (spa.website?.trim() && isValidWebsiteUrl(spa.website)) {
     sources.push("Provider official website");
   }
-  sources.push("User submissions via hello@verityaesthetics.app");
+  sources.push("User submissions via Verity contact form");
   sources.push(`${boardName} — verification recommended`);
 
   return [...new Set(sources)];
