@@ -21,9 +21,7 @@ const sharedTwitter = {
 
 export const rootMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: {
-    default: DEFAULT_TITLE,
-  },
+  title: DEFAULT_TITLE,
   description: DEFAULT_DESCRIPTION,
   alternates: {
     canonical: SITE_URL,
