@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 type ContactFormProps = {
   defaultSubject?: string;
@@ -18,9 +18,13 @@ export function ContactForm({ defaultSubject = "", defaultTopic = "", defaultSpa
   const [website, setWebsite] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const submitInFlight = useRef(false);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (submitInFlight.current) return;
+
+    submitInFlight.current = true;
     setStatus("sending");
     setErrorMessage("");
 
@@ -31,11 +35,16 @@ export function ContactForm({ defaultSubject = "", defaultTopic = "", defaultSpa
         body: JSON.stringify({ name, email, topic, subject, message, spaName, website }),
       });
 
-      const data = await res.json().catch(() => ({}));
+      const data = (await res.json().catch(() => null)) as { ok?: boolean; error?: string } | null;
+      const sent = res.ok && data?.ok === true;
 
-      if (!res.ok) {
+      if (!sent) {
         setStatus("error");
-        setErrorMessage(typeof data.error === "string" ? data.error : "Something went wrong. Please try again.");
+        setErrorMessage(
+          typeof data?.error === "string"
+            ? data.error
+            : "Something went wrong. Please try again."
+        );
         return;
       }
 
@@ -49,6 +58,8 @@ export function ContactForm({ defaultSubject = "", defaultTopic = "", defaultSpa
     } catch {
       setStatus("error");
       setErrorMessage("Unable to send your message. Please check your connection and try again.");
+    } finally {
+      submitInFlight.current = false;
     }
   }
 

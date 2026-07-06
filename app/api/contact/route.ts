@@ -46,6 +46,10 @@ function getContactConfig(): ContactConfig {
   return { contactEmail, resendApiKey, fromAddress };
 }
 
+function isFormSubmitSuccess(success: unknown): boolean {
+  return success === true || success === "true";
+}
+
 async function sendViaResend(
   config: ContactConfig,
   payload: ContactPayload
@@ -55,27 +59,38 @@ async function sendViaResend(
   }
 
   const resend = new Resend(config.resendApiKey);
-  const { data, error } = await resend.emails.send({
-    from: config.fromAddress,
-    to: config.contactEmail,
-    replyTo: payload.email,
-    subject: payload.emailSubject,
-    text: payload.lines.join("\n"),
-  });
+  const fromCandidates = [...new Set([config.fromAddress, DEFAULT_FROM_ADDRESS])];
 
-  if (error) {
-    console.error("Resend send failed:", {
-      name: error.name,
-      message: error.message,
-      statusCode: "statusCode" in error ? error.statusCode : undefined,
-      from: config.fromAddress,
+  for (const fromAddress of fromCandidates) {
+    const { data, error } = await resend.emails.send({
+      from: fromAddress,
       to: config.contactEmail,
+      replyTo: payload.email,
+      subject: payload.emailSubject,
+      text: payload.lines.join("\n"),
     });
-    return { ok: false, detail: error };
+
+    if (data?.id) {
+      console.log("Contact form delivered via Resend", {
+        id: data.id,
+        from: fromAddress,
+        to: config.contactEmail,
+      });
+      return { ok: true };
+    }
+
+    if (error) {
+      console.error("Resend send failed:", {
+        name: error.name,
+        message: error.message,
+        statusCode: "statusCode" in error ? error.statusCode : undefined,
+        from: fromAddress,
+        to: config.contactEmail,
+      });
+    }
   }
 
-  console.log("Contact form delivered via Resend", { id: data?.id, to: config.contactEmail });
-  return { ok: true };
+  return { ok: false, detail: { message: "Resend did not accept the message" } };
 }
 
 async function sendViaFormSubmit(
@@ -110,11 +125,11 @@ async function sendViaFormSubmit(
   );
 
   const formSubmitResult = (await formSubmitResponse.json().catch(() => ({}))) as {
-    success?: string;
+    success?: string | boolean;
     message?: string;
   };
 
-  if (!formSubmitResponse.ok || formSubmitResult.success !== "true") {
+  if (!formSubmitResponse.ok || !isFormSubmitSuccess(formSubmitResult.success)) {
     console.error("FormSubmit send failed:", {
       httpStatus: formSubmitResponse.status,
       success: formSubmitResult.success,
