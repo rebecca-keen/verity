@@ -6,7 +6,7 @@ import { SpaCard } from "@/components/SpaCard";
 import { ReviewCard } from "@/components/ReviewCard";
 import { getProductReviews, getSpasForProduct, originLabels } from "@/lib/data";
 import { getProductAffiliateUrl, getAmazonShopLabel } from "@/lib/affiliate";
-import { pageMetadata, productJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, pageMetadata, productJsonLd } from "@/lib/seo";
 import { getShopProduct, getShopProducts } from "@/lib/shop-utils";
 import type { ProductOrigin } from "@/lib/types";
 
@@ -35,6 +35,7 @@ export async function generateMetadata({
     title: `${product.name} — ${product.brand} | Verity Shop`,
     description: product.description,
     path: `/shop/${slug}`,
+    image: product.image,
   });
 }
 
@@ -56,7 +57,16 @@ export default async function ShopProductDetailPage({
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
-      <JsonLd data={productJsonLd(product)} />
+      <JsonLd
+        data={[
+          productJsonLd(product),
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Shop", path: "/shop" },
+            { name: product.name, path: `/shop/${product.slug}` },
+          ]),
+        ]}
+      />
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="relative aspect-square overflow-hidden rounded-2xl bg-cream">
           <Image src={product.image} alt={product.name} fill className="object-contain p-6" sizes="50vw" />

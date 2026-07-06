@@ -15,7 +15,7 @@ import { TrustBadge, TrustPanel } from "@/components/TrustBadge";
 import { getSpa, getProductsForSpa, getSpaReviews, spas } from "@/lib/data";
 import { formatGoogleRating } from "@/lib/spa-display";
 import { contactFormUrl } from "@/lib/constants";
-import { localBusinessJsonLd, pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, localBusinessJsonLd, providerPageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return spas.map((spa) => ({ slug: spa.slug }));
@@ -30,14 +30,7 @@ export async function generateMetadata({
   const spa = getSpa(slug);
   if (!spa) return { title: "Provider — Verity" };
 
-  const google = formatGoogleRating(spa);
-  const ratingNote = google ? ` · ${google}` : "";
-
-  return pageMetadata({
-    title: `${spa.name} — Verity`,
-    description: `${spa.tagline} ${spa.neighborhood}, ${spa.city}, ${spa.state}${ratingNote}. Listed aesthetics provider on Verity.`,
-    path: `/providers/${slug}`,
-  });
+  return providerPageMetadata(spa);
 }
 
 export default async function ProviderDetailPage({
@@ -55,9 +48,25 @@ export default async function ProviderDetailPage({
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
-      <JsonLd data={localBusinessJsonLd(spa)} />
+      <JsonLd
+        data={[
+          localBusinessJsonLd(spa),
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Providers", path: "/providers" },
+            { name: spa.name, path: `/providers/${spa.slug}` },
+          ]),
+        ]}
+      />
       <div className="relative h-64 overflow-hidden rounded-2xl md:h-80">
-        <RemoteImage src={spa.image} alt={spa.name} fill className="object-cover" priority sizes="100vw" />
+        <RemoteImage
+          src={spa.image}
+          alt={`${spa.name} — ${spa.providerType.replace("-", " ")} in ${spa.city}, ${spa.state}`}
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
       </div>
       <p className="mt-2 text-xs text-stone">Photo source: {spa.imageSource}</p>
 

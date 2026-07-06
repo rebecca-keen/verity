@@ -5,6 +5,14 @@ import { ProductCard } from "@/components/ProductCard";
 import { AIConcierge } from "@/components/AIConcierge";
 import { getFeaturedPremiumSpasFromData } from "@/lib/data";
 import { getRecommendedShopProducts } from "@/lib/shop-utils";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Verity — Trusted Aesthetics & Med Spas Nationwide",
+  description:
+    "Find curated aesthetics clinics, med spas, and dermatology practices across the United States. Product transparency, medical director info, public ratings, and AI-powered matching.",
+  path: "/",
+});
 
 export default function HomePage() {
   const featured = getFeaturedPremiumSpasFromData(8);

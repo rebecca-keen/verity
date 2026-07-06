@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Page not found — Verity",
+  description: "This page doesn't exist or may have moved. Browse providers or try the AI Concierge.",
+  path: "/404",
+  noIndex: true,
+});
 
 export default function NotFound() {
   return (
