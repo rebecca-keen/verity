@@ -113,28 +113,31 @@ The site uses a contact form at `/contact`. Your email is **not** shown publicly
 1. Open `/Users/rkeen/Projects/verity/.env.local` in Cursor (this file is gitignored and stays on your Mac only).
 2. Paste your Resend API key on the line after `RESEND_API_KEY=` (no quotes, no spaces).
 3. Confirm these lines are present (already set in the template):
+   - `RESEND_API_KEY=` (paste your key from https://resend.com/api-keys)
    - `CONTACT_EMAIL=rebeccakeen@gmail.com`
-   - `CONTACT_FROM=Verity Aesthetics <hello@verityaesthetics.app>`
+   - `CONTACT_FROM=Verity Aesthetics <onboarding@resend.dev>` (optional — this is the default)
 4. Restart the dev server: stop it if running, then run `npm run dev` in the project folder.
 5. Open http://localhost:3000/contact, submit a test message, and check **rebeccakeen@gmail.com**.
 
-The sender must use your verified domain in Resend (`verityaesthetics.app`). Local testing without domain verification can use `onboarding@resend.dev`, but that only delivers to your Resend account email.
+The default sender (`onboarding@resend.dev`) works without domain verification and delivers to the email on your Resend account.
 
-### Production (Vercel)
+### Production (Vercel) — **required**
 
 1. Go to https://vercel.com → your **verity** project → **Settings** → **Environment Variables**
 2. Add these variables for **Production** (and Preview if you want staging to work too):
 
-| Name | Value |
-|------|-------|
-| `RESEND_API_KEY` | Your Resend API key |
-| `CONTACT_EMAIL` | `rebeccakeen@gmail.com` (optional — this is the default) |
-| `CONTACT_FROM` | `Verity Aesthetics <hello@verityaesthetics.app>` |
+| Name | Value | Required |
+|------|-------|----------|
+| `RESEND_API_KEY` | Your Resend API key from https://resend.com/api-keys | **Yes** |
+| `CONTACT_EMAIL` | `rebeccakeen@gmail.com` | No (default) |
+| `CONTACT_FROM` | `Verity Aesthetics <onboarding@resend.dev>` | No (default) |
 
 3. Click **Save**
-4. Go to **Deployments** → open the latest deployment → **⋯** → **Redeploy**
+4. Go to **Deployments** → open the latest deployment → **⋯** → **Redeploy** (required after adding env vars)
 
-**Important:** `CONTACT_FROM` must use an address on your verified domain (`verityaesthetics.app`). If Resend rejects the send (wrong from address, missing key, etc.), the site automatically falls back to FormSubmit (still delivers to **rebeccakeen@gmail.com**). The first FormSubmit message requires a one-time activation link in your inbox.
+**Verify after deploy:** open `https://verityaesthetics.app/api/contact` in a browser — you should see `"resendConfigured": true`. If it is `false`, the contact form will not work.
+
+**Important:** `RESEND_API_KEY` is required. Without it, the form falls back to FormSubmit, which requires a one-time email activation and is unreliable in production.
 
 ---
 

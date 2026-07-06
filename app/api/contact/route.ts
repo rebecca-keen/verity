@@ -9,7 +9,11 @@ function formatField(label: string, value: unknown): string {
 /** Server-only inbox — never exposed in the client bundle. */
 const DEFAULT_CONTACT_EMAIL = "rebeccakeen@gmail.com";
 
-const DEFAULT_FROM_ADDRESS = "Verity Aesthetics <hello@verityaesthetics.app>";
+/**
+ * Resend's test sender — works without domain verification.
+ * Delivers only to the email on your Resend account (rebeccakeen@gmail.com).
+ */
+const DEFAULT_FROM_ADDRESS = "Verity Aesthetics <onboarding@resend.dev>";
 
 type ContactPayload = {
   name: string;
@@ -21,6 +25,58 @@ type ContactPayload = {
   emailSubject: string;
   lines: string[];
 };
+
+type ContactConfig = {
+  contactEmail: string;
+  resendApiKey: string | undefined;
+  fromAddress: string;
+};
+
+function getContactConfig(): ContactConfig {
+  const contactEmail = process.env.CONTACT_EMAIL?.trim() || DEFAULT_CONTACT_EMAIL;
+  const resendApiKey = process.env.RESEND_API_KEY?.trim() || undefined;
+  const fromAddress = process.env.CONTACT_FROM?.trim() || DEFAULT_FROM_ADDRESS;
+
+  if (!resendApiKey) {
+    console.error(
+      "Contact form: RESEND_API_KEY is not set. Set it in Vercel → Project → Settings → Environment Variables (Production)."
+    );
+  }
+
+  return { contactEmail, resendApiKey, fromAddress };
+}
+
+async function sendViaResend(
+  config: ContactConfig,
+  payload: ContactPayload
+): Promise<{ ok: true } | { ok: false; detail: unknown }> {
+  if (!config.resendApiKey) {
+    return { ok: false, detail: { message: "RESEND_API_KEY not configured" } };
+  }
+
+  const resend = new Resend(config.resendApiKey);
+  const { data, error } = await resend.emails.send({
+    from: config.fromAddress,
+    to: config.contactEmail,
+    replyTo: payload.email,
+    subject: payload.emailSubject,
+    text: payload.lines.join("\n"),
+  });
+
+  if (error) {
+    console.error("Resend send failed:", {
+      name: error.name,
+      message: error.message,
+      statusCode: "statusCode" in error ? error.statusCode : undefined,
+      from: config.fromAddress,
+      to: config.contactEmail,
+    });
+    return { ok: false, detail: error };
+  }
+
+  console.log("Contact form delivered via Resend", { id: data?.id, to: config.contactEmail });
+  return { ok: true };
+}
 
 async function sendViaFormSubmit(
   contactEmail: string,
@@ -35,6 +91,8 @@ async function sendViaFormSubmit(
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        Origin: "https://verityaesthetics.app",
+        Referer: "https://verityaesthetics.app/contact",
       },
       body: JSON.stringify({
         _subject: emailSubject,
@@ -57,16 +115,32 @@ async function sendViaFormSubmit(
   };
 
   if (!formSubmitResponse.ok || formSubmitResult.success !== "true") {
+    console.error("FormSubmit send failed:", {
+      httpStatus: formSubmitResponse.status,
+      success: formSubmitResult.success,
+      message: formSubmitResult.message,
+      to: contactEmail,
+    });
     return { ok: false, detail: formSubmitResult };
   }
 
+  console.log("Contact form delivered via FormSubmit", { to: contactEmail });
   return { ok: true };
 }
 
+/** Lightweight config check — does not send email. */
+export async function GET() {
+  const config = getContactConfig();
+  return NextResponse.json({
+    ok: true,
+    resendConfigured: Boolean(config.resendApiKey),
+    contactEmail: config.contactEmail,
+    fromAddress: config.fromAddress,
+  });
+}
+
 export async function POST(request: Request) {
-  const contactEmail = process.env.CONTACT_EMAIL?.trim() || DEFAULT_CONTACT_EMAIL;
-  const resendApiKey = process.env.RESEND_API_KEY;
-  const fromAddress = process.env.CONTACT_FROM || DEFAULT_FROM_ADDRESS;
+  const config = getContactConfig();
 
   let body: Record<string, unknown>;
   try {
@@ -123,40 +197,24 @@ export async function POST(request: Request) {
   };
 
   try {
-    if (resendApiKey) {
-      const resend = new Resend(resendApiKey);
-      const { error } = await resend.emails.send({
-        from: fromAddress,
-        to: contactEmail,
-        replyTo: email,
-        subject: emailSubject,
-        text: lines.join("\n"),
-      });
-
-      if (!error) {
-        return NextResponse.json({ ok: true });
-      }
-
-      console.error("Resend error — falling back to FormSubmit:", {
-        name: error.name,
-        message: error.message,
-        from: fromAddress,
-      });
+    const resendResult = await sendViaResend(config, payload);
+    if (resendResult.ok) {
+      return NextResponse.json({ ok: true });
     }
 
-    const formSubmitResult = await sendViaFormSubmit(contactEmail, payload);
+    console.error("Resend unavailable — trying FormSubmit fallback");
 
+    const formSubmitResult = await sendViaFormSubmit(config.contactEmail, payload);
     if (formSubmitResult.ok) {
       return NextResponse.json({ ok: true });
     }
 
-    console.error("FormSubmit error:", formSubmitResult.detail);
     return NextResponse.json(
       { error: "Unable to send your message. Please try again shortly." },
       { status: 502 }
     );
   } catch (err) {
-    console.error("Contact form error:", err);
+    console.error("Contact form unexpected error:", err);
     return NextResponse.json(
       { error: "Unable to send your message. Please try again shortly." },
       { status: 500 }
