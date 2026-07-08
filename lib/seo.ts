@@ -249,6 +249,26 @@ function productOfferPriceValidUntil(): string {
   return date.toISOString().slice(0, 10);
 }
 
+function productOfferJsonLd(product: Product) {
+  const sellerName =
+    product.affiliatePartner === "Amazon Associates"
+      ? "Amazon"
+      : product.affiliatePartner ?? product.brand;
+
+  return {
+    "@type": "Offer",
+    url: `${SITE_URL}/shop/${product.slug}`,
+    price: getProductOfferPrice(product).toFixed(2),
+    priceCurrency: PRODUCT_PRICE_CURRENCY,
+    availability: "https://schema.org/InStock",
+    priceValidUntil: productOfferPriceValidUntil(),
+    seller: {
+      "@type": "Organization",
+      name: sellerName,
+    },
+  };
+}
+
 export function productJsonLd(product: Product) {
   return {
     "@context": "https://schema.org",
@@ -268,21 +288,6 @@ export function productJsonLd(product: Product) {
       bestRating: 5,
       worstRating: 1,
     },
-    ...(product.affiliateUrl
-      ? {
-          offers: {
-            "@type": "Offer",
-            url: `${SITE_URL}/shop/${product.slug}`,
-            price: getProductOfferPrice(product),
-            priceCurrency: PRODUCT_PRICE_CURRENCY,
-            availability: "https://schema.org/InStock",
-            priceValidUntil: productOfferPriceValidUntil(),
-            seller: {
-              "@type": "Organization",
-              name: "Amazon",
-            },
-          },
-        }
-      : {}),
+    offers: productOfferJsonLd(product),
   };
 }
