@@ -67,6 +67,8 @@ export interface Product {
   reviewCount: number;
   image: string;
   ingredients: string[];
+  /** Typical retail price in USD for structured data and display. */
+  price?: number;
   affiliateUrl?: string;
   affiliatePartner?: string;
   origin?: ProductOrigin;

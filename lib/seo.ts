@@ -221,6 +221,34 @@ export function localBusinessJsonLd(spa: Spa) {
   };
 }
 
+const PRODUCT_PRICE_CURRENCY = "USD";
+
+/** Typical USD retail price by category when a product has no explicit price. */
+const PRODUCT_PRICE_USD_BY_CATEGORY: Record<string, number> = {
+  SPF: 39,
+  Cleanser: 35,
+  Serum: 98,
+  Moisturizer: 68,
+  Retinol: 88,
+  "Eye Care": 58,
+  Treatment: 75,
+  "Lip Care": 24,
+};
+
+const DEFAULT_PRODUCT_PRICE_USD = 49;
+
+function getProductOfferPrice(product: Product): number {
+  if (product.price != null && product.price > 0) return product.price;
+  return PRODUCT_PRICE_USD_BY_CATEGORY[product.category] ?? DEFAULT_PRODUCT_PRICE_USD;
+}
+
+/** Google recommends priceValidUntil for product offers. */
+function productOfferPriceValidUntil(): string {
+  const date = new Date();
+  date.setFullYear(date.getFullYear() + 1);
+  return date.toISOString().slice(0, 10);
+}
+
 export function productJsonLd(product: Product) {
   return {
     "@context": "https://schema.org",
@@ -245,7 +273,10 @@ export function productJsonLd(product: Product) {
           offers: {
             "@type": "Offer",
             url: `${SITE_URL}/shop/${product.slug}`,
+            price: getProductOfferPrice(product),
+            priceCurrency: PRODUCT_PRICE_CURRENCY,
             availability: "https://schema.org/InStock",
+            priceValidUntil: productOfferPriceValidUntil(),
             seller: {
               "@type": "Organization",
               name: "Amazon",
