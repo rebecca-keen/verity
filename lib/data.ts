@@ -223,7 +223,7 @@ function seedSpa(data: SpaSeed): Spa {
     rating: data.rating,
     reviewCount: data.reviewCount,
     listingStatus,
-    verified: false,
+    verified: data.verified ?? false,
     premierPartner: data.premierPartner ?? false,
     featuredPremium: false,
     medicalDirector: data.medicalDirector,

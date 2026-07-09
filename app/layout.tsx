@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { organizationJsonLd, rootMetadata, websiteJsonLd } from "@/lib/seo";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata = rootMetadata;
@@ -17,6 +18,7 @@ export default function RootLayout({
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <Header />
         <main>{children}</main>
+        <Analytics />
         <footer className="border-t border-stone/15 bg-cream py-12 text-center text-sm text-stone">
           <p className="font-serif text-lg text-charcoal">Verity</p>
           <p className="mt-2">

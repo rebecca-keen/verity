@@ -170,7 +170,7 @@ export function normalizeSpaTrust<T extends Spa>(spa: T): T {
   return {
     ...spa,
     listingStatus,
-    verified: false,
+    verified: spa.verified ?? false,
     medicalDirector: medicalDirectorInfo.source === "practice-website" ? spa.medicalDirector : "",
     medicalDirectorInfo,
     licenseId: isPlaceholderLicenseId(spa.licenseId) ? "" : spa.licenseId,
