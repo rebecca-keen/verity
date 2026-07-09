@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { spas } from "@/lib/data";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, TREATMENT_CATEGORY_SEO } from "@/lib/seo";
 import { getShopProducts } from "@/lib/shop-utils";
 
 /** Pre-render at build time so crawlers never hit a cold serverless import of spa data. */
@@ -77,6 +77,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  const treatmentCategoryPages: MetadataRoute.Sitemap = (
+    Object.keys(TREATMENT_CATEGORY_SEO) as (keyof typeof TREATMENT_CATEGORY_SEO)[]
+  ).map((category) => ({
+    url: `${SITE_URL}/providers?category=${category}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
   const providerPages: MetadataRoute.Sitemap = spas
     .filter((spa) => hasSlug(spa.slug))
     .map((spa) => ({
@@ -95,5 +104,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     }));
 
-  return [...staticPages, ...providerPages, ...shopPages];
+  return [...staticPages, ...treatmentCategoryPages, ...providerPages, ...shopPages];
 }

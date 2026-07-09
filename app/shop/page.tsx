@@ -11,10 +11,11 @@ import {
 import type { ProductOrigin } from "@/lib/types";
 
 export const metadata = pageMetadata({
-  title: "Shop — Verity",
+  title: "Skincare Shop — Derm-Recommended Products | Verity",
   description:
-    "Derm-recommended skincare with verified reviews. Shop luxury brands on Amazon — EltaMD, SkinCeuticals, La Roche-Posay, and more.",
+    "Shop derm-recommended skincare for SPF, anti-aging, acne, and post-procedure care. Luxury brands med spas trust — EltaMD, SkinCeuticals, La Roche-Posay, and more.",
   path: "/shop",
+  keywords: ["skincare", "skin care", "skin concerns", "SPF", "anti-aging", "medical aesthetics", "beauty"],
 });
 
 const originFilters: { value: ProductOrigin | "all"; label: string }[] = [
@@ -44,10 +45,10 @@ export default async function ShopPage({
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
       <p className="text-xs uppercase tracking-widest text-gold">Shop</p>
-      <h1 className="mt-2 font-serif text-4xl text-charcoal">Recommended skincare</h1>
+      <h1 className="mt-2 font-serif text-4xl text-charcoal">Skincare for skin concerns</h1>
       <p className="mt-3 max-w-2xl text-stone">
-        Luxury derm-brand products curated for post-procedure care, daily SPF, and clinical anti-aging
-        — the same categories listed med spas reference on Verity.
+        Derm-recommended skincare curated for post-procedure care, daily SPF, acne, and anti-aging —
+        the same product categories listed med spas and medical aesthetics clinics reference on Verity.
       </p>
       <p className="mt-2 text-sm text-stone/80">
         As an Amazon Associate, Verity earns from qualifying purchases. Prices and availability on

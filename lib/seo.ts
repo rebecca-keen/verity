@@ -1,14 +1,81 @@
 import type { Metadata } from "next";
 import { formatGoogleRating } from "@/lib/spa-display";
-import type { Product, Spa } from "@/lib/types";
+import type { Product, Spa, TreatmentCategory } from "@/lib/types";
 
 export const SITE_URL = "https://verityaesthetics.app";
 export const SITE_NAME = "Verity";
-export const SITE_TAGLINE = "Trusted Aesthetics & Med Spas Nationwide";
+export const SITE_TAGLINE = "Medical Aesthetics, Skincare & Med Spas Nationwide";
 
 export const DEFAULT_TITLE = `${SITE_NAME} — ${SITE_TAGLINE}`;
 export const DEFAULT_DESCRIPTION =
-  "Find curated aesthetics clinics, med spas, and dermatology practices across the United States. Product transparency, medical director info, public ratings, and AI-powered matching by state and city.";
+  "Find trusted med spas and medical aesthetics clinics for injectables, laser treatments, facials, and skincare. Compare providers by treatment, skin concerns, ratings, and product transparency — nationwide.";
+
+export const SITE_KEYWORDS = [
+  "medical aesthetics",
+  "med spa",
+  "skincare",
+  "skin care",
+  "injectables",
+  "Botox",
+  "dermal fillers",
+  "laser treatments",
+  "laser resurfacing",
+  "skin concerns",
+  "acne",
+  "anti-aging",
+  "facials",
+  "beauty",
+  "aesthetics clinic",
+  "dermatology aesthetics",
+];
+
+export const TREATMENT_CATEGORY_SEO: Record<
+  TreatmentCategory,
+  { title: string; description: string; h1: string; intro: string; path: string }
+> = {
+  injectables: {
+    title: "Injectables Providers — Botox & Fillers | Verity",
+    description:
+      "Find med spas and aesthetics clinics offering Botox, dermal fillers, and injectables. Compare ratings, medical director info, and product menus nationwide.",
+    h1: "Injectables providers",
+    intro:
+      "Browse listed med spas and medical aesthetics clinics for Botox, dermal fillers, and other injectables. Filter by location and compare public ratings.",
+    path: "/providers?category=injectables",
+  },
+  lasers: {
+    title: "Laser Treatment Providers — Med Spas & Clinics | Verity",
+    description:
+      "Find providers for laser hair removal, laser resurfacing, IPL, and skin rejuvenation. Curated med spas and dermatology aesthetics practices nationwide.",
+    h1: "Laser treatment providers",
+    intro:
+      "Discover med spas and clinics offering laser treatments for hair removal, resurfacing, pigmentation, and skin rejuvenation — with transparent sourcing.",
+    path: "/providers?category=lasers",
+  },
+  beauty: {
+    title: "Beauty & Facial Providers — Skincare Treatments | Verity",
+    description:
+      "Find med spas and aesthetics clinics for facials, chemical peels, microneedling, and skincare-focused beauty treatments across the United States.",
+    h1: "Beauty & facial providers",
+    intro:
+      "Explore providers for facials, peels, microneedling, and skincare-forward beauty treatments — ideal for addressing skin concerns and maintaining results.",
+    path: "/providers?category=beauty",
+  },
+  body: {
+    title: "Body Contouring Providers — Med Spas | Verity",
+    description:
+      "Find med spas and aesthetics clinics offering body contouring, CoolSculpting, and non-surgical body treatments. Compare listed providers nationwide.",
+    h1: "Body contouring providers",
+    intro:
+      "Browse med spas for body contouring and non-surgical body treatments. Filter by city and compare public ratings where available.",
+    path: "/providers?category=body",
+  },
+};
+
+const TREATMENT_CATEGORIES = new Set<string>(Object.keys(TREATMENT_CATEGORY_SEO));
+
+export function isTreatmentCategory(value: string | undefined): value is TreatmentCategory {
+  return Boolean(value && TREATMENT_CATEGORIES.has(value));
+}
 
 const DEFAULT_OG_IMAGE = "/opengraph-image";
 
@@ -39,6 +106,7 @@ export const rootMetadata: Metadata = {
   applicationName: SITE_NAME,
   title: DEFAULT_TITLE,
   description: DEFAULT_DESCRIPTION,
+  keywords: SITE_KEYWORDS,
   alternates: {
     canonical: SITE_URL,
   },
@@ -72,12 +140,14 @@ export function pageMetadata({
   description,
   path,
   image,
+  keywords,
   noIndex = false,
 }: {
   title: string;
   description: string;
   path: string;
   image?: string;
+  keywords?: string[];
   noIndex?: boolean;
 }): Metadata {
   const url = `${SITE_URL}${path}`;
@@ -86,6 +156,7 @@ export function pageMetadata({
   return {
     title,
     description: trimmedDescription,
+    ...(keywords?.length ? { keywords } : {}),
     alternates: {
       canonical: url,
     },
@@ -119,6 +190,39 @@ const PROVIDER_TYPE_LABELS: Record<Spa["providerType"], string> = {
   "dermatology-aesthetics": "dermatology practice",
 };
 
+export function providersPageMetadata({
+  category,
+  state,
+  city,
+}: {
+  category?: TreatmentCategory;
+  state?: string;
+  city?: string;
+} = {}): Metadata {
+  const locationParts = [city, state].filter(Boolean);
+  const locationLabel = locationParts.length > 0 ? ` in ${locationParts.join(", ")}` : "";
+
+  if (category) {
+    const seo = TREATMENT_CATEGORY_SEO[category];
+    const path = `/providers?category=${category}${state ? `&state=${state}` : ""}${city ? `&city=${encodeURIComponent(city)}` : ""}`;
+    return pageMetadata({
+      title: seo.title.replace(" | Verity", `${locationLabel} | Verity`),
+      description: truncateMetaDescription(`${seo.description}${locationLabel ? ` Filter by ${locationParts.join(", ")}.` : ""}`),
+      path,
+      keywords: [category, "med spa", "medical aesthetics", ...(category === "beauty" ? ["skincare", "facials"] : []), ...(category === "injectables" ? ["Botox", "fillers"] : []), ...(category === "lasers" ? ["laser treatments"] : [])],
+    });
+  }
+
+  return pageMetadata({
+    title: `Find Med Spas & Medical Aesthetics Providers${locationLabel} | Verity`,
+    description: truncateMetaDescription(
+      `Browse med spas, aesthetics clinics, and dermatology practices for injectables, laser treatments, facials, and skincare${locationLabel}. Filter by treatment type, location, and public ratings.`
+    ),
+    path: `/providers${locationParts.length ? `?${new URLSearchParams({ ...(state ? { state } : {}), ...(city ? { city } : {}) }).toString()}` : ""}`,
+    keywords: ["med spa", "medical aesthetics", "injectables", "laser treatments", "skincare", "aesthetics clinic"],
+  });
+}
+
 export function providerPageMetadata(spa: Spa): Metadata {
   const google = formatGoogleRating(spa);
   const ratingNote = google ? ` ${google}.` : "";
@@ -126,17 +230,21 @@ export function providerPageMetadata(spa: Spa): Metadata {
     .slice(0, 4)
     .map((t) => t.replace("-", " "))
     .join(", ");
+  const categories = spa.treatmentCategories
+    .map((c) => TREATMENT_CATEGORY_SEO[c].h1.toLowerCase())
+    .join(", ");
   const providerLabel = PROVIDER_TYPE_LABELS[spa.providerType];
 
   const description = truncateMetaDescription(
-    `${spa.name} — ${providerLabel} in ${spa.neighborhood}, ${spa.city}, ${spa.state}.${ratingNote} ${spa.tagline} Treatments include ${treatments}. Research on Verity.`
+    `${spa.name} — ${providerLabel} in ${spa.neighborhood}, ${spa.city}, ${spa.state}.${ratingNote} ${spa.tagline} Offers ${categories || "aesthetic treatments"} including ${treatments}. Research on Verity.`
   );
 
   return pageMetadata({
-    title: `${spa.name} — ${spa.city}, ${spa.state} | Verity`,
+    title: `${spa.name} — ${spa.city}, ${spa.state} Med Spa | Verity`,
     description,
     path: `/providers/${spa.slug}`,
     image: spa.image,
+    keywords: ["med spa", "medical aesthetics", ...spa.treatmentCategories, ...spa.treatments.slice(0, 3)],
   });
 }
 
@@ -148,6 +256,19 @@ export function organizationJsonLd() {
     alternateName: SITE_NAME,
     url: SITE_URL,
     description: DEFAULT_DESCRIPTION,
+    knowsAbout: [
+      "Medical aesthetics",
+      "Med spas",
+      "Skincare",
+      "Injectables",
+      "Laser treatments",
+      "Skin concerns",
+      "Beauty treatments",
+    ],
+    areaServed: {
+      "@type": "Country",
+      name: "United States",
+    },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
@@ -172,6 +293,39 @@ export function websiteJsonLd() {
   };
 }
 
+export function homeFaqJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is Verity?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Verity is a curated directory of med spas, medical aesthetics clinics, and dermatology practices across the United States. We help you research injectables, laser treatments, facials, and skincare with product transparency and public ratings.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I find a provider for injectables or laser treatments?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Browse providers by treatment type — injectables, lasers, beauty and facials, or body contouring — then filter by state and city. You can also use the AI Concierge to describe your goals and get matched to listed practices.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does Verity sell skincare products?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Verity Shop features derm-recommended skincare for daily SPF, post-procedure care, and common skin concerns — curated from brands med spas reference on our listings.",
+        },
+      },
+    ],
+  };
+}
+
 export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   return {
     "@context": "https://schema.org",
@@ -185,11 +339,23 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   };
 }
 
+const TREATMENT_CATEGORY_SERVICES: Record<TreatmentCategory, string> = {
+  injectables: "Injectables",
+  lasers: "Laser treatments",
+  beauty: "Facials and skincare",
+  body: "Body contouring",
+};
+
 export function localBusinessJsonLd(spa: Spa) {
   const ratingValue = spa.reviewSources?.google ?? spa.rating;
   const sameAs = [spa.website, spa.socials.instagram, spa.socials.facebook, spa.socials.tiktok].filter(
     Boolean
   );
+  const services = spa.treatmentCategories.map((category) => ({
+    "@type": "Service",
+    name: TREATMENT_CATEGORY_SERVICES[category],
+    serviceType: TREATMENT_CATEGORY_SERVICES[category],
+  }));
 
   return {
     "@context": "https://schema.org",
@@ -200,6 +366,7 @@ export function localBusinessJsonLd(spa: Spa) {
     image: spa.image,
     telephone: spa.phone || undefined,
     priceRange: spa.priceRange,
+    ...(services.length > 0 ? { hasOfferCatalog: { "@type": "OfferCatalog", itemListElement: services } } : {}),
     ...(sameAs.length > 0 ? { sameAs } : {}),
     address: {
       "@type": "PostalAddress",

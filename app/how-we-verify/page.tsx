@@ -3,10 +3,11 @@ import { ContactLink } from "@/components/ContactLink";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "How We Verify — Verity",
+  title: "How We Verify Med Spa Listings | Verity",
   description:
-    "How Verity sources and presents aesthetics clinic and med spa listings — what we verify, what we don't claim, and how to report errors.",
+    "How Verity sources medical aesthetics and med spa listings — what we verify for injectables, laser, and skincare providers, what we don't claim, and how to report errors.",
   path: "/how-we-verify",
+  keywords: ["med spa verification", "medical aesthetics", "trust", "skincare providers"],
 });
 
 const sections = [

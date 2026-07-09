@@ -39,9 +39,10 @@ const PAGE_SIZE = 24;
 type SpaDirectoryProps = {
   initialState?: string;
   initialCity?: string;
+  initialCategory?: TreatmentCategory;
 };
 
-export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
+export function SpaDirectory({ initialState, initialCity, initialCategory }: SpaDirectoryProps) {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -51,7 +52,7 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
   const [city, setCity] = useState<string | "All">(parsed.city);
   const [neighborhood, setNeighborhood] = useState("All");
   const [search, setSearch] = useState("");
-  const [category, setCategory] = useState<TreatmentCategory | "All">("All");
+  const [category, setCategory] = useState<TreatmentCategory | "All">(initialCategory ?? "All");
   const [providerType, setProviderType] = useState<ProviderType | "All">("All");
   const [moreFiltersOpen, setMoreFiltersOpen] = useState(false);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
@@ -145,9 +146,10 @@ export function SpaDirectory({ initialState, initialCity }: SpaDirectoryProps) {
     const params = new URLSearchParams();
     if (state !== "All") params.set("state", state);
     if (city !== "All") params.set("city", city);
+    if (category !== "All") params.set("category", category);
     const qs = params.toString();
     router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
-  }, [state, city, pathname, router]);
+  }, [state, city, category, pathname, router]);
 
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);

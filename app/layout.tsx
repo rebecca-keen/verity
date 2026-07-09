@@ -22,11 +22,20 @@ export default function RootLayout({
         <footer className="border-t border-stone/15 bg-cream py-12 text-center text-sm text-stone">
           <p className="font-serif text-lg text-charcoal">Verity</p>
           <p className="mt-2">
-            Aesthetics clinics, med spas & dermatology · Nationwide · Curated listings
+            Medical aesthetics, skincare &amp; med spas · Injectables, lasers &amp; beauty · Nationwide
           </p>
           <p className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs">
             <Link href="/providers" className="text-gold hover:underline">
               Providers
+            </Link>
+            <Link href="/providers?category=injectables" className="text-gold hover:underline">
+              Injectables
+            </Link>
+            <Link href="/providers?category=lasers" className="text-gold hover:underline">
+              Laser treatments
+            </Link>
+            <Link href="/providers?category=beauty" className="text-gold hover:underline">
+              Skincare &amp; facials
             </Link>
             <Link href="/concierge" className="text-gold hover:underline">
               Concierge

@@ -2,10 +2,11 @@ import { AIConcierge } from "@/components/AIConcierge";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "AI Concierge — Verity",
+  title: "AI Concierge — Find Med Spas & Treatments | Verity",
   description:
-    "Get matched to trusted aesthetics clinics, med spas, and dermatology practices across the United States.",
+    "Describe your medical aesthetics goals — injectables, laser treatments, facials, or skincare. Get matched to trusted med spas and clinics nationwide.",
   path: "/concierge",
+  keywords: ["medical aesthetics", "injectables", "laser treatments", "skincare", "med spa", "beauty"],
 });
 
 export default function ConciergePage() {
@@ -14,11 +15,11 @@ export default function ConciergePage() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-10 text-center text-ivory">
           <p className="text-xs uppercase tracking-widest text-gold">Powered by AI</p>
-          <h1 className="mt-2 font-serif text-4xl">Verity Concierge</h1>
+          <h1 className="mt-2 font-serif text-4xl">AI Concierge for medical aesthetics</h1>
           <p className="mx-auto mt-3 max-w-xl text-stone/80">
-            Describe your treatment goals — injectables, lasers, facials, body contouring — plus your
-            budget and city. We recommend listed aesthetics clinics and med spas from our directory —
-            matches are drawn from public sources, not paid placement.
+            Describe your treatment goals — injectables, laser treatments, facials, skincare, or body
+            contouring — plus your budget and city. We match you to listed med spas and medical aesthetics
+            clinics from our directory. Matches are drawn from public sources, not paid placement.
           </p>
           <p className="mx-auto mt-2 max-w-xl text-xs text-stone/70">
             Featured partner listings may appear when our partner program launches.

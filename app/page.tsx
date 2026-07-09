@@ -1,17 +1,22 @@
 import Link from "next/link";
 import { ContactLink } from "@/components/ContactLink";
+import { JsonLd } from "@/components/JsonLd";
 import { SpaCard } from "@/components/SpaCard";
 import { ProductCard } from "@/components/ProductCard";
 import { AIConcierge } from "@/components/AIConcierge";
 import { getFeaturedPremiumSpasFromData } from "@/lib/data";
 import { getRecommendedShopProducts } from "@/lib/shop-utils";
-import { pageMetadata } from "@/lib/seo";
+import { homeFaqJsonLd, pageMetadata, SITE_KEYWORDS, TREATMENT_CATEGORY_SEO } from "@/lib/seo";
+import type { TreatmentCategory } from "@/lib/types";
+
+const TREATMENT_BROWSE_ORDER: TreatmentCategory[] = ["injectables", "lasers", "beauty", "body"];
 
 export const metadata = pageMetadata({
-  title: "Verity — Trusted Aesthetics & Med Spas Nationwide",
+  title: "Verity — Medical Aesthetics, Skincare & Med Spas Nationwide",
   description:
-    "Find curated aesthetics clinics, med spas, and dermatology practices across the United States. Product transparency, medical director info, public ratings, and AI-powered matching.",
+    "Find trusted med spas and medical aesthetics clinics for injectables, laser treatments, facials, and skincare. Compare providers by skin concerns, ratings, and product transparency.",
   path: "/",
+  keywords: SITE_KEYWORDS,
 });
 
 export default function HomePage() {
@@ -20,16 +25,17 @@ export default function HomePage() {
 
   return (
     <>
+      <JsonLd data={homeFaqJsonLd()} />
       <section className="border-b border-stone/10 bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-20 text-center md:py-28">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold">United States · Curated listings</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-gold">United States · Medical aesthetics &amp; skincare</p>
           <h1 className="mx-auto mt-4 max-w-3xl font-serif text-4xl leading-tight text-charcoal md:text-6xl">
-            Trusted aesthetics &amp; med spas, clearly sourced
+            Trusted med spas for injectables, lasers &amp; skincare
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-stone">
-            Find curated aesthetics clinics, med spas, and dermatology practices across the United States.
-            Research injectables, lasers, facials, and body contouring with product transparency, medical
-            director info where publicly listed, and AI matching — expanding nationwide with curated listings in top metros.
+            Find curated med spas, medical aesthetics clinics, and dermatology practices across the United States.
+            Research injectables, laser treatments, facials, and skincare for your skin concerns — with product
+            transparency, medical director info where publicly listed, and AI matching.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
@@ -86,6 +92,31 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <p className="text-xs uppercase tracking-widest text-gold">Browse by treatment</p>
+        <h2 className="mt-2 font-serif text-3xl text-charcoal">Medical aesthetics &amp; beauty providers</h2>
+        <p className="mt-3 max-w-2xl text-sm text-stone">
+          Filter our nationwide directory by treatment type — from injectables and laser treatments to facials
+          and body contouring.
+        </p>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {TREATMENT_BROWSE_ORDER.map((key) => {
+            const seo = TREATMENT_CATEGORY_SEO[key];
+            return (
+              <Link
+                key={key}
+                href={seo.path}
+                className="luxury-border rounded-2xl bg-white p-6 transition hover:border-gold/40"
+              >
+                <h3 className="font-serif text-lg text-charcoal">{seo.h1}</h3>
+                <p className="mt-2 text-sm text-stone">{seo.intro}</p>
+                <span className="mt-4 inline-block text-sm text-gold">Browse providers →</span>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
       <section className="border-y border-stone/10 bg-cream py-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-8 md:grid-cols-3">
@@ -96,11 +127,11 @@ export default function HomePage() {
               },
               {
                 title: "Product transparency",
-                desc: "See exactly what products providers use. Shop editor-picked skincare with Amazon links.",
+                desc: "See exactly what products providers use. Shop editor-picked skincare for common skin concerns.",
               },
               {
                 title: "AI concierge",
-                desc: "Describe your goals. Get matched to the right aesthetics clinic or med spa in seconds.",
+                desc: "Describe your goals — injectables, lasers, or skincare. Get matched to the right med spa in seconds.",
               },
             ].map((item) => (
               <div key={item.title} className="luxury-border rounded-2xl bg-white p-6">
@@ -195,7 +226,7 @@ export default function HomePage() {
           <div className="flex items-end justify-between">
             <div>
               <p className="text-xs uppercase tracking-widest text-gold">Shop</p>
-              <h2 className="mt-2 font-serif text-3xl text-charcoal">Recommended skincare</h2>
+              <h2 className="mt-2 font-serif text-3xl text-charcoal">Skincare for skin concerns</h2>
             </div>
             <Link href="/shop" className="text-sm text-gold hover:underline">
               View all →

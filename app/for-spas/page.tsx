@@ -4,10 +4,11 @@ import { contactFormUrl } from "@/lib/constants";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "For Providers — Verity",
+  title: "List Your Med Spa or Medical Aesthetics Practice | Verity",
   description:
-    "List your aesthetics clinic, med spa, or dermatology practice on Verity. Verified profiles, featured placement, and lead generation.",
+    "List your med spa, medical aesthetics clinic, or dermatology practice on Verity. Reach clients researching injectables, laser treatments, facials, and skincare nationwide.",
   path: "/for-spas",
+  keywords: ["med spa listing", "medical aesthetics marketing", "injectables", "laser treatments", "beauty clinic"],
 });
 
 const providerTiers = [
