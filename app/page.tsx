@@ -117,6 +117,53 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <p className="text-xs uppercase tracking-widest text-gold">Skin concerns</p>
+        <h2 className="mt-2 font-serif text-3xl text-charcoal">Research treatments for your goals</h2>
+        <p className="mt-3 max-w-2xl text-sm text-stone">
+          Whether you&apos;re addressing acne, fine lines, pigmentation, or hair removal — start with the
+          treatment category that matches your skin concern, then compare providers by location and ratings.
+        </p>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            {
+              title: "Injectables & anti-aging",
+              desc: "Botox, dermal fillers, and wrinkle-smoothing treatments at med spas and aesthetics clinics.",
+              href: TREATMENT_CATEGORY_SEO.injectables.path,
+            },
+            {
+              title: "Laser treatments",
+              desc: "Laser hair removal, resurfacing, IPL, and pigmentation correction from listed providers.",
+              href: TREATMENT_CATEGORY_SEO.lasers.path,
+            },
+            {
+              title: "Skincare & facials",
+              desc: "Chemical peels, microneedling, and facial treatments for acne, texture, and maintenance.",
+              href: TREATMENT_CATEGORY_SEO.beauty.path,
+            },
+          ].map((item) => (
+            <Link
+              key={item.title}
+              href={item.href}
+              className="luxury-border rounded-2xl bg-white p-6 transition hover:border-gold/40"
+            >
+              <h3 className="font-serif text-lg text-charcoal">{item.title}</h3>
+              <p className="mt-2 text-sm text-stone">{item.desc}</p>
+              <span className="mt-4 inline-block text-sm text-gold">Browse providers →</span>
+            </Link>
+          ))}
+        </div>
+        <p className="mt-6 text-sm text-stone">
+          <Link href="/providers" className="text-gold hover:underline">
+            View all providers
+          </Link>
+          {" · "}
+          <Link href="/shop" className="text-gold hover:underline">
+            Shop skincare
+          </Link>
+        </p>
+      </section>
+
       <section className="border-y border-stone/10 bg-cream py-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-8 md:grid-cols-3">

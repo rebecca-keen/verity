@@ -144,6 +144,7 @@ export function ContactForm({ defaultSubject = "", defaultTopic = "", defaultSpa
             <option value="Listing correction">Listing correction</option>
             <option value="Premium inquiry">Premium inquiry</option>
             <option value="Suggest a provider">Suggest a provider</option>
+            <option value="Leave a review">Leave a review</option>
             <option value="Other">Other</option>
           </select>
         </div>

@@ -15,7 +15,13 @@ import { TrustBadge, TrustPanel } from "@/components/TrustBadge";
 import { getSpa, getProductsForSpa, getSpaReviews, spas } from "@/lib/data";
 import { formatGoogleRating } from "@/lib/spa-display";
 import { contactFormUrl } from "@/lib/constants";
-import { breadcrumbJsonLd, localBusinessJsonLd, providerPageMetadata } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  localBusinessJsonLd,
+  providerPageMetadata,
+  providerReviewsJsonLd,
+  TREATMENT_CATEGORY_SEO,
+} from "@/lib/seo";
 
 export function generateStaticParams() {
   return spas.map((spa) => ({ slug: spa.slug }));
@@ -45,6 +51,7 @@ export default async function ProviderDetailPage({
   const spaProducts = getProductsForSpa(slug);
   const spaReviews = getSpaReviews(slug);
   const googleRating = formatGoogleRating(spa);
+  const reviewsJsonLd = providerReviewsJsonLd(spa, spaReviews);
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
@@ -56,6 +63,7 @@ export default async function ProviderDetailPage({
             { name: "Providers", path: "/providers" },
             { name: spa.name, path: `/providers/${spa.slug}` },
           ]),
+          ...(reviewsJsonLd ? [reviewsJsonLd] : []),
         ]}
       />
       <div className="relative h-64 overflow-hidden rounded-2xl md:h-80">
@@ -139,6 +147,50 @@ export default async function ProviderDetailPage({
                   {googleRating ? ` See ${googleRating} on Google.` : ""}
                 </p>
               )}
+            </div>
+            <p className="mt-4 text-sm text-stone">
+              Visited this practice?{" "}
+              <Link
+                href={contactFormUrl({
+                  subject: `Review: ${spa.name}`,
+                  topic: "Leave a review",
+                  spa: spa.name,
+                })}
+                className="text-gold hover:underline"
+              >
+                Share your experience
+              </Link>
+              {" "}— we publish verified visit reviews after editorial review.
+            </p>
+          </div>
+
+          <div className="mt-10">
+            <h2 className="font-serif text-2xl text-charcoal">Browse similar providers</h2>
+            <p className="mt-2 text-sm text-stone">
+              More med spas and aesthetics clinics in {spa.city}, {spa.state} and by treatment type.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Link
+                href={`/providers?state=${spa.state}&city=${encodeURIComponent(spa.city)}`}
+                className="rounded-full border border-stone/20 px-3 py-1.5 text-xs text-charcoal transition hover:border-gold"
+              >
+                More in {spa.city}, {spa.state}
+              </Link>
+              <Link
+                href={`/providers?state=${spa.state}`}
+                className="rounded-full border border-stone/20 px-3 py-1.5 text-xs text-charcoal transition hover:border-gold"
+              >
+                All in {spa.state}
+              </Link>
+              {spa.treatmentCategories.map((category) => (
+                <Link
+                  key={category}
+                  href={`/providers?category=${category}&state=${spa.state}`}
+                  className="rounded-full border border-stone/20 px-3 py-1.5 text-xs text-charcoal transition hover:border-gold"
+                >
+                  {TREATMENT_CATEGORY_SEO[category].h1} in {spa.state}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

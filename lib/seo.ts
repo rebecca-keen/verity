@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { formatGoogleRating } from "@/lib/spa-display";
-import type { Product, Spa, TreatmentCategory } from "@/lib/types";
+import type { Product, Review, Spa, TreatmentCategory } from "@/lib/types";
 
 export const SITE_URL = "https://verityaesthetics.app";
 export const SITE_NAME = "Verity";
@@ -293,36 +293,104 @@ export function websiteJsonLd() {
   };
 }
 
-export function homeFaqJsonLd() {
+function faqPageJsonLd(questions: { question: string; answer: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is Verity?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Verity is a curated directory of med spas, medical aesthetics clinics, and dermatology practices across the United States. We help you research injectables, laser treatments, facials, and skincare with product transparency and public ratings.",
-        },
+    mainEntity: questions.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
       },
-      {
-        "@type": "Question",
-        name: "How do I find a provider for injectables or laser treatments?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Browse providers by treatment type — injectables, lasers, beauty and facials, or body contouring — then filter by state and city. You can also use the AI Concierge to describe your goals and get matched to listed practices.",
-        },
+    })),
+  };
+}
+
+export function homeFaqJsonLd() {
+  return faqPageJsonLd([
+    {
+      question: "What is Verity?",
+      answer:
+        "Verity is a curated directory of med spas, medical aesthetics clinics, and dermatology practices across the United States. We help you research injectables, laser treatments, facials, and skincare with product transparency and public ratings.",
+    },
+    {
+      question: "How do I find a provider for injectables or laser treatments?",
+      answer:
+        "Browse providers by treatment type — injectables, lasers, beauty and facials, or body contouring — then filter by state and city. You can also use the AI Concierge to describe your goals and get matched to listed practices.",
+    },
+    {
+      question: "Does Verity sell skincare products?",
+      answer:
+        "Yes. Verity Shop features derm-recommended skincare for daily SPF, post-procedure care, and common skin concerns — curated from brands med spas reference on our listings.",
+    },
+  ]);
+}
+
+export function providersFaqJsonLd() {
+  return faqPageJsonLd([
+    {
+      question: "How do I find med spas near me on Verity?",
+      answer:
+        "Use the state and city filters on the providers page, or search by city name. You can also filter by treatment type — injectables, lasers, beauty and facials, or body contouring — to narrow results.",
+    },
+    {
+      question: "What types of medical aesthetics providers are listed?",
+      answer:
+        "Verity lists med spas, medical aesthetics clinics, and dermatology practices that publicly offer injectables, laser treatments, facials, skincare, and body contouring across the United States.",
+    },
+    {
+      question: "How are provider ratings shown?",
+      answer:
+        "Where available, listings display public Google Business ratings and review counts. Verity also accepts firsthand visit reviews submitted through our contact form for editorial review.",
+    },
+  ]);
+}
+
+export function howWeVerifyFaqJsonLd() {
+  return faqPageJsonLd([
+    {
+      question: "What does Verity verify on med spa listings?",
+      answer:
+        "We verify business identity, location, contact details, public Google and Yelp ratings where available, official websites, social profiles, medical director names when listed publicly, and treatment categories from public sources.",
+    },
+    {
+      question: "Does a Verity listing mean a provider is licensed?",
+      answer:
+        "No. A Listed badge means the business appears in our public directory from publicly sourced information. We do not independently audit state medical licenses unless explicitly noted.",
+    },
+    {
+      question: "How can I report a listing error?",
+      answer:
+        "Use our contact form with the provider name, URL, and what should be corrected. We review submissions and update listings on a rolling basis.",
+    },
+  ]);
+}
+
+/** Individual Review schema — only for confirmed Verity visit reviews, not Google aggregates. */
+export function providerReviewsJsonLd(spa: Spa, spaReviews: Review[]) {
+  const verifiedReviews = spaReviews.filter((r) => r.verifiedVisit);
+  if (verifiedReviews.length === 0) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    name: spa.name,
+    url: `${SITE_URL}/providers/${spa.slug}`,
+    review: verifiedReviews.map((r) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: r.author },
+      datePublished: r.date,
+      reviewBody: r.text,
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: r.rating,
+        bestRating: 5,
+        worstRating: 1,
       },
-      {
-        "@type": "Question",
-        name: "Does Verity sell skincare products?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Verity Shop features derm-recommended skincare for daily SPF, post-procedure care, and common skin concerns — curated from brands med spas reference on our listings.",
-        },
-      },
-    ],
+      ...(r.treatment ? { name: r.treatment } : {}),
+    })),
   };
 }
 

@@ -9348,6 +9348,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Perfect Medical official website — services",
   },
+  "skin-wellness-center-of-alabama-birmingham": {
+    hero: "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/about@2x.jpg",
+    logo: "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/logo@2x.png",
+    gallery: [
+      "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/botox@2x.jpg",
+      "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/fillers@2x.jpg",
+      "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/hydrafacial@2x.jpg",
+      "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/sculptra@2x.jpg",
+    ],
+    source: "Skin Wellness Center of Alabama official website — services",
+  },
 };
 
 /** Fallback Unsplash hero IDs for nationwide listings without verified og images. */

@@ -9,6 +9,9 @@ function formatField(label: string, value: unknown): string {
 /** Server-only inbox — never exposed in the client bundle. */
 const DEFAULT_CONTACT_EMAIL = "rebeccakeen@gmail.com";
 
+/** Verified domain sender — preferred when verityaesthetics.app is verified in Resend. */
+const VERIFIED_FROM_ADDRESS = "Verity Aesthetics <hello@verityaesthetics.app>";
+
 /**
  * Resend's test sender — works without domain verification.
  * Delivers only to the email on your Resend account (rebeccakeen@gmail.com).
@@ -46,6 +49,23 @@ function getContactConfig(): ContactConfig {
   return { contactEmail, resendApiKey, fromAddress };
 }
 
+function resendFromCandidates(config: ContactConfig): string[] {
+  return [...new Set([config.fromAddress, VERIFIED_FROM_ADDRESS, DEFAULT_FROM_ADDRESS])];
+}
+
+async function isResendApiKeyValid(apiKey: string | undefined): Promise<boolean> {
+  if (!apiKey) return false;
+
+  try {
+    const response = await fetch("https://api.resend.com/domains", {
+      headers: { Authorization: `Bearer ${apiKey}` },
+    });
+    return response.ok;
+  } catch {
+    return false;
+  }
+}
+
 function isFormSubmitSuccess(success: unknown): boolean {
   return success === true || success === "true";
 }
@@ -59,9 +79,8 @@ async function sendViaResend(
   }
 
   const resend = new Resend(config.resendApiKey);
-  const fromCandidates = [...new Set([config.fromAddress, DEFAULT_FROM_ADDRESS])];
 
-  for (const fromAddress of fromCandidates) {
+  for (const fromAddress of resendFromCandidates(config)) {
     const { data, error } = await resend.emails.send({
       from: fromAddress,
       to: config.contactEmail,
@@ -146,11 +165,15 @@ async function sendViaFormSubmit(
 /** Lightweight config check — does not send email. */
 export async function GET() {
   const config = getContactConfig();
+  const resendKeyValid = await isResendApiKeyValid(config.resendApiKey);
+
   return NextResponse.json({
     ok: true,
     resendConfigured: Boolean(config.resendApiKey),
+    resendKeyValid,
     contactEmail: config.contactEmail,
     fromAddress: config.fromAddress,
+    fromCandidates: resendFromCandidates(config),
   });
 }
 

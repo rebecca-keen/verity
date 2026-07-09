@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ContactLink } from "@/components/ContactLink";
-import { pageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { howWeVerifyFaqJsonLd, pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "How We Verify Med Spa Listings | Verity",
@@ -69,6 +70,7 @@ const sections = [
 export default function HowWeVerifyPage() {
   return (
     <div className="mx-auto max-w-4xl px-6 py-12">
+      <JsonLd data={howWeVerifyFaqJsonLd()} />
       <p className="text-xs uppercase tracking-widest text-gold">Transparency</p>
       <h1 className="mt-2 font-serif text-4xl text-charcoal">How we verify</h1>
       <p className="mt-4 text-lg text-stone">

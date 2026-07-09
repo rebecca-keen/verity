@@ -1,7 +1,10 @@
 import type { MetadataRoute } from "next";
 import { spas } from "@/lib/data";
+import { STATES_WITH_REAL_DATA } from "@/lib/nationwide-states";
 import { SITE_URL, TREATMENT_CATEGORY_SEO } from "@/lib/seo";
+import { POPULAR_CITY_SHORTCUTS, POPULAR_STATE_CODES } from "@/lib/spa-utils";
 import { getShopProducts } from "@/lib/shop-utils";
+import type { TreatmentCategory } from "@/lib/types";
 
 /** Pre-render at build time so crawlers never hit a cold serverless import of spa data. */
 export const dynamic = "force-static";
@@ -78,13 +81,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const treatmentCategoryPages: MetadataRoute.Sitemap = (
-    Object.keys(TREATMENT_CATEGORY_SEO) as (keyof typeof TREATMENT_CATEGORY_SEO)[]
+    Object.keys(TREATMENT_CATEGORY_SEO) as TreatmentCategory[]
   ).map((category) => ({
     url: `${SITE_URL}/providers?category=${category}`,
     lastModified: now,
     changeFrequency: "weekly",
     priority: 0.85,
   }));
+
+  const stateFilterPages: MetadataRoute.Sitemap = STATES_WITH_REAL_DATA.map((state) => ({
+    url: `${SITE_URL}/providers?state=${state}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: POPULAR_STATE_CODES.includes(state) ? 0.82 : 0.75,
+  }));
+
+  const cityFilterPages: MetadataRoute.Sitemap = POPULAR_CITY_SHORTCUTS.map((shortcut) => ({
+    url: `${SITE_URL}/providers?state=${shortcut.state}&city=${encodeURIComponent(shortcut.city)}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  const categoryStatePages: MetadataRoute.Sitemap = POPULAR_STATE_CODES.flatMap((state) =>
+    (Object.keys(TREATMENT_CATEGORY_SEO) as TreatmentCategory[]).map((category) => ({
+      url: `${SITE_URL}/providers?category=${category}&state=${state}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.78,
+    }))
+  );
 
   const providerPages: MetadataRoute.Sitemap = spas
     .filter((spa) => hasSlug(spa.slug))
@@ -104,5 +130,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     }));
 
-  return [...staticPages, ...treatmentCategoryPages, ...providerPages, ...shopPages];
+  return [
+    ...staticPages,
+    ...treatmentCategoryPages,
+    ...stateFilterPages,
+    ...cityFilterPages,
+    ...categoryStatePages,
+    ...providerPages,
+    ...shopPages,
+  ];
 }
