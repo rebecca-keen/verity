@@ -38,7 +38,7 @@ const sections = [
       "Yelp",
       "State licensing boards (for user lookup — not automated verification)",
       "Provider official websites",
-      "User submissions and corrections via our contact form",
+      "User submissions and corrections via email",
     ],
   },
   {
@@ -52,7 +52,7 @@ const sections = [
   {
     title: "How to report errors",
     items: [
-      "Use our contact form with the provider name, URL, and what should be corrected",
+      "Email us with the provider name, URL, and what should be corrected",
       "We review submissions and update listings on a rolling basis",
       "For urgent credential concerns, contact your state medical board directly",
     ],
@@ -60,7 +60,7 @@ const sections = [
   {
     title: "For providers",
     items: [
-      "Claim or update your listing via our contact form",
+      "Claim or update your listing by emailing us",
       "Include your practice name, website, and any credentials you'd like displayed",
       "We welcome corrections to medical director names, license references, and treatment menus",
     ],
@@ -100,7 +100,7 @@ export default function HowWeVerifyPage() {
           <ContactLink subject="Listing correction — Verity" topic="Listing correction" className="text-gold">
             Send us a message
           </ContactLink>
-          {" "}via our contact form.
+          {" "}— we&apos;ll review and update on a rolling basis.
         </p>
         <Link
           href="/providers"
