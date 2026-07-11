@@ -106,7 +106,7 @@ Click through these pages:
 
 ## PART 4 — Contact form (required for “Contact us” to work)
 
-The site uses a contact form at `/contact`. Your email is **not** shown publicly — submissions are emailed server-side to **rebeccakeen@gmail.com**.
+The site uses a contact form at `/contact`. Your email is **not** shown publicly — submissions are emailed server-side to **hello@verityaesthetics.app**.
 
 ### Local testing (on your Mac)
 
@@ -114,10 +114,10 @@ The site uses a contact form at `/contact`. Your email is **not** shown publicly
 2. Paste your Resend API key on the line after `RESEND_API_KEY=` (no quotes, no spaces).
 3. Confirm these lines are present (already set in the template):
    - `RESEND_API_KEY=` (paste your key from https://resend.com/api-keys)
-   - `CONTACT_EMAIL=rebeccakeen@gmail.com`
+   - `CONTACT_EMAIL=hello@verityaesthetics.app`
    - `CONTACT_FROM=Verity Aesthetics <onboarding@resend.dev>` (optional — this is the default)
 4. Restart the dev server: stop it if running, then run `npm run dev` in the project folder.
-5. Open http://localhost:3000/contact, submit a test message, and check **rebeccakeen@gmail.com**.
+5. Open http://localhost:3000/contact, submit a test message, and check **hello@verityaesthetics.app**.
 
 The default sender (`onboarding@resend.dev`) works without domain verification and delivers to the email on your Resend account.
 
@@ -129,7 +129,7 @@ The default sender (`onboarding@resend.dev`) works without domain verification a
 | Name | Value | Required |
 |------|-------|----------|
 | `RESEND_API_KEY` | Your Resend API key from https://resend.com/api-keys | **Yes** |
-| `CONTACT_EMAIL` | `rebeccakeen@gmail.com` | No (default) |
+| `CONTACT_EMAIL` | `hello@verityaesthetics.app` | No (default) |
 | `CONTACT_FROM` | `Verity Aesthetics <onboarding@resend.dev>` | No (default) |
 
 3. Click **Save**

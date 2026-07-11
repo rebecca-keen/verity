@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getContactEmail } from "@/lib/constants";
 import { formatGoogleRating } from "@/lib/spa-display";
 import type { Product, Review, Spa, TreatmentCategory } from "@/lib/types";
 
@@ -272,6 +273,7 @@ export function organizationJsonLd() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
+      email: getContactEmail(),
       url: `${SITE_URL}/contact`,
     },
   };

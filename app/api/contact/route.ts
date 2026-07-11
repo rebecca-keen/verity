@@ -1,21 +1,16 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { DEFAULT_CONTACT_EMAIL } from "@/lib/constants";
 
 function formatField(label: string, value: unknown): string {
   const text = typeof value === "string" ? value.trim() : "";
   return text ? `${label}: ${text}` : "";
 }
 
-/** Server-only inbox — never exposed in the client bundle. */
-const DEFAULT_CONTACT_EMAIL = "rebeccakeen@gmail.com";
-
 /** Verified domain sender — preferred when verityaesthetics.app is verified in Resend. */
 const VERIFIED_FROM_ADDRESS = "Verity Aesthetics <hello@verityaesthetics.app>";
 
-/**
- * Resend's test sender — works without domain verification.
- * Delivers only to the email on your Resend account (rebeccakeen@gmail.com).
- */
+/** Resend test sender — works without domain verification; prefer VERIFIED_FROM_ADDRESS in production. */
 const DEFAULT_FROM_ADDRESS = "Verity Aesthetics <onboarding@resend.dev>";
 
 type ContactPayload = {
