@@ -171,7 +171,7 @@ export async function GET() {
     ok: true,
     resendConfigured: Boolean(config.resendApiKey),
     resendKeyValid,
-    contactEmail: config.contactEmail,
+    contactConfigured: Boolean(config.contactEmail),
     fromAddress: config.fromAddress,
     fromCandidates: resendFromCandidates(config),
   });

@@ -1,12 +1,8 @@
-export const DEFAULT_CONTACT_EMAIL = "rebeccakeen@gmail.com";
+export const DEFAULT_CONTACT_EMAIL = "hello@verityaesthetics.app";
 
-/** Inbox for mailto links — uses CONTACT_EMAIL or NEXT_PUBLIC_CONTACT_EMAIL when set. */
+/** Public inbox for mailto links — uses NEXT_PUBLIC_CONTACT_EMAIL when set. Server-side delivery uses CONTACT_EMAIL separately. */
 export function getContactEmail(): string {
-  return (
-    process.env.CONTACT_EMAIL?.trim() ||
-    process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() ||
-    DEFAULT_CONTACT_EMAIL
-  );
+  return process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || DEFAULT_CONTACT_EMAIL;
 }
 
 export function contactMailtoUrl(options?: {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { contactMailtoUrl, getContactEmail } from "@/lib/constants";
+import { contactMailtoUrl } from "@/lib/constants";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -44,8 +44,6 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
   const defaultSubject = params.subject?.trim() ?? "";
   const defaultTopic = params.topic?.trim() ?? "";
   const defaultSpaName = params.spa?.trim() ?? "";
-  const contactEmail = getContactEmail();
-
   const mailtoHref = contactMailtoUrl({
     subject: defaultSubject || undefined,
     topic: defaultTopic || undefined,
@@ -64,16 +62,10 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
       </p>
 
       <div className="mt-10 luxury-border rounded-2xl bg-white p-8 text-center">
-        <p className="text-sm text-stone">Send an email to</p>
+        <p className="text-sm text-stone">Get in touch by email</p>
         <a
           href={mailtoHref}
-          className="mt-2 inline-block font-serif text-2xl text-gold transition hover:underline"
-        >
-          {contactEmail}
-        </a>
-        <a
-          href={mailtoHref}
-          className="mt-6 inline-block rounded-full bg-charcoal px-8 py-3 text-sm font-medium tracking-wider text-ivory transition hover:bg-charcoal/90"
+          className="mt-4 inline-block rounded-full bg-charcoal px-8 py-3 text-sm font-medium tracking-wider text-ivory transition hover:bg-charcoal/90"
         >
           {hasPrefill ? "Open email with details" : "Send an email"}
         </a>
