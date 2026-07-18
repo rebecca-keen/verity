@@ -69,6 +69,7 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   },
   "fewinstitute.com": {
     hero: "https://www.datocms-assets.com/75997/1663172232-og-feat.jpg",
+    logo: "https://www.datocms-assets.com/75997/1663884244-few-logo.png",
     gallery: [],
     source: "The Few Institute official website",
   },

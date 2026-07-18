@@ -12443,8 +12443,8 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     source: "SkinSpirit Willow Glen official website — services",
   },
   "the-few-institute-chicago": {
-    hero: "",
-    logo: "https://www.datocms-assets.com/75997/1663172232-og-feat.jpg",
+    hero: "https://www.datocms-assets.com/75997/1663172232-og-feat.jpg",
+    logo: "https://www.datocms-assets.com/75997/1663884244-few-logo.png",
     gallery: [
 
     ],
