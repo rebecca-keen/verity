@@ -1,0 +1,10 @@
+{
+  "total_providers": 613,
+  "with_valid_website": 613,
+  "with_logo": 613,
+  "without_logo": 0,
+  "with_website_no_logo": 0,
+  "no_valid_website": 0,
+  "missing_patterns": {},
+  "missing_with_website": []
+}

@@ -52,6 +52,7 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   },
   "elevenmedspa.com": {
     hero: "https://elevenbodysculpt.com/wp-content/uploads/2026/03/Pic-128-scaled.jpg",
+    logo: "https://elevenbodysculpt.com/wp-content/uploads/2025/12/Eleven-Aesthetics-fav.svg",
     gallery: [],
     source: "Eleven Med Spa official website",
   },
