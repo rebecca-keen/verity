@@ -10,6 +10,7 @@ export type BrandWebsiteImage = {
 export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   "milanlaser.com": {
     hero: "https://firebasestorage.googleapis.com/v0/b/milan-stores-ea6e2.appspot.com/o/general%2Fseo%2Fmilan-og-img.webp?alt=media&token=06d51ff2-c1bc-4d11-980a-d267a9f33a4a",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
       "https://firebasestorage.googleapis.com/v0/b/milan-stores-ea6e2.appspot.com/o/general%2Fseo%2Fmilan-og-img.webp?alt=media&token=06d51ff2-c1bc-4d11-980a-d267a9f33a4a",
     ],
@@ -25,6 +26,7 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   },
   "skinlaundry.com": {
     hero: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fd5d27640d7c642e6a1da2ef7c0e5eb64?width=1200",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
       "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2F82cbab7da19f49cdb68ad5294c1e9832?width=800",
       "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2F5b9b34ec92be4c6d96dbca643165b5d5?width=800",
