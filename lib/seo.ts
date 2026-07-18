@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { getContactEmail } from "@/lib/constants";
+import { getSortedSpas } from "@/lib/data";
 import { formatGoogleRating } from "@/lib/spa-display";
-import { US_STATES } from "@/lib/spa-utils";
+import { filterSpasByCity, filterSpasByState, getStateLabel, US_STATES } from "@/lib/spa-utils";
 import type { Product, Review, Spa, TreatmentCategory, USStateCode } from "@/lib/types";
 
 export const SITE_URL = "https://verityaesthetics.app";
@@ -258,6 +259,63 @@ const PROVIDER_TYPE_LABELS: Record<Spa["providerType"], string> = {
   "dermatology-aesthetics": "dermatology practice",
 };
 
+export function getFilteredProviders(filters: {
+  category?: TreatmentCategory;
+  state?: USStateCode;
+  city?: string;
+}): Spa[] {
+  let list = getSortedSpas();
+  if (filters.state) list = filterSpasByState(list, filters.state);
+  if (filters.city) list = filterSpasByCity(list, filters.city);
+  if (filters.category) {
+    list = list.filter((spa) => spa.treatmentCategories.includes(filters.category!));
+  }
+  return list;
+}
+
+export function providersListingLabel(filters: {
+  category?: TreatmentCategory;
+  state?: USStateCode;
+  city?: string;
+}): { h1: string; intro: string; listName: string } {
+  const stateLabel = filters.state ? getStateLabel(filters.state) : undefined;
+  const locationLabel = [filters.city, stateLabel].filter(Boolean).join(", ");
+  const categorySeo = filters.category ? TREATMENT_CATEGORY_SEO[filters.category] : null;
+  const count = getFilteredProviders(filters).length;
+  const countNote = count > 0 ? `${count} listed provider${count === 1 ? "" : "s"}` : "Listed providers";
+
+  if (categorySeo && locationLabel) {
+    return {
+      h1: `${categorySeo.h1} in ${locationLabel}`,
+      intro: `Compare ${countNote} for ${categorySeo.h1.toLowerCase()} in ${locationLabel}. Filter by neighborhood, provider type, and public Google ratings where available.`,
+      listName: `${categorySeo.h1} in ${locationLabel}`,
+    };
+  }
+
+  if (categorySeo) {
+    return {
+      h1: categorySeo.h1,
+      intro: `Compare ${countNote} nationwide for ${categorySeo.h1.toLowerCase()}. Filter by state, city, and public Google ratings where available.`,
+      listName: categorySeo.h1,
+    };
+  }
+
+  if (locationLabel) {
+    return {
+      h1: `Med spas in ${locationLabel}`,
+      intro: `Browse ${countNote} in ${locationLabel} for injectables, laser treatments, facials, and skincare. Compare public ratings, treatments, and medical director info.`,
+      listName: `Med spas in ${locationLabel}`,
+    };
+  }
+
+  return {
+    h1: "Find med spas & medical aesthetics providers",
+    intro:
+      "Search med spas, aesthetics clinics, and dermatology practices for injectables, laser treatments, facials, and skincare. Filter by location and treatment type — sorted by public ratings where available.",
+    listName: "Med spas and medical aesthetics providers",
+  };
+}
+
 export function providersPageMetadata({
   category,
   state,
@@ -268,22 +326,26 @@ export function providersPageMetadata({
   city?: string;
 } = {}): Metadata {
   const filters = normalizeProvidersFilters({ category, state, city });
-  const locationParts = [filters.city, filters.state].filter(Boolean);
-  const locationLabel = locationParts.length > 0 ? ` in ${locationParts.join(", ")}` : "";
   const path = buildProvidersPath(filters);
+  const listing = providersListingLabel(filters);
+  const stateLabel = filters.state ? getStateLabel(filters.state) : undefined;
+  const locationParts = [filters.city, stateLabel].filter(Boolean);
+  const locationLabel = locationParts.length > 0 ? ` in ${locationParts.join(", ")}` : "";
+  const count = getFilteredProviders(filters).length;
+  const countPhrase = count > 0 ? `${count} providers` : "providers";
 
   if (filters.category) {
     const seo = TREATMENT_CATEGORY_SEO[filters.category];
     return pageMetadata({
-      title: seo.title.replace(" | Verity", `${locationLabel} | Verity`),
-      description: truncateMetaDescription(
-        `${seo.description}${locationLabel ? ` Filter by ${locationParts.join(", ")}.` : ""}`
-      ),
+      title: `${seo.h1}${locationLabel} — ${countPhrase} | Verity`,
+      description: truncateMetaDescription(listing.intro),
       path,
       keywords: [
         filters.category,
         "med spa",
         "medical aesthetics",
+        ...(filters.state ? [getStateLabel(filters.state)] : []),
+        ...(filters.city ? [filters.city] : []),
         ...(filters.category === "beauty" ? ["skincare", "facials"] : []),
         ...(filters.category === "injectables" ? ["Botox", "fillers"] : []),
         ...(filters.category === "lasers" ? ["laser treatments"] : []),
@@ -293,12 +355,21 @@ export function providersPageMetadata({
   }
 
   return pageMetadata({
-    title: `Find Med Spas & Medical Aesthetics Providers${locationLabel} | Verity`,
-    description: truncateMetaDescription(
-      `Browse med spas, aesthetics clinics, and dermatology practices for injectables, laser treatments, facials, and skincare${locationLabel}. Filter by treatment type, location, and public ratings.`
-    ),
+    title: locationLabel
+      ? `Med Spas${locationLabel} — ${countPhrase} | Verity`
+      : "Find Med Spas & Medical Aesthetics Providers | Verity",
+    description: truncateMetaDescription(listing.intro),
     path,
-    keywords: ["med spa", "medical aesthetics", "injectables", "laser treatments", "skincare", "aesthetics clinic"],
+    keywords: [
+      "med spa",
+      "medical aesthetics",
+      ...(filters.state ? [getStateLabel(filters.state)] : []),
+      ...(filters.city ? [filters.city] : []),
+      "injectables",
+      "laser treatments",
+      "skincare",
+      "aesthetics clinic",
+    ],
     noIndex: filters.noIndex,
   });
 }
@@ -370,6 +441,14 @@ export function websiteJsonLd() {
       "@type": "Organization",
       name: "Verity Aesthetics",
       url: SITE_URL,
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_URL}/providers?city={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
     },
   };
 }
@@ -488,6 +567,73 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   };
 }
 
+export function providerBreadcrumbJsonLd(spa: Spa) {
+  const items = [
+    { name: "Home", path: "/" },
+    { name: "Providers", path: "/providers" },
+    {
+      name: getStateLabel(spa.state),
+      path: buildProvidersPath({ state: spa.state as USStateCode }),
+    },
+    {
+      name: spa.city,
+      path: buildProvidersPath({ state: spa.state as USStateCode, city: spa.city }),
+    },
+    { name: spa.name, path: `/providers/${spa.slug}` },
+  ];
+
+  return breadcrumbJsonLd(items);
+}
+
+export function providersCollectionPageJsonLd({
+  path,
+  name,
+  description,
+}: {
+  path: string;
+  name: string;
+  description: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url: `${SITE_URL}${path}`,
+    isPartOf: {
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+  };
+}
+
+const ITEM_LIST_SCHEMA_LIMIT = 50;
+
+export function providersItemListJsonLd({
+  providers,
+  path,
+  listName,
+}: {
+  providers: Spa[];
+  path: string;
+  listName: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: listName,
+    url: `${SITE_URL}${path}`,
+    numberOfItems: providers.length,
+    itemListElement: providers.slice(0, ITEM_LIST_SCHEMA_LIMIT).map((spa, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: spa.name,
+      url: `${SITE_URL}/providers/${spa.slug}`,
+    })),
+  };
+}
+
 const TREATMENT_CATEGORY_SERVICES: Record<TreatmentCategory, string> = {
   injectables: "Injectables",
   lasers: "Laser treatments",
@@ -496,7 +642,8 @@ const TREATMENT_CATEGORY_SERVICES: Record<TreatmentCategory, string> = {
 };
 
 export function localBusinessJsonLd(spa: Spa) {
-  const ratingValue = spa.reviewSources?.google ?? spa.rating;
+  const pageUrl = `${SITE_URL}/providers/${spa.slug}`;
+  const googleRating = spa.reviewSources?.google;
   const sameAs = [spa.website, spa.socials.instagram, spa.socials.facebook, spa.socials.tiktok].filter(
     Boolean
   );
@@ -509,25 +656,28 @@ export function localBusinessJsonLd(spa: Spa) {
   return {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
+    "@id": `${pageUrl}#business`,
     name: spa.name,
     description: spa.description,
-    url: `${SITE_URL}/providers/${spa.slug}`,
-    image: spa.image,
+    url: pageUrl,
+    mainEntityOfPage: pageUrl,
+    ...(spa.image ? { image: [spa.image] } : {}),
     telephone: spa.phone || undefined,
     priceRange: spa.priceRange,
     ...(services.length > 0 ? { hasOfferCatalog: { "@type": "OfferCatalog", itemListElement: services } } : {}),
     ...(sameAs.length > 0 ? { sameAs } : {}),
     address: {
       "@type": "PostalAddress",
+      streetAddress: spa.neighborhood,
       addressLocality: spa.city,
       addressRegion: spa.state,
       addressCountry: "US",
     },
-    ...(ratingValue && spa.reviewCount
+    ...(googleRating && spa.reviewCount
       ? {
           aggregateRating: {
             "@type": "AggregateRating",
-            ratingValue,
+            ratingValue: googleRating,
             reviewCount: spa.reviewCount,
             bestRating: 5,
             worstRating: 1,

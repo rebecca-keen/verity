@@ -4,8 +4,14 @@ import { JsonLd } from "@/components/JsonLd";
 import { SpaDirectory } from "@/components/SpaDirectory";
 import {
   breadcrumbJsonLd,
+  buildProvidersPath,
+  getFilteredProviders,
   isTreatmentCategory,
+  normalizeProvidersFilters,
+  providersCollectionPageJsonLd,
   providersFaqJsonLd,
+  providersItemListJsonLd,
+  providersListingLabel,
   providersPageMetadata,
   TREATMENT_CATEGORY_SEO,
 } from "@/lib/seo";
@@ -41,7 +47,10 @@ export default async function ProvidersPage({
 }) {
   const { state, city, category } = await searchParams;
   const treatmentCategory = isTreatmentCategory(category) ? category : undefined;
-  const categorySeo = treatmentCategory ? TREATMENT_CATEGORY_SEO[treatmentCategory] : null;
+  const filters = normalizeProvidersFilters({ category, state, city });
+  const listing = providersListingLabel(filters);
+  const filteredProviders = getFilteredProviders(filters);
+  const listingPath = buildProvidersPath(filters);
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-8 md:py-10">
@@ -51,17 +60,26 @@ export default async function ProvidersPage({
             { name: "Home", path: "/" },
             { name: "Providers", path: "/providers" },
           ]),
+          providersCollectionPageJsonLd({
+            path: listingPath,
+            name: listing.listName,
+            description: listing.intro,
+          }),
+          ...(filteredProviders.length > 0
+            ? [
+                providersItemListJsonLd({
+                  providers: filteredProviders,
+                  path: listingPath,
+                  listName: listing.listName,
+                }),
+              ]
+            : []),
           providersFaqJsonLd(),
         ]}
       />
       <p className="text-xs uppercase tracking-widest text-gold">Discovery</p>
-      <h1 className="mt-1 font-serif text-3xl text-charcoal md:text-4xl">
-        {categorySeo?.h1 ?? "Find med spas & medical aesthetics providers"}
-      </h1>
-      <p className="mt-2 max-w-2xl text-sm text-stone">
-        {categorySeo?.intro ??
-          "Search med spas, aesthetics clinics, and dermatology practices for injectables, laser treatments, facials, and skincare. Filter by location and treatment type — sorted by public ratings where available."}
-      </p>
+      <h1 className="mt-1 font-serif text-3xl text-charcoal md:text-4xl">{listing.h1}</h1>
+      <p className="mt-2 max-w-2xl text-sm text-stone">{listing.intro}</p>
       <SpaDirectory initialState={state} initialCity={city} initialCategory={treatmentCategory} />
 
       <section className="mt-16 border-t border-stone/10 pt-12">

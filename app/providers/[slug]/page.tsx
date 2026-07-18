@@ -16,9 +16,9 @@ import { getSpa, getProductsForSpa, getSpaReviews, spas } from "@/lib/data";
 import { formatGoogleRating } from "@/lib/spa-display";
 import { contactFormUrl } from "@/lib/constants";
 import {
-  breadcrumbJsonLd,
   localBusinessJsonLd,
   pageMetadata,
+  providerBreadcrumbJsonLd,
   providerPageMetadata,
   providerReviewsJsonLd,
   TREATMENT_CATEGORY_SEO,
@@ -66,14 +66,32 @@ export default async function ProviderDetailPage({
       <JsonLd
         data={[
           localBusinessJsonLd(spa),
-          breadcrumbJsonLd([
-            { name: "Home", path: "/" },
-            { name: "Providers", path: "/providers" },
-            { name: spa.name, path: `/providers/${spa.slug}` },
-          ]),
+          providerBreadcrumbJsonLd(spa),
           ...(reviewsJsonLd ? [reviewsJsonLd] : []),
         ]}
       />
+      <nav aria-label="Breadcrumb" className="mb-4 text-xs text-stone">
+        <Link href="/" className="hover:text-gold">
+          Home
+        </Link>
+        <span className="mx-2">/</span>
+        <Link href="/providers" className="hover:text-gold">
+          Providers
+        </Link>
+        <span className="mx-2">/</span>
+        <Link href={`/providers?state=${spa.state}`} className="hover:text-gold">
+          {spa.state}
+        </Link>
+        <span className="mx-2">/</span>
+        <Link
+          href={`/providers?state=${spa.state}&city=${encodeURIComponent(spa.city)}`}
+          className="hover:text-gold"
+        >
+          {spa.city}
+        </Link>
+        <span className="mx-2">/</span>
+        <span className="text-charcoal">{spa.name}</span>
+      </nav>
       <div className="relative h-64 overflow-hidden rounded-2xl md:h-80">
         <RemoteImage
           src={spa.image}
