@@ -9766,12 +9766,13 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     source: "Glow Medispa official website — services",
   },
   "fresh-faces-rx-portland": {
-    hero: "",
-    logo: "https://freshfacesrx.com/wp-content/uploads/2025/01/cropped-FF_floral-style-icon_gold-180x180.png",
+    hero: "https://freshfacesrx.com/wp-content/uploads/2024/10/Portland-Medical-Spa-2.jpg",
+    logo: "https://freshfacesrx.com/wp-content/uploads/2025/01/FFRX-Name-Logo-black.png",
     gallery: [
-
+      "https://freshfacesrx.com/wp-content/uploads/2025/03/Med-Spa-Consultation-Portland-34.jpg",
+      "https://freshfacesrx.com/wp-content/uploads/2025/03/Portland-Med-Spa-Interior-33-2.jpeg",
     ],
-    source: "Fresh Faces RX official website — services",
+    source: "Fresh Faces RX official website",
   },
   "milan-laser-abilene": {
     hero: "",

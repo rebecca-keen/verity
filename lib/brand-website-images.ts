@@ -72,6 +72,15 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
     gallery: [],
     source: "Glow Medispa Seattle official website",
   },
+  "freshfacesrx.com": {
+    hero: "https://freshfacesrx.com/wp-content/uploads/2024/10/Portland-Medical-Spa-2.jpg",
+    logo: "https://freshfacesrx.com/wp-content/uploads/2025/01/FFRX-Name-Logo-black.png",
+    gallery: [
+      "https://freshfacesrx.com/wp-content/uploads/2025/03/Med-Spa-Consultation-Portland-34.jpg",
+      "https://freshfacesrx.com/wp-content/uploads/2025/03/Portland-Med-Spa-Interior-33-2.jpeg",
+    ],
+    source: "Fresh Faces RX official website",
+  },
   "ject.us": {
     hero: "https://ject.us/hubfs/JECT%20Logo.jpg",
     logo: "https://ject.us/hubfs/JECT%20Logo.jpg",
