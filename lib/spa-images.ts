@@ -518,7 +518,7 @@ for (const [slug, images] of Object.entries(WEBSITE_FETCHED_SPA_IMAGES)) {
 }
 
 for (const [slug, images] of Object.entries(NATIONWIDE_REAL_SPA_IMAGES)) {
-  if (images.hero) SPA_IMAGE_SETS[slug] = images;
+  if (images.hero || images.logo) SPA_IMAGE_SETS[slug] = images;
 }
 
 const nationwideWebsiteSlugs = new Set(Object.keys(NATIONWIDE_REAL_SPA_IMAGES));
@@ -526,10 +526,12 @@ const nationwideWebsiteSlugs = new Set(Object.keys(NATIONWIDE_REAL_SPA_IMAGES));
 for (const [slug, photoId] of Object.entries(NATIONWIDE_SPA_IMAGE_FALLBACKS)) {
   if (!SPA_IMAGE_SETS[slug]) {
     if (nationwideWebsiteSlugs.has(slug)) {
+      const logo = NATIONWIDE_REAL_SPA_IMAGES[slug]?.logo;
       SPA_IMAGE_SETS[slug] = {
         hero: "",
         gallery: [],
         source: "Verity placeholder — pending business photo upload",
+        ...(logo ? { logo } : {}),
       };
       continue;
     }
@@ -583,8 +585,8 @@ export function getSpaImages(slug: string, website?: string): SpaImageSet {
       entry.hero && !isStockImageUrl(entry.hero)
         ? entry.hero
         : gallery.find((u) => !isStockImageUrl(u)) ?? "";
-    if (hero || gallery.length > 0) {
-      const logo = entry.logo ?? brand?.logo;
+    const logo = entry.logo ?? brand?.logo;
+    if (hero || gallery.length > 0 || logo) {
       return {
         hero,
         gallery,
