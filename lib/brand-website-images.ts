@@ -107,9 +107,12 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
     source: "L'Achelé official website",
   },
   "mirrormirrorhouston.com": {
-    hero: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/logo_featimg.png",
-    logo: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/logo_featimg.png",
-    gallery: [],
+    hero: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/05/herobg@1.2x-2.avif",
+    logo: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/02/logo.svg",
+    gallery: [
+      "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/office@1.2x.jpg",
+      "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/results@1.2x.jpg",
+    ],
     source: "Mirror Mirror Beauty Boutique official website",
   },
   "privamedspa.com": {

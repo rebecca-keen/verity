@@ -11570,10 +11570,11 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     source: "Milan Laser Yakima official website — services",
   },
   "mirror-mirror-beauty-boutique-houston": {
-    hero: "",
-    logo: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/02/logo_featimg-1.png",
+    hero: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/05/herobg@1.2x-2.avif",
+    logo: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/02/logo.svg",
     gallery: [
-
+      "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/office@1.2x.jpg",
+      "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/results@1.2x.jpg",
     ],
     source: "Mirror Mirror Beauty Boutique official website — services",
   },
