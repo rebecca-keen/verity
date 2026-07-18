@@ -41,7 +41,8 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
     source: "Advanced Skin Fitness official website",
   },
   "alchemy43.com": {
-    hero: "https://www.alchemy43.com/_static_/background/og-image.jpg",
+    hero: "https://alchemy43.com/_static_/background/og-image.jpg",
+    logo: "https://influx-site-assets.s3.us-west-2.amazonaws.com/alchemy43.com/logos/logo.png",
     gallery: [],
     source: "Alchemy 43 official website",
   },

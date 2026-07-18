@@ -9686,8 +9686,8 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     source: "Amy Brenner MD & Associates official website — services",
   },
   "alchemy-43-los-angeles": {
-    hero: "",
-    logo: "https://www.alchemy43.com/_static_/background/og-image.jpg",
+    hero: "https://alchemy43.com/_static_/background/og-image.jpg",
+    logo: "https://influx-site-assets.s3.us-west-2.amazonaws.com/alchemy43.com/logos/logo.png",
     gallery: [
 
     ],
