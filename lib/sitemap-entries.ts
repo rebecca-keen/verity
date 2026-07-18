@@ -6,10 +6,6 @@ import { POPULAR_CITY_SHORTCUTS, POPULAR_STATE_CODES } from "@/lib/spa-utils";
 import { getShopProducts } from "@/lib/shop-utils";
 import type { TreatmentCategory } from "@/lib/types";
 
-/** Pre-render at build time so crawlers never hit a cold serverless import of spa data. */
-export const dynamic = "force-static";
-export const revalidate = 86400;
-
 function hasSlug(slug: string | undefined): slug is string {
   return Boolean(slug?.trim());
 }
@@ -27,7 +23,7 @@ function dedupeSitemap(entries: MetadataRoute.Sitemap): MetadataRoute.Sitemap {
   });
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export function getSitemapEntries(): MetadataRoute.Sitemap {
   const now = new Date();
   const treatmentCategories = Object.keys(TREATMENT_CATEGORY_SEO) as TreatmentCategory[];
 
