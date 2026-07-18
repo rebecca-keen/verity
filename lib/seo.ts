@@ -190,7 +190,9 @@ const VALID_STATE_CODES = new Set(
   US_STATES.filter((state) => state.code !== "All").map((state) => state.code)
 );
 
-const SHOP_ORIGIN_FILTERS = new Set(["US", "FR"]);
+export const SHOP_ORIGIN_FILTER_CODES = ["US", "FR"] as const;
+
+const SHOP_ORIGIN_FILTERS = new Set<string>(SHOP_ORIGIN_FILTER_CODES);
 
 function normalizeStateCode(raw?: string): USStateCode | undefined {
   if (!raw?.trim()) return undefined;
