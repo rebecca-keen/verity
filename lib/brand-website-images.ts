@@ -69,7 +69,11 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   },
   "glowspaseattle.com": {
     hero: "https://glowspaseattle.com/wp-content/uploads/Glow-Medispa-sign-in-Seattle-and-Kirkland.jpg",
-    gallery: [],
+    logo: "https://glowspaseattle.com/wp-content/uploads/Glow-Logo_new.png",
+    gallery: [
+      "https://glowspaseattle.com/wp-content/uploads/Consult-in-Seattle-and-Kirkland.jpg",
+      "https://glowspaseattle.com/wp-content/uploads/Face_compressed-1.webp",
+    ],
     source: "Glow Medispa Seattle official website",
   },
   "freshfacesrx.com": {

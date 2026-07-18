@@ -9758,12 +9758,13 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     source: "Forte Faces Medical Spa official website — services",
   },
   "glow-medispa-seattle": {
-    hero: "",
-    logo: "https://glowspaseattle.com/wp-content/uploads/2022/06/cropped-Glow-Favicon-180x180.png",
+    hero: "https://glowspaseattle.com/wp-content/uploads/Glow-Medispa-sign-in-Seattle-and-Kirkland.jpg",
+    logo: "https://glowspaseattle.com/wp-content/uploads/Glow-Logo_new.png",
     gallery: [
-
+      "https://glowspaseattle.com/wp-content/uploads/Consult-in-Seattle-and-Kirkland.jpg",
+      "https://glowspaseattle.com/wp-content/uploads/Face_compressed-1.webp",
     ],
-    source: "Glow Medispa official website — services",
+    source: "Glow Medispa official website",
   },
   "fresh-faces-rx-portland": {
     hero: "https://freshfacesrx.com/wp-content/uploads/2024/10/Portland-Medical-Spa-2.jpg",
