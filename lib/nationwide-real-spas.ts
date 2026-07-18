@@ -9516,7 +9516,7 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "skinspirit-plano-dallas": "photo-1522335789203-aabd1fc54bc9",
   "skinspirit-nordstrom-northpark-dallas": "photo-1556228578-0d85b1a4d571",
   "skinspirit-fort-worth-dallas": "photo-1608571423902-eed4a5ad8108",
-  "skinspirit-austin": "photo-1556228720-195a672e8a03",
+  "skinspirit-downtown-austin": "photo-1556228720-195a672e8a03",
   "the-few-institute-chicago": "photo-1629909613654-28e377c37b09",
   "reflections-med-spa-chicago": "photo-1570172619644-dfd03ed5d881",
   "skinspirit-north-austin": "photo-1519823551278-64ac92734fb1",
