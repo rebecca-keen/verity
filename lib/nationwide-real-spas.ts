@@ -12614,9 +12614,5 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "skinspirit-honolulu": "photo-1522335789203-aabd1fc54bc9",
   "advanced-skin-fitness-dallas": "photo-1556228578-0d85b1a4d571",
   "amy-brenner-md-associates-cincinnati": "photo-1608571423902-eed4a5ad8108",
-  "cor-medspa-houston": "photo-1556228720-195a672e8a03",};
--honolulu": "photo-1522335789203-aabd1fc54bc9",
-  "advanced-skin-fitness-dallas": "photo-1556228578-0d85b1a4d571",
-  "amy-brenner-md-associates-cincinnati": "photo-1608571423902-eed4a5ad8108",
-  "cor-medspa-houston": "photo-1556228720-195a672e8a03",};
-",};
+  "cor-medspa-houston": "photo-1556228720-195a672e8a03",
+};
