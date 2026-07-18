@@ -46,6 +46,12 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
     gallery: [],
     source: "Alchemy 43 official website",
   },
+  "everbody.com": {
+    hero: "https://everbody.com/wp-content/uploads/2025/05/press-desktop-scaled.jpg",
+    logo: "https://everbody.com/wp-content/uploads/2025/04/logo.svg",
+    gallery: [],
+    source: "Ever/Body official website",
+  },
   "amerejuve.com": {
     hero: "https://www.amerejuve.com/wp-content/uploads/elementor/thumbs/shutterstock_1028948506-scaled-q5l55y733etborb843vmv43ow64snrwdxw20rm5jfk.jpg",
     gallery: [],

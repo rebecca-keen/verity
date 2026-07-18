@@ -9729,7 +9729,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "ever-body-new-york": {
     hero: "",
-    logo: "https://everbody.com/wp-content/uploads/2025/05/cropped-128x128-1-180x180.png",
+    logo: "https://everbody.com/wp-content/uploads/2025/04/logo.svg",
     gallery: [
 
     ],
