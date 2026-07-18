@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Spa } from "@/lib/types";
 import { formatGoogleRating } from "@/lib/spa-display";
 import { TrustBadge } from "./TrustBadge";
-import { TreatmentCategories } from "./TreatmentCategories";
+import { TreatmentTags } from "./TreatmentTags";
 import { ProviderTypeBadge } from "./ProviderTypeBadge";
 import { SpaCardThumbnail } from "./SpaCardThumbnail";
 
@@ -29,7 +29,7 @@ export function SpaCard({ spa }: { spa: Spa }) {
         </p>
         <p className="mt-2 line-clamp-2 text-sm text-stone">{spa.tagline}</p>
         <div className="mt-3">
-          <TreatmentCategories categories={spa.treatmentCategories} />
+          <TreatmentTags treatments={spa.treatments} />
         </div>
         <div className="mt-4 flex items-center justify-between text-sm">
           {googleRating ? (

@@ -9,6 +9,7 @@ import { getSpaImages } from "./spa-images";
 import { isPlaceholderPhone } from "./spa-link-utils";
 import {
   deriveTreatmentCategories,
+  resolveSpaTreatments,
   getAreasByCity,
   getTopRatedSpas,
   METRO_LABELS,
@@ -208,6 +209,7 @@ function seedSpa(data: SpaSeed): Spa {
       : undefined;
   const listingStatus =
     data.listingStatus ?? (data.premierPartner ? "verified-partner" : "listed");
+  const treatments = resolveSpaTreatments(data.treatments, data.description, data.tagline);
 
   return normalizeSpaTrust({
     slug: data.slug,
@@ -230,8 +232,8 @@ function seedSpa(data: SpaSeed): Spa {
     medicalDirectorInfo: parseMedicalDirector(data.medicalDirector),
     licenseId: data.licenseId,
     yearsOpen: data.yearsOpen,
-    treatments: data.treatments,
-    treatmentCategories: deriveTreatmentCategories(data.treatments),
+    treatments,
+    treatmentCategories: deriveTreatmentCategories(treatments),
     priceRange: data.priceRange,
     website,
     phone,
@@ -249,7 +251,7 @@ function seedSpa(data: SpaSeed): Spa {
     productSlugs: resolveProductSlugs({
       slug: data.slug,
       providerType: data.providerType,
-      treatments: data.treatments,
+      treatments,
       priceRange: data.priceRange,
       productSlugs: data.productSlugs,
     }),

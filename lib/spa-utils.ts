@@ -314,6 +314,92 @@ export function getCategoryLabel(cat: TreatmentCategory) {
   return CATEGORY_LABELS[cat];
 }
 
+const GENERIC_TREATMENT_LISTS: Treatment[][] = [
+  ["botox", "fillers", "laser", "facial"],
+  ["botox", "fillers", "laser", "facial", "microneedling"],
+];
+
+export function isGenericTreatmentList(treatments: Treatment[]): boolean {
+  const key = [...treatments].sort().join(",");
+  return GENERIC_TREATMENT_LISTS.some((generic) => [...generic].sort().join(",") === key);
+}
+
+/** Infer concrete treatments from listing copy when seed data uses boilerplate defaults. */
+export function inferTreatmentsFromCopy(description: string, tagline: string): Treatment[] {
+  const text = `${description} ${tagline}`.toLowerCase();
+  const treatments = new Set<Treatment>();
+
+  if (
+    /\bbotox\b|\bdysport\b|\bxeomin\b|\bjeuveau\b|\binjectable|\bfiller|\bjuvederm\b|\brestylane\b|\bsculptra\b|\bkybella\b|\blip filler|\bcheek filler/.test(
+      text
+    )
+  ) {
+    if (/\bbotox\b|\bdysport\b|\bxeomin\b|\bjeuveau\b|\binjectable/.test(text)) treatments.add("botox");
+    if (/\bfiller|\bjuvederm\b|\brestylane\b|\bsculptra\b|\bkybella\b|\blip filler|\bcheek filler/.test(text)) {
+      treatments.add("fillers");
+    }
+    if (treatments.size === 0) {
+      treatments.add("botox");
+      treatments.add("fillers");
+    }
+  }
+
+  if (
+    /\blaser|\bipl\b|\bbbl\b|\bhalo\b|\bclear\s*\+?\s*brilliant|\bresurfacing|\bhair removal|\bphotofacial|\bfraxel|\bmoxi\b|\butherapy\b|\brf microneedling|\bmorpheus|\bsofwave|\bcosmetic laser/.test(
+      text
+    )
+  ) {
+    treatments.add("laser");
+  }
+
+  if (
+    /\bfacial|\bhydrafacial|\bchemical peel|\bpeel\b|\bskin rejuvenation|\bdermaplaning|\bmicrodermabrasion|\bglow/.test(
+      text
+    )
+  ) {
+    treatments.add("facial");
+  }
+
+  if (/\bmicroneedling|\brf microneedling|\bmorpheus8|\bprp facial|\bcollagen induction/.test(text)) {
+    treatments.add("microneedling");
+  }
+
+  if (
+    /\bbody contour|\bcoolsculpt|\bemsculpt|\bbody sculpt|\bcellulite|\bnon-surgical body|\bbody treatment|\bcooltone|\btru sculpt/.test(
+      text
+    )
+  ) {
+    treatments.add("body-contouring");
+  }
+
+  return Array.from(treatments);
+}
+
+export function resolveSpaTreatments(
+  treatments: Treatment[],
+  description: string,
+  tagline: string
+): Treatment[] {
+  if (!treatments.length || isGenericTreatmentList(treatments)) {
+    const inferred = inferTreatmentsFromCopy(description, tagline);
+    if (inferred.length > 0) return inferred;
+  }
+  return treatments;
+}
+
+export const TREATMENT_LABELS: Record<Treatment, string> = {
+  botox: "Botox",
+  fillers: "Fillers",
+  laser: "Laser",
+  facial: "Facials",
+  microneedling: "Microneedling",
+  "body-contouring": "Body Contouring",
+};
+
+export function getTreatmentLabel(treatment: Treatment): string {
+  return TREATMENT_LABELS[treatment];
+}
+
 export function deriveTreatmentCategories(treatments: Treatment[]): TreatmentCategory[] {
   const cats = new Set<TreatmentCategory>();
   if (treatments.some((t) => t === "botox" || t === "fillers")) cats.add("injectables");
