@@ -1444,7 +1444,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
   },
                         "bodywelle-miami-beach": {
     hero: "https://alonsomartinmd.com/wp-content/uploads/elementor/thumbs/chemical-peel-treatment-types-01-rn6jq8e9qmz7hsgbe8mflexk9k7abu1m8l0yrfpbgw.jpg",
-    logo: "https://alonsomartinmd.com/wp-content/uploads/2025/07/favicon-1-300x300.png",
+    logo: "https://alonsomartinmd.com/wp-content/uploads/2025/05/bodywelle-logo-tagline.svg",
     gallery: [
 
     ],

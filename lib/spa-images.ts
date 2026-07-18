@@ -11,6 +11,7 @@ import {
 import { TAMPA_BAY_REAL_SPA_IMAGES } from "./tampa-bay-real-spas";
 import { FLORIDA_SPA_IMAGE_IDS } from "./florida-spa-seeds";
 import { getBrandWebsiteImages } from "./brand-website-images";
+import { resolveProviderLogo } from "./spa-logo-utils";
 import { WEBSITE_FETCHED_SPA_IMAGES } from "./website-fetched-spa-images";
 
 function img(id: string, w = 800, h = 600) {
@@ -585,7 +586,7 @@ export function getSpaImages(slug: string, website?: string): SpaImageSet {
       entry.hero && !isStockImageUrl(entry.hero)
         ? entry.hero
         : gallery.find((u) => !isStockImageUrl(u)) ?? "";
-    const logo = entry.logo ?? brand?.logo;
+    const logo = resolveProviderLogo(entry.logo, brand?.logo);
     if (hero || gallery.length > 0 || logo) {
       return {
         hero,
@@ -597,11 +598,12 @@ export function getSpaImages(slug: string, website?: string): SpaImageSet {
   }
 
   if (brand) {
+    const logo = resolveProviderLogo(undefined, brand.logo);
     return {
       hero: brand.hero,
       gallery: brand.gallery,
       source: `${brand.source} — brand imagery`,
-      ...(brand.logo ? { logo: brand.logo } : {}),
+      ...(logo ? { logo } : {}),
     };
   }
 

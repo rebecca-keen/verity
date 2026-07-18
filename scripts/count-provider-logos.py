@@ -211,6 +211,38 @@ def is_stock_url(url: str) -> bool:
     )
 
 
+def is_weak_logo(url: Optional[str]) -> bool:
+    if not url:
+        return True
+    favicon_re = re.compile(r"favicon|site-icon|siteicon|webclip|apple-touch-icon|android-chrome|cropped-\d", re.I)
+    og_re = re.compile(r"og[-_](?:feat|image|default)|social/og|open[-_]?graph", re.I)
+    logo_url_re = re.compile(
+        r"(?:^|[/_-])logo(?:[._-]|$)|[-_]logo[-_.]|logo[-_]?(?:white|dark|mark|icon|full|primary|secondary)|(?:^|[/_-])brand(?:[._-]|$)",
+        re.I,
+    )
+    if is_partner_badge(url):
+        return True
+    if favicon_re.search(url) and not logo_url_re.search(url):
+        return True
+    if og_re.search(url) and not logo_url_re.search(url):
+        return True
+    return False
+
+
+def resolve_provider_logo(entry_logo: Optional[str], brand_logo: Optional[str]) -> Optional[str]:
+    entry_ok = entry_logo and not is_weak_logo(entry_logo)
+    brand_ok = brand_logo and not is_weak_logo(brand_logo)
+    if entry_ok:
+        return entry_logo
+    if brand_ok:
+        return brand_logo
+    if entry_logo and not is_partner_badge(entry_logo):
+        return entry_logo
+    if brand_logo and not is_partner_badge(brand_logo):
+        return brand_logo
+    return None
+
+
 def get_spa_images(slug: str, website: str, spa_sets: Dict[str, dict], brands: Dict[str, dict]) -> dict:
     brand = get_brand_images(website, brands)
     entry = spa_sets.get(slug)
@@ -219,15 +251,16 @@ def get_spa_images(slug: str, website: str, spa_sets: Dict[str, dict], brands: D
         hero = entry.get("hero", "")
         if hero and is_stock_url(hero):
             hero = next((u for u in gallery if not is_stock_url(u)), "")
-        logo = entry.get("logo") or (brand.get("logo") if brand else None)
+        logo = resolve_provider_logo(entry.get("logo"), brand.get("logo") if brand else None)
         if hero or gallery or logo:
             return {"hero": hero, "gallery": gallery, "source": entry.get("source", ""), "logo": logo}
     if brand:
+        logo = resolve_provider_logo(None, brand.get("logo"))
         return {
             "hero": brand.get("hero", ""),
             "gallery": brand.get("gallery", []),
             "source": f"{brand.get('source', '')} — brand imagery",
-            "logo": brand.get("logo"),
+            "logo": logo,
         }
     return {"hero": "", "gallery": [], "source": "Verity placeholder — pending spa upload", "logo": None}
 

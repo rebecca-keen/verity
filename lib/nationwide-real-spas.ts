@@ -9230,7 +9230,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
       "skin-society-las-vegas": {
     hero: "https://www.skinlv.com/assets/peel1-before-Bbj457vC.jpg",
-    logo: "https://www.skinlv.com/favicon.png",
+    logo: "https://skinlv.com/__l5e/assets-v1/f59f74df-1462-4053-acb7-53d355282e4e/skin-logo-black.png",
     gallery: [
       "https://www.skinlv.com/assets/peel1-after-sNN53a9w.jpg",
       "https://www.skinlv.com/assets/peel2-before-DqagKJTI.jpg",
@@ -9737,7 +9737,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "genesis-lifestyle-medicine-dallas": {
     hero: "",
-    logo: "https://www.datocms-assets.com/30639/1768599356-og-feat-2.jpg ",
+    logo: "https://www.datocms-assets.com/30639/1768599356-og-feat-2.jpg",
     gallery: [
 
     ],
@@ -9779,7 +9779,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-abilene": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9787,7 +9787,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-albany": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9795,7 +9795,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-akron": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9803,7 +9803,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-allentown": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9827,7 +9827,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-amarillo": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9835,7 +9835,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-asheville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9843,7 +9843,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-atlanta": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9851,7 +9851,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-augusta": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9859,7 +9859,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-austin": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9867,7 +9867,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-baltimore": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9875,7 +9875,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-baton-rouge": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9883,7 +9883,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-bangor": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9891,7 +9891,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-bedford": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9899,7 +9899,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-ann-arbor": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9907,7 +9907,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-annapolis": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9915,7 +9915,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-beaumont": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9923,7 +9923,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-appleton": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9931,7 +9931,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-athens": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9939,7 +9939,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-billings": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9947,7 +9947,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-bentonville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9955,7 +9955,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-binghamton": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9963,7 +9963,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-boise": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9971,7 +9971,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-boone": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9979,7 +9979,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-bloomington": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9987,7 +9987,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-bowling-green": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -9995,7 +9995,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-bridgeport": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10003,7 +10003,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-boston": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10011,7 +10011,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-cedar-rapids": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10019,7 +10019,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-canton": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10027,7 +10027,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-boulder": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10035,7 +10035,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-burlington": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10043,7 +10043,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-chambersburg": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10051,7 +10051,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-champaign": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10059,7 +10059,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-charlottesville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10067,7 +10067,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-charleston": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10075,7 +10075,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-chattanooga": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10083,7 +10083,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-buffalo": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10091,7 +10091,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-chicago": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10099,7 +10099,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-clarksville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10107,7 +10107,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-cincinnati": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10115,7 +10115,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-christiansburg": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10123,7 +10123,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-clearwater": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10131,7 +10131,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-charlotte": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10139,7 +10139,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-college-station": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10147,7 +10147,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-cleveland": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10155,7 +10155,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-coeur-dalene": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10163,7 +10163,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-colorado-springs": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10171,7 +10171,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-columbia-columbia-2": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10179,7 +10179,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-columbia": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10187,7 +10187,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-conway": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10195,7 +10195,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-columbus-columbus-2": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10203,7 +10203,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-columbus": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10211,7 +10211,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-coralville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10219,7 +10219,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-corvallis": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10227,7 +10227,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-dallas": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10235,7 +10235,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-corpus-christi": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10243,7 +10243,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-danbury": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10251,7 +10251,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-daytona-beach": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10259,7 +10259,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-denver": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10267,7 +10267,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-dayton": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10275,7 +10275,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-dekalb": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10283,7 +10283,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-detroit": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10291,7 +10291,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-el-paso": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10299,7 +10299,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-eau-claire": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10307,7 +10307,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-des-moines": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10315,7 +10315,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-elkhart": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10323,7 +10323,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-durham": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10331,7 +10331,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-erie": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10339,7 +10339,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-dubuque": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10347,7 +10347,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-fairless-hills": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10355,7 +10355,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-fargo": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10363,7 +10363,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-fishkill": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10371,7 +10371,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-fayetteville-fayetteville-2": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10379,7 +10379,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-fayetteville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10387,7 +10387,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-flagstaff": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10395,7 +10395,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-evansville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10403,7 +10403,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-eugene": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10411,7 +10411,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-fort-myers": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10419,7 +10419,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-fort-worth": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10427,7 +10427,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-frederick": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10435,7 +10435,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-fredericksburg": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10443,7 +10443,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-framingham": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10451,7 +10451,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-ft-wayne": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10459,7 +10459,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-ft-collins": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10467,7 +10467,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-grand-blanc": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10475,7 +10475,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-grand-rapids": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10483,7 +10483,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-grand-junction": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10491,7 +10491,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-green-bay": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10499,7 +10499,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-greensboro": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10507,7 +10507,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-gainesville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10515,7 +10515,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-greenville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10523,7 +10523,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-greeley": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10531,7 +10531,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-greenville-greenville-2": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10539,7 +10539,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-hickory": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10547,7 +10547,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-harrisburg": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10555,7 +10555,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-holland": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10563,7 +10563,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-hartford": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10571,7 +10571,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-houston": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10579,7 +10579,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-indianapolis": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10587,7 +10587,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-ithaca": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10595,7 +10595,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-idaho-falls": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10603,7 +10603,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-jacksonville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10611,7 +10611,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-jonesboro": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10619,7 +10619,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-janesville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10627,7 +10627,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-kalamazoo": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10635,7 +10635,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-kansas-city": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10643,7 +10643,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-jackson": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10651,7 +10651,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-killeen": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10659,7 +10659,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-knoxville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10667,7 +10667,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-jacksonville-jacksonville-2": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10675,7 +10675,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-kingsport": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10683,7 +10683,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-lafayette": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10691,7 +10691,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-lacey": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10699,7 +10699,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-lakeland": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10707,7 +10707,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-lancaster": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10715,7 +10715,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-leesburg": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10723,7 +10723,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-laredo": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10731,7 +10731,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-las-vegas": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10739,7 +10739,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-lansing": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10747,7 +10747,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-lexington": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10755,7 +10755,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-louisville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10763,7 +10763,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-little-rock": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10771,7 +10771,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-lincoln": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10779,7 +10779,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-longview": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10787,7 +10787,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-long-island": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10795,7 +10795,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-lawrence": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10803,7 +10803,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-manassas": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10811,7 +10811,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-loveland": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10819,7 +10819,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-macon": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10827,7 +10827,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-mandeville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10835,7 +10835,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-madison": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10843,7 +10843,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-mansfield": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10851,7 +10851,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-miami": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10859,7 +10859,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-lubbock": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10867,7 +10867,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-manhattan": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10875,7 +10875,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-mcallen": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10883,7 +10883,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-middletown": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10891,7 +10891,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-milwaukee": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10899,7 +10899,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-memphis": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10907,7 +10907,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-nashua": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10915,7 +10915,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-minneapolis-st-paul": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10923,7 +10923,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-nashville": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10931,7 +10931,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-new-orleans": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10939,7 +10939,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-new-haven": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10947,7 +10947,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-new-london": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10955,7 +10955,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-new-braunfels": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10963,7 +10963,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-niagara-falls": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10971,7 +10971,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-newport-news": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10979,7 +10979,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-normal": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10987,7 +10987,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-odessa": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -10995,7 +10995,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-north-myrtle-beach": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11003,7 +11003,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-norfolk": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11011,7 +11011,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-oklahoma-city": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11019,7 +11019,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-omaha": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11027,7 +11027,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-palm-coast": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11035,7 +11035,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-orlando": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11043,7 +11043,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-pensacola": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11051,7 +11051,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-philadelphia": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11059,7 +11059,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-oshkosh": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11067,7 +11067,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-phoenix": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11075,7 +11075,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-pittsburgh": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11083,7 +11083,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-quad-cities": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11091,7 +11091,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-portland": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11099,7 +11099,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-peoria": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11107,7 +11107,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-portland-portland-2": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11115,7 +11115,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-port-st-lucie": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11123,7 +11123,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-quincy": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11131,7 +11131,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-raleigh": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11139,7 +11139,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-reno": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11147,7 +11147,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-richmond": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11155,7 +11155,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-richland": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11163,7 +11163,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-reading": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11171,7 +11171,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-rochester": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11179,7 +11179,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-rochester-rochester-2": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11187,7 +11187,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-salem": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11195,7 +11195,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-rockford": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11203,7 +11203,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-salt-lake-city": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11211,7 +11211,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-san-antonio": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11219,7 +11219,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-savannah": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11227,7 +11227,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-scranton": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11235,7 +11235,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-seattle": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11243,7 +11243,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-shreveport": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11251,7 +11251,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-spartanburg": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11259,7 +11259,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-southington": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11267,7 +11267,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-sioux-falls": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11275,7 +11275,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-springfield": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11283,7 +11283,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-sioux-city": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11291,7 +11291,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-south-bend": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11299,7 +11299,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-st-louis": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11307,7 +11307,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-st-cloud": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11315,7 +11315,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-springfield-springfield-2": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11323,7 +11323,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-state-college": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11331,7 +11331,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-springfield-springfield-3": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11339,7 +11339,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-stillwater": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11347,7 +11347,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-tampa": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11355,7 +11355,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-temple": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11363,7 +11363,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-syracuse": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11371,7 +11371,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-toledo": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11379,7 +11379,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-tacoma": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11387,7 +11387,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-tri-cities": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11395,7 +11395,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-tucson": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11403,7 +11403,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-topeka": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11411,7 +11411,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-tulsa": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11419,7 +11419,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-twin-falls": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11427,7 +11427,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-tyler": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11435,7 +11435,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-utica": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11443,7 +11443,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-tallahassee": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11451,7 +11451,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-valparaiso": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11459,7 +11459,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-vancouver": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11467,7 +11467,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-waco": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11475,7 +11475,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-vero-beach": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11483,7 +11483,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-virginia-beach": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11491,7 +11491,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-washington": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11499,7 +11499,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-warner-robins": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11507,7 +11507,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-west-chester": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11515,7 +11515,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-wichita": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11523,7 +11523,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-west-lafayette": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11531,7 +11531,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-wilkes-barre": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11539,7 +11539,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-wilmington": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11547,7 +11547,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-wausau": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11555,7 +11555,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-winston-salem": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11563,7 +11563,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-yakima": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11580,7 +11580,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-worcester": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11588,7 +11588,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-youngstown": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11596,7 +11596,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "milan-laser-york": {
     hero: "",
-    logo: "https://milanlaser.com/src/images/android-chrome-256x256.webp?v=d86e0a17ee6e0d2e70fbdb8db6f8086c",
+    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
     gallery: [
 
     ],
@@ -11604,7 +11604,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "priva-medspa-fairfield": {
     hero: "",
-    logo: "https://www.datocms-assets.com/27087/1763574995-og-feat-2025.jpg ",
+    logo: "https://www.datocms-assets.com/27087/1763574995-og-feat-2025.jpg",
     gallery: [
 
     ],
@@ -11652,7 +11652,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-bethesda": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11660,7 +11660,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-back-bay-boston": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11668,7 +11668,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-boulder": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11676,7 +11676,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-brentwood-los-angeles": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11684,7 +11684,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-buckhead-atlanta": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11692,7 +11692,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-capitol-hill-seattle": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11700,7 +11700,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-downtown-palo-alto": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11708,7 +11708,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-downtown-san-diego": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11716,7 +11716,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-downtown-austin": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11724,7 +11724,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-downtown-san-francisco": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11732,7 +11732,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-downtown-walnut-creek": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11740,7 +11740,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-flatiron-new-york": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11748,7 +11748,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-brickell-miami": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11756,7 +11756,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-fashion-island-newport-beach": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11764,7 +11764,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-georgetown-washington": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11772,7 +11772,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-galleria-houston": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11780,7 +11780,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-irvine": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11788,7 +11788,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-la-jolla-san-diego": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11796,7 +11796,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-manhattan-beach-los-angeles": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11804,7 +11804,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-midtown-new-york": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11812,7 +11812,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-rittenhouse-philadelphia": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11820,7 +11820,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-pasadena-los-angeles": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11828,7 +11828,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-pearl-district-portland": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11836,7 +11836,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-river-north-chicago": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11844,7 +11844,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-old-town-scottsdale": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11852,7 +11852,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-santa-monica-los-angeles": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11860,7 +11860,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-southpark-charlotte": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11868,7 +11868,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-summerlin-las-vegas": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11876,7 +11876,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-tysons": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11884,7 +11884,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-uptown-dallas": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],
@@ -11892,7 +11892,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "skin-laundry-willow-glen-san-jose": {
     hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
+    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
     gallery: [
 
     ],

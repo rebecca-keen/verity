@@ -2039,7 +2039,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
   },
                 "adare-longevity-aesthetics-st-petersburg": {
     hero: "https://www.adarelife.com/assets/clinic-lobby-bright-CaEOnnKq.jpg",
-    logo: "https://www.adarelife.com/favicon.ico",
+    logo: "https://www.adarelife.com/favicon-512.png",
     gallery: [
       "https://www.adarelife.com/assets/wellness-editorial-ZMwgMoSN.jpg",
       "https://www.adarelife.com/assets/body-contouring-abs-7V-sN1cH.jpg",
