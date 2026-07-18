@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { getContactEmail } from "@/lib/constants";
 import { formatGoogleRating } from "@/lib/spa-display";
-import type { Product, Review, Spa, TreatmentCategory } from "@/lib/types";
+import { US_STATES } from "@/lib/spa-utils";
+import type { Product, Review, Spa, TreatmentCategory, USStateCode } from "@/lib/types";
 
 export const SITE_URL = "https://verityaesthetics.app";
 export const SITE_NAME = "Verity";
@@ -178,11 +179,75 @@ export function pageMetadata({
       ? {
           robots: {
             index: false,
-            follow: false,
+            follow: true,
           },
         }
       : {}),
   };
+}
+
+const VALID_STATE_CODES = new Set(
+  US_STATES.filter((state) => state.code !== "All").map((state) => state.code)
+);
+
+const SHOP_ORIGIN_FILTERS = new Set(["US", "FR"]);
+
+function normalizeStateCode(raw?: string): USStateCode | undefined {
+  if (!raw?.trim()) return undefined;
+  const code = raw.trim().toUpperCase();
+  return VALID_STATE_CODES.has(code as USStateCode) ? (code as USStateCode) : undefined;
+}
+
+export function buildProvidersPath(filters: {
+  category?: TreatmentCategory;
+  state?: string;
+  city?: string;
+}): string {
+  const params = new URLSearchParams();
+  if (filters.category) params.set("category", filters.category);
+  if (filters.state) params.set("state", filters.state);
+  if (filters.city) params.set("city", filters.city);
+  const qs = params.toString();
+  return qs ? `/providers?${qs}` : "/providers";
+}
+
+export function normalizeProvidersFilters(raw: {
+  state?: string;
+  city?: string;
+  category?: string;
+}): {
+  category?: TreatmentCategory;
+  state?: USStateCode;
+  city?: string;
+  noIndex: boolean;
+} {
+  const state = normalizeStateCode(raw.state);
+  const category = isTreatmentCategory(raw.category) ? raw.category : undefined;
+  const cityRaw = raw.city?.trim();
+  const city = state && cityRaw ? cityRaw : undefined;
+
+  const hadState = Boolean(raw.state?.trim());
+  const hadCity = Boolean(raw.city?.trim());
+  const hadCategory = Boolean(raw.category?.trim());
+  const noIndex = (hadState && !state) || (hadCategory && !category) || (hadCity && !state);
+
+  return { category, state, city, noIndex };
+}
+
+export function shopPageMetadata(origin?: string): Metadata {
+  const normalizedOrigin =
+    origin && SHOP_ORIGIN_FILTERS.has(origin) ? origin : undefined;
+  const noIndex = Boolean(origin?.trim()) && !normalizedOrigin;
+  const path = normalizedOrigin ? `/shop?origin=${normalizedOrigin}` : "/shop";
+
+  return pageMetadata({
+    title: "Skincare Shop — Derm-Recommended Products | Verity",
+    description:
+      "Shop derm-recommended skincare for SPF, anti-aging, acne, and post-procedure care. Luxury brands med spas trust — EltaMD, SkinCeuticals, La Roche-Posay, and more.",
+    path,
+    keywords: ["skincare", "skin care", "skin concerns", "SPF", "anti-aging", "medical aesthetics", "beauty"],
+    noIndex,
+  });
 }
 
 const PROVIDER_TYPE_LABELS: Record<Spa["providerType"], string> = {
@@ -200,17 +265,28 @@ export function providersPageMetadata({
   state?: string;
   city?: string;
 } = {}): Metadata {
-  const locationParts = [city, state].filter(Boolean);
+  const filters = normalizeProvidersFilters({ category, state, city });
+  const locationParts = [filters.city, filters.state].filter(Boolean);
   const locationLabel = locationParts.length > 0 ? ` in ${locationParts.join(", ")}` : "";
+  const path = buildProvidersPath(filters);
 
-  if (category) {
-    const seo = TREATMENT_CATEGORY_SEO[category];
-    const path = `/providers?category=${category}${state ? `&state=${state}` : ""}${city ? `&city=${encodeURIComponent(city)}` : ""}`;
+  if (filters.category) {
+    const seo = TREATMENT_CATEGORY_SEO[filters.category];
     return pageMetadata({
       title: seo.title.replace(" | Verity", `${locationLabel} | Verity`),
-      description: truncateMetaDescription(`${seo.description}${locationLabel ? ` Filter by ${locationParts.join(", ")}.` : ""}`),
+      description: truncateMetaDescription(
+        `${seo.description}${locationLabel ? ` Filter by ${locationParts.join(", ")}.` : ""}`
+      ),
       path,
-      keywords: [category, "med spa", "medical aesthetics", ...(category === "beauty" ? ["skincare", "facials"] : []), ...(category === "injectables" ? ["Botox", "fillers"] : []), ...(category === "lasers" ? ["laser treatments"] : [])],
+      keywords: [
+        filters.category,
+        "med spa",
+        "medical aesthetics",
+        ...(filters.category === "beauty" ? ["skincare", "facials"] : []),
+        ...(filters.category === "injectables" ? ["Botox", "fillers"] : []),
+        ...(filters.category === "lasers" ? ["laser treatments"] : []),
+      ],
+      noIndex: filters.noIndex,
     });
   }
 
@@ -219,8 +295,9 @@ export function providersPageMetadata({
     description: truncateMetaDescription(
       `Browse med spas, aesthetics clinics, and dermatology practices for injectables, laser treatments, facials, and skincare${locationLabel}. Filter by treatment type, location, and public ratings.`
     ),
-    path: `/providers${locationParts.length ? `?${new URLSearchParams({ ...(state ? { state } : {}), ...(city ? { city } : {}) }).toString()}` : ""}`,
+    path,
     keywords: ["med spa", "medical aesthetics", "injectables", "laser treatments", "skincare", "aesthetics clinic"],
+    noIndex: filters.noIndex,
   });
 }
 

@@ -1,12 +1,7 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { contactMailtoUrl } from "@/lib/constants";
 import { pageMetadata } from "@/lib/seo";
-
-export const metadata = pageMetadata({
-  title: "Contact — Verity",
-  description: "Email the Verity team about listings, corrections, reviews, and partner programs.",
-  path: "/contact",
-});
 
 type ContactPageProps = {
   searchParams: Promise<{
@@ -15,6 +10,24 @@ type ContactPageProps = {
     spa?: string;
   }>;
 };
+
+const contactMetadata = {
+  title: "Contact — Verity",
+  description: "Email the Verity team about listings, corrections, reviews, and partner programs.",
+  path: "/contact",
+} as const;
+
+export async function generateMetadata({ searchParams }: ContactPageProps): Promise<Metadata> {
+  const params = await searchParams;
+  const hasPrefill = Boolean(
+    params.subject?.trim() || params.topic?.trim() || params.spa?.trim()
+  );
+
+  return pageMetadata({
+    ...contactMetadata,
+    noIndex: hasPrefill,
+  });
+}
 
 const inquiryTypes = [
   {

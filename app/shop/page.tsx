@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ProductCard } from "@/components/ProductCard";
 import { originLabels } from "@/lib/data";
-import { pageMetadata } from "@/lib/seo";
+import { shopPageMetadata } from "@/lib/seo";
 import {
   filterShopProductsByOrigin,
   getRecommendedShopProducts,
@@ -10,13 +10,14 @@ import {
 } from "@/lib/shop-utils";
 import type { ProductOrigin } from "@/lib/types";
 
-export const metadata = pageMetadata({
-  title: "Skincare Shop — Derm-Recommended Products | Verity",
-  description:
-    "Shop derm-recommended skincare for SPF, anti-aging, acne, and post-procedure care. Luxury brands med spas trust — EltaMD, SkinCeuticals, La Roche-Posay, and more.",
-  path: "/shop",
-  keywords: ["skincare", "skin care", "skin concerns", "SPF", "anti-aging", "medical aesthetics", "beauty"],
-});
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ origin?: string }>;
+}): Promise<import("next").Metadata> {
+  const { origin } = await searchParams;
+  return shopPageMetadata(origin);
+}
 
 const originFilters: { value: ProductOrigin | "all"; label: string }[] = [
   { value: "all", label: "All" },

@@ -18,6 +18,7 @@ import { contactFormUrl } from "@/lib/constants";
 import {
   breadcrumbJsonLd,
   localBusinessJsonLd,
+  pageMetadata,
   providerPageMetadata,
   providerReviewsJsonLd,
   TREATMENT_CATEGORY_SEO,
@@ -34,7 +35,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const spa = getSpa(slug);
-  if (!spa) return { title: "Provider — Verity" };
+  if (!spa) {
+    return pageMetadata({
+      title: "Provider not found — Verity",
+      description: "This provider listing was not found on Verity.",
+      path: `/providers/${slug}`,
+      noIndex: true,
+    });
+  }
 
   return providerPageMetadata(spa);
 }

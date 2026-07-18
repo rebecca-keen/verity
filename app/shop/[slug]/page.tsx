@@ -29,7 +29,14 @@ export async function generateMetadata({
 }): Promise<import("next").Metadata> {
   const { slug } = await params;
   const product = getShopProduct(slug);
-  if (!product) return { title: "Shop — Verity" };
+  if (!product) {
+    return pageMetadata({
+      title: "Product not found — Verity",
+      description: "This shop product was not found on Verity.",
+      path: `/shop/${slug}`,
+      noIndex: true,
+    });
+  }
 
   return pageMetadata({
     title: `${product.name} — ${product.brand} | Verity Shop`,
