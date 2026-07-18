@@ -9678,12 +9678,14 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     source: "4Ever Young — Philadelphia official website — services",
   },
   "amy-brenner-md-associates-cincinnati": {
-    hero: "",
-    logo: "https://dramybrenner.com/nitropack_static/tvFFAxWqTiTAfgcoaELPxmvGsOpGoJhp/assets/images/optimized/rev-70161f8/dramybrenner.com/wp-content/uploads/2026/01/amy-brenner-favicon-1.png",
+    hero: "https://dramybrenner.com/wp-content/uploads/2026/01/Dr.-Amy-Brenner-OG.jpg",
+    logo: "https://dramybrenner.com/wp-content/uploads/2026/01/amy-brenner-logo-2025.png",
     gallery: [
-
+      "https://dramybrenner.com/wp-content/uploads/2025/06/Dr.-Amy-Brenner-Associates-Consultation-VIP-Program-4510-1024x682.jpg",
+      "https://dramybrenner.com/wp-content/uploads/2025/10/amy-brenner-34-a.jpg",
+      "https://dramybrenner.com/wp-content/uploads/2020/01/U9A7415-1024x683.jpg",
     ],
-    source: "Amy Brenner MD & Associates official website — services",
+    source: "Amy Brenner MD & Associates official website",
   },
   "alchemy-43-los-angeles": {
     hero: "https://alchemy43.com/_static_/background/og-image.jpg",

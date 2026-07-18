@@ -51,6 +51,16 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
     gallery: [],
     source: "Amerejuve Med Spa official website",
   },
+  "dramybrenner.com": {
+    hero: "https://dramybrenner.com/wp-content/uploads/2026/01/Dr.-Amy-Brenner-OG.jpg",
+    logo: "https://dramybrenner.com/wp-content/uploads/2026/01/amy-brenner-logo-2025.png",
+    gallery: [
+      "https://dramybrenner.com/wp-content/uploads/2025/06/Dr.-Amy-Brenner-Associates-Consultation-VIP-Program-4510-1024x682.jpg",
+      "https://dramybrenner.com/wp-content/uploads/2025/10/amy-brenner-34-a.jpg",
+      "https://dramybrenner.com/wp-content/uploads/2020/01/U9A7415-1024x683.jpg",
+    ],
+    source: "Amy Brenner MD & Associates official website",
+  },
   "elevenmedspa.com": {
     hero: "https://elevenbodysculpt.com/wp-content/uploads/2026/03/Pic-128-scaled.jpg",
     logo: "https://elevenbodysculpt.com/wp-content/uploads/2025/12/Eleven-Aesthetics-fav.svg",
