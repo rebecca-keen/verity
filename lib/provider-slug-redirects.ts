@@ -245,7 +245,6 @@ export const PROVIDER_SLUG_REDIRECTS: ReadonlyArray<readonly [string, string]> =
   ["skin-laundry-los-los-angeles-2", "skin-laundry-pasadena-los-angeles"],
   ["skin-laundry-los-los-angeles-3", "skin-laundry-irvine"],
   ["skin-laundry-miami-miami", "skin-laundry-brickell-miami"],
-  ["skin-laundry-nashville-nashville", "skin-laundry-gulch-nashville"],
   ["skin-laundry-new-new-york", "skin-laundry-flatiron-new-york"],
   ["skin-laundry-newport-newport-beach", "skin-laundry-fashion-island-newport-beach"],
   ["skin-laundry-nyc-new-york", "skin-laundry-midtown-new-york"],

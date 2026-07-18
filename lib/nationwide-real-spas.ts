@@ -1322,6 +1322,26 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     website: "https://www.61five.com/",
     yearsOpen: 6,
   }),
+  seed({
+    slug: "beyond-collective-nashville",
+    name: "BEYOND Collective",
+    state: "TN",
+    neighborhood: "Charlotte Avenue",
+    city: "Nashville",
+    tagline: "Charlotte Ave plastic surgery and med spa.",
+    description:
+      "Board-certified plastic surgeon Dr. Olivia MaDan's Nashville practice offering neurotoxins, fillers, laser treatments, and skin rejuvenation with Google rating 4.9 from 360 reviews.",
+    rating: 4.9,
+    reviewCount: 360,
+    googleRating: 4.9,
+    verified: true,
+    phone: "(615) 327-0303",
+    website: "https://www.yournashvilleplasticsurgeon.com/",
+    medicalDirector: "Dr. Olivia MaDan, MD",
+    treatments: ["botox", "fillers", "laser", "facial", "microneedling"],
+    yearsOpen: 8,
+    highlights: ["Google 4.9★ public rating", "Charlotte Avenue location", "Verified website"],
+  }),
   // ── Pennsylvania ─────────────────────────────────────────────
   seed({
     slug: "skin-retreat-medspa-philadelphia",
@@ -8212,25 +8232,6 @@ seed({
     highlights: ["Google 4.7★ public rating", "Brickell location", "Verified website"],
   }),
   seed({
-    slug: "skin-laundry-gulch-nashville",
-    name: "Skin Laundry Nashville",
-    state: "TN",
-    neighborhood: "The Gulch",
-    city: "Nashville",
-    tagline: "The Gulch laser facial studio.",
-    description:
-      "Skin Laundry Nashville is a verified med spa in Nashville, TN offering Botox, fillers, laser treatments, and skin rejuvenation with Google rating 4.7 from 389 reviews.",
-    rating: 4.7,
-    reviewCount: 389,
-    googleRating: 4.7,
-    verified: true,
-    phone: "(310) 526-4300",
-    website: "https://www.skinlaundry.com/locations/nashville",
-    treatments: ["botox", "fillers", "laser", "facial", "microneedling"],
-    yearsOpen: 6,
-    highlights: ["Google 4.7★ public rating", "The Gulch location", "Verified website"],
-  }),
-  seed({
     slug: "skin-laundry-southpark-charlotte",
     name: "Skin Laundry Charlotte",
     state: "NC",
@@ -9326,6 +9327,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Ageless Remedies Med Spa official website — services",
   },
+    "beyond-collective-nashville": {
+    hero: "https://www.yournashvilleplasticsurgeon.com/wp-content/uploads/2024/11/MaDan-Banner-Medspa001.jpg",
+    logo: "https://www.yournashvilleplasticsurgeon.com/wp-content/uploads/2024/11/cropped-favicon-192x192.png",
+    gallery: [
+      "https://www.yournashvilleplasticsurgeon.com/wp-content/uploads/2024/10/MaDan-Homepage-Procedures-MedSpa-1.jpg",
+      "https://www.yournashvilleplasticsurgeon.com/wp-content/uploads/2024/11/MaDan-Med-Spa-FaceTreatments-nashville.jpg",
+      "https://www.yournashvilleplasticsurgeon.com/wp-content/uploads/2024/10/MaDan-Homepage-Procedures-Plastic-Surgery.jpg",
+      "https://www.yournashvilleplasticsurgeon.com/wp-content/uploads/2026/03/GG9A9440-scaled.jpg",
+    ],
+    source: "BEYOND Collective official website — services",
+  },
     "canvas-skin-nashville": {
     hero: "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/1777037922407-NPPBI948N1I0I7VNXV01/image-asset.jpeg",
     logo: "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/d1f6dec2-7722-4909-a557-78992c8fab42/cs_logo__primary_stone.png?format=1500w",
@@ -9382,7 +9394,6 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
       "skin-laundry-lodo-denver",
       "skin-laundry-buckhead-atlanta",
       "skin-laundry-brickell-miami",
-      "skin-laundry-gulch-nashville",
       "skin-laundry-southpark-charlotte",
       "skin-laundry-rittenhouse-philadelphia",
       "skin-laundry-georgetown-washington",
@@ -11754,14 +11765,6 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Laundry Georgetown official website — services",
   },
-  "skin-laundry-gulch-nashville": {
-    hero: "",
-    logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
-    gallery: [
-
-    ],
-    source: "Skin Laundry Nashville official website — services",
-  },
   "skin-laundry-galleria-houston": {
     hero: "",
     logo: "https://www.skinlaundry.com/favicon/apple-touch-icon.png",
@@ -12527,6 +12530,7 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "nashville-skin-company": "photo-1544161515-4ab6ce6db874",
   "skin-pharm-nashville": "photo-1612817288484-6f916006741a",
   "canvas-skin-nashville": "photo-1570172619644-dfd03ed5d881",
+  "beyond-collective-nashville": "photo-1487412947147-5cebf100ffc2",
   "skin-retreat-medspa-philadelphia": "photo-1570172619644-dfd03ed5d881",
   "forte-faces-conshohocken": "photo-1519823551278-64ac92734fb1",
   "4ever-young-philadelphia": "photo-1487412947147-5cebf100ffc2",
