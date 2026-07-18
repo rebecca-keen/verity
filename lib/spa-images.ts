@@ -10,6 +10,7 @@ import {
 } from "./nationwide-real-spas";
 import { TAMPA_BAY_REAL_SPA_IMAGES } from "./tampa-bay-real-spas";
 import { FLORIDA_SPA_IMAGE_IDS } from "./florida-spa-seeds";
+import { getBrandWebsiteImages } from "./brand-website-images";
 import { WEBSITE_FETCHED_SPA_IMAGES } from "./website-fetched-spa-images";
 
 function img(id: string, w = 800, h = 600) {
@@ -573,7 +574,7 @@ for (const [slug, entry] of Object.entries(SPA_IMAGE_SETS)) {
   }
 }
 
-export function getSpaImages(slug: string): SpaImageSet {
+export function getSpaImages(slug: string, website?: string): SpaImageSet {
   const entry = SPA_IMAGE_SETS[slug];
   if (entry) {
     const gallery = entry.gallery.filter((u) => u && !isStockImageUrl(u));
@@ -581,13 +582,26 @@ export function getSpaImages(slug: string): SpaImageSet {
       entry.hero && !isStockImageUrl(entry.hero)
         ? entry.hero
         : gallery.find((u) => !isStockImageUrl(u)) ?? "";
+    if (hero || gallery.length > 0) {
+      return {
+        hero,
+        gallery,
+        source: entry.source,
+        ...(entry.logo ? { logo: entry.logo } : {}),
+      };
+    }
+  }
+
+  const brand = getBrandWebsiteImages(website);
+  if (brand) {
     return {
-      hero,
-      gallery,
-      source: entry.source,
-      ...(entry.logo ? { logo: entry.logo } : {}),
+      hero: brand.hero,
+      gallery: brand.gallery,
+      source: `${brand.source} — brand imagery`,
+      ...(brand.logo ? { logo: brand.logo } : {}),
     };
   }
+
   return {
     hero: "",
     gallery: [],

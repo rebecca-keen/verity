@@ -161,7 +161,7 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "inertia-tampa-tampa",
+    slug: "inertia-tampa",
     name: "Inertia Tampa",
     providerType: "med-spa",
     neighborhood: "202 S Rome Ave #100",
@@ -291,7 +291,7 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "vio-med-spa-valrico-valrico",
+    slug: "vio-med-spa-valrico",
     name: "VIO Med Spa | Valrico",
     providerType: "med-spa",
     neighborhood: "3321 Lithia Pinecrest Rd Suite 3321",
@@ -603,7 +603,7 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "the-aesthetics-lounge-and-spa-tampa-tampa",
+    slug: "the-aesthetics-lounge-and-spa-tampa",
     name: "The Aesthetics Lounge and Spa Tampa",
     providerType: "med-spa",
     neighborhood: "13801 N Dale Mabry Hwy",
@@ -655,7 +655,7 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "padgett-medical-center-tampa-tampa",
+    slug: "padgett-medical-center-tampa",
     name: "Padgett Medical Center Tampa",
     providerType: "med-spa",
     neighborhood: "6904 W Linebaugh Ave",
@@ -993,7 +993,7 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "elase-medical-spa-south-tampa-tampa",
+    slug: "elase-medical-spa-south-tampa",
     name: "Elase Medical Spa - South Tampa",
     providerType: "med-spa",
     neighborhood: "1155 S Dale Mabry Hwy #8",
@@ -1175,7 +1175,7 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "elase-medical-spa-westchase-westchase",
+    slug: "elase-medical-spa-westchase",
     name: "Elase Medical Spa - Westchase",
     providerType: "med-spa",
     neighborhood: "11663 Countryway Blvd",
@@ -1532,7 +1532,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Contour Clinique Med Spa official website — services",
   },
-              "inertia-tampa-tampa": {
+              "inertia-tampa": {
     hero: "https://inertiatampa.com/wp-content/uploads/2024/01/Inertia-Lettering.png",
     logo: "https://inertiatampa.com/wp-content/uploads/2026/01/cropped-transparent-logo-192x192.png",
     gallery: [
@@ -1587,7 +1587,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Zee Aesthetics official website",
   },
-              "vio-med-spa-valrico-valrico": {
+              "vio-med-spa-valrico": {
     hero: "https://viomedspa.com/valrico/wp-content/uploads/2026/03/Hero-micro.jpg",
     logo: "https://viomedspa.com/valrico/wp-content/uploads/2026/04/512x512.png",
     gallery: [
@@ -1712,7 +1712,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Provider official website",
   },
-              "the-aesthetics-lounge-and-spa-tampa-tampa": {
+              "the-aesthetics-lounge-and-spa-tampa": {
     hero: "https://tampa.theaestheticsloungeandspa.com/wp-content/uploads/2025/09/48-1024x819.jpg",
     logo: "https://theaestheticsloungeandspa.com/wp-content/uploads/2025/09/cropped-Site-ID-TALS-2-192x192.png",
     gallery: [
@@ -1734,7 +1734,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Perfectly Bare Laser official website — services",
   },
-              "padgett-medical-center-tampa-tampa": {
+              "padgett-medical-center-tampa": {
     hero: "https://padgettmedical.com/wp-content/uploads/2025/03/Screenshot-2025-03-12-at-11.27.22-AM.png",
     logo: "https://padgettmedical.com/wp-content/uploads/2023/02/cropped-PMC-tampa-ocala-192x192.png",
     gallery: [
@@ -1865,7 +1865,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "VIVIFY Med Spa official website — services",
   },
-              "elase-medical-spa-south-tampa-tampa": {
+              "elase-medical-spa-south-tampa": {
     hero: "https://elase.com/wp-content/uploads/2024/02/STampa_etreatmentRoom-960x1006.jpg",
     logo: "https://elase.com/wp-content/uploads/2024/03/cropped-ELASE_EMBLEM_Black-2-192x192.png",
     gallery: [
@@ -1941,7 +1941,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Lux Injectables official website — services",
   },
-              "elase-medical-spa-westchase-westchase": {
+              "elase-medical-spa-westchase": {
     hero: "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00010-1-160x107.jpg",
     logo: "https://elase.com/wp-content/uploads/2024/03/cropped-ELASE_EMBLEM_Black-2-192x192.png",
     gallery: [

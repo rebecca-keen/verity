@@ -213,7 +213,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "vio-med-spa-fort-lauderdale-fort-lauderdale",
+    slug: "vio-med-spa-fort-lauderdale",
     name: "VIO Med Spa Fort Lauderdale",
     providerType: "med-spa",
     neighborhood: "Fort Lauderdale",
@@ -421,7 +421,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "vio-med-spa-aventura-aventura",
+    slug: "vio-med-spa-aventura",
     name: "VIO Med Spa Aventura",
     providerType: "med-spa",
     neighborhood: "2980 NE 207th St",
@@ -499,7 +499,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "charette-cosmetics-medical-spa-miami-beach-miami-beach",
+    slug: "charette-cosmetics-medical-spa-miami-beach",
     name: "Charette Cosmetics Medical Spa - Miami Beach",
     providerType: "med-spa",
     neighborhood: "400 W 41st St Suite 201",
@@ -577,7 +577,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "arviv-medical-aesthetics-miami-miami",
+    slug: "arviv-medical-aesthetics-miami",
     name: "Arviv Medical Aesthetics Miami",
     providerType: "med-spa",
     neighborhood: "3250 NE 1st Ave # 504",
@@ -759,7 +759,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "meraki-med-miami-miami",
+    slug: "meraki-med-miami",
     name: "Meraki Med Miami",
     providerType: "med-spa",
     neighborhood: "2828 SW 22nd St # 205",
@@ -1071,7 +1071,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "new-image-works-aventura-aventura",
+    slug: "new-image-works-aventura",
     name: "New Image Works Aventura",
     providerType: "med-spa",
     neighborhood: "2920 NE 207th St Ste 1005",
@@ -1097,7 +1097,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     reviewSource: "Google Business Profile",
   },
   {
-    slug: "the-beauty-clinic-aventura-aventura",
+    slug: "the-beauty-clinic-aventura",
     name: "The Beauty Clinic Aventura",
     providerType: "med-spa",
     neighborhood: "18157 Biscayne Blvd",
@@ -1319,7 +1319,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Millennium Wellness Center official website",
   },
-                "vio-med-spa-fort-lauderdale-fort-lauderdale": {
+                "vio-med-spa-fort-lauderdale": {
     hero: "https://viomedspa.com/fort-lauderdale/wp-content/uploads/2026/03/Hero-micro.jpg",
     logo: "https://viomedspa.com/fort-lauderdale/wp-content/uploads/2026/04/512x512.png",
     gallery: [
@@ -1399,7 +1399,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Lov MedSpa Miami official website — services",
   },
-                "vio-med-spa-aventura-aventura": {
+                "vio-med-spa-aventura": {
     hero: "https://viomedspa.com/aventura/wp-content/uploads/2026/03/Hero-micro.jpg",
     logo: "https://viomedspa.com/aventura/wp-content/uploads/2026/04/512x512.png",
     gallery: [
@@ -1431,7 +1431,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Solea Brickell Spa official website",
   },
-                "charette-cosmetics-medical-spa-miami-beach-miami-beach": {
+                "charette-cosmetics-medical-spa-miami-beach": {
     hero: "https://charettecosmetics.com/wp-content/uploads/2024/07/Salmon-DNA-Injections-hero-1-scaled.jpg",
     logo: "https://charettecosmetics.com/wp-content/uploads/2024/07/Charette-Favicon1-300x300.png",
     gallery: [
@@ -1461,7 +1461,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Spa New York - Miami Beach Medical Spa official website",
   },
-                "arviv-medical-aesthetics-miami-miami": {
+                "arviv-medical-aesthetics-miami": {
     hero: "https://arvivaesthetics.com/wp-content/uploads/2016/10/homepage-sm.jpg",
     logo: "https://arvivaesthetics.com/wp-content/uploads/2017/08/cropped-arvivIcon1-1-250x250.png",
     gallery: [
@@ -1538,7 +1538,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Le Mar Aesthetics - Kendall MedSpa official website",
   },
-                "meraki-med-miami-miami": {
+                "meraki-med-miami": {
     hero: "https://static.wixstatic.com/media/11062b_c08353118ce849f98c46f9788443b1fe~mv2.jpg/v1/crop/x_0,y_164,w_5000,h_3005/fill/w_872,h_524,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Laser%20Facial%20Treatment.jpg",
     logo: "https://static.wixstatic.com/media/f061f0_81c2762314a54693b2d6650d3cac7307%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/f061f0_81c2762314a54693b2d6650d3cac7307%7Emv2.jpg",
     gallery: [
@@ -1665,7 +1665,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Join Body Good official website",
   },
-                "new-image-works-aventura-aventura": {
+                "new-image-works-aventura": {
     hero: "https://newimageworks.com/wp-content/themes/niw_4_2_9/img/new-image-works-og.jpg",
     logo: "https://newimageworks.com/wp-content/uploads/2021/02/cropped-niw-logo-192x192.jpg",
     gallery: [
@@ -1676,7 +1676,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "New Image Works Aventura official website",
   },
-                "the-beauty-clinic-aventura-aventura": {
+                "the-beauty-clinic-aventura": {
     hero: "https://thebeautyclinic.com/wp-content/uploads/2021/02/The-Beauty-Clinic-Web-Design-by-Inga-Brel-EYEBRANDIT-1-scaled.jpg?wsr",
     logo: "https://thebeautyclinic.com/wp-content/uploads/2020/05/cropped-THEBEAUTYCLINIC_square-1-192x192.png",
     gallery: [

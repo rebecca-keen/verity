@@ -1524,7 +1524,7 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     highlights: ["Google 4.8★ public rating", "Downtown Princeton", "National med spa brand"],
   }),
 seed({
-    slug: "skinspirit-biltmore-phoenix-phoenix",
+    slug: "skinspirit-biltmore-phoenix",
     name: "SkinSpirit Biltmore Phoenix",
     state: "AZ",
     neighborhood: "Biltmore",
@@ -1562,7 +1562,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Paradise Valley location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-scottsdale-scottsdale",
+    slug: "skinspirit-scottsdale",
     name: "SkinSpirit Scottsdale",
     state: "AZ",
     neighborhood: "Old Town",
@@ -1581,7 +1581,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Old Town location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-nordstrom-scottsdale-scottsdale",
+    slug: "skinspirit-nordstrom-scottsdale",
     name: "SkinSpirit Nordstrom Scottsdale",
     state: "AZ",
     neighborhood: "Fashion Square",
@@ -1771,7 +1771,7 @@ seed({
     highlights: ["Google 4.9★ public rating", "Brentwood location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-newport-beach-newport-beach",
+    slug: "skinspirit-newport-beach",
     name: "SkinSpirit Newport Beach",
     state: "CA",
     neighborhood: "Fashion Island",
@@ -1790,7 +1790,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fashion Island location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-palo-alto-palo-alto",
+    slug: "skinspirit-palo-alto",
     name: "SkinSpirit Palo Alto",
     state: "CA",
     neighborhood: "Downtown",
@@ -1847,7 +1847,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Del Mar location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-san-francisco-san-francisco",
+    slug: "skinspirit-san-francisco",
     name: "SkinSpirit San Francisco",
     state: "CA",
     neighborhood: "Noe Valley",
@@ -1942,7 +1942,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Willow Glen location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-walnut-creek-walnut-creek",
+    slug: "skinspirit-walnut-creek",
     name: "SkinSpirit Walnut Creek",
     state: "CA",
     neighborhood: "Downtown",
@@ -1961,7 +1961,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Downtown location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-denver-denver",
+    slug: "skinspirit-denver",
     name: "SkinSpirit Denver",
     state: "CO",
     neighborhood: "Greenwood Village",
@@ -1980,7 +1980,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Greenwood Village location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-miami-miami",
+    slug: "skinspirit-miami",
     name: "SkinSpirit Miami",
     state: "FL",
     neighborhood: "Brickell",
@@ -2056,7 +2056,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Dunwoody location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-honolulu-honolulu",
+    slug: "skinspirit-honolulu",
     name: "SkinSpirit Honolulu",
     state: "HI",
     neighborhood: "Ala Moana",
@@ -2170,7 +2170,7 @@ seed({
     highlights: ["Google 4.7★ public rating", "Streeterville location", "Verified website"],
   }),
   seed({
-    slug: "evolution-medspa-boston-boston",
+    slug: "evolution-medspa-boston",
     name: "Evolution MedSpa Boston",
     state: "MA",
     neighborhood: "Back Bay",
@@ -2246,7 +2246,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Wayzata location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-charlotte-charlotte",
+    slug: "skinspirit-charlotte",
     name: "SkinSpirit Charlotte",
     state: "NC",
     neighborhood: "SouthPark",
@@ -2512,7 +2512,7 @@ seed({
     highlights: ["Google 4.9★ public rating", "Mason location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-portland-portland",
+    slug: "skinspirit-portland",
     name: "SkinSpirit Portland",
     state: "OR",
     neighborhood: "Pearl District",
@@ -2550,7 +2550,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lake Oswego location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-austin-austin",
+    slug: "skinspirit-downtown-austin",
     name: "SkinSpirit Austin",
     state: "TX",
     neighborhood: "Downtown",
@@ -2569,7 +2569,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Downtown location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-north-austin-austin",
+    slug: "skinspirit-north-austin",
     name: "SkinSpirit North Austin",
     state: "TX",
     neighborhood: "North Austin",
@@ -2854,7 +2854,7 @@ seed({
     highlights: ["Google 4.9★ public rating", "Memorial location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-salt-lake-city-salt-lake-city",
+    slug: "skinspirit-salt-lake-city",
     name: "SkinSpirit Salt Lake City",
     state: "UT",
     neighborhood: "Downtown",
@@ -2987,7 +2987,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Redmond location", "Verified website"],
   }),
   seed({
-    slug: "skin-medical-spa-anchorage-anchorage",
+    slug: "skin-medical-spa-anchorage",
     name: "SKIN Medical Spa Anchorage",
     state: "AK",
     neighborhood: "Downtown",
@@ -3044,7 +3044,7 @@ seed({
     highlights: ["Google 4.9★ public rating", "Mountain Brook location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-bentonville-bentonville",
+    slug: "milan-laser-bentonville",
     name: "Milan Laser Bentonville",
     state: "AR",
     neighborhood: "Bentonville",
@@ -3064,7 +3064,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Bentonville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-conway-conway",
+    slug: "milan-laser-conway",
     name: "Milan Laser Conway",
     state: "AR",
     neighborhood: "Conway",
@@ -3084,7 +3084,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Conway location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-fayetteville-fayetteville",
+    slug: "milan-laser-fayetteville",
     name: "Milan Laser Fayetteville",
     state: "AR",
     neighborhood: "Fayetteville",
@@ -3104,7 +3104,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fayetteville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-fort-smith-fort-smith",
+    slug: "milan-laser-fort-smith",
     name: "Milan Laser Fort Smith",
     state: "AR",
     neighborhood: "Fort Smith",
@@ -3124,7 +3124,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fort Smith location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-jonesboro-jonesboro",
+    slug: "milan-laser-jonesboro",
     name: "Milan Laser Jonesboro",
     state: "AR",
     neighborhood: "Jonesboro",
@@ -3144,7 +3144,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Jonesboro location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-little-rock-little-rock",
+    slug: "milan-laser-little-rock",
     name: "Milan Laser Little Rock",
     state: "AR",
     neighborhood: "Little Rock",
@@ -3164,7 +3164,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Little Rock location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-flagstaff-flagstaff",
+    slug: "milan-laser-flagstaff",
     name: "Milan Laser Flagstaff",
     state: "AZ",
     neighborhood: "Flagstaff",
@@ -3184,7 +3184,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Flagstaff location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-phoenix-phoenix",
+    slug: "milan-laser-phoenix",
     name: "Milan Laser Phoenix",
     state: "AZ",
     neighborhood: "Phoenix",
@@ -3204,7 +3204,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Phoenix location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-tucson-tucson",
+    slug: "milan-laser-tucson",
     name: "Milan Laser Tucson",
     state: "AZ",
     neighborhood: "Tucson",
@@ -3224,7 +3224,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Tucson location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-danville-danville",
+    slug: "skinspirit-danville",
     name: "SkinSpirit Danville",
     state: "CA",
     neighborhood: "Danville",
@@ -3243,7 +3243,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Danville location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-dublin-dublin",
+    slug: "skinspirit-dublin",
     name: "SkinSpirit Dublin",
     state: "CA",
     neighborhood: "Dublin",
@@ -3281,7 +3281,7 @@ seed({
     highlights: ["Google 4.7★ public rating", "Woodland Hills location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-mill-valley-mill-valley",
+    slug: "skinspirit-mill-valley",
     name: "SkinSpirit Mill Valley",
     state: "CA",
     neighborhood: "Mill Valley",
@@ -3300,7 +3300,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Mill Valley location", "Verified website"],
   }),
   seed({
-    slug: "skinspirit-roseville-roseville",
+    slug: "skinspirit-roseville",
     name: "SkinSpirit Roseville",
     state: "CA",
     neighborhood: "Roseville",
@@ -3319,7 +3319,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Roseville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-boulder-boulder",
+    slug: "milan-laser-boulder",
     name: "Milan Laser Boulder",
     state: "CO",
     neighborhood: "Boulder",
@@ -3339,7 +3339,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Boulder location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-colorado-springs-colorado-springs",
+    slug: "milan-laser-colorado-springs",
     name: "Milan Laser Colorado Springs",
     state: "CO",
     neighborhood: "Colorado Springs",
@@ -3359,7 +3359,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Colorado Springs location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-denver-denver",
+    slug: "milan-laser-denver",
     name: "Milan Laser Denver",
     state: "CO",
     neighborhood: "Denver",
@@ -3379,7 +3379,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Denver location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-ft-collins-ft-collins",
+    slug: "milan-laser-ft-collins",
     name: "Milan Laser Ft Collins",
     state: "CO",
     neighborhood: "Ft Collins",
@@ -3399,7 +3399,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Ft Collins location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-grand-junction-grand-junction",
+    slug: "milan-laser-grand-junction",
     name: "Milan Laser Grand Junction",
     state: "CO",
     neighborhood: "Grand Junction",
@@ -3419,7 +3419,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Grand Junction location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-greeley-greeley",
+    slug: "milan-laser-greeley",
     name: "Milan Laser Greeley",
     state: "CO",
     neighborhood: "Greeley",
@@ -3439,7 +3439,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Greeley location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-loveland-loveland",
+    slug: "milan-laser-loveland",
     name: "Milan Laser Loveland",
     state: "CO",
     neighborhood: "Loveland",
@@ -3459,7 +3459,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Loveland location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-bridgeport-bridgeport",
+    slug: "milan-laser-bridgeport",
     name: "Milan Laser Bridgeport",
     state: "CT",
     neighborhood: "Bridgeport",
@@ -3479,7 +3479,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Bridgeport location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-danbury-danbury",
+    slug: "milan-laser-danbury",
     name: "Milan Laser Danbury",
     state: "CT",
     neighborhood: "Danbury",
@@ -3499,7 +3499,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Danbury location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-hartford-hartford",
+    slug: "milan-laser-hartford",
     name: "Milan Laser Hartford",
     state: "CT",
     neighborhood: "Hartford",
@@ -3519,7 +3519,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Hartford location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-new-haven-new-haven",
+    slug: "milan-laser-new-haven",
     name: "Milan Laser New Haven",
     state: "CT",
     neighborhood: "New Haven",
@@ -3539,7 +3539,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "New Haven location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-new-london-new-london",
+    slug: "milan-laser-new-london",
     name: "Milan Laser New London",
     state: "CT",
     neighborhood: "New London",
@@ -3559,7 +3559,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "New London location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-southington-southington",
+    slug: "milan-laser-southington",
     name: "Milan Laser Southington",
     state: "CT",
     neighborhood: "Southington",
@@ -3598,7 +3598,7 @@ seed({
     highlights: ["Google 4.9★ public rating", "Greenville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-clearwater-clearwater",
+    slug: "milan-laser-clearwater",
     name: "Milan Laser Clearwater",
     state: "FL",
     neighborhood: "Clearwater",
@@ -3618,7 +3618,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Clearwater location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-daytona-beach-daytona-beach",
+    slug: "milan-laser-daytona-beach",
     name: "Milan Laser Daytona Beach",
     state: "FL",
     neighborhood: "Daytona Beach",
@@ -3638,7 +3638,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Daytona Beach location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-fort-myers-fort-myers",
+    slug: "milan-laser-fort-myers",
     name: "Milan Laser Fort Myers",
     state: "FL",
     neighborhood: "Fort Myers",
@@ -3658,7 +3658,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fort Myers location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-gainesville-gainesville",
+    slug: "milan-laser-gainesville",
     name: "Milan Laser Gainesville",
     state: "FL",
     neighborhood: "Gainesville",
@@ -3678,7 +3678,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Gainesville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-jacksonville-jacksonville",
+    slug: "milan-laser-jacksonville",
     name: "Milan Laser Jacksonville",
     state: "FL",
     neighborhood: "Jacksonville",
@@ -3698,7 +3698,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Jacksonville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-lakeland-lakeland",
+    slug: "milan-laser-lakeland",
     name: "Milan Laser Lakeland",
     state: "FL",
     neighborhood: "Lakeland",
@@ -3718,7 +3718,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lakeland location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-miami-miami",
+    slug: "milan-laser-miami",
     name: "Milan Laser Miami",
     state: "FL",
     neighborhood: "Miami",
@@ -3738,7 +3738,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Miami location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-orlando-orlando",
+    slug: "milan-laser-orlando",
     name: "Milan Laser Orlando",
     state: "FL",
     neighborhood: "Orlando",
@@ -3758,7 +3758,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Orlando location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-palm-coast-palm-coast",
+    slug: "milan-laser-palm-coast",
     name: "Milan Laser Palm Coast",
     state: "FL",
     neighborhood: "Palm Coast",
@@ -3778,7 +3778,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Palm Coast location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-pensacola-pensacola",
+    slug: "milan-laser-pensacola",
     name: "Milan Laser Pensacola",
     state: "FL",
     neighborhood: "Pensacola",
@@ -3798,7 +3798,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Pensacola location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-port-st-lucie-port-st-lucie",
+    slug: "milan-laser-port-st-lucie",
     name: "Milan Laser Port St Lucie",
     state: "FL",
     neighborhood: "Port St Lucie",
@@ -3818,7 +3818,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Port St Lucie location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-tallahassee-tallahassee",
+    slug: "milan-laser-tallahassee",
     name: "Milan Laser Tallahassee",
     state: "FL",
     neighborhood: "Tallahassee",
@@ -3838,7 +3838,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Tallahassee location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-tampa-tampa",
+    slug: "milan-laser-tampa",
     name: "Milan Laser Tampa",
     state: "FL",
     neighborhood: "Tampa",
@@ -3858,7 +3858,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Tampa location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-vero-beach-vero-beach",
+    slug: "milan-laser-vero-beach",
     name: "Milan Laser Vero Beach",
     state: "FL",
     neighborhood: "Vero Beach",
@@ -3878,7 +3878,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Vero Beach location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-yulee-yulee",
+    slug: "milan-laser-yulee",
     name: "Milan Laser Yulee",
     state: "FL",
     neighborhood: "Yulee",
@@ -3898,7 +3898,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Yulee location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-athens-athens",
+    slug: "milan-laser-athens",
     name: "Milan Laser Athens",
     state: "GA",
     neighborhood: "Athens",
@@ -3918,7 +3918,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Athens location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-atlanta-atlanta",
+    slug: "milan-laser-atlanta",
     name: "Milan Laser Atlanta",
     state: "GA",
     neighborhood: "Atlanta",
@@ -3938,7 +3938,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Atlanta location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-augusta-augusta",
+    slug: "milan-laser-augusta",
     name: "Milan Laser Augusta",
     state: "GA",
     neighborhood: "Augusta",
@@ -3958,7 +3958,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Augusta location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-columbus-columbus",
+    slug: "milan-laser-columbus",
     name: "Milan Laser Columbus",
     state: "GA",
     neighborhood: "Columbus",
@@ -3978,7 +3978,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Columbus location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-macon-macon",
+    slug: "milan-laser-macon",
     name: "Milan Laser Macon",
     state: "GA",
     neighborhood: "Macon",
@@ -3998,7 +3998,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Macon location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-savannah-savannah",
+    slug: "milan-laser-savannah",
     name: "Milan Laser Savannah",
     state: "GA",
     neighborhood: "Savannah",
@@ -4018,7 +4018,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Savannah location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-warner-robins-warner-robins",
+    slug: "milan-laser-warner-robins",
     name: "Milan Laser Warner Robins",
     state: "GA",
     neighborhood: "Warner Robins",
@@ -4038,7 +4038,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Warner Robins location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-cedar-rapids-cedar-rapids",
+    slug: "milan-laser-cedar-rapids",
     name: "Milan Laser Cedar Rapids",
     state: "IA",
     neighborhood: "Cedar Rapids",
@@ -4058,7 +4058,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Cedar Rapids location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-coralville-coralville",
+    slug: "milan-laser-coralville",
     name: "Milan Laser Coralville",
     state: "IA",
     neighborhood: "Coralville",
@@ -4078,7 +4078,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Coralville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-des-moines-des-moines",
+    slug: "milan-laser-des-moines",
     name: "Milan Laser Des Moines",
     state: "IA",
     neighborhood: "Des Moines",
@@ -4098,7 +4098,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Des Moines location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-dubuque-dubuque",
+    slug: "milan-laser-dubuque",
     name: "Milan Laser Dubuque",
     state: "IA",
     neighborhood: "Dubuque",
@@ -4118,7 +4118,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Dubuque location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-quad-cities-quad-cities",
+    slug: "milan-laser-quad-cities",
     name: "Milan Laser Quad Cities",
     state: "IA",
     neighborhood: "Quad Cities",
@@ -4138,7 +4138,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Quad Cities location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-sioux-city-sioux-city",
+    slug: "milan-laser-sioux-city",
     name: "Milan Laser Sioux City",
     state: "IA",
     neighborhood: "Sioux City",
@@ -4158,7 +4158,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Sioux City location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-boise-boise",
+    slug: "milan-laser-boise",
     name: "Milan Laser Boise",
     state: "ID",
     neighborhood: "Boise",
@@ -4178,7 +4178,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Boise location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-coeur-dalene-coeur-dalene",
+    slug: "milan-laser-coeur-dalene",
     name: "Milan Laser Coeur Dalene",
     state: "ID",
     neighborhood: "Coeur Dalene",
@@ -4198,7 +4198,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Coeur Dalene location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-idaho-falls-idaho-falls",
+    slug: "milan-laser-idaho-falls",
     name: "Milan Laser Idaho Falls",
     state: "ID",
     neighborhood: "Idaho Falls",
@@ -4218,7 +4218,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Idaho Falls location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-twin-falls-twin-falls",
+    slug: "milan-laser-twin-falls",
     name: "Milan Laser Twin Falls",
     state: "ID",
     neighborhood: "Twin Falls",
@@ -4238,7 +4238,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Twin Falls location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-champaign-champaign",
+    slug: "milan-laser-champaign",
     name: "Milan Laser Champaign",
     state: "IL",
     neighborhood: "Champaign",
@@ -4258,7 +4258,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Champaign location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-chicago-chicago",
+    slug: "milan-laser-chicago",
     name: "Milan Laser Chicago",
     state: "IL",
     neighborhood: "Chicago",
@@ -4278,7 +4278,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Chicago location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-dekalb-dekalb",
+    slug: "milan-laser-dekalb",
     name: "Milan Laser Dekalb",
     state: "IL",
     neighborhood: "Dekalb",
@@ -4298,7 +4298,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Dekalb location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-normal-normal",
+    slug: "milan-laser-normal",
     name: "Milan Laser Normal",
     state: "IL",
     neighborhood: "Normal",
@@ -4318,7 +4318,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Normal location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-peoria-peoria",
+    slug: "milan-laser-peoria",
     name: "Milan Laser Peoria",
     state: "IL",
     neighborhood: "Peoria",
@@ -4338,7 +4338,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Peoria location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-quincy-quincy",
+    slug: "milan-laser-quincy",
     name: "Milan Laser Quincy",
     state: "IL",
     neighborhood: "Quincy",
@@ -4358,7 +4358,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Quincy location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-rockford-rockford",
+    slug: "milan-laser-rockford",
     name: "Milan Laser Rockford",
     state: "IL",
     neighborhood: "Rockford",
@@ -4378,7 +4378,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Rockford location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-springfield-springfield",
+    slug: "milan-laser-springfield",
     name: "Milan Laser Springfield",
     state: "IL",
     neighborhood: "Springfield",
@@ -4398,7 +4398,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Springfield location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-bloomington-bloomington",
+    slug: "milan-laser-bloomington",
     name: "Milan Laser Bloomington",
     state: "IN",
     neighborhood: "Bloomington",
@@ -4418,7 +4418,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Bloomington location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-elkhart-elkhart",
+    slug: "milan-laser-elkhart",
     name: "Milan Laser Elkhart",
     state: "IN",
     neighborhood: "Elkhart",
@@ -4438,7 +4438,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Elkhart location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-evansville-evansville",
+    slug: "milan-laser-evansville",
     name: "Milan Laser Evansville",
     state: "IN",
     neighborhood: "Evansville",
@@ -4458,7 +4458,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Evansville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-ft-wayne-ft-wayne",
+    slug: "milan-laser-ft-wayne",
     name: "Milan Laser Ft Wayne",
     state: "IN",
     neighborhood: "Ft Wayne",
@@ -4478,7 +4478,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Ft Wayne location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-indianapolis-indianapolis",
+    slug: "milan-laser-indianapolis",
     name: "Milan Laser Indianapolis",
     state: "IN",
     neighborhood: "Indianapolis",
@@ -4498,7 +4498,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Indianapolis location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-south-bend-south-bend",
+    slug: "milan-laser-south-bend",
     name: "Milan Laser South Bend",
     state: "IN",
     neighborhood: "South Bend",
@@ -4518,7 +4518,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "South Bend location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-valparaiso-valparaiso",
+    slug: "milan-laser-valparaiso",
     name: "Milan Laser Valparaiso",
     state: "IN",
     neighborhood: "Valparaiso",
@@ -4538,7 +4538,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Valparaiso location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-west-lafayette-west-lafayette",
+    slug: "milan-laser-west-lafayette",
     name: "Milan Laser West Lafayette",
     state: "IN",
     neighborhood: "West Lafayette",
@@ -4558,7 +4558,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "West Lafayette location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-lawrence-lawrence",
+    slug: "milan-laser-lawrence",
     name: "Milan Laser Lawrence",
     state: "KS",
     neighborhood: "Lawrence",
@@ -4578,7 +4578,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lawrence location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-topeka-topeka",
+    slug: "milan-laser-topeka",
     name: "Milan Laser Topeka",
     state: "KS",
     neighborhood: "Topeka",
@@ -4598,7 +4598,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Topeka location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-wichita-wichita",
+    slug: "milan-laser-wichita",
     name: "Milan Laser Wichita",
     state: "KS",
     neighborhood: "Wichita",
@@ -4618,7 +4618,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Wichita location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-bowling-green-bowling-green",
+    slug: "milan-laser-bowling-green",
     name: "Milan Laser Bowling Green",
     state: "KY",
     neighborhood: "Bowling Green",
@@ -4638,7 +4638,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Bowling Green location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-lexington-lexington",
+    slug: "milan-laser-lexington",
     name: "Milan Laser Lexington",
     state: "KY",
     neighborhood: "Lexington",
@@ -4658,7 +4658,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lexington location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-louisville-louisville",
+    slug: "milan-laser-louisville",
     name: "Milan Laser Louisville",
     state: "KY",
     neighborhood: "Louisville",
@@ -4678,7 +4678,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Louisville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-baton-rouge-baton-rouge",
+    slug: "milan-laser-baton-rouge",
     name: "Milan Laser Baton Rouge",
     state: "LA",
     neighborhood: "Baton Rouge",
@@ -4698,7 +4698,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Baton Rouge location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-lafayette-lafayette",
+    slug: "milan-laser-lafayette",
     name: "Milan Laser Lafayette",
     state: "LA",
     neighborhood: "Lafayette",
@@ -4718,7 +4718,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lafayette location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-mandeville-mandeville",
+    slug: "milan-laser-mandeville",
     name: "Milan Laser Mandeville",
     state: "LA",
     neighborhood: "Mandeville",
@@ -4738,7 +4738,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Mandeville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-new-orleans-new-orleans",
+    slug: "milan-laser-new-orleans",
     name: "Milan Laser New Orleans",
     state: "LA",
     neighborhood: "New Orleans",
@@ -4758,7 +4758,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "New Orleans location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-shreveport-shreveport",
+    slug: "milan-laser-shreveport",
     name: "Milan Laser Shreveport",
     state: "LA",
     neighborhood: "Shreveport",
@@ -4778,7 +4778,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Shreveport location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-boston-boston",
+    slug: "milan-laser-boston",
     name: "Milan Laser Boston",
     state: "MA",
     neighborhood: "Boston",
@@ -4798,7 +4798,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Boston location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-framingham-framingham",
+    slug: "milan-laser-framingham",
     name: "Milan Laser Framingham",
     state: "MA",
     neighborhood: "Framingham",
@@ -4818,7 +4818,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Framingham location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-mansfield-mansfield",
+    slug: "milan-laser-mansfield",
     name: "Milan Laser Mansfield",
     state: "MA",
     neighborhood: "Mansfield",
@@ -4858,7 +4858,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Springfield location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-worcester-worcester",
+    slug: "milan-laser-worcester",
     name: "Milan Laser Worcester",
     state: "MA",
     neighborhood: "Worcester",
@@ -4878,7 +4878,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Worcester location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-annapolis-annapolis",
+    slug: "milan-laser-annapolis",
     name: "Milan Laser Annapolis",
     state: "MD",
     neighborhood: "Annapolis",
@@ -4898,7 +4898,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Annapolis location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-baltimore-baltimore",
+    slug: "milan-laser-baltimore",
     name: "Milan Laser Baltimore",
     state: "MD",
     neighborhood: "Baltimore",
@@ -4918,7 +4918,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Baltimore location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-frederick-frederick",
+    slug: "milan-laser-frederick",
     name: "Milan Laser Frederick",
     state: "MD",
     neighborhood: "Frederick",
@@ -4938,7 +4938,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Frederick location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-washington-washington",
+    slug: "milan-laser-washington",
     name: "Milan Laser Washington",
     state: "MD",
     neighborhood: "Washington",
@@ -4958,7 +4958,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Washington location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-bangor-bangor",
+    slug: "milan-laser-bangor",
     name: "Milan Laser Bangor",
     state: "ME",
     neighborhood: "Bangor",
@@ -4978,7 +4978,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Bangor location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-portland-portland",
+    slug: "milan-laser-portland",
     name: "Milan Laser Portland",
     state: "ME",
     neighborhood: "Portland",
@@ -4998,7 +4998,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Portland location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-ann-arbor-ann-arbor",
+    slug: "milan-laser-ann-arbor",
     name: "Milan Laser Ann Arbor",
     state: "MI",
     neighborhood: "Ann Arbor",
@@ -5018,7 +5018,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Ann Arbor location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-detroit-detroit",
+    slug: "milan-laser-detroit",
     name: "Milan Laser Detroit",
     state: "MI",
     neighborhood: "Detroit",
@@ -5038,7 +5038,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Detroit location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-grand-blanc-grand-blanc",
+    slug: "milan-laser-grand-blanc",
     name: "Milan Laser Grand Blanc",
     state: "MI",
     neighborhood: "Grand Blanc",
@@ -5058,7 +5058,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Grand Blanc location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-grand-rapids-grand-rapids",
+    slug: "milan-laser-grand-rapids",
     name: "Milan Laser Grand Rapids",
     state: "MI",
     neighborhood: "Grand Rapids",
@@ -5078,7 +5078,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Grand Rapids location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-holland-holland",
+    slug: "milan-laser-holland",
     name: "Milan Laser Holland",
     state: "MI",
     neighborhood: "Holland",
@@ -5098,7 +5098,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Holland location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-kalamazoo-kalamazoo",
+    slug: "milan-laser-kalamazoo",
     name: "Milan Laser Kalamazoo",
     state: "MI",
     neighborhood: "Kalamazoo",
@@ -5118,7 +5118,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Kalamazoo location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-lansing-lansing",
+    slug: "milan-laser-lansing",
     name: "Milan Laser Lansing",
     state: "MI",
     neighborhood: "Lansing",
@@ -5138,7 +5138,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lansing location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-minneapolis-st-paul-minneapolis-st-paul",
+    slug: "milan-laser-minneapolis-st-paul",
     name: "Milan Laser Minneapolis  St Paul",
     state: "MN",
     neighborhood: "Minneapolis  St Paul",
@@ -5158,7 +5158,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Minneapolis  St Paul location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-rochester-rochester",
+    slug: "milan-laser-rochester",
     name: "Milan Laser Rochester",
     state: "MN",
     neighborhood: "Rochester",
@@ -5178,7 +5178,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Rochester location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-st-cloud-st-cloud",
+    slug: "milan-laser-st-cloud",
     name: "Milan Laser St Cloud",
     state: "MN",
     neighborhood: "St Cloud",
@@ -5198,7 +5198,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "St Cloud location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-columbia-columbia",
+    slug: "milan-laser-columbia",
     name: "Milan Laser Columbia",
     state: "MO",
     neighborhood: "Columbia",
@@ -5218,7 +5218,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Columbia location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-kansas-city-kansas-city",
+    slug: "milan-laser-kansas-city",
     name: "Milan Laser Kansas City",
     state: "MO",
     neighborhood: "Kansas City",
@@ -5258,7 +5258,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Springfield location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-st-louis-st-louis",
+    slug: "milan-laser-st-louis",
     name: "Milan Laser St Louis",
     state: "MO",
     neighborhood: "St Louis",
@@ -5297,7 +5297,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fondren location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-billings-billings",
+    slug: "milan-laser-billings",
     name: "Milan Laser Billings",
     state: "MT",
     neighborhood: "Billings",
@@ -5317,7 +5317,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Billings location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-asheville-asheville",
+    slug: "milan-laser-asheville",
     name: "Milan Laser Asheville",
     state: "NC",
     neighborhood: "Asheville",
@@ -5337,7 +5337,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Asheville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-boone-boone",
+    slug: "milan-laser-boone",
     name: "Milan Laser Boone",
     state: "NC",
     neighborhood: "Boone",
@@ -5357,7 +5357,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Boone location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-burlington-burlington",
+    slug: "milan-laser-burlington",
     name: "Milan Laser Burlington",
     state: "NC",
     neighborhood: "Burlington",
@@ -5377,7 +5377,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Burlington location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-charlotte-charlotte",
+    slug: "milan-laser-charlotte",
     name: "Milan Laser Charlotte",
     state: "NC",
     neighborhood: "Charlotte",
@@ -5397,7 +5397,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Charlotte location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-durham-durham",
+    slug: "milan-laser-durham",
     name: "Milan Laser Durham",
     state: "NC",
     neighborhood: "Durham",
@@ -5437,7 +5437,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fayetteville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-greensboro-greensboro",
+    slug: "milan-laser-greensboro",
     name: "Milan Laser Greensboro",
     state: "NC",
     neighborhood: "Greensboro",
@@ -5457,7 +5457,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Greensboro location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-greenville-greenville",
+    slug: "milan-laser-greenville",
     name: "Milan Laser Greenville",
     state: "NC",
     neighborhood: "Greenville",
@@ -5477,7 +5477,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Greenville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-hickory-hickory",
+    slug: "milan-laser-hickory",
     name: "Milan Laser Hickory",
     state: "NC",
     neighborhood: "Hickory",
@@ -5517,7 +5517,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Jacksonville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-raleigh-raleigh",
+    slug: "milan-laser-raleigh",
     name: "Milan Laser Raleigh",
     state: "NC",
     neighborhood: "Raleigh",
@@ -5537,7 +5537,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Raleigh location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-wilmington-wilmington",
+    slug: "milan-laser-wilmington",
     name: "Milan Laser Wilmington",
     state: "NC",
     neighborhood: "Wilmington",
@@ -5557,7 +5557,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Wilmington location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-winston-salem-winston-salem",
+    slug: "milan-laser-winston-salem",
     name: "Milan Laser Winston Salem",
     state: "NC",
     neighborhood: "Winston Salem",
@@ -5577,7 +5577,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Winston Salem location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-fargo-fargo",
+    slug: "milan-laser-fargo",
     name: "Milan Laser Fargo",
     state: "ND",
     neighborhood: "Fargo",
@@ -5597,7 +5597,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fargo location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-lincoln-lincoln",
+    slug: "milan-laser-lincoln",
     name: "Milan Laser Lincoln",
     state: "NE",
     neighborhood: "Lincoln",
@@ -5617,7 +5617,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lincoln location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-omaha-omaha",
+    slug: "milan-laser-omaha",
     name: "Milan Laser Omaha",
     state: "NE",
     neighborhood: "Omaha",
@@ -5637,7 +5637,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Omaha location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-bedford-bedford",
+    slug: "milan-laser-bedford",
     name: "Milan Laser Bedford",
     state: "NH",
     neighborhood: "Bedford",
@@ -5657,7 +5657,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Bedford location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-nashua-nashua",
+    slug: "milan-laser-nashua",
     name: "Milan Laser Nashua",
     state: "NH",
     neighborhood: "Nashua",
@@ -5696,7 +5696,7 @@ seed({
     highlights: ["Google 4.9★ public rating", "Downtown location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-las-vegas-las-vegas",
+    slug: "milan-laser-las-vegas",
     name: "Milan Laser Las Vegas",
     state: "NV",
     neighborhood: "Las Vegas",
@@ -5716,7 +5716,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Las Vegas location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-reno-reno",
+    slug: "milan-laser-reno",
     name: "Milan Laser Reno",
     state: "NV",
     neighborhood: "Reno",
@@ -5736,7 +5736,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Reno location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-albany-albany",
+    slug: "milan-laser-albany",
     name: "Milan Laser Albany",
     state: "NY",
     neighborhood: "Albany",
@@ -5756,7 +5756,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Albany location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-binghamton-binghamton",
+    slug: "milan-laser-binghamton",
     name: "Milan Laser Binghamton",
     state: "NY",
     neighborhood: "Binghamton",
@@ -5776,7 +5776,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Binghamton location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-buffalo-buffalo",
+    slug: "milan-laser-buffalo",
     name: "Milan Laser Buffalo",
     state: "NY",
     neighborhood: "Buffalo",
@@ -5796,7 +5796,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Buffalo location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-fishkill-fishkill",
+    slug: "milan-laser-fishkill",
     name: "Milan Laser Fishkill",
     state: "NY",
     neighborhood: "Fishkill",
@@ -5816,7 +5816,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fishkill location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-ithaca-ithaca",
+    slug: "milan-laser-ithaca",
     name: "Milan Laser Ithaca",
     state: "NY",
     neighborhood: "Ithaca",
@@ -5836,7 +5836,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Ithaca location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-long-island-long-island",
+    slug: "milan-laser-long-island",
     name: "Milan Laser Long Island",
     state: "NY",
     neighborhood: "Long Island",
@@ -5856,7 +5856,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Long Island location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-manhattan-manhattan",
+    slug: "milan-laser-manhattan",
     name: "Milan Laser Manhattan",
     state: "NY",
     neighborhood: "Manhattan",
@@ -5876,7 +5876,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Manhattan location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-middletown-middletown",
+    slug: "milan-laser-middletown",
     name: "Milan Laser Middletown",
     state: "NY",
     neighborhood: "Middletown",
@@ -5896,7 +5896,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Middletown location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-niagara-falls-niagara-falls",
+    slug: "milan-laser-niagara-falls",
     name: "Milan Laser Niagara Falls",
     state: "NY",
     neighborhood: "Niagara Falls",
@@ -5936,7 +5936,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Rochester location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-syracuse-syracuse",
+    slug: "milan-laser-syracuse",
     name: "Milan Laser Syracuse",
     state: "NY",
     neighborhood: "Syracuse",
@@ -5956,7 +5956,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Syracuse location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-utica-utica",
+    slug: "milan-laser-utica",
     name: "Milan Laser Utica",
     state: "NY",
     neighborhood: "Utica",
@@ -5976,7 +5976,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Utica location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-akron-akron",
+    slug: "milan-laser-akron",
     name: "Milan Laser Akron",
     state: "OH",
     neighborhood: "Akron",
@@ -5996,7 +5996,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Akron location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-canton-canton",
+    slug: "milan-laser-canton",
     name: "Milan Laser Canton",
     state: "OH",
     neighborhood: "Canton",
@@ -6016,7 +6016,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Canton location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-cincinnati-cincinnati",
+    slug: "milan-laser-cincinnati",
     name: "Milan Laser Cincinnati",
     state: "OH",
     neighborhood: "Cincinnati",
@@ -6036,7 +6036,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Cincinnati location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-cleveland-cleveland",
+    slug: "milan-laser-cleveland",
     name: "Milan Laser Cleveland",
     state: "OH",
     neighborhood: "Cleveland",
@@ -6076,7 +6076,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Columbus location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-dayton-dayton",
+    slug: "milan-laser-dayton",
     name: "Milan Laser Dayton",
     state: "OH",
     neighborhood: "Dayton",
@@ -6096,7 +6096,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Dayton location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-toledo-toledo",
+    slug: "milan-laser-toledo",
     name: "Milan Laser Toledo",
     state: "OH",
     neighborhood: "Toledo",
@@ -6116,7 +6116,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Toledo location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-youngstown-youngstown",
+    slug: "milan-laser-youngstown",
     name: "Milan Laser Youngstown",
     state: "OH",
     neighborhood: "Youngstown",
@@ -6136,7 +6136,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Youngstown location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-oklahoma-city-oklahoma-city",
+    slug: "milan-laser-oklahoma-city",
     name: "Milan Laser Oklahoma City",
     state: "OK",
     neighborhood: "Oklahoma City",
@@ -6156,7 +6156,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Oklahoma City location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-stillwater-stillwater",
+    slug: "milan-laser-stillwater",
     name: "Milan Laser Stillwater",
     state: "OK",
     neighborhood: "Stillwater",
@@ -6176,7 +6176,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Stillwater location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-tulsa-tulsa",
+    slug: "milan-laser-tulsa",
     name: "Milan Laser Tulsa",
     state: "OK",
     neighborhood: "Tulsa",
@@ -6196,7 +6196,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Tulsa location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-corvallis-corvallis",
+    slug: "milan-laser-corvallis",
     name: "Milan Laser Corvallis",
     state: "OR",
     neighborhood: "Corvallis",
@@ -6216,7 +6216,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Corvallis location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-eugene-eugene",
+    slug: "milan-laser-eugene",
     name: "Milan Laser Eugene",
     state: "OR",
     neighborhood: "Eugene",
@@ -6256,7 +6256,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Portland location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-salem-salem",
+    slug: "milan-laser-salem",
     name: "Milan Laser Salem",
     state: "OR",
     neighborhood: "Salem",
@@ -6276,7 +6276,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Salem location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-allentown-allentown",
+    slug: "milan-laser-allentown",
     name: "Milan Laser Allentown",
     state: "PA",
     neighborhood: "Allentown",
@@ -6296,7 +6296,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Allentown location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-chambersburg-chambersburg",
+    slug: "milan-laser-chambersburg",
     name: "Milan Laser Chambersburg",
     state: "PA",
     neighborhood: "Chambersburg",
@@ -6316,7 +6316,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Chambersburg location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-erie-erie",
+    slug: "milan-laser-erie",
     name: "Milan Laser Erie",
     state: "PA",
     neighborhood: "Erie",
@@ -6336,7 +6336,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Erie location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-fairless-hills-fairless-hills",
+    slug: "milan-laser-fairless-hills",
     name: "Milan Laser Fairless Hills",
     state: "PA",
     neighborhood: "Fairless Hills",
@@ -6356,7 +6356,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fairless Hills location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-harrisburg-harrisburg",
+    slug: "milan-laser-harrisburg",
     name: "Milan Laser Harrisburg",
     state: "PA",
     neighborhood: "Harrisburg",
@@ -6376,7 +6376,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Harrisburg location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-lancaster-lancaster",
+    slug: "milan-laser-lancaster",
     name: "Milan Laser Lancaster",
     state: "PA",
     neighborhood: "Lancaster",
@@ -6396,7 +6396,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lancaster location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-philadelphia-philadelphia",
+    slug: "milan-laser-philadelphia",
     name: "Milan Laser Philadelphia",
     state: "PA",
     neighborhood: "Philadelphia",
@@ -6416,7 +6416,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Philadelphia location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-pittsburgh-pittsburgh",
+    slug: "milan-laser-pittsburgh",
     name: "Milan Laser Pittsburgh",
     state: "PA",
     neighborhood: "Pittsburgh",
@@ -6436,7 +6436,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Pittsburgh location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-reading-reading",
+    slug: "milan-laser-reading",
     name: "Milan Laser Reading",
     state: "PA",
     neighborhood: "Reading",
@@ -6456,7 +6456,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Reading location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-scranton-scranton",
+    slug: "milan-laser-scranton",
     name: "Milan Laser Scranton",
     state: "PA",
     neighborhood: "Scranton",
@@ -6476,7 +6476,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Scranton location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-state-college-state-college",
+    slug: "milan-laser-state-college",
     name: "Milan Laser State College",
     state: "PA",
     neighborhood: "State College",
@@ -6496,7 +6496,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "State College location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-west-chester-west-chester",
+    slug: "milan-laser-west-chester",
     name: "Milan Laser West Chester",
     state: "PA",
     neighborhood: "West Chester",
@@ -6516,7 +6516,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "West Chester location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-wilkes-barre-wilkes-barre",
+    slug: "milan-laser-wilkes-barre",
     name: "Milan Laser Wilkes Barre",
     state: "PA",
     neighborhood: "Wilkes Barre",
@@ -6536,7 +6536,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Wilkes Barre location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-york-york",
+    slug: "milan-laser-york",
     name: "Milan Laser York",
     state: "PA",
     neighborhood: "York",
@@ -6575,7 +6575,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Cranston location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-charleston-charleston",
+    slug: "milan-laser-charleston",
     name: "Milan Laser Charleston",
     state: "SC",
     neighborhood: "Charleston",
@@ -6635,7 +6635,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Greenville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-north-myrtle-beach-north-myrtle-beach",
+    slug: "milan-laser-north-myrtle-beach",
     name: "Milan Laser North Myrtle Beach",
     state: "SC",
     neighborhood: "North Myrtle Beach",
@@ -6655,7 +6655,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "North Myrtle Beach location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-spartanburg-spartanburg",
+    slug: "milan-laser-spartanburg",
     name: "Milan Laser Spartanburg",
     state: "SC",
     neighborhood: "Spartanburg",
@@ -6675,7 +6675,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Spartanburg location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-sioux-falls-sioux-falls",
+    slug: "milan-laser-sioux-falls",
     name: "Milan Laser Sioux Falls",
     state: "SD",
     neighborhood: "Sioux Falls",
@@ -6695,7 +6695,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Sioux Falls location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-chattanooga-chattanooga",
+    slug: "milan-laser-chattanooga",
     name: "Milan Laser Chattanooga",
     state: "TN",
     neighborhood: "Chattanooga",
@@ -6715,7 +6715,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Chattanooga location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-clarksville-clarksville",
+    slug: "milan-laser-clarksville",
     name: "Milan Laser Clarksville",
     state: "TN",
     neighborhood: "Clarksville",
@@ -6735,7 +6735,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Clarksville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-jackson-jackson",
+    slug: "milan-laser-jackson",
     name: "Milan Laser Jackson",
     state: "TN",
     neighborhood: "Jackson",
@@ -6755,7 +6755,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Jackson location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-kingsport-kingsport",
+    slug: "milan-laser-kingsport",
     name: "Milan Laser Kingsport",
     state: "TN",
     neighborhood: "Kingsport",
@@ -6775,7 +6775,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Kingsport location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-knoxville-knoxville",
+    slug: "milan-laser-knoxville",
     name: "Milan Laser Knoxville",
     state: "TN",
     neighborhood: "Knoxville",
@@ -6795,7 +6795,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Knoxville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-memphis-memphis",
+    slug: "milan-laser-memphis",
     name: "Milan Laser Memphis",
     state: "TN",
     neighborhood: "Memphis",
@@ -6815,7 +6815,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Memphis location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-nashville-nashville",
+    slug: "milan-laser-nashville",
     name: "Milan Laser Nashville",
     state: "TN",
     neighborhood: "Nashville",
@@ -6835,7 +6835,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Nashville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-tri-cities-tri-cities",
+    slug: "milan-laser-tri-cities",
     name: "Milan Laser Tri Cities",
     state: "TN",
     neighborhood: "Tri Cities",
@@ -6855,7 +6855,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Tri Cities location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-abilene-abilene",
+    slug: "milan-laser-abilene",
     name: "Milan Laser Abilene",
     state: "TX",
     neighborhood: "Abilene",
@@ -6875,7 +6875,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Abilene location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-amarillo-amarillo",
+    slug: "milan-laser-amarillo",
     name: "Milan Laser Amarillo",
     state: "TX",
     neighborhood: "Amarillo",
@@ -6895,7 +6895,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Amarillo location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-austin-austin",
+    slug: "milan-laser-austin",
     name: "Milan Laser Austin",
     state: "TX",
     neighborhood: "Austin",
@@ -6915,7 +6915,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Austin location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-beaumont-beaumont",
+    slug: "milan-laser-beaumont",
     name: "Milan Laser Beaumont",
     state: "TX",
     neighborhood: "Beaumont",
@@ -6935,7 +6935,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Beaumont location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-college-station-college-station",
+    slug: "milan-laser-college-station",
     name: "Milan Laser College Station",
     state: "TX",
     neighborhood: "College Station",
@@ -6955,7 +6955,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "College Station location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-corpus-christi-corpus-christi",
+    slug: "milan-laser-corpus-christi",
     name: "Milan Laser Corpus Christi",
     state: "TX",
     neighborhood: "Corpus Christi",
@@ -6975,7 +6975,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Corpus Christi location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-dallas-dallas",
+    slug: "milan-laser-dallas",
     name: "Milan Laser Dallas",
     state: "TX",
     neighborhood: "Dallas",
@@ -6995,7 +6995,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Dallas location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-el-paso-el-paso",
+    slug: "milan-laser-el-paso",
     name: "Milan Laser El Paso",
     state: "TX",
     neighborhood: "El Paso",
@@ -7015,7 +7015,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "El Paso location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-fort-worth-fort-worth",
+    slug: "milan-laser-fort-worth",
     name: "Milan Laser Fort Worth",
     state: "TX",
     neighborhood: "Fort Worth",
@@ -7035,7 +7035,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fort Worth location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-houston-houston",
+    slug: "milan-laser-houston",
     name: "Milan Laser Houston",
     state: "TX",
     neighborhood: "Houston",
@@ -7055,7 +7055,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Houston location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-killeen-killeen",
+    slug: "milan-laser-killeen",
     name: "Milan Laser Killeen",
     state: "TX",
     neighborhood: "Killeen",
@@ -7075,7 +7075,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Killeen location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-laredo-laredo",
+    slug: "milan-laser-laredo",
     name: "Milan Laser Laredo",
     state: "TX",
     neighborhood: "Laredo",
@@ -7095,7 +7095,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Laredo location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-longview-longview",
+    slug: "milan-laser-longview",
     name: "Milan Laser Longview",
     state: "TX",
     neighborhood: "Longview",
@@ -7115,7 +7115,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Longview location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-lubbock-lubbock",
+    slug: "milan-laser-lubbock",
     name: "Milan Laser Lubbock",
     state: "TX",
     neighborhood: "Lubbock",
@@ -7135,7 +7135,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lubbock location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-mcallen-mcallen",
+    slug: "milan-laser-mcallen",
     name: "Milan Laser Mcallen",
     state: "TX",
     neighborhood: "Mcallen",
@@ -7155,7 +7155,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Mcallen location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-new-braunfels-new-braunfels",
+    slug: "milan-laser-new-braunfels",
     name: "Milan Laser New Braunfels",
     state: "TX",
     neighborhood: "New Braunfels",
@@ -7175,7 +7175,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "New Braunfels location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-odessa-odessa",
+    slug: "milan-laser-odessa",
     name: "Milan Laser Odessa",
     state: "TX",
     neighborhood: "Odessa",
@@ -7195,7 +7195,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Odessa location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-san-antonio-san-antonio",
+    slug: "milan-laser-san-antonio",
     name: "Milan Laser San Antonio",
     state: "TX",
     neighborhood: "San Antonio",
@@ -7215,7 +7215,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "San Antonio location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-temple-temple",
+    slug: "milan-laser-temple",
     name: "Milan Laser Temple",
     state: "TX",
     neighborhood: "Temple",
@@ -7235,7 +7235,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Temple location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-tyler-tyler",
+    slug: "milan-laser-tyler",
     name: "Milan Laser Tyler",
     state: "TX",
     neighborhood: "Tyler",
@@ -7255,7 +7255,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Tyler location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-waco-waco",
+    slug: "milan-laser-waco",
     name: "Milan Laser Waco",
     state: "TX",
     neighborhood: "Waco",
@@ -7275,7 +7275,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Waco location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-salt-lake-city-salt-lake-city",
+    slug: "milan-laser-salt-lake-city",
     name: "Milan Laser Salt Lake City",
     state: "UT",
     neighborhood: "Salt Lake City",
@@ -7295,7 +7295,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Salt Lake City location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-charlottesville-charlottesville",
+    slug: "milan-laser-charlottesville",
     name: "Milan Laser Charlottesville",
     state: "VA",
     neighborhood: "Charlottesville",
@@ -7315,7 +7315,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Charlottesville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-christiansburg-christiansburg",
+    slug: "milan-laser-christiansburg",
     name: "Milan Laser Christiansburg",
     state: "VA",
     neighborhood: "Christiansburg",
@@ -7335,7 +7335,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Christiansburg location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-fredericksburg-fredericksburg",
+    slug: "milan-laser-fredericksburg",
     name: "Milan Laser Fredericksburg",
     state: "VA",
     neighborhood: "Fredericksburg",
@@ -7355,7 +7355,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Fredericksburg location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-leesburg-leesburg",
+    slug: "milan-laser-leesburg",
     name: "Milan Laser Leesburg",
     state: "VA",
     neighborhood: "Leesburg",
@@ -7375,7 +7375,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Leesburg location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-manassas-manassas",
+    slug: "milan-laser-manassas",
     name: "Milan Laser Manassas",
     state: "VA",
     neighborhood: "Manassas",
@@ -7395,7 +7395,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Manassas location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-newport-news-newport-news",
+    slug: "milan-laser-newport-news",
     name: "Milan Laser Newport News",
     state: "VA",
     neighborhood: "Newport News",
@@ -7415,7 +7415,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Newport News location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-norfolk-norfolk",
+    slug: "milan-laser-norfolk",
     name: "Milan Laser Norfolk",
     state: "VA",
     neighborhood: "Norfolk",
@@ -7435,7 +7435,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Norfolk location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-richmond-richmond",
+    slug: "milan-laser-richmond",
     name: "Milan Laser Richmond",
     state: "VA",
     neighborhood: "Richmond",
@@ -7455,7 +7455,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Richmond location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-virginia-beach-virginia-beach",
+    slug: "milan-laser-virginia-beach",
     name: "Milan Laser Virginia Beach",
     state: "VA",
     neighborhood: "Virginia Beach",
@@ -7494,7 +7494,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Downtown location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-lacey-lacey",
+    slug: "milan-laser-lacey",
     name: "Milan Laser Lacey",
     state: "WA",
     neighborhood: "Lacey",
@@ -7514,7 +7514,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Lacey location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-richland-richland",
+    slug: "milan-laser-richland",
     name: "Milan Laser Richland",
     state: "WA",
     neighborhood: "Richland",
@@ -7553,7 +7553,7 @@ seed({
     highlights: ["Google 4.7★ public rating", "Bellevue location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-seattle-seattle",
+    slug: "milan-laser-seattle",
     name: "Milan Laser Seattle",
     state: "WA",
     neighborhood: "Seattle",
@@ -7573,7 +7573,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Seattle location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-tacoma-tacoma",
+    slug: "milan-laser-tacoma",
     name: "Milan Laser Tacoma",
     state: "WA",
     neighborhood: "Tacoma",
@@ -7593,7 +7593,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Tacoma location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-vancouver-vancouver",
+    slug: "milan-laser-vancouver",
     name: "Milan Laser Vancouver",
     state: "WA",
     neighborhood: "Vancouver",
@@ -7613,7 +7613,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Vancouver location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-yakima-yakima",
+    slug: "milan-laser-yakima",
     name: "Milan Laser Yakima",
     state: "WA",
     neighborhood: "Yakima",
@@ -7633,7 +7633,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Yakima location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-appleton-appleton",
+    slug: "milan-laser-appleton",
     name: "Milan Laser Appleton",
     state: "WI",
     neighborhood: "Appleton",
@@ -7653,7 +7653,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Appleton location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-eau-claire-eau-claire",
+    slug: "milan-laser-eau-claire",
     name: "Milan Laser Eau Claire",
     state: "WI",
     neighborhood: "Eau Claire",
@@ -7673,7 +7673,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Eau Claire location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-green-bay-green-bay",
+    slug: "milan-laser-green-bay",
     name: "Milan Laser Green Bay",
     state: "WI",
     neighborhood: "Green Bay",
@@ -7693,7 +7693,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Green Bay location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-janesville-janesville",
+    slug: "milan-laser-janesville",
     name: "Milan Laser Janesville",
     state: "WI",
     neighborhood: "Janesville",
@@ -7713,7 +7713,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Janesville location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-la-crosse-la-crosse",
+    slug: "milan-laser-la-crosse",
     name: "Milan Laser La Crosse",
     state: "WI",
     neighborhood: "La Crosse",
@@ -7733,7 +7733,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "La Crosse location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-madison-madison",
+    slug: "milan-laser-madison",
     name: "Milan Laser Madison",
     state: "WI",
     neighborhood: "Madison",
@@ -7753,7 +7753,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Madison location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-milwaukee-milwaukee",
+    slug: "milan-laser-milwaukee",
     name: "Milan Laser Milwaukee",
     state: "WI",
     neighborhood: "Milwaukee",
@@ -7773,7 +7773,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Milwaukee location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-oshkosh-oshkosh",
+    slug: "milan-laser-oshkosh",
     name: "Milan Laser Oshkosh",
     state: "WI",
     neighborhood: "Oshkosh",
@@ -7793,7 +7793,7 @@ seed({
     highlights: ["Google 4.8★ public rating", "Oshkosh location", "Verified website"],
   }),
   seed({
-    slug: "milan-laser-wausau-wausau",
+    slug: "milan-laser-wausau",
     name: "Milan Laser Wausau",
     state: "WI",
     neighborhood: "Wausau",
@@ -8288,7 +8288,7 @@ seed({
     highlights: ["Google 4.7★ public rating", "Georgetown location", "Verified website"],
   }),
   seed({
-    slug: "skin-laundry-bethesda-bethesda",
+    slug: "skin-laundry-bethesda",
     name: "Skin Laundry Bethesda",
     state: "MD",
     neighborhood: "Bethesda",
@@ -8307,7 +8307,7 @@ seed({
     highlights: ["Google 4.7★ public rating", "Bethesda location", "Verified website"],
   }),
   seed({
-    slug: "skin-laundry-tysons-tysons",
+    slug: "skin-laundry-tysons",
     name: "Skin Laundry Tysons",
     state: "VA",
     neighborhood: "Tysons",
@@ -8383,7 +8383,7 @@ seed({
     highlights: ["Google 4.7★ public rating", "Willow Glen location", "Verified website"],
   }),
   seed({
-    slug: "skin-laundry-irvine-irvine",
+    slug: "skin-laundry-irvine",
     name: "Skin Laundry Irvine",
     state: "CA",
     neighborhood: "Irvine",
@@ -8421,7 +8421,7 @@ seed({
     highlights: ["Google 4.7★ public rating", "Fashion Island location", "Verified website"],
   }),
   seed({
-    slug: "skin-laundry-boulder-boulder",
+    slug: "skin-laundry-boulder",
     name: "Skin Laundry Boulder",
     state: "CO",
     neighborhood: "Boulder",
@@ -9386,14 +9386,14 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
       "skin-laundry-southpark-charlotte",
       "skin-laundry-rittenhouse-philadelphia",
       "skin-laundry-georgetown-washington",
-      "skin-laundry-bethesda-bethesda",
-      "skin-laundry-tysons-tysons",
+      "skin-laundry-bethesda",
+      "skin-laundry-tysons",
       "skin-laundry-summerlin-las-vegas",
       "skin-laundry-pearl-district-portland",
       "skin-laundry-willow-glen-san-jose",
-      "skin-laundry-irvine-irvine",
+      "skin-laundry-irvine",
       "skin-laundry-fashion-island-newport-beach",
-      "skin-laundry-boulder-boulder",
+      "skin-laundry-boulder",
     ].map((slug) => [
       slug,
       {
@@ -9491,19 +9491,19 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "skinspirit-pasadena-los-angeles": "photo-1556228578-0d85b1a4d571",
   "trifecta-med-spa-new-york": "photo-1608571423902-eed4a5ad8108",
   "smooth-synergy-new-york": "photo-1556228720-195a672e8a03",
-  "skinspirit-newport-beach-newport-beach": "photo-1629909613654-28e377c37b09",
+  "skinspirit-newport-beach": "photo-1629909613654-28e377c37b09",
   "ever-body-new-york": "photo-1570172619644-dfd03ed5d881",
   "skinspirit-la-jolla-san-diego": "photo-1519823551278-64ac92734fb1",
   "westside-aesthetics-los-angeles": "photo-1487412947147-5cebf100ffc2",
   "project-skin-md-new-york": "photo-1516975080664-ed2fc6a32937",
   "skinspirit-del-mar-san-diego": "photo-1544161515-4ab6ce6db874",
-  "skinspirit-san-francisco-san-francisco": "photo-1612817288484-6f916006741a",
-  "skinspirit-palo-alto-palo-alto": "photo-1515377905703-c4788e51af15",
+  "skinspirit-san-francisco": "photo-1612817288484-6f916006741a",
+  "skinspirit-palo-alto": "photo-1515377905703-c4788e51af15",
   "skinney-medspa-new-york": "photo-1612349317150-e413f6a5b16d",
   "skinspirit-noe-valley-san-francisco": "photo-1522335789203-aabd1fc54bc9",
   "skin-laundry-santa-monica-los-angeles": "photo-1556228578-0d85b1a4d571",
   "skinspirit-burlingame-san-francisco": "photo-1608571423902-eed4a5ad8108",
-  "skinspirit-walnut-creek-walnut-creek": "photo-1556228720-195a672e8a03",
+  "skinspirit-walnut-creek": "photo-1556228720-195a672e8a03",
   "skin-laundry-brentwood-los-angeles": "photo-1629909613654-28e377c37b09",
   "skinspirit-los-gatos-san-jose": "photo-1570172619644-dfd03ed5d881",
   "alchemy-43-los-angeles": "photo-1519823551278-64ac92734fb1",
@@ -9516,27 +9516,27 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "skinspirit-plano-dallas": "photo-1522335789203-aabd1fc54bc9",
   "skinspirit-nordstrom-northpark-dallas": "photo-1556228578-0d85b1a4d571",
   "skinspirit-fort-worth-dallas": "photo-1608571423902-eed4a5ad8108",
-  "skinspirit-austin-austin": "photo-1556228720-195a672e8a03",
+  "skinspirit-austin": "photo-1556228720-195a672e8a03",
   "the-few-institute-chicago": "photo-1629909613654-28e377c37b09",
   "reflections-med-spa-chicago": "photo-1570172619644-dfd03ed5d881",
-  "skinspirit-north-austin-austin": "photo-1519823551278-64ac92734fb1",
+  "skinspirit-north-austin": "photo-1519823551278-64ac92734fb1",
   "skinspirit-west-lake-hills-austin": "photo-1487412947147-5cebf100ffc2",
   "skinspirit-willow-glen-san-jose": "photo-1516975080664-ed2fc6a32937",
-  "skinspirit-scottsdale-scottsdale": "photo-1544161515-4ab6ce6db874",
+  "skinspirit-scottsdale": "photo-1544161515-4ab6ce6db874",
   "amerejuve-med-spa-houston": "photo-1612817288484-6f916006741a",
-  "skinspirit-biltmore-phoenix-phoenix": "photo-1515377905703-c4788e51af15",
+  "skinspirit-biltmore-phoenix": "photo-1515377905703-c4788e51af15",
   "eleven-med-spa-dallas": "photo-1612349317150-e413f6a5b16d",
   "mirror-mirror-beauty-boutique-houston": "photo-1522335789203-aabd1fc54bc9",
   "skinspirit-paradise-valley-phoenix": "photo-1556228578-0d85b1a4d571",
   "skinspirit-millburn-boston": "photo-1608571423902-eed4a5ad8108",
-  "skinspirit-nordstrom-scottsdale-scottsdale": "photo-1556228720-195a672e8a03",
+  "skinspirit-nordstrom-scottsdale": "photo-1556228720-195a672e8a03",
   "skinspirit-montclair-new-york": "photo-1629909613654-28e377c37b09",
   "avante-laser-medi-spa-houston": "photo-1570172619644-dfd03ed5d881",
   "genesis-lifestyle-medicine-dallas": "photo-1519823551278-64ac92734fb1",
-  "evolution-medspa-boston-boston": "photo-1487412947147-5cebf100ffc2",
+  "evolution-medspa-boston": "photo-1487412947147-5cebf100ffc2",
   "skinspirit-buckhead-atlanta": "photo-1516975080664-ed2fc6a32937",
   "skinspirit-dunwoody-atlanta": "photo-1544161515-4ab6ce6db874",
-  "skinspirit-denver-denver": "photo-1612817288484-6f916006741a",
+  "skinspirit-denver": "photo-1612817288484-6f916006741a",
   "skinspirit-bellevue-square-seattle": "photo-1515377905703-c4788e51af15",
   "skinspirit-kirkland-seattle": "photo-1612349317150-e413f6a5b16d",
   "skinspirit-university-village-seattle": "photo-1522335789203-aabd1fc54bc9",
@@ -9545,14 +9545,14 @@ export const NATIONWIDE_SPA_IMAGE_FALLBACKS: Record<string, string> = {
   "skinspirit-gaithersburg-washington": "photo-1556228720-195a672e8a03",
   "skinspirit-mclean-washington": "photo-1629909613654-28e377c37b09",
   "skinspirit-annapolis-washington": "photo-1570172619644-dfd03ed5d881",
-  "skinspirit-miami-miami": "photo-1519823551278-64ac92734fb1",
+  "skinspirit-miami": "photo-1519823551278-64ac92734fb1",
   "skinspirit-sarasota-miami": "photo-1487412947147-5cebf100ffc2",
-  "skinspirit-charlotte-charlotte": "photo-1516975080664-ed2fc6a32937",
-  "skinspirit-portland-portland": "photo-1544161515-4ab6ce6db874",
-  "skinspirit-salt-lake-city-salt-lake-city": "photo-1612817288484-6f916006741a",
+  "skinspirit-charlotte": "photo-1516975080664-ed2fc6a32937",
+  "skinspirit-portland": "photo-1544161515-4ab6ce6db874",
+  "skinspirit-salt-lake-city": "photo-1612817288484-6f916006741a",
   "skinspirit-wayzata-minneapolis": "photo-1515377905703-c4788e51af15",
   "skinspirit-lake-oswego-portland": "photo-1612349317150-e413f6a5b16d",
-  "skinspirit-honolulu-honolulu": "photo-1522335789203-aabd1fc54bc9",
+  "skinspirit-honolulu": "photo-1522335789203-aabd1fc54bc9",
   "advanced-skin-fitness-dallas": "photo-1556228578-0d85b1a4d571",
   "amy-brenner-md-associates-cincinnati": "photo-1608571423902-eed4a5ad8108",
   "cor-medspa-houston": "photo-1556228720-195a672e8a03",};

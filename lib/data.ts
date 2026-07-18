@@ -194,7 +194,7 @@ function buildSocials(seed: SpaSeed): SpaSocials {
 function seedSpa(data: SpaSeed): Spa {
   const state = data.state ?? "FL";
   const metro = data.metro;
-  const images = getSpaImages(data.slug);
+  const images = getSpaImages(data.slug, data.website);
   const website = data.website?.trim() ?? "";
   const phone =
     data.phone?.trim() && !isPlaceholderPhone(data.phone) ? data.phone.trim() : "";
