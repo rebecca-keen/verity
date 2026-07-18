@@ -1734,9 +1734,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Perfectly Bare Laser official website — services",
   },
-              "padgett-medical-center-tampa": {
+                "padgett-medical-center-tampa": {
     hero: "https://padgettmedical.com/wp-content/uploads/2025/03/Screenshot-2025-03-12-at-11.27.22-AM.png",
-    logo: "https://padgettmedical.com/wp-content/uploads/2023/02/cropped-PMC-tampa-ocala-192x192.png",
+    logo: "https://padgettmedical.com/apple-icon.png?apple-icon.30wyn7sv8124x.png",
     gallery: [
       "https://padgettmedical.com/wp-content/uploads/2026/03/Screenshot-2026-03-31-at-12.49.32-PM-300x256.png",
       "https://padgettmedical.com/wp-content/uploads/2025/06/Screenshot-2025-06-19-at-3.12.37%E2%80%AFPM.png",

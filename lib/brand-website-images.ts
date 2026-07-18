@@ -18,6 +18,7 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   },
   "skinspirit.com": {
     hero: "https://cdn.prod.website-files.com/64fb26e78d22031b6dda81de/6540bfbb8b854f25dbe5a42b_Skin-Spirit-Default-Open-Graph-Image.jpg",
+    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
     gallery: [
       "https://cdn.prod.website-files.com/64fb26e78d22031b6dda81de/6540bfbb8b854f25dbe5a42b_Skin-Spirit-Default-Open-Graph-Image.jpg",
       "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6a4535839a1381ff83d41b8f_%5B5.1.26%20WEB%5D%20Carousel%20Hero%20-%20Homepage.jpg",
@@ -35,6 +36,7 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   },
   "advancedskinfitness.com": {
     hero: "https://ik.imagekit.io/dc6lhf5cog/wp-content/uploads/2023/11/ASF-logo-3-black-gold-display-shape-only.png",
+    logo: "https://ik.imagekit.io/dc6lhf5cog/wp-content/uploads/2023/11/ASF-logo-3-black-gold-display-shape-only.png",
     gallery: [],
     source: "Advanced Skin Fitness official website",
   },
@@ -70,6 +72,7 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   },
   "ject.us": {
     hero: "https://ject.us/hubfs/JECT%20Logo.jpg",
+    logo: "https://ject.us/hubfs/JECT%20Logo.jpg",
     gallery: [],
     source: "JECT official website",
   },
@@ -80,6 +83,7 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   },
   "mirrormirrorhouston.com": {
     hero: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/logo_featimg.png",
+    logo: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/logo_featimg.png",
     gallery: [],
     source: "Mirror Mirror Beauty Boutique official website",
   },

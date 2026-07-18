@@ -575,6 +575,7 @@ for (const [slug, entry] of Object.entries(SPA_IMAGE_SETS)) {
 }
 
 export function getSpaImages(slug: string, website?: string): SpaImageSet {
+  const brand = getBrandWebsiteImages(website);
   const entry = SPA_IMAGE_SETS[slug];
   if (entry) {
     const gallery = entry.gallery.filter((u) => u && !isStockImageUrl(u));
@@ -583,16 +584,16 @@ export function getSpaImages(slug: string, website?: string): SpaImageSet {
         ? entry.hero
         : gallery.find((u) => !isStockImageUrl(u)) ?? "";
     if (hero || gallery.length > 0) {
+      const logo = entry.logo ?? brand?.logo;
       return {
         hero,
         gallery,
         source: entry.source,
-        ...(entry.logo ? { logo: entry.logo } : {}),
+        ...(logo ? { logo } : {}),
       };
     }
   }
 
-  const brand = getBrandWebsiteImages(website);
   if (brand) {
     return {
       hero: brand.hero,
