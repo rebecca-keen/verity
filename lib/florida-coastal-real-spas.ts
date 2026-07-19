@@ -899,7 +899,7 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
   },
                   "destin-medical-spa": {
     hero: "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-34.jpg",
-    logo: "/provider-logos/destin-medical-spa.jpg",
+    logo: "/provider-logos/destin-medical-spa.png",
     gallery: [
       "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-33.jpg",
       "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-32.jpg",
