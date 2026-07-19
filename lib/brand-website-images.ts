@@ -42,7 +42,7 @@ export const BRAND_WEBSITE_IMAGES: Record<string, BrandWebsiteImage> = {
   },
   "alchemy43.com": {
     hero: "https://alchemy43.com/_static_/background/og-image.jpg",
-    logo: "https://influx-site-assets.s3.us-west-2.amazonaws.com/alchemy43.com/logos/logo.png",
+    logo: "/provider-logos/alchemy-43-los-angeles.png",
     gallery: [],
     source: "Alchemy 43 official website",
   },
