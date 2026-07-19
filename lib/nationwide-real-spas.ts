@@ -12549,7 +12549,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "abq-med-spa-albuquerque": {
     hero: "",
-    logo: "https://www.abqmedspa.com/apple-touch-icon.png",
+    logo: "/provider-logos/abq-med-spa-albuquerque.png",
     gallery: [
 
     ],
@@ -12565,7 +12565,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "charleston-med-spa-charleston": {
     hero: "",
-    logo: "https://www.charlestonmedspa.com/apple-touch-icon.png",
+    logo: "/provider-logos/charleston-med-spa-charleston.png",
     gallery: [
 
     ],
@@ -12597,7 +12597,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "evolution-medspa-boston": {
     hero: "",
-    logo: "https://www.evolutionmedspaboston.com/apple-touch-icon.png",
+    logo: "/provider-logos/evolution-medspa-boston.png",
     gallery: [
 
     ],
@@ -12605,7 +12605,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "magnolia-medical-spa-jackson": {
     hero: "",
-    logo: "https://www.magnoliamedicalspa.com/apple-touch-icon.png",
+    logo: "/provider-logos/magnolia-medical-spa-jackson.png",
     gallery: [
 
     ],
