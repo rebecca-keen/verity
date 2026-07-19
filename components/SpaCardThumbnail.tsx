@@ -87,13 +87,9 @@ export function SpaCardThumbnail({ spa }: { spa: Spa }) {
     );
   }
 
-  if (!spa.website) {
-    return (
-      <div className="flex h-full items-center justify-center bg-gradient-to-b from-cream to-stone/5">
-        <SpaPlaceholderIcon />
-      </div>
-    );
-  }
-
-  return <div className="h-full bg-gradient-to-b from-cream to-stone/5" aria-hidden />;
+  return (
+    <div className="flex h-full items-center justify-center bg-gradient-to-b from-cream to-stone/5">
+      <SpaPlaceholderIcon />
+    </div>
+  );
 }

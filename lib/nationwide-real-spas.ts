@@ -9802,7 +9802,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "ever-body-new-york": {
     hero: "",
-    logo: "https://everbody.com/wp-content/uploads/2025/04/logo.svg",
+    logo: "/provider-logos/ever-body-new-york.svg",
     gallery: [
 
     ],
@@ -12581,7 +12581,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "cor-medspa-houston": {
     hero: "",
-    logo: "https://www.cormedspa.com/apple-touch-icon.png",
+    logo: "/provider-logos/cor-medspa-houston.png",
     gallery: [
 
     ],
@@ -12613,7 +12613,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   },
   "teton-dermatology-aesthetics-jackson": {
     hero: "",
-    logo: "https://www.tetondermatology.com/apple-touch-icon.png",
+    logo: "/provider-logos/teton-dermatology-aesthetics-jackson.png",
     gallery: [
 
     ],

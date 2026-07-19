@@ -14,6 +14,27 @@ type RemoteImageProps = {
   onFailed?: () => void;
 };
 
+function ImageFallbackIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden
+    >
+      <path d="M3 21h18" />
+      <path d="M5 21V7l7-4 7 4v14" />
+      <path d="M9 21v-6h6v6" />
+      <path d="M9 9h.01" />
+      <path d="M15 9h.01" />
+    </svg>
+  );
+}
+
 export function RemoteImage({
   src,
   alt,
@@ -33,11 +54,21 @@ export function RemoteImage({
     setFailed(true);
   }
 
-  if (failed) return null;
+  if (failed) {
+    const fallbackClass = fill
+      ? `absolute inset-0 flex items-center justify-center text-stone/40 ${className}`
+      : `flex items-center justify-center text-stone/40 ${className}`;
+    return (
+      <div className={fallbackClass} role="img" aria-label={alt}>
+        <ImageFallbackIcon className="h-1/2 w-1/2 max-h-8 max-w-8 min-h-[1.25rem] min-w-[1.25rem]" />
+      </div>
+    );
+  }
 
   const isUnsplash = src.includes("images.unsplash.com");
+  const isLocal = src.startsWith("/");
 
-  if (isUnsplash) {
+  if (isUnsplash || isLocal) {
     return (
       <Image
         src={src}
@@ -47,6 +78,7 @@ export function RemoteImage({
         sizes={sizes}
         priority={priority}
         onError={handleError}
+        unoptimized={isLocal && src.endsWith(".svg")}
       />
     );
   }
