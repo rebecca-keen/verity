@@ -1032,9 +1032,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Olympia Aesthetics & Wellness official website — services",
   },
-                "living-young-palm-harbor": {
+                  "living-young-palm-harbor": {
     hero: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
-    logo: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/02/cropped-favicon-180x180.png",
+    logo: "/provider-logos/living-young-palm-harbor.png",
     gallery: [
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-google.png",
@@ -1043,9 +1043,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Living Young Center — Palm Harbor official website — services",
   },
-              "moraitis-med-spa-palm-harbor": {
+                "moraitis-med-spa-palm-harbor": {
     hero: "https://moraitisplasticsurgery.com/wp-content/uploads/2025/02/Blog-Fallback-Img1.jpg",
-    logo: "https://moraitisplasticsurgery.com/wp-content/uploads/2025/03/Favicon-300x300.jpg",
+    logo: "/provider-logos/moraitis-med-spa-palm-harbor.jpg",
     gallery: [
 
     ],
@@ -1070,9 +1070,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Ageless Advanced Aesthetics official website — services",
   },
-              "medspa-bella-clearwater": {
+                "medspa-bella-clearwater": {
     hero: "https://medspabellaclearwater.com/images/og-image.jpg",
-    logo: "https://medspabellaclearwater.com/images/icons/apple-touch-icon-afd2886c17e20e8dbe6381d42ceae965.png",
+    logo: "/provider-logos/medspa-bella-clearwater.png",
     gallery: [
       "https://medspabellaclearwater.com/images/dianna-bryan-md-optimized-376a7923c337e6c7ac54e32d46fb2cbc.jpg",
     ],
@@ -1163,9 +1163,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Bloom IV Hydration & Wellness official website — services",
   },
-                "dunedin-well-spa": {
+                  "dunedin-well-spa": {
     hero: "https://dunedinwellspa.com/wp-content/uploads/2023/12/Hero_2.png",
-    logo: "https://dunedinwellspa.com/wp-content/uploads/2022/07/cropped-favicon-dunedinwellspa-180x180.jpeg",
+    logo: "/provider-logos/dunedin-well-spa.jpg",
     gallery: [
       "https://dunedinwellspa.com/wp-content/uploads/2023/12/Hero_2.png",
       "https://dunedinwellspa.com/wp-content/uploads/2022/06/30663575_s.jpg",
@@ -1173,9 +1173,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Dunedin Well Spa official website — homepage",
   },
-                "living-young-st-petersburg": {
+                  "living-young-st-petersburg": {
     hero: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
-    logo: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/02/cropped-favicon-180x180.png",
+    logo: "/provider-logos/living-young-st-petersburg.png",
     gallery: [
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-google.png",
@@ -1184,9 +1184,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Living Young Center — St. Petersburg official website — services",
   },
-                "iconcierge-medspa-st-pete": {
+                  "iconcierge-medspa-st-pete": {
     hero: "https://iconciergemedspa.com/wp-content/uploads/2026/02/iConcierge-Patient-Check-In-9619.jpg",
-    logo: "https://iconciergemedspa.com/wp-content/uploads/2025/11/cropped-Favicon-180x180.png",
+    logo: "/provider-logos/iconcierge-medspa-st-pete.png",
     gallery: [
 
     ],
@@ -1203,9 +1203,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "St. Pete Wellness Med Spa official website — services",
   },
-                "living-young-seminole": {
+                  "living-young-seminole": {
     hero: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
-    logo: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/02/cropped-favicon-180x180.png",
+    logo: "/provider-logos/living-young-seminole.png",
     gallery: [
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-google.png",
@@ -1214,9 +1214,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Living Young Center — Seminole official website — services",
   },
-                "living-young-odessa": {
+                  "living-young-odessa": {
     hero: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
-    logo: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/02/cropped-favicon-180x180.png",
+    logo: "/provider-logos/living-young-odessa.png",
     gallery: [
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-google.png",
@@ -1247,9 +1247,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Tre MedSpa official website — services",
   },
-                "tao-wellness-medspa-tampa": {
+                  "tao-wellness-medspa-tampa": {
     hero: "https://taowellnessmedspa.com/wp-content/uploads/2024/09/staff-member-at-tao-wellness-med-spa-1.png",
-    logo: "https://taowellnessmedspa.com/wp-content/uploads/2024/09/cropped-tao-wellness-favicon-graphic-1-180x180.png",
+    logo: "/provider-logos/tao-wellness-medspa-tampa.png",
     gallery: [
       "https://taowellnessmedspa.com/wp-content/uploads/2024/09/beautiful-elegant-woman-with-gold-jewlery-tao-wellness-medspa-2.png",
     ],
@@ -1265,9 +1265,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Cell Renew Medical Spa official website — homepage",
   },
-                "erasable-medspa-tampa": {
+                  "erasable-medspa-tampa": {
     hero: "https://erasablemedspa.com/wp-content/uploads/2024/02/DSC03002-Edit.jpg",
-    logo: "https://erasablemedspa.com/wp-content/uploads/2024/02/cropped-Favicon-1-180x180.png",
+    logo: "/provider-logos/erasable-medspa-tampa.png",
     gallery: [
       "https://erasablemedspa.com/wp-content/uploads/2024/02/DSC03002-Edit.jpg",
       "https://erasablemedspa.com/wp-content/uploads/2025/12/Erasable-Halo-Tribrid-4921-1024x683.jpg",
@@ -1286,9 +1286,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Arviv Medical Aesthetics official website — services",
   },
-                "4ever-young-tampa": {
+                  "4ever-young-tampa": {
     hero: "https://www.4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/service-look-your-best-n.jpeg",
-    logo: "https://4everyoungantiaging.com/wp-content/uploads/2024/05/cropped-4EverYoung-180x180.png",
+    logo: "/provider-logos/4ever-young-tampa.png",
     gallery: [
       "https://www.4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/service-feel-your-best-n-op.webp",
       "https://www.4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/service-feel-your-best-n.jpeg",
@@ -1297,9 +1297,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "4Ever Young — Tampa official website — services",
   },
-              "windermere-medical-spa-orlando": {
+                "windermere-medical-spa-orlando": {
     hero: "https://windermeremedicalspa.com/storage/elementor/thumbs/sculptra-windermere-medical-spa-in-orlando-fl-qiq20wdwpszni3p8bu1afitih49xve69oyjk4tp3gw.webp",
-    logo: "https://windermeremedicalspa.com/storage/2024/01/favicon-new-winder-mere-medspa-orlando-fl.png",
+    logo: "/provider-logos/windermere-medical-spa-orlando.png",
     gallery: [
       "https://windermeremedicalspa.com/storage/elementor/thumbs/lasers-winder-mere-medspa-orlando-fl-qiq20z7fab3igxl4vd96503w99w1ihhgpci0knkwy8.webp",
       "https://windermeremedicalspa.com/storage/elementor/thumbs/skin-windermere-medical-spa-in-orlando-fl-qiq20nxd0ao2lm1ip8dnb2yd4nfmy48onso6tc1n0w.webp",
@@ -1349,9 +1349,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Jax Aesthetics & Wellness Center official website — services",
   },
-                "focus-aesthetics-jacksonville": {
+                  "focus-aesthetics-jacksonville": {
     hero: "https://focusaestheticsjax.com/wp-content/uploads/Focus-Aesthetics-Featured-Image.jpg",
-    logo: "https://focusaestheticsjax.com/wp-content/uploads/cropped-siteicon-180x180.webp",
+    logo: "/provider-logos/focus-aesthetics-jacksonville.webp",
     gallery: [
 
     ],
@@ -1376,9 +1376,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Modern Aesthetic Centers official website — services",
   },
-                "cma-medicine-jacksonville": {
+                  "cma-medicine-jacksonville": {
     hero: "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2021/05/services-for-men.png?resize=500%2C500&#038;ssl=1",
-    logo: "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2025/03/cma-medicine-theme-favicon.png?fit=180%2C180&#038;ssl=1",
+    logo: "/provider-logos/cma-medicine-jacksonville.jpg",
     gallery: [
       "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/hair-removal-treatments-003.webp?resize=500%2C500&#038;ssl=1",
       "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/body-sculpting.webp?resize=500%2C500&#038;ssl=1",
@@ -1398,9 +1398,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Inside Out Med Spa official website — services",
   },
-                "4ever-young-fort-myers": {
+                  "4ever-young-fort-myers": {
     hero: "https://www.4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/service-look-your-best-n.jpeg",
-    logo: "https://4everyoungantiaging.com/wp-content/uploads/2024/05/cropped-4EverYoung-180x180.png",
+    logo: "/provider-logos/4ever-young-fort-myers.png",
     gallery: [
       "https://www.4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/service-feel-your-best-n-op.webp",
       "https://www.4everyoungantiaging.com/wp-content/themes/foureveryoung/assets/images/service-feel-your-best-n.jpeg",

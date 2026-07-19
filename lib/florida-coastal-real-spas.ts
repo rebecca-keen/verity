@@ -699,9 +699,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Injections and Co. official website — services",
   },
-                "eternal-medspa-sarasota": {
+                  "eternal-medspa-sarasota": {
     hero: "https://eternal-medspa.com/wp-content/uploads/2026/05/3.png",
-    logo: "https://eternal-medspa.com/wp-content/uploads/2025/12/cropped-favicon-180x180.png",
+    logo: "/provider-logos/eternal-medspa-sarasota.png",
     gallery: [
       "https://eternal-medspa.com/wp-content/uploads/2026/05/RankMath_FBImage.png",
       "https://eternal-medspa.com/wp-content/uploads/2026/05/3-4.png",
@@ -742,9 +742,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Bowtique Med Spa official website — services",
   },
-              "fort-lauderdale-medspa": {
+                "fort-lauderdale-medspa": {
     hero: "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/10/Botox.jpg",
-    logo: "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/10/favicon-300x300.png",
+    logo: "/provider-logos/fort-lauderdale-medspa.png",
     gallery: [
       "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/10/Filler.jpg",
       "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/09/Sculptra.jpg",
@@ -824,9 +824,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Anora Integrative Health and Aesthetics official website — services",
   },
-              "total-anti-aging-daytona": {
+                "total-anti-aging-daytona": {
     hero: "https://www.daytonasantiaging.com/wp-content/uploads/2024/06/Total-Aging-and-Wellness-Daytona-Beach-FL-hero-500x500.webp",
-    logo: "https://www.daytonasantiaging.com/wp-content/uploads/2023/07/Total-Aging-and-Wellness-Daytona-Beach-FL-favicon.png",
+    logo: "/provider-logos/total-anti-aging-daytona.png",
     gallery: [
       "https://www.daytonasantiaging.com/wp-content/uploads/2023/07/Total-Aging-and-Wellness-Daytona-Beach-FL-aesthetics-fillers.jpg",
       "https://www.daytonasantiaging.com/wp-content/uploads/2023/07/Total-Aging-and-Wellness-Daytona-Beach-FL-aesthetics-semaglutide-weight-loss.jpg",
@@ -843,9 +843,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Key West Med Spa official website — services",
   },
-              "keys-medspa-key-west": {
+                "keys-medspa-key-west": {
     hero: "https://www.keysmedspa.com/wp-content/uploads/2020/01/Laser_Treatments_Img.jpg",
-    logo: "https://www.keysmedspa.com/wp-content/uploads/fbrfg/apple-touch-icon.png",
+    logo: "/provider-logos/keys-medspa-key-west.png",
     gallery: [
       "https://www.keysmedspa.com/wp-content/uploads/2020/01/Skin_Rejuvenation_Imng.jpg",
       "https://www.keysmedspa.com/wp-content/uploads/2020/01/Injectables_Img.jpg",
@@ -886,9 +886,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Under the Palms MediSpa official website — services",
   },
-                "sb-medspa-destin": {
+                  "sb-medspa-destin": {
     hero: "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/Hydrafacial.png",
-    logo: "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/cropped-Favicon-1-180x180.jpg",
+    logo: "/provider-logos/sb-medspa-destin.jpg",
     gallery: [
       "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/American-Society-of-Laser-Medicine-and-Surgery-removebg-preview.png",
       "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/04/HP-Coolsculpting_2291188869.jpg",
@@ -916,9 +916,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Anti-Aging Skincare Clinic — Destin Plastic Surgery official website — services",
   },
-                "baldwin-medspa-panama-city": {
+                  "baldwin-medspa-panama-city": {
     hero: "https://baldwinmedspa.com/wp-content/uploads/2025/10/our-services-1-2.webp",
-    logo: "https://baldwinmedspa.com/wp-content/uploads/2026/03/cropped-11-180x180.png",
+    logo: "/provider-logos/baldwin-medspa-panama-city.png",
     gallery: [
       "https://baldwinmedspa.com/wp-content/uploads/2025/10/2-scaled.png",
       "https://baldwinmedspa.com/wp-content/uploads/2025/10/5.png",
@@ -960,9 +960,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Couture Med Spa — Kissimmee official website — services",
   },
-                "fountain-of-you-melbourne": {
+                  "fountain-of-you-melbourne": {
     hero: "https://fountainofyou.md/wp-content/uploads/2025/11/botox-med-spa-melbourne-fl-2.png",
-    logo: "https://fountainofyou.md/wp-content/uploads/2025/11/cropped-fountain-of-you-medical-spa-site-icon-180x180.png",
+    logo: "/provider-logos/fountain-of-you-melbourne.png",
     gallery: [
       "https://fountainofyou.md/wp-content/uploads/2025/11/sculptra-med-spa-melbourne-fl.png",
       "https://fountainofyou.md/wp-content/uploads/2025/11/restylane-med-spa-melbourne-fl.png",
