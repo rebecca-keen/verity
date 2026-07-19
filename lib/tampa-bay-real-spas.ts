@@ -662,7 +662,8 @@ export const tampaBayRealSpas: FloridaSpaSeed[] = [
     city: "Tampa",
     metro: "tampa-bay",
     tagline: "Medical weight loss, hormone therapy, and aesthetics in Tampa.",
-    description: "Padgett Medical Center Tampa offers physician-supervised medical weight loss with compounded Semaglutide and Tirzepatide, hormone replacement and testosterone therapy (HRT/TRT), NAD+ wellness treatments, and med-spa aesthetics including Botox, dermal fillers, laser treatments, and facial rejuvenation. Google rating 4.9 from 981 reviews.",
+    description:
+      "Padgett Medical Center Tampa offers physician-supervised medical weight loss with compounded Semaglutide and Tirzepatide, hormone replacement and testosterone therapy (HRT/TRT), NAD+ wellness treatments, and med-spa aesthetics including Botox, dermal fillers, laser treatments, and facial rejuvenation. Google rating 4.9 from 981 reviews.",
     rating: 4.9,
     reviewCount: 981,
     verified: true,

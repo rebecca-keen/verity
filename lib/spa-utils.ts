@@ -389,7 +389,7 @@ export function inferTreatmentsFromCopy(
     return ["laser"];
   }
 
-  if (/weight\s*loss|semaglutide|tirzepatide|glp-?1|ozempic|wegovy|mounjaro|phentermine|bariatric/.test(text)) {
+  if (/weight\s*loss|medical weight loss|weight management|semaglutide|tirzepatide|glp-?1|ozempic|wegovy|mounjaro|phentermine|bariatric/.test(text)) {
     treatments.add("weight-loss");
   }
 
@@ -412,7 +412,7 @@ export function inferTreatmentsFromCopy(
   }
 
   if (
-    /hormone therapy|hormone replacement|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet/.test(
+    /hormone therapy|hormone replacement|bio-identical hormone|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet/.test(
       text
     )
   ) {
@@ -488,6 +488,22 @@ export function inferTreatmentsFromCopy(
     )
   ) {
     treatments.add("body-contouring");
+  }
+
+  if (
+    /weight loss|semaglutide|tirzepatide|glp-?1|ozempic|wegovy|mounjaro|phentermine|medical weight loss|weight management/.test(
+      text
+    )
+  ) {
+    treatments.add("weight-loss");
+  }
+
+  if (
+    /hormone therapy|hormone replacement|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet|\btrt\b|testosterone therapy|low testosterone|men'?s health|women'?s health|menopause|bio-identical hormone/.test(
+      text
+    )
+  ) {
+    treatments.add("hormone-therapy");
   }
 
   if (

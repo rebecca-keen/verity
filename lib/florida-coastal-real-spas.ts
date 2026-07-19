@@ -499,7 +499,7 @@ export const floridaCoastalRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Dr. Nitin Bawa, MD",
     licenseId: "FL-REAL-10060",
     yearsOpen: 20,
-    treatments: ["botox", "fillers", "laser", "body-contouring", "weight-loss", "iv-therapy"],
+    treatments: ["botox", "fillers", "laser", "body-contouring", "weight-loss", "iv-therapy", "hormone-therapy", "wellness"],
     priceRange: "$$$",
     instagram: "sbmedspa",
     productSlugs: ["eltamd-uv-clear", "skinmedica-ha5"],

@@ -154,7 +154,7 @@ def infer_treatments(
         return ["laser"]
 
     if re.search(
-        r"weight\s*loss|semaglutide|tirzepatide|glp-?1|ozempic|wegovy|mounjaro|phentermine|bariatric",
+        r"weight\s*loss|medical weight loss|weight management|semaglutide|tirzepatide|glp-?1|ozempic|wegovy|mounjaro|phentermine|bariatric",
         blob,
     ):
         treatments.add("weight-loss")
@@ -233,6 +233,7 @@ def infer_treatments(
         blob,
     ):
         treatments.add("body-contouring")
+
 
     if (
         re.search(
