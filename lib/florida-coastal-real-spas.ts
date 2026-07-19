@@ -699,9 +699,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Injections and Co. official website — services",
   },
-              "eternal-medspa-sarasota": {
+                "eternal-medspa-sarasota": {
     hero: "https://eternal-medspa.com/wp-content/uploads/2026/05/3.png",
-    logo: "https://eternal-medspa.com/wp-content/uploads/2025/12/cropped-favicon-192x192.png",
+    logo: "https://eternal-medspa.com/wp-content/uploads/2025/12/cropped-favicon-180x180.png",
     gallery: [
       "https://eternal-medspa.com/wp-content/uploads/2026/05/RankMath_FBImage.png",
       "https://eternal-medspa.com/wp-content/uploads/2026/05/3-4.png",
@@ -886,9 +886,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Under the Palms MediSpa official website — services",
   },
-              "sb-medspa-destin": {
+                "sb-medspa-destin": {
     hero: "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/Hydrafacial.png",
-    logo: "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/cropped-Favicon-1-192x192.jpg",
+    logo: "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/cropped-Favicon-1-180x180.jpg",
     gallery: [
       "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/American-Society-of-Laser-Medicine-and-Surgery-removebg-preview.png",
       "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/04/HP-Coolsculpting_2291188869.jpg",
@@ -908,17 +908,17 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Destin Medical Spa official website — services",
   },
-              "destin-plastic-surgery-medspa": {
+                "destin-plastic-surgery-medspa": {
     hero: "https://www.theplasticdoc.com/og-image.jpg",
-    logo: "https://www.theplasticdoc.com/favicon.ico",
+    logo: "https://www.theplasticdoc.com/og-image.jpg",
     gallery: [
 
     ],
     source: "Anti-Aging Skincare Clinic — Destin Plastic Surgery official website — services",
   },
-              "baldwin-medspa-panama-city": {
+                "baldwin-medspa-panama-city": {
     hero: "https://baldwinmedspa.com/wp-content/uploads/2025/10/our-services-1-2.webp",
-    logo: "https://baldwinmedspa.com/wp-content/uploads/2026/03/cropped-11-192x192.png",
+    logo: "https://baldwinmedspa.com/wp-content/uploads/2026/03/cropped-11-180x180.png",
     gallery: [
       "https://baldwinmedspa.com/wp-content/uploads/2025/10/2-scaled.png",
       "https://baldwinmedspa.com/wp-content/uploads/2025/10/5.png",
@@ -960,9 +960,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Couture Med Spa — Kissimmee official website — services",
   },
-              "fountain-of-you-melbourne": {
+                "fountain-of-you-melbourne": {
     hero: "https://fountainofyou.md/wp-content/uploads/2025/11/botox-med-spa-melbourne-fl-2.png",
-    logo: "https://fountainofyou.md/wp-content/uploads/2025/11/cropped-fountain-of-you-medical-spa-site-icon-192x192.png",
+    logo: "https://fountainofyou.md/wp-content/uploads/2025/11/cropped-fountain-of-you-medical-spa-site-icon-180x180.png",
     gallery: [
       "https://fountainofyou.md/wp-content/uploads/2025/11/sculptra-med-spa-melbourne-fl.png",
       "https://fountainofyou.md/wp-content/uploads/2025/11/restylane-med-spa-melbourne-fl.png",

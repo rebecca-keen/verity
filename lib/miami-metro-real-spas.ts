@@ -1243,9 +1243,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "VIIV WELLNESS HAUS official website — services",
   },
-                "shay-novi-aesthetics-wellness-miami": {
+                  "shay-novi-aesthetics-wellness-miami": {
     hero: "https://shaynovi.com/wp-content/uploads/2024/11/hero-new-1.jpg",
-    logo: "https://shaynovi.com/wp-content/uploads/2024/11/cropped-favicon-192x192.png",
+    logo: "https://shaynovi.com/wp-content/uploads/2024/11/cropped-favicon-180x180.png",
     gallery: [
       "https://shaynovi.com/wp-content/uploads/celebrity-news.png",
       "https://shaynovi.com/wp-content/uploads/nbc.png",
@@ -1276,9 +1276,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Infinity Beauty Lab Med Spa official website — services",
   },
-                "miami-skin-spa-aesthetics-wellness-miami": {
+                  "miami-skin-spa-aesthetics-wellness-miami": {
     hero: "https://www.miamiskinspa.com/og-default.jpg",
-    logo: "https://www.miamiskinspa.com/favicon.ico",
+    logo: "https://www.miamiskinspa.com/og-default.jpg",
     gallery: [
       "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
       "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
@@ -1444,7 +1444,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
   },
                           "bodywelle-miami-beach": {
     hero: "https://alonsomartinmd.com/wp-content/uploads/elementor/thumbs/chemical-peel-treatment-types-01-rn6jq8e9qmz7hsgbe8mflexk9k7abu1m8l0yrfpbgw.jpg",
-    logo: "https://alonsomartinmd.com/wp-content/uploads/2025/05/bodywelle-logo-tagline.svg",
+    logo: "/provider-logos/bodywelle-miami-beach.svg",
     gallery: [
 
     ],
@@ -1570,9 +1570,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "White Coat Med Spa official website",
   },
-                "bella-vida-aesthetics-wellness-miami": {
+                  "bella-vida-aesthetics-wellness-miami": {
     hero: "https://bellavidaaesthetics.com/wp-content/uploads/2024/03/bella-vida-aesthetics-in-miami-sm.jpg",
-    logo: "https://bellavidaaesthetics.com/wp-content/uploads/2022/09/cropped-BVA_Favicon-192x192.jpg",
+    logo: "https://bellavidaaesthetics.com/wp-content/uploads/2022/09/cropped-BVA_Favicon-180x180.jpg",
     gallery: [
       "https://bellavidaaesthetics.com/wp-content/uploads/2025/02/Photo-Jan-15-2024-10-58-26-PM-1-1-scaled.jpg",
       "https://bellavidaaesthetics.com/wp-content/uploads/2023/10/neurotoxin-at-bella-vida-img.jpg",
@@ -1581,9 +1581,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Bella Vida Aesthetics & Wellness official website",
   },
-                "4beauty-medspa-miami": {
+                  "4beauty-medspa-miami": {
     hero: "https://4beautymedspa.com/wp-content/uploads/2024/08/slider.jpg",
-    logo: "https://4beautymedspa.com/wp-content/uploads/2024/08/cropped-favicon-192x192.webp",
+    logo: "https://4beautymedspa.com/wp-content/uploads/2024/08/cropped-favicon-180x180.webp",
     gallery: [
       "https://4beautymedspa.com/wp-content/uploads/2024/09/photo2.jpg",
       "https://4beautymedspa.com/wp-content/uploads/2024/09/Laser-treatments.jpg",
