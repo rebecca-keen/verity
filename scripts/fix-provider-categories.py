@@ -13,6 +13,7 @@ SEED_FILES = sorted(ROOT.glob("lib/*-real-spas.ts"))
 REPORT_PATH = ROOT / "scripts" / "category-fix-report.json"
 
 GENERIC_LISTS = {
+    tuple(sorted(["botox", "laser", "facial"])),
     tuple(sorted(["botox", "fillers", "laser", "facial"])),
     tuple(sorted(["botox", "fillers", "laser", "facial", "microneedling"])),
 }
@@ -118,7 +119,7 @@ def infer_treatments(name: str, description: str, tagline: str, highlights: list
         treatments.add("weight-loss")
 
     if re.search(
-        r"hormone therapy|hormone replacement|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet",
+        r"hormone therapy|hormone replacement|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet|\btrt\b|testosterone therapy|low testosterone|men'?s health|women'?s health|menopause|bio-identical hormone",
         blob,
     ):
         treatments.add("hormone-therapy")

@@ -16,12 +16,11 @@ const TAG_COLORS: Record<Treatment, string> = {
 
 type TreatmentTagsProps = {
   treatments: Treatment[];
-  max?: number;
 };
 
-export function TreatmentTags({ treatments, max = 4 }: TreatmentTagsProps) {
-  const visible = treatments.slice(0, max);
-  if (visible.length === 0) return null;
+export function TreatmentTags({ treatments }: TreatmentTagsProps) {
+  if (treatments.length === 0) return null;
+  const visible = treatments;
 
   return (
     <div className="flex flex-wrap gap-1.5">

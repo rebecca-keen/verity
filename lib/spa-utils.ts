@@ -319,6 +319,7 @@ export function getCategoryLabel(cat: TreatmentCategory) {
 }
 
 const GENERIC_TREATMENT_LISTS: Treatment[][] = [
+  ["botox", "laser", "facial"],
   ["botox", "fillers", "laser", "facial"],
   ["botox", "fillers", "laser", "facial", "microneedling"],
 ];
@@ -390,7 +391,7 @@ export function inferTreatmentsFromCopy(description: string, tagline: string, na
   }
 
   if (
-    /hormone therapy|hormone replacement|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet/.test(
+    /hormone therapy|hormone replacement|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet|\btrt\b|testosterone therapy|low testosterone|men'?s health|women'?s health|menopause|bio-identical hormone/.test(
       text
     )
   ) {
@@ -457,7 +458,7 @@ export function deriveTreatmentCategories(treatments: Treatment[]): TreatmentCat
   if (treatments.includes("weight-loss")) cats.add("weight-loss");
   if (treatments.includes("hormone-therapy")) cats.add("hormone-therapy");
   if (treatments.includes("hair-restoration")) cats.add("hair-restoration");
-  return Array.from(cats);
+  return TREATMENT_BROWSE_ORDER.filter((cat) => cats.has(cat));
 }
 
 export const TREATMENT_CATEGORY_FILTERS: { label: string; value: TreatmentCategory | "All" }[] = [
