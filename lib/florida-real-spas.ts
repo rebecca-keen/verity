@@ -1021,9 +1021,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
-              "olympia-aesthetics-palm-harbor": {
+                "olympia-aesthetics-palm-harbor": {
     hero: "https://olympiaaesthetics.com/wp-content/uploads/elementor/thumbs/Olympia-156-rjm252d0md94exhibj0g6b3aovmcq7x1kikrqj8vao.png",
-    logo: "https://olympiaaesthetics.com/wp-content/uploads/2023/09/Black-Monogram.png",
+    logo: "/provider-logos/olympia-aesthetics-palm-harbor.png",
     gallery: [
       "https://olympiaaesthetics.com/wp-content/uploads/2023/09/AdobeStock_121023286-768x513.jpeg",
       "https://olympiaaesthetics.com/wp-content/uploads/2023/09/AdobeStock_98421571-768x512.png",
@@ -1086,9 +1086,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Aurivita Med Spa official website — services",
   },
-              "skinspirations-clearwater": {
+                "skinspirations-clearwater": {
     hero: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/6a037510-1836-4310-a2c9-139933db016b/hero-idx-1225.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/caaaaab5-49c7-4349-a887-f117fa50682c/ss-logo-02dk.png?format=1500w",
+    logo: "/provider-logos/skinspirations-clearwater.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/853d2a28-cd7f-481e-b72b-90e839260d44/sp-package-03.webp",
       "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/b0ff0067-acfd-43e0-aee7-6cda2fab9719/dr-elliott-md-patient-01.jpg",
@@ -1097,9 +1097,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Skinspirations official website — services",
   },
-              "tranquility-aesthetics-tarpon-springs": {
+                "tranquility-aesthetics-tarpon-springs": {
     hero: "https://static.wixstatic.com/media/838826_dbd1dde14ee941318a2bb14c1070df4e~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01/838826_dbd1dde14ee941318a2bb14c1070df4e~mv2.jpg",
-    logo: "https://static.wixstatic.com/media/838826_0f2b67a976084bc69857218a1c3cb702%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/838826_0f2b67a976084bc69857218a1c3cb702%7Emv2.png",
+    logo: "/provider-logos/tranquility-aesthetics-tarpon-springs.png",
     gallery: [
       "https://static.wixstatic.com/media/838826_dbd1dde14ee941318a2bb14c1070df4e~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01/838826_dbd1dde14ee941318a2bb14c1070df4e~mv2.jpg",
       "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/69862db0b148745252b7d5c9_ENVYME-OPENGRAPH.png",
@@ -1107,9 +1107,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Tranquility Aesthetics official website — homepage",
   },
-                "envy-me-aesthetics-tarpon-springs": {
+                  "envy-me-aesthetics-tarpon-springs": {
     hero: "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/699f19de2990d0f8c6462f85_Lip-Envy-Signature-Service-Before.jpg",
-    logo: "/provider-logos/envy-me-aesthetics-tarpon-springs.svg",
+    logo: "/provider-logos/envy-me-aesthetics-tarpon-springs.png",
     gallery: [
       "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/699f19f2be8b3b9dc25a7dc6_Lip-Envy-Signature-Service-After.jpg",
       "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/69f92bf59c01fad8b7339ef1_gallery-dermal-filler-1.jpg",
@@ -1118,9 +1118,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Envy Me Aesthetics official website — services",
   },
-                "tonicity-health-safety-harbor": {
+                  "tonicity-health-safety-harbor": {
     hero: "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
-    logo: "https://tonicityhealth.com/wp-content/uploads/2021/03/Logo-300x300.png",
+    logo: "/provider-logos/tonicity-health-safety-harbor.png",
     gallery: [
       "https://tonicityhealth.com/wp-content/uploads/2021/03/Spa-Banner-image.jpg",
       "https://tonicityhealth.com/wp-content/uploads/2021/03/Skin-Treatment-2.jpg",
@@ -1147,9 +1147,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Elemence Med Spa official website — services",
   },
-                  "dunedin-medical-aesthetics-laser": {
+                    "dunedin-medical-aesthetics-laser": {
     hero: "https://static.wixstatic.com/media/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg/v1/crop/x_0,y_38,w_802,h_662/fill/w_489,h_404,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fotona%20face%20lift%20picture.jpg",
-    logo: "/provider-logos/dunedin-medical-aesthetics-laser.ico",
+    logo: "/provider-logos/dunedin-medical-aesthetics-laser.png",
     gallery: [
 
     ],
@@ -1192,9 +1192,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "iConcierge Med Spa official website — services",
   },
-              "st-pete-wellness-medspa": {
+                "st-pete-wellness-medspa": {
     hero: "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2025/11/PRF-Under-Eye-Treatment-St.-Pete-e1762884123186.jpg?fit=300%2C300&amp;ssl=1",
-    logo: "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2023/01/cropped-unnamed-3.png?fit=192%2C192&#038;ssl=1",
+    logo: "/provider-logos/st-pete-wellness-medspa.png",
     gallery: [
       "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2024/11/Image-7.jpeg?fit=350%2C100&amp;ssl=1",
       "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2023/01/LASER-HAIR-REMOVAL-3.png?fit=1080%2C1080&amp;ssl=1",
@@ -1236,9 +1236,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "LIVIA Medical Spa & Aesthetics official website — services",
   },
-                "tre-medspa-tampa": {
+                  "tre-medspa-tampa": {
     hero: "https://www.tremedspa.com/uploads/7/3/5/3/73536135/published/8031713.jpg?1488882462",
-    logo: "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider1_orig.webp",
+    logo: "/provider-logos/tre-medspa-tampa.webp",
     gallery: [
       "https://www.tremedspa.com/uploads/7/3/5/3/73536135/slider1_orig.webp",
       "https://www.tremedspa.com/files/theme/slide2.jpg",
@@ -1308,9 +1308,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Windermere Medical Spa & Laser Institute official website — services",
   },
-              "rejuvin-dr-fazeli-orlando": {
+                "rejuvin-dr-fazeli-orlando": {
     hero: "https://rejuvinorlando.com/wp-content/uploads/2026/03/wellness-02.jpg",
-    logo: "https://rejuvinorlando.com/wp-content/uploads/2026/03/logo-rejuvin-01.png",
+    logo: "/provider-logos/rejuvin-dr-fazeli-orlando.png",
     gallery: [
       "https://rejuvinorlando.com/wp-content/plugins/accessibility-onetap/assets/images/spanish.png",
       "https://rejuvinorlando.com/wp-content/uploads/2026/03/download-app-01.jpg",
@@ -1319,17 +1319,17 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Rejuvin by Dr. Fazeli official website — services",
   },
-              "nur-medspa-orlando": {
+                "nur-medspa-orlando": {
     hero: "https://www.thenurmedspa.com/nur-banner.jpg",
-    logo: "https://thenurmedspa.com/apple-icon.png",
+    logo: "/provider-logos/nur-medspa-orlando.png",
     gallery: [
 
     ],
     source: "NUR Med Spa & Wellness official website — services",
   },
-                "luxe-medspa-orlando": {
+                  "luxe-medspa-orlando": {
     hero: "https://luxemedspaaesthetics.com/_static_/feature/esthetician-services.jpg",
-    logo: "/provider-logos/luxe-medspa-orlando.png",
+    logo: "/provider-logos/luxe-medspa-orlando.jpg",
     gallery: [
       "https://luxemedspaaesthetics.com/_static_/feature/intro.jpg",
       "https://luxemedspaaesthetics.com/_static_/feature/injectables.jpg",
@@ -1365,9 +1365,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Concierge Cosmetics & Aesthetics official website — services",
   },
-              "modern-aesthetic-centers-jacksonville": {
+                "modern-aesthetic-centers-jacksonville": {
     hero: "https://www.macflorida.com/assets/img/feature/home/wellness-services.jpg",
-    logo: "https://www.macflorida.com/assets/img/logo-white.svg",
+    logo: "/provider-logos/modern-aesthetic-centers-jacksonville.svg",
     gallery: [
       "https://www.macflorida.com/assets/img/feature/home/injectables-fillers.jpg",
       "https://www.macflorida.com/assets/img/feature/home/skin-hair-rejuvenation.jpg",
@@ -1409,9 +1409,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "4Ever Young — Fort Myers official website — services",
   },
-              "simplicity-medspa-tampa-bay": {
+                "simplicity-medspa-tampa-bay": {
     hero: "https://images.squarespace-cdn.com/content/v1/69b070b0bf4c126463da8661/1773170886477-3D794WVQPSI9PO6MSER8/iStock-1496615019.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/69b070b0bf4c126463da8661/d6516ef7-331c-453c-ad74-6a1155281b17/Simplicity+Horizontal+Logo.png?format=1500w",
+    logo: "/provider-logos/simplicity-medspa-tampa-bay.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/69b070b0bf4c126463da8661/c78d2ab6-d31d-45bc-b3e8-8a895793277c/Tox.png",
       "https://images.squarespace-cdn.com/content/v1/69b070b0bf4c126463da8661/252a3304-0819-4c90-b578-4a967211c660/Dermal+Filler.png",

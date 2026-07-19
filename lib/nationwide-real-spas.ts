@@ -8634,9 +8634,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
-        "cienega-medical-west-hollywood": {
+          "cienega-medical-west-hollywood": {
     hero: "https://cienegaspa.com/wp-content/uploads/2016/06/cienega-medical-west-hollywood-reception-botox-mural.jpg",
-    logo: "/provider-logos/cienega-medical-west-hollywood.png",
+    logo: "/provider-logos/cienega-medical-west-hollywood.jpg",
     gallery: [
       "https://cienegaspa.com/wp-content/uploads/2016/06/cienega-medical-santa-monica-reception-area.jpg",
       "https://cienegaspa.com/wp-content/uploads/2021/09/cienega-medical-front-desk-reception-los-angeles.jpg.jpeg",
@@ -8645,17 +8645,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Cienega Medical official website — services",
   },
-        "beverly-wilshire-aesthetics": {
+          "beverly-wilshire-aesthetics": {
     hero: "https://www.bwaesthetics.com/wp-content/uploads/2025/10/BWA-Total-Transformation-Supreme-Skin%E2%84%A2-scaled-e1776707415668.jpg",
-    logo: "/provider-logos/beverly-wilshire-aesthetics.jpg",
+    logo: "/provider-logos/beverly-wilshire-aesthetics.png",
     gallery: [
 
     ],
     source: "Beverly Wilshire Aesthetics official website — services",
   },
-        "la-jolla-cosmetic-med-spa": {
+          "la-jolla-cosmetic-med-spa": {
     hero: "https://www.ljcmedspa.com/content/themes/etna-interactive-site/images/banners-mobile/botox.jpg",
-    logo: "/provider-logos/la-jolla-cosmetic-med-spa.png",
+    logo: "/provider-logos/la-jolla-cosmetic-med-spa.jpg",
     gallery: [
       "https://www.ljcmedspa.com/content/themes/etna-interactive-site/images/banners-mobile/dermal-fillers.jpg",
       "https://www.ljcmedspa.com/content/themes/etna-interactive-site/images/banners-mobile/halo.jpg",
@@ -8739,9 +8739,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "ELLEMES Medical Spa official website — services",
   },
-      "zahav-medspa-scottsdale": {
+        "zahav-medspa-scottsdale": {
     hero: "https://zahavmedspa.com/wp-content/uploads/2024/05/B1DFB790-A8CA-418E-A3CC-1699403AC5B7-1.jpg",
-    logo: "https://zahavmedspa.com/wp-content/uploads/2023/05/cropped-Zahav-Logo-10-192x192.jpg",
+    logo: "/provider-logos/zahav-medspa-scottsdale.jpg",
     gallery: [
       "https://zahavmedspa.com/wp-content/uploads/2023/05/Group-17.png",
       "https://zahavmedspa.com/wp-content/uploads/2024/05/167CA910-3DEF-4980-B1B6-201981FA4B89-1-1024x1024.jpg",
@@ -8782,17 +8782,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Injector 5280 official website — services",
   },
-        "pure-med-spa-chicago": {
+          "pure-med-spa-chicago": {
     hero: "https://www.puremedicalspa.com/cgi-sys/images/x.png",
-    logo: "https://www.puremedicalspa.us/wp-content/uploads/2025/06/pure-logo-web-1.png",
+    logo: "/provider-logos/pure-med-spa-chicago.png",
     gallery: [
 
     ],
     source: "PURE Medical Spa official website — services",
   },
-        "las-vegas-dermatology": {
+          "las-vegas-dermatology": {
     hero: "https://lasvegasdermatology.com/wp-content/uploads/2021/06/FillerPhotos.jpg",
-    logo: "/provider-logos/las-vegas-dermatology.jpg",
+    logo: "/provider-logos/las-vegas-dermatology.png",
     gallery: [
       "https://lasvegasdermatology.com/wp-content/uploads/2020/11/botox2-copy.jpg",
       "https://lasvegasdermatology.com/wp-content/uploads/2020/11/drbotox.jpg",
@@ -8801,9 +8801,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Las Vegas Dermatology official website — services",
   },
-      "vio-med-spa-charlotte": {
+        "vio-med-spa-charlotte": {
     hero: "https://viomedspa.com/charlotte/wp-content/uploads/2026/03/Hero-micro.jpg",
-    logo: "https://viomedspa.com/charlotte/wp-content/uploads/2026/04/512x512.png",
+    logo: "/provider-logos/vio-med-spa-charlotte.png",
     gallery: [
       "https://viomedspa.com/charlotte/wp-content/uploads/2026/03/Laser-Hair-Removal-Header-2-150x150.png",
       "https://viomedspa.com/charlotte/wp-content/uploads/2026/05/QUIZ-1200x1200.jpg",
@@ -8841,9 +8841,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Deep Med Spa official website — services",
   },
-      "bold-confidence-aesthetics-san-diego": {
+        "bold-confidence-aesthetics-san-diego": {
     hero: "https://static.showit.co/1200/Mtp3bCF0XOJ2VersrTaurA/272273/boldconfidence2025_126.jpg",
-    logo: "/provider-logos/bold-confidence-aesthetics-san-diego.png",
+    logo: "/provider-logos/bold-confidence-aesthetics-san-diego.jpg",
     gallery: [
       "https://static.showit.co/1200/z0PrjwzEnCVWrM5eMQBOrQ/272273/bold_confidence_aesthetics_san_deigo_laura_32.jpg",
       "https://static.showit.co/1200/H9W7dOz5Cr98-codv8BjCw/272273/bold_confident80.jpg",
@@ -8851,9 +8851,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Bold Confidence Aesthetics official website — services",
   },
-      "sente-bella-medspa-downtown-sd": {
+        "sente-bella-medspa-downtown-sd": {
     hero: "https://sentebellaspa.com/wp-content/uploads/2022/11/MedSpa1.webp",
-    logo: "https://sentebellaspa.com/wp-content/uploads/2022/11/cropped-SB-Logo-7_4x-100-192x192.webp",
+    logo: "/provider-logos/sente-bella-medspa-downtown-sd.webp",
     gallery: [
       "https://sentebellaspa.com/wp-content/uploads/2022/11/Spa1.webp",
       "https://sentebellaspa.com/wp-content/uploads/2022/11/Massage.jpg",
@@ -8873,9 +8873,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Dermatology & Cosmetic Laser Center official website — services",
   },
-      "laser-clinique-san-diego": {
+        "laser-clinique-san-diego": {
     hero: "https://www.datocms-assets.com/44663/1616178683-homepage-injectable.jpg?auto=format,compress&w=500",
-    logo: "/provider-logos/laser-clinique-san-diego.png",
+    logo: "/provider-logos/laser-clinique-san-diego.jpg",
     gallery: [
       "https://www.datocms-assets.com/44663/1616630504-gallery-1.png?auto=format,compress&w=1605",
       "https://www.datocms-assets.com/44663/1720629433-simulated-results.png?auto=format,compress&w=200",
@@ -8884,9 +8884,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Laser Clinique official website — services",
   },
-    "persona-med-spa-houston": {
+      "persona-med-spa-houston": {
     hero: "https://cdn.prod.website-files.com/63cc46fa156c324ab6d90ce5/659893d1f4323adcd2beda68_procedure_1024.jpg",
-    logo: "https://cdn.prod.website-files.com/63cc46fa156c324ab6d90ce5/65822101f4316cedb7340ef9_llogo-tertiary.svg",
+    logo: "/provider-logos/persona-med-spa-houston.svg",
     gallery: [
       "https://cdn.prod.website-files.com/63cc46fa156c324ab6d90ce5/63cc5c8d15116f84ad601c7b_PersonaCulture-2_2_1024.jpg",
       "https://cdn.prod.website-files.com/63cc46fa156c324ab6d90ce5/63cc5d08d802df32647c1ac4_PersonaGroup2_2_1920.jpg",
@@ -8906,9 +8906,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin by Lovely official website — services",
   },
-    "skinspirations-houston": {
+      "skinspirations-houston": {
     hero: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/6a037510-1836-4310-a2c9-139933db016b/hero-idx-1225.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/caaaaab5-49c7-4349-a887-f117fa50682c/ss-logo-02dk.png?format=1500w",
+    logo: "/provider-logos/skinspirations-houston.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/853d2a28-cd7f-481e-b72b-90e839260d44/sp-package-03.webp",
       "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/b0ff0067-acfd-43e0-aee7-6cda2fab9719/dr-elliott-md-patient-01.jpg",
@@ -8917,9 +8917,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skinspirations Houston official website — services",
   },
-    "skinspirations-dallas": {
+      "skinspirations-dallas": {
     hero: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/a81d5a40-e6c6-459b-a7c4-80804f33a426/hero-services-01.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/caaaaab5-49c7-4349-a887-f117fa50682c/ss-logo-02dk.png?format=1500w",
+    logo: "/provider-logos/skinspirations-dallas.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/8479ba81-9312-4326-8924-cee2f6efa4e9/co-v-male-01.jpg",
       "https://images.squarespace-cdn.com/content/v1/67e3275166f1bf2a1f8f49c7/97cdabc2-bdaf-4bb9-99e4-152706b840f6/idx-hero-01.jpg",
@@ -8966,17 +8966,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Four Seasons Med Spa Austin official website — services",
   },
-          "dermalogix-med-spa-houston": {
+            "dermalogix-med-spa-houston": {
     hero: "https://www.discovermedspa.com/opengraph-image",
-    logo: "/provider-logos/dermalogix-med-spa-houston.svg",
+    logo: "/provider-logos/dermalogix-med-spa-houston.png",
     gallery: [
 
     ],
     source: "Dermalogix Med Spa official website — services",
   },
-    "skinspirit-austin": {
+      "skinspirit-austin": {
     hero: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc938_treatments-hero.png",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6c4_logo-long.svg",
+    logo: "/provider-logos/skinspirit-austin.svg",
     gallery: [
       "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5da/67be5b90de122ba6ca5e8a2b_IPL-BBL-Photofacial.webp",
       "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5da/67be59a1f83e5afa465bbddf_Botox-Dysport.webp",
@@ -8996,9 +8996,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Eden Med Spa official website — services",
   },
-        "manhattan-aesthetics-36th-st": {
+          "manhattan-aesthetics-36th-st": {
     hero: "https://www.manhattan-aesthetics.com/wp-content/themes/manhattan-aesthetics-2024/img/body-treatments.jpg",
-    logo: "/provider-logos/manhattan-aesthetics-36th-st.webp",
+    logo: "/provider-logos/manhattan-aesthetics-36th-st.png",
     gallery: [
       "https://www.manhattan-aesthetics.com/wp-content/themes/manhattan-aesthetics-2024/img/face-treatments.jpg",
       "https://www.manhattan-aesthetics.com/wp-content/themes/manhattan-aesthetics-2024/img/btx-fillers.jpg",
@@ -9040,9 +9040,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Radiant Beauty & Health official website — services",
   },
-    "viva-md-atlanta": {
+      "viva-md-atlanta": {
     hero: "https://static.wixstatic.com/media/af61e4_8d42f150ac404fd1b9f92992ce845546~mv2.png/v1/crop/x_0,y_1,w_635,h_798/fill/w_328,h_412,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/skincare-woman-and-needle-for-botox-cosm.png",
-    logo: "https://static.wixstatic.com/media/42d1cc_88991e53b1cd4f049a6e6e8d5ffcd082%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/42d1cc_88991e53b1cd4f049a6e6e8d5ffcd082%7Emv2.jpg",
+    logo: "/provider-logos/viva-md-atlanta.jpg",
     gallery: [
       "https://static.wixstatic.com/media/af61e4_14c26d7a235e45d7898d27ecb1673546~mv2.png/v1/fill/w_513,h_545,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Smooth_Wrinkles_with_Botox_in_Bournemout.png",
       "https://static.wixstatic.com/media/af61e4_6b153edd4f8445ca9ebc7b90771742dc~mv2.jpg/v1/fill/w_98,h_148,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/af61e4_6b153edd4f8445ca9ebc7b90771742dc~mv2.jpg",
@@ -9082,9 +9082,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Bella Medspa official website — services",
   },
-    "skinceuticals-skinlab-atlanta": {
+      "skinceuticals-skinlab-atlanta": {
     hero: "https://www.skinatl.com/wp-content/uploads/2024/01/SL-ATL-Injectable-treatment-op.jpg",
-    logo: "https://www.skinatl.com/wp-content/uploads/2025/02/SkinLab_Atlanta_Joint_Logo_H_white-2.png",
+    logo: "/provider-logos/skinceuticals-skinlab-atlanta.png",
     gallery: [
       "https://www.skinatl.com/wp-content/uploads/2024/02/sig-facials-and-peels-scaled-e1708031060663-1.jpg",
       "https://www.skinatl.com/wp-content/uploads/2024/01/SL-ATL-REJuVENATION-op.jpg",
@@ -9093,9 +9093,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "SkinCeuticals SkinLab Atlanta official website — services",
   },
-    "radiance-med-spa-atlanta": {
+      "radiance-med-spa-atlanta": {
     hero: "https://www.radiancemedspa.com/wp-content/uploads/2025/08/bbl-hero-for-men-belleairbluffs-fl-card.jpg",
-    logo: "https://www.radiancemedspa.com/wp-content/uploads/2025/01/cropped-cropped-small-logo-4-radiance-medspa-in-Belleair-Bluff-Florida-e1685048412501-192x192.webp",
+    logo: "/provider-logos/radiance-med-spa-atlanta.webp",
     gallery: [
       "https://www.radiancemedspa.com/wp-content/uploads/2026/05/BB-20-Anniversary.png",
       "https://www.radiancemedspa.com/wp-content/uploads/2025/08/fillers-results-belleair-bluffs-no254803-01-1024x640.jpg",
@@ -9104,9 +9104,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Radiance Med Spa official website — services",
   },
-    "scottsdale-med-spa": {
+      "scottsdale-med-spa": {
     hero: "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/07/DSC03078-scaled-1.webp?fit=800%2C534&amp;ssl=1",
-    logo: "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/10/cropped-Logo.webp?fit=192%2C192&#038;ssl=1",
+    logo: "/provider-logos/scottsdale-med-spa.png",
     gallery: [
       "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/09/In-the-Zona.png?fit=800%2C176&amp;ssl=1",
       "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/07/DSC02908-scaled-1.webp?fit=800%2C534&amp;ssl=1",
@@ -9126,9 +9126,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Look Lab Med Spa official website — services",
   },
-    "north-scottsdale-med-spa": {
+      "north-scottsdale-med-spa": {
     hero: "https://images.squarespace-cdn.com/content/v1/6835f653958ab2782be44660/aeb84c30-8739-4fc8-9c53-b096634a9623/Medspa+in+Phoenix%2C+AZ%2C+85054+%7C+Laser+Treatments+Near+Me.png",
-    logo: "https://images.squarespace-cdn.com/content/v1/6835f653958ab2782be44660/065f7905-f697-433b-92b8-84b0a89bd67a/North+Scottsdale+Med+Spa+Logo.png",
+    logo: "/provider-logos/north-scottsdale-med-spa.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/6835f653958ab2782be44660/f528b732-6d9b-4b0d-a406-985d5c5745c9/North+Scottsdale+Medspa+-+Background.png",
       "https://images.squarespace-cdn.com/content/v1/6835f653958ab2782be44660/f5b91a73-27e4-4dff-b5e6-b0dacca046b4/Top+Tier+Medspa+in+Phoenix%2C+AZ%2C+85054.jpeg",
@@ -9147,9 +9147,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Alchemy Med Bar & Medical Spa official website — services",
   },
-    "zona-med-spa-scottsdale": {
+      "zona-med-spa-scottsdale": {
     hero: "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/07/DSC03078-scaled-1.webp?fit=800%2C534&amp;ssl=1",
-    logo: "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/10/cropped-Logo.webp?fit=192%2C192&#038;ssl=1",
+    logo: "/provider-logos/zona-med-spa-scottsdale.png",
     gallery: [
       "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/09/In-the-Zona.png?fit=800%2C176&amp;ssl=1",
       "https://i0.wp.com/zonamedspa.com/wp-content/uploads/2025/07/DSC02908-scaled-1.webp?fit=800%2C534&amp;ssl=1",
@@ -9196,17 +9196,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "GOLDCOAST medspa official website — services",
   },
-    "river-north-wellness-med-spa": {
+      "river-north-wellness-med-spa": {
     hero: "https://i0.wp.com/box2308.temp.domains/~mikenowa/rivernorthwellness/wp/wp-content/uploads/2021/07/Bonnywelcomepage-1024x751.png?resize=750%2C550",
-    logo: "https://i0.wp.com/box2308.temp.domains/~mikenowa/rivernorthwellness/wp/wp-content/uploads/2021/07/Bonnywelcomepage-1024x751.png?resize=192%2C192",
+    logo: "/provider-logos/river-north-wellness-med-spa.png",
     gallery: [
 
     ],
     source: "River North Wellness and Med Spa official website — services",
   },
-      "old-town-med-spa-chicago": {
+        "old-town-med-spa-chicago": {
     hero: "https://www.oldtownmedspa.com/wp-content/uploads/2024/04/welcome-img@1.2x.jpg",
-    logo: "https://www.oldtownmedspa.com/wp-content/uploads/2026/04/Testimonial.jpg",
+    logo: "/provider-logos/old-town-med-spa-chicago.jpg",
     gallery: [
       "https://www.oldtownmedspa.com/wp-content/uploads/2024/03/specials-img@1.2x.jpg-1.jpg",
       "https://www.oldtownmedspa.com/wp-content/uploads/2024/03/drsGharbi@1.2x.jpg-1.jpg",
@@ -9237,9 +9237,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skinovatio Medical Spa official website — services",
   },
-      "denver-dream-medspa": {
+        "denver-dream-medspa": {
     hero: "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1725720289071-Q10Y4S2C1E9V80F2J241/Academy+prompts+photo+%286%29.png",
-    logo: "/provider-logos/denver-dream-medspa.jpg",
+    logo: "/provider-logos/denver-dream-medspa.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1781210933426-6A77YKWJZG9X9H0MPSS2/before+and+after+tox+at+denver+dream+medspa.png",
       "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1769031446744-8KJYH5FK09DHBAMNAUJB/35.png",
@@ -9389,9 +9389,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Flawless Medspa Las Vegas official website — services",
   },
-      "ageless-remedies-raleigh": {
+        "ageless-remedies-raleigh": {
     hero: "https://www.datocms-assets.com/161788/1750958706-service-card_injectables.jpg?auto=format,compress&w=1226",
-    logo: "/provider-logos/ageless-remedies-raleigh.svg",
+    logo: "/provider-logos/ageless-remedies-raleigh.jpg",
     gallery: [
       "https://www.datocms-assets.com/161788/1748983787-emsculpt-banner.jpg?auto=format,compress&w=672",
       "https://www.datocms-assets.com/161788/1750958764-service-card_lasre-rejuvenation.jpg?auto=format,compress&w=1226",
@@ -9411,9 +9411,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "BEYOND Collective official website — services",
   },
-      "canvas-skin-nashville": {
+        "canvas-skin-nashville": {
     hero: "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/1777037922407-NPPBI948N1I0I7VNXV01/image-asset.jpeg",
-    logo: "/provider-logos/canvas-skin-nashville.png",
+    logo: "/provider-logos/canvas-skin-nashville.jpg",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/1776870140577-KEC4ACZVBNNBSLJ6I9PV/image-asset.jpeg",
       "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/1776786440960-OZEFGPT43II8ZF7IIB4V/image-asset.jpeg",
@@ -9422,9 +9422,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Canvas Skin official website — services",
   },
-  "skinperfect-medical-sherman-oaks": {
+    "skinperfect-medical-sherman-oaks": {
     hero: "https://skinperfectmedical.com/wp-content/themes/skinperfectmedical_com/static/images/location-brea-2.jpeg",
-    logo: "https://skinperfectmedical.com/wp-content/themes/skinperfectmedical_com/static/images/skinperfect_20y_logo.png",
+    logo: "/provider-logos/skinperfect-medical-sherman-oaks.png",
     gallery: [
       "https://skinperfectmedical.com/wp-content/themes/skinperfectmedical_com/static/images/medical-spa-face-2.jpg",
       "https://skinperfectmedical.com/wp-content/themes/skinperfectmedical_com/static/images/medical-spa-body-2.jpg",
@@ -9433,9 +9433,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Perfect Medical official website — services",
   },
-  "skin-wellness-center-of-alabama-birmingham": {
+    "skin-wellness-center-of-alabama-birmingham": {
     hero: "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/about@2x.jpg",
-    logo: "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/logo@2x.png",
+    logo: "/provider-logos/skin-wellness-center-of-alabama-birmingham.png",
     gallery: [
       "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/botox@2x.jpg",
       "https://skinwellnesscenter.net/wp-content/themes/ui_skinwellness/img/fillers@2x.jpg",
@@ -10178,9 +10178,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser Clarksville official website — services",
   },
-  "milan-laser-cincinnati": {
+    "milan-laser-cincinnati": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-cincinnati.webp",
     gallery: [
 
     ],
@@ -10770,9 +10770,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser Lacey official website — services",
   },
-  "milan-laser-lakeland": {
+    "milan-laser-lakeland": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-lakeland.webp",
     gallery: [
 
     ],
@@ -11010,9 +11010,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser New Orleans official website — services",
   },
-  "milan-laser-new-haven": {
+    "milan-laser-new-haven": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-new-haven.webp",
     gallery: [
 
     ],
@@ -11122,9 +11122,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser Pensacola official website — services",
   },
-  "milan-laser-philadelphia": {
+    "milan-laser-philadelphia": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-philadelphia.webp",
     gallery: [
 
     ],
@@ -11306,394 +11306,394 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser Scranton official website — services",
   },
-  "milan-laser-seattle": {
+    "milan-laser-seattle": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-seattle.webp",
     gallery: [
 
     ],
     source: "Milan Laser Seattle official website — services",
   },
-  "milan-laser-shreveport": {
+    "milan-laser-shreveport": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-shreveport.webp",
     gallery: [
 
     ],
     source: "Milan Laser Shreveport official website — services",
   },
-  "milan-laser-spartanburg": {
+    "milan-laser-spartanburg": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-spartanburg.webp",
     gallery: [
 
     ],
     source: "Milan Laser Spartanburg official website — services",
   },
-  "milan-laser-southington": {
+    "milan-laser-southington": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-southington.webp",
     gallery: [
 
     ],
     source: "Milan Laser Southington official website — services",
   },
-  "milan-laser-sioux-falls": {
+    "milan-laser-sioux-falls": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-sioux-falls.webp",
     gallery: [
 
     ],
     source: "Milan Laser Sioux Falls official website — services",
   },
-  "milan-laser-springfield": {
+    "milan-laser-springfield": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-springfield.webp",
     gallery: [
 
     ],
     source: "Milan Laser Springfield official website — services",
   },
-  "milan-laser-sioux-city": {
+    "milan-laser-sioux-city": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-sioux-city.webp",
     gallery: [
 
     ],
     source: "Milan Laser Sioux City official website — services",
   },
-  "milan-laser-south-bend": {
+    "milan-laser-south-bend": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-south-bend.webp",
     gallery: [
 
     ],
     source: "Milan Laser South Bend official website — services",
   },
-  "milan-laser-st-louis": {
+    "milan-laser-st-louis": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-st-louis.webp",
     gallery: [
 
     ],
     source: "Milan Laser St Louis official website — services",
   },
-  "milan-laser-st-cloud": {
+    "milan-laser-st-cloud": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-st-cloud.webp",
     gallery: [
 
     ],
     source: "Milan Laser St Cloud official website — services",
   },
-  "milan-laser-springfield-springfield-2": {
+    "milan-laser-springfield-springfield-2": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-springfield-springfield-2.webp",
     gallery: [
 
     ],
     source: "Milan Laser Springfield official website — services",
   },
-  "milan-laser-state-college": {
+    "milan-laser-state-college": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-state-college.webp",
     gallery: [
 
     ],
     source: "Milan Laser State College official website — services",
   },
-  "milan-laser-springfield-springfield-3": {
+    "milan-laser-springfield-springfield-3": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-springfield-springfield-3.webp",
     gallery: [
 
     ],
     source: "Milan Laser Springfield official website — services",
   },
-  "milan-laser-stillwater": {
+    "milan-laser-stillwater": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-stillwater.webp",
     gallery: [
 
     ],
     source: "Milan Laser Stillwater official website — services",
   },
-  "milan-laser-tampa": {
+    "milan-laser-tampa": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-tampa.webp",
     gallery: [
 
     ],
     source: "Milan Laser Tampa official website — services",
   },
-  "milan-laser-temple": {
+    "milan-laser-temple": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-temple.webp",
     gallery: [
 
     ],
     source: "Milan Laser Temple official website — services",
   },
-  "milan-laser-syracuse": {
+    "milan-laser-syracuse": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-syracuse.webp",
     gallery: [
 
     ],
     source: "Milan Laser Syracuse official website — services",
   },
-  "milan-laser-toledo": {
+    "milan-laser-toledo": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-toledo.webp",
     gallery: [
 
     ],
     source: "Milan Laser Toledo official website — services",
   },
-  "milan-laser-tacoma": {
+    "milan-laser-tacoma": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-tacoma.webp",
     gallery: [
 
     ],
     source: "Milan Laser Tacoma official website — services",
   },
-  "milan-laser-tri-cities": {
+    "milan-laser-tri-cities": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-tri-cities.webp",
     gallery: [
 
     ],
     source: "Milan Laser Tri Cities official website — services",
   },
-  "milan-laser-tucson": {
+    "milan-laser-tucson": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-tucson.webp",
     gallery: [
 
     ],
     source: "Milan Laser Tucson official website — services",
   },
-  "milan-laser-topeka": {
+    "milan-laser-topeka": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-topeka.webp",
     gallery: [
 
     ],
     source: "Milan Laser Topeka official website — services",
   },
-  "milan-laser-tulsa": {
+    "milan-laser-tulsa": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-tulsa.webp",
     gallery: [
 
     ],
     source: "Milan Laser Tulsa official website — services",
   },
-  "milan-laser-twin-falls": {
+    "milan-laser-twin-falls": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-twin-falls.webp",
     gallery: [
 
     ],
     source: "Milan Laser Twin Falls official website — services",
   },
-  "milan-laser-tyler": {
+    "milan-laser-tyler": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-tyler.webp",
     gallery: [
 
     ],
     source: "Milan Laser Tyler official website — services",
   },
-  "milan-laser-utica": {
+    "milan-laser-utica": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-utica.webp",
     gallery: [
 
     ],
     source: "Milan Laser Utica official website — services",
   },
-  "milan-laser-tallahassee": {
+    "milan-laser-tallahassee": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-tallahassee.webp",
     gallery: [
 
     ],
     source: "Milan Laser Tallahassee official website — services",
   },
-  "milan-laser-valparaiso": {
+    "milan-laser-valparaiso": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-valparaiso.webp",
     gallery: [
 
     ],
     source: "Milan Laser Valparaiso official website — services",
   },
-  "milan-laser-vancouver": {
+    "milan-laser-vancouver": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-vancouver.webp",
     gallery: [
 
     ],
     source: "Milan Laser Vancouver official website — services",
   },
-  "milan-laser-waco": {
+    "milan-laser-waco": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-waco.webp",
     gallery: [
 
     ],
     source: "Milan Laser Waco official website — services",
   },
-  "milan-laser-vero-beach": {
+    "milan-laser-vero-beach": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-vero-beach.webp",
     gallery: [
 
     ],
     source: "Milan Laser Vero Beach official website — services",
   },
-  "milan-laser-virginia-beach": {
+    "milan-laser-virginia-beach": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-virginia-beach.webp",
     gallery: [
 
     ],
     source: "Milan Laser Virginia Beach official website — services",
   },
-  "milan-laser-washington": {
+    "milan-laser-washington": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-washington.webp",
     gallery: [
 
     ],
     source: "Milan Laser Washington official website — services",
   },
-  "milan-laser-warner-robins": {
+    "milan-laser-warner-robins": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-warner-robins.webp",
     gallery: [
 
     ],
     source: "Milan Laser Warner Robins official website — services",
   },
-  "milan-laser-west-chester": {
+    "milan-laser-west-chester": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-west-chester.webp",
     gallery: [
 
     ],
     source: "Milan Laser West Chester official website — services",
   },
-  "milan-laser-wichita": {
+    "milan-laser-wichita": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-wichita.webp",
     gallery: [
 
     ],
     source: "Milan Laser Wichita official website — services",
   },
-  "milan-laser-west-lafayette": {
+    "milan-laser-west-lafayette": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-west-lafayette.webp",
     gallery: [
 
     ],
     source: "Milan Laser West Lafayette official website — services",
   },
-  "milan-laser-wilkes-barre": {
+    "milan-laser-wilkes-barre": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-wilkes-barre.webp",
     gallery: [
 
     ],
     source: "Milan Laser Wilkes Barre official website — services",
   },
-  "milan-laser-wilmington": {
+    "milan-laser-wilmington": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-wilmington.webp",
     gallery: [
 
     ],
     source: "Milan Laser Wilmington official website — services",
   },
-  "milan-laser-wausau": {
+    "milan-laser-wausau": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-wausau.webp",
     gallery: [
 
     ],
     source: "Milan Laser Wausau official website — services",
   },
-  "milan-laser-winston-salem": {
+    "milan-laser-winston-salem": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-winston-salem.webp",
     gallery: [
 
     ],
     source: "Milan Laser Winston Salem official website — services",
   },
-  "milan-laser-yakima": {
+    "milan-laser-yakima": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-yakima.webp",
     gallery: [
 
     ],
     source: "Milan Laser Yakima official website — services",
   },
-  "mirror-mirror-beauty-boutique-houston": {
+    "mirror-mirror-beauty-boutique-houston": {
     hero: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/05/herobg@1.2x-2.avif",
-    logo: "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/02/logo.svg",
+    logo: "/provider-logos/mirror-mirror-beauty-boutique-houston.svg",
     gallery: [
       "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/office@1.2x.jpg",
       "https://www.mirrormirrorhouston.com/wp-content/uploads/2025/03/results@1.2x.jpg",
     ],
     source: "Mirror Mirror Beauty Boutique official website — services",
   },
-  "milan-laser-worcester": {
+    "milan-laser-worcester": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-worcester.webp",
     gallery: [
 
     ],
     source: "Milan Laser Worcester official website — services",
   },
-  "milan-laser-youngstown": {
+    "milan-laser-youngstown": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-youngstown.webp",
     gallery: [
 
     ],
     source: "Milan Laser Youngstown official website — services",
   },
-  "milan-laser-york": {
+    "milan-laser-york": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-york.webp",
     gallery: [
 
     ],
     source: "Milan Laser York official website — services",
   },
-  "priva-medspa-fairfield": {
+    "priva-medspa-fairfield": {
     hero: "",
-    logo: "https://www.datocms-assets.com/27087/1763574995-og-feat-2025.jpg",
+    logo: "/provider-logos/priva-medspa-fairfield.jpg",
     gallery: [
 
     ],
     source: "Privá MedSpa official website — services",
   },
-  "santa-fe-skin-institute-santa-fe": {
+    "santa-fe-skin-institute-santa-fe": {
     hero: "",
-    logo: "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:57,h:57,m",
+    logo: "/provider-logos/santa-fe-skin-institute-santa-fe.jpg",
     gallery: [
 
     ],
     source: "Santa Fe Skin Institute official website — services",
   },
-  "skin-beauty-bar-albuquerque": {
+    "skin-beauty-bar-albuquerque": {
     hero: "",
-    logo: "https://skinandbeautybar.com/wp-content/uploads/2026/05/skin-and-beauty-bar-icon-300x300.png",
+    logo: "/provider-logos/skin-beauty-bar-albuquerque.png",
     gallery: [
 
     ],
@@ -11707,841 +11707,841 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Project Skin MD official website — services",
   },
-  "reflections-med-spa-chicago": {
+    "reflections-med-spa-chicago": {
     hero: "",
-    logo: "https://static.wixstatic.com/media/89f8df_ee2074f6c61f4400bd3aee2533478563%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/89f8df_ee2074f6c61f4400bd3aee2533478563%7Emv2.png",
+    logo: "/provider-logos/reflections-med-spa-chicago.png",
     gallery: [
 
     ],
     source: "Reflections Med Spa official website — services",
   },
-  "revive-medical-spa-anchorage": {
+    "revive-medical-spa-anchorage": {
     hero: "",
-    logo: "https://revivemedspaak.com/wp-content/uploads/2023/03/cropped-Frame-6-180x180.png",
+    logo: "/provider-logos/revive-medical-spa-anchorage.png",
     gallery: [
 
     ],
     source: "Revive Medical Spa official website — services",
   },
-  "skin-laundry-bethesda": {
+    "skin-laundry-bethesda": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-bethesda.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Bethesda official website — services",
   },
-  "skin-laundry-back-bay-boston": {
+    "skin-laundry-back-bay-boston": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-back-bay-boston.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Boston official website — services",
   },
-  "skin-laundry-boulder": {
+    "skin-laundry-boulder": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-boulder.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Boulder official website — services",
   },
-  "skin-laundry-brentwood-los-angeles": {
+    "skin-laundry-brentwood-los-angeles": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-brentwood-los-angeles.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Brentwood official website — services",
   },
-  "skin-laundry-buckhead-atlanta": {
+    "skin-laundry-buckhead-atlanta": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-buckhead-atlanta.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Atlanta official website — services",
   },
-  "skin-laundry-capitol-hill-seattle": {
+    "skin-laundry-capitol-hill-seattle": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-capitol-hill-seattle.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Seattle official website — services",
   },
-  "skin-laundry-downtown-palo-alto": {
+    "skin-laundry-downtown-palo-alto": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-downtown-palo-alto.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Palo Alto official website — services",
   },
-  "skin-laundry-downtown-san-diego": {
+    "skin-laundry-downtown-san-diego": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-downtown-san-diego.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry San Diego official website — services",
   },
-  "skin-laundry-downtown-austin": {
+    "skin-laundry-downtown-austin": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-downtown-austin.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Austin official website — services",
   },
-  "skin-laundry-downtown-san-francisco": {
+    "skin-laundry-downtown-san-francisco": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-downtown-san-francisco.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry San Francisco official website — services",
   },
-  "skin-laundry-downtown-walnut-creek": {
+    "skin-laundry-downtown-walnut-creek": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-downtown-walnut-creek.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Walnut Creek official website — services",
   },
-  "skin-laundry-flatiron-new-york": {
+    "skin-laundry-flatiron-new-york": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-flatiron-new-york.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Flatiron official website — services",
   },
-  "skin-laundry-brickell-miami": {
+    "skin-laundry-brickell-miami": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-brickell-miami.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Miami official website — services",
   },
-  "skin-laundry-fashion-island-newport-beach": {
+    "skin-laundry-fashion-island-newport-beach": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-fashion-island-newport-beach.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Newport Beach official website — services",
   },
-  "skin-laundry-georgetown-washington": {
+    "skin-laundry-georgetown-washington": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-georgetown-washington.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Georgetown official website — services",
   },
-  "skin-laundry-galleria-houston": {
+    "skin-laundry-galleria-houston": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-galleria-houston.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Houston official website — services",
   },
-  "skin-laundry-irvine": {
+    "skin-laundry-irvine": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-irvine.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Irvine official website — services",
   },
-  "skin-laundry-la-jolla-san-diego": {
+    "skin-laundry-la-jolla-san-diego": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-la-jolla-san-diego.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry La Jolla official website — services",
   },
-  "skin-laundry-manhattan-beach-los-angeles": {
+    "skin-laundry-manhattan-beach-los-angeles": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-manhattan-beach-los-angeles.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Manhattan Beach official website — services",
   },
-  "skin-laundry-midtown-new-york": {
+    "skin-laundry-midtown-new-york": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-midtown-new-york.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Midtown official website — services",
   },
-  "skin-laundry-rittenhouse-philadelphia": {
+    "skin-laundry-rittenhouse-philadelphia": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-rittenhouse-philadelphia.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Philadelphia official website — services",
   },
-  "skin-laundry-pasadena-los-angeles": {
+    "skin-laundry-pasadena-los-angeles": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-pasadena-los-angeles.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Pasadena official website — services",
   },
-  "skin-laundry-pearl-district-portland": {
+    "skin-laundry-pearl-district-portland": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-pearl-district-portland.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Portland official website — services",
   },
-  "skin-laundry-river-north-chicago": {
+    "skin-laundry-river-north-chicago": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-river-north-chicago.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Chicago official website — services",
   },
-  "skin-laundry-old-town-scottsdale": {
+    "skin-laundry-old-town-scottsdale": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-old-town-scottsdale.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Scottsdale official website — services",
   },
-  "skin-laundry-santa-monica-los-angeles": {
+    "skin-laundry-santa-monica-los-angeles": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-santa-monica-los-angeles.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Santa Monica official website — services",
   },
-  "skin-laundry-southpark-charlotte": {
+    "skin-laundry-southpark-charlotte": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-southpark-charlotte.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Charlotte official website — services",
   },
-  "skin-laundry-summerlin-las-vegas": {
+    "skin-laundry-summerlin-las-vegas": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-summerlin-las-vegas.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Summerlin official website — services",
   },
-  "skin-laundry-tysons": {
+    "skin-laundry-tysons": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-tysons.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Tysons official website — services",
   },
-  "skin-laundry-uptown-dallas": {
+    "skin-laundry-uptown-dallas": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-uptown-dallas.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry Dallas official website — services",
   },
-  "skin-laundry-willow-glen-san-jose": {
+    "skin-laundry-willow-glen-san-jose": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-willow-glen-san-jose.jpg",
     gallery: [
 
     ],
     source: "Skin Laundry San Jose official website — services",
   },
-  "skin-medical-spa-anchorage": {
+    "skin-medical-spa-anchorage": {
     hero: "",
-    logo: "https://static1.squarespace.com/static/5c6c9fb0755be22978c55fc1/t/5db8794b56546e4d7a57feb1/1781900900749/skin-medical-spa-procedures.jpg?format=1500w",
+    logo: "/provider-logos/skin-medical-spa-anchorage.jpg",
     gallery: [
 
     ],
     source: "SKIN Medical Spa Anchorage official website — services",
   },
-  "skinspirit-annapolis-washington": {
+    "skinspirit-annapolis-washington": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-annapolis-washington.png",
     gallery: [
 
     ],
     source: "SkinSpirit Annapolis official website — services",
   },
-  "skinspirit-bellevue-square-seattle": {
+    "skinspirit-bellevue-square-seattle": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-bellevue-square-seattle.png",
     gallery: [
 
     ],
     source: "SkinSpirit Bellevue Square official website — services",
   },
-  "skinspirit-beverly-hills-los-angeles": {
+    "skinspirit-beverly-hills-los-angeles": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-beverly-hills-los-angeles.png",
     gallery: [
 
     ],
     source: "SkinSpirit Beverly Hills official website — services",
   },
-  "skinspirit-biltmore-phoenix": {
+    "skinspirit-biltmore-phoenix": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-biltmore-phoenix.png",
     gallery: [
 
     ],
     source: "SkinSpirit Biltmore Phoenix official website — services",
   },
-  "skinspirit-brentwood-los-angeles": {
+    "skinspirit-brentwood-los-angeles": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-brentwood-los-angeles.png",
     gallery: [
 
     ],
     source: "SkinSpirit Brentwood official website — services",
   },
-  "skin-retreat-medspa-philadelphia": {
+    "skin-retreat-medspa-philadelphia": {
     hero: "",
-    logo: "https://static1.squarespace.com/static/67192accdc5ab92560c30ace/t/68cd749a466b913bd11f19a0/1758295194150/IMG_0099.JPG?format=1500w",
+    logo: "/provider-logos/skin-retreat-medspa-philadelphia.jpg",
     gallery: [
 
     ],
     source: "Skin Retreat Medspa official website — services",
   },
-  "skin-spa-new-mexico-albuquerque": {
+    "skin-spa-new-mexico-albuquerque": {
     hero: "",
-    logo: "https://skinspanm.com/wp-content/uploads/2025/01/symbol-min-3-300x300.png",
+    logo: "/provider-logos/skin-spa-new-mexico-albuquerque.png",
     gallery: [
 
     ],
     source: "Skin Spa New Mexico official website — services",
   },
-  "skinspirit-buckhead-atlanta": {
+    "skinspirit-buckhead-atlanta": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-buckhead-atlanta.png",
     gallery: [
 
     ],
     source: "SkinSpirit Buckhead official website — services",
   },
-  "skinspirit-burlingame-san-francisco": {
+    "skinspirit-burlingame-san-francisco": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-burlingame-san-francisco.png",
     gallery: [
 
     ],
     source: "SkinSpirit Burlingame official website — services",
   },
-  "skinspirit-charlotte": {
+    "skinspirit-charlotte": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-charlotte.png",
     gallery: [
 
     ],
     source: "SkinSpirit Charlotte official website — services",
   },
-  "skinspirit-del-mar-san-diego": {
+    "skinspirit-del-mar-san-diego": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-del-mar-san-diego.png",
     gallery: [
 
     ],
     source: "SkinSpirit Del Mar official website — services",
   },
-  "skinspirit-denver": {
+    "skinspirit-denver": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-denver.png",
     gallery: [
 
     ],
     source: "SkinSpirit Denver official website — services",
   },
-  "skinspirit-danville": {
+    "skinspirit-danville": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-danville.png",
     gallery: [
 
     ],
     source: "SkinSpirit Danville official website — services",
   },
-  "skinspirit-dublin": {
+    "skinspirit-dublin": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-dublin.png",
     gallery: [
 
     ],
     source: "SkinSpirit Dublin official website — services",
   },
-  "skinspirit-downtown-austin": {
+    "skinspirit-downtown-austin": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-downtown-austin.png",
     gallery: [
 
     ],
     source: "SkinSpirit Austin official website — services",
   },
-  "skinspirit-dunwoody-atlanta": {
+    "skinspirit-dunwoody-atlanta": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-dunwoody-atlanta.png",
     gallery: [
 
     ],
     source: "SkinSpirit Dunwoody official website — services",
   },
-  "skinspirit-fort-worth-dallas": {
+    "skinspirit-fort-worth-dallas": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-fort-worth-dallas.png",
     gallery: [
 
     ],
     source: "SkinSpirit Fort Worth official website — services",
   },
-  "skinspirit-gaithersburg-washington": {
+    "skinspirit-gaithersburg-washington": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-gaithersburg-washington.png",
     gallery: [
 
     ],
     source: "SkinSpirit Gaithersburg official website — services",
   },
-  "skinspirit-georgetown-dc": {
+    "skinspirit-georgetown-dc": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-georgetown-dc.png",
     gallery: [
 
     ],
     source: "SkinSpirit Georgetown official website — services",
   },
-  "skinspirit-green-lake-seattle": {
+    "skinspirit-green-lake-seattle": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-green-lake-seattle.png",
     gallery: [
 
     ],
     source: "SkinSpirit Green Lake official website — services",
   },
-  "skinspirit-east-89th-new-york": {
+    "skinspirit-east-89th-new-york": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-east-89th-new-york.png",
     gallery: [
 
     ],
     source: "SkinSpirit East 89th official website — services",
   },
-  "skinspirit-honolulu": {
+    "skinspirit-honolulu": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-honolulu.png",
     gallery: [
 
     ],
     source: "SkinSpirit Honolulu official website — services",
   },
-  "skinspirit-katy-houston": {
+    "skinspirit-katy-houston": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-katy-houston.png",
     gallery: [
 
     ],
     source: "SkinSpirit Katy official website — services",
   },
-  "skinspirit-lake-oswego-portland": {
+    "skinspirit-lake-oswego-portland": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-lake-oswego-portland.png",
     gallery: [
 
     ],
     source: "SkinSpirit Lake Oswego official website — services",
   },
-  "skinspirit-la-jolla-san-diego": {
+    "skinspirit-la-jolla-san-diego": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-la-jolla-san-diego.png",
     gallery: [
 
     ],
     source: "SkinSpirit La Jolla official website — services",
   },
-  "skinspirit-kirkland-seattle": {
+    "skinspirit-kirkland-seattle": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-kirkland-seattle.png",
     gallery: [
 
     ],
     source: "SkinSpirit Kirkland official website — services",
   },
-  "skinspirit-long-beach-los-angeles": {
+    "skinspirit-long-beach-los-angeles": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-long-beach-los-angeles.png",
     gallery: [
 
     ],
     source: "SkinSpirit Long Beach official website — services",
   },
-  "skinspirit-los-gatos-san-jose": {
+    "skinspirit-los-gatos-san-jose": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-los-gatos-san-jose.png",
     gallery: [
 
     ],
     source: "SkinSpirit Los Gatos official website — services",
   },
-  "skinney-medspa-new-york": {
+    "skinney-medspa-new-york": {
     hero: "",
-    logo: "https://skinneymedspa.com/wp-content/uploads/2025/10/cropped-skinney-medspa-favicon-logo-24-180x180.webp",
+    logo: "/provider-logos/skinney-medspa-new-york.webp",
     gallery: [
 
     ],
     source: "SKINNEY Medspa official website — services",
   },
-  "skinspirit-mclean-washington": {
+    "skinspirit-mclean-washington": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-mclean-washington.png",
     gallery: [
 
     ],
     source: "SkinSpirit McLean official website — services",
   },
-  "skinspirit-miami": {
+    "skinspirit-miami": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-miami.png",
     gallery: [
 
     ],
     source: "SkinSpirit Miami official website — services",
   },
-  "skinspirit-mill-valley": {
+    "skinspirit-mill-valley": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-mill-valley.png",
     gallery: [
 
     ],
     source: "SkinSpirit Mill Valley official website — services",
   },
-  "skinspirit-millburn-boston": {
+    "skinspirit-millburn-boston": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-millburn-boston.png",
     gallery: [
 
     ],
     source: "SkinSpirit Millburn official website — services",
   },
-  "skinspirit-manhattan-beach-los-angeles": {
+    "skinspirit-manhattan-beach-los-angeles": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-manhattan-beach-los-angeles.png",
     gallery: [
 
     ],
     source: "SkinSpirit Manhattan Beach official website — services",
   },
-  "skinspirit-montclair-new-york": {
+    "skinspirit-montclair-new-york": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-montclair-new-york.png",
     gallery: [
 
     ],
     source: "SkinSpirit Montclair official website — services",
   },
-  "skinspirit-nordstrom-nyc-new-york": {
+    "skinspirit-nordstrom-nyc-new-york": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-nordstrom-nyc-new-york.png",
     gallery: [
 
     ],
     source: "SkinSpirit Nordstrom NYC official website — services",
   },
-  "skinspirit-nordstrom-bellevue-seattle": {
+    "skinspirit-nordstrom-bellevue-seattle": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-nordstrom-bellevue-seattle.png",
     gallery: [
 
     ],
     source: "SkinSpirit Nordstrom Bellevue official website — services",
   },
-  "skinspirit-nordstrom-scottsdale": {
+    "skinspirit-nordstrom-scottsdale": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-nordstrom-scottsdale.png",
     gallery: [
 
     ],
     source: "SkinSpirit Nordstrom Scottsdale official website — services",
   },
-  "skinspirit-nordstrom-northpark-dallas": {
+    "skinspirit-nordstrom-northpark-dallas": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-nordstrom-northpark-dallas.png",
     gallery: [
 
     ],
     source: "SkinSpirit Nordstrom NorthPark official website — services",
   },
-  "skinspirit-newport-beach": {
+    "skinspirit-newport-beach": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-newport-beach.png",
     gallery: [
 
     ],
     source: "SkinSpirit Newport Beach official website — services",
   },
-  "skinspirit-nordstrom-topanga-los-angeles": {
+    "skinspirit-nordstrom-topanga-los-angeles": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-nordstrom-topanga-los-angeles.png",
     gallery: [
 
     ],
     source: "SkinSpirit Nordstrom Topanga official website — services",
   },
-  "skinspirit-oakbrook-nordstrom-chicago": {
+    "skinspirit-oakbrook-nordstrom-chicago": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-oakbrook-nordstrom-chicago.png",
     gallery: [
 
     ],
     source: "SkinSpirit Oakbrook Nordstrom official website — services",
   },
-  "skinspirit-north-austin": {
+    "skinspirit-north-austin": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-north-austin.png",
     gallery: [
 
     ],
     source: "SkinSpirit North Austin official website — services",
   },
-  "skinspirit-palo-alto": {
+    "skinspirit-palo-alto": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-palo-alto.png",
     gallery: [
 
     ],
     source: "SkinSpirit Palo Alto official website — services",
   },
-  "skinspirit-paradise-valley-phoenix": {
+    "skinspirit-paradise-valley-phoenix": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-paradise-valley-phoenix.png",
     gallery: [
 
     ],
     source: "SkinSpirit Paradise Valley official website — services",
   },
-  "skinspirit-park-ridge-chicago": {
+    "skinspirit-park-ridge-chicago": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-park-ridge-chicago.png",
     gallery: [
 
     ],
     source: "SkinSpirit Park Ridge official website — services",
   },
-  "skinspirit-pasadena-los-angeles": {
+    "skinspirit-pasadena-los-angeles": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-pasadena-los-angeles.png",
     gallery: [
 
     ],
     source: "SkinSpirit Pasadena official website — services",
   },
-  "skinspirit-portland": {
+    "skinspirit-portland": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-portland.png",
     gallery: [
 
     ],
     source: "SkinSpirit Portland official website — services",
   },
-  "skinspirit-plano-dallas": {
+    "skinspirit-plano-dallas": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-plano-dallas.png",
     gallery: [
 
     ],
     source: "SkinSpirit Plano official website — services",
   },
-  "skinspirit-preston-royal-dallas": {
+    "skinspirit-preston-royal-dallas": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-preston-royal-dallas.png",
     gallery: [
 
     ],
     source: "SkinSpirit Preston Royal official website — services",
   },
-  "skinspirit-princeton-nj": {
+    "skinspirit-princeton-nj": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-princeton-nj.png",
     gallery: [
 
     ],
     source: "SkinSpirit Princeton official website — services",
   },
-  "skinspirit-noe-valley-san-francisco": {
+    "skinspirit-noe-valley-san-francisco": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-noe-valley-san-francisco.png",
     gallery: [
 
     ],
     source: "SkinSpirit Noe Valley official website — services",
   },
-  "skinspirit-rice-village-houston": {
+    "skinspirit-rice-village-houston": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-rice-village-houston.png",
     gallery: [
 
     ],
     source: "SkinSpirit Rice Village official website — services",
   },
-  "skinspirit-redmond-seattle": {
+    "skinspirit-redmond-seattle": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-redmond-seattle.png",
     gallery: [
 
     ],
     source: "SkinSpirit Redmond official website — services",
   },
-  "skinspirit-roslyn-heights-long-island": {
+    "skinspirit-roslyn-heights-long-island": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-roslyn-heights-long-island.png",
     gallery: [
 
     ],
     source: "SkinSpirit Roslyn Heights official website — services",
   },
-  "skinspirit-roseville": {
+    "skinspirit-roseville": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-roseville.png",
     gallery: [
 
     ],
     source: "SkinSpirit Roseville official website — services",
   },
-  "skinspirit-salt-lake-city": {
+    "skinspirit-salt-lake-city": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-salt-lake-city.png",
     gallery: [
 
     ],
     source: "SkinSpirit Salt Lake City official website — services",
   },
-  "skinspirit-sarasota-miami": {
+    "skinspirit-sarasota-miami": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-sarasota-miami.png",
     gallery: [
 
     ],
     source: "SkinSpirit Sarasota official website — services",
   },
-  "skinspirit-san-francisco": {
+    "skinspirit-san-francisco": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-san-francisco.png",
     gallery: [
 
     ],
     source: "SkinSpirit San Francisco official website — services",
   },
-  "skinspirit-scottsdale": {
+    "skinspirit-scottsdale": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-scottsdale.png",
     gallery: [
 
     ],
     source: "SkinSpirit Scottsdale official website — services",
   },
-  "skinspirit-tribeca-new-york": {
+    "skinspirit-tribeca-new-york": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-tribeca-new-york.png",
     gallery: [
 
     ],
     source: "SkinSpirit Tribeca official website — services",
   },
-  "skinspirit-walnut-creek": {
+    "skinspirit-walnut-creek": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-walnut-creek.png",
     gallery: [
 
     ],
     source: "SkinSpirit Walnut Creek official website — services",
   },
-  "skinspirit-west-village-new-york": {
+    "skinspirit-west-village-new-york": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-west-village-new-york.png",
     gallery: [
 
     ],
     source: "SkinSpirit West Village official website — services",
   },
-  "skinspirit-west-lake-hills-austin": {
+    "skinspirit-west-lake-hills-austin": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-west-lake-hills-austin.png",
     gallery: [
 
     ],
     source: "SkinSpirit West Lake Hills official website — services",
   },
-  "skinspirit-university-village-seattle": {
+    "skinspirit-university-village-seattle": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-university-village-seattle.png",
     gallery: [
 
     ],
     source: "SkinSpirit University Village official website — services",
   },
-  "skinspirit-wayzata-minneapolis": {
+    "skinspirit-wayzata-minneapolis": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-wayzata-minneapolis.png",
     gallery: [
 
     ],
     source: "SkinSpirit Wayzata official website — services",
   },
-  "skinspirit-willow-glen-san-jose": {
+    "skinspirit-willow-glen-san-jose": {
     hero: "",
-    logo: "https://cdn.prod.website-files.com/6764496e34ff7106c11cc5cf/6764496e34ff7106c11cc6e8_ss-wordmark-only-square-256x256.png",
+    logo: "/provider-logos/skinspirit-willow-glen-san-jose.png",
     gallery: [
 
     ],
     source: "SkinSpirit Willow Glen official website — services",
   },
-  "the-few-institute-chicago": {
+    "the-few-institute-chicago": {
     hero: "https://www.datocms-assets.com/75997/1663172232-og-feat.jpg",
-    logo: "https://www.datocms-assets.com/75997/1663884244-few-logo.png",
+    logo: "/provider-logos/the-few-institute-chicago.png",
     gallery: [
 
     ],
     source: "The Few Institute official website — services",
   },
-  "vermont-med-spa-burlington": {
+    "vermont-med-spa-burlington": {
     hero: "",
-    logo: "https://vermontmedspa.com/wp-content/uploads/2025/06/fav-icon.png",
+    logo: "/provider-logos/vermont-med-spa-burlington.png",
     gallery: [
 
     ],
     source: "Vermont Med Spa official website — services",
   },
-  "smooth-synergy-new-york": {
+    "smooth-synergy-new-york": {
     hero: "",
-    logo: "https://smoothsynergy.com/wp-content/uploads/cropped-newest-180x180.png",
+    logo: "/provider-logos/smooth-synergy-new-york.png",
     gallery: [
 
     ],
     source: "Smooth Synergy official website — services",
   },
-  "westside-aesthetics-los-angeles": {
+    "westside-aesthetics-los-angeles": {
     hero: "",
-    logo: "https://westsideaesthetics.com/wp-content/uploads/2022/07/Dr.-Rivkin.jpg",
+    logo: "/provider-logos/westside-aesthetics-los-angeles.jpg",
     gallery: [
 
     ],
@@ -12587,9 +12587,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Cor Medspa official website",
   },
-    "eleven-med-spa-dallas": {
+      "eleven-med-spa-dallas": {
     hero: "",
-    logo: "/provider-logos/eleven-med-spa-dallas.svg",
+    logo: "/provider-logos/eleven-med-spa-dallas.png",
     gallery: [
 
     ],
@@ -12619,9 +12619,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Teton Dermatology Aesthetics official website",
   },
-    "trifecta-med-spa-new-york": {
+      "trifecta-med-spa-new-york": {
     hero: "",
-    logo: "https://trifectamedspanyc.com/logoMenu.svg",
+    logo: "/provider-logos/trifecta-med-spa-new-york.svg",
     gallery: [
 
     ],
@@ -12643,9 +12643,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser La Crosse official website — brand imagery",
   },
-  "milan-laser-yulee": {
+    "milan-laser-yulee": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-yulee.webp",
     gallery: [
 
     ],
@@ -12659,9 +12659,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Advanced Skin Fitness official website — services",
   },
-  "skin-laundry-lodo-denver": {
+    "skin-laundry-lodo-denver": {
     hero: "",
-    logo: "https://cdn.builder.io/api/v1/image/assets%2F535574b6b84f4fe8bc72be87a676aca8%2Fbe1479fe6cfa428ebfdc4c5742c08c20?width=400",
+    logo: "/provider-logos/skin-laundry-lodo-denver.jpg",
     gallery: [
 
     ],

@@ -1489,9 +1489,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "ÉLAN Aesthetics official website",
   },
-                        "mynt-aesthetics-land-o-lakes": {
+                          "mynt-aesthetics-land-o-lakes": {
     hero: "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/f23e2a1e-83b4-4ef8-a070-ab67e987a55c/Home_Header3.jpg",
-    logo: "https://static1.squarespace.com/static/62b0b6294e70b4066e03bf56/t/631fb2e0397c9c404c7fc0c8/1663021804563/MYNT_Logos%28F%29-06.png?format=1500w",
+    logo: "/provider-logos/mynt-aesthetics-land-o-lakes.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/1781046285117-CQUYZ87S6Y1UTFRVP0MI/image-asset.jpeg",
       "https://images.squarespace-cdn.com/content/v1/62b0b6294e70b4066e03bf56/1781017676228-7QD49YQ2WRBOATSX7G8I/image-asset.jpeg",
@@ -1565,9 +1565,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Lineless Aesthetics – South Tampa Injectables Studio official website — services",
   },
-              "tampa-bay-total-wellness-anti-aging-med-spa-tampa": {
+                "tampa-bay-total-wellness-anti-aging-med-spa-tampa": {
     hero: "https://tampabaytotalwellness.com/wp-content/uploads/yootheme/cache/5b/AdobeStock_975236778-1-5b0aec60.webp",
-    logo: "https://tampabaytotalwellness.com/wp-content/uploads/tampa-bay-total-wellness-logo.svg",
+    logo: "/provider-logos/tampa-bay-total-wellness-anti-aging-med-spa-tampa.svg",
     gallery: [
       "https://tampabaytotalwellness.com/wp-content/uploads/yootheme/cache/8d/AdobeStock_1316736466-1-8d726a2e.webp",
       "https://tampabaytotalwellness.com/wp-content/uploads/yootheme/cache/1b/Mx3cHVt-0sizeoriginal-1bafb503.webp",
@@ -1576,9 +1576,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Tampa Bay Total Wellness Anti Aging Med Spa official website — services",
   },
-              "zee-aesthetics-tampa": {
+                "zee-aesthetics-tampa": {
     hero: "https://img1.wsimg.com/isteam/ip/ff2dcfc8-381b-4384-be7f-6d00b5fab056/IMG_0866.JPG",
-    logo: "https://img1.wsimg.com/isteam/ip/ff2dcfc8-381b-4384-be7f-6d00b5fab056/Zee%20SM%20FILE.png",
+    logo: "/provider-logos/zee-aesthetics-tampa.jpg",
     gallery: [
       "https://img1.wsimg.com/isteam/ip/ff2dcfc8-381b-4384-be7f-6d00b5fab056/IMG_0542.JPG",
       "https://img1.wsimg.com/isteam/ip/ff2dcfc8-381b-4384-be7f-6d00b5fab056/IMG_0552.JPG",
@@ -1587,9 +1587,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Zee Aesthetics official website",
   },
-              "vio-med-spa-valrico": {
+                "vio-med-spa-valrico": {
     hero: "https://viomedspa.com/valrico/wp-content/uploads/2026/03/Hero-micro.jpg",
-    logo: "https://viomedspa.com/valrico/wp-content/uploads/2026/04/512x512.png",
+    logo: "/provider-logos/vio-med-spa-valrico.png",
     gallery: [
       "https://viomedspa.com/valrico/wp-content/uploads/2026/03/Cathy_Injector_NP.png",
       "https://viomedspa.com/valrico/wp-content/uploads/2026/03/Sarah_Esthetician_Injectior_NP.png",
@@ -1609,9 +1609,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Provider official website",
   },
-              "sei-tu-bella-aesthetics-tampa": {
+                "sei-tu-bella-aesthetics-tampa": {
     hero: "https://seitubellaaesthetics.com/storage/2025/02/Evoto-by-sei-tu-bella-aesthetics.webp",
-    logo: "https://seitubellaaesthetics.com/storage/2024/12/FAV.png",
+    logo: "/provider-logos/sei-tu-bella-aesthetics-tampa.png",
     gallery: [
       "https://seitubellaaesthetics.com/storage/2025/03/sei-tu-bella-aesthetics-featured-image.webp",
       "https://seitubellaaesthetics.com/storage/2025/07/STB2-2.webp",
@@ -1629,17 +1629,17 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "New Tampa Aesthetics by Claudia, LLC official website — services",
   },
-              "moxy-medical-spa-st-petersburg": {
+                "moxy-medical-spa-st-petersburg": {
     hero: "https://static.wixstatic.com/media/3b09f9_d422f6f44fe242a986ba072a9f6995a2%7Emv2_d_7360_4912_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/3b09f9_d422f6f44fe242a986ba072a9f6995a2%7Emv2_d_7360_4912_s_4_2.jpg",
-    logo: "https://static.wixstatic.com/media/3b09f9_7e9ac5e66fa143469f84bb29ba208728%7Emv2.jpeg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/3b09f9_7e9ac5e66fa143469f84bb29ba208728%7Emv2.jpeg",
+    logo: "/provider-logos/moxy-medical-spa-st-petersburg.jpg",
     gallery: [
       "https://static.wixstatic.com/media/3b09f9_79add67b2a224a279382eaa64a442d73~mv2.jpg/v1/crop/x_0,y_105,w_1052,h_555/fill/w_1026,h_555,al_c,q_85,enc_avif,quality_auto/17846524660256401.jpg",
     ],
     source: "Moxy Medical Spa official website — services",
   },
-              "pommier-med-spa-riverview": {
+                "pommier-med-spa-riverview": {
     hero: "https://pommiermedspa.com/wp-content/uploads/2025/01/treating-herself-to-a-luxurious-facial-treatment-2024-03-22-19-28-29-utc-scaled.jpg",
-    logo: "https://pommiermedspa.com/wp-content/uploads/2023/04/cropped-pommier-logo-new-no-bg-darker-192x192.png",
+    logo: "/provider-logos/pommier-med-spa-riverview.png",
     gallery: [
       "https://pommiermedspa.com/wp-content/plugins/revslider/public/assets/assets/dummy.png",
       "https://pommiermedspa.com/wp-content/uploads/2023/02/Hydrafacial_Home.jpg",
@@ -1668,9 +1668,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Elase Medical Spa - St. Pete official website — services",
   },
-                    "silk-med-spa-tampa": {
+                      "silk-med-spa-tampa": {
     hero: "https://images.squarespace-cdn.com/content/v1/6012ddb25b47f734009ce739/4177e3ae-15c8-4bde-b057-9d3f80ebf8eb/IMG_8040.JPG",
-    logo: "https://images.squarespace-cdn.com/content/v1/6012ddb25b47f734009ce739/c3a2a0d6-61a5-456f-b288-626bded668c3/Laser+Hair+%E2%80%A2+Facials+%E2%80%A2+Aesthetic+Lasers+%281%29.png?format=1500w",
+    logo: "/provider-logos/silk-med-spa-tampa.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/6012ddb25b47f734009ce739/8944f6d2-bb57-46b2-a845-8d21f6d8aa5b/IMG_4703+2.JPG",
       "https://images.squarespace-cdn.com/content/v1/6012ddb25b47f734009ce739/da0add6c-2164-488c-9b68-519081b960cb/IMG_8474.JPG",
@@ -1701,9 +1701,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Livia Med Spa official website — services",
   },
-                    "spindrift-aesthetics-st-petersburg": {
+                      "spindrift-aesthetics-st-petersburg": {
     hero: "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/01f56657-563a-434d-9fc6-fec5ed39edc2/IMG_7925.JPG",
-    logo: "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/ced1ce23-e8b5-423b-9fdb-3f0162707043/Color+logo+-+no+background.png?format=1500w",
+    logo: "/provider-logos/spindrift-aesthetics-st-petersburg.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/8fad1616-da58-44bf-bf44-09c27fbf9e3d/pexels-itslauravillela-30822276.jpg",
       "https://images.squarespace-cdn.com/content/v1/64f1efe6de9bb40c4616eedc/354ef3f1-ccce-4df8-97d0-9cbcfa1f6eb7/IMG_7919.JPG",
@@ -1712,9 +1712,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Provider official website",
   },
-              "the-aesthetics-lounge-and-spa-tampa": {
+                "the-aesthetics-lounge-and-spa-tampa": {
     hero: "https://tampa.theaestheticsloungeandspa.com/wp-content/uploads/2025/09/48-1024x819.jpg",
-    logo: "https://theaestheticsloungeandspa.com/wp-content/uploads/2025/09/cropped-Site-ID-TALS-2-192x192.png",
+    logo: "/provider-logos/the-aesthetics-lounge-and-spa-tampa.png",
     gallery: [
       "https://tampa.theaestheticsloungeandspa.com/wp-content/uploads/elementor/thumbs/9-rf1q6qzbzhsmyoi96h0ui1cpu8uppg4ay3b66pm07k.jpg",
       "https://tampa.theaestheticsloungeandspa.com/wp-content/uploads/elementor/thumbs/9-rposwh90d9y9s0c20ikmen1g4ggpd2nhzb0v6uxaxc.jpg",
@@ -1723,9 +1723,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "The Aesthetics Lounge and Spa Tampa official website — services",
   },
-              "perfectly-bare-laser-tampa": {
+                "perfectly-bare-laser-tampa": {
     hero: "https://perfectlybarelaser.com/wp-content/uploads/2026/01/Perfectly-Bare-Laser-Honoring-Our-Heroes-with-a-Special-Military-Discount-scaled.webp",
-    logo: "https://perfectlybarelaser.com/wp-content/uploads/2026/01/cropped-Fav-Icon-192x192.webp",
+    logo: "/provider-logos/perfectly-bare-laser-tampa.webp",
     gallery: [
       "https://perfectlybarelaser.com/wp-content/uploads/2026/01/2026-1600644-Banner-Perfectly-Bare-Laser.png",
       "https://perfectlybarelaser.com/wp-content/uploads/2026/06/laser-hair-removal-vs-waxing-which-wins-featured.webp",
@@ -1776,17 +1776,17 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Glow Aesthetics Bar official website — services",
   },
-                "serenity-beauty-secrets-tampa": {
+                  "serenity-beauty-secrets-tampa": {
     hero: "https://img1.wsimg.com/isteam/getty/2177794323",
-    logo: "https://img1.wsimg.com/isteam/ip/d1c052f2-129b-4422-be35-51b6ce7d822a/Serenity%20beauty%20secrets%20(Instagram%20Post)%20(2).PNG/:/rs=w:57,h:57,m",
+    logo: "/provider-logos/serenity-beauty-secrets-tampa.jpg",
     gallery: [
 
     ],
     source: "Serenity Beauty Secrets official website — services",
   },
-                    "the-aesthetics-lab-tampa": {
+                      "the-aesthetics-lab-tampa": {
     hero: "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508222950753-JBY2A3976XTX7GSJ1CVI/_N4A8789.jpg.jpeg",
-    logo: "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1504727354064-2JZ2W1XXY6YGFOKX7JLA/Logo+copy.png",
+    logo: "/provider-logos/the-aesthetics-lab-tampa.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508481430527-6CVO88U7ZDTLSMPUM6IV/_N4A8752.jpg",
       "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508481665048-BV87A6XK3IKLZA6B4KW2/_N4A8731.jpg",
@@ -1816,17 +1816,17 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Indulgence Medical Day Spa official website — services",
   },
-                        "skin-science-tampa": {
+                          "skin-science-tampa": {
     hero: "https://skinsciencetampa.com/wp-content/uploads/2025/03/quote.jpg",
-    logo: "https://skinsciencemedicalspa.com/wp-content/uploads/2025/05/Logo-with-Tagline_coral_pink.png",
+    logo: "/provider-logos/skin-science-tampa.png",
     gallery: [
       "https://skinsciencetampa.com/wp-content/uploads/2025/03/3.jpg",
     ],
     source: "Skin Science official website — services",
   },
-                "revive-body-lounge-apollo-beach": {
+                  "revive-body-lounge-apollo-beach": {
     hero: "https://img1.wsimg.com/isteam/ip/19900a79-381c-4795-909f-2412b5319099/246A0341.jpeg",
-    logo: "https://img1.wsimg.com/isteam/ip/19900a79-381c-4795-909f-2412b5319099/IMG_8668.png/:/rs=w:57,h:57,m",
+    logo: "/provider-logos/revive-body-lounge-apollo-beach.png",
     gallery: [
 
     ],
@@ -1843,9 +1843,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "KC Wellness & Medspa official website — services",
   },
-                "luminous-skin-and-laser-tampa": {
+                  "luminous-skin-and-laser-tampa": {
     hero: "http://www.luminousskinandlaser.com/cdn/shop/files/WEB_3_e0c55365-1f3f-4888-b1dd-306e81128eea_1200x1200.jpg?v=1718134356",
-    logo: "/provider-logos/luminous-skin-and-laser-tampa.png",
+    logo: "/provider-logos/luminous-skin-and-laser-tampa.jpg",
     gallery: [
       "https://www.luminousskinandlaser.com/cdn/shop/files/WEB_3_2_600x600@2x.jpg?v=1718133795",
       "https://www.luminousskinandlaser.com/cdn/shop/files/WEB_8_1_480x480@2x.jpg?v=1718136235",
@@ -1854,9 +1854,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Luminous Skin and Laser official website — services",
   },
-              "vivify-med-spa-tampa": {
+                "vivify-med-spa-tampa": {
     hero: "https://www.datocms-assets.com/98146/1684941631-medspa-banner.jpg?auto=format,compress&w=1500",
-    logo: "https://www.datocms-assets.com/98146/1683912882-vivify-horizontal.svg",
+    logo: "/provider-logos/vivify-med-spa-tampa.svg",
     gallery: [
       "https://www.datocms-assets.com/98146/1684941417-injectables-banner.jpg?auto=format,compress&w=850",
       "https://www.datocms-assets.com/98146/1684941345-sciton-laser-technology-banner.jpg?auto=format,compress&w=850",
@@ -1876,9 +1876,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Elase Medical Spa - South Tampa official website — services",
   },
-              "the-wellness-club-tampa": {
+                "the-wellness-club-tampa": {
     hero: "https://thewellnessclubtampa.com/wp-content/uploads/2023/05/peels-683x1024.jpg",
-    logo: "https://thewellnessclubtampa.com/wp-content/uploads/2022/09/cropped-logo-icon-192x192.png",
+    logo: "/provider-logos/the-wellness-club-tampa.png",
     gallery: [
       "https://thewellnessclubtampa.com/wp-content/uploads/2025/01/o2-glass-skin-e1736289570738.webp",
       "https://thewellnessclubtampa.com/wp-content/uploads/2023/05/test.jpeg",
@@ -1887,9 +1887,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "The Wellness Club official website — services",
   },
-                "interface-aesthetics-whitnie-padron-aprn-largo": {
+                  "interface-aesthetics-whitnie-padron-aprn-largo": {
     hero: "https://cdn.prod.website-files.com/6986414b7f75606888cc9788/69be11f1a0b9b1170c784b1c_Weight-Loss-Hero-Before-After-Img.jpg",
-    logo: "/provider-logos/interface-aesthetics-whitnie-padron-aprn-largo.svg",
+    logo: "/provider-logos/interface-aesthetics-whitnie-padron-aprn-largo.png",
     gallery: [
       "https://cdn.prod.website-files.com/6986414b7f75606888cc9788/698e13c88ce600c6ee1d5648_Services-Before-After-Slider-1.jpg",
       "https://cdn.prod.website-files.com/6986414b7f75606888cc9788/698e13ffd30509e80691602c_Services-Before-After-Slider-3.jpg",
@@ -1898,9 +1898,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Interface Aesthetics - Whitnie Padron, APRN official website — services",
   },
-                    "skin-nv-tampa-med-spa-tampa": {
+                      "skin-nv-tampa-med-spa-tampa": {
     hero: "https://images.squarespace-cdn.com/content/v1/6957de3ff3f62c42463177b8/6ea289f3-fe48-459f-a178-059c610acd26/SkinNV-19.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/6957de3ff3f62c42463177b8/45f8f8b2-8231-4b17-bceb-42621a23cf11/The+Art+%2B+Science+of+Beauty+%281%29.png?format=1500w",
+    logo: "/provider-logos/skin-nv-tampa-med-spa-tampa.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/6957de3ff3f62c42463177b8/01b88f82-55be-4efb-895b-dae90768b321/The+Art+%2B+Science+of+Beauty+%281%29.png",
       "https://images.squarespace-cdn.com/content/v1/6957de3ff3f62c42463177b8/3b8d63f7-c665-4d64-88d5-9a7e899b3e9c/SkinNV-85.jpg",
@@ -1919,9 +1919,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Florida Aesthetics and Wellness official website — services",
   },
-              "radiance-medspa-belleair-bluffs": {
+                "radiance-medspa-belleair-bluffs": {
     hero: "https://www.radiancemedspa.com/wp-content/uploads/2025/08/bbl-hero-for-men-belleairbluffs-fl-card.jpg",
-    logo: "https://www.radiancemedspa.com/wp-content/uploads/2025/01/cropped-cropped-small-logo-4-radiance-medspa-in-Belleair-Bluff-Florida-e1685048412501-192x192.webp",
+    logo: "/provider-logos/radiance-medspa-belleair-bluffs.webp",
     gallery: [
       "https://www.radiancemedspa.com/wp-content/uploads/2026/05/BB-20-Anniversary.png",
       "https://www.radiancemedspa.com/wp-content/uploads/2025/08/fillers-results-belleair-bluffs-no254803-01-1024x640.jpg",
@@ -1952,9 +1952,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Elase Medical Spa - Westchase official website — services",
   },
-              "venus-med-spa-riverview": {
+                "venus-med-spa-riverview": {
     hero: "https://www.venusmedspa.com/wp-content/uploads/elementor/thumbs/hero-Locations-mobile-bg-4-2-q7bsmkohkmlfiubqf8orb913yhtu5ymzjbyccpj6hi.jpg",
-    logo: "https://www.venusmedspa.com/wp-content/uploads/2019/10/VMS-LOGO-White.svg",
+    logo: "/provider-logos/venus-med-spa-riverview.svg",
     gallery: [
       "https://www.venusmedspa.com/wp-content/uploads/elementor/thumbs/box-laser-treatments-e1681224387697-q7aaa876y3t1jjzliddfqep9bqcy0n9vfd70pvlvto.jpeg",
       "https://www.venusmedspa.com/wp-content/uploads/elementor/thumbs/Neocutis-23-resized-q7aaa87792i5g21143l89feul2euol2swbcb9886ty.jpg",
@@ -1974,9 +1974,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Fusion Medispa official website — services",
   },
-              "venus-med-spa-tampa": {
+                "venus-med-spa-tampa": {
     hero: "https://www.venusmedspa.com/wp-content/uploads/elementor/thumbs/hero-Locations-mobile-bg-4-2-q7bsmkohkmlfiubqf8orb913yhtu5ymzjbyccpj6hi.jpg",
-    logo: "https://www.venusmedspa.com/wp-content/uploads/2019/10/VMS-LOGO-White.svg",
+    logo: "/provider-logos/venus-med-spa-tampa.svg",
     gallery: [
       "https://www.venusmedspa.com/wp-content/uploads/elementor/thumbs/box-laser-treatments-e1681224387697-q7aaa876y3t1jjzliddfqep9bqcy0n9vfd70pvlvto.jpeg",
       "https://www.venusmedspa.com/wp-content/uploads/elementor/thumbs/Neocutis-23-resized-q7aaa87792i5g21143l89feul2euol2swbcb9886ty.jpg",
@@ -1996,9 +1996,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "PHDermatology-Westchase official website — services",
   },
-              "venus-med-spa-tampa-2": {
+                "venus-med-spa-tampa-2": {
     hero: "https://www.venusmedspa.com/wp-content/uploads/elementor/thumbs/hero-Locations-mobile-bg-4-2-q7bsmkohkmlfiubqf8orb913yhtu5ymzjbyccpj6hi.jpg",
-    logo: "https://www.venusmedspa.com/wp-content/uploads/2019/10/VMS-LOGO-White.svg",
+    logo: "/provider-logos/venus-med-spa-tampa-2.svg",
     gallery: [
       "https://www.venusmedspa.com/wp-content/uploads/elementor/thumbs/box-laser-treatments-e1681224387697-q7aaa876y3t1jjzliddfqep9bqcy0n9vfd70pvlvto.jpeg",
       "https://www.venusmedspa.com/wp-content/uploads/elementor/thumbs/Neocutis-23-resized-q7aaa87792i5g21143l89feul2euol2swbcb9886ty.jpg",
@@ -2007,9 +2007,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Venus Med Spa official website — services",
   },
-              "redbamboo-medi-spa-clearwater": {
+                "redbamboo-medi-spa-clearwater": {
     hero: "https://www.redbamboomedispa.com/wp-content/uploads/Red-Bamboo-Best-Web-Banner-2-1.jpg",
-    logo: "https://www.redbamboomedispa.com/wp-content/uploads/logo.png",
+    logo: "/provider-logos/redbamboo-medi-spa-clearwater.png",
     gallery: [
       "https://www.redbamboomedispa.com/wp-content/uploads/dr-toscano-receiving-award.jpg",
       "https://www.redbamboomedispa.com/wp-content/uploads/prp-111.jpg",

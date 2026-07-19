@@ -720,9 +720,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Lush Injectables official website — services",
   },
-              "rose-medical-aesthetics-sarasota": {
+                "rose-medical-aesthetics-sarasota": {
     hero: "https://rosemedaesthetics.com/storage/2024/05/Rosalie-Orrostieta-Sculptra-Aesthetic-Online-Education-Program-Cert-scaled-e1716537068741.webp",
-    logo: "https://rosemedaesthetics.com/storage/2021/09/rosemedspa_newlogo_c.svg",
+    logo: "/provider-logos/rose-medical-aesthetics-sarasota.svg",
     gallery: [
       "https://rosemedaesthetics.com/storage/2024/05/Certificate-of-training-Morpheus-IPL-laser-hair-removal--scaled.webp",
       "https://rosemedaesthetics.com/storage/2025/02/rosemedaesthetics-homepage-aa.webp",
@@ -753,9 +753,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "The Fort Lauderdale MedSpa official website — services",
   },
-              "modigliani-medspa-fort-lauderdale": {
+                "modigliani-medspa-fort-lauderdale": {
     hero: "https://modiglianimed.com/wp-content/uploads/2024/11/AnyConv.com__Suzana-Alexandrescu-Photoroom.webp",
-    logo: "https://modiglianimed.com/wp-content/uploads/2024/11/cropped-cropped-Modigliani-Med-Spa-Logo-Black-1-192x192.png",
+    logo: "/provider-logos/modigliani-medspa-fort-lauderdale.png",
     gallery: [
       "https://modiglianimed.com/wp-content/uploads/2024/11/AnyConv.com__slide-1-Photoroom.webp",
     ],
@@ -791,9 +791,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Angel Aesthetics official website — services",
   },
-              "shores-medspa-daytona": {
+                "shores-medspa-daytona": {
     hero: "https://shoresmedspa.com/wp-content/uploads/2020/11/Shores-medical-SPA-11.jpg",
-    logo: "https://shoresmedspa.com/wp-content/uploads/2021/12/logo-icon-web-300x300.png",
+    logo: "/provider-logos/shores-medspa-daytona.png",
     gallery: [
       "https://shoresmedspa.com/wp-content/uploads/2020/11/2.jpg",
       "https://shoresmedspa.com/wp-content/uploads/2020/11/4.jpg",
@@ -875,9 +875,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Key West Health official website — services",
   },
-              "under-the-palms-key-west": {
+                "under-the-palms-key-west": {
     hero: "https://keywestmedispa.com/wp-content/uploads/2023/04/Under-the-Palms-WEB-1024x536.png",
-    logo: "https://keywestmedispa.com/wp-content/uploads/2021/02/cropped-UTP-Logo-Face-1-1-192x192.png",
+    logo: "/provider-logos/under-the-palms-key-west.png",
     gallery: [
       "https://keywestmedispa.com/wp-content/uploads/2021/04/8-2-150x150.png",
       "https://keywestmedispa.com/wp-content/uploads/2024/12/image005-768x768.png",
@@ -927,9 +927,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Baldwin Med Spa official website — services",
   },
-              "tao-medical-spa-melbourne": {
+                "tao-medical-spa-melbourne": {
     hero: "https://www.discovertao.com/assets/img/feature/home/injectables-fillers.jpg",
-    logo: "https://www.discovertao.com/assets/img/logo.svg",
+    logo: "/provider-logos/tao-medical-spa-melbourne.svg",
     gallery: [
       "https://www.discovertao.com/assets/img/feature/home/laser-energy.jpg",
       "https://www.discovertao.com/assets/img/feature/home/wellness.jpg",
@@ -949,9 +949,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Essentials Medispa & Salon official website — services",
   },
-                "couture-medspa-kissimmee": {
+                  "couture-medspa-kissimmee": {
     hero: "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/66e1ea19858b3f9ff5cb33bb_skinpen%20service.webp",
-    logo: "/provider-logos/couture-medspa-kissimmee.svg",
+    logo: "/provider-logos/couture-medspa-kissimmee.png",
     gallery: [
       "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb338b/66e1ea19858b3f9ff5cb3546_N%20Eslava%20after%201%20sculptra.webp",
       "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb338b/66e1ea19858b3f9ff5cb3606_Dana%20Laing%20after%203%20treatments%20(1).webp",
