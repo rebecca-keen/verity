@@ -11,8 +11,15 @@ import {
 import { TAMPA_BAY_REAL_SPA_IMAGES } from "./tampa-bay-real-spas";
 import { FLORIDA_SPA_IMAGE_IDS } from "./florida-spa-seeds";
 import { getBrandWebsiteImages } from "./brand-website-images";
+import { PROVIDER_SLUG_REDIRECTS } from "./provider-slug-redirects";
 import { resolveProviderLogo } from "./spa-logo-utils";
 import { WEBSITE_FETCHED_SPA_IMAGES } from "./website-fetched-spa-images";
+
+const CANONICAL_PROVIDER_SLUGS = new Map<string, string>(PROVIDER_SLUG_REDIRECTS);
+
+function canonicalProviderSlug(slug: string): string {
+  return CANONICAL_PROVIDER_SLUGS.get(slug) ?? slug;
+}
 
 function img(id: string, w = 800, h = 600) {
   return `https://images.unsplash.com/${id}?w=${w}&h=${h}&fit=crop`;
@@ -578,8 +585,9 @@ for (const [slug, entry] of Object.entries(SPA_IMAGE_SETS)) {
 }
 
 export function getSpaImages(slug: string, website?: string): SpaImageSet {
+  const canonicalSlug = canonicalProviderSlug(slug);
   const brand = getBrandWebsiteImages(website);
-  const entry = SPA_IMAGE_SETS[slug];
+  const entry = SPA_IMAGE_SETS[canonicalSlug];
   if (entry) {
     const gallery = entry.gallery.filter((u) => u && !isStockImageUrl(u));
     const hero =
