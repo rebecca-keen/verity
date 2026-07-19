@@ -1,0 +1,500 @@
+{
+  "total_providers": 613,
+  "updated": 344,
+  "unchanged": 268,
+  "manual_review": [
+    {
+      "slug": "dunedin-well-spa",
+      "file": "florida-real-spas.ts",
+      "status": "manual_review",
+      "old_treatments": [
+        "facial",
+        "microneedling"
+      ],
+      "new_treatments": [],
+      "categories": [],
+      "description": "Downtown Dunedin spa serving Palm Harbor and Clearwater with acne treatments, fine-line care, sun-damage protocols, and therapeutic massage."
+    }
+  ],
+  "category_counts": {
+    "injectables": 344,
+    "lasers": 560,
+    "beauty": 307,
+    "wellness": 62,
+    "weight-loss": 15,
+    "hair-restoration": 3,
+    "body": 43,
+    "hormone-therapy": 10
+  },
+  "sample_updates": [
+    {
+      "slug": "injections-and-co-sarasota",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "microneedling",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "microneedling",
+        "weight-loss",
+        "wellness"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "beauty",
+        "wellness",
+        "weight-loss"
+      ]
+    },
+    {
+      "slug": "eternal-medspa-sarasota",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "facial",
+        "body-contouring"
+      ],
+      "new_treatments": [
+        "botox",
+        "laser",
+        "weight-loss",
+        "wellness"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "wellness",
+        "weight-loss"
+      ]
+    },
+    {
+      "slug": "lush-injectables-sarasota",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "microneedling",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "laser",
+        "facial"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "beauty"
+      ]
+    },
+    {
+      "slug": "rose-medical-aesthetics-sarasota",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "microneedling",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "facial",
+        "microneedling",
+        "weight-loss",
+        "hair-restoration"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "beauty",
+        "weight-loss",
+        "hair-restoration"
+      ]
+    },
+    {
+      "slug": "bowtique-medspa-sarasota",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "body-contouring",
+        "facial",
+        "laser"
+      ],
+      "new_treatments": [
+        "fillers",
+        "facial",
+        "body-contouring"
+      ],
+      "categories": [
+        "injectables",
+        "beauty",
+        "body"
+      ]
+    },
+    {
+      "slug": "fort-lauderdale-medspa",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "body-contouring",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "body-contouring",
+        "weight-loss",
+        "hormone-therapy",
+        "wellness"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "body",
+        "wellness",
+        "weight-loss",
+        "hormone-therapy"
+      ]
+    },
+    {
+      "slug": "modigliani-medspa-fort-lauderdale",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "microneedling",
+        "facial",
+        "body-contouring"
+      ],
+      "new_treatments": [
+        "facial",
+        "microneedling",
+        "wellness"
+      ],
+      "categories": [
+        "beauty",
+        "wellness"
+      ]
+    },
+    {
+      "slug": "essential-aesthetics-fort-lauderdale",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "microneedling",
+        "facial",
+        "body-contouring"
+      ],
+      "new_treatments": [
+        "botox",
+        "facial",
+        "microneedling",
+        "weight-loss"
+      ],
+      "categories": [
+        "injectables",
+        "beauty",
+        "weight-loss"
+      ]
+    },
+    {
+      "slug": "aesthetic-label-fort-lauderdale",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "body-contouring"
+      ],
+      "new_treatments": [
+        "botox",
+        "fillers"
+      ],
+      "categories": [
+        "injectables"
+      ]
+    },
+    {
+      "slug": "angel-aesthetics-fort-lauderdale",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "microneedling",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "fillers",
+        "laser"
+      ],
+      "categories": [
+        "injectables",
+        "lasers"
+      ]
+    },
+    {
+      "slug": "shores-medspa-daytona",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "microneedling",
+        "body-contouring"
+      ],
+      "new_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "microneedling",
+        "weight-loss",
+        "wellness"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "beauty",
+        "wellness",
+        "weight-loss"
+      ]
+    },
+    {
+      "slug": "elite-aesthetics-daytona-beach",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "facial",
+        "body-contouring"
+      ],
+      "new_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "weight-loss",
+        "hormone-therapy",
+        "wellness"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "wellness",
+        "weight-loss",
+        "hormone-therapy"
+      ]
+    },
+    {
+      "slug": "anora-integrative-daytona",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "facial",
+        "microneedling"
+      ],
+      "new_treatments": [
+        "botox"
+      ],
+      "categories": [
+        "injectables"
+      ]
+    },
+    {
+      "slug": "total-anti-aging-daytona",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "facial",
+        "body-contouring"
+      ],
+      "new_treatments": [
+        "botox",
+        "laser",
+        "weight-loss",
+        "wellness"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "wellness",
+        "weight-loss"
+      ]
+    },
+    {
+      "slug": "key-west-medspa-duval",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "body-contouring",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "laser",
+        "facial",
+        "body-contouring"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "beauty",
+        "body"
+      ]
+    },
+    {
+      "slug": "keys-medspa-key-west",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "body-contouring",
+        "microneedling",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "microneedling",
+        "body-contouring"
+      ],
+      "categories": [
+        "injectables",
+        "beauty",
+        "body"
+      ]
+    },
+    {
+      "slug": "divine-medical-spa-key-west",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "laser",
+        "facial",
+        "body-contouring"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "beauty",
+        "body"
+      ]
+    },
+    {
+      "slug": "key-west-health-aesthetics",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "facial",
+        "microneedling",
+        "laser"
+      ],
+      "new_treatments": [
+        "botox",
+        "fillers",
+        "facial",
+        "microneedling",
+        "hair-restoration"
+      ],
+      "categories": [
+        "injectables",
+        "beauty",
+        "hair-restoration"
+      ]
+    },
+    {
+      "slug": "under-the-palms-key-west",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "microneedling",
+        "body-contouring",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "microneedling"
+      ],
+      "categories": [
+        "injectables",
+        "beauty"
+      ]
+    },
+    {
+      "slug": "sb-medspa-destin",
+      "file": "florida-coastal-real-spas.ts",
+      "status": "updated",
+      "old_treatments": [
+        "botox",
+        "fillers",
+        "body-contouring",
+        "laser",
+        "facial"
+      ],
+      "new_treatments": [
+        "botox",
+        "fillers",
+        "laser",
+        "body-contouring",
+        "weight-loss",
+        "wellness"
+      ],
+      "categories": [
+        "injectables",
+        "lasers",
+        "body",
+        "wellness",
+        "weight-loss"
+      ]
+    }
+  ]
+}

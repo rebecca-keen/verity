@@ -72,6 +72,42 @@ export const TREATMENT_CATEGORY_SEO: Record<
       "Browse med spas for body contouring and non-surgical body treatments. Filter by city and compare public ratings where available.",
     path: "/providers?category=body",
   },
+  wellness: {
+    title: "Wellness & IV Therapy Providers — Med Spas | Verity",
+    description:
+      "Find med spas offering wellness programs, IV therapy, peptide treatments, and NAD+ therapy. Compare listed providers nationwide.",
+    h1: "Wellness & IV providers",
+    intro:
+      "Browse med spas for wellness services including IV therapy, vitamin drips, peptides, and functional medicine programs.",
+    path: "/providers?category=wellness",
+  },
+  "weight-loss": {
+    title: "Medical Weight Loss Providers — GLP-1 & More | Verity",
+    description:
+      "Find med spas and clinics offering medical weight loss, GLP-1 programs, and physician-supervised weight management nationwide.",
+    h1: "Medical weight loss providers",
+    intro:
+      "Discover providers for physician-supervised weight loss including GLP-1, semaglutide, and medical weight management programs.",
+    path: "/providers?category=weight-loss",
+  },
+  "hormone-therapy": {
+    title: "Hormone Therapy Providers — BHRT & HRT | Verity",
+    description:
+      "Find med spas and wellness clinics offering hormone replacement therapy, BHRT, and hormone optimization programs nationwide.",
+    h1: "Hormone therapy providers",
+    intro:
+      "Browse providers for bioidentical hormone therapy, testosterone replacement, and physician-supervised hormone optimization.",
+    path: "/providers?category=hormone-therapy",
+  },
+  "hair-restoration": {
+    title: "Hair Restoration Providers — PRP & Transplant | Verity",
+    description:
+      "Find med spas and clinics offering hair restoration, PRP hair treatments, and non-surgical hair loss solutions nationwide.",
+    h1: "Hair restoration providers",
+    intro:
+      "Discover providers for hair restoration including PRP hair therapy, hair loss treatments, and surgical hair restoration referrals.",
+    path: "/providers?category=hair-restoration",
+  },
 };
 
 const TREATMENT_CATEGORIES = new Set<string>(Object.keys(TREATMENT_CATEGORY_SEO));
@@ -639,6 +675,10 @@ const TREATMENT_CATEGORY_SERVICES: Record<TreatmentCategory, string> = {
   lasers: "Laser treatments",
   beauty: "Facials and skincare",
   body: "Body contouring",
+  wellness: "Wellness and IV therapy",
+  "weight-loss": "Medical weight loss",
+  "hormone-therapy": "Hormone therapy",
+  "hair-restoration": "Hair restoration",
 };
 
 export function localBusinessJsonLd(spa: Spa) {

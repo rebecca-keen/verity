@@ -308,6 +308,10 @@ const CATEGORY_LABELS: Record<TreatmentCategory, string> = {
   lasers: "Lasers",
   beauty: "Beauty & Facials",
   body: "Body Contouring",
+  wellness: "Wellness & IV",
+  "weight-loss": "Weight Loss",
+  "hormone-therapy": "Hormone Therapy",
+  "hair-restoration": "Hair Restoration",
 };
 
 export function getCategoryLabel(cat: TreatmentCategory) {
@@ -325,9 +329,14 @@ export function isGenericTreatmentList(treatments: Treatment[]): boolean {
 }
 
 /** Infer concrete treatments from listing copy when seed data uses boilerplate defaults. */
-export function inferTreatmentsFromCopy(description: string, tagline: string): Treatment[] {
-  const text = `${description} ${tagline}`.toLowerCase();
+export function inferTreatmentsFromCopy(description: string, tagline: string, name = ""): Treatment[] {
+  const text = `${description} ${tagline} ${name}`.toLowerCase();
   const treatments = new Set<Treatment>();
+
+  if (/milan laser|laser hair removal clinic|laser hair removal specialist|laser removal clinic/.test(text)) {
+    treatments.add("laser");
+    return Array.from(treatments);
+  }
 
   if (
     /\bbotox\b|\bdysport\b|\bxeomin\b|\bjeuveau\b|\binjectable|\bfiller|\bjuvederm\b|\brestylane\b|\bsculptra\b|\bkybella\b|\blip filler|\bcheek filler/.test(
@@ -353,7 +362,7 @@ export function inferTreatmentsFromCopy(description: string, tagline: string): T
   }
 
   if (
-    /\bfacial|\bhydrafacial|\bchemical peel|\bpeel\b|\bskin rejuvenation|\bdermaplaning|\bmicrodermabrasion|\bglow/.test(
+    /\bfacial|\bhydrafacial|\bchemical peel|\bpeel\b|\bskin rejuvenation|\bdermaplaning|\bmicrodermabrasion|\bglow|\bskincare|\bskin care|\bacne treatment|\bfine-line|\bsun-damage|\btherapeutic facial/.test(
       text
     )
   ) {
@@ -365,11 +374,44 @@ export function inferTreatmentsFromCopy(description: string, tagline: string): T
   }
 
   if (
-    /\bbody contour|\bcoolsculpt|\bemsculpt|\bbody sculpt|\bcellulite|\bnon-surgical body|\bbody treatment|\bcooltone|\btru sculpt/.test(
+    /\bbody contour|\bcoolsculpt|\bemsculpt|\bbody sculpt|\bcellulite|\bnon-surgical body|\bbody treatment|\bcooltone|\btru sculpt|\bemsella|\bskin tightening/.test(
       text
     )
   ) {
     treatments.add("body-contouring");
+  }
+
+  if (
+    /weight loss|semaglutide|tirzepatide|glp-?1|ozempic|wegovy|mounjaro|phentermine|medical weight loss|weight management/.test(
+      text
+    )
+  ) {
+    treatments.add("weight-loss");
+  }
+
+  if (
+    /hormone therapy|hormone replacement|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet/.test(
+      text
+    )
+  ) {
+    treatments.add("hormone-therapy");
+  }
+
+  if (
+    /hair restoration|hair transplant|prp hair|hair loss treatment|neograft|\bartas\b|follicular unit|hair regrowth/.test(
+      text
+    ) &&
+    !/hair removal/.test(text)
+  ) {
+    treatments.add("hair-restoration");
+  }
+
+  if (
+    /\bwellness\b|iv therapy|vitamin drip|\bnad\+|\bnad therapy|peptide therapy|functional medicine|vitamin injection|iv drip|wellness program/.test(
+      text
+    )
+  ) {
+    treatments.add("wellness");
   }
 
   return Array.from(treatments);
@@ -378,10 +420,11 @@ export function inferTreatmentsFromCopy(description: string, tagline: string): T
 export function resolveSpaTreatments(
   treatments: Treatment[],
   description: string,
-  tagline: string
+  tagline: string,
+  name = ""
 ): Treatment[] {
   if (!treatments.length || isGenericTreatmentList(treatments)) {
-    const inferred = inferTreatmentsFromCopy(description, tagline);
+    const inferred = inferTreatmentsFromCopy(description, tagline, name);
     if (inferred.length > 0) return inferred;
   }
   return treatments;
@@ -394,6 +437,10 @@ export const TREATMENT_LABELS: Record<Treatment, string> = {
   facial: "Facials",
   microneedling: "Microneedling",
   "body-contouring": "Body Contouring",
+  "weight-loss": "Weight Loss",
+  "hormone-therapy": "Hormone Therapy",
+  "hair-restoration": "Hair Restoration",
+  wellness: "Wellness & IV",
 };
 
 export function getTreatmentLabel(treatment: Treatment): string {
@@ -406,8 +453,35 @@ export function deriveTreatmentCategories(treatments: Treatment[]): TreatmentCat
   if (treatments.includes("laser")) cats.add("lasers");
   if (treatments.some((t) => t === "facial" || t === "microneedling")) cats.add("beauty");
   if (treatments.includes("body-contouring")) cats.add("body");
+  if (treatments.includes("wellness")) cats.add("wellness");
+  if (treatments.includes("weight-loss")) cats.add("weight-loss");
+  if (treatments.includes("hormone-therapy")) cats.add("hormone-therapy");
+  if (treatments.includes("hair-restoration")) cats.add("hair-restoration");
   return Array.from(cats);
 }
+
+export const TREATMENT_CATEGORY_FILTERS: { label: string; value: TreatmentCategory | "All" }[] = [
+  { label: "All", value: "All" },
+  { label: "Injectables", value: "injectables" },
+  { label: "Lasers", value: "lasers" },
+  { label: "Beauty & Facials", value: "beauty" },
+  { label: "Body Contouring", value: "body" },
+  { label: "Wellness & IV", value: "wellness" },
+  { label: "Weight Loss", value: "weight-loss" },
+  { label: "Hormone Therapy", value: "hormone-therapy" },
+  { label: "Hair Restoration", value: "hair-restoration" },
+];
+
+export const TREATMENT_BROWSE_ORDER: TreatmentCategory[] = [
+  "injectables",
+  "lasers",
+  "beauty",
+  "body",
+  "wellness",
+  "weight-loss",
+  "hormone-therapy",
+  "hair-restoration",
+];
 
 export function sortSpasForDisplay(spaList: Spa[]): Spa[] {
   return [...spaList].sort((a, b) => {
@@ -645,6 +719,10 @@ const TREATMENT_POOLS: Partial<Record<Treatment, string[]>> = {
     "is-clinical-cleansing",
   ],
   "body-contouring": ["skinmedica-neck-correct-cream", "skinmedica-ha5", "skinmedica-dermal-repair-cream"],
+  "weight-loss": ["skinmedica-ha5", "la-roche-posay-toleriane-hydrating", "is-clinical-pro-heal-serum"],
+  "hormone-therapy": ["skinmedica-ha5", "is-clinical-pro-heal-serum", "revision-replenisher"],
+  "hair-restoration": ["is-clinical-pro-heal-serum", "alastin-regenerating-skin-nectar", "skinmedica-ha5"],
+  wellness: ["is-clinical-pro-heal-serum", "revision-replenisher", "skinmedica-ha5"],
 };
 
 const PROVIDER_POOLS: Record<ProviderType, string[]> = {

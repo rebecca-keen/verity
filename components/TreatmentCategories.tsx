@@ -6,6 +6,10 @@ const CATEGORY_COLORS: Record<TreatmentCategory, string> = {
   lasers: "bg-gold/20 text-charcoal border border-gold/30",
   beauty: "bg-sage/15 text-sage border border-sage/30",
   body: "bg-stone/10 text-stone border border-stone/20",
+  wellness: "bg-emerald-50 text-emerald-800 border border-emerald-200/60",
+  "weight-loss": "bg-amber-50 text-amber-900 border border-amber-200/60",
+  "hormone-therapy": "bg-violet-50 text-violet-800 border border-violet-200/60",
+  "hair-restoration": "bg-sky-50 text-sky-800 border border-sky-200/60",
 };
 
 export function TreatmentCategories({ categories }: { categories: TreatmentCategory[] }) {

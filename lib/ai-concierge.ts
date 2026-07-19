@@ -103,6 +103,10 @@ const CATEGORY_TREATMENTS: Record<TreatmentCategory, Treatment[]> = {
   lasers: ["laser"],
   beauty: ["facial", "microneedling"],
   body: ["body-contouring"],
+  wellness: ["wellness"],
+  "weight-loss": ["weight-loss"],
+  "hormone-therapy": ["hormone-therapy"],
+  "hair-restoration": ["hair-restoration"],
 };
 
 function normalizeText(value: string): string {

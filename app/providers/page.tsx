@@ -15,10 +15,8 @@ import {
   providersPageMetadata,
   TREATMENT_CATEGORY_SEO,
 } from "@/lib/seo";
-import { POPULAR_CITY_SHORTCUTS, POPULAR_STATE_CODES, getStateLabel } from "@/lib/spa-utils";
+import { POPULAR_CITY_SHORTCUTS, POPULAR_STATE_CODES, TREATMENT_BROWSE_ORDER, getStateLabel } from "@/lib/spa-utils";
 import type { TreatmentCategory } from "@/lib/types";
-
-const TREATMENT_BROWSE_ORDER: TreatmentCategory[] = ["injectables", "lasers", "beauty", "body"];
 
 const SKIN_CONCERN_LINKS = [
   { label: "Anti-aging & fine lines", category: "injectables" as const },
@@ -27,6 +25,9 @@ const SKIN_CONCERN_LINKS = [
   { label: "Acne & skin texture", category: "beauty" as const },
   { label: "Facials & chemical peels", category: "beauty" as const },
   { label: "Body contouring", category: "body" as const },
+  { label: "Medical weight loss", category: "weight-loss" as const },
+  { label: "Hormone therapy", category: "hormone-therapy" as const },
+  { label: "Wellness & IV therapy", category: "wellness" as const },
 ];
 
 export async function generateMetadata({
@@ -123,7 +124,7 @@ export default async function ProvidersPage({
           Filter our nationwide directory for injectables, laser treatments, facials, and body contouring —
           or start with a common skin concern.
         </p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
           {TREATMENT_BROWSE_ORDER.map((key) => {
             const seo = TREATMENT_CATEGORY_SEO[key];
             return (

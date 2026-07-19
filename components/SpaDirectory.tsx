@@ -22,17 +22,12 @@ import {
   PROVIDER_TYPE_FILTERS,
   resolveLocationFromQuery,
   searchSpasByText,
+  TREATMENT_CATEGORY_FILTERS,
   US_STATES,
 } from "@/lib/spa-utils";
 import type { ProviderType, TreatmentCategory, USStateCode } from "@/lib/types";
 
-const CATEGORY_FILTERS: { label: string; value: TreatmentCategory | "All" }[] = [
-  { label: "All", value: "All" },
-  { label: "Injectables", value: "injectables" },
-  { label: "Lasers", value: "lasers" },
-  { label: "Beauty & Facials", value: "beauty" },
-  { label: "Body", value: "body" },
-];
+const CATEGORY_FILTERS = TREATMENT_CATEGORY_FILTERS;
 
 const PAGE_SIZE = 24;
 

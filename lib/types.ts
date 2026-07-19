@@ -14,9 +14,21 @@ export type Treatment =
   | "laser"
   | "facial"
   | "microneedling"
-  | "body-contouring";
+  | "body-contouring"
+  | "weight-loss"
+  | "hormone-therapy"
+  | "hair-restoration"
+  | "wellness";
 
-export type TreatmentCategory = "injectables" | "lasers" | "beauty" | "body";
+export type TreatmentCategory =
+  | "injectables"
+  | "lasers"
+  | "beauty"
+  | "body"
+  | "wellness"
+  | "weight-loss"
+  | "hormone-therapy"
+  | "hair-restoration";
 
 export type ProviderType = "med-spa" | "aesthetics-clinic" | "dermatology-aesthetics";
 

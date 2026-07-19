@@ -7,9 +7,7 @@ import { AIConcierge } from "@/components/AIConcierge";
 import { getFeaturedPremiumSpasFromData } from "@/lib/data";
 import { getRecommendedShopProducts } from "@/lib/shop-utils";
 import { homeFaqJsonLd, pageMetadata, SITE_KEYWORDS, TREATMENT_CATEGORY_SEO } from "@/lib/seo";
-import type { TreatmentCategory } from "@/lib/types";
-
-const TREATMENT_BROWSE_ORDER: TreatmentCategory[] = ["injectables", "lasers", "beauty", "body"];
+import { TREATMENT_BROWSE_ORDER } from "@/lib/spa-utils";
 
 export const metadata = pageMetadata({
   title: "Verity — Medical Aesthetics, Skincare & Med Spas Nationwide",
@@ -99,7 +97,7 @@ export default function HomePage() {
           Filter our nationwide directory by treatment type — from injectables and laser treatments to facials
           and body contouring.
         </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
           {TREATMENT_BROWSE_ORDER.map((key) => {
             const seo = TREATMENT_CATEGORY_SEO[key];
             return (

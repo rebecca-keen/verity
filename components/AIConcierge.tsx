@@ -4,16 +4,10 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { SearchableSelect } from "@/components/SearchableSelect";
 import { spas } from "@/lib/data";
-import { getCitiesByState, PROVIDER_TYPE_FILTERS, US_STATES } from "@/lib/spa-utils";
+import { getCitiesByState, PROVIDER_TYPE_FILTERS, TREATMENT_CATEGORY_FILTERS, US_STATES } from "@/lib/spa-utils";
 import type { ConciergeFilters, ConciergeMatch, ProviderType, TreatmentCategory, USStateCode } from "@/lib/types";
 
-const CATEGORY_FILTERS: { label: string; value: TreatmentCategory | "All" }[] = [
-  { label: "All treatments", value: "All" },
-  { label: "Injectables", value: "injectables" },
-  { label: "Lasers", value: "lasers" },
-  { label: "Beauty & Facials", value: "beauty" },
-  { label: "Body", value: "body" },
-];
+const CATEGORY_FILTERS = TREATMENT_CATEGORY_FILTERS;
 
 export function AIConcierge() {
   const [query, setQuery] = useState("");
