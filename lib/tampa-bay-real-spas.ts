@@ -1466,9 +1466,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
-                "glow-st-pete-med-spa-st-petersburg": {
+                  "glow-st-pete-med-spa-st-petersburg": {
     hero: "https://static.wixstatic.com/media/3bc63e_72bcfc9ce4d94e56a4235ec757153cc2~mv2.jpg/v1/fit/w_2500,h_1330,al_c/3bc63e_72bcfc9ce4d94e56a4235ec757153cc2~mv2.jpg",
-    logo: "/provider-logos/glow-st-pete-med-spa-st-petersburg.png",
+    logo: "/provider-logos/glow-st-pete-med-spa-st-petersburg.webp",
     gallery: [
       "https://static.wixstatic.com/media/3bc63e_52dab41920bf4db3951e600940ba3c7a~mv2.jpg/v1/fit/w_2500,h_1330,al_c/DSC08669.jpg",
       "https://static.wixstatic.com/media/3bc63e_625c02647cea4280a7e6a09121de52f2~mv2.jpg/v1/fit/w_2500,h_1330,al_c/3bc63e_625c02647cea4280a7e6a09121de52f2~mv2.jpg",
@@ -1554,9 +1554,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Beauty from Ashes Aesthetics official website — services",
   },
-                  "lineless-aesthetics-south-tampa-injectables-studio-tampa": {
+                    "lineless-aesthetics-south-tampa-injectables-studio-tampa": {
     hero: "https://linelessaesthetics.com/wp-content/uploads/2024/04/Hero-Office-Image.jpg",
-    logo: "/provider-logos/lineless-aesthetics-south-tampa-injectables-studio-tampa.png",
+    logo: "/provider-logos/lineless-aesthetics-south-tampa-injectables-studio-tampa.svg",
     gallery: [
       "https://linelessaesthetics.com/wp-content/uploads/2024/06/Lineless-Aesthetics-Featured-Image.jpg",
       "https://linelessaesthetics.com/wp-content/uploads/2024/06/Lineless-Aesthetics-Before-and-After-21.jpg",
@@ -1587,9 +1587,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Zee Aesthetics official website",
   },
-                "vio-med-spa-valrico": {
+                  "vio-med-spa-valrico": {
     hero: "https://viomedspa.com/valrico/wp-content/uploads/2026/03/Hero-micro.jpg",
-    logo: "/provider-logos/vio-med-spa-valrico.png",
+    logo: "/provider-logos/vio-med-spa-valrico.svg",
     gallery: [
       "https://viomedspa.com/valrico/wp-content/uploads/2026/03/Cathy_Injector_NP.png",
       "https://viomedspa.com/valrico/wp-content/uploads/2026/03/Sarah_Esthetician_Injectior_NP.png",
@@ -1609,9 +1609,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Provider official website",
   },
-                "sei-tu-bella-aesthetics-tampa": {
+                    "sei-tu-bella-aesthetics-tampa": {
     hero: "https://seitubellaaesthetics.com/storage/2025/02/Evoto-by-sei-tu-bella-aesthetics.webp",
-    logo: "/provider-logos/sei-tu-bella-aesthetics-tampa.png",
+    logo: "/provider-logos/sei-tu-bella-aesthetics-tampa.webp",
     gallery: [
       "https://seitubellaaesthetics.com/storage/2025/03/sei-tu-bella-aesthetics-featured-image.webp",
       "https://seitubellaaesthetics.com/storage/2025/07/STB2-2.webp",
@@ -1648,7 +1648,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Pommier Med Spa official website — services",
   },
-                "bella-excellence-westchase": {
+                  "bella-excellence-westchase": {
     hero: "https://www.bellaexcellence.com/cdn/shop/files/gempages_550448818538152784-11af0d33-1cf0-4da6-acd9-5e661c2e5aa2.png?v=13662857311412786691",
     logo: "/provider-logos/bella-excellence-westchase.png",
     gallery: [
@@ -1712,9 +1712,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Provider official website",
   },
-                "the-aesthetics-lounge-and-spa-tampa": {
+                  "the-aesthetics-lounge-and-spa-tampa": {
     hero: "https://tampa.theaestheticsloungeandspa.com/wp-content/uploads/2025/09/48-1024x819.jpg",
-    logo: "/provider-logos/the-aesthetics-lounge-and-spa-tampa.png",
+    logo: "/provider-logos/the-aesthetics-lounge-and-spa-tampa.webp",
     gallery: [
       "https://tampa.theaestheticsloungeandspa.com/wp-content/uploads/elementor/thumbs/9-rf1q6qzbzhsmyoi96h0ui1cpu8uppg4ay3b66pm07k.jpg",
       "https://tampa.theaestheticsloungeandspa.com/wp-content/uploads/elementor/thumbs/9-rposwh90d9y9s0c20ikmen1g4ggpd2nhzb0v6uxaxc.jpg",
@@ -1745,7 +1745,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Padgett Medical Center Tampa official website — facility photos",
   },
-                "bella-excellence-wesley-chapel": {
+                  "bella-excellence-wesley-chapel": {
     hero: "https://www.bellaexcellence.com/cdn/shop/files/gempages_550448818538152784-11af0d33-1cf0-4da6-acd9-5e661c2e5aa2.png?v=13662857311412786691",
     logo: "/provider-logos/bella-excellence-wesley-chapel.png",
     gallery: [
@@ -1794,9 +1794,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Provider official website",
   },
-                "allegra-wellness-spa-riverview": {
+                    "allegra-wellness-spa-riverview": {
     hero: "https://allegrawellnessspa.com/wp-content/uploads/2024/05/Cryo-slimming-Thumbnail-1.jpg",
-    logo: "/provider-logos/allegra-wellness-spa-riverview.jpg",
+    logo: "/provider-logos/allegra-wellness-spa-riverview.png",
     gallery: [
       "https://allegrawellnessspa.com/wp-content/uploads/2024/05/Cryo-slimming-Thumbnail.jpg",
       "https://allegrawellnessspa.com/wp-content/uploads/2024/05/Alegra-Wellness-Spa-Plant-city-FacialsFacial-6-768x734.jpg.webp",
@@ -1843,9 +1843,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "KC Wellness & Medspa official website — services",
   },
-                  "luminous-skin-and-laser-tampa": {
+                      "luminous-skin-and-laser-tampa": {
     hero: "http://www.luminousskinandlaser.com/cdn/shop/files/WEB_3_e0c55365-1f3f-4888-b1dd-306e81128eea_1200x1200.jpg?v=1718134356",
-    logo: "/provider-logos/luminous-skin-and-laser-tampa.jpg",
+    logo: "/provider-logos/luminous-skin-and-laser-tampa.png",
     gallery: [
       "https://www.luminousskinandlaser.com/cdn/shop/files/WEB_3_2_600x600@2x.jpg?v=1718133795",
       "https://www.luminousskinandlaser.com/cdn/shop/files/WEB_8_1_480x480@2x.jpg?v=1718136235",
@@ -1887,9 +1887,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "The Wellness Club official website — services",
   },
-                  "interface-aesthetics-whitnie-padron-aprn-largo": {
+                    "interface-aesthetics-whitnie-padron-aprn-largo": {
     hero: "https://cdn.prod.website-files.com/6986414b7f75606888cc9788/69be11f1a0b9b1170c784b1c_Weight-Loss-Hero-Before-After-Img.jpg",
-    logo: "/provider-logos/interface-aesthetics-whitnie-padron-aprn-largo.png",
+    logo: "/provider-logos/interface-aesthetics-whitnie-padron-aprn-largo.svg",
     gallery: [
       "https://cdn.prod.website-files.com/6986414b7f75606888cc9788/698e13c88ce600c6ee1d5648_Services-Before-After-Slider-1.jpg",
       "https://cdn.prod.website-files.com/6986414b7f75606888cc9788/698e13ffd30509e80691602c_Services-Before-After-Slider-3.jpg",
@@ -1919,9 +1919,9 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Florida Aesthetics and Wellness official website — services",
   },
-                "radiance-medspa-belleair-bluffs": {
+                  "radiance-medspa-belleair-bluffs": {
     hero: "https://www.radiancemedspa.com/wp-content/uploads/2025/08/bbl-hero-for-men-belleairbluffs-fl-card.jpg",
-    logo: "/provider-logos/radiance-medspa-belleair-bluffs.webp",
+    logo: "/provider-logos/radiance-medspa-belleair-bluffs.png",
     gallery: [
       "https://www.radiancemedspa.com/wp-content/uploads/2026/05/BB-20-Anniversary.png",
       "https://www.radiancemedspa.com/wp-content/uploads/2025/08/fillers-results-belleair-bluffs-no254803-01-1024x640.jpg",
@@ -1985,7 +1985,7 @@ export const TAMPA_BAY_REAL_SPA_IMAGES: Record<
     ],
     source: "Venus Med Spa official website — services",
   },
-                "phdermatology-westchase-tampa": {
+                  "phdermatology-westchase-tampa": {
     hero: "https://phdermatology.com/wp-content/uploads/2023/06/Valencia-Isabel-CROP-scaled.jpg",
     logo: "/provider-logos/phdermatology-westchase-tampa.png",
     gallery: [

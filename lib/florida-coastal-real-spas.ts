@@ -731,7 +731,7 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Rose Medical Aesthetics official website — services",
   },
-                "bowtique-medspa-sarasota": {
+                  "bowtique-medspa-sarasota": {
     hero: "https://www.datocms-assets.com/144122/1729802252-location-combined.png?auto=format,compress&w=1343",
     logo: "/provider-logos/bowtique-medspa-sarasota.png",
     gallery: [
@@ -742,9 +742,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Bowtique Med Spa official website — services",
   },
-                "fort-lauderdale-medspa": {
+                  "fort-lauderdale-medspa": {
     hero: "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/10/Botox.jpg",
-    logo: "/provider-logos/fort-lauderdale-medspa.png",
+    logo: "/provider-logos/fort-lauderdale-medspa.svg",
     gallery: [
       "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/10/Filler.jpg",
       "https://thefortlauderdalemedspa.com/wp-content/uploads/2025/09/Sculptra.jpg",
@@ -761,15 +761,15 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Modigliani Med Spa official website — services",
   },
-                "essential-aesthetics-fort-lauderdale": {
+                  "essential-aesthetics-fort-lauderdale": {
     hero: "https://essentialaestheticsfl.com/storage/2024/06/Essential-Aesthetics-Health-Featured-Logo.webp",
-    logo: "/provider-logos/essential-aesthetics-fort-lauderdale.webp",
+    logo: "/provider-logos/essential-aesthetics-fort-lauderdale.svg",
     gallery: [
 
     ],
     source: "Essential Aesthetics & Health official website — services",
   },
-                "aesthetic-label-fort-lauderdale": {
+                  "aesthetic-label-fort-lauderdale": {
     hero: "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/3ca20694-3625-44e3-a859-927725585693/Photo+Dec+05+2024%2C+4+00+35+PM+%282%29+%281%29.png?format=1500w",
     logo: "/provider-logos/aesthetic-label-fort-lauderdale.png",
     gallery: [
@@ -802,7 +802,7 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Shores Medical Spa official website — services",
   },
-                "elite-aesthetics-daytona-beach": {
+                  "elite-aesthetics-daytona-beach": {
     hero: "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/9e1b8fab-8f4a-464f-96e7-050d5b799c86/IMG_3011+2.JPG",
     logo: "/provider-logos/elite-aesthetics-daytona-beach.png",
     gallery: [
@@ -813,9 +813,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Elite Aesthetics official website — services",
   },
-                "anora-integrative-daytona": {
+                  "anora-integrative-daytona": {
     hero: "https://anoraiha.com/wp-content/uploads/2024/10/Treatment-Builder-Thumbnail.png",
-    logo: "/provider-logos/anora-integrative-daytona.png",
+    logo: "/provider-logos/anora-integrative-daytona.svg",
     gallery: [
       "https://anoraiha.com/wp-content/uploads/2024/10/Total-Wellness-Misc-8324.jpg",
       "https://anoraiha.com/wp-content/uploads/2024/10/Total-Wellness-MISC-1.jpg",
@@ -824,7 +824,7 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Anora Integrative Health and Aesthetics official website — services",
   },
-                "total-anti-aging-daytona": {
+                  "total-anti-aging-daytona": {
     hero: "https://www.daytonasantiaging.com/wp-content/uploads/2024/06/Total-Aging-and-Wellness-Daytona-Beach-FL-hero-500x500.webp",
     logo: "/provider-logos/total-anti-aging-daytona.png",
     gallery: [
@@ -843,9 +843,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Key West Med Spa official website — services",
   },
-                "keys-medspa-key-west": {
+                  "keys-medspa-key-west": {
     hero: "https://www.keysmedspa.com/wp-content/uploads/2020/01/Laser_Treatments_Img.jpg",
-    logo: "/provider-logos/keys-medspa-key-west.png",
+    logo: "/provider-logos/keys-medspa-key-west.jpg",
     gallery: [
       "https://www.keysmedspa.com/wp-content/uploads/2020/01/Skin_Rejuvenation_Imng.jpg",
       "https://www.keysmedspa.com/wp-content/uploads/2020/01/Injectables_Img.jpg",
@@ -886,9 +886,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Under the Palms MediSpa official website — services",
   },
-                  "sb-medspa-destin": {
+                    "sb-medspa-destin": {
     hero: "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/Hydrafacial.png",
-    logo: "/provider-logos/sb-medspa-destin.jpg",
+    logo: "/provider-logos/sb-medspa-destin.png",
     gallery: [
       "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/03/American-Society-of-Laser-Medicine-and-Surgery-removebg-preview.png",
       "https://s46669.pcdn.co/wp-content/uploads/sites/207/2025/04/HP-Coolsculpting_2291188869.jpg",
@@ -938,9 +938,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "TAO Medical Spa official website — services",
   },
-                "essentials-medispa-melbourne": {
+                  "essentials-medispa-melbourne": {
     hero: "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/08/LASER-Spa-Service-Button.jpg",
-    logo: "/provider-logos/essentials-medispa-melbourne.png",
+    logo: "/provider-logos/essentials-medispa-melbourne.svg",
     gallery: [
       "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/07/relax-3.png",
       "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/07/relax-1.png",
@@ -949,9 +949,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Essentials Medispa & Salon official website — services",
   },
-                  "couture-medspa-kissimmee": {
+                    "couture-medspa-kissimmee": {
     hero: "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/66e1ea19858b3f9ff5cb33bb_skinpen%20service.webp",
-    logo: "/provider-logos/couture-medspa-kissimmee.png",
+    logo: "/provider-logos/couture-medspa-kissimmee.svg",
     gallery: [
       "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb338b/66e1ea19858b3f9ff5cb3546_N%20Eslava%20after%201%20sculptra.webp",
       "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb338b/66e1ea19858b3f9ff5cb3606_Dana%20Laing%20after%203%20treatments%20(1).webp",
@@ -960,9 +960,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Couture Med Spa — Kissimmee official website — services",
   },
-                  "fountain-of-you-melbourne": {
+                    "fountain-of-you-melbourne": {
     hero: "https://fountainofyou.md/wp-content/uploads/2025/11/botox-med-spa-melbourne-fl-2.png",
-    logo: "/provider-logos/fountain-of-you-melbourne.png",
+    logo: "/provider-logos/fountain-of-you-melbourne.svg",
     gallery: [
       "https://fountainofyou.md/wp-content/uploads/2025/11/sculptra-med-spa-melbourne-fl.png",
       "https://fountainofyou.md/wp-content/uploads/2025/11/restylane-med-spa-melbourne-fl.png",

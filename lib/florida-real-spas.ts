@@ -1021,7 +1021,7 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
-                "olympia-aesthetics-palm-harbor": {
+                  "olympia-aesthetics-palm-harbor": {
     hero: "https://olympiaaesthetics.com/wp-content/uploads/elementor/thumbs/Olympia-156-rjm252d0md94exhibj0g6b3aovmcq7x1kikrqj8vao.png",
     logo: "/provider-logos/olympia-aesthetics-palm-harbor.png",
     gallery: [
@@ -1032,9 +1032,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Olympia Aesthetics & Wellness official website — services",
   },
-                  "living-young-palm-harbor": {
+                    "living-young-palm-harbor": {
     hero: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
-    logo: "/provider-logos/living-young-palm-harbor.png",
+    logo: "/provider-logos/living-young-palm-harbor.webp",
     gallery: [
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-google.png",
@@ -1043,9 +1043,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Living Young Center — Palm Harbor official website — services",
   },
-                "moraitis-med-spa-palm-harbor": {
+                  "moraitis-med-spa-palm-harbor": {
     hero: "https://moraitisplasticsurgery.com/wp-content/uploads/2025/02/Blog-Fallback-Img1.jpg",
-    logo: "/provider-logos/moraitis-med-spa-palm-harbor.jpg",
+    logo: "/provider-logos/moraitis-med-spa-palm-harbor.svg",
     gallery: [
 
     ],
@@ -1070,9 +1070,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Ageless Advanced Aesthetics official website — services",
   },
-                "medspa-bella-clearwater": {
+                  "medspa-bella-clearwater": {
     hero: "https://medspabellaclearwater.com/images/og-image.jpg",
-    logo: "/provider-logos/medspa-bella-clearwater.png",
+    logo: "/provider-logos/medspa-bella-clearwater.svg",
     gallery: [
       "https://medspabellaclearwater.com/images/dianna-bryan-md-optimized-376a7923c337e6c7ac54e32d46fb2cbc.jpg",
     ],
@@ -1107,9 +1107,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Tranquility Aesthetics official website — homepage",
   },
-                  "envy-me-aesthetics-tarpon-springs": {
+                    "envy-me-aesthetics-tarpon-springs": {
     hero: "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/699f19de2990d0f8c6462f85_Lip-Envy-Signature-Service-Before.jpg",
-    logo: "/provider-logos/envy-me-aesthetics-tarpon-springs.png",
+    logo: "/provider-logos/envy-me-aesthetics-tarpon-springs.svg",
     gallery: [
       "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/699f19f2be8b3b9dc25a7dc6_Lip-Envy-Signature-Service-After.jpg",
       "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/69f92bf59c01fad8b7339ef1_gallery-dermal-filler-1.jpg",
@@ -1136,9 +1136,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Core Wellness & MedSpa official website — services",
   },
-                "elemence-med-spa-largo": {
+                    "elemence-med-spa-largo": {
     hero: "https://elemencemedspa.com/wp-content/uploads/2025/07/DSC_9073_Original-570x696.jpg",
-    logo: "/provider-logos/elemence-med-spa-largo.png",
+    logo: "/provider-logos/elemence-med-spa-largo.webp",
     gallery: [
       "https://elemencemedspa.com/wp-content/uploads/2025/09/Skinpen-Microneedling-120x120.webp",
       "https://elemencemedspa.com/wp-content/uploads/2024/09/banner-resurs-copyright.jpg",
@@ -1163,9 +1163,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Bloom IV Hydration & Wellness official website — services",
   },
-                  "dunedin-well-spa": {
+                    "dunedin-well-spa": {
     hero: "https://dunedinwellspa.com/wp-content/uploads/2023/12/Hero_2.png",
-    logo: "/provider-logos/dunedin-well-spa.jpg",
+    logo: "/provider-logos/dunedin-well-spa.png",
     gallery: [
       "https://dunedinwellspa.com/wp-content/uploads/2023/12/Hero_2.png",
       "https://dunedinwellspa.com/wp-content/uploads/2022/06/30663575_s.jpg",
@@ -1173,9 +1173,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Dunedin Well Spa official website — homepage",
   },
-                  "living-young-st-petersburg": {
+                    "living-young-st-petersburg": {
     hero: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
-    logo: "/provider-logos/living-young-st-petersburg.png",
+    logo: "/provider-logos/living-young-st-petersburg.webp",
     gallery: [
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-google.png",
@@ -1184,17 +1184,17 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Living Young Center — St. Petersburg official website — services",
   },
-                  "iconcierge-medspa-st-pete": {
+                    "iconcierge-medspa-st-pete": {
     hero: "https://iconciergemedspa.com/wp-content/uploads/2026/02/iConcierge-Patient-Check-In-9619.jpg",
-    logo: "/provider-logos/iconcierge-medspa-st-pete.png",
+    logo: "/provider-logos/iconcierge-medspa-st-pete.svg",
     gallery: [
 
     ],
     source: "iConcierge Med Spa official website — services",
   },
-                "st-pete-wellness-medspa": {
+                  "st-pete-wellness-medspa": {
     hero: "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2025/11/PRF-Under-Eye-Treatment-St.-Pete-e1762884123186.jpg?fit=300%2C300&amp;ssl=1",
-    logo: "/provider-logos/st-pete-wellness-medspa.png",
+    logo: "/provider-logos/st-pete-wellness-medspa.jpg",
     gallery: [
       "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2024/11/Image-7.jpeg?fit=350%2C100&amp;ssl=1",
       "https://i0.wp.com/stpetewellnessmedspa.com/wp-content/uploads/2023/01/LASER-HAIR-REMOVAL-3.png?fit=1080%2C1080&amp;ssl=1",
@@ -1203,9 +1203,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "St. Pete Wellness Med Spa official website — services",
   },
-                  "living-young-seminole": {
+                    "living-young-seminole": {
     hero: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
-    logo: "/provider-logos/living-young-seminole.png",
+    logo: "/provider-logos/living-young-seminole.webp",
     gallery: [
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-google.png",
@@ -1214,9 +1214,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Living Young Center — Seminole official website — services",
   },
-                  "living-young-odessa": {
+                    "living-young-odessa": {
     hero: "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-2025.png",
-    logo: "/provider-logos/living-young-odessa.png",
+    logo: "/provider-logos/living-young-odessa.webp",
     gallery: [
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2022/08/top-injector.png",
       "https://livingyoungcenter.com/nitropack_static/eDhBrrDWhGEXmekZpGTCGwlWxSsQcCzS/assets/images/optimized/rev-b11f6b8/livingyoungcenter.com/wp-content/uploads/2025/09/best-med-spa-google.png",
@@ -1247,9 +1247,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Tre MedSpa official website — services",
   },
-                  "tao-wellness-medspa-tampa": {
+                    "tao-wellness-medspa-tampa": {
     hero: "https://taowellnessmedspa.com/wp-content/uploads/2024/09/staff-member-at-tao-wellness-med-spa-1.png",
-    logo: "/provider-logos/tao-wellness-medspa-tampa.png",
+    logo: "/provider-logos/tao-wellness-medspa-tampa.svg",
     gallery: [
       "https://taowellnessmedspa.com/wp-content/uploads/2024/09/beautiful-elegant-woman-with-gold-jewlery-tao-wellness-medspa-2.png",
     ],
@@ -1265,9 +1265,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Cell Renew Medical Spa official website — homepage",
   },
-                  "erasable-medspa-tampa": {
+                    "erasable-medspa-tampa": {
     hero: "https://erasablemedspa.com/wp-content/uploads/2024/02/DSC03002-Edit.jpg",
-    logo: "/provider-logos/erasable-medspa-tampa.png",
+    logo: "/provider-logos/erasable-medspa-tampa.svg",
     gallery: [
       "https://erasablemedspa.com/wp-content/uploads/2024/02/DSC03002-Edit.jpg",
       "https://erasablemedspa.com/wp-content/uploads/2025/12/Erasable-Halo-Tribrid-4921-1024x683.jpg",
@@ -1275,7 +1275,7 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Erasable Med Spa official website — homepage",
   },
-                "arviva-aesthetics-tampa": {
+                  "arviva-aesthetics-tampa": {
     hero: "https://arvivaesthetics.com/wp-content/uploads/2020/07/Canva-Male-beauty-treatment.jpg",
     logo: "/provider-logos/arviva-aesthetics-tampa.png",
     gallery: [
@@ -1297,9 +1297,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "4Ever Young — Tampa official website — services",
   },
-                "windermere-medical-spa-orlando": {
+                  "windermere-medical-spa-orlando": {
     hero: "https://windermeremedicalspa.com/storage/elementor/thumbs/sculptra-windermere-medical-spa-in-orlando-fl-qiq20wdwpszni3p8bu1afitih49xve69oyjk4tp3gw.webp",
-    logo: "/provider-logos/windermere-medical-spa-orlando.png",
+    logo: "/provider-logos/windermere-medical-spa-orlando.svg",
     gallery: [
       "https://windermeremedicalspa.com/storage/elementor/thumbs/lasers-winder-mere-medspa-orlando-fl-qiq20z7fab3igxl4vd96503w99w1ihhgpci0knkwy8.webp",
       "https://windermeremedicalspa.com/storage/elementor/thumbs/skin-windermere-medical-spa-in-orlando-fl-qiq20nxd0ao2lm1ip8dnb2yd4nfmy48onso6tc1n0w.webp",
@@ -1327,9 +1327,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "NUR Med Spa & Wellness official website — services",
   },
-                  "luxe-medspa-orlando": {
+                    "luxe-medspa-orlando": {
     hero: "https://luxemedspaaesthetics.com/_static_/feature/esthetician-services.jpg",
-    logo: "/provider-logos/luxe-medspa-orlando.jpg",
+    logo: "/provider-logos/luxe-medspa-orlando.png",
     gallery: [
       "https://luxemedspaaesthetics.com/_static_/feature/intro.jpg",
       "https://luxemedspaaesthetics.com/_static_/feature/injectables.jpg",
@@ -1357,9 +1357,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Focus Aesthetics official website — services",
   },
-                "concierge-cosmetics-jacksonville": {
+                  "concierge-cosmetics-jacksonville": {
     hero: "https://conciergecosmeticsandaesthetics.com/wp-content/uploads/2023/06/concierge-header.jpg",
-    logo: "/provider-logos/concierge-cosmetics-jacksonville.jpg",
+    logo: "/provider-logos/concierge-cosmetics-jacksonville.png",
     gallery: [
 
     ],
@@ -1376,9 +1376,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Modern Aesthetic Centers official website — services",
   },
-                  "cma-medicine-jacksonville": {
+                    "cma-medicine-jacksonville": {
     hero: "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2021/05/services-for-men.png?resize=500%2C500&#038;ssl=1",
-    logo: "/provider-logos/cma-medicine-jacksonville.jpg",
+    logo: "/provider-logos/cma-medicine-jacksonville.png",
     gallery: [
       "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/hair-removal-treatments-003.webp?resize=500%2C500&#038;ssl=1",
       "https://i0.wp.com/cmamedicine.com/wp-content/uploads/2024/06/body-sculpting.webp?resize=500%2C500&#038;ssl=1",

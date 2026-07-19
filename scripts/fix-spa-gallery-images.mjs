@@ -472,9 +472,24 @@ function extractLogoCandidates(html, base) {
     if (!url) return;
     try {
       const abs = new URL(url, base).href;
-      if (/\.(?:gif|svg)(?:\?|$)/i.test(abs) && kind !== "header-logo") return;
+      if (/\.(?:gif)(?:\?|$)/i.test(abs) && kind !== "header-logo") return;
       candidates.push({ url: abs, score, kind });
     } catch {}
+  }
+
+  for (const m of html.matchAll(/<img[^>]+>/gi)) {
+    const tag = m[0];
+    if (!/(?:class|id|alt)=["'][^"']*logo[^"']*["']/i.test(tag)) continue;
+    const srcM = tag.match(/(?:src|data-src|data-lazy-src)=["']([^"']+)["']/i);
+    if (!srcM || isPartnerBadgeLogo(srcM[1])) continue;
+    add(srcM[1], 1000, "header-logo");
+  }
+
+  for (const m of html.matchAll(/<img[^>]+>/gi)) {
+    const tag = m[0];
+    const srcM = tag.match(/(?:src|data-src|data-lazy-src)=["']([^"']+)["']/i);
+    if (!srcM || !LOGO_URL_RE.test(tag) && !LOGO_URL_RE.test(srcM[1]) || isPartnerBadgeLogo(srcM[1])) continue;
+    add(srcM[1], LOGO_URL_RE.test(srcM[1]) ? 900 : 850, "logo-img");
   }
 
   for (const m of html.matchAll(/<link[^>]+>/gi)) {
@@ -482,28 +497,12 @@ function extractLogoCandidates(html, base) {
     if (!/rel=["'][^"']*(?:apple-touch-icon|icon|shortcut icon|mask-icon)/i.test(tag)) continue;
     const hrefM = tag.match(/href=["']([^"']+)["']/i);
     if (!hrefM) continue;
-    let score = parseLinkSizes(tag);
-    if (/apple-touch-icon/i.test(tag)) score += 280;
-    else if (/icon/i.test(tag)) score += 220;
-    add(hrefM[1], score, "link-icon");
+    add(hrefM[1], LOGO_URL_RE.test(hrefM[1]) ? 820 : 120, "link-icon");
   }
 
   const og = extractOgImage(html, base);
-  if (og && !isPartnerBadgeLogo(og)) add(og, isLikelyLogo(og) ? 300 : 260, "og-image");
-
-  for (const m of html.matchAll(/<img[^>]+>/gi)) {
-    const tag = m[0];
-    if (!/(?:class|id|alt)=["'][^"']*logo[^"']*["']/i.test(tag)) continue;
-    const srcM = tag.match(/(?:src|data-src)=["']([^"']+)["']/i);
-    if (!srcM || isPartnerBadgeLogo(srcM[1])) continue;
-    add(srcM[1], 240, "header-logo");
-  }
-
-  for (const m of html.matchAll(/<img[^>]+>/gi)) {
-    const tag = m[0];
-    const srcM = tag.match(/(?:src|data-src)=["']([^"']+)["']/i);
-    if (!srcM || !LOGO_URL_RE.test(tag) || isPartnerBadgeLogo(srcM[1])) continue;
-    add(srcM[1], 80, "logo-img");
+  if (og && !isPartnerBadgeLogo(og)) {
+    add(og, LOGO_URL_RE.test(og) ? 800 : 150, "og-image");
   }
 
   return candidates.sort((a, b) => b.score - a.score);

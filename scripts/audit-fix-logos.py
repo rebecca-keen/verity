@@ -280,16 +280,50 @@ def extract_og_image(html: str, base: str) -> Optional[str]:
     return None
 
 
+PHOTO_LOGO_URL_RE = re.compile(
+    r"(?:og[-_](?:feat|image|default)|social/og|open[-_]?graph|screenshot|hero|masthead|banner|"
+    r"gallery|incollage|collage|facility|interior|exterior|lobby|treatment|service|before[-_]?after|"
+    r"headshot|portrait|team|staff|scaled\.|photo[-_]?\d|dsc[-_]?\d|share[-_]?(?:image|logo)|"
+    r"1200x630|1500x1500|1024x1024)",
+    re.I,
+)
+
+
+def is_photo_logo_url(url: Optional[str]) -> bool:
+    if not url:
+        return False
+    if LOGO_URL_RE.search(url):
+        return False
+    return bool(PHOTO_LOGO_URL_RE.search(url))
+
+
 def extract_logo_candidates(html: str, base: str) -> List[Tuple[str, int, str]]:
+    """Prefer header wordmarks over favicons and OG social preview images."""
     candidates: List[Tuple[str, int, str]] = []
 
     def add(url: Optional[str], score: int, kind: str):
         if not url:
             return
         abs_url = urllib.parse.urljoin(base, url)
-        if re.search(r"\.(?:gif|svg)(?:\?|$)", abs_url, re.I) and kind != "header-logo":
+        if is_photo_logo_url(abs_url) and kind not in ("header-logo", "logo-img"):
+            return
+        if re.search(r"\.(?:gif)(?:\?|$)", abs_url, re.I) and kind != "header-logo":
             return
         candidates.append((abs_url, score, kind))
+
+    for tag in re.findall(r"<img[^>]+>", html, re.I):
+        if re.search(r'(?:class|id|alt)=["\'][^"\']*logo[^"\']*["\']', tag, re.I):
+            src_m = re.search(r'(?:src|data-src|data-lazy-src)=["\']([^"\']+)["\']', tag, re.I)
+            if src_m and not is_partner_badge(src_m.group(1)):
+                add(src_m.group(1), 1000, "header-logo")
+
+    for tag in re.findall(r"<img[^>]+>", html, re.I):
+        src_m = re.search(r'(?:src|data-src|data-lazy-src)=["\']([^"\']+)["\']', tag, re.I)
+        if not src_m or is_partner_badge(src_m.group(1)):
+            continue
+        src = src_m.group(1)
+        if LOGO_URL_RE.search(src) or LOGO_URL_RE.search(tag):
+            add(src, 900 if LOGO_URL_RE.search(src) else 850, "logo-img")
 
     for tag in re.findall(r"<link[^>]+>", html, re.I):
         if not re.search(r'rel=["\'][^"\']*(?:apple-touch-icon|icon|shortcut icon|mask-icon)', tag, re.I):
@@ -297,29 +331,18 @@ def extract_logo_candidates(html: str, base: str) -> List[Tuple[str, int, str]]:
         href_m = re.search(r'href=["\']([^"\']+)["\']', tag, re.I)
         if not href_m:
             continue
-        score = 220
-        sizes_m = re.search(r'sizes=["\']([^"\']+)["\']', tag, re.I)
-        if sizes_m:
-            for part in sizes_m.group(1).split():
-                m = re.match(r"^(\d+)x(\d+)$", part)
-                if m:
-                    score = max(score, int(m.group(1)), int(m.group(2)))
-        if re.search(r"apple-touch-icon", tag, re.I):
-            score += 280
-        add(href_m.group(1), score, "link-icon")
+        href = href_m.group(1)
+        if LOGO_URL_RE.search(href):
+            add(href, 820, "link-icon")
+        else:
+            add(href, 120, "link-icon")
 
     og = extract_og_image(html, base)
     if og and not is_partner_badge(og):
-        add(og, 300 if LOGO_URL_RE.search(og) else 260, "og-image")
-
-    for tag in re.findall(r"<img[^>]+>", html, re.I):
-        if re.search(r'(?:class|id|alt)=["\'][^"\']*logo[^"\']*["\']', tag, re.I):
-            src_m = re.search(r'(?:src|data-src)=["\']([^"\']+)["\']', tag, re.I)
-            if src_m and not is_partner_badge(src_m.group(1)):
-                add(src_m.group(1), 240, "header-logo")
-        src_m = re.search(r'(?:src|data-src)=["\']([^"\']+)["\']', tag, re.I)
-        if src_m and LOGO_URL_RE.search(tag) and not is_partner_badge(src_m.group(1)):
-            add(src_m.group(1), 80, "logo-img")
+        if LOGO_URL_RE.search(og):
+            add(og, 800, "og-image")
+        elif not is_photo_logo_url(og):
+            add(og, 150, "og-image")
 
     candidates.sort(key=lambda x: -x[1])
     seen = set()

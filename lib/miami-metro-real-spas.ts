@@ -1232,9 +1232,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
-                  "viiv-wellness-haus-miami-beach": {
+                    "viiv-wellness-haus-miami-beach": {
     hero: "https://viivwellnesshaus.com/storage/elementor/thumbs/Services-Jaw-Sculpting-at-Viiv-in-Miami-Beach-r8xaiyd1qpv9f07ay7d2asacd8axskte7siw82t2tw.webp",
-    logo: "/provider-logos/viiv-wellness-haus-miami-beach.png",
+    logo: "/provider-logos/viiv-wellness-haus-miami-beach.svg",
     gallery: [
       "https://viivwellnesshaus.com/storage/2025/02/Viiv-subscribe-popup.webp",
       "https://viivwellnesshaus.com/storage/elementor/thumbs/Services-Cheek-Counturing-at-Viiv-in-miami-beach-r8xa82ecksyoxm0nizxmx174njyvmslbpwhf3oy8wk.webp",
@@ -1254,9 +1254,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Shay Novi Aesthetics & Wellness official website",
   },
-                          "lux-medspa-brickell-miami": {
+                            "lux-medspa-brickell-miami": {
     hero: "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/b80811c5-d8f8-44d3-bcb1-4e32e5dcac05/alan-araujo-featured-at-best-of-miami-dade-as-a-founder-with-vision-consistency-and-care.jpeg?format=1000w",
-    logo: "/provider-logos/lux-medspa-brickell-miami.jpg",
+    logo: "/provider-logos/lux-medspa-brickell-miami.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/eac81bd5-4e7b-4648-bbfc-1c08df165c71/client-during-ultraformer-mpt-non-surgical-face-lift-at-lux-medspa-brickell.jpg?format=1000w",
       "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/82027f3a-1d45-4cb4-9252-8d2a579e2114/lux-medspa-brickell-alan-araujo-best-facial-massage-couples-massage-miami.jpg?format=1000w",
@@ -1287,7 +1287,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Miami Skin Spa Aesthetics & Wellness official website",
   },
-                  "brickell-cosmetic-center-aesthetics-dermatology-miami": {
+                    "brickell-cosmetic-center-aesthetics-dermatology-miami": {
     hero: "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
     logo: "/provider-logos/brickell-cosmetic-center-aesthetics-dermatology-miami.png",
     gallery: [
@@ -1319,9 +1319,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Millennium Wellness Center official website",
   },
-                  "vio-med-spa-fort-lauderdale": {
+                    "vio-med-spa-fort-lauderdale": {
     hero: "https://viomedspa.com/fort-lauderdale/wp-content/uploads/2026/03/Hero-micro.jpg",
-    logo: "/provider-logos/vio-med-spa-fort-lauderdale.png",
+    logo: "/provider-logos/vio-med-spa-fort-lauderdale.svg",
     gallery: [
       "https://viomedspa.com/fort-lauderdale/wp-content/uploads/2026/05/QUIZ-1200x1200.jpg",
       "https://viomedspa.com/fort-lauderdale/wp-content/uploads/2026/04/vio-face-1024x841.jpg",
@@ -1329,7 +1329,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "VIO Med Spa Fort Lauderdale official website",
   },
-                  "amaira-med-spa-surgical-fort-lauderdale": {
+                    "amaira-med-spa-surgical-fort-lauderdale": {
     hero: "https://amairamedspa.com/wp-content/uploads/2026/02/TreatmentService-Page-Desktop-Cover-1.png",
     logo: "/provider-logos/amaira-med-spa-surgical-fort-lauderdale.png",
     gallery: [
@@ -1361,9 +1361,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Lumière by Adriana official website — services",
   },
-                    "glowing-skin-face-body-care-med-spa-fort-lauderdale": {
+                      "glowing-skin-face-body-care-med-spa-fort-lauderdale": {
     hero: "https://static.wixstatic.com/media/23cad5_55ed9a9d120a4b319f1bd4bdc09b470b~mv2.jpg/v1/fill/w_1200,h_630,al_c/23cad5_55ed9a9d120a4b319f1bd4bdc09b470b~mv2.jpg",
-    logo: "/provider-logos/glowing-skin-face-body-care-med-spa-fort-lauderdale.jpg",
+    logo: "/provider-logos/glowing-skin-face-body-care-med-spa-fort-lauderdale.png",
     gallery: [
 
     ],
@@ -1380,9 +1380,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Timeless Beauty Aesthetics official website",
   },
-                  "sanctuary-medical-aesthetic-center-fort-lauderdale": {
+                      "sanctuary-medical-aesthetic-center-fort-lauderdale": {
     hero: "https://www.sanctuarymedical.com/wp-content/uploads/2021/11/preview-full-Monday-Makeover-Banner-FACE1.png",
-    logo: "/provider-logos/sanctuary-medical-aesthetic-center-fort-lauderdale.webp",
+    logo: "/provider-logos/sanctuary-medical-aesthetic-center-fort-lauderdale.png",
     gallery: [
       "https://www.sanctuarymedical.com/wp-content/uploads/2025/10/6.png",
       "https://www.sanctuarymedical.com/wp-content/uploads/2022/03/home-1.webp",
@@ -1399,9 +1399,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Lov MedSpa Miami official website — services",
   },
-                  "vio-med-spa-aventura": {
+                    "vio-med-spa-aventura": {
     hero: "https://viomedspa.com/aventura/wp-content/uploads/2026/03/Hero-micro.jpg",
-    logo: "/provider-logos/vio-med-spa-aventura.png",
+    logo: "/provider-logos/vio-med-spa-aventura.svg",
     gallery: [
       "https://viomedspa.com/aventura/wp-content/uploads/2026/05/QUIZ-1200x1200.jpg",
       "https://viomedspa.com/aventura/wp-content/uploads/2026/04/vio-face-1024x841.jpg",
@@ -1409,9 +1409,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "VIO Med Spa Aventura official website",
   },
-                    "liquivida-wellness-center-aventura": {
+                      "liquivida-wellness-center-aventura": {
     hero: "https://www.liquivida.com/hubfs/Website%20Redesign%202025/Page%20Thumbnails/deals-promotions-liquivida-thumbnail.webp",
-    logo: "/provider-logos/liquivida-wellness-center-aventura.webp",
+    logo: "/provider-logos/liquivida-wellness-center-aventura.png",
     gallery: [
       "https://www.liquivida.com/hs-fs/hubfs/Website%20Redesign%202025/1.%20Home/Happy%20female%20Liquivida%20client%20getting%20IV%20drips.webp?width=1360&amp;height=765&amp;name=Happy%20female%20Liquivida%20client%20getting%20IV%20drips.webp",
       "https://www.liquivida.com/hs-fs/hubfs/Website%20Redesign%202025/Home/liquivida-wellness-center-deals.webp?width=1360&amp;height=765&amp;name=liquivida-wellness-center-deals.webp",
@@ -1461,7 +1461,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Spa New York - Miami Beach Medical Spa official website",
   },
-                  "arviv-medical-aesthetics-miami": {
+                    "arviv-medical-aesthetics-miami": {
     hero: "https://arvivaesthetics.com/wp-content/uploads/2016/10/homepage-sm.jpg",
     logo: "/provider-logos/arviv-medical-aesthetics-miami.png",
     gallery: [
@@ -1494,9 +1494,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "247 Med Spa official website",
   },
-                  "healthy-glow-aesthetics-fort-lauderdale": {
+                    "healthy-glow-aesthetics-fort-lauderdale": {
     hero: "https://healthyglowaesthetics.com/wp-content/uploads/2025/10/Breeze-Infusion-Treatment.png",
-    logo: "/provider-logos/healthy-glow-aesthetics-fort-lauderdale.png",
+    logo: "/provider-logos/healthy-glow-aesthetics-fort-lauderdale.svg",
     gallery: [
       "https://healthyglowaesthetics.com/wp-content/uploads/2025/01/Healthy-Glow-Aesthetics-chemical-peel-in-lauderdale-FL.webp",
       "https://healthyglowaesthetics.com/wp-content/uploads/2026/02/beautician-doing-injection-filler-female-client-scaled.jpg",
@@ -1516,9 +1516,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Aguilar Aesthetics Medspa & Wellness official website",
   },
-                  "yanasthetics-llc-aventura": {
+                    "yanasthetics-llc-aventura": {
     hero: "https://yanasthetics.com/wp-content/uploads/2025/12/IMG_6537-1.webp",
-    logo: "/provider-logos/yanasthetics-llc-aventura.png",
+    logo: "/provider-logos/yanasthetics-llc-aventura.webp",
     gallery: [
       "https://yanasthetics.com/wp-content/uploads/2025/12/IMG_9732-1.webp",
       "https://yanasthetics.com/wp-content/uploads/2025/12/IMG_9506.webp",
@@ -1538,9 +1538,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Le Mar Aesthetics - Kendall MedSpa official website",
   },
-                  "meraki-med-miami": {
+                    "meraki-med-miami": {
     hero: "https://static.wixstatic.com/media/11062b_c08353118ce849f98c46f9788443b1fe~mv2.jpg/v1/crop/x_0,y_164,w_5000,h_3005/fill/w_872,h_524,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Laser%20Facial%20Treatment.jpg",
-    logo: "/provider-logos/meraki-med-miami.jpg",
+    logo: "/provider-logos/meraki-med-miami.png",
     gallery: [
       "https://static.wixstatic.com/media/f061f0_007eef60591547f2a27eca0a0c1f16ad~mv2.png/v1/fill/w_188,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/f061f0_007eef60591547f2a27eca0a0c1f16ad~mv2.webp",
       "https://static.wixstatic.com/media/f061f0_82e9ca4c27db4784be0ad066c03d3431~mv2.png/v1/fill/w_500,h_500,al_c/f061f0_82e9ca4c27db4784be0ad066c03d3431~mv2.png",
@@ -1560,7 +1560,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "NuYou Medical Aesthetics official website",
   },
-                  "white-coat-med-spa-miami": {
+                      "white-coat-med-spa-miami": {
     hero: "https://whitecoatmedspa.com/wp-content/uploads/2023/02/servicios-OXINA-BOTULINICA-Y-RELLENOS.png",
     logo: "/provider-logos/white-coat-med-spa-miami.png",
     gallery: [
@@ -1570,9 +1570,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "White Coat Med Spa official website",
   },
-                    "bella-vida-aesthetics-wellness-miami": {
+                      "bella-vida-aesthetics-wellness-miami": {
     hero: "https://bellavidaaesthetics.com/wp-content/uploads/2024/03/bella-vida-aesthetics-in-miami-sm.jpg",
-    logo: "/provider-logos/bella-vida-aesthetics-wellness-miami.jpg",
+    logo: "/provider-logos/bella-vida-aesthetics-wellness-miami.png",
     gallery: [
       "https://bellavidaaesthetics.com/wp-content/uploads/2025/02/Photo-Jan-15-2024-10-58-26-PM-1-1-scaled.jpg",
       "https://bellavidaaesthetics.com/wp-content/uploads/2023/10/neurotoxin-at-bella-vida-img.jpg",
@@ -1624,7 +1624,7 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Aesthetic305 official website — services",
   },
-                    "laria-medspa-miami": {
+                      "laria-medspa-miami": {
     hero: "https://lariamedspa.com/wp-content/uploads/bb-plugin/cache/spa-member-landscape-22b6003f4b7aab5b4b33d9ae32cbc92f-n3z4ybxuveap.jpg",
     logo: "/provider-logos/laria-medspa-miami.png",
     gallery: [
@@ -1665,9 +1665,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Join Body Good official website",
   },
-                  "new-image-works-aventura": {
+                    "new-image-works-aventura": {
     hero: "https://newimageworks.com/wp-content/themes/niw_4_2_9/img/new-image-works-og.jpg",
-    logo: "/provider-logos/new-image-works-aventura.jpg",
+    logo: "/provider-logos/new-image-works-aventura.svg",
     gallery: [
       "https://newimageworks.com/wp-content/uploads/2025/10/allergan-2025.webp",
       "https://newimageworks.com/wp-content/uploads/2025/03/new-image-works-award-2025-chicago.webp",
@@ -1717,9 +1717,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Surface Level Med Spa official website",
   },
-                  "aventura-med-spa-aventura": {
+                    "aventura-med-spa-aventura": {
     hero: "https://cdn.aventuramedspa.com/site/social/twitter-image.png",
-    logo: "/provider-logos/aventura-med-spa-aventura.png",
+    logo: "/provider-logos/aventura-med-spa-aventura.webp",
     gallery: [
       "https://cdn.aventuramedspa.com/site/images/Background.png",
       "https://cdn.aventuramedspa.com/site/images/Background6.png",

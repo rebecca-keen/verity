@@ -1,0 +1,743 @@
+{
+  "fixed_count": 37,
+  "failed_count": 74,
+  "fixed": [
+    {
+      "slug": "arviv-medical-aesthetics-miami",
+      "status": "fixed",
+      "before": "/provider-logos/arviv-medical-aesthetics-miami.png",
+      "after": "/provider-logos/arviv-medical-aesthetics-miami.png",
+      "from": "https://arvivaesthetics.com/wp-content/uploads/2017/08/cropped-arvivIcon1-1-250x250.png"
+    },
+    {
+      "slug": "arviva-aesthetics-tampa",
+      "status": "fixed",
+      "before": "/provider-logos/arviva-aesthetics-tampa.png",
+      "after": "/provider-logos/arviva-aesthetics-tampa.png",
+      "from": "https://arvivaesthetics.com/wp-content/uploads/2017/08/cropped-arvivIcon1-1-250x250.png"
+    },
+    {
+      "slug": "forte-faces-conshohocken",
+      "status": "fixed",
+      "before": "/provider-logos/forte-faces-conshohocken.png",
+      "after": "/provider-logos/forte-faces-conshohocken.png",
+      "from": "https://fortefaces.com/wp-content/uploads/2025/09/Frame-386-4-2-300x300.png"
+    },
+    {
+      "slug": "milan-laser-greenville-greenville-2",
+      "status": "fixed",
+      "before": "/provider-logos/milan-laser-greenville-greenville-2.webp",
+      "after": "/provider-logos/milan-laser-greenville-greenville-2.webp",
+      "from": "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp"
+    },
+    {
+      "slug": "skin-laundry-back-bay-boston",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-back-bay-boston.png",
+      "after": "/provider-logos/skin-laundry-back-bay-boston.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-boulder",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-boulder.png",
+      "after": "/provider-logos/skin-laundry-boulder.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-bethesda",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-bethesda.png",
+      "after": "/provider-logos/skin-laundry-bethesda.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-brentwood-los-angeles",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-brentwood-los-angeles.png",
+      "after": "/provider-logos/skin-laundry-brentwood-los-angeles.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-brickell-miami",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-brickell-miami.png",
+      "after": "/provider-logos/skin-laundry-brickell-miami.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-capitol-hill-seattle",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-capitol-hill-seattle.png",
+      "after": "/provider-logos/skin-laundry-capitol-hill-seattle.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-buckhead-atlanta",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-buckhead-atlanta.png",
+      "after": "/provider-logos/skin-laundry-buckhead-atlanta.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-downtown-austin",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-downtown-austin.png",
+      "after": "/provider-logos/skin-laundry-downtown-austin.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-downtown-palo-alto",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-downtown-palo-alto.png",
+      "after": "/provider-logos/skin-laundry-downtown-palo-alto.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-downtown-san-diego",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-downtown-san-diego.png",
+      "after": "/provider-logos/skin-laundry-downtown-san-diego.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-downtown-san-francisco",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-downtown-san-francisco.png",
+      "after": "/provider-logos/skin-laundry-downtown-san-francisco.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-downtown-walnut-creek",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-downtown-walnut-creek.png",
+      "after": "/provider-logos/skin-laundry-downtown-walnut-creek.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-fashion-island-newport-beach",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-fashion-island-newport-beach.png",
+      "after": "/provider-logos/skin-laundry-fashion-island-newport-beach.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-flatiron-new-york",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-flatiron-new-york.png",
+      "after": "/provider-logos/skin-laundry-flatiron-new-york.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-galleria-houston",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-galleria-houston.png",
+      "after": "/provider-logos/skin-laundry-galleria-houston.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-georgetown-washington",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-georgetown-washington.png",
+      "after": "/provider-logos/skin-laundry-georgetown-washington.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-la-jolla-san-diego",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-la-jolla-san-diego.png",
+      "after": "/provider-logos/skin-laundry-la-jolla-san-diego.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-irvine",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-irvine.png",
+      "after": "/provider-logos/skin-laundry-irvine.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-lodo-denver",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-lodo-denver.png",
+      "after": "/provider-logos/skin-laundry-lodo-denver.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-manhattan-beach-los-angeles",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-manhattan-beach-los-angeles.png",
+      "after": "/provider-logos/skin-laundry-manhattan-beach-los-angeles.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-midtown-new-york",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-midtown-new-york.png",
+      "after": "/provider-logos/skin-laundry-midtown-new-york.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-old-town-scottsdale",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-old-town-scottsdale.png",
+      "after": "/provider-logos/skin-laundry-old-town-scottsdale.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-pasadena-los-angeles",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-pasadena-los-angeles.png",
+      "after": "/provider-logos/skin-laundry-pasadena-los-angeles.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-pearl-district-portland",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-pearl-district-portland.png",
+      "after": "/provider-logos/skin-laundry-pearl-district-portland.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-river-north-chicago",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-river-north-chicago.png",
+      "after": "/provider-logos/skin-laundry-river-north-chicago.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-rittenhouse-philadelphia",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-rittenhouse-philadelphia.png",
+      "after": "/provider-logos/skin-laundry-rittenhouse-philadelphia.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-santa-monica-los-angeles",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-santa-monica-los-angeles.png",
+      "after": "/provider-logos/skin-laundry-santa-monica-los-angeles.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-southpark-charlotte",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-southpark-charlotte.png",
+      "after": "/provider-logos/skin-laundry-southpark-charlotte.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-summerlin-las-vegas",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-summerlin-las-vegas.png",
+      "after": "/provider-logos/skin-laundry-summerlin-las-vegas.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "the-few-institute-chicago",
+      "status": "fixed",
+      "before": "/provider-logos/the-few-institute-chicago.png",
+      "after": "/provider-logos/the-few-institute-chicago.png",
+      "from": "https://www.datocms-assets.com/75997/1663884244-few-logo.png?auto=format,compress&w=766"
+    },
+    {
+      "slug": "skin-laundry-tysons",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-tysons.png",
+      "after": "/provider-logos/skin-laundry-tysons.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-uptown-dallas",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-uptown-dallas.png",
+      "after": "/provider-logos/skin-laundry-uptown-dallas.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    },
+    {
+      "slug": "skin-laundry-willow-glen-san-jose",
+      "status": "fixed",
+      "before": "/provider-logos/skin-laundry-willow-glen-san-jose.png",
+      "after": "/provider-logos/skin-laundry-willow-glen-san-jose.svg",
+      "from": "https://www.skinlaundry.com/favicon/safari-pinned-tab.svg"
+    }
+  ],
+  "failed": [
+    {
+      "slug": "adare-longevity-aesthetics-st-petersburg",
+      "status": "failed",
+      "before": "/provider-logos/adare-longevity-aesthetics-st-petersburg.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "alonso-aesthetics-wellness-tampa",
+      "status": "failed",
+      "before": "/provider-logos/alonso-aesthetics-wellness-tampa.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "aesthetic305-miami",
+      "status": "failed",
+      "before": "/provider-logos/aesthetic305-miami.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "abq-med-spa-albuquerque",
+      "status": "failed",
+      "before": "/provider-logos/abq-med-spa-albuquerque.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "baymed-hair-tampa",
+      "status": "failed",
+      "before": "/provider-logos/baymed-hair-tampa.png",
+      "reason": "still-photo-as-logo",
+      "reasons": [
+        "square-photo-dimensions"
+      ],
+      "url": "https://baymedhair.com/wp-content/uploads/2024/02/logo.png"
+    },
+    {
+      "slug": "aguilar-aesthetics-medspa-wellness-aventura",
+      "status": "failed",
+      "before": "/provider-logos/aguilar-aesthetics-medspa-wellness-aventura.jpg",
+      "reason": "still-photo-as-logo",
+      "reasons": [
+        "favicon-sized"
+      ],
+      "url": "https://aguilaraesthetics.com/wp-content/uploads/2022/06/aguilar-aesthetics-fort-lauderdale-fl-logo-80x80.jpeg"
+    },
+    {
+      "slug": "bloom-iv-dunedin",
+      "status": "failed",
+      "before": "/provider-logos/bloom-iv-dunedin.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "aesthetics-lab-las-vegas",
+      "status": "failed",
+      "before": "/provider-logos/aesthetics-lab-las-vegas.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "beverly-wilshire-aesthetics",
+      "status": "failed",
+      "before": "/provider-logos/beverly-wilshire-aesthetics.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "charleston-med-spa-charleston",
+      "status": "failed",
+      "before": "/provider-logos/charleston-med-spa-charleston.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "bodylase-charlotte",
+      "status": "failed",
+      "before": "/provider-logos/bodylase-charlotte.webp",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "ageless-advanced-aesthetics-clearwater",
+      "status": "failed",
+      "before": "/provider-logos/ageless-advanced-aesthetics-clearwater.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "cienega-medical-west-hollywood",
+      "status": "failed",
+      "before": "/provider-logos/cienega-medical-west-hollywood.jpg",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "cheyenne-skin-clinic-cheyenne",
+      "status": "failed",
+      "before": "/provider-logos/cheyenne-skin-clinic-cheyenne.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "cell-renew-medspa-tampa",
+      "status": "failed",
+      "before": "/provider-logos/cell-renew-medspa-tampa.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "dermatology-cosmetic-laser-brentwood",
+      "status": "failed",
+      "before": "/provider-logos/dermatology-cosmetic-laser-brentwood.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "cor-medspa-houston",
+      "status": "failed",
+      "before": "/provider-logos/cor-medspa-houston.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "dermalogix-med-spa-houston",
+      "status": "failed",
+      "before": "/provider-logos/dermalogix-med-spa-houston.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "dunedin-medical-aesthetics-laser",
+      "status": "failed",
+      "before": "/provider-logos/dunedin-medical-aesthetics-laser.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "baldwin-medspa-panama-city",
+      "status": "failed",
+      "before": "/provider-logos/baldwin-medspa-panama-city.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "eleven-med-spa-dallas",
+      "status": "failed",
+      "before": "/provider-logos/eleven-med-spa-dallas.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "evolution-medspa-boston",
+      "status": "failed",
+      "before": "/provider-logos/evolution-medspa-boston.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "destin-plastic-surgery-medspa",
+      "status": "failed",
+      "before": "/provider-logos/destin-plastic-surgery-medspa.jpg",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "flawless-medspa-las-vegas",
+      "status": "failed",
+      "before": "/provider-logos/flawless-medspa-las-vegas.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "coco-med-spa-st-petersburg",
+      "status": "failed",
+      "before": "/provider-logos/coco-med-spa-st-petersburg.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "4beauty-medspa-miami",
+      "status": "failed",
+      "before": "/provider-logos/4beauty-medspa-miami.webp",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "first-state-med-spa-wilmington",
+      "status": "failed",
+      "before": "/provider-logos/first-state-med-spa-wilmington.png",
+      "reason": "still-photo-as-logo",
+      "reasons": [
+        "large-square-photo"
+      ],
+      "url": "https://firststatemedspa.com/wp-content/uploads/2022/08/DT-BOD-2022-Logo-Black.png"
+    },
+    {
+      "slug": "fusion-medispa-odessa",
+      "status": "failed",
+      "before": "/provider-logos/fusion-medispa-odessa.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "denver-dream-medspa",
+      "status": "failed",
+      "before": "/provider-logos/denver-dream-medspa.jpg",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "esse-medspa-denver",
+      "status": "failed",
+      "before": "/provider-logos/esse-medspa-denver.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "golden-aesthetics-wellness-miami",
+      "status": "failed",
+      "before": "/provider-logos/golden-aesthetics-wellness-miami.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "inside-out-medspa-naples",
+      "status": "failed",
+      "before": "/provider-logos/inside-out-medspa-naples.webp",
+      "reason": "still-photo-as-logo",
+      "reasons": [
+        "square-photo-dimensions"
+      ],
+      "url": "https://insideoutmedspa.com/wp-content/uploads/2025/12/Inside-Out-Medspa-Logo-Large.webp"
+    },
+    {
+      "slug": "key-west-health-aesthetics",
+      "status": "failed",
+      "before": "/provider-logos/key-west-health-aesthetics.png",
+      "reason": "still-photo-as-logo",
+      "reasons": [
+        "square-photo-dimensions"
+      ],
+      "url": "https://keywest.health/images/brand/key-west-health-med-spa-logo.png"
+    },
+    {
+      "slug": "lume-med-spa-lakeview",
+      "status": "failed",
+      "before": "/provider-logos/lume-med-spa-lakeview.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "focus-aesthetics-jacksonville",
+      "status": "failed",
+      "before": "/provider-logos/focus-aesthetics-jacksonville.webp",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "magnolia-medical-spa-jackson",
+      "status": "failed",
+      "before": "/provider-logos/magnolia-medical-spa-jackson.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "elemence-med-spa-largo",
+      "status": "failed",
+      "before": "/provider-logos/elemence-med-spa-largo.webp",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "gables-med-spa-coral-gables",
+      "status": "failed",
+      "before": "/provider-logos/gables-med-spa-coral-gables.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "eternal-medspa-sarasota",
+      "status": "failed",
+      "before": "/provider-logos/eternal-medspa-sarasota.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "lan-aesthetics-tampa",
+      "status": "failed",
+      "before": "/provider-logos/lan-aesthetics-tampa.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "miami-skin-spa-aesthetics-wellness-miami",
+      "status": "failed",
+      "before": "/provider-logos/miami-skin-spa-aesthetics-wellness-miami.jpg",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "monaco-medspa-miami",
+      "status": "failed",
+      "before": "/provider-logos/monaco-medspa-miami.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "lush-injectables-sarasota",
+      "status": "failed",
+      "before": "/provider-logos/lush-injectables-sarasota.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "natural-body-spa-brookhaven",
+      "status": "failed",
+      "before": "/provider-logos/natural-body-spa-brookhaven.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "nashville-skin-company",
+      "status": "failed",
+      "before": "/provider-logos/nashville-skin-company.jpg",
+      "reason": "still-photo-as-logo",
+      "reasons": [
+        "favicon-sized"
+      ],
+      "url": "https://cdn.prod.website-files.com/678e714af48f130856f60309/68e6c4bf72dbf5120653b693_Logomark%20Black%20(1).jpg"
+    },
+    {
+      "slug": "moxy-medical-spa-st-petersburg",
+      "status": "failed",
+      "before": "/provider-logos/moxy-medical-spa-st-petersburg.jpg",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "mynt-aesthetics-land-o-lakes",
+      "status": "failed",
+      "before": "/provider-logos/mynt-aesthetics-land-o-lakes.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "modigliani-medspa-fort-lauderdale",
+      "status": "failed",
+      "before": "/provider-logos/modigliani-medspa-fort-lauderdale.png",
+      "reason": "still-photo-as-logo",
+      "reasons": [
+        "favicon-sized"
+      ],
+      "url": "https://modiglianimed.com/wp-content/uploads/2024/11/cropped-cropped-Modigliani-Med-Spa-Logo-Black-1-32x32.png"
+    },
+    {
+      "slug": "kc-wellness-medspa-riverview",
+      "status": "failed",
+      "before": "/provider-logos/kc-wellness-medspa-riverview.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "radiant-beauty-health-manhattan",
+      "status": "failed",
+      "before": "/provider-logos/radiant-beauty-health-manhattan.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "north-scottsdale-med-spa",
+      "status": "failed",
+      "before": "/provider-logos/north-scottsdale-med-spa.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "olympia-aesthetics-palm-harbor",
+      "status": "failed",
+      "before": "/provider-logos/olympia-aesthetics-palm-harbor.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "reflections-med-spa-chicago",
+      "status": "failed",
+      "before": "/provider-logos/reflections-med-spa-chicago.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "nur-medspa-orlando",
+      "status": "failed",
+      "before": "/provider-logos/nur-medspa-orlando.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "sente-bella-medspa-downtown-sd",
+      "status": "failed",
+      "before": "/provider-logos/sente-bella-medspa-downtown-sd.webp",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "scottsdale-med-spa",
+      "status": "failed",
+      "before": "/provider-logos/scottsdale-med-spa.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "santa-fe-skin-institute-santa-fe",
+      "status": "failed",
+      "before": "/provider-logos/santa-fe-skin-institute-santa-fe.jpg",
+      "reason": "still-photo-as-logo",
+      "reasons": [
+        "favicon-sized"
+      ],
+      "url": "https://img1.wsimg.com/isteam/ip/static/pwa-app/logo-default.png/:/rs=w:57,h:57,m"
+    },
+    {
+      "slug": "simply-radiant-med-spa-las-vegas",
+      "status": "failed",
+      "before": "/provider-logos/simply-radiant-med-spa-las-vegas.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "serenity-beauty-secrets-tampa",
+      "status": "failed",
+      "before": "/provider-logos/serenity-beauty-secrets-tampa.jpg",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "revive-medical-spa-anchorage",
+      "status": "failed",
+      "before": "/provider-logos/revive-medical-spa-anchorage.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "river-north-wellness-med-spa",
+      "status": "failed",
+      "before": "/provider-logos/river-north-wellness-med-spa.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "perfectly-bare-laser-tampa",
+      "status": "failed",
+      "before": "/provider-logos/perfectly-bare-laser-tampa.webp",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "silk-med-spa-tampa",
+      "status": "failed",
+      "before": "/provider-logos/silk-med-spa-tampa.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "prestige-med-spa-charlotte",
+      "status": "failed",
+      "before": "/provider-logos/prestige-med-spa-charlotte.webp",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "pure-med-spa-chicago",
+      "status": "failed",
+      "before": "/provider-logos/pure-med-spa-chicago.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "slk-aesthetic-medicine-nashville",
+      "status": "failed",
+      "before": "/provider-logos/slk-aesthetic-medicine-nashville.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "teton-dermatology-aesthetics-jackson",
+      "status": "failed",
+      "before": "/provider-logos/teton-dermatology-aesthetics-jackson.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "skin-medical-spa-anchorage",
+      "status": "failed",
+      "before": "/provider-logos/skin-medical-spa-anchorage.jpg",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "tre-medspa-tampa",
+      "status": "failed",
+      "before": "/provider-logos/tre-medspa-tampa.webp",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "zee-aesthetics-tampa",
+      "status": "failed",
+      "before": "/provider-logos/zee-aesthetics-tampa.jpg",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "the-aesthetics-lab-tampa",
+      "status": "failed",
+      "before": "/provider-logos/the-aesthetics-lab-tampa.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "spindrift-aesthetics-st-petersburg",
+      "status": "failed",
+      "before": "/provider-logos/spindrift-aesthetics-st-petersburg.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "timeless-beauty-aesthetics-fort-lauderdale",
+      "status": "failed",
+      "before": "/provider-logos/timeless-beauty-aesthetics-fort-lauderdale.png",
+      "reason": "no-logo-found"
+    },
+    {
+      "slug": "xs-medspa-fort-lauderdale",
+      "status": "failed",
+      "before": "/provider-logos/xs-medspa-fort-lauderdale.png",
+      "reason": "no-logo-found"
+    }
+  ]
+}
