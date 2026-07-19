@@ -12,16 +12,18 @@ const TAG_COLORS: Record<Treatment, string> = {
   "hormone-therapy": "bg-violet-50 text-violet-800 border border-violet-200/60",
   "hair-restoration": "bg-sky-50 text-sky-800 border border-sky-200/60",
   wellness: "bg-emerald-50 text-emerald-800 border border-emerald-200/60",
+  "iv-therapy": "bg-teal-50 text-teal-800 border border-teal-200/60",
+  "mens-health": "bg-slate-100 text-slate-800 border border-slate-200/60",
+  "womens-health": "bg-rose-50 text-rose-800 border border-rose-200/60",
 };
 
 type TreatmentTagsProps = {
   treatments: Treatment[];
-  max?: number;
 };
 
-export function TreatmentTags({ treatments, max = 4 }: TreatmentTagsProps) {
-  const visible = treatments.slice(0, max);
-  if (visible.length === 0) return null;
+export function TreatmentTags({ treatments }: TreatmentTagsProps) {
+  if (treatments.length === 0) return null;
+  const visible = treatments;
 
   return (
     <div className="flex flex-wrap gap-1.5">

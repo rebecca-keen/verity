@@ -104,8 +104,11 @@ const CATEGORY_TREATMENTS: Record<TreatmentCategory, Treatment[]> = {
   beauty: ["facial", "microneedling"],
   body: ["body-contouring"],
   wellness: ["wellness"],
+  "iv-therapy": ["iv-therapy"],
   "weight-loss": ["weight-loss"],
   "hormone-therapy": ["hormone-therapy"],
+  "mens-health": ["mens-health"],
+  "womens-health": ["womens-health"],
   "hair-restoration": ["hair-restoration"],
 };
 

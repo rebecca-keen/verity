@@ -493,7 +493,7 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     phone: "(212) 555-0199",
     website: "https://dripology.co/new-york/",
     yearsOpen: 5,
-    treatments: ["botox", "wellness"],
+    treatments: ["botox", "iv-therapy"],
   }),
   seed({
     slug: "skinly-aesthetics-nyc",
@@ -842,7 +842,7 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     phone: "(480) 555-0144",
     website: "https://www.alchemy-medbar.com/",
     yearsOpen: 4,
-    treatments: ["botox", "fillers", "laser", "wellness"],
+    treatments: ["botox", "fillers", "laser", "wellness", "iv-therapy"],
   }),
   seed({
     slug: "zona-med-spa-scottsdale",
@@ -1031,7 +1031,7 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     phone: "(773) 555-0188",
     website: "https://essenceskinclinic.com/",
     yearsOpen: 9,
-    treatments: ["botox", "facial", "wellness"],
+    treatments: ["botox", "facial", "weight-loss", "hormone-therapy", "wellness"],
   }),
   seed({
     slug: "river-north-wellness-med-spa",
@@ -1101,7 +1101,7 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     phone: "(702) 555-0199",
     website: "https://www.lasvegasdermatology.com/",
     yearsOpen: 15,
-    treatments: ["botox", "fillers", "laser"],
+    treatments: ["botox", "fillers", "laser", "facial"],
   }),
   seed({
     slug: "simply-radiant-med-spa-las-vegas",
@@ -1393,7 +1393,7 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     phone: "(615) 555-0144",
     website: "https://www.61five.com/",
     yearsOpen: 6,
-    treatments: ["botox", "fillers", "wellness"],
+    treatments: ["botox", "fillers", "weight-loss", "hormone-therapy", "wellness", "iv-therapy"],
   }),
   seed({
     slug: "beyond-collective-nashville",
@@ -1470,7 +1470,7 @@ export const nationwideRealSpas: NationwideSpaSeed[] = [
     verified: true,
     phone: "(215) 703-2463",
     website: "https://4everyoungantiaging.com/philadelphia/",
-    treatments: ["botox", "fillers", "hormone-therapy", "wellness"],
+    treatments: ["botox", "fillers", "weight-loss", "hormone-therapy", "wellness", "iv-therapy"],
     yearsOpen: 6,
     highlights: ["Google 4.8★ public rating", "Center City Walnut St", "Wellness + aesthetics"],
   }),
@@ -3132,7 +3132,7 @@ seed({
     verified: true,
     phone: "(205) 871-2726",
     website: "https://skinwellnesscenter.net/",
-    treatments: ["botox", "fillers", "laser", "facial", "wellness"],
+    treatments: ["botox", "fillers", "laser", "facial", "weight-loss", "hormone-therapy", "wellness"],
     yearsOpen: 18,
     highlights: ["Google 4.9★ public rating", "Mountain Brook location", "Verified website"],
   }),
@@ -8634,9 +8634,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
-      "cienega-medical-west-hollywood": {
+        "cienega-medical-west-hollywood": {
     hero: "https://cienegaspa.com/wp-content/uploads/2016/06/cienega-medical-west-hollywood-reception-botox-mural.jpg",
-    logo: "https://cienegaspa.com/wp-content/uploads/2026/03/cienega-water-droplet-brand-icon-solid-300x300.png",
+    logo: "/provider-logos/cienega-medical-west-hollywood.png",
     gallery: [
       "https://cienegaspa.com/wp-content/uploads/2016/06/cienega-medical-santa-monica-reception-area.jpg",
       "https://cienegaspa.com/wp-content/uploads/2021/09/cienega-medical-front-desk-reception-los-angeles.jpg.jpeg",
@@ -8645,17 +8645,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Cienega Medical official website — services",
   },
-      "beverly-wilshire-aesthetics": {
+        "beverly-wilshire-aesthetics": {
     hero: "https://www.bwaesthetics.com/wp-content/uploads/2025/10/BWA-Total-Transformation-Supreme-Skin%E2%84%A2-scaled-e1776707415668.jpg",
-    logo: "https://www.bwaesthetics.com/wp-content/uploads/2025/10/BWA-Total-Transformation-Supreme-Skin%E2%84%A2-scaled-e1776707415668.jpg",
+    logo: "/provider-logos/beverly-wilshire-aesthetics.jpg",
     gallery: [
 
     ],
     source: "Beverly Wilshire Aesthetics official website — services",
   },
-      "la-jolla-cosmetic-med-spa": {
+        "la-jolla-cosmetic-med-spa": {
     hero: "https://www.ljcmedspa.com/content/themes/etna-interactive-site/images/banners-mobile/botox.jpg",
-    logo: "https://www.ljcmedspa.com/content/themes/etna-interactive-site/images/logo-spa.png",
+    logo: "/provider-logos/la-jolla-cosmetic-med-spa.png",
     gallery: [
       "https://www.ljcmedspa.com/content/themes/etna-interactive-site/images/banners-mobile/dermal-fillers.jpg",
       "https://www.ljcmedspa.com/content/themes/etna-interactive-site/images/banners-mobile/halo.jpg",
@@ -8686,9 +8686,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Rejuve Med-Spa & Wellness official website — services",
   },
-        "beaux-medspa-austin": {
+          "beaux-medspa-austin": {
     hero: "https://beauxmedspa.com/wp-content/uploads/2025/02/Biohacking-Aesthetic-Treatments-60x60.jpg",
-    logo: "https://beauxmedspa.com/wp-content/uploads/2026/02/new-beaux-home.jpg",
+    logo: "/provider-logos/beaux-medspa-austin.jpg",
     gallery: [
       "https://beauxmedspa.com/wp-content/uploads/2021/04/love-to-get-our-fill.jpg",
       "https://beauxmedspa.com/wp-content/uploads/2026/02/Screenshot-2026-02-20-at-1.58.23-PM.png",
@@ -8697,9 +8697,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "BEAUX MedSpa official website — services",
   },
-      "dripology-bowery-nyc": {
+        "dripology-bowery-nyc": {
     hero: "https://dripology.co/wp-content/uploads/2026/01/The-Drip-Menu-Transparent.webp",
-    logo: "https://dripology.co/wp-content/uploads/2026/01/cropped-Dripology-Logo-192x192.png",
+    logo: "/provider-logos/dripology-bowery-nyc.png",
     gallery: [
       "https://dripology.co/wp-content/uploads/2026/01/Call-2.png",
       "https://dripology.co/wp-content/uploads/2026/01/Social-Image.png",
@@ -8749,9 +8749,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Zahav Medspa official website — services",
   },
-      "collab-medspa-scottsdale": {
+        "collab-medspa-scottsdale": {
     hero: "https://collabmedspa.com/wp-content/uploads/2026/06/Best-Med-Spa-Location-Scottsdale-AZ.webp",
-    logo: "https://collabmedspa.com/wp-content/uploads/2026/04/Untitled-design-2-300x300.png",
+    logo: "/provider-logos/collab-medspa-scottsdale.png",
     gallery: [
       "https://collabmedspa.com/wp-content/uploads/2026/06/Laser-Hair-Removal-Scottsdale-AZ-2-300x180.webp",
       "https://collabmedspa.com/wp-content/uploads/2026/06/VI-Peel-Scottsdale-AZ-300x180.webp",
@@ -8760,9 +8760,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Collab Medspa official website — services",
   },
-      "luxe-room-denver": {
+        "luxe-room-denver": {
     hero: "https://www.luxeroomcosmetic.com/wp-content/uploads/2022/08/incollage_save-323-1-scaled.jpg",
-    logo: "https://www.luxeroomcosmetic.com/wp-content/uploads/2022/09/Logo.png",
+    logo: "/provider-logos/luxe-room-denver.png",
     gallery: [
       "https://www.luxeroomcosmetic.com/wp-content/uploads/2022/08/incollage_save-357-1024x1024.jpg",
       "https://www.luxeroomcosmetic.com/wp-content/uploads/2022/08/incollage_save-315.jpg",
@@ -8790,9 +8790,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "PURE Medical Spa official website — services",
   },
-      "las-vegas-dermatology": {
+        "las-vegas-dermatology": {
     hero: "https://lasvegasdermatology.com/wp-content/uploads/2021/06/FillerPhotos.jpg",
-    logo: "https://lasvegasdermatology.com/wp-content/uploads/2023/02/image.jpg",
+    logo: "/provider-logos/las-vegas-dermatology.jpg",
     gallery: [
       "https://lasvegasdermatology.com/wp-content/uploads/2020/11/botox2-copy.jpg",
       "https://lasvegasdermatology.com/wp-content/uploads/2020/11/drbotox.jpg",
@@ -8820,9 +8820,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "SLK Aesthetic Medicine official website — services",
   },
-      "61five-health-wellness-nashville": {
+        "61five-health-wellness-nashville": {
     hero: "https://61five.com/wp-content/uploads/2023/01/IMG_0001.jpg",
-    logo: "https://61five.com/wp-content/uploads/2021/05/61Five-Nashville-300x300.png",
+    logo: "/provider-logos/61five-health-wellness-nashville.png",
     gallery: [
       "https://61five.com/wp-content/uploads/2023/01/Nashville-IV-Therapy-Home-Page.png",
       "https://61five.com/wp-content/uploads/2022/10/Formally-61Five-Nashville-61Five-Health-Wellness.webp",
@@ -8841,9 +8841,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Deep Med Spa official website — services",
   },
-    "bold-confidence-aesthetics-san-diego": {
+      "bold-confidence-aesthetics-san-diego": {
     hero: "https://static.showit.co/1200/Mtp3bCF0XOJ2VersrTaurA/272273/boldconfidence2025_126.jpg",
-    logo: "https://static.showit.co/file/NG030rhy-tR3EBtFVX-Hpw/272273/bca-logo-seafoam-green.png",
+    logo: "/provider-logos/bold-confidence-aesthetics-san-diego.png",
     gallery: [
       "https://static.showit.co/1200/z0PrjwzEnCVWrM5eMQBOrQ/272273/bold_confidence_aesthetics_san_deigo_laura_32.jpg",
       "https://static.showit.co/1200/H9W7dOz5Cr98-codv8BjCw/272273/bold_confident80.jpg",
@@ -8873,9 +8873,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Dermatology & Cosmetic Laser Center official website — services",
   },
-    "laser-clinique-san-diego": {
+      "laser-clinique-san-diego": {
     hero: "https://www.datocms-assets.com/44663/1616178683-homepage-injectable.jpg?auto=format,compress&w=500",
-    logo: "https://www.datocms-assets.com/44663/1616451788-logo3.png?auto=format,compress&w=100",
+    logo: "/provider-logos/laser-clinique-san-diego.png",
     gallery: [
       "https://www.datocms-assets.com/44663/1616630504-gallery-1.png?auto=format,compress&w=1605",
       "https://www.datocms-assets.com/44663/1720629433-simulated-results.png?auto=format,compress&w=200",
@@ -8966,9 +8966,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Four Seasons Med Spa Austin official website — services",
   },
-        "dermalogix-med-spa-houston": {
+          "dermalogix-med-spa-houston": {
     hero: "https://www.discovermedspa.com/opengraph-image",
-    logo: "https://cdn11.bigcommerce.com/s-c86dzw8vb1/stencil/d4e28470-5755-013f-0676-7e8366f1ddef/e/19956ea0-60b0-013f-9008-56fa9c5ce9a9/img/dermazinc-logo.svg",
+    logo: "/provider-logos/dermalogix-med-spa-houston.svg",
     gallery: [
 
     ],
@@ -8985,9 +8985,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "SkinSpirit Austin official website — services",
   },
-    "eden-med-spa-downtown-nyc": {
+      "eden-med-spa-downtown-nyc": {
     hero: "https://edenmedspanyc.com/wp-content/uploads/2024/04/front-lobby.jpg",
-    logo: "https://edenmedspanyc.com/wp-content/uploads/2024/04/eden-logo.png",
+    logo: "/provider-logos/eden-med-spa-downtown-nyc.png",
     gallery: [
       "https://edenmedspanyc.com/wp-content/uploads/2024/04/hp-stone.png",
       "https://edenmedspanyc.com/wp-content/uploads/2024/04/body.png",
@@ -8996,9 +8996,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Eden Med Spa official website — services",
   },
-      "manhattan-aesthetics-36th-st": {
+        "manhattan-aesthetics-36th-st": {
     hero: "https://www.manhattan-aesthetics.com/wp-content/themes/manhattan-aesthetics-2024/img/body-treatments.jpg",
-    logo: "https://www.manhattan-aesthetics.com/wp-content/uploads/2025/11/hero-banner.jpg.webp",
+    logo: "/provider-logos/manhattan-aesthetics-36th-st.webp",
     gallery: [
       "https://www.manhattan-aesthetics.com/wp-content/themes/manhattan-aesthetics-2024/img/face-treatments.jpg",
       "https://www.manhattan-aesthetics.com/wp-content/themes/manhattan-aesthetics-2024/img/btx-fillers.jpg",
@@ -9051,9 +9051,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "VIVA MD official website — services",
   },
-    "inara-med-spa-long-island": {
+      "inara-med-spa-long-island": {
     hero: "https://inaramedspa.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-07-19-at-09.36.23_b55f5e9d.jpg",
-    logo: "https://inaramedspa.com/wp-content/uploads/2024/11/inara-medical-spa-300x300.png",
+    logo: "/provider-logos/inara-med-spa-long-island.png",
     gallery: [
       "https://inaramedspa.com/wp-content/uploads/2025/11/Group-1-copy.png",
       "https://inaramedspa.com/wp-content/uploads/2025/11/WhatsApp-Image-2025-09-01-at-08.57.53_31044b54-e1764413018269-943x1024.jpg",
@@ -9071,7 +9071,7 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "The K Spa official website — services",
   },
-        "bella-medspa-atlanta": {
+          "bella-medspa-atlanta": {
     hero: "https://bellamedspa.com/storage/2025/09/allergannumber1-In-Clarksville-TN.webp",
     logo: "/provider-logos/bella-medspa-atlanta.png",
     gallery: [
@@ -9137,9 +9137,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "North Scottsdale Med Spa official website — services",
   },
-      "alchemy-med-bar-scottsdale": {
+        "alchemy-med-bar-scottsdale": {
     hero: "https://images.squarespace-cdn.com/content/v1/69c9b6912e55d654085fdf4c/8dced560-ea16-41e7-8ea6-d7aea65c54a1/DSC_3827-2-2.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/69c9b6912e55d654085fdf4c/bf3d1769-9090-49ab-8de2-545e6733a68f/Alchemy+transparent+%281%29.png?format=1500w",
+    logo: "/provider-logos/alchemy-med-bar-scottsdale.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/69c9b6912e55d654085fdf4c/bf3d1769-9090-49ab-8de2-545e6733a68f/Alchemy+transparent+%281%29.png?format=1500w",
       "https://images.squarespace-cdn.com/content/v1/69c9b6912e55d654085fdf4c/aaa8413c-058f-4338-a792-d8e437f90ee1/Blog+Banner+for+Website+Content+%284%29.png",
@@ -9166,17 +9166,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Gleam Med Spa official website — services",
   },
-    "esse-medspa-denver": {
+      "esse-medspa-denver": {
     hero: "https://static.wixstatic.com/media/d27ab1_4a6e581117fd4a03bda14a44a8a77725%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/d27ab1_4a6e581117fd4a03bda14a44a8a77725%7Emv2.jpg",
-    logo: "https://static.wixstatic.com/media/d27ab1_f98ca29fa70d456690fc6733b1a50c8f%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/d27ab1_f98ca29fa70d456690fc6733b1a50c8f%7Emv2.png",
+    logo: "/provider-logos/esse-medspa-denver.png",
     gallery: [
 
     ],
     source: "Esse Medspa official website — services",
   },
-    "kalon-laser-aesthetics-denver": {
+      "kalon-laser-aesthetics-denver": {
     hero: "https://www.kalonlaser.com/_static_/feature/cosmetic-services.jpg",
-    logo: "https://www.kalonlaser.com/_static_/logos/logo.png",
+    logo: "/provider-logos/kalon-laser-aesthetics-denver.png",
     gallery: [
       "https://www.kalonlaser.com/_static_/masthead/procedure-selector.jpg",
       "https://www.kalonlaser.com/_static_/specials/Kalon---jan-Specials-Pop-Up-%281%29.png",
@@ -9215,9 +9215,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Old Town Med Spa official website — services",
   },
-    "essence-medspa-chicago": {
+      "essence-medspa-chicago": {
     hero: "https://essenceskinclinic.com/wp-content/uploads/2023/08/essence-homepage-section-1-1024x1024.jpg",
-    logo: "https://essenceskinclinic.com/wp-content/uploads/2023/09/essence-gold-logo-removebg-preview.png",
+    logo: "/provider-logos/essence-medspa-chicago.png",
     gallery: [
       "https://essenceskinclinic.com/wp-content/uploads/2023/08/essence-botox-service.jpg",
       "https://essenceskinclinic.com/wp-content/uploads/2023/08/essence-semaglutide-service.jpg",
@@ -9237,9 +9237,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skinovatio Medical Spa official website — services",
   },
-    "denver-dream-medspa": {
+      "denver-dream-medspa": {
     hero: "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1725720289071-Q10Y4S2C1E9V80F2J241/Academy+prompts+photo+%286%29.png",
-    logo: "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/fb1fd9ec-7872-4b13-a8ba-5c35e584e36c/SITE+Dream+Medspa+Logo+%282%29.webp?format=1500w",
+    logo: "/provider-logos/denver-dream-medspa.jpg",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1781210933426-6A77YKWJZG9X9H0MPSS2/before+and+after+tox+at+denver+dream+medspa.png",
       "https://images.squarespace-cdn.com/content/v1/6217153a0bdc9d5626c01a48/1769031446744-8KJYH5FK09DHBAMNAUJB/35.png",
@@ -9248,9 +9248,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Denver Dream Medspa official website — services",
   },
-    "aesthetics-lab-las-vegas": {
+      "aesthetics-lab-las-vegas": {
     hero: "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508222950753-JBY2A3976XTX7GSJ1CVI/_N4A8789.jpg.jpeg",
-    logo: "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1504727354064-2JZ2W1XXY6YGFOKX7JLA/Logo+copy.png",
+    logo: "/provider-logos/aesthetics-lab-las-vegas.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508481430527-6CVO88U7ZDTLSMPUM6IV/_N4A8752.jpg",
       "https://images.squarespace-cdn.com/content/v1/59b04b7ff5e231fa3dd11f30/1508481665048-BV87A6XK3IKLZA6B4KW2/_N4A8731.jpg",
@@ -9279,9 +9279,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Simply Radiant Med Spa official website — services",
   },
-    "bluepoint-medical-spa-las-vegas": {
+      "bluepoint-medical-spa-las-vegas": {
     hero: "https://bluepointmedicalspa.com/wp-content/uploads/2026/03/Frame-1-12.png",
-    logo: "https://bluepointmedicalspa.com/wp-content/uploads/2026/03/Frame-1-12.png",
+    logo: "/provider-logos/bluepoint-medical-spa-las-vegas.png",
     gallery: [
       "https://bluepointmedicalspa.com/wp-content/uploads/2025/12/Vector-1.png",
       "https://bluepointmedicalspa.com/wp-content/uploads/2025/12/Layer_1.png",
@@ -9312,9 +9312,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Society Las Vegas official website — services",
   },
-        "bodylase-charlotte": {
+          "bodylase-charlotte": {
     hero: "https://getbodylase.com/wp-content/uploads/2026/03/Bodylase-Service_RHA-1.webp",
-    logo: "https://getbodylase.com/wp-content/uploads/2026/03/Bodylase-logo.webp",
+    logo: "/provider-logos/bodylase-charlotte.webp",
     gallery: [
       "https://getbodylase.com/wp-content/uploads/2026/03/Top-10-Med-Spa-service-providers.webp",
       "https://getbodylase.com/wp-content/uploads/2026/03/Raleighs-Best-Med-Spa.webp",
@@ -9323,9 +9323,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "BodyLase Med Spa official website — services",
   },
-    "blue-water-spa-raleigh": {
+      "blue-water-spa-raleigh": {
     hero: "https://www.bluewaterspa.com/images/injectable_bwnb.jpg",
-    logo: "https://www.bluewaterspa.com/wp-content/uploads/2018/08/cropped-hdbtTGD2_400x400-192x192.jpg",
+    logo: "/provider-logos/blue-water-spa-raleigh.jpg",
     gallery: [
       "https://www.bluewaterspa.com/images/laser_bwnb.jpg",
       "https://www.bluewaterspa.com/images/skincare_bwnb.jpg",
@@ -9334,9 +9334,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Blue Water Spa official website — services",
   },
-      "elase-med-spa-raleigh": {
+        "elase-med-spa-raleigh": {
     hero: "https://elase.com/wp-content/uploads/2024/03/Elase-2024-Spa-00010-1-160x107.jpg",
-    logo: "https://elase.com/wp-content/uploads/2024/03/cropped-ELASE_EMBLEM_Black-2-192x192.png",
+    logo: "/provider-logos/elase-med-spa-raleigh.png",
     gallery: [
       "https://elase.com/wp-content/uploads/2024/02/spa_shoot3546-960x640.jpg",
       "https://elase.com/wp-content/uploads/2024/02/Elase-2024-Spa-00011-960x640.jpg",
@@ -9345,9 +9345,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Elase Med Spa official website — services",
   },
-    "evolve-medspa-nashville": {
+      "evolve-medspa-nashville": {
     hero: "https://evolvemedspa.com/wp-content/uploads/2025/06/fall-deals-hero.jpg",
-    logo: "https://evolvemedspa.com/wp-content/uploads/2024/05/evolve-med-spa-icon-300x300.png",
+    logo: "/provider-logos/evolve-medspa-nashville.png",
     gallery: [
       "https://evolvemedspa.com/wp-content/uploads/2024/06/body-01.webp",
       "https://evolvemedspa.com/wp-content/uploads/2024/06/evolve-hero-xl.webp",
@@ -9389,9 +9389,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Flawless Medspa Las Vegas official website — services",
   },
-    "ageless-remedies-raleigh": {
+      "ageless-remedies-raleigh": {
     hero: "https://www.datocms-assets.com/161788/1750958706-service-card_injectables.jpg?auto=format,compress&w=1226",
-    logo: "https://www.datocms-assets.com/161788/1749087543-logo_horizontal.svg",
+    logo: "/provider-logos/ageless-remedies-raleigh.svg",
     gallery: [
       "https://www.datocms-assets.com/161788/1748983787-emsculpt-banner.jpg?auto=format,compress&w=672",
       "https://www.datocms-assets.com/161788/1750958764-service-card_lasre-rejuvenation.jpg?auto=format,compress&w=1226",
@@ -9411,9 +9411,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "BEYOND Collective official website — services",
   },
-    "canvas-skin-nashville": {
+      "canvas-skin-nashville": {
     hero: "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/1777037922407-NPPBI948N1I0I7VNXV01/image-asset.jpeg",
-    logo: "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/d1f6dec2-7722-4909-a557-78992c8fab42/cs_logo__primary_stone.png?format=1500w",
+    logo: "/provider-logos/canvas-skin-nashville.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/1776870140577-KEC4ACZVBNNBSLJ6I9PV/image-asset.jpeg",
       "https://images.squarespace-cdn.com/content/v1/62b176d68f40373003b39188/1776786440960-OZEFGPT43II8ZF7IIB4V/image-asset.jpeg",
@@ -9742,17 +9742,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Amerejuve Med Spa official website — services",
   },
-  "4ever-young-philadelphia": {
+    "4ever-young-philadelphia": {
     hero: "",
-    logo: "https://4everyoungantiaging.com/philadelphia/wp-content/themes/foureveryoungzee/assets/images/foureveryoung-logo2.png",
+    logo: "/provider-logos/4ever-young-philadelphia.png",
     gallery: [
 
     ],
     source: "4Ever Young — Philadelphia official website — services",
   },
-  "amy-brenner-md-associates-cincinnati": {
+    "amy-brenner-md-associates-cincinnati": {
     hero: "https://dramybrenner.com/wp-content/uploads/2026/01/Dr.-Amy-Brenner-OG.jpg",
-    logo: "https://dramybrenner.com/wp-content/uploads/2026/01/amy-brenner-logo-2025.png",
+    logo: "/provider-logos/amy-brenner-md-associates-cincinnati.png",
     gallery: [
       "https://dramybrenner.com/wp-content/uploads/2025/06/Dr.-Amy-Brenner-Associates-Consultation-VIP-Program-4510-1024x682.jpg",
       "https://dramybrenner.com/wp-content/uploads/2025/10/amy-brenner-34-a.jpg",
@@ -9768,33 +9768,33 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Alchemy 43 official website — services",
   },
-  "beverly-hills-rejuvenation-center-los-angeles": {
+    "beverly-hills-rejuvenation-center-los-angeles": {
     hero: "",
-    logo: "https://www.bhrcenter.com/wp-content/uploads/2025/10/cropped-Untitled-design-8-180x180.png",
+    logo: "/provider-logos/beverly-hills-rejuvenation-center-los-angeles.png",
     gallery: [
 
     ],
     source: "Beverly Hills Rejuvenation Center official website — services",
   },
-  "dermacare-medical-chicago": {
+    "dermacare-medical-chicago": {
     hero: "",
-    logo: "https://www.dermacaremedical.com/images/logo.png",
+    logo: "/provider-logos/dermacare-medical-chicago.png",
     gallery: [
 
     ],
     source: "Dermacare Medical official website — services",
   },
-  "evolve-med-spa-cranston": {
+    "evolve-med-spa-cranston": {
     hero: "",
-    logo: "https://evolvemedspa.com/wp-content/uploads/2024/05/evolve-med-spa-icon-300x300.png",
+    logo: "/provider-logos/evolve-med-spa-cranston.png",
     gallery: [
 
     ],
     source: "Evolve Med Spa official website — services",
   },
-  "first-state-med-spa-wilmington": {
+    "first-state-med-spa-wilmington": {
     hero: "",
-    logo: "https://firststatemedspa.com/wp-content/uploads/2021/11/cropped-logo-icon-180x180.png",
+    logo: "/provider-logos/first-state-med-spa-wilmington.png",
     gallery: [
 
     ],
@@ -9808,25 +9808,25 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Ever/Body official website — services",
   },
-  "genesis-lifestyle-medicine-dallas": {
+    "genesis-lifestyle-medicine-dallas": {
     hero: "",
-    logo: "https://www.datocms-assets.com/30639/1768599356-og-feat-2.jpg",
+    logo: "/provider-logos/genesis-lifestyle-medicine-dallas.jpg",
     gallery: [
 
     ],
     source: "Genesis Lifestyle Medicine official website — services",
   },
-  "ject-nyc-new-york": {
+    "ject-nyc-new-york": {
     hero: "",
-    logo: "https://ject.us/hubfs/JECT%20Logo.jpg",
+    logo: "/provider-logos/ject-nyc-new-york.jpg",
     gallery: [
 
     ],
     source: "Ject NYC official website — services",
   },
-  "forte-faces-conshohocken": {
+    "forte-faces-conshohocken": {
     hero: "",
-    logo: "https://fortefaces.com/wp-content/uploads/2025/09/Frame-386-4-2-300x300.png",
+    logo: "/provider-logos/forte-faces-conshohocken.png",
     gallery: [
 
     ],
@@ -9841,338 +9841,338 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Glow Medispa official website",
   },
-  "fresh-faces-rx-portland": {
+    "fresh-faces-rx-portland": {
     hero: "https://freshfacesrx.com/wp-content/uploads/2024/10/Portland-Medical-Spa-2.jpg",
-    logo: "https://freshfacesrx.com/wp-content/uploads/2025/01/FFRX-Name-Logo-black.png",
+    logo: "/provider-logos/fresh-faces-rx-portland.png",
     gallery: [
       "https://freshfacesrx.com/wp-content/uploads/2025/03/Med-Spa-Consultation-Portland-34.jpg",
       "https://freshfacesrx.com/wp-content/uploads/2025/03/Portland-Med-Spa-Interior-33-2.jpeg",
     ],
     source: "Fresh Faces RX official website",
   },
-  "milan-laser-abilene": {
+    "milan-laser-abilene": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-abilene.webp",
     gallery: [
 
     ],
     source: "Milan Laser Abilene official website — services",
   },
-  "milan-laser-albany": {
+    "milan-laser-albany": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-albany.webp",
     gallery: [
 
     ],
     source: "Milan Laser Albany official website — services",
   },
-  "milan-laser-akron": {
+    "milan-laser-akron": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-akron.webp",
     gallery: [
 
     ],
     source: "Milan Laser Akron official website — services",
   },
-  "milan-laser-allentown": {
+    "milan-laser-allentown": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-allentown.webp",
     gallery: [
 
     ],
     source: "Milan Laser Allentown official website — services",
   },
-  "lachele-newtown-square": {
+    "lachele-newtown-square": {
     hero: "",
-    logo: "https://www.lachele.com/_static_/background/og-feat.jpg",
+    logo: "/provider-logos/lachele-newtown-square.jpg",
     gallery: [
 
     ],
     source: "La Chelé Medical Aesthetics official website — services",
   },
-  "infinite-youth-wayzata": {
+    "infinite-youth-wayzata": {
     hero: "",
-    logo: "https://infiniteyouthmedical.com/wp-content/uploads/2025/02/logo.png",
+    logo: "/provider-logos/infinite-youth-wayzata.png",
     gallery: [
 
     ],
     source: "Infinite Youth Medical Spa official website — services",
   },
-  "milan-laser-amarillo": {
+    "milan-laser-amarillo": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-amarillo.webp",
     gallery: [
 
     ],
     source: "Milan Laser Amarillo official website — services",
   },
-  "milan-laser-asheville": {
+    "milan-laser-asheville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-asheville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Asheville official website — services",
   },
-  "milan-laser-atlanta": {
+    "milan-laser-atlanta": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-atlanta.webp",
     gallery: [
 
     ],
     source: "Milan Laser Atlanta official website — services",
   },
-  "milan-laser-augusta": {
+    "milan-laser-augusta": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-augusta.webp",
     gallery: [
 
     ],
     source: "Milan Laser Augusta official website — services",
   },
-  "milan-laser-austin": {
+    "milan-laser-austin": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-austin.webp",
     gallery: [
 
     ],
     source: "Milan Laser Austin official website — services",
   },
-  "milan-laser-baltimore": {
+    "milan-laser-baltimore": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-baltimore.webp",
     gallery: [
 
     ],
     source: "Milan Laser Baltimore official website — services",
   },
-  "milan-laser-baton-rouge": {
+    "milan-laser-baton-rouge": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-baton-rouge.webp",
     gallery: [
 
     ],
     source: "Milan Laser Baton Rouge official website — services",
   },
-  "milan-laser-bangor": {
+    "milan-laser-bangor": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-bangor.webp",
     gallery: [
 
     ],
     source: "Milan Laser Bangor official website — services",
   },
-  "milan-laser-bedford": {
+    "milan-laser-bedford": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-bedford.webp",
     gallery: [
 
     ],
     source: "Milan Laser Bedford official website — services",
   },
-  "milan-laser-ann-arbor": {
+    "milan-laser-ann-arbor": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-ann-arbor.webp",
     gallery: [
 
     ],
     source: "Milan Laser Ann Arbor official website — services",
   },
-  "milan-laser-annapolis": {
+    "milan-laser-annapolis": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-annapolis.webp",
     gallery: [
 
     ],
     source: "Milan Laser Annapolis official website — services",
   },
-  "milan-laser-beaumont": {
+    "milan-laser-beaumont": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-beaumont.webp",
     gallery: [
 
     ],
     source: "Milan Laser Beaumont official website — services",
   },
-  "milan-laser-appleton": {
+    "milan-laser-appleton": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-appleton.webp",
     gallery: [
 
     ],
     source: "Milan Laser Appleton official website — services",
   },
-  "milan-laser-athens": {
+    "milan-laser-athens": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-athens.webp",
     gallery: [
 
     ],
     source: "Milan Laser Athens official website — services",
   },
-  "milan-laser-billings": {
+    "milan-laser-billings": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-billings.webp",
     gallery: [
 
     ],
     source: "Milan Laser Billings official website — services",
   },
-  "milan-laser-bentonville": {
+    "milan-laser-bentonville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-bentonville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Bentonville official website — services",
   },
-  "milan-laser-binghamton": {
+    "milan-laser-binghamton": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-binghamton.webp",
     gallery: [
 
     ],
     source: "Milan Laser Binghamton official website — services",
   },
-  "milan-laser-boise": {
+    "milan-laser-boise": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-boise.webp",
     gallery: [
 
     ],
     source: "Milan Laser Boise official website — services",
   },
-  "milan-laser-boone": {
+    "milan-laser-boone": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-boone.webp",
     gallery: [
 
     ],
     source: "Milan Laser Boone official website — services",
   },
-  "milan-laser-bloomington": {
+    "milan-laser-bloomington": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-bloomington.webp",
     gallery: [
 
     ],
     source: "Milan Laser Bloomington official website — services",
   },
-  "milan-laser-bowling-green": {
+    "milan-laser-bowling-green": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-bowling-green.webp",
     gallery: [
 
     ],
     source: "Milan Laser Bowling Green official website — services",
   },
-  "milan-laser-bridgeport": {
+    "milan-laser-bridgeport": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-bridgeport.webp",
     gallery: [
 
     ],
     source: "Milan Laser Bridgeport official website — services",
   },
-  "milan-laser-boston": {
+    "milan-laser-boston": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-boston.webp",
     gallery: [
 
     ],
     source: "Milan Laser Boston official website — services",
   },
-  "milan-laser-cedar-rapids": {
+    "milan-laser-cedar-rapids": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-cedar-rapids.webp",
     gallery: [
 
     ],
     source: "Milan Laser Cedar Rapids official website — services",
   },
-  "milan-laser-canton": {
+    "milan-laser-canton": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-canton.webp",
     gallery: [
 
     ],
     source: "Milan Laser Canton official website — services",
   },
-  "milan-laser-boulder": {
+    "milan-laser-boulder": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-boulder.webp",
     gallery: [
 
     ],
     source: "Milan Laser Boulder official website — services",
   },
-  "milan-laser-burlington": {
+    "milan-laser-burlington": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-burlington.webp",
     gallery: [
 
     ],
     source: "Milan Laser Burlington official website — services",
   },
-  "milan-laser-chambersburg": {
+    "milan-laser-chambersburg": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-chambersburg.webp",
     gallery: [
 
     ],
     source: "Milan Laser Chambersburg official website — services",
   },
-  "milan-laser-champaign": {
+    "milan-laser-champaign": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-champaign.webp",
     gallery: [
 
     ],
     source: "Milan Laser Champaign official website — services",
   },
-  "milan-laser-charlottesville": {
+    "milan-laser-charlottesville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-charlottesville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Charlottesville official website — services",
   },
-  "milan-laser-charleston": {
+    "milan-laser-charleston": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-charleston.webp",
     gallery: [
 
     ],
     source: "Milan Laser Charleston official website — services",
   },
-  "milan-laser-chattanooga": {
+    "milan-laser-chattanooga": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-chattanooga.webp",
     gallery: [
 
     ],
     source: "Milan Laser Chattanooga official website — services",
   },
-  "milan-laser-buffalo": {
+    "milan-laser-buffalo": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-buffalo.webp",
     gallery: [
 
     ],
     source: "Milan Laser Buffalo official website — services",
   },
-  "milan-laser-chicago": {
+    "milan-laser-chicago": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-chicago.webp",
     gallery: [
 
     ],
     source: "Milan Laser Chicago official website — services",
   },
-  "milan-laser-clarksville": {
+    "milan-laser-clarksville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-clarksville.webp",
     gallery: [
 
     ],
@@ -10186,585 +10186,585 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser Cincinnati official website — services",
   },
-  "milan-laser-christiansburg": {
+    "milan-laser-christiansburg": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-christiansburg.webp",
     gallery: [
 
     ],
     source: "Milan Laser Christiansburg official website — services",
   },
-  "milan-laser-clearwater": {
+    "milan-laser-clearwater": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-clearwater.webp",
     gallery: [
 
     ],
     source: "Milan Laser Clearwater official website — services",
   },
-  "milan-laser-charlotte": {
+    "milan-laser-charlotte": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-charlotte.webp",
     gallery: [
 
     ],
     source: "Milan Laser Charlotte official website — services",
   },
-  "milan-laser-college-station": {
+    "milan-laser-college-station": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-college-station.webp",
     gallery: [
 
     ],
     source: "Milan Laser College Station official website — services",
   },
-  "milan-laser-cleveland": {
+    "milan-laser-cleveland": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-cleveland.webp",
     gallery: [
 
     ],
     source: "Milan Laser Cleveland official website — services",
   },
-  "milan-laser-coeur-dalene": {
+    "milan-laser-coeur-dalene": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-coeur-dalene.webp",
     gallery: [
 
     ],
     source: "Milan Laser Coeur Dalene official website — services",
   },
-  "milan-laser-colorado-springs": {
+    "milan-laser-colorado-springs": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-colorado-springs.webp",
     gallery: [
 
     ],
     source: "Milan Laser Colorado Springs official website — services",
   },
-  "milan-laser-columbia-columbia-2": {
+    "milan-laser-columbia-columbia-2": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-columbia-columbia-2.webp",
     gallery: [
 
     ],
     source: "Milan Laser Columbia official website — services",
   },
-  "milan-laser-columbia": {
+    "milan-laser-columbia": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-columbia.webp",
     gallery: [
 
     ],
     source: "Milan Laser Columbia official website — services",
   },
-  "milan-laser-conway": {
+    "milan-laser-conway": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-conway.webp",
     gallery: [
 
     ],
     source: "Milan Laser Conway official website — services",
   },
-  "milan-laser-columbus-columbus-2": {
+    "milan-laser-columbus-columbus-2": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-columbus-columbus-2.webp",
     gallery: [
 
     ],
     source: "Milan Laser Columbus official website — services",
   },
-  "milan-laser-columbus": {
+    "milan-laser-columbus": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-columbus.webp",
     gallery: [
 
     ],
     source: "Milan Laser Columbus official website — services",
   },
-  "milan-laser-coralville": {
+    "milan-laser-coralville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-coralville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Coralville official website — services",
   },
-  "milan-laser-corvallis": {
+    "milan-laser-corvallis": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-corvallis.webp",
     gallery: [
 
     ],
     source: "Milan Laser Corvallis official website — services",
   },
-  "milan-laser-dallas": {
+    "milan-laser-dallas": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-dallas.webp",
     gallery: [
 
     ],
     source: "Milan Laser Dallas official website — services",
   },
-  "milan-laser-corpus-christi": {
+    "milan-laser-corpus-christi": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-corpus-christi.webp",
     gallery: [
 
     ],
     source: "Milan Laser Corpus Christi official website — services",
   },
-  "milan-laser-danbury": {
+    "milan-laser-danbury": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-danbury.webp",
     gallery: [
 
     ],
     source: "Milan Laser Danbury official website — services",
   },
-  "milan-laser-daytona-beach": {
+    "milan-laser-daytona-beach": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-daytona-beach.webp",
     gallery: [
 
     ],
     source: "Milan Laser Daytona Beach official website — services",
   },
-  "milan-laser-denver": {
+    "milan-laser-denver": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-denver.webp",
     gallery: [
 
     ],
     source: "Milan Laser Denver official website — services",
   },
-  "milan-laser-dayton": {
+    "milan-laser-dayton": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-dayton.webp",
     gallery: [
 
     ],
     source: "Milan Laser Dayton official website — services",
   },
-  "milan-laser-dekalb": {
+    "milan-laser-dekalb": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-dekalb.webp",
     gallery: [
 
     ],
     source: "Milan Laser Dekalb official website — services",
   },
-  "milan-laser-detroit": {
+    "milan-laser-detroit": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-detroit.webp",
     gallery: [
 
     ],
     source: "Milan Laser Detroit official website — services",
   },
-  "milan-laser-el-paso": {
+    "milan-laser-el-paso": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-el-paso.webp",
     gallery: [
 
     ],
     source: "Milan Laser El Paso official website — services",
   },
-  "milan-laser-eau-claire": {
+    "milan-laser-eau-claire": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-eau-claire.webp",
     gallery: [
 
     ],
     source: "Milan Laser Eau Claire official website — services",
   },
-  "milan-laser-des-moines": {
+    "milan-laser-des-moines": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-des-moines.webp",
     gallery: [
 
     ],
     source: "Milan Laser Des Moines official website — services",
   },
-  "milan-laser-elkhart": {
+    "milan-laser-elkhart": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-elkhart.webp",
     gallery: [
 
     ],
     source: "Milan Laser Elkhart official website — services",
   },
-  "milan-laser-durham": {
+    "milan-laser-durham": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-durham.webp",
     gallery: [
 
     ],
     source: "Milan Laser Durham official website — services",
   },
-  "milan-laser-erie": {
+    "milan-laser-erie": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-erie.webp",
     gallery: [
 
     ],
     source: "Milan Laser Erie official website — services",
   },
-  "milan-laser-dubuque": {
+    "milan-laser-dubuque": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-dubuque.webp",
     gallery: [
 
     ],
     source: "Milan Laser Dubuque official website — services",
   },
-  "milan-laser-fairless-hills": {
+    "milan-laser-fairless-hills": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-fairless-hills.webp",
     gallery: [
 
     ],
     source: "Milan Laser Fairless Hills official website — services",
   },
-  "milan-laser-fargo": {
+    "milan-laser-fargo": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-fargo.webp",
     gallery: [
 
     ],
     source: "Milan Laser Fargo official website — services",
   },
-  "milan-laser-fishkill": {
+    "milan-laser-fishkill": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-fishkill.webp",
     gallery: [
 
     ],
     source: "Milan Laser Fishkill official website — services",
   },
-  "milan-laser-fayetteville-fayetteville-2": {
+    "milan-laser-fayetteville-fayetteville-2": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-fayetteville-fayetteville-2.webp",
     gallery: [
 
     ],
     source: "Milan Laser Fayetteville official website — services",
   },
-  "milan-laser-fayetteville": {
+    "milan-laser-fayetteville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-fayetteville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Fayetteville official website — services",
   },
-  "milan-laser-flagstaff": {
+    "milan-laser-flagstaff": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-flagstaff.webp",
     gallery: [
 
     ],
     source: "Milan Laser Flagstaff official website — services",
   },
-  "milan-laser-evansville": {
+    "milan-laser-evansville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-evansville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Evansville official website — services",
   },
-  "milan-laser-eugene": {
+    "milan-laser-eugene": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-eugene.webp",
     gallery: [
 
     ],
     source: "Milan Laser Eugene official website — services",
   },
-  "milan-laser-fort-myers": {
+    "milan-laser-fort-myers": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-fort-myers.webp",
     gallery: [
 
     ],
     source: "Milan Laser Fort Myers official website — services",
   },
-  "milan-laser-fort-worth": {
+    "milan-laser-fort-worth": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-fort-worth.webp",
     gallery: [
 
     ],
     source: "Milan Laser Fort Worth official website — services",
   },
-  "milan-laser-frederick": {
+    "milan-laser-frederick": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-frederick.webp",
     gallery: [
 
     ],
     source: "Milan Laser Frederick official website — services",
   },
-  "milan-laser-fredericksburg": {
+    "milan-laser-fredericksburg": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-fredericksburg.webp",
     gallery: [
 
     ],
     source: "Milan Laser Fredericksburg official website — services",
   },
-  "milan-laser-framingham": {
+    "milan-laser-framingham": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-framingham.webp",
     gallery: [
 
     ],
     source: "Milan Laser Framingham official website — services",
   },
-  "milan-laser-ft-wayne": {
+    "milan-laser-ft-wayne": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-ft-wayne.webp",
     gallery: [
 
     ],
     source: "Milan Laser Ft Wayne official website — services",
   },
-  "milan-laser-ft-collins": {
+    "milan-laser-ft-collins": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-ft-collins.webp",
     gallery: [
 
     ],
     source: "Milan Laser Ft Collins official website — services",
   },
-  "milan-laser-grand-blanc": {
+    "milan-laser-grand-blanc": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-grand-blanc.webp",
     gallery: [
 
     ],
     source: "Milan Laser Grand Blanc official website — services",
   },
-  "milan-laser-grand-rapids": {
+    "milan-laser-grand-rapids": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-grand-rapids.webp",
     gallery: [
 
     ],
     source: "Milan Laser Grand Rapids official website — services",
   },
-  "milan-laser-grand-junction": {
+    "milan-laser-grand-junction": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-grand-junction.webp",
     gallery: [
 
     ],
     source: "Milan Laser Grand Junction official website — services",
   },
-  "milan-laser-green-bay": {
+    "milan-laser-green-bay": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-green-bay.webp",
     gallery: [
 
     ],
     source: "Milan Laser Green Bay official website — services",
   },
-  "milan-laser-greensboro": {
+    "milan-laser-greensboro": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-greensboro.webp",
     gallery: [
 
     ],
     source: "Milan Laser Greensboro official website — services",
   },
-  "milan-laser-gainesville": {
+    "milan-laser-gainesville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-gainesville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Gainesville official website — services",
   },
-  "milan-laser-greenville": {
+    "milan-laser-greenville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-greenville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Greenville official website — services",
   },
-  "milan-laser-greeley": {
+    "milan-laser-greeley": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-greeley.webp",
     gallery: [
 
     ],
     source: "Milan Laser Greeley official website — services",
   },
-  "milan-laser-greenville-greenville-2": {
+    "milan-laser-greenville-greenville-2": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-greenville-greenville-2.webp",
     gallery: [
 
     ],
     source: "Milan Laser Greenville official website — services",
   },
-  "milan-laser-hickory": {
+    "milan-laser-hickory": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-hickory.webp",
     gallery: [
 
     ],
     source: "Milan Laser Hickory official website — services",
   },
-  "milan-laser-harrisburg": {
+    "milan-laser-harrisburg": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-harrisburg.webp",
     gallery: [
 
     ],
     source: "Milan Laser Harrisburg official website — services",
   },
-  "milan-laser-holland": {
+    "milan-laser-holland": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-holland.webp",
     gallery: [
 
     ],
     source: "Milan Laser Holland official website — services",
   },
-  "milan-laser-hartford": {
+    "milan-laser-hartford": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-hartford.webp",
     gallery: [
 
     ],
     source: "Milan Laser Hartford official website — services",
   },
-  "milan-laser-houston": {
+    "milan-laser-houston": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-houston.webp",
     gallery: [
 
     ],
     source: "Milan Laser Houston official website — services",
   },
-  "milan-laser-indianapolis": {
+    "milan-laser-indianapolis": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-indianapolis.webp",
     gallery: [
 
     ],
     source: "Milan Laser Indianapolis official website — services",
   },
-  "milan-laser-ithaca": {
+    "milan-laser-ithaca": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-ithaca.webp",
     gallery: [
 
     ],
     source: "Milan Laser Ithaca official website — services",
   },
-  "milan-laser-idaho-falls": {
+    "milan-laser-idaho-falls": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-idaho-falls.webp",
     gallery: [
 
     ],
     source: "Milan Laser Idaho Falls official website — services",
   },
-  "milan-laser-jacksonville": {
+    "milan-laser-jacksonville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-jacksonville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Jacksonville official website — services",
   },
-  "milan-laser-jonesboro": {
+    "milan-laser-jonesboro": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-jonesboro.webp",
     gallery: [
 
     ],
     source: "Milan Laser Jonesboro official website — services",
   },
-  "milan-laser-janesville": {
+    "milan-laser-janesville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-janesville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Janesville official website — services",
   },
-  "milan-laser-kalamazoo": {
+    "milan-laser-kalamazoo": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-kalamazoo.webp",
     gallery: [
 
     ],
     source: "Milan Laser Kalamazoo official website — services",
   },
-  "milan-laser-kansas-city": {
+    "milan-laser-kansas-city": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-kansas-city.webp",
     gallery: [
 
     ],
     source: "Milan Laser Kansas City official website — services",
   },
-  "milan-laser-jackson": {
+    "milan-laser-jackson": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-jackson.webp",
     gallery: [
 
     ],
     source: "Milan Laser Jackson official website — services",
   },
-  "milan-laser-killeen": {
+    "milan-laser-killeen": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-killeen.webp",
     gallery: [
 
     ],
     source: "Milan Laser Killeen official website — services",
   },
-  "milan-laser-knoxville": {
+    "milan-laser-knoxville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-knoxville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Knoxville official website — services",
   },
-  "milan-laser-jacksonville-jacksonville-2": {
+    "milan-laser-jacksonville-jacksonville-2": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-jacksonville-jacksonville-2.webp",
     gallery: [
 
     ],
     source: "Milan Laser Jacksonville official website — services",
   },
-  "milan-laser-kingsport": {
+    "milan-laser-kingsport": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-kingsport.webp",
     gallery: [
 
     ],
     source: "Milan Laser Kingsport official website — services",
   },
-  "milan-laser-lafayette": {
+    "milan-laser-lafayette": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-lafayette.webp",
     gallery: [
 
     ],
     source: "Milan Laser Lafayette official website — services",
   },
-  "milan-laser-lacey": {
+    "milan-laser-lacey": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-lacey.webp",
     gallery: [
 
     ],
@@ -10778,233 +10778,233 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser Lakeland official website — services",
   },
-  "milan-laser-lancaster": {
+    "milan-laser-lancaster": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-lancaster.webp",
     gallery: [
 
     ],
     source: "Milan Laser Lancaster official website — services",
   },
-  "milan-laser-leesburg": {
+    "milan-laser-leesburg": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-leesburg.webp",
     gallery: [
 
     ],
     source: "Milan Laser Leesburg official website — services",
   },
-  "milan-laser-laredo": {
+    "milan-laser-laredo": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-laredo.webp",
     gallery: [
 
     ],
     source: "Milan Laser Laredo official website — services",
   },
-  "milan-laser-las-vegas": {
+    "milan-laser-las-vegas": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-las-vegas.webp",
     gallery: [
 
     ],
     source: "Milan Laser Las Vegas official website — services",
   },
-  "milan-laser-lansing": {
+    "milan-laser-lansing": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-lansing.webp",
     gallery: [
 
     ],
     source: "Milan Laser Lansing official website — services",
   },
-  "milan-laser-lexington": {
+    "milan-laser-lexington": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-lexington.webp",
     gallery: [
 
     ],
     source: "Milan Laser Lexington official website — services",
   },
-  "milan-laser-louisville": {
+    "milan-laser-louisville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-louisville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Louisville official website — services",
   },
-  "milan-laser-little-rock": {
+    "milan-laser-little-rock": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-little-rock.webp",
     gallery: [
 
     ],
     source: "Milan Laser Little Rock official website — services",
   },
-  "milan-laser-lincoln": {
+    "milan-laser-lincoln": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-lincoln.webp",
     gallery: [
 
     ],
     source: "Milan Laser Lincoln official website — services",
   },
-  "milan-laser-longview": {
+    "milan-laser-longview": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-longview.webp",
     gallery: [
 
     ],
     source: "Milan Laser Longview official website — services",
   },
-  "milan-laser-long-island": {
+    "milan-laser-long-island": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-long-island.webp",
     gallery: [
 
     ],
     source: "Milan Laser Long Island official website — services",
   },
-  "milan-laser-lawrence": {
+    "milan-laser-lawrence": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-lawrence.webp",
     gallery: [
 
     ],
     source: "Milan Laser Lawrence official website — services",
   },
-  "milan-laser-manassas": {
+    "milan-laser-manassas": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-manassas.webp",
     gallery: [
 
     ],
     source: "Milan Laser Manassas official website — services",
   },
-  "milan-laser-loveland": {
+    "milan-laser-loveland": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-loveland.webp",
     gallery: [
 
     ],
     source: "Milan Laser Loveland official website — services",
   },
-  "milan-laser-macon": {
+    "milan-laser-macon": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-macon.webp",
     gallery: [
 
     ],
     source: "Milan Laser Macon official website — services",
   },
-  "milan-laser-mandeville": {
+    "milan-laser-mandeville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-mandeville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Mandeville official website — services",
   },
-  "milan-laser-madison": {
+    "milan-laser-madison": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-madison.webp",
     gallery: [
 
     ],
     source: "Milan Laser Madison official website — services",
   },
-  "milan-laser-mansfield": {
+    "milan-laser-mansfield": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-mansfield.webp",
     gallery: [
 
     ],
     source: "Milan Laser Mansfield official website — services",
   },
-  "milan-laser-miami": {
+    "milan-laser-miami": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-miami.webp",
     gallery: [
 
     ],
     source: "Milan Laser Miami official website — services",
   },
-  "milan-laser-lubbock": {
+    "milan-laser-lubbock": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-lubbock.webp",
     gallery: [
 
     ],
     source: "Milan Laser Lubbock official website — services",
   },
-  "milan-laser-manhattan": {
+    "milan-laser-manhattan": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-manhattan.webp",
     gallery: [
 
     ],
     source: "Milan Laser Manhattan official website — services",
   },
-  "milan-laser-mcallen": {
+    "milan-laser-mcallen": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-mcallen.webp",
     gallery: [
 
     ],
     source: "Milan Laser Mcallen official website — services",
   },
-  "milan-laser-middletown": {
+    "milan-laser-middletown": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-middletown.webp",
     gallery: [
 
     ],
     source: "Milan Laser Middletown official website — services",
   },
-  "milan-laser-milwaukee": {
+    "milan-laser-milwaukee": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-milwaukee.webp",
     gallery: [
 
     ],
     source: "Milan Laser Milwaukee official website — services",
   },
-  "milan-laser-memphis": {
+    "milan-laser-memphis": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-memphis.webp",
     gallery: [
 
     ],
     source: "Milan Laser Memphis official website — services",
   },
-  "milan-laser-nashua": {
+    "milan-laser-nashua": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-nashua.webp",
     gallery: [
 
     ],
     source: "Milan Laser Nashua official website — services",
   },
-  "milan-laser-minneapolis-st-paul": {
+    "milan-laser-minneapolis-st-paul": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-minneapolis-st-paul.webp",
     gallery: [
 
     ],
     source: "Milan Laser Minneapolis  St Paul official website — services",
   },
-  "milan-laser-nashville": {
+    "milan-laser-nashville": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-nashville.webp",
     gallery: [
 
     ],
     source: "Milan Laser Nashville official website — services",
   },
-  "milan-laser-new-orleans": {
+    "milan-laser-new-orleans": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-new-orleans.webp",
     gallery: [
 
     ],
@@ -11018,105 +11018,105 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser New Haven official website — services",
   },
-  "milan-laser-new-london": {
+    "milan-laser-new-london": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-new-london.webp",
     gallery: [
 
     ],
     source: "Milan Laser New London official website — services",
   },
-  "milan-laser-new-braunfels": {
+    "milan-laser-new-braunfels": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-new-braunfels.webp",
     gallery: [
 
     ],
     source: "Milan Laser New Braunfels official website — services",
   },
-  "milan-laser-niagara-falls": {
+    "milan-laser-niagara-falls": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-niagara-falls.webp",
     gallery: [
 
     ],
     source: "Milan Laser Niagara Falls official website — services",
   },
-  "milan-laser-newport-news": {
+    "milan-laser-newport-news": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-newport-news.webp",
     gallery: [
 
     ],
     source: "Milan Laser Newport News official website — services",
   },
-  "milan-laser-normal": {
+    "milan-laser-normal": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-normal.webp",
     gallery: [
 
     ],
     source: "Milan Laser Normal official website — services",
   },
-  "milan-laser-odessa": {
+    "milan-laser-odessa": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-odessa.webp",
     gallery: [
 
     ],
     source: "Milan Laser Odessa official website — services",
   },
-  "milan-laser-north-myrtle-beach": {
+    "milan-laser-north-myrtle-beach": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-north-myrtle-beach.webp",
     gallery: [
 
     ],
     source: "Milan Laser North Myrtle Beach official website — services",
   },
-  "milan-laser-norfolk": {
+    "milan-laser-norfolk": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-norfolk.webp",
     gallery: [
 
     ],
     source: "Milan Laser Norfolk official website — services",
   },
-  "milan-laser-oklahoma-city": {
+    "milan-laser-oklahoma-city": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-oklahoma-city.webp",
     gallery: [
 
     ],
     source: "Milan Laser Oklahoma City official website — services",
   },
-  "milan-laser-omaha": {
+    "milan-laser-omaha": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-omaha.webp",
     gallery: [
 
     ],
     source: "Milan Laser Omaha official website — services",
   },
-  "milan-laser-palm-coast": {
+    "milan-laser-palm-coast": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-palm-coast.webp",
     gallery: [
 
     ],
     source: "Milan Laser Palm Coast official website — services",
   },
-  "milan-laser-orlando": {
+    "milan-laser-orlando": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-orlando.webp",
     gallery: [
 
     ],
     source: "Milan Laser Orlando official website — services",
   },
-  "milan-laser-pensacola": {
+    "milan-laser-pensacola": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-pensacola.webp",
     gallery: [
 
     ],
@@ -11130,177 +11130,177 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser Philadelphia official website — services",
   },
-  "milan-laser-oshkosh": {
+    "milan-laser-oshkosh": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-oshkosh.webp",
     gallery: [
 
     ],
     source: "Milan Laser Oshkosh official website — services",
   },
-  "milan-laser-phoenix": {
+    "milan-laser-phoenix": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-phoenix.webp",
     gallery: [
 
     ],
     source: "Milan Laser Phoenix official website — services",
   },
-  "milan-laser-pittsburgh": {
+    "milan-laser-pittsburgh": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-pittsburgh.webp",
     gallery: [
 
     ],
     source: "Milan Laser Pittsburgh official website — services",
   },
-  "milan-laser-quad-cities": {
+    "milan-laser-quad-cities": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-quad-cities.webp",
     gallery: [
 
     ],
     source: "Milan Laser Quad Cities official website — services",
   },
-  "milan-laser-portland": {
+    "milan-laser-portland": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-portland.webp",
     gallery: [
 
     ],
     source: "Milan Laser Portland official website — services",
   },
-  "milan-laser-peoria": {
+    "milan-laser-peoria": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-peoria.webp",
     gallery: [
 
     ],
     source: "Milan Laser Peoria official website — services",
   },
-  "milan-laser-portland-portland-2": {
+    "milan-laser-portland-portland-2": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-portland-portland-2.webp",
     gallery: [
 
     ],
     source: "Milan Laser Portland official website — services",
   },
-  "milan-laser-port-st-lucie": {
+    "milan-laser-port-st-lucie": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-port-st-lucie.webp",
     gallery: [
 
     ],
     source: "Milan Laser Port St Lucie official website — services",
   },
-  "milan-laser-quincy": {
+    "milan-laser-quincy": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-quincy.webp",
     gallery: [
 
     ],
     source: "Milan Laser Quincy official website — services",
   },
-  "milan-laser-raleigh": {
+    "milan-laser-raleigh": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-raleigh.webp",
     gallery: [
 
     ],
     source: "Milan Laser Raleigh official website — services",
   },
-  "milan-laser-reno": {
+    "milan-laser-reno": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-reno.webp",
     gallery: [
 
     ],
     source: "Milan Laser Reno official website — services",
   },
-  "milan-laser-richmond": {
+    "milan-laser-richmond": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-richmond.webp",
     gallery: [
 
     ],
     source: "Milan Laser Richmond official website — services",
   },
-  "milan-laser-richland": {
+    "milan-laser-richland": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-richland.webp",
     gallery: [
 
     ],
     source: "Milan Laser Richland official website — services",
   },
-  "milan-laser-reading": {
+    "milan-laser-reading": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-reading.webp",
     gallery: [
 
     ],
     source: "Milan Laser Reading official website — services",
   },
-  "milan-laser-rochester": {
+    "milan-laser-rochester": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-rochester.webp",
     gallery: [
 
     ],
     source: "Milan Laser Rochester official website — services",
   },
-  "milan-laser-rochester-rochester-2": {
+    "milan-laser-rochester-rochester-2": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-rochester-rochester-2.webp",
     gallery: [
 
     ],
     source: "Milan Laser Rochester official website — services",
   },
-  "milan-laser-salem": {
+    "milan-laser-salem": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-salem.webp",
     gallery: [
 
     ],
     source: "Milan Laser Salem official website — services",
   },
-  "milan-laser-rockford": {
+    "milan-laser-rockford": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-rockford.webp",
     gallery: [
 
     ],
     source: "Milan Laser Rockford official website — services",
   },
-  "milan-laser-salt-lake-city": {
+    "milan-laser-salt-lake-city": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-salt-lake-city.webp",
     gallery: [
 
     ],
     source: "Milan Laser Salt Lake City official website — services",
   },
-  "milan-laser-san-antonio": {
+    "milan-laser-san-antonio": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-san-antonio.webp",
     gallery: [
 
     ],
     source: "Milan Laser San Antonio official website — services",
   },
-  "milan-laser-savannah": {
+    "milan-laser-savannah": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-savannah.webp",
     gallery: [
 
     ],
     source: "Milan Laser Savannah official website — services",
   },
-  "milan-laser-scranton": {
+    "milan-laser-scranton": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-scranton.webp",
     gallery: [
 
     ],
@@ -12587,9 +12587,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Cor Medspa official website",
   },
-  "eleven-med-spa-dallas": {
+    "eleven-med-spa-dallas": {
     hero: "",
-    logo: "https://elevenbodysculpt.com/wp-content/uploads/2025/12/Eleven-Aesthetics-fav.svg",
+    logo: "/provider-logos/eleven-med-spa-dallas.svg",
     gallery: [
 
     ],
@@ -12627,17 +12627,17 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Trifecta Med Spa official website",
   },
-  "milan-laser-fort-smith": {
+    "milan-laser-fort-smith": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-fort-smith.webp",
     gallery: [
 
     ],
     source: "Milan Laser Fort Smith official website — brand imagery",
   },
-  "milan-laser-la-crosse": {
+    "milan-laser-la-crosse": {
     hero: "",
-    logo: "https://milanlaser.com/static/Milan-Logo-Blue-4e6f080e8dbe7fe7d1a1008cd94b73a4.webp",
+    logo: "/provider-logos/milan-laser-la-crosse.webp",
     gallery: [
 
     ],
@@ -12651,9 +12651,9 @@ export const NATIONWIDE_REAL_SPA_IMAGES: Record<
     ],
     source: "Milan Laser Yulee official website — brand imagery",
   },
-  "advanced-skin-fitness-dallas": {
+    "advanced-skin-fitness-dallas": {
     hero: "",
-    logo: "https://ik.imagekit.io/dc6lhf5cog/wp-content/uploads/2023/11/ASF-logo-3-black-gold-display-shape-only.png",
+    logo: "/provider-logos/advanced-skin-fitness-dallas.png",
     gallery: [
 
     ],

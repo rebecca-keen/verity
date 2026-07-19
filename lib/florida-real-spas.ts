@@ -222,7 +222,7 @@ export const floridaRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Trish Street, APRN, DNP",
     licenseId: "FL-REAL-10009",
     yearsOpen: 7,
-    treatments: ["botox", "fillers", "facial", "microneedling", "wellness"],
+    treatments: ["botox", "fillers", "facial", "microneedling", "wellness", "iv-therapy"],
     priceRange: "$$$",
     instagram: "tranquilitymedspa",
     productSlugs: ["eltamd-uv-clear", "revision-retinol"],
@@ -375,7 +375,7 @@ export const floridaRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed medical aesthetician",
     licenseId: "FL-REAL-10015",
     yearsOpen: 4,
-    treatments: ["botox", "fillers", "facial", "microneedling", "wellness"],
+    treatments: ["botox", "fillers", "facial", "microneedling", "wellness", "iv-therapy"],
     priceRange: "$$",
     instagram: "bloomivhydration",
     productSlugs: ["eltamd-uv-clear", "is-clinical-cleansing"],
@@ -400,7 +400,7 @@ export const floridaRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed skincare team",
     licenseId: "FL-REAL-10016",
     yearsOpen: 6,
-    treatments: ["facial", "microneedling"],
+    treatments: ["facial"],
     priceRange: "$$",
     instagram: "dunedinwellspa",
     productSlugs: ["is-clinical-cleansing", "eltamd-uv-clear"],
@@ -703,7 +703,7 @@ export const floridaRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed medical team",
     licenseId: "FL-REAL-10028",
     yearsOpen: 6,
-    treatments: ["botox", "weight-loss", "hormone-therapy", "wellness"],
+    treatments: ["botox", "weight-loss", "hormone-therapy", "wellness", "iv-therapy"],
     priceRange: "$$$",
     instagram: "4everyoungtampa",
     productSlugs: ["eltamd-uv-clear", "skinmedica-ha5"],
@@ -830,7 +830,7 @@ export const floridaRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Dr. Barbara Rappaport, MD",
     licenseId: "FL-REAL-10033",
     yearsOpen: 15,
-    treatments: ["botox", "fillers", "body-contouring", "wellness"],
+    treatments: ["botox", "fillers", "body-contouring", "weight-loss", "hormone-therapy", "wellness"],
     priceRange: "$$$$",
     instagram: "jaxaestheticscenter",
     productSlugs: ["skinceuticals-ce-ferulic", "eltamd-uv-clear"],
@@ -855,7 +855,7 @@ export const floridaRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Ana Greenberger, NP",
     licenseId: "FL-REAL-10034",
     yearsOpen: 6,
-    treatments: ["botox", "fillers", "laser", "microneedling", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial", "microneedling"],
     priceRange: "$$$",
     instagram: "focusaestheticsjax",
     productSlugs: ["skinceuticals-ce-ferulic", "revision-retinol"],
@@ -981,7 +981,7 @@ export const floridaRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed medical team",
     licenseId: "FL-REAL-10039",
     yearsOpen: 5,
-    treatments: ["botox", "weight-loss", "hormone-therapy", "wellness"],
+    treatments: ["botox", "weight-loss", "hormone-therapy", "wellness", "iv-therapy"],
     priceRange: "$$$",
     instagram: "4everyoungfortmyers",
     productSlugs: ["eltamd-uv-clear", "skinmedica-ha5"],
@@ -1051,9 +1051,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Moraitis Plastic Surgery Med Spa official website — services",
   },
-              "lueur-aesthetics-clearwater": {
+                "lueur-aesthetics-clearwater": {
     hero: "https://lueuraesthetics360.com/wp-content/uploads/2026/04/2783.jpg",
-    logo: "https://lueuraesthetics360.com/wp-content/uploads/2026/05/cropped-Untitled-design-2026-05-08T114031.497-192x192.png",
+    logo: "/provider-logos/lueur-aesthetics-clearwater.png",
     gallery: [
       "https://lueuraesthetics360.com/wp-content/uploads/2026/05/Home-page-service-area-PDO-Threads.jpg",
       "https://lueuraesthetics360.com/wp-content/uploads/2026/04/hair-restoration.png",
@@ -1061,9 +1061,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Lueur Aesthetics official website — homepage",
   },
-              "ageless-advanced-aesthetics-clearwater": {
+                "ageless-advanced-aesthetics-clearwater": {
     hero: "https://static.wixstatic.com/media/11ded8_7bb1e218cbd94b97a93b092f75ecd45f~mv2.png/v1/crop/x_195,y_86,w_886,h_1097/fill/w_162,h_196,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11ded8_7bb1e218cbd94b97a93b092f75ecd45f~mv2.png",
-    logo: "https://static.wixstatic.com/media/11ded8_e3147405434245c9a869d0fae9d017fa%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/11ded8_e3147405434245c9a869d0fae9d017fa%7Emv2.png",
+    logo: "/provider-logos/ageless-advanced-aesthetics-clearwater.png",
     gallery: [
       "https://static.wixstatic.com/media/11ded8_eb0bb4d6735d4c8e833a56412bf9616c%7Emv2.png/v1/fit/w_2500,h_1330,al_c/11ded8_eb0bb4d6735d4c8e833a56412bf9616c%7Emv2.png",
       "https://static.wixstatic.com/media/11ded8_a10f39212bed47d4979a95180531a33a~mv2.png/v1/crop/x_161,y_155,w_2026,h_1363/fill/w_416,h_280,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/C9BB9B16-55B7-4D27-9D88-27BF6B81A8EA_PNG.png",
@@ -1078,9 +1078,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Medspa Bella official website — services",
   },
-              "aurivita-medspa-clearwater": {
+                "aurivita-medspa-clearwater": {
     hero: "https://aurivitamedspa.com/wp-content/uploads/elementor/thumbs/Group-1321317858-rgtqks74hmjwfueddolhr1auhvsyff0ot1tdslev7g.png",
-    logo: "https://aurivitamedspa.com/wp-content/uploads/2025/09/Group-1321317858.png",
+    logo: "/provider-logos/aurivita-medspa-clearwater.png",
     gallery: [
       "https://aurivitamedspa.com/wp-content/uploads/2025/09/Rectangle-3-6.png",
     ],
@@ -1107,9 +1107,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Tranquility Aesthetics official website — homepage",
   },
-              "envy-me-aesthetics-tarpon-springs": {
+                "envy-me-aesthetics-tarpon-springs": {
     hero: "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/699f19de2990d0f8c6462f85_Lip-Envy-Signature-Service-Before.jpg",
-    logo: "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/699d9a78973ed67bd9f28d2f_Envy-Me-Aesthetics-Logo-Primary-NoBox-GradientGold.svg",
+    logo: "/provider-logos/envy-me-aesthetics-tarpon-springs.svg",
     gallery: [
       "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/699f19f2be8b3b9dc25a7dc6_Lip-Envy-Signature-Service-After.jpg",
       "https://cdn.prod.website-files.com/697a983a121862f8aa8f94f1/69f92bf59c01fad8b7339ef1_gallery-dermal-filler-1.jpg",
@@ -1128,9 +1128,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Tonicity Health & Med Spa official website — homepage",
   },
-                "core-wellness-safety-harbor": {
+                  "core-wellness-safety-harbor": {
     hero: "https://static.wixstatic.com/media/f20ff3_e706dee7a3f4421c9b3ea673c1fd7bf8~mv2.png/v1/fill/w_2000,h_789,al_c/f20ff3_e706dee7a3f4421c9b3ea673c1fd7bf8~mv2.png",
-    logo: "https://static.wixstatic.com/media/f20ff3_33a8f780047845ceaaa59ffcfb9c4fdf~mv2.png/v1/fill/w_787,h_750,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20design%20(2).png",
+    logo: "/provider-logos/core-wellness-safety-harbor.png",
     gallery: [
       "https://static.wixstatic.com/media/f20ff3_33a8f780047845ceaaa59ffcfb9c4fdf~mv2.png/v1/fill/w_787,h_750,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20design%20(2).png",
     ],
@@ -1147,17 +1147,17 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Elemence Med Spa official website — services",
   },
-                "dunedin-medical-aesthetics-laser": {
+                  "dunedin-medical-aesthetics-laser": {
     hero: "https://static.wixstatic.com/media/6a0e16_617c6e4f0d1b4d81ad07a232461516d6~mv2.jpg/v1/crop/x_0,y_38,w_802,h_662/fill/w_489,h_404,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fotona%20face%20lift%20picture.jpg",
-    logo: "https://static.parastorage.com/client/pfavico.ico",
+    logo: "/provider-logos/dunedin-medical-aesthetics-laser.ico",
     gallery: [
 
     ],
     source: "Dunedin Medical Aesthetics Spa & Laser official website — services",
   },
-                "bloom-iv-dunedin": {
+                  "bloom-iv-dunedin": {
     hero: "https://lirp.cdn-website.com/faa64f10/dms3rep/multi/opt/GettyImages-1270488640-1920w.jpg",
-    logo: "https://irp.cdn-website.com/faa64f10/dms3rep/multi/bloom-fav.png",
+    logo: "/provider-logos/bloom-iv-dunedin.png",
     gallery: [
 
     ],
@@ -1225,9 +1225,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Living Young Center — Odessa official website — services",
   },
-              "livia-medspa-tampa": {
+                "livia-medspa-tampa": {
     hero: "https://liviamedspa.com/wp-content/uploads/2026/04/Hero-Apirl4.png",
-    logo: "https://liviamedspa.com/wp-content/uploads/2026/03/New-Livia-Logo.png",
+    logo: "/provider-logos/livia-medspa-tampa.png",
     gallery: [
       "https://liviamedspa.com/wp-content/uploads/2026/04/AdobeStock_1954168906-768x512.jpeg",
       "https://liviamedspa.com/wp-content/uploads/2026/04/glo2-thumbnail-768x512.jpg",
@@ -1255,9 +1255,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "TAO Wellness Med Spa official website — services",
   },
-              "cell-renew-medspa-tampa": {
+                "cell-renew-medspa-tampa": {
     hero: "https://dfjzm6sgcd78n.cloudfront.net/images/gallery/gallery-4-after.jpg",
-    logo: "https://www.cellrenewtampa.com/apple-icon.png?apple-icon.6cc6ca07.png",
+    logo: "/provider-logos/cell-renew-medspa-tampa.png",
     gallery: [
       "https://dfjzm6sgcd78n.cloudfront.net/images/gallery/gallery-4-after.jpg",
       "https://dfjzm6sgcd78n.cloudfront.net/images/gallery/gallery-1-after.png",
@@ -1275,9 +1275,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Erasable Med Spa official website — homepage",
   },
-              "arviva-aesthetics-tampa": {
+                "arviva-aesthetics-tampa": {
     hero: "https://arvivaesthetics.com/wp-content/uploads/2020/07/Canva-Male-beauty-treatment.jpg",
-    logo: "https://arvivaesthetics.com/wp-content/uploads/2017/08/cropped-arvivIcon1-1-250x250.png",
+    logo: "/provider-logos/arviva-aesthetics-tampa.png",
     gallery: [
       "https://www.arvivaesthetics.com/wp-content/uploads/2019/07/Services.jpg",
       "https://arvivaesthetics.com/wp-content/uploads/2017/01/miami-location-slider2.jpg",
@@ -1327,9 +1327,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "NUR Med Spa & Wellness official website — services",
   },
-              "luxe-medspa-orlando": {
+                "luxe-medspa-orlando": {
     hero: "https://luxemedspaaesthetics.com/_static_/feature/esthetician-services.jpg",
-    logo: "https://luxemedspaaesthetics.com/_static_/logos/header-logo.png",
+    logo: "/provider-logos/luxe-medspa-orlando.png",
     gallery: [
       "https://luxemedspaaesthetics.com/_static_/feature/intro.jpg",
       "https://luxemedspaaesthetics.com/_static_/feature/injectables.jpg",
@@ -1338,9 +1338,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Luxe Med Spa Aesthetics official website — services",
   },
-              "jax-aesthetics-wellness-jacksonville": {
+                "jax-aesthetics-wellness-jacksonville": {
     hero: "https://jaxaestheticscenter.com/wp-content/uploads/botox-1.jpg",
-    logo: "https://jaxaestheticscenter.com/wp-content/uploads/TAC-Logo-RGB-horz2.png",
+    logo: "/provider-logos/jax-aesthetics-wellness-jacksonville.png",
     gallery: [
       "https://jaxaestheticscenter.com/wp-content/uploads/body-sculpting-1.jpg",
       "https://jaxaestheticscenter.com/wp-content/uploads/contouring-1.jpg",
@@ -1357,9 +1357,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "Focus Aesthetics official website — services",
   },
-              "concierge-cosmetics-jacksonville": {
+                "concierge-cosmetics-jacksonville": {
     hero: "https://conciergecosmeticsandaesthetics.com/wp-content/uploads/2023/06/concierge-header.jpg",
-    logo: "https://conciergecosmeticsandaesthetics.com/wp-content/uploads/2025/12/cropped-concierge-icon-192x192.jpg",
+    logo: "/provider-logos/concierge-cosmetics-jacksonville.jpg",
     gallery: [
 
     ],
@@ -1387,9 +1387,9 @@ export const FLORIDA_REAL_SPA_IMAGES: Record<
     ],
     source: "CMA Medicine official website — services",
   },
-              "inside-out-medspa-naples": {
+                "inside-out-medspa-naples": {
     hero: "https://insideoutmedspa.com/wp-content/uploads/2025/12/lobby1.webp",
-    logo: "https://insideoutmedspa.com/wp-content/uploads/2025/12/cropped-cropped-Inside-Out-Medspa-Logo-Large-192x192.webp",
+    logo: "/provider-logos/inside-out-medspa-naples.webp",
     gallery: [
       "https://insideoutmedspa.com/wp-content/uploads/elementor/thumbs/injectabal-sq-rmfl5nhepcxva2f5tfxce2nrxmfswqy7jag9kamkp0.jpg",
       "https://insideoutmedspa.com/wp-content/uploads/elementor/thumbs/Microneedling-with-RF-Morpheus8-rmfl5nhepcxva2f5tfxce2nrxmfswqy7jag9kamkp0.webp",

@@ -209,7 +209,7 @@ function seedSpa(data: SpaSeed): Spa {
       : undefined;
   const listingStatus =
     data.listingStatus ?? (data.premierPartner ? "verified-partner" : "listed");
-  const treatments = resolveSpaTreatments(data.treatments, data.description, data.tagline, data.name);
+  const treatments = resolveSpaTreatments(data.treatments, data.description, data.tagline, data.name, website);
 
   return normalizeSpaTrust({
     slug: data.slug,

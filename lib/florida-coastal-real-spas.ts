@@ -45,7 +45,7 @@ export const floridaCoastalRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Physician-supervised team",
     licenseId: "FL-REAL-10042",
     yearsOpen: 8,
-    treatments: ["botox", "laser", "weight-loss", "wellness"],
+    treatments: ["botox", "laser", "weight-loss", "wellness", "iv-therapy"],
     priceRange: "$$$",
     instagram: "eternalmedspa",
     productSlugs: ["eltamd-uv-clear", "skinmedica-ha5"],
@@ -196,7 +196,7 @@ export const floridaCoastalRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed NP team",
     licenseId: "FL-REAL-10048",
     yearsOpen: 6,
-    treatments: ["botox", "facial", "microneedling", "weight-loss"],
+    treatments: ["botox", "facial", "microneedling", "iv-therapy"],
     priceRange: "$$$",
     instagram: "essentialaestheticsfl",
     productSlugs: ["is-clinical-cleansing", "eltamd-uv-clear"],
@@ -272,7 +272,7 @@ export const floridaCoastalRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Dr. Lauren Girard, MD",
     licenseId: "FL-REAL-10051",
     yearsOpen: 9,
-    treatments: ["botox", "fillers", "laser", "microneedling", "weight-loss", "wellness"],
+    treatments: ["botox", "fillers", "laser", "microneedling", "weight-loss", "hormone-therapy", "wellness"],
     priceRange: "$$$",
     instagram: "shoresmedspa",
     productSlugs: ["skinceuticals-ce-ferulic", "eltamd-uv-clear"],
@@ -297,7 +297,7 @@ export const floridaCoastalRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed medical team",
     licenseId: "FL-REAL-10052",
     yearsOpen: 7,
-    treatments: ["botox", "fillers", "laser", "weight-loss", "hormone-therapy", "wellness"],
+    treatments: ["botox", "fillers", "laser", "weight-loss", "hormone-therapy", "iv-therapy"],
     priceRange: "$$$",
     instagram: "eliteaestheticsllc",
     productSlugs: ["revision-retinol", "is-clinical-cleansing"],
@@ -347,7 +347,7 @@ export const floridaCoastalRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Leah MacDowell, Master Injector",
     licenseId: "FL-REAL-10054",
     yearsOpen: 8,
-    treatments: ["botox", "laser", "weight-loss", "wellness"],
+    treatments: ["botox", "laser", "weight-loss", "wellness", "iv-therapy"],
     priceRange: "$$",
     instagram: "daytonasantiaging",
     productSlugs: ["eltamd-uv-clear", "skinmedica-ha5"],
@@ -499,7 +499,7 @@ export const floridaCoastalRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Dr. Nitin Bawa, MD",
     licenseId: "FL-REAL-10060",
     yearsOpen: 20,
-    treatments: ["botox", "fillers", "laser", "body-contouring", "weight-loss", "wellness"],
+    treatments: ["botox", "fillers", "laser", "body-contouring", "weight-loss", "iv-therapy"],
     priceRange: "$$$",
     instagram: "sbmedspa",
     productSlugs: ["eltamd-uv-clear", "skinmedica-ha5"],
@@ -524,7 +524,7 @@ export const floridaCoastalRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Dr. Amber Wiebe, DMD",
     licenseId: "FL-REAL-10062",
     yearsOpen: 15,
-    treatments: ["botox", "fillers", "laser", "microneedling", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial", "microneedling"],
     priceRange: "$$$$",
     instagram: "destinmedicalspa",
     productSlugs: ["skinceuticals-ce-ferulic", "revision-retinol"],
@@ -625,7 +625,7 @@ export const floridaCoastalRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Dr. Michael Lesser, MD",
     licenseId: "FL-REAL-10066",
     yearsOpen: 9,
-    treatments: ["botox", "laser", "hormone-therapy", "wellness"],
+    treatments: ["botox", "laser", "hormone-therapy", "wellness", "iv-therapy"],
     priceRange: "$$$",
     instagram: "essentialsmedispa",
     productSlugs: ["eltamd-uv-clear", "skinmedica-ha5"],
@@ -689,9 +689,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
   string,
   { hero: string; gallery: string[]; logo?: string; source: string }
 > = {
-              "injections-and-co-sarasota": {
+                "injections-and-co-sarasota": {
     hero: "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/3b2e9e8d-655e-456c-b781-f4505abde71a/PRP+Hair+treatment+at+Injections+and+Co+in+Sarasota.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/2ff93966-2a60-4f25-87b2-ec59a78ada38/INJECTIONS.png?format=1500w",
+    logo: "/provider-logos/injections-and-co-sarasota.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/9375917a-e1a3-483c-98bf-931f2a2e2d0a/Alison-chafin-injecting-daxxify-to-female-client-in-sarasota.jpg",
       "https://images.squarespace-cdn.com/content/v1/69ea555a6ac8e97c4fb73eec/70624b63-c0f6-448f-a361-39e1dbe7af21/Alison_Chafin_sarasota_medical_spa_with_dermal_filler.png",
@@ -710,9 +710,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Eternal MedSpa official website — services",
   },
-              "lush-injectables-sarasota": {
+                "lush-injectables-sarasota": {
     hero: "https://images.squarespace-cdn.com/content/v1/69b848a18f7dda73137bd7b2/13c9059b-65b0-446d-82c4-d8fb7f4511bd/DSC07777.jpg",
-    logo: "https://images.squarespace-cdn.com/content/v1/69b848a18f7dda73137bd7b2/5bc20d9f-eb82-416e-a421-aa7b618b3312/Lush+Injectables++Medspa+in+Sarasota%2C+FL%2C+34243++Botox%2C+Fillers%2C+PRP.png?format=1500w",
+    logo: "/provider-logos/lush-injectables-sarasota.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/69b848a18f7dda73137bd7b2/f24db3ec-ae9a-4445-b671-54f4e9f000f8/Lush+Injectables++Medspa+in+Sarasota%2C+FL%2C+34243++Botox%2C+Fillers%2C+PRP.png",
       "https://images.squarespace-cdn.com/content/v1/69b848a18f7dda73137bd7b2/ea931dfd-9c4d-4105-b8bf-8a6c3094f6d0/Lush+Injectables++Medspa+in+Sarasota%2C+FL%2C+34243++Botox%2C+Fillers%2C+PRP.png",
@@ -731,9 +731,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Rose Medical Aesthetics official website — services",
   },
-              "bowtique-medspa-sarasota": {
+                "bowtique-medspa-sarasota": {
     hero: "https://www.datocms-assets.com/144122/1729802252-location-combined.png?auto=format,compress&w=1343",
-    logo: "https://www.datocms-assets.com/144122/1729178166-logo.png?auto=format,compress&w=896",
+    logo: "/provider-logos/bowtique-medspa-sarasota.png",
     gallery: [
       "https://www.datocms-assets.com/144122/1730132839-gallery-banner.jpg?auto=format,compress&w=2200",
       "https://www.datocms-assets.com/144122/1729626861-testimonials-banner.jpg?auto=format,compress&w=1920",
@@ -761,17 +761,17 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Modigliani Med Spa official website — services",
   },
-              "essential-aesthetics-fort-lauderdale": {
+                "essential-aesthetics-fort-lauderdale": {
     hero: "https://essentialaestheticsfl.com/storage/2024/06/Essential-Aesthetics-Health-Featured-Logo.webp",
-    logo: "https://essentialaestheticsfl.com/storage/2024/05/Essential-Main-Logo-New.webp",
+    logo: "/provider-logos/essential-aesthetics-fort-lauderdale.webp",
     gallery: [
 
     ],
     source: "Essential Aesthetics & Health official website — services",
   },
-              "aesthetic-label-fort-lauderdale": {
+                "aesthetic-label-fort-lauderdale": {
     hero: "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/3ca20694-3625-44e3-a859-927725585693/Photo+Dec+05+2024%2C+4+00+35+PM+%282%29+%281%29.png?format=1500w",
-    logo: "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/3ca20694-3625-44e3-a859-927725585693/Photo+Dec+05+2024%2C+4+00+35+PM+%282%29+%281%29.png?format=1500w",
+    logo: "/provider-logos/aesthetic-label-fort-lauderdale.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/1733148692276-NSPVX33Q32LNDLI1TJ71/image-asset.jpeg",
       "https://images.squarespace-cdn.com/content/v1/64d191dec9c18976ce5d9a5c/1732725882361-KCXH1QGUK0RUZ4AY7GPA/image-asset.jpeg",
@@ -780,9 +780,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "The Aesthetic Label official website — services",
   },
-              "angel-aesthetics-fort-lauderdale": {
+                "angel-aesthetics-fort-lauderdale": {
     hero: "https://angelaesthetics.com/wp-content/uploads/2020/02/Services-Silhouette-Insta-lift.jpg",
-    logo: "https://angelaesthetics.com/wp-content/uploads/2020/02/cropped-angel-aesthetics-fav-icon-192x192.png",
+    logo: "/provider-logos/angel-aesthetics-fort-lauderdale.png",
     gallery: [
       "https://angelaesthetics.com/wp-content/uploads/2020/02/Services-Botox-small.jpg",
       "https://angelaesthetics.com/wp-content/uploads/2020/02/Services-Botox-for-hair.jpg",
@@ -802,9 +802,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Shores Medical Spa official website — services",
   },
-              "elite-aesthetics-daytona-beach": {
+                "elite-aesthetics-daytona-beach": {
     hero: "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/9e1b8fab-8f4a-464f-96e7-050d5b799c86/IMG_3011+2.JPG",
-    logo: "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/6ca5ce2b-7695-49ca-b5ab-209ac53a82b9/EAlogoclear.png?format=1500w",
+    logo: "/provider-logos/elite-aesthetics-daytona-beach.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/3e806ab7-b81b-4459-a58c-e5f5129ee562/IMG_8699+5.JPG",
       "https://images.squarespace-cdn.com/content/v1/63c078125c78db54a10a5401/1a9c1614-01f6-4bf7-b909-1676fe8164d6/IMG_1055+3.jpg",
@@ -813,9 +813,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Elite Aesthetics official website — services",
   },
-              "anora-integrative-daytona": {
+                "anora-integrative-daytona": {
     hero: "https://anoraiha.com/wp-content/uploads/2024/10/Treatment-Builder-Thumbnail.png",
-    logo: "https://anoraiha.com/wp-content/uploads/2024/10/cropped-FAV-192x192.png",
+    logo: "/provider-logos/anora-integrative-daytona.png",
     gallery: [
       "https://anoraiha.com/wp-content/uploads/2024/10/Total-Wellness-Misc-8324.jpg",
       "https://anoraiha.com/wp-content/uploads/2024/10/Total-Wellness-MISC-1.jpg",
@@ -835,9 +835,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Total Anti-Aging & Wellness official website — services",
   },
-                "key-west-medspa-duval": {
+                  "key-west-medspa-duval": {
     hero: "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/408%20closing%20goggle%20aspect%20ratio.jpg",
-    logo: "https://img1.wsimg.com/isteam/ip/cbc8b9f8-a4db-428b-93ee-b9400742d351/2550def6-5c4a-4e0c-87b2-c88376682563.jpg/:/rs=w:57,h:57,m",
+    logo: "/provider-logos/key-west-medspa-duval.jpg",
     gallery: [
 
     ],
@@ -854,9 +854,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Keys Med Spa official website — services",
   },
-              "divine-medical-spa-key-west": {
+                "divine-medical-spa-key-west": {
     hero: "https://divinekeywest.com/wp-content/uploads/2023/02/DIVINE-WEDDING-GLOW-TREATMENT.jpg",
-    logo: "https://divinekeywest.com/wp-content/uploads/2020/11/Logo.png",
+    logo: "/provider-logos/divine-medical-spa-key-west.png",
     gallery: [
       "https://divinekeywest.com/wp-content/uploads/2023/02/DIVINE-SOOTHING-EXPRESS-TREATMENT.jpg",
       "https://divinekeywest.com/wp-content/uploads/2020/11/New-Project-4.png",
@@ -864,9 +864,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Divine Medical Spa official website — services",
   },
-              "key-west-health-aesthetics": {
+                "key-west-health-aesthetics": {
     hero: "https://keywest.health/images/services/key-west-diamond-glow.png",
-    logo: "https://keywest.health/images/brand/key-west-health-med-spa-logo.png",
+    logo: "/provider-logos/key-west-health-aesthetics.png",
     gallery: [
       "https://keywest.health/images/services/keywest-acne-treatment.jpg",
       "https://keywest.health/images/services/keywest-male-enhancement.jpg",
@@ -897,9 +897,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "SB Medspa — Dr. Bawa & Associates official website — services",
   },
-                "destin-medical-spa": {
+                  "destin-medical-spa": {
     hero: "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-34.jpg",
-    logo: "https://destinbotox.com/wp-content/uploads/2024/04/og-image-01b.jpg",
+    logo: "/provider-logos/destin-medical-spa.jpg",
     gallery: [
       "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-33.jpg",
       "https://destinbotox.com/wp-content/uploads/2026/02/dermal-fillers-32.jpg",
@@ -908,9 +908,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Destin Medical Spa official website — services",
   },
-                "destin-plastic-surgery-medspa": {
+                  "destin-plastic-surgery-medspa": {
     hero: "https://www.theplasticdoc.com/og-image.jpg",
-    logo: "https://www.theplasticdoc.com/og-image.jpg",
+    logo: "/provider-logos/destin-plastic-surgery-medspa.jpg",
     gallery: [
 
     ],
@@ -938,9 +938,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "TAO Medical Spa official website — services",
   },
-              "essentials-medispa-melbourne": {
+                "essentials-medispa-melbourne": {
     hero: "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/08/LASER-Spa-Service-Button.jpg",
-    logo: "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2018/08/cropped-logo-192x192.png",
+    logo: "/provider-logos/essentials-medispa-melbourne.png",
     gallery: [
       "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/07/relax-3.png",
       "https://www.essentialsmedispaandsalon.com/wp-content/uploads/2025/07/relax-1.png",
@@ -949,9 +949,9 @@ export const FLORIDA_COASTAL_REAL_SPA_IMAGES: Record<
     ],
     source: "Essentials Medispa & Salon official website — services",
   },
-              "couture-medspa-kissimmee": {
+                "couture-medspa-kissimmee": {
     hero: "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/66e1ea19858b3f9ff5cb33bb_skinpen%20service.webp",
-    logo: "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb3363/66e1ea19858b3f9ff5cb33bc_CMS_vector%20logo.svg",
+    logo: "/provider-logos/couture-medspa-kissimmee.svg",
     gallery: [
       "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb338b/66e1ea19858b3f9ff5cb3546_N%20Eslava%20after%201%20sculptra.webp",
       "https://cdn.prod.website-files.com/66e1ea19858b3f9ff5cb338b/66e1ea19858b3f9ff5cb3606_Dana%20Laing%20after%203%20treatments%20(1).webp",

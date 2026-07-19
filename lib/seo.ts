@@ -73,13 +73,22 @@ export const TREATMENT_CATEGORY_SEO: Record<
     path: "/providers?category=body",
   },
   wellness: {
-    title: "Wellness & IV Therapy Providers — Med Spas | Verity",
+    title: "Wellness Providers — Peptides & Functional Medicine | Verity",
     description:
-      "Find med spas offering wellness programs, IV therapy, peptide treatments, and NAD+ therapy. Compare listed providers nationwide.",
-    h1: "Wellness & IV providers",
+      "Find med spas offering wellness programs, peptide treatments, NAD+ therapy, and functional medicine. Compare listed providers nationwide.",
+    h1: "Wellness providers",
     intro:
-      "Browse med spas for wellness services including IV therapy, vitamin drips, peptides, and functional medicine programs.",
+      "Browse med spas for wellness services including peptides, NAD+ therapy, and functional medicine programs.",
     path: "/providers?category=wellness",
+  },
+  "iv-therapy": {
+    title: "IV Therapy Providers — Vitamin Drips & Hydration | Verity",
+    description:
+      "Find med spas and wellness clinics offering IV therapy, vitamin drips, hydration infusions, and Myers cocktail treatments nationwide.",
+    h1: "IV therapy providers",
+    intro:
+      "Discover providers for IV therapy including vitamin drips, hydration infusions, and mobile IV services.",
+    path: "/providers?category=iv-therapy",
   },
   "weight-loss": {
     title: "Medical Weight Loss Providers — GLP-1 & More | Verity",
@@ -98,6 +107,24 @@ export const TREATMENT_CATEGORY_SEO: Record<
     intro:
       "Browse providers for bioidentical hormone therapy, testosterone replacement, and physician-supervised hormone optimization.",
     path: "/providers?category=hormone-therapy",
+  },
+  "mens-health": {
+    title: "Men's Health Providers — TRT & Hormone Care | Verity",
+    description:
+      "Find clinics offering men's health services including testosterone therapy (TRT), low-T treatment, and male hormone optimization nationwide.",
+    h1: "Men's health providers",
+    intro:
+      "Discover providers for men's health including testosterone replacement therapy, low testosterone treatment, and male wellness programs.",
+    path: "/providers?category=mens-health",
+  },
+  "womens-health": {
+    title: "Women's Health Providers — Menopause & BHRT | Verity",
+    description:
+      "Find med spas and wellness clinics offering women's health, menopause care, and bioidentical hormone therapy nationwide.",
+    h1: "Women's health providers",
+    intro:
+      "Browse providers for women's health including menopause support, bioidentical hormone therapy, and hormone balance programs.",
+    path: "/providers?category=womens-health",
   },
   "hair-restoration": {
     title: "Hair Restoration Providers — PRP & Transplant | Verity",
@@ -675,9 +702,12 @@ const TREATMENT_CATEGORY_SERVICES: Record<TreatmentCategory, string> = {
   lasers: "Laser treatments",
   beauty: "Facials and skincare",
   body: "Body contouring",
-  wellness: "Wellness and IV therapy",
+  wellness: "Wellness programs",
+  "iv-therapy": "IV therapy",
   "weight-loss": "Medical weight loss",
   "hormone-therapy": "Hormone therapy",
+  "mens-health": "Men's health",
+  "womens-health": "Women's health",
   "hair-restoration": "Hair restoration",
 };
 

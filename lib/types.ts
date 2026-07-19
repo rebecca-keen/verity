@@ -18,7 +18,10 @@ export type Treatment =
   | "weight-loss"
   | "hormone-therapy"
   | "hair-restoration"
-  | "wellness";
+  | "wellness"
+  | "iv-therapy"
+  | "mens-health"
+  | "womens-health";
 
 export type TreatmentCategory =
   | "injectables"
@@ -28,7 +31,10 @@ export type TreatmentCategory =
   | "wellness"
   | "weight-loss"
   | "hormone-therapy"
-  | "hair-restoration";
+  | "hair-restoration"
+  | "iv-therapy"
+  | "mens-health"
+  | "womens-health";
 
 export type ProviderType = "med-spa" | "aesthetics-clinic" | "dermatology-aesthetics";
 

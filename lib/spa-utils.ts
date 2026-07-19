@@ -308,10 +308,13 @@ const CATEGORY_LABELS: Record<TreatmentCategory, string> = {
   lasers: "Lasers",
   beauty: "Beauty & Facials",
   body: "Body Contouring",
-  wellness: "Wellness & IV",
+  wellness: "Wellness",
   "weight-loss": "Weight Loss",
   "hormone-therapy": "Hormone Therapy",
   "hair-restoration": "Hair Restoration",
+  "iv-therapy": "IV Therapy",
+  "mens-health": "Men's Health",
+  "womens-health": "Women's Health",
 };
 
 export function getCategoryLabel(cat: TreatmentCategory) {
@@ -319,6 +322,7 @@ export function getCategoryLabel(cat: TreatmentCategory) {
 }
 
 const GENERIC_TREATMENT_LISTS: Treatment[][] = [
+  ["botox", "laser", "facial"],
   ["botox", "fillers", "laser", "facial"],
   ["botox", "fillers", "laser", "facial", "microneedling"],
 ];
@@ -328,33 +332,138 @@ export function isGenericTreatmentList(treatments: Treatment[]): boolean {
   return GENERIC_TREATMENT_LISTS.some((generic) => [...generic].sort().join(",") === key);
 }
 
+const BOILERPLATE_DESCRIPTION_RE =
+  /is a verified med spa in .+ offering medical-grade injectables, laser, and skin rejuvenation/i;
+
+const LASER_ONLY_NAME_RE =
+  /milan laser|perfectly bare|ideal image|laser away|laser.?hub|smooth\s+laser|body\s+detail\s+laser|clean\s+slate\s+laser|laser\s+clinic|laser\s+center|laser\s+hair\s+removal|laser\s+&?\s*skin\s+center|cosmetic\s+laser\s+center|laser\s+med\s+spa(?!.*inject)|bare\s+laser/i;
+
+const TREATMENT_ORDER: Treatment[] = [
+  "botox",
+  "fillers",
+  "laser",
+  "facial",
+  "microneedling",
+  "body-contouring",
+  "weight-loss",
+  "hormone-therapy",
+  "hair-restoration",
+  "wellness",
+  "iv-therapy",
+  "mens-health",
+  "womens-health",
+];
+
 /** Infer concrete treatments from listing copy when seed data uses boilerplate defaults. */
-export function inferTreatmentsFromCopy(description: string, tagline: string, name = ""): Treatment[] {
-  const text = `${description} ${tagline} ${name}`.toLowerCase();
+export function inferTreatmentsFromCopy(
+  description: string,
+  tagline: string,
+  name = "",
+  website = ""
+): Treatment[] {
+  const isBoilerplate = BOILERPLATE_DESCRIPTION_RE.test(description);
+  const effectiveDescription = isBoilerplate ? "" : description;
+  const text = `${effectiveDescription} ${tagline} ${name} ${website}`.toLowerCase();
   const treatments = new Set<Treatment>();
 
-  if (/milan laser|laser hair removal clinic|laser hair removal specialist|laser removal clinic/.test(text)) {
-    treatments.add("laser");
-    return Array.from(treatments);
+  if (/padgett medical/.test(text)) {
+    return [
+      "botox",
+      "fillers",
+      "laser",
+      "facial",
+      "weight-loss",
+      "hormone-therapy",
+      "wellness",
+      "iv-therapy",
+      "mens-health",
+      "womens-health",
+    ];
   }
 
   if (
-    /\bbotox\b|\bdysport\b|\bxeomin\b|\bjeuveau\b|\binjectable|\bfiller|\bjuvederm\b|\brestylane\b|\bsculptra\b|\bkybella\b|\blip filler|\bcheek filler/.test(
+    /milan laser|laser hair removal clinic|laser hair removal specialist|laser removal clinic/.test(text) ||
+    (LASER_ONLY_NAME_RE.test(`${name} ${website}`.toLowerCase()) &&
+      !/\bbotox\b|\bfiller|\binject|med\s+spa.*aesthetic|dermal filler/.test(text))
+  ) {
+    return ["laser"];
+  }
+
+  if (/weight\s*loss|semaglutide|tirzepatide|glp-?1|ozempic|wegovy|mounjaro|phentermine|bariatric/.test(text)) {
+    treatments.add("weight-loss");
+  }
+
+  if (
+    /testosterone therapy|\btrt\b|low testosterone|andropause|men'?s health|male hormone|testosterone replacement/.test(
       text
     )
   ) {
-    if (/\bbotox\b|\bdysport\b|\bxeomin\b|\bjeuveau\b|\binjectable/.test(text)) treatments.add("botox");
-    if (/\bfiller|\bjuvederm\b|\brestylane\b|\bsculptra\b|\bkybella\b|\blip filler|\bcheek filler/.test(text)) {
+    treatments.add("mens-health");
+    treatments.add("hormone-therapy");
+  }
+
+  if (
+    /women'?s health|women'?s hormone|menopause|perimenopause|bio-identical hormone.*women|bioidentical.*women|gynecolog/.test(
+      text
+    )
+  ) {
+    treatments.add("womens-health");
+    treatments.add("hormone-therapy");
+  }
+
+  if (
+    /hormone therapy|hormone replacement|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet/.test(
+      text
+    )
+  ) {
+    treatments.add("hormone-therapy");
+  }
+
+  if (
+    /iv therapy|vitamin drip|iv drip|hydration drip|myers cocktail|vitamin infusion|mobile iv|iv lounge|iv bar|iv hydration/.test(
+      text
+    )
+  ) {
+    treatments.add("iv-therapy");
+  }
+
+  if (
+    /\bwellness\b|peptide therapy|functional medicine|vitamin injection|wellness program|\bnad\+|\bnad therapy/.test(
+      text
+    )
+  ) {
+    treatments.add("wellness");
+  }
+
+  if (/medical center|medical clinic|health center|wellness center|total wellness/.test(text)) {
+    treatments.add("weight-loss");
+    treatments.add("hormone-therapy");
+    treatments.add("wellness");
+  }
+
+  if (
+    /\bbotox\b|\bdysport\b|\bxeomin\b|\bjeuveau\b|\binjectable|\bneurotoxin|\bfiller|\bjuvederm\b|\brestylane\b|\bsculptra\b|\bkybella\b|\blip filler|\bcheek filler|\bradiesse\b|\bdermal filler/.test(
+      text
+    )
+  ) {
+    if (/\bbotox\b|\bdysport\b|\bxeomin\b|\bjeuveau\b|\binjectable|\bneurotoxin/.test(text)) {
+      treatments.add("botox");
+    }
+    if (
+      /\bfiller|\bjuvederm\b|\brestylane\b|\bsculptra\b|\bkybella\b|\blip filler|\bcheek filler|\bradiesse\b|\bdermal filler/.test(
+        text
+      )
+    ) {
       treatments.add("fillers");
     }
-    if (treatments.size === 0) {
+    if (!treatments.has("botox") && !treatments.has("fillers")) {
       treatments.add("botox");
       treatments.add("fillers");
     }
   }
 
   if (
-    /\blaser|\bipl\b|\bbbl\b|\bhalo\b|\bclear\s*\+?\s*brilliant|\bresurfacing|\bhair removal|\bphotofacial|\bfraxel|\bmoxi\b|\butherapy\b|\brf microneedling|\bmorpheus|\bsofwave|\bcosmetic laser/.test(
+    /\blaser|\bipl\b|\bbbl\b|\bhalo\b|\bclear\s*\+?\s*brilliant|\bresurfacing|\bhair removal|\bphotofacial|\bfraxel|\bmoxi\b|\butherapy\b|\brf microneedling|\bmorpheus|\bsofwave|\bcosmetic laser|\blaser treatment|\baesthetics\s*&?\s*med-?spa/.test(
       text
     )
   ) {
@@ -362,14 +471,14 @@ export function inferTreatmentsFromCopy(description: string, tagline: string, na
   }
 
   if (
-    /\bfacial|\bhydrafacial|\bchemical peel|\bpeel\b|\bskin rejuvenation|\bdermaplaning|\bmicrodermabrasion|\bglow|\bskincare|\bskin care|\bacne treatment|\bfine-line|\bsun-damage|\btherapeutic facial/.test(
+    /\bfacial|\bhydrafacial|\bchemical peel|\bpeel\b|\bskin rejuvenation|\bdermaplaning|\bmicrodermabrasion|\bglow|\bskincare|\bskin care|\bacne treatments?|\bfine-line|\bsun-damage|\btherapeutic facial|\bmed-?spa aesthetic|\bfacial rejuvenation/.test(
       text
     )
   ) {
     treatments.add("facial");
   }
 
-  if (/\bmicroneedling|\brf microneedling|\bmorpheus8|\bprp facial|\bcollagen induction/.test(text)) {
+  if (/\bmicroneedling|\brf microneedling|\bmorpheus8|\bprp facial|\bcollagen induction|\bsylfirm|\bpotenza\b/.test(text)) {
     treatments.add("microneedling");
   }
 
@@ -382,22 +491,6 @@ export function inferTreatmentsFromCopy(description: string, tagline: string, na
   }
 
   if (
-    /weight loss|semaglutide|tirzepatide|glp-?1|ozempic|wegovy|mounjaro|phentermine|medical weight loss|weight management/.test(
-      text
-    )
-  ) {
-    treatments.add("weight-loss");
-  }
-
-  if (
-    /hormone therapy|hormone replacement|\bbhrt\b|testosterone|bioidentical hormone|\bhrt\b|hormone optimization|hormone pellet/.test(
-      text
-    )
-  ) {
-    treatments.add("hormone-therapy");
-  }
-
-  if (
     /hair restoration|hair transplant|prp hair|hair loss treatment|neograft|\bartas\b|follicular unit|hair regrowth/.test(
       text
     ) &&
@@ -406,25 +499,30 @@ export function inferTreatmentsFromCopy(description: string, tagline: string, na
     treatments.add("hair-restoration");
   }
 
-  if (
-    /\bwellness\b|iv therapy|vitamin drip|\bnad\+|\bnad therapy|peptide therapy|functional medicine|vitamin injection|iv drip|wellness program/.test(
-      text
-    )
-  ) {
-    treatments.add("wellness");
+  if (treatments.size === 0) {
+    if (/med\s*spa|medspa|aesthetic|cosmetic center|beauty lab|\binject/.test(text)) {
+      treatments.add("botox");
+      treatments.add("fillers");
+      treatments.add("laser");
+      treatments.add("facial");
+    } else if (/wellness|day spa|massage|skincare|skin care|facial spa/.test(text)) {
+      treatments.add("facial");
+      treatments.add("wellness");
+    }
   }
 
-  return Array.from(treatments);
+  return TREATMENT_ORDER.filter((t) => treatments.has(t));
 }
 
 export function resolveSpaTreatments(
   treatments: Treatment[],
   description: string,
   tagline: string,
-  name = ""
+  name = "",
+  website = ""
 ): Treatment[] {
-  if (!treatments.length || isGenericTreatmentList(treatments)) {
-    const inferred = inferTreatmentsFromCopy(description, tagline, name);
+  if (!treatments.length || isGenericTreatmentList(treatments) || BOILERPLATE_DESCRIPTION_RE.test(description)) {
+    const inferred = inferTreatmentsFromCopy(description, tagline, name, website);
     if (inferred.length > 0) return inferred;
   }
   return treatments;
@@ -440,7 +538,10 @@ export const TREATMENT_LABELS: Record<Treatment, string> = {
   "weight-loss": "Weight Loss",
   "hormone-therapy": "Hormone Therapy",
   "hair-restoration": "Hair Restoration",
-  wellness: "Wellness & IV",
+  wellness: "Wellness",
+  "iv-therapy": "IV Therapy",
+  "mens-health": "Men's Health",
+  "womens-health": "Women's Health",
 };
 
 export function getTreatmentLabel(treatment: Treatment): string {
@@ -457,7 +558,10 @@ export function deriveTreatmentCategories(treatments: Treatment[]): TreatmentCat
   if (treatments.includes("weight-loss")) cats.add("weight-loss");
   if (treatments.includes("hormone-therapy")) cats.add("hormone-therapy");
   if (treatments.includes("hair-restoration")) cats.add("hair-restoration");
-  return Array.from(cats);
+  if (treatments.includes("iv-therapy")) cats.add("iv-therapy");
+  if (treatments.includes("mens-health")) cats.add("mens-health");
+  if (treatments.includes("womens-health")) cats.add("womens-health");
+  return TREATMENT_BROWSE_ORDER.filter((cat) => cats.has(cat));
 }
 
 export const TREATMENT_CATEGORY_FILTERS: { label: string; value: TreatmentCategory | "All" }[] = [
@@ -466,9 +570,12 @@ export const TREATMENT_CATEGORY_FILTERS: { label: string; value: TreatmentCatego
   { label: "Lasers", value: "lasers" },
   { label: "Beauty & Facials", value: "beauty" },
   { label: "Body Contouring", value: "body" },
-  { label: "Wellness & IV", value: "wellness" },
+  { label: "Wellness", value: "wellness" },
+  { label: "IV Therapy", value: "iv-therapy" },
   { label: "Weight Loss", value: "weight-loss" },
   { label: "Hormone Therapy", value: "hormone-therapy" },
+  { label: "Men's Health", value: "mens-health" },
+  { label: "Women's Health", value: "womens-health" },
   { label: "Hair Restoration", value: "hair-restoration" },
 ];
 
@@ -478,8 +585,11 @@ export const TREATMENT_BROWSE_ORDER: TreatmentCategory[] = [
   "beauty",
   "body",
   "wellness",
+  "iv-therapy",
   "weight-loss",
   "hormone-therapy",
+  "mens-health",
+  "womens-health",
   "hair-restoration",
 ];
 
@@ -723,6 +833,9 @@ const TREATMENT_POOLS: Partial<Record<Treatment, string[]>> = {
   "hormone-therapy": ["skinmedica-ha5", "is-clinical-pro-heal-serum", "revision-replenisher"],
   "hair-restoration": ["is-clinical-pro-heal-serum", "alastin-regenerating-skin-nectar", "skinmedica-ha5"],
   wellness: ["is-clinical-pro-heal-serum", "revision-replenisher", "skinmedica-ha5"],
+  "iv-therapy": ["is-clinical-pro-heal-serum", "revision-replenisher", "skinmedica-ha5"],
+  "mens-health": ["skinmedica-ha5", "is-clinical-pro-heal-serum", "revision-replenisher"],
+  "womens-health": ["skinmedica-ha5", "is-clinical-pro-heal-serum", "revision-replenisher"],
 };
 
 const PROVIDER_POOLS: Record<ProviderType, string[]> = {

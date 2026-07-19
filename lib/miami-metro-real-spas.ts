@@ -21,7 +21,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00001",
     yearsOpen: 3,
-    treatments: ["botox", "laser", "facial", "microneedling", "wellness"],
+    treatments: ["botox", "microneedling", "wellness"],
     priceRange: "$$$",
     instagram: "viivwellnesshaus",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -47,7 +47,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00002",
     yearsOpen: 7,
-    treatments: ["botox", "laser", "facial", "wellness"],
+    treatments: ["wellness"],
     priceRange: "$$$",
     instagram: "shaynoviaestheticswellne",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -73,7 +73,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00003",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "luxmedspabrickell",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -99,7 +99,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00004",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "infinitybeautylabmedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -125,7 +125,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00005",
     yearsOpen: 3,
-    treatments: ["botox", "laser", "facial", "wellness"],
+    treatments: ["wellness"],
     priceRange: "$$$",
     instagram: "miamiskinspaaestheticswe",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -151,7 +151,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00006",
     yearsOpen: 4,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "brickellcosmeticcenterae",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -177,7 +177,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00007",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "gablesmedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -203,7 +203,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00008",
     yearsOpen: 7,
-    treatments: ["botox", "laser", "facial", "wellness"],
+    treatments: ["weight-loss", "hormone-therapy", "wellness"],
     priceRange: "$$$",
     instagram: "millenniumwellnesscenter",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -229,7 +229,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00009",
     yearsOpen: 7,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "viomedspafortlauderdale",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -255,7 +255,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00010",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "amairamedspasurgical",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -281,7 +281,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00011",
     yearsOpen: 8,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "prestigephysicians",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -307,7 +307,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00012",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "lumirebyadriana",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -333,7 +333,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00013",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "glowingskinfacebodycarem",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -359,7 +359,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00014",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "timelessbeautyaesthetics",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -385,7 +385,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00015",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "sanctuarymedicalaestheti",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -411,7 +411,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00016",
     yearsOpen: 4,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "lovmedspamiami",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -437,7 +437,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00017",
     yearsOpen: 7,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "viomedspaaventura",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -463,7 +463,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00018",
     yearsOpen: 13,
-    treatments: ["botox", "laser", "facial", "wellness"],
+    treatments: ["weight-loss", "hormone-therapy", "wellness"],
     priceRange: "$$$",
     instagram: "liquividawellnesscenter",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -489,7 +489,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00019",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "soleabrickellspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -515,7 +515,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00020",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "charettecosmeticsmedical",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -541,7 +541,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00021",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "bodywelle",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -567,7 +567,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00022",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "skinspanewyorkmiamibeach",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -593,7 +593,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00023",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "arvivmedicalaestheticsmi",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -619,7 +619,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00024",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "avivamedicalspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -645,7 +645,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00025",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "247medspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -671,7 +671,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00026",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "healthyglowaesthetics",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -697,7 +697,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00027",
     yearsOpen: 4,
-    treatments: ["botox", "laser", "facial", "wellness"],
+    treatments: ["laser", "wellness"],
     priceRange: "$$$",
     instagram: "aguilaraestheticsmedspaw",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -723,7 +723,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00028",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "yanastheticsllc",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -749,7 +749,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00029",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "lemaraestheticskendallme",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -775,7 +775,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00030",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "merakimedmiami",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -801,7 +801,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00031",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "nuyoumedicalaesthetics",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -827,7 +827,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00032",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "whitecoatmedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -853,7 +853,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00033",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial", "wellness"],
+    treatments: ["wellness"],
     priceRange: "$$$",
     instagram: "bellavidaaestheticswelln",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -879,7 +879,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00034",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "4beautymedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -905,7 +905,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00035",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial", "wellness"],
+    treatments: ["wellness"],
     priceRange: "$$$",
     instagram: "goldenaestheticswellness",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -931,7 +931,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00036",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "getrefreshed",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -957,7 +957,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00037",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "aesthetic305",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -983,7 +983,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00038",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "lariamedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1009,7 +1009,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00039",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "monacomedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1035,7 +1035,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00040",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "serenitymedicalspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1061,7 +1061,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00041",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "joinbodygood",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1087,7 +1087,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00042",
     yearsOpen: 8,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "newimageworksaventura",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1113,7 +1113,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00043",
     yearsOpen: 18,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "thebeautyclinicaventura",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1139,7 +1139,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00044",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "xsmedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1165,7 +1165,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00045",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "novaskinmedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1191,7 +1191,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00046",
     yearsOpen: 2,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "surfacelevelmedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1217,7 +1217,7 @@ export const miamiMetroRealSpas: FloridaSpaSeed[] = [
     medicalDirector: "Licensed Medical Director",
     licenseId: "FL-MIA-00047",
     yearsOpen: 5,
-    treatments: ["botox", "laser", "facial"],
+    treatments: ["botox", "fillers", "laser", "facial"],
     priceRange: "$$$",
     instagram: "aventuramedspa",
     productSlugs: ["eltamd-uv-clear", "skinceuticals-discoloration-defense", "la-roche-posay-anthelios"],
@@ -1254,9 +1254,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Shay Novi Aesthetics & Wellness official website",
   },
-                      "lux-medspa-brickell-miami": {
+                        "lux-medspa-brickell-miami": {
     hero: "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/b80811c5-d8f8-44d3-bcb1-4e32e5dcac05/alan-araujo-featured-at-best-of-miami-dade-as-a-founder-with-vision-consistency-and-care.jpeg?format=1000w",
-    logo: "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/5e8beb48-d3d2-417d-82b2-127355c149a0/LOGO-OF-THE-BEST-SPA-IN-MIAMI-LUX.png?format=1500w",
+    logo: "/provider-logos/lux-medspa-brickell-miami.png",
     gallery: [
       "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/eac81bd5-4e7b-4648-bbfc-1c08df165c71/client-during-ultraformer-mpt-non-surgical-face-lift-at-lux-medspa-brickell.jpg?format=1000w",
       "https://images.squarespace-cdn.com/content/v1/656939589adab62013609eab/82027f3a-1d45-4cb4-9252-8d2a579e2114/lux-medspa-brickell-alan-araujo-best-facial-massage-couples-massage-miami.jpg?format=1000w",
@@ -1265,9 +1265,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "LUX MedSpa Brickell official website",
   },
-                "infinity-beauty-lab-med-spa-miami": {
+                  "infinity-beauty-lab-med-spa-miami": {
     hero: "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/684863ac0850b04113b27869_Morpheus%208.webp",
-    logo: "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/683f83168c4365b4bb5bae87_Infinity%20(2).webp",
+    logo: "/provider-logos/infinity-beauty-lab-med-spa-miami.webp",
     gallery: [
       "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/69c927d4ae3f694becbad9b8_WhatsApp%20Image%202026-03-29%20at%2010.23.11.jpeg",
       "https://cdn.prod.website-files.com/683928088bad0b5b8e3c0b2a/6965f477af04759f5d6a7a16_WhatsApp%20Image%202026-01-12%20at%203.05.26%20PM.jpeg",
@@ -1276,9 +1276,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Infinity Beauty Lab Med Spa official website — services",
   },
-                  "miami-skin-spa-aesthetics-wellness-miami": {
+                    "miami-skin-spa-aesthetics-wellness-miami": {
     hero: "https://www.miamiskinspa.com/og-default.jpg",
-    logo: "https://www.miamiskinspa.com/og-default.jpg",
+    logo: "/provider-logos/miami-skin-spa-aesthetics-wellness-miami.jpg",
     gallery: [
       "https://www.miamiskinspa.com/_astro/hero-poster.1z-EgmWj_Z1KpGeO.jpg",
       "https://www.miamiskinspa.com/_astro/services-face.Dm1WIjc0_Jc50s.webp",
@@ -1287,9 +1287,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Miami Skin Spa Aesthetics & Wellness official website",
   },
-                "brickell-cosmetic-center-aesthetics-dermatology-miami": {
+                  "brickell-cosmetic-center-aesthetics-dermatology-miami": {
     hero: "https://brickellcosmetic.com/wp-content/uploads/2025/03/new-bg-img-01-desktop-1024x533.jpg",
-    logo: "https://brickellcosmetic.com/wp-content/uploads/2025/02/fav-icon.png",
+    logo: "/provider-logos/brickell-cosmetic-center-aesthetics-dermatology-miami.png",
     gallery: [
       "https://brickellcosmetic.com/wp-content/uploads/2025/04/two-header-mobile-2-min.jpg",
       "https://brickellcosmetic.com/wp-content/uploads/2026/06/before-after-home-img3-desktop.jpg",
@@ -1298,9 +1298,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Brickell Cosmetic Center-Aesthetics & Dermatology official website",
   },
-                "gables-med-spa-coral-gables": {
+                  "gables-med-spa-coral-gables": {
     hero: "https://static.wixstatic.com/media/ca9f79_4e5d07db02704320bb15e9cc849ce972~mv2.png/v1/fill/w_1150,h_700,al_c/ca9f79_4e5d07db02704320bb15e9cc849ce972~mv2.png",
-    logo: "https://static.wixstatic.com/media/ca9f79_03fb0d729a8b4e29b9393cca42d3e371%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/ca9f79_03fb0d729a8b4e29b9393cca42d3e371%7Emv2.png",
+    logo: "/provider-logos/gables-med-spa-coral-gables.png",
     gallery: [
       "https://static.wixstatic.com/media/ca9f79_d4e248284c2c410b9df0a1b1baf1abf6~mv2.png",
       "https://static.wixstatic.com/media/ca9f79_7ac87cabba0e420dae1b9ad4e474c9e6~mv2.png/v1/crop/x_769,y_0,w_961,h_1125/fill/w_206,h_242,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/10.png",
@@ -1329,9 +1329,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "VIO Med Spa Fort Lauderdale official website",
   },
-                "amaira-med-spa-surgical-fort-lauderdale": {
+                  "amaira-med-spa-surgical-fort-lauderdale": {
     hero: "https://amairamedspa.com/wp-content/uploads/2026/02/TreatmentService-Page-Desktop-Cover-1.png",
-    logo: "https://amairamedspa.com/wp-content/uploads/2024/02/Amaira_Logomark_Blush.png",
+    logo: "/provider-logos/amaira-med-spa-surgical-fort-lauderdale.png",
     gallery: [
       "https://amairamedspa.com/wp-content/uploads/2023/09/Before-and-After-Botox-Amaira-Med-Spa-10.jpg",
       "https://amairamedspa.com/wp-content/uploads/2023/07/Before-and-After-Botox-Amaira-Med-Spa-4.jpg",
@@ -1351,9 +1351,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Prestige Physicians official website — services",
   },
-                "lumi-re-by-adriana-fort-lauderdale": {
+                  "lumi-re-by-adriana-fort-lauderdale": {
     hero: "https://lumierebyadriana.com/wp-content/uploads/2023/04/photo-rejuvenation.jpg",
-    logo: "https://lumierebyadriana.com/wp-content/uploads/2023/05/cropped-fav-icon-192x192.png",
+    logo: "/provider-logos/lumi-re-by-adriana-fort-lauderdale.png",
     gallery: [
       "https://lumierebyadriana.com/wp-content/uploads/2023/04/facials.jpg",
       "https://lumierebyadriana.com/wp-content/uploads/2023/04/body-conturing.jpg",
@@ -1361,9 +1361,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Lumière by Adriana official website — services",
   },
-                "glowing-skin-face-body-care-med-spa-fort-lauderdale": {
+                  "glowing-skin-face-body-care-med-spa-fort-lauderdale": {
     hero: "https://static.wixstatic.com/media/23cad5_55ed9a9d120a4b319f1bd4bdc09b470b~mv2.jpg/v1/fill/w_1200,h_630,al_c/23cad5_55ed9a9d120a4b319f1bd4bdc09b470b~mv2.jpg",
-    logo: "https://static.wixstatic.com/media/23cad5_f3c9e549c8a745c6890d6badec2d19a8~mv2.png/v1/crop/x_0,y_128,w_427,h_87/fill/w_290,h_59,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/GlowingSkin%20MedSpa%20Logo.png",
+    logo: "/provider-logos/glowing-skin-face-body-care-med-spa-fort-lauderdale.png",
     gallery: [
 
     ],
@@ -1391,9 +1391,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Sanctuary Medical Aesthetic Center official website",
   },
-                  "lov-medspa-miami-aventura": {
+                    "lov-medspa-miami-aventura": {
     hero: "https://www.lovmedspa.com/og-image.jpg",
-    logo: "https://www.lovmedspa.com/icon.png",
+    logo: "/provider-logos/lov-medspa-miami-aventura.png",
     gallery: [
 
     ],
@@ -1409,9 +1409,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "VIO Med Spa Aventura official website",
   },
-                "liquivida-wellness-center-aventura": {
+                  "liquivida-wellness-center-aventura": {
     hero: "https://www.liquivida.com/hubfs/Website%20Redesign%202025/Page%20Thumbnails/deals-promotions-liquivida-thumbnail.webp",
-    logo: "https://www.liquivida.com/hs-fs/hubfs/Liquivida%202020%20logo_horizontal%20wht-blue.png?width=121&amp;height=30&amp;name=Liquivida%202020%20logo_horizontal%20wht-blue.png",
+    logo: "/provider-logos/liquivida-wellness-center-aventura.png",
     gallery: [
       "https://www.liquivida.com/hs-fs/hubfs/Website%20Redesign%202025/1.%20Home/Happy%20female%20Liquivida%20client%20getting%20IV%20drips.webp?width=1360&amp;height=765&amp;name=Happy%20female%20Liquivida%20client%20getting%20IV%20drips.webp",
       "https://www.liquivida.com/hs-fs/hubfs/Website%20Redesign%202025/Home/liquivida-wellness-center-deals.webp?width=1360&amp;height=765&amp;name=liquivida-wellness-center-deals.webp",
@@ -1461,9 +1461,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Skin Spa New York - Miami Beach Medical Spa official website",
   },
-                "arviv-medical-aesthetics-miami": {
+                  "arviv-medical-aesthetics-miami": {
     hero: "https://arvivaesthetics.com/wp-content/uploads/2016/10/homepage-sm.jpg",
-    logo: "https://arvivaesthetics.com/wp-content/uploads/2017/08/cropped-arvivIcon1-1-250x250.png",
+    logo: "/provider-logos/arviv-medical-aesthetics-miami.png",
     gallery: [
       "https://arvivaesthetics.com/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_MX.png",
       "https://arvivaesthetics.com/wp-content/uploads/2024/08/1-Homepage%20Slider.jpg",
@@ -1483,9 +1483,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Aviva Medical Spa official website — services",
   },
-                "247-med-spa-fort-lauderdale": {
+                  "247-med-spa-fort-lauderdale": {
     hero: "https://247medspa.com/wp-content/uploads/2025/12/cropped-Untitled-design.png",
-    logo: "https://247medspa.com/wp-content/uploads/2025/12/cropped-Untitled-design-192x192.png",
+    logo: "/provider-logos/247-med-spa-fort-lauderdale.png",
     gallery: [
       "https://247medspa.com/wp-content/uploads/2025/12/cropped-Untitled-design-270x270.png",
       "https://247medspa.com/wp-content/uploads/2025/12/7BEC6F3F-41BF-4671-9898-A9454507D0A2.jpg",
@@ -1505,9 +1505,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Healthy Glow Aesthetics official website — services",
   },
-                "aguilar-aesthetics-medspa-wellness-aventura": {
+                  "aguilar-aesthetics-medspa-wellness-aventura": {
     hero: "https://aguilaraesthetics.com/wp-content/uploads/2025/08/MEDSPA-Bottom-Branded-Imgv2.png",
-    logo: "https://aguilaraesthetics.com/wp-content/uploads/2022/06/aguilar-aesthetics-fort-lauderdale-fl-logo.jpg",
+    logo: "/provider-logos/aguilar-aesthetics-medspa-wellness-aventura.jpg",
     gallery: [
       "https://aguilaraesthetics.com/wp-content/uploads/2023/09/AAMEDSPA-Lina-Entrance-1005x772-1.jpg",
       "https://aguilaraesthetics.com/wp-content/uploads/2026/02/cannabis.png",
@@ -1527,9 +1527,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Yanasthetics LLC official website",
   },
-                "le-mar-aesthetics-kendall-medspa-miami": {
+                  "le-mar-aesthetics-kendall-medspa-miami": {
     hero: "https://lemaraesthetics.com/wp-content/uploads/2025/07/Wox4ussAsset-1@300x-scaled.png",
-    logo: "https://lemaraesthetics.com/wp-content/uploads/2025/07/lemaraestheticsicon.webp",
+    logo: "/provider-logos/le-mar-aesthetics-kendall-medspa-miami.webp",
     gallery: [
       "https://lemaraesthetics.com/wp-content/uploads/2025/07/JnYsAsset-1@300x.webp",
       "https://lemaraesthetics.com/wp-content/uploads/2025/08/0101.jpg",
@@ -1538,9 +1538,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Le Mar Aesthetics - Kendall MedSpa official website",
   },
-                "meraki-med-miami": {
+                  "meraki-med-miami": {
     hero: "https://static.wixstatic.com/media/11062b_c08353118ce849f98c46f9788443b1fe~mv2.jpg/v1/crop/x_0,y_164,w_5000,h_3005/fill/w_872,h_524,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Laser%20Facial%20Treatment.jpg",
-    logo: "https://static.wixstatic.com/media/f061f0_81c2762314a54693b2d6650d3cac7307%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/f061f0_81c2762314a54693b2d6650d3cac7307%7Emv2.jpg",
+    logo: "/provider-logos/meraki-med-miami.jpg",
     gallery: [
       "https://static.wixstatic.com/media/f061f0_007eef60591547f2a27eca0a0c1f16ad~mv2.png/v1/fill/w_188,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/f061f0_007eef60591547f2a27eca0a0c1f16ad~mv2.webp",
       "https://static.wixstatic.com/media/f061f0_82e9ca4c27db4784be0ad066c03d3431~mv2.png/v1/fill/w_500,h_500,al_c/f061f0_82e9ca4c27db4784be0ad066c03d3431~mv2.png",
@@ -1592,9 +1592,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "4Beauty Medspa official website",
   },
-                "golden-aesthetics-wellness-miami": {
+                  "golden-aesthetics-wellness-miami": {
     hero: "https://content.app-sources.com/s/497367612352444631/thumbnails/640x480/Images/continuous-one-line-drawing-hand-holding-syringe-lips-injection-beauty-procedures-fillers_1-7945186.png?format=webp",
-    logo: "https://content.app-sources.com/s/497367612352444631/uploads/Downloaded/aefeGroup_46-2611706.png",
+    logo: "/provider-logos/golden-aesthetics-wellness-miami.png",
     gallery: [
       "https://content.app-sources.com/s/497367612352444631/thumbnails/640x480/Images/continuous-one-line-drawing-hand-holding-syringe-lips-injection-beauty-procedures-fillers-7945214.png?format=webp",
       "https://content.app-sources.com/s/497367612352444631/uploads/Images/continuous-one-line-drawing-hand-holding-syringe-lips-injection-beauty-procedures-fillers_1-7945186.png?format=webp",
@@ -1602,9 +1602,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Golden Aesthetics & Wellness official website — services",
   },
-                "get-refreshed-miami": {
+                  "get-refreshed-miami": {
     hero: "https://www.getrefreshed.com/wp-content/uploads/2026/03/radiesse-treatment-uai-1080x1080.webp",
-    logo: "https://www.getrefreshed.com/wp-content/uploads/2026/04/cropped-logo-gr-favicon-darkmode-whitefirst-192x192.png",
+    logo: "/provider-logos/get-refreshed-miami.png",
     gallery: [
       "https://www.getrefreshed.com/wp-content/uploads/2024/06/Botox-Home-uai-400x300.webp",
       "https://www.getrefreshed.com/wp-content/uploads/2025/10/Facial-Balancing-miami-13-uai-400x266.jpg",
@@ -1613,9 +1613,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Get Refreshed official website — services",
   },
-                        "aesthetic305-miami": {
+                          "aesthetic305-miami": {
     hero: "https://www.medaestheticsmiami.com/wp-content/uploads/2023/04/services-advanced500.jpg",
-    logo: "https://www.medaestheticsmiami.com/wp-content/uploads/2022/10/medam-logo-vertical-216.png",
+    logo: "/provider-logos/aesthetic305-miami.png",
     gallery: [
       "https://www.medaestheticsmiami.com/wp-content/uploads/2023/04/swich-facials.jpg",
       "https://www.medaestheticsmiami.com/wp-content/uploads/2023/04/services-laser500.jpg",
@@ -1624,9 +1624,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Aesthetic305 official website — services",
   },
-                  "laria-medspa-miami": {
+                    "laria-medspa-miami": {
     hero: "https://lariamedspa.com/wp-content/uploads/bb-plugin/cache/spa-member-landscape-22b6003f4b7aab5b4b33d9ae32cbc92f-n3z4ybxuveap.jpg",
-    logo: "https://lariamedspa.com/wp-content/uploads/2023/11/logo@1.2x-1.png",
+    logo: "/provider-logos/laria-medspa-miami.png",
     gallery: [
       "https://lariamedspa.com/wp-content/uploads/2026/02/team.jpg",
       "https://lariamedspa.com/wp-content/uploads/2023/11/botox.png",
@@ -1654,9 +1654,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Serenity Medical & Spa official website",
   },
-                "join-body-good-miami": {
+                  "join-body-good-miami": {
     hero: "https://joinbodygood.com/images/dr-linda-hero.jpg",
-    logo: "https://joinbodygood.com/apple-icon.png?apple-icon.0qb5oly_4cr.-.png",
+    logo: "/provider-logos/join-body-good-miami.png",
     gallery: [
       "https://joinbodygood.com/images/weight-loss-card.jpg",
       "https://joinbodygood.com/images/glp1-medications.png",
@@ -1717,9 +1717,9 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
     ],
     source: "Surface Level Med Spa official website",
   },
-                "aventura-med-spa-aventura": {
+                  "aventura-med-spa-aventura": {
     hero: "https://cdn.aventuramedspa.com/site/social/twitter-image.png",
-    logo: "https://aventuramedspa.com/icon.png?98c428477c867c58",
+    logo: "/provider-logos/aventura-med-spa-aventura.png",
     gallery: [
       "https://cdn.aventuramedspa.com/site/images/Background.png",
       "https://cdn.aventuramedspa.com/site/images/Background6.png",
@@ -1727,5 +1727,5 @@ export const MIAMI_METRO_REAL_SPA_IMAGES: Record<
       "https://aventuramedspa.com/new-images/home/peptide.png?dpl=dpl_5XJQG9n6AvqvLuYqF6j9AG6fVwYZ",
     ],
     source: "Aventura Med Spa official website",
-  }
+  },
 };
