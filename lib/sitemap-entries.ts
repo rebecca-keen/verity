@@ -1,7 +1,13 @@
 import type { MetadataRoute } from "next";
 import { spas } from "@/lib/data";
 import { STATES_WITH_REAL_DATA } from "@/lib/nationwide-states";
-import { buildProvidersPath, SHOP_ORIGIN_FILTER_CODES, SITE_URL, TREATMENT_CATEGORY_SEO } from "@/lib/seo";
+import {
+  buildProvidersPath,
+  getFilteredProviders,
+  SHOP_ORIGIN_FILTER_CODES,
+  SITE_URL,
+  TREATMENT_CATEGORY_SEO,
+} from "@/lib/seo";
 import { POPULAR_CITY_SHORTCUTS, POPULAR_STATE_CODES } from "@/lib/spa-utils";
 import { getShopProducts } from "@/lib/shop-utils";
 import type { TreatmentCategory } from "@/lib/types";
@@ -54,14 +60,18 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  const stateFilterPages: MetadataRoute.Sitemap = STATES_WITH_REAL_DATA.map((state) => ({
+  const stateFilterPages: MetadataRoute.Sitemap = STATES_WITH_REAL_DATA.filter(
+    (state) => getFilteredProviders({ state }).length > 0
+  ).map((state) => ({
     url: absoluteUrl(buildProvidersPath({ state })),
     lastModified: now,
     changeFrequency: "weekly",
     priority: POPULAR_STATE_CODES.includes(state) ? 0.82 : 0.75,
   }));
 
-  const cityFilterPages: MetadataRoute.Sitemap = POPULAR_CITY_SHORTCUTS.map((shortcut) => ({
+  const cityFilterPages: MetadataRoute.Sitemap = POPULAR_CITY_SHORTCUTS.filter(
+    (shortcut) => getFilteredProviders({ state: shortcut.state, city: shortcut.city }).length > 0
+  ).map((shortcut) => ({
     url: absoluteUrl(buildProvidersPath({ state: shortcut.state, city: shortcut.city })),
     lastModified: now,
     changeFrequency: "weekly",
@@ -69,12 +79,14 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
   }));
 
   const categoryStatePages: MetadataRoute.Sitemap = POPULAR_STATE_CODES.flatMap((state) =>
-    treatmentCategories.map((category) => ({
-      url: absoluteUrl(buildProvidersPath({ category, state })),
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.78,
-    }))
+    treatmentCategories
+      .filter((category) => getFilteredProviders({ category, state }).length > 0)
+      .map((category) => ({
+        url: absoluteUrl(buildProvidersPath({ category, state })),
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.78,
+      }))
   );
 
   const providerPages: MetadataRoute.Sitemap = spas
