@@ -6,13 +6,19 @@ import { ProductCard } from "@/components/ProductCard";
 import { AIConcierge } from "@/components/AIConcierge";
 import { getFeaturedPremiumSpasFromData } from "@/lib/data";
 import { getRecommendedShopProducts } from "@/lib/shop-utils";
-import { homeFaqJsonLd, pageMetadata, SITE_KEYWORDS, TREATMENT_CATEGORY_SEO } from "@/lib/seo";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+  homeFaqJsonLd,
+  pageMetadata,
+  SITE_KEYWORDS,
+  TREATMENT_CATEGORY_SEO,
+} from "@/lib/seo";
 import { TREATMENT_BROWSE_ORDER } from "@/lib/spa-utils";
 
 export const metadata = pageMetadata({
-  title: "Verity — Medical Aesthetics, Skincare & Med Spas Nationwide",
-  description:
-    "Find trusted med spas and medical aesthetics clinics for injectables, laser treatments, facials, and skincare. Compare providers by skin concerns, ratings, and product transparency.",
+  title: DEFAULT_TITLE,
+  description: DEFAULT_DESCRIPTION,
   path: "/",
   keywords: SITE_KEYWORDS,
 });
