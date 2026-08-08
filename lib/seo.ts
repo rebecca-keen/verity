@@ -533,6 +533,7 @@ export function organizationJsonLd() {
     alternateName: SITE_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}${DEFAULT_OG_IMAGE}`,
+    sameAs: ["https://www.pinterest.com/rebeccake/"],
     description: DEFAULT_DESCRIPTION,
     knowsAbout: [
       "Medical aesthetics",

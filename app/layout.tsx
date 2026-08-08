@@ -68,6 +68,16 @@ export default function RootLayout({
               Contact us
             </Link>
           </p>
+          <p className="mt-4 text-xs">
+            <a
+              href="https://www.pinterest.com/rebeccake/"
+              target="_blank"
+              rel="me noopener noreferrer"
+              className="text-gold hover:underline"
+            >
+              Follow Verity on Pinterest
+            </a>
+          </p>
           <p className="mt-4 max-w-xl mx-auto text-xs text-stone/80">
             As an Amazon Associate, Verity Aesthetics earns from qualifying purchases. Product links
             may be affiliate links at no extra cost to you.
