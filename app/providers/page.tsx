@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { permanentRedirect } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { SpaDirectory } from "@/components/SpaDirectory";
+import { localRedirectTarget } from "@/lib/geo-routes";
 import {
   breadcrumbJsonLd,
   buildProvidersPath,
@@ -13,9 +15,11 @@ import {
   providersItemListJsonLd,
   providersListingLabel,
   providersPageMetadata,
+  treatmentRedirectTarget,
   TREATMENT_CATEGORY_SEO,
 } from "@/lib/seo";
-import { POPULAR_CITY_SHORTCUTS, POPULAR_STATE_CODES, TREATMENT_BROWSE_ORDER, getStateLabel } from "@/lib/spa-utils";
+import { TREATMENT_BROWSE_ORDER } from "@/lib/spa-utils";
+import { buildCityPath, buildStatePath, getStateRoutes } from "@/lib/geo-routes";
 import type { TreatmentCategory } from "@/lib/types";
 
 const SKIN_CONCERN_LINKS = [
@@ -36,6 +40,8 @@ export async function generateMetadata({
   searchParams: Promise<{ state?: string; city?: string; category?: string }>;
 }): Promise<Metadata> {
   const { state, city, category } = await searchParams;
+  const redirectTo = localRedirectTarget({ state, city, category }) ?? treatmentRedirectTarget({ category, state, city });
+  if (redirectTo) permanentRedirect(redirectTo);
   const treatmentCategory = isTreatmentCategory(category) ? category : undefined;
 
   return providersPageMetadata({ category: treatmentCategory, state, city });
@@ -47,11 +53,19 @@ export default async function ProvidersPage({
   searchParams: Promise<{ state?: string; city?: string; category?: string }>;
 }) {
   const { state, city, category } = await searchParams;
+  const redirectTo = localRedirectTarget({ state, city, category }) ?? treatmentRedirectTarget({ category, state, city });
+  if (redirectTo) permanentRedirect(redirectTo);
   const treatmentCategory = isTreatmentCategory(category) ? category : undefined;
   const filters = normalizeProvidersFilters({ category, state, city });
   const listing = providersListingLabel(filters);
   const filteredProviders = getFilteredProviders(filters);
   const listingPath = buildProvidersPath(filters);
+  const stateRoutes = getStateRoutes();
+  const topStates = stateRoutes.slice(0, 8);
+  const topCities = stateRoutes
+    .flatMap((s) => s.cities)
+    .sort((a, b) => b.providerCount - a.providerCount)
+    .slice(0, 12);
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-8 md:py-10">
@@ -86,18 +100,21 @@ export default async function ProvidersPage({
       <section className="mt-16 border-t border-stone/10 pt-12">
         <h2 className="font-serif text-2xl text-charcoal">Browse by location</h2>
         <p className="mt-2 max-w-2xl text-sm text-stone">
-          Find med spas and medical aesthetics clinics in popular states and cities across the United States.
+          Find med spas and medical aesthetics clinics in states and cities across the United States.{" "}
+          <Link href="/med-spas" className="text-gold hover:underline">
+            See all locations →
+          </Link>
         </p>
         <div className="mt-6">
-          <p className="text-xs uppercase tracking-widest text-gold">Popular states</p>
+          <p className="text-xs uppercase tracking-widest text-gold">Top states</p>
           <div className="mt-3 flex flex-wrap gap-2">
-            {POPULAR_STATE_CODES.map((code) => (
+            {topStates.map((state) => (
               <Link
-                key={code}
-                href={`/providers?state=${code}`}
+                key={state.stateCode}
+                href={buildStatePath(state.stateSlug)}
                 className="rounded-full border border-stone/20 px-3 py-1.5 text-xs text-charcoal transition hover:border-gold"
               >
-                Med spas in {getStateLabel(code)}
+                Med spas in {state.stateLabel}
               </Link>
             ))}
           </div>
@@ -105,13 +122,13 @@ export default async function ProvidersPage({
         <div className="mt-6">
           <p className="text-xs uppercase tracking-widest text-gold">Popular cities</p>
           <div className="mt-3 flex flex-wrap gap-2">
-            {POPULAR_CITY_SHORTCUTS.map((shortcut) => (
+            {topCities.map((c) => (
               <Link
-                key={`${shortcut.state}-${shortcut.city}`}
-                href={`/providers?state=${shortcut.state}&city=${encodeURIComponent(shortcut.city)}`}
+                key={`${c.stateCode}-${c.citySlug}`}
+                href={buildCityPath(c.stateSlug, c.citySlug)}
                 className="rounded-full border border-stone/20 px-3 py-1.5 text-xs text-charcoal transition hover:border-gold"
               >
-                {shortcut.label} med spas
+                {c.city} med spas
               </Link>
             ))}
           </div>

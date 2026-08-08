@@ -94,10 +94,12 @@ export function ProductCard({
           ) : (
             <span />
           )}
-          <div className="text-right">
-            <p className="text-gold">★ {product.rating}</p>
-            <p className="text-xs text-stone">{product.reviewCount} reviews</p>
-          </div>
+          {product.reviewCount > 0 && (
+            <div className="text-right">
+              <p className="text-gold">★ {product.rating}</p>
+              <p className="text-xs text-stone">{product.reviewCount} reviews</p>
+            </div>
+          )}
         </div>
       </div>
       {shopUrl && (
