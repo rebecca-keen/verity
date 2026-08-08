@@ -10,9 +10,9 @@ export const SITE_URL = "https://verityaesthetics.app";
 export const SITE_NAME = "Verity";
 export const SITE_TAGLINE = "Medical Aesthetics, Skincare & Med Spas Nationwide";
 
-export const DEFAULT_TITLE = `${SITE_NAME} — ${SITE_TAGLINE}`;
+export const DEFAULT_TITLE = `${SITE_TAGLINE} | ${SITE_NAME}`;
 export const DEFAULT_DESCRIPTION =
-  "Find trusted med spas and medical aesthetics clinics for injectables, laser treatments, facials, and skincare. Compare providers by treatment, skin concerns, ratings, and product transparency — nationwide.";
+  "Find trusted med spas and aesthetics clinics for Botox, fillers, laser treatments, and skincare. Compare providers by ratings and treatment, nationwide.";
 
 export const SITE_KEYWORDS = [
   "medical aesthetics",
@@ -172,7 +172,7 @@ export const rootMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
   title: DEFAULT_TITLE,
-  description: DEFAULT_DESCRIPTION,
+  description: truncateMetaDescription(DEFAULT_DESCRIPTION),
   keywords: SITE_KEYWORDS,
   alternates: {
     canonical: SITE_URL,
@@ -180,14 +180,14 @@ export const rootMetadata: Metadata = {
   openGraph: {
     ...sharedOpenGraph,
     title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
+    description: truncateMetaDescription(DEFAULT_DESCRIPTION),
     url: SITE_URL,
     images: ogImages(),
   },
   twitter: {
     ...sharedTwitter,
     title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
+    description: truncateMetaDescription(DEFAULT_DESCRIPTION),
     images: [DEFAULT_OG_IMAGE],
   },
   robots: {
@@ -355,6 +355,38 @@ export function getFilteredProviders(filters: {
   return list;
 }
 
+function summarizeCities(providers: Spa[], limit = 3): string {
+  const counts = new Map<string, number>();
+  for (const p of providers) counts.set(p.city, (counts.get(p.city) ?? 0) + 1);
+  const cities = [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([city]) => city)
+    .slice(0, limit);
+
+  if (cities.length === 0) return "";
+  if (cities.length === 1) return cities[0]!;
+  if (cities.length === 2) return `${cities[0]} and ${cities[1]}`;
+  return `${cities.slice(0, -1).join(", ")}, and ${cities[cities.length - 1]}`;
+}
+
+function summarizeTopCategories(
+  providers: Spa[],
+  exclude: TreatmentCategory | undefined,
+  limit = 2
+): string[] {
+  const counts = new Map<TreatmentCategory, number>();
+  for (const p of providers) {
+    for (const category of p.treatmentCategories) {
+      if (category === exclude) continue;
+      counts.set(category, (counts.get(category) ?? 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([category]) => TREATMENT_CATEGORY_SEO[category].h1.toLowerCase().replace(/ providers$/, ""))
+    .slice(0, limit);
+}
+
 export function providersListingLabel(filters: {
   category?: TreatmentCategory;
   state?: USStateCode;
@@ -363,13 +395,16 @@ export function providersListingLabel(filters: {
   const stateLabel = filters.state ? getStateLabel(filters.state) : undefined;
   const locationLabel = [filters.city, stateLabel].filter(Boolean).join(", ");
   const categorySeo = filters.category ? TREATMENT_CATEGORY_SEO[filters.category] : null;
-  const count = getFilteredProviders(filters).length;
+  const providers = getFilteredProviders(filters);
+  const count = providers.length;
   const countNote = count > 0 ? `${count} listed provider${count === 1 ? "" : "s"}` : "Listed providers";
+  const cityList = !filters.city ? summarizeCities(providers) : "";
 
   if (categorySeo && locationLabel) {
+    const cityNote = cityList ? ` Listed practices include locations in ${cityList}.` : "";
     return {
       h1: `${categorySeo.h1} in ${locationLabel}`,
-      intro: `Compare ${countNote} for ${categorySeo.h1.toLowerCase()} in ${locationLabel}. Filter by neighborhood, provider type, and public Google ratings where available.`,
+      intro: `Compare ${countNote} for ${categorySeo.h1.toLowerCase()} in ${locationLabel}. Filter by neighborhood, provider type, and public Google ratings where available.${cityNote}`,
       listName: `${categorySeo.h1} in ${locationLabel}`,
     };
   }
@@ -383,9 +418,16 @@ export function providersListingLabel(filters: {
   }
 
   if (locationLabel) {
+    const topCategoryLabels = summarizeTopCategories(providers, undefined, 2);
+    const extras: string[] = [];
+    if (cityList) extras.push(`Listed practices include locations in ${cityList}.`);
+    if (topCategoryLabels.length > 0) {
+      extras.push(`Most commonly offered here: ${topCategoryLabels.join(" and ")}.`);
+    }
+    const detail = extras.length > 0 ? ` ${extras.join(" ")}` : "";
     return {
       h1: `Med spas in ${locationLabel}`,
-      intro: `Browse ${countNote} in ${locationLabel} for injectables, laser treatments, facials, and skincare. Compare public ratings, treatments, and medical director info.`,
+      intro: `Browse ${countNote} in ${locationLabel} for injectables, laser treatments, facials, and skincare. Compare public ratings, treatments, and medical director info.${detail}`,
       listName: `Med spas in ${locationLabel}`,
     };
   }
@@ -415,6 +457,8 @@ export function providersPageMetadata({
   const locationLabel = locationParts.length > 0 ? ` in ${locationParts.join(", ")}` : "";
   const count = getFilteredProviders(filters).length;
   const countPhrase = count > 0 ? `${count} providers` : "providers";
+  const hasActiveFilter = Boolean(filters.state || filters.category || filters.city);
+  const noIndex = filters.noIndex || (hasActiveFilter && count === 0);
 
   if (filters.category) {
     const seo = TREATMENT_CATEGORY_SEO[filters.category];
@@ -432,7 +476,7 @@ export function providersPageMetadata({
         ...(filters.category === "injectables" ? ["Botox", "fillers"] : []),
         ...(filters.category === "lasers" ? ["laser treatments"] : []),
       ],
-      noIndex: filters.noIndex,
+      noIndex,
     });
   }
 
@@ -452,7 +496,7 @@ export function providersPageMetadata({
       "skincare",
       "aesthetics clinic",
     ],
-    noIndex: filters.noIndex,
+    noIndex,
   });
 }
 
