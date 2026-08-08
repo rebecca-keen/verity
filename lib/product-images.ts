@@ -90,6 +90,34 @@ export const productImages: Record<string, string> = {
     "https://m.media-amazon.com/images/I/61mA9yufbHL._SL1500_.jpg",
   "la-roche-posay-hyalu-b5-suractivated":
     "https://m.media-amazon.com/images/I/61NNU8kI+bL._SL1500_.jpg",
+
+  // International skincare — real Amazon product photos (by ASIN).
+  "cosrx-advanced-snail-96-mucin-essence":
+    "https://m.media-amazon.com/images/P/B00PBX3L7K.01._SCLZZZZZZZ_.jpg",
+  "anua-heartleaf-77-soothing-toner":
+    "https://m.media-amazon.com/images/P/B08CMS8P67.01._SCLZZZZZZZ_.jpg",
+  "medicube-zero-pore-pad-2-0":
+    "https://m.media-amazon.com/images/P/B09V7Z4TJG.01._SCLZZZZZZZ_.jpg",
+  "beauty-of-joseon-relief-sun":
+    "https://m.media-amazon.com/images/P/B0B5PJ41ZT.01._SCLZZZZZZZ_.jpg",
+  "laneige-water-sleeping-mask":
+    "https://m.media-amazon.com/images/P/B00Y16CXS6.01._SCLZZZZZZZ_.jpg",
+  "la-roche-posay-cicaplast-baume-b5":
+    "https://m.media-amazon.com/images/P/B072MK7BN2.01._SCLZZZZZZZ_.jpg",
+  "embryolisse-lait-creme-concentre":
+    "https://m.media-amazon.com/images/P/B004KELK4C.01._SCLZZZZZZZ_.jpg",
+  "bioderma-sensibio-h2o":
+    "https://m.media-amazon.com/images/P/B002XZLAWM.01._SCLZZZZZZZ_.jpg",
+  "avene-thermal-spring-water":
+    "https://m.media-amazon.com/images/P/B002D48QUC.01._SCLZZZZZZZ_.jpg",
+  "nuxe-huile-prodigieuse-dry-oil":
+    "https://m.media-amazon.com/images/P/B000BO52TE.01._SCLZZZZZZZ_.jpg",
+  "collistar-rigenera-anti-wrinkle-cream":
+    "https://m.media-amazon.com/images/P/B09SLM2F1N.01._SCLZZZZZZZ_.jpg",
+  "collistar-lift-hd-eye-lip-contour":
+    "https://m.media-amazon.com/images/P/B0BVKFCYP9.01._SCLZZZZZZZ_.jpg",
+  "collistar-rigenera-anti-wrinkle-concentrate":
+    "https://m.media-amazon.com/images/P/B09SLKPHZX.01._SCLZZZZZZZ_.jpg",
 };
 
 export function getProductImage(slug: string): string | undefined {
