@@ -999,23 +999,6 @@ export const amazonAffiliateProducts: Product[] = [
     affiliatePartner: AMAZON,
   },
   {
-    slug: "caudalie-vinoperfect-serum",
-    name: "Vinoperfect Brightening Dark Spot Serum",
-    brand: "Caudalie",
-    category: "Serum",
-    trustScore: 90,
-    productTags: ["vegan", "cruelty-free", "fragrance-free"],
-    description:
-      "Brightening serum powered by viniferine to visibly fade dark spots and even skin tone — a gentle vitamin C alternative.",
-    rating: 0,
-    reviewCount: 0,
-    image: IMG_SERUM,
-    ingredients: ["Viniferine", "Niacinamide", "Hyaluronic Acid"],
-    origin: "FR",
-    affiliateUrl: amazon("B0CX5B5VTX"),
-    affiliatePartner: AMAZON,
-  },
-  {
     slug: "avene-thermal-spring-water",
     name: "Thermal Spring Water Facial Mist",
     brand: "Avène",
