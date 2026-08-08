@@ -1,6 +1,13 @@
 import type { MetadataRoute } from "next";
 import { spas } from "@/lib/data";
-import { buildProvidersPath, buildTreatmentPath, SHOP_ORIGIN_FILTER_CODES, SITE_URL, TREATMENT_CATEGORY_SEO } from "@/lib/seo";
+import {
+  buildProvidersPath,
+  buildTreatmentPath,
+  getFilteredProviders,
+  SHOP_ORIGIN_FILTER_CODES,
+  SITE_URL,
+  TREATMENT_CATEGORY_SEO,
+} from "@/lib/seo";
 import { POPULAR_STATE_CODES } from "@/lib/spa-utils";
 import { buildCityPath, buildStatePath, getAllCityRoutes, getStateRoutes, MED_SPAS_BASE } from "@/lib/geo-routes";
 import { getShopProducts } from "@/lib/shop-utils";
@@ -76,12 +83,14 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
   }));
 
   const categoryStatePages: MetadataRoute.Sitemap = POPULAR_STATE_CODES.flatMap((state) =>
-    treatmentCategories.map((category) => ({
-      url: absoluteUrl(buildProvidersPath({ category, state })),
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.78,
-    }))
+    treatmentCategories
+      .filter((category) => getFilteredProviders({ category, state }).length > 0)
+      .map((category) => ({
+        url: absoluteUrl(buildProvidersPath({ category, state })),
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.78,
+      }))
   );
 
   const providerPages: MetadataRoute.Sitemap = spas
