@@ -24,6 +24,8 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "m.media-amazon.com" },
+      { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "plus.unsplash.com" },
       { protocol: "https", hostname: "cdn.shopify.com" },
       { protocol: "https", hostname: "epicutis.com" },
       { protocol: "https", hostname: "bluemercury.com" },
