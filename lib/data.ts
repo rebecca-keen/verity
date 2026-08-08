@@ -6,6 +6,7 @@ import { miamiMetroRealSpas } from "./miami-metro-real-spas";
 import { nationwideRealSpas } from "./nationwide-real-spas";
 import { tampaBayRealSpas } from "./tampa-bay-real-spas";
 import { getSpaImages } from "./spa-images";
+import { getPlaceRecord } from "./places-data";
 import { isPlaceholderPhone } from "./spa-link-utils";
 import {
   deriveTreatmentCategories,
@@ -210,6 +211,7 @@ function seedSpa(data: SpaSeed): Spa {
   const listingStatus =
     data.listingStatus ?? (data.premierPartner ? "verified-partner" : "listed");
   const treatments = resolveSpaTreatments(data.treatments, data.description, data.tagline, data.name, website);
+  const place = getPlaceRecord(data.slug);
 
   return normalizeSpaTrust({
     slug: data.slug,
@@ -219,6 +221,14 @@ function seedSpa(data: SpaSeed): Spa {
     neighborhood: data.neighborhood,
     city: data.city,
     metro,
+    ...(place?.streetAddress ? { streetAddress: place.streetAddress } : {}),
+    ...(place?.postalCode ? { postalCode: place.postalCode } : {}),
+    ...(typeof place?.latitude === "number" ? { latitude: place.latitude } : {}),
+    ...(typeof place?.longitude === "number" ? { longitude: place.longitude } : {}),
+    ...(place?.openingHours && place.openingHours.length > 0
+      ? { openingHours: place.openingHours }
+      : {}),
+    ...(place?.googlePlaceId ? { googlePlaceId: place.googlePlaceId } : {}),
     reviewSources,
     tagline: data.tagline,
     description: data.description,

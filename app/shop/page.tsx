@@ -6,7 +6,7 @@ import {
   filterShopProductsByOrigin,
   getRecommendedShopProducts,
   getShopProducts,
-  getShopProductsByBrand,
+  getShopProductsByOrigin,
 } from "@/lib/shop-utils";
 import type { ProductOrigin } from "@/lib/types";
 
@@ -22,8 +22,19 @@ export async function generateMetadata({
 const originFilters: { value: ProductOrigin | "all"; label: string }[] = [
   { value: "all", label: "All" },
   { value: "US", label: "American" },
+  { value: "KR", label: "Korean" },
   { value: "FR", label: "French" },
+  { value: "IT", label: "Italian" },
 ];
+
+/** Short editorial blurb per region for the shop section headers. */
+const originBlurbs: Record<ProductOrigin, string> = {
+  US: "Clinical derm-brand skincare favored by med spas for post-procedure care.",
+  KR: "K-beauty essences, toners, and sunscreens for glass-skin hydration.",
+  FR: "French-pharmacy classics for sensitive skin and barrier repair.",
+  IT: "Italian anti-aging skincare with peptides and hyaluronic acid.",
+  EU: "European pharmacy-grade formulations for gentle, effective care.",
+};
 
 export default async function ShopPage({
   searchParams,
@@ -36,12 +47,7 @@ export default async function ShopPage({
 
   const recommended = filterShopProductsByOrigin(getRecommendedShopProducts(), activeOrigin);
   const allShop = filterShopProductsByOrigin(getShopProducts(), activeOrigin);
-  const brandGroups = getShopProductsByBrand()
-    .map(({ brand, products: brandProducts }) => ({
-      brand,
-      products: filterShopProductsByOrigin(brandProducts, activeOrigin),
-    }))
-    .filter((group) => group.products.length > 0);
+  const originGroups = getShopProductsByOrigin(allShop);
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
@@ -97,14 +103,17 @@ export default async function ShopPage({
       )}
 
       <div className="mt-14 space-y-14">
-        {brandGroups.map(({ brand, products: brandProducts }) => (
-          <section key={brand}>
-            <h2 className="font-serif text-2xl text-charcoal">{brand}</h2>
-            <p className="mt-1 text-sm text-stone">
-              {brandProducts.length} product{brandProducts.length !== 1 ? "s" : ""} · Shop on Amazon
+        {originGroups.map(({ origin: groupOrigin, products: originProducts }) => (
+          <section key={groupOrigin}>
+            <h2 className="font-serif text-2xl text-charcoal">
+              {originLabels[groupOrigin]} skincare
+            </h2>
+            <p className="mt-1 max-w-2xl text-sm text-stone">{originBlurbs[groupOrigin]}</p>
+            <p className="mt-1 text-xs uppercase tracking-widest text-gold">
+              {originProducts.length} product{originProducts.length !== 1 ? "s" : ""} · Shop on Amazon
             </p>
             <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {brandProducts.map((p) => (
+              {originProducts.map((p) => (
                 <ProductCard key={p.slug} product={p} />
               ))}
             </div>

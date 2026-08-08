@@ -100,10 +100,12 @@ export default async function ShopProductDetailPage({
                 Editor&apos;s pick
               </span>
             )}
-            <div>
-              <p className="text-xs text-stone">Rating</p>
-              <p className="text-3xl text-gold">★ {product.rating}</p>
-            </div>
+            {product.reviewCount > 0 && (
+              <div>
+                <p className="text-xs text-stone">Rating</p>
+                <p className="text-3xl text-gold">★ {product.rating}</p>
+              </div>
+            )}
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
             {product.productTags.map((tag) => (

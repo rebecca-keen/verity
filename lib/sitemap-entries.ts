@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
 import { spas } from "@/lib/data";
-import { STATES_WITH_REAL_DATA } from "@/lib/nationwide-states";
-import { buildProvidersPath, SHOP_ORIGIN_FILTER_CODES, SITE_URL, TREATMENT_CATEGORY_SEO } from "@/lib/seo";
-import { POPULAR_CITY_SHORTCUTS, POPULAR_STATE_CODES } from "@/lib/spa-utils";
+import { buildProvidersPath, buildTreatmentPath, SHOP_ORIGIN_FILTER_CODES, SITE_URL, TREATMENT_CATEGORY_SEO } from "@/lib/seo";
+import { POPULAR_STATE_CODES } from "@/lib/spa-utils";
+import { buildCityPath, buildStatePath, getAllCityRoutes, getStateRoutes, MED_SPAS_BASE } from "@/lib/geo-routes";
 import { getShopProducts } from "@/lib/shop-utils";
 import type { TreatmentCategory } from "@/lib/types";
 
@@ -30,6 +30,7 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: absoluteUrl("/"), lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: absoluteUrl("/providers"), lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: absoluteUrl(MED_SPAS_BASE), lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: absoluteUrl("/concierge"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: absoluteUrl("/shop"), lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: absoluteUrl("/contact"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
@@ -47,25 +48,31 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const treatmentsIndexPage: MetadataRoute.Sitemap = [
+    { url: absoluteUrl("/treatments"), lastModified: now, changeFrequency: "weekly", priority: 0.85 },
+  ];
+
   const treatmentCategoryPages: MetadataRoute.Sitemap = treatmentCategories.map((category) => ({
-    url: absoluteUrl(buildProvidersPath({ category })),
+    url: absoluteUrl(buildTreatmentPath(category)),
     lastModified: now,
     changeFrequency: "weekly",
     priority: 0.85,
   }));
 
-  const stateFilterPages: MetadataRoute.Sitemap = STATES_WITH_REAL_DATA.map((state) => ({
-    url: absoluteUrl(buildProvidersPath({ state })),
+  // Path-based local landing pages (these replace the old /providers?state=&city=
+  // query URLs, which now 308-redirect here).
+  const medSpasStatePages: MetadataRoute.Sitemap = getStateRoutes().map((state) => ({
+    url: absoluteUrl(buildStatePath(state.stateSlug)),
     lastModified: now,
     changeFrequency: "weekly",
-    priority: POPULAR_STATE_CODES.includes(state) ? 0.82 : 0.75,
+    priority: POPULAR_STATE_CODES.includes(state.stateCode) ? 0.85 : 0.78,
   }));
 
-  const cityFilterPages: MetadataRoute.Sitemap = POPULAR_CITY_SHORTCUTS.map((shortcut) => ({
-    url: absoluteUrl(buildProvidersPath({ state: shortcut.state, city: shortcut.city })),
+  const medSpasCityPages: MetadataRoute.Sitemap = getAllCityRoutes().map((city) => ({
+    url: absoluteUrl(buildCityPath(city.stateSlug, city.citySlug)),
     lastModified: now,
     changeFrequency: "weekly",
-    priority: 0.8,
+    priority: city.providerCount >= 5 ? 0.8 : 0.72,
   }));
 
   const categoryStatePages: MetadataRoute.Sitemap = POPULAR_STATE_CODES.flatMap((state) =>
@@ -98,9 +105,10 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
   return dedupeSitemap([
     ...staticPages,
     ...shopFilterPages,
+    ...treatmentsIndexPage,
     ...treatmentCategoryPages,
-    ...stateFilterPages,
-    ...cityFilterPages,
+    ...medSpasStatePages,
+    ...medSpasCityPages,
     ...categoryStatePages,
     ...providerPages,
     ...shopPages,

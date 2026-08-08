@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 
 export default async function ProductsPage({
   searchParams,
@@ -6,5 +6,5 @@ export default async function ProductsPage({
   searchParams: Promise<{ origin?: string }>;
 }) {
   const { origin } = await searchParams;
-  redirect(origin ? `/shop?origin=${origin}` : "/shop");
+  permanentRedirect(origin ? `/shop?origin=${origin}` : "/shop");
 }

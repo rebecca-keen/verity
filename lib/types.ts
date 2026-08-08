@@ -124,6 +124,20 @@ export interface Spa {
   state: string;
   neighborhood: string;
   city: string;
+  /** Real street address — populated from Google Places. Absent for unverified listings. */
+  streetAddress?: string;
+  /** US ZIP code — populated from Google Places. */
+  postalCode?: string;
+  /** Geo coordinates for LocalBusiness schema + map-pack relevance. */
+  latitude?: number;
+  longitude?: number;
+  /**
+   * Opening hours in schema.org openingHours short form
+   * (e.g. "Mo-Fr 09:00-18:00", "Sa 10:00-14:00"). Populated from Google Places.
+   */
+  openingHours?: string[];
+  /** Google Places place_id — join key for the Places backfill. */
+  googlePlaceId?: string;
   /** Florida region group — present for FL listings only. */
   metro?: Metro;
   tagline: string;

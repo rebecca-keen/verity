@@ -13,6 +13,7 @@ import { TreatmentCategories } from "@/components/TreatmentCategories";
 import { ProviderTypeBadge } from "@/components/ProviderTypeBadge";
 import { TrustBadge, TrustPanel } from "@/components/TrustBadge";
 import { getSpa, getProductsForSpa, getSpaReviews, spas } from "@/lib/data";
+import { pathForCityName, pathForStateCode } from "@/lib/geo-routes";
 import { formatGoogleRating } from "@/lib/spa-display";
 import { contactFormUrl } from "@/lib/constants";
 import {
@@ -20,7 +21,6 @@ import {
   pageMetadata,
   providerBreadcrumbJsonLd,
   providerPageMetadata,
-  providerReviewsJsonLd,
   TREATMENT_CATEGORY_SEO,
 } from "@/lib/seo";
 
@@ -59,15 +59,15 @@ export default async function ProviderDetailPage({
   const spaProducts = getProductsForSpa(slug);
   const spaReviews = getSpaReviews(slug);
   const googleRating = formatGoogleRating(spa);
-  const reviewsJsonLd = providerReviewsJsonLd(spa, spaReviews);
+  const cityPath = pathForCityName(spa.state, spa.city);
+  const statePath = pathForStateCode(spa.state);
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-12">
       <JsonLd
         data={[
-          localBusinessJsonLd(spa),
+          localBusinessJsonLd(spa, spaReviews),
           providerBreadcrumbJsonLd(spa),
-          ...(reviewsJsonLd ? [reviewsJsonLd] : []),
         ]}
       />
       <nav aria-label="Breadcrumb" className="mb-4 text-xs text-stone">
@@ -196,18 +196,22 @@ export default async function ProviderDetailPage({
               More med spas and aesthetics clinics in {spa.city}, {spa.state} and by treatment type.
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
-              <Link
-                href={`/providers?state=${spa.state}&city=${encodeURIComponent(spa.city)}`}
-                className="rounded-full border border-stone/20 px-3 py-1.5 text-xs text-charcoal transition hover:border-gold"
-              >
-                More in {spa.city}, {spa.state}
-              </Link>
-              <Link
-                href={`/providers?state=${spa.state}`}
-                className="rounded-full border border-stone/20 px-3 py-1.5 text-xs text-charcoal transition hover:border-gold"
-              >
-                All in {spa.state}
-              </Link>
+              {cityPath && (
+                <Link
+                  href={cityPath}
+                  className="rounded-full border border-stone/20 px-3 py-1.5 text-xs text-charcoal transition hover:border-gold"
+                >
+                  More in {spa.city}, {spa.state}
+                </Link>
+              )}
+              {statePath && (
+                <Link
+                  href={statePath}
+                  className="rounded-full border border-stone/20 px-3 py-1.5 text-xs text-charcoal transition hover:border-gold"
+                >
+                  All in {spa.state}
+                </Link>
+              )}
               {spa.treatmentCategories.map((category) => (
                 <Link
                   key={category}

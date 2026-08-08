@@ -28,13 +28,13 @@ export default function RootLayout({
             <Link href="/providers" className="text-gold hover:underline">
               Providers
             </Link>
-            <Link href="/providers?category=injectables" className="text-gold hover:underline">
+            <Link href="/treatments/injectables" className="text-gold hover:underline">
               Injectables
             </Link>
-            <Link href="/providers?category=lasers" className="text-gold hover:underline">
+            <Link href="/treatments/lasers" className="text-gold hover:underline">
               Laser treatments
             </Link>
-            <Link href="/providers?category=beauty" className="text-gold hover:underline">
+            <Link href="/treatments/beauty" className="text-gold hover:underline">
               Skincare &amp; facials
             </Link>
             <Link href="/concierge" className="text-gold hover:underline">

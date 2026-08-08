@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getContactEmail } from "@/lib/constants";
 import { getSortedSpas } from "@/lib/data";
 import { formatGoogleRating } from "@/lib/spa-display";
+import { getPublicPhone } from "@/lib/spa-link-utils";
 import { filterSpasByCity, filterSpasByState, getStateLabel, US_STATES } from "@/lib/spa-utils";
 import type { Product, Review, Spa, TreatmentCategory, USStateCode } from "@/lib/types";
 
@@ -43,7 +44,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Injectables providers",
     intro:
       "Browse listed med spas and medical aesthetics clinics for Botox, dermal fillers, and other injectables. Filter by location and compare public ratings.",
-    path: "/providers?category=injectables",
+    path: "/treatments/injectables",
   },
   lasers: {
     title: "Laser Treatment Providers — Med Spas & Clinics | Verity",
@@ -52,7 +53,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Laser treatment providers",
     intro:
       "Discover med spas and clinics offering laser treatments for hair removal, resurfacing, pigmentation, and skin rejuvenation — with transparent sourcing.",
-    path: "/providers?category=lasers",
+    path: "/treatments/lasers",
   },
   beauty: {
     title: "Beauty & Facial Providers — Skincare Treatments | Verity",
@@ -61,7 +62,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Beauty & facial providers",
     intro:
       "Explore providers for facials, peels, microneedling, and skincare-forward beauty treatments — ideal for addressing skin concerns and maintaining results.",
-    path: "/providers?category=beauty",
+    path: "/treatments/beauty",
   },
   body: {
     title: "Body Contouring Providers — Med Spas | Verity",
@@ -70,7 +71,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Body contouring providers",
     intro:
       "Browse med spas for body contouring and non-surgical body treatments. Filter by city and compare public ratings where available.",
-    path: "/providers?category=body",
+    path: "/treatments/body",
   },
   wellness: {
     title: "Wellness Providers — Peptides & Functional Medicine | Verity",
@@ -79,7 +80,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Wellness providers",
     intro:
       "Browse med spas for wellness services including peptides, NAD+ therapy, and functional medicine programs.",
-    path: "/providers?category=wellness",
+    path: "/treatments/wellness",
   },
   "iv-therapy": {
     title: "IV Therapy Providers — Vitamin Drips & Hydration | Verity",
@@ -88,7 +89,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "IV therapy providers",
     intro:
       "Discover providers for IV therapy including vitamin drips, hydration infusions, and mobile IV services.",
-    path: "/providers?category=iv-therapy",
+    path: "/treatments/iv-therapy",
   },
   "weight-loss": {
     title: "Medical Weight Loss Providers — GLP-1 & More | Verity",
@@ -97,7 +98,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Medical weight loss providers",
     intro:
       "Discover providers for physician-supervised weight loss including GLP-1, semaglutide, and medical weight management programs.",
-    path: "/providers?category=weight-loss",
+    path: "/treatments/weight-loss",
   },
   "hormone-therapy": {
     title: "Hormone Therapy Providers — BHRT & HRT | Verity",
@@ -106,7 +107,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Hormone therapy providers",
     intro:
       "Browse providers for bioidentical hormone therapy, testosterone replacement, and physician-supervised hormone optimization.",
-    path: "/providers?category=hormone-therapy",
+    path: "/treatments/hormone-therapy",
   },
   "mens-health": {
     title: "Men's Health Providers — TRT & Hormone Care | Verity",
@@ -115,7 +116,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Men's health providers",
     intro:
       "Discover providers for men's health including testosterone replacement therapy, low testosterone treatment, and male wellness programs.",
-    path: "/providers?category=mens-health",
+    path: "/treatments/mens-health",
   },
   "womens-health": {
     title: "Women's Health Providers — Menopause & BHRT | Verity",
@@ -124,7 +125,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Women's health providers",
     intro:
       "Browse providers for women's health including menopause support, bioidentical hormone therapy, and hormone balance programs.",
-    path: "/providers?category=womens-health",
+    path: "/treatments/womens-health",
   },
   "hair-restoration": {
     title: "Hair Restoration Providers — PRP & Transplant | Verity",
@@ -133,7 +134,7 @@ export const TREATMENT_CATEGORY_SEO: Record<
     h1: "Hair restoration providers",
     intro:
       "Discover providers for hair restoration including PRP hair therapy, hair loss treatments, and surgical hair restoration referrals.",
-    path: "/providers?category=hair-restoration",
+    path: "/treatments/hair-restoration",
   },
 };
 
@@ -254,7 +255,7 @@ const VALID_STATE_CODES = new Set(
   US_STATES.filter((state) => state.code !== "All").map((state) => state.code)
 );
 
-export const SHOP_ORIGIN_FILTER_CODES = ["US", "FR"] as const;
+export const SHOP_ORIGIN_FILTER_CODES = ["US", "KR", "FR", "IT"] as const;
 
 const SHOP_ORIGIN_FILTERS = new Set<string>(SHOP_ORIGIN_FILTER_CODES);
 
@@ -262,6 +263,24 @@ function normalizeStateCode(raw?: string): USStateCode | undefined {
   if (!raw?.trim()) return undefined;
   const code = raw.trim().toUpperCase();
   return VALID_STATE_CODES.has(code as USStateCode) ? (code as USStateCode) : undefined;
+}
+
+export function buildTreatmentPath(category: TreatmentCategory): string {
+  return `/treatments/${category}`;
+}
+
+/**
+ * Where a legacy `/providers?category=` URL should permanently redirect.
+ * Treatment-only URLs move to the clean /treatments/[slug] page; treatment +
+ * location URLs (`?category=&state=`) stay on /providers as faceted pages.
+ */
+export function treatmentRedirectTarget(raw: {
+  category?: string;
+  state?: string;
+  city?: string;
+}): string | null {
+  if (raw.state?.trim() || raw.city?.trim()) return null;
+  return isTreatmentCategory(raw.category) ? buildTreatmentPath(raw.category) : null;
 }
 
 export function buildProvidersPath(filters: {
@@ -469,6 +488,7 @@ export function organizationJsonLd() {
     name: "Verity Aesthetics",
     alternateName: SITE_NAME,
     url: SITE_URL,
+    logo: `${SITE_URL}${DEFAULT_OG_IMAGE}`,
     description: DEFAULT_DESCRIPTION,
     knowsAbout: [
       "Medical aesthetics",
@@ -591,32 +611,6 @@ export function howWeVerifyFaqJsonLd() {
   ]);
 }
 
-/** Individual Review schema — only for confirmed Verity visit reviews, not Google aggregates. */
-export function providerReviewsJsonLd(spa: Spa, spaReviews: Review[]) {
-  const verifiedReviews = spaReviews.filter((r) => r.verifiedVisit);
-  if (verifiedReviews.length === 0) return null;
-
-  return {
-    "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    name: spa.name,
-    url: `${SITE_URL}/providers/${spa.slug}`,
-    review: verifiedReviews.map((r) => ({
-      "@type": "Review",
-      author: { "@type": "Person", name: r.author },
-      datePublished: r.date,
-      reviewBody: r.text,
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: r.rating,
-        bestRating: 5,
-        worstRating: 1,
-      },
-      ...(r.treatment ? { name: r.treatment } : {}),
-    })),
-  };
-}
-
 export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   return {
     "@context": "https://schema.org",
@@ -711,9 +705,17 @@ const TREATMENT_CATEGORY_SERVICES: Record<TreatmentCategory, string> = {
   "hair-restoration": "Hair restoration",
 };
 
-export function localBusinessJsonLd(spa: Spa) {
+/**
+ * Single authoritative LocalBusiness node for a provider. Uses only real data —
+ * no fabricated street address or placeholder phones — so the schema always
+ * matches what's visible on the page (NAP consistency). Verified Verity reviews
+ * are folded into this same node (via `spaReviews`) so search engines see one
+ * business entity, not two competing ones.
+ */
+export function localBusinessJsonLd(spa: Spa, spaReviews: Review[] = []) {
   const pageUrl = `${SITE_URL}/providers/${spa.slug}`;
   const googleRating = spa.reviewSources?.google;
+  const publicPhone = getPublicPhone(spa);
   const sameAs = [spa.website, spa.socials.instagram, spa.socials.facebook, spa.socials.tiktok].filter(
     Boolean
   );
@@ -722,6 +724,19 @@ export function localBusinessJsonLd(spa: Spa) {
     name: TREATMENT_CATEGORY_SERVICES[category],
     serviceType: TREATMENT_CATEGORY_SERVICES[category],
   }));
+  const verifiedReviews = spaReviews.filter((r) => r.verifiedVisit);
+
+  const address: Record<string, string> = {
+    "@type": "PostalAddress",
+    addressLocality: spa.city,
+    addressRegion: spa.state,
+    addressCountry: "US",
+  };
+  // Only include a street address / ZIP when we have the real values.
+  if (spa.streetAddress) address.streetAddress = spa.streetAddress;
+  if (spa.postalCode) address.postalCode = spa.postalCode;
+
+  const hasGeo = typeof spa.latitude === "number" && typeof spa.longitude === "number";
 
   return {
     "@context": "https://schema.org",
@@ -732,17 +747,23 @@ export function localBusinessJsonLd(spa: Spa) {
     url: pageUrl,
     mainEntityOfPage: pageUrl,
     ...(spa.image ? { image: [spa.image] } : {}),
-    telephone: spa.phone || undefined,
+    ...(publicPhone ? { telephone: publicPhone } : {}),
     priceRange: spa.priceRange,
     ...(services.length > 0 ? { hasOfferCatalog: { "@type": "OfferCatalog", itemListElement: services } } : {}),
     ...(sameAs.length > 0 ? { sameAs } : {}),
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: spa.neighborhood,
-      addressLocality: spa.city,
-      addressRegion: spa.state,
-      addressCountry: "US",
-    },
+    address,
+    ...(hasGeo
+      ? {
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: spa.latitude,
+            longitude: spa.longitude,
+          },
+        }
+      : {}),
+    ...(spa.openingHours && spa.openingHours.length > 0
+      ? { openingHours: spa.openingHours }
+      : {}),
     ...(googleRating && spa.reviewCount
       ? {
           aggregateRating: {
@@ -754,29 +775,27 @@ export function localBusinessJsonLd(spa: Spa) {
           },
         }
       : {}),
+    ...(verifiedReviews.length > 0
+      ? {
+          review: verifiedReviews.map((r) => ({
+            "@type": "Review",
+            author: { "@type": "Person", name: r.author },
+            datePublished: r.date,
+            reviewBody: r.text,
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: r.rating,
+              bestRating: 5,
+              worstRating: 1,
+            },
+            ...(r.treatment ? { name: r.treatment } : {}),
+          })),
+        }
+      : {}),
   };
 }
 
 const PRODUCT_PRICE_CURRENCY = "USD";
-
-/** Typical USD retail price by category when a product has no explicit price. */
-const PRODUCT_PRICE_USD_BY_CATEGORY: Record<string, number> = {
-  SPF: 39,
-  Cleanser: 35,
-  Serum: 98,
-  Moisturizer: 68,
-  Retinol: 88,
-  "Eye Care": 58,
-  Treatment: 75,
-  "Lip Care": 24,
-};
-
-const DEFAULT_PRODUCT_PRICE_USD = 49;
-
-function getProductOfferPrice(product: Product): number {
-  if (product.price != null && product.price > 0) return product.price;
-  return PRODUCT_PRICE_USD_BY_CATEGORY[product.category] ?? DEFAULT_PRODUCT_PRICE_USD;
-}
 
 /** Google recommends priceValidUntil for product offers. */
 function productOfferPriceValidUntil(): string {
@@ -785,7 +804,14 @@ function productOfferPriceValidUntil(): string {
   return date.toISOString().slice(0, 10);
 }
 
+/**
+ * Only emit an Offer when we have a real price. Fabricating a price that never
+ * appears on the page violates Google's structured-data / Merchant guidelines
+ * and risks a manual action, so a missing price means no Offer node at all.
+ */
 function productOfferJsonLd(product: Product) {
+  if (product.price == null || product.price <= 0) return null;
+
   const sellerName =
     product.affiliatePartner === "Amazon Associates"
       ? "Amazon"
@@ -794,7 +820,7 @@ function productOfferJsonLd(product: Product) {
   return {
     "@type": "Offer",
     url: `${SITE_URL}/shop/${product.slug}`,
-    price: getProductOfferPrice(product).toFixed(2),
+    price: product.price.toFixed(2),
     priceCurrency: PRODUCT_PRICE_CURRENCY,
     availability: "https://schema.org/InStock",
     priceValidUntil: productOfferPriceValidUntil(),
@@ -806,6 +832,9 @@ function productOfferJsonLd(product: Product) {
 }
 
 export function productJsonLd(product: Product) {
+  const offers = productOfferJsonLd(product);
+  const hasRating = product.rating > 0 && product.reviewCount > 0;
+
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -817,13 +846,17 @@ export function productJsonLd(product: Product) {
       name: product.brand,
     },
     category: product.category,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: product.rating,
-      reviewCount: product.reviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    offers: productOfferJsonLd(product),
+    ...(hasRating
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: product.rating,
+            reviewCount: product.reviewCount,
+            bestRating: 5,
+            worstRating: 1,
+          },
+        }
+      : {}),
+    ...(offers ? { offers } : {}),
   };
 }

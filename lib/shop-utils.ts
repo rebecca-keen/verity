@@ -42,3 +42,17 @@ export function filterShopProductsByOrigin(
   if (!origin) return catalog;
   return catalog.filter((p) => p.origin === origin);
 }
+
+/** Display order for origin/region sections on the shop page. */
+export const SHOP_ORIGIN_ORDER: ProductOrigin[] = ["US", "KR", "FR", "IT", "EU"];
+
+/** Products grouped by origin/region, in SHOP_ORIGIN_ORDER, skipping empty regions. */
+export function getShopProductsByOrigin(catalog: Product[] = getShopProducts()): {
+  origin: ProductOrigin;
+  products: Product[];
+}[] {
+  return SHOP_ORIGIN_ORDER.map((origin) => ({
+    origin,
+    products: catalog.filter((p) => p.origin === origin),
+  })).filter((group) => group.products.length > 0);
+}
