@@ -200,6 +200,11 @@ export const rootMetadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    other: {
+      "p:domain_verify": "83fcc897435a1f21881cb607a2e241d2",
+    },
+  },
 };
 
 export function pageMetadata({
