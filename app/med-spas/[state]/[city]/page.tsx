@@ -19,7 +19,10 @@ import {
   cityJsonLd,
   cityPageMetadata,
   cityServices,
+  cityStats,
+  topRatedProviders,
 } from "@/lib/local-seo";
+import { formatGoogleRating } from "@/lib/spa-display";
 
 export const dynamic = "force-static";
 
@@ -58,6 +61,8 @@ export default async function CityLandingPage({
   const content = cityContent(route, spas);
   const services = cityServices(route, spas);
   const faqs = cityFaqs(route, spas);
+  const stats = cityStats(route, spas);
+  const topRated = topRatedProviders(spas, 5);
   const siblings = getSiblingCities(route.stateSlug, route.citySlug);
 
   return (
@@ -92,6 +97,35 @@ export default async function CityLandingPage({
       <h1 className="mt-1 font-serif text-3xl text-charcoal md:text-4xl">{content.h1}</h1>
       <p className="mt-3 max-w-2xl text-sm text-stone">{content.intro}</p>
 
+      {/* Data-driven stats strip — unique per city. */}
+      <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-3 text-sm">
+        <div>
+          <dt className="text-xs uppercase tracking-widest text-gold">Providers</dt>
+          <dd className="font-serif text-2xl text-charcoal">{stats.providerCount}</dd>
+        </div>
+        {stats.avgRating !== null && (
+          <div>
+            <dt className="text-xs uppercase tracking-widest text-gold">Avg. rating</dt>
+            <dd className="font-serif text-2xl text-charcoal">★ {stats.avgRating}</dd>
+          </div>
+        )}
+        {stats.neighborhoodCount > 1 && (
+          <div>
+            <dt className="text-xs uppercase tracking-widest text-gold">Neighborhoods</dt>
+            <dd className="font-serif text-2xl text-charcoal">{stats.neighborhoodCount}</dd>
+          </div>
+        )}
+        {stats.priceLow && (
+          <div>
+            <dt className="text-xs uppercase tracking-widest text-gold">Price range</dt>
+            <dd className="font-serif text-2xl text-charcoal">
+              {stats.priceLow}
+              {stats.priceHigh && stats.priceHigh !== stats.priceLow ? `–${stats.priceHigh}` : ""}
+            </dd>
+          </div>
+        )}
+      </dl>
+
       {/* Treatment filters scoped to this city (treatment × location long-tail). */}
       {content.categories.length > 0 && (
         <div className="mt-5 flex flex-wrap gap-2">
@@ -115,6 +149,31 @@ export default async function CityLandingPage({
           ))}
         </div>
       </section>
+
+      {topRated.length > 0 && (
+        <section className="mt-14 border-t border-stone/10 pt-10">
+          <h2 className="font-serif text-2xl text-charcoal">
+            Top-rated med spas in {route.city}
+          </h2>
+          <ul className="mt-4 divide-y divide-stone/10">
+            {topRated.map((spa) => {
+              const rating = formatGoogleRating(spa);
+              return (
+                <li key={spa.slug} className="flex items-center justify-between py-3">
+                  <Link href={`/providers/${spa.slug}`} className="text-charcoal hover:text-gold">
+                    {spa.name}
+                    <span className="ml-2 text-sm text-stone">
+                      {spa.neighborhood ? `${spa.neighborhood}, ` : ""}
+                      {route.city}
+                    </span>
+                  </Link>
+                  {rating && <span className="shrink-0 text-sm text-gold">★ {rating}</span>}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
 
       {services.length > 0 && (
         <section className="mt-14 border-t border-stone/10 pt-10">

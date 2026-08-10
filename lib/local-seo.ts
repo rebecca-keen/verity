@@ -96,6 +96,12 @@ export function cityContent(route: CityRoute, spas: Spa[]): CityContent {
       `${rated.length} of these ${city} ${providerWord} publish Google ratings, so you can weigh reputation alongside treatment offerings and provider credentials.`
     );
   }
+  const priceTiers = [...new Set(spas.map((s) => s.priceRange))].sort((a, b) => a.length - b.length);
+  if (priceTiers.length > 1) {
+    paragraphs.push(
+      `Pricing in ${city} spans ${priceTiers[0]} to ${priceTiers[priceTiers.length - 1]} tiers, so you can find both accessible and premium ${city} med spas depending on your treatment and budget.`
+    );
+  }
 
   return {
     h1: `Med Spas in ${city}, ${stateLabel}`,
@@ -134,6 +140,40 @@ export function cityPageMetadata(route: CityRoute, spas: Spa[]): Metadata {
       stateLabel,
     ],
   });
+}
+
+export interface CityStats {
+  providerCount: number;
+  ratedCount: number;
+  avgRating: number | null;
+  priceLow: string | null;
+  priceHigh: string | null;
+  neighborhoodCount: number;
+}
+
+/** Real, per-city aggregate stats — unique data that differentiates each page. */
+export function cityStats(route: CityRoute, spas: Spa[]): CityStats {
+  const rated = spas.filter((s) => formatGoogleRating(s));
+  const ratings = spas.map((s) => s.rating).filter((r) => r > 0);
+  const avgRating = ratings.length
+    ? Math.round((ratings.reduce((a, b) => a + b, 0) / ratings.length) * 10) / 10
+    : null;
+  const priceTiers = [...new Set(spas.map((s) => s.priceRange))].sort((a, b) => a.length - b.length);
+  return {
+    providerCount: route.providerCount,
+    ratedCount: rated.length,
+    avgRating,
+    priceLow: priceTiers[0] ?? null,
+    priceHigh: priceTiers[priceTiers.length - 1] ?? null,
+    neighborhoodCount: distinctNeighborhoods(spas, 100).length,
+  };
+}
+
+/** Highest-rated providers in a city — named internal links (strong entity signal). */
+export function topRatedProviders(spas: Spa[], limit = 5): Spa[] {
+  return [...spas]
+    .sort((a, b) => (b.reviewSources?.google ?? b.rating) - (a.reviewSources?.google ?? a.rating))
+    .slice(0, limit);
 }
 
 export interface CityService {
