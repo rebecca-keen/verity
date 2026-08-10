@@ -1,9 +1,35 @@
 import type { Metadata } from "next";
 import type { CityRoute, StateRoute } from "./geo-routes";
 import { buildCityPath, buildStatePath, MED_SPAS_BASE } from "./geo-routes";
-import { pageMetadata, providersItemListJsonLd, SITE_NAME, SITE_URL, TREATMENT_CATEGORY_SEO } from "./seo";
+import {
+  buildProvidersPath,
+  pageMetadata,
+  providersItemListJsonLd,
+  SITE_NAME,
+  SITE_URL,
+  TREATMENT_CATEGORY_SEO,
+} from "./seo";
 import { formatGoogleRating } from "./spa-display";
 import type { Spa, TreatmentCategory } from "./types";
+
+/**
+ * Consumer search terms per treatment category, used to target service+city
+ * queries like "tampa botox" / "tampa laser" in titles, headings, and copy.
+ * `short` → title chips; `heading` → on-page H3; `blurb` → descriptive sentence.
+ */
+const SERVICE_META: Record<TreatmentCategory, { short: string; heading: string; blurb: string }> = {
+  injectables: { short: "Botox", heading: "Botox & Injectables", blurb: "Botox, dermal fillers, and other injectables" },
+  lasers: { short: "Laser", heading: "Laser Treatments", blurb: "laser hair removal, resurfacing, and skin rejuvenation" },
+  beauty: { short: "Facials", heading: "Facials & Skincare", blurb: "facials, chemical peels, and microneedling" },
+  body: { short: "Body Contouring", heading: "Body Contouring", blurb: "non-surgical body contouring and fat reduction" },
+  wellness: { short: "Wellness", heading: "Wellness & Peptides", blurb: "wellness programs, peptides, and NAD+ therapy" },
+  "iv-therapy": { short: "IV Therapy", heading: "IV Therapy", blurb: "IV drips, hydration, and vitamin infusions" },
+  "weight-loss": { short: "Weight Loss", heading: "Medical Weight Loss", blurb: "physician-supervised weight loss and GLP-1 programs" },
+  "hormone-therapy": { short: "Hormone Therapy", heading: "Hormone Therapy", blurb: "bioidentical hormone therapy and hormone optimization" },
+  "mens-health": { short: "Men's Health", heading: "Men's Health", blurb: "testosterone therapy (TRT) and men's wellness" },
+  "womens-health": { short: "Women's Health", heading: "Women's Health", blurb: "menopause care and hormone balance" },
+  "hair-restoration": { short: "Hair Restoration", heading: "Hair Restoration", blurb: "PRP hair therapy and hair loss treatments" },
+};
 
 function plural(n: number, one: string, many = `${one}s`): string {
   return n === 1 ? one : many;
@@ -82,9 +108,16 @@ export function cityContent(route: CityRoute, spas: Spa[]): CityContent {
 
 export function cityPageMetadata(route: CityRoute, spas: Spa[]): Metadata {
   const { city, stateLabel, stateCode, providerCount, stateSlug, citySlug } = route;
-  const cats = topCategories(spas, 3);
-  const title = `Med Spas in ${city}, ${stateCode} — ${providerCount} ${plural(providerCount, "Provider")} | Verity`;
-  const description = `Find the best med spas in ${city}, ${stateLabel}. Compare ${providerCount} medical aesthetics ${plural(providerCount, "provider")} for ${categoryPhrase(cats)} by rating, treatments, and location.`;
+  const cats = topCategories(spas, 5);
+  const serviceChips = cats.slice(0, 3).map((c) => SERVICE_META[c].short).join(", ");
+  // Front-load "{city} Med Spas" (targets "tampa med spa") + top services (targets "tampa botox").
+  const title = serviceChips
+    ? `${city} Med Spas — ${serviceChips} | Verity`
+    : `${city} Med Spas — ${providerCount} Providers | Verity`;
+  const description = `Compare ${providerCount} of the best med spas in ${city}, ${stateLabel} for ${categoryPhrase(cats.slice(0, 3))}. Ratings, treatments, and locations — find ${city} ${SERVICE_META[cats[0] ?? "injectables"].short.toLowerCase()} near you.`;
+
+  // Service + city long-tail keywords ("tampa botox", "tampa laser hair removal", ...).
+  const serviceKeywords = cats.map((c) => `${SERVICE_META[c].short.toLowerCase()} ${city}`);
 
   return pageMetadata({
     title,
@@ -92,14 +125,81 @@ export function cityPageMetadata(route: CityRoute, spas: Spa[]): Metadata {
     path: buildCityPath(stateSlug, citySlug),
     keywords: [
       `med spa ${city}`,
+      `${city} med spa`,
       `med spa ${city} ${stateCode}`,
       `medical aesthetics ${city}`,
-      `botox ${city}`,
+      ...serviceKeywords,
       `med spa near me`,
       city,
       stateLabel,
     ],
   });
+}
+
+export interface CityService {
+  category: TreatmentCategory;
+  heading: string;
+  blurb: string;
+  count: number;
+  path: string;
+}
+
+/** Service sections for a city page — each targets a "{service} in {city}" query. */
+export function cityServices(route: CityRoute, spas: Spa[]): CityService[] {
+  const { city, stateCode } = route;
+  const counts = new Map<TreatmentCategory, number>();
+  for (const spa of spas) {
+    for (const cat of spa.treatmentCategories) counts.set(cat, (counts.get(cat) ?? 0) + 1);
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([category, count]) => ({
+      category,
+      count,
+      heading: `${SERVICE_META[category].heading} in ${city}`,
+      blurb: `${count} ${plural(count, "provider")} in ${city} offering ${SERVICE_META[category].blurb}.`,
+      path: buildProvidersPath({ category, state: stateCode, city }),
+    }));
+}
+
+/** City-specific FAQs — target long-tail service+city questions and FAQ rich results. */
+export function cityFaqs(route: CityRoute, spas: Spa[]): { question: string; answer: string }[] {
+  const { city, stateLabel, providerCount } = route;
+  const cats = topCategories(spas, 4);
+  const faqs: { question: string; answer: string }[] = [];
+
+  if (cats.includes("injectables")) {
+    const n = spas.filter((s) => s.treatmentCategories.includes("injectables")).length;
+    faqs.push({
+      question: `Where can I get Botox in ${city}?`,
+      answer: `Verity lists ${n} med ${plural(n, "spa")} in ${city}, ${stateLabel} offering Botox and injectables. Compare their public ratings, treatment menus, and provider credentials above to find one near you.`,
+    });
+  }
+  faqs.push({
+    question: `How do I choose the best med spa in ${city}?`,
+    answer: `Compare public Google ratings, the treatments offered, provider credentials, and medical director details — all shown on each ${city} provider's Verity listing — then reach out to the clinic directly.`,
+  });
+  faqs.push({
+    question: `What treatments do ${city} med spas offer?`,
+    answer: `Med spas in ${city} on Verity offer ${categoryPhrase(cats)}. Use the treatment sections above to see providers for each service.`,
+  });
+  faqs.push({
+    question: `How many med spas are in ${city}?`,
+    answer: `Verity currently lists ${providerCount} med ${plural(providerCount, "spa")} and medical aesthetics ${plural(providerCount, "provider")} in ${city}, ${stateLabel}, built from publicly sourced information.`,
+  });
+  return faqs;
+}
+
+export function cityFaqJsonLd(route: CityRoute, spas: Spa[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: cityFaqs(route, spas).map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
 }
 
 export function cityJsonLd(route: CityRoute, spas: Spa[]) {

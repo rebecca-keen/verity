@@ -12,7 +12,14 @@ import {
   resolveCityRoute,
 } from "@/lib/geo-routes";
 import { breadcrumbJsonLd } from "@/lib/seo";
-import { cityContent, cityJsonLd, cityPageMetadata } from "@/lib/local-seo";
+import {
+  cityContent,
+  cityFaqJsonLd,
+  cityFaqs,
+  cityJsonLd,
+  cityPageMetadata,
+  cityServices,
+} from "@/lib/local-seo";
 
 export const dynamic = "force-static";
 
@@ -49,6 +56,8 @@ export default async function CityLandingPage({
 
   const { route, spas } = resolved;
   const content = cityContent(route, spas);
+  const services = cityServices(route, spas);
+  const faqs = cityFaqs(route, spas);
   const siblings = getSiblingCities(route.stateSlug, route.citySlug);
 
   return (
@@ -62,6 +71,7 @@ export default async function CityLandingPage({
             { name: route.city, path: buildCityPath(route.stateSlug, route.citySlug) },
           ]),
           ...cityJsonLd(route, spas),
+          cityFaqJsonLd(route, spas),
         ]}
       />
       <nav aria-label="Breadcrumb" className="mb-4 text-xs text-stone">
@@ -105,6 +115,42 @@ export default async function CityLandingPage({
           ))}
         </div>
       </section>
+
+      {services.length > 0 && (
+        <section className="mt-14 border-t border-stone/10 pt-10">
+          <h2 className="font-serif text-2xl text-charcoal">
+            Popular treatments in {route.city}
+          </h2>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((svc) => (
+              <Link
+                key={svc.category}
+                href={svc.path}
+                className="luxury-border rounded-2xl bg-white p-5 transition hover:border-gold/40"
+              >
+                <h3 className="font-serif text-lg text-charcoal">{svc.heading}</h3>
+                <p className="mt-2 text-sm text-stone">{svc.blurb}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {faqs.length > 0 && (
+        <section className="mt-14 max-w-3xl border-t border-stone/10 pt-10">
+          <h2 className="font-serif text-2xl text-charcoal">
+            Med spas in {route.city} — FAQs
+          </h2>
+          <dl className="mt-6 space-y-6">
+            {faqs.map((f) => (
+              <div key={f.question}>
+                <dt className="font-medium text-charcoal">{f.question}</dt>
+                <dd className="mt-1 text-sm leading-relaxed text-stone">{f.answer}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
 
       <section className="mt-14 max-w-3xl space-y-4 border-t border-stone/10 pt-10 text-sm leading-relaxed text-stone">
         <h2 className="font-serif text-2xl text-charcoal">
