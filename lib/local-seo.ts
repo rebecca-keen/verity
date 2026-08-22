@@ -18,17 +18,37 @@ import type { Spa, TreatmentCategory } from "./types";
  * `short` → title chips; `heading` → on-page H3; `blurb` → descriptive sentence.
  */
 const SERVICE_META: Record<TreatmentCategory, { short: string; heading: string; blurb: string }> = {
-  injectables: { short: "Botox", heading: "Botox & Injectables", blurb: "Botox, dermal fillers, and other injectables" },
-  lasers: { short: "Laser", heading: "Laser Treatments", blurb: "laser hair removal, resurfacing, and skin rejuvenation" },
-  beauty: { short: "Facials", heading: "Facials & Skincare", blurb: "facials, chemical peels, and microneedling" },
-  body: { short: "Body Contouring", heading: "Body Contouring", blurb: "non-surgical body contouring and fat reduction" },
+  injectables: { short: "Botox", heading: "Botox & Injectables", blurb: "Botox, Dysport, dermal fillers, and lip filler" },
+  lasers: { short: "Laser", heading: "Laser Treatments", blurb: "laser hair removal, CO2 laser resurfacing, IPL photofacials, and vascular (vein) laser treatments" },
+  beauty: { short: "Facials", heading: "Facials & Skincare", blurb: "HydraFacials, chemical peels, and microneedling" },
+  body: { short: "Body Contouring", heading: "Body Contouring", blurb: "CoolSculpting, body contouring, and skin tightening" },
   wellness: { short: "Wellness", heading: "Wellness & Peptides", blurb: "wellness programs, peptides, and NAD+ therapy" },
   "iv-therapy": { short: "IV Therapy", heading: "IV Therapy", blurb: "IV drips, hydration, and vitamin infusions" },
-  "weight-loss": { short: "Weight Loss", heading: "Medical Weight Loss", blurb: "physician-supervised weight loss and GLP-1 programs" },
-  "hormone-therapy": { short: "Hormone Therapy", heading: "Hormone Therapy", blurb: "bioidentical hormone therapy and hormone optimization" },
+  "weight-loss": { short: "Weight Loss", heading: "Medical Weight Loss", blurb: "physician-supervised weight loss, semaglutide, and GLP-1 programs" },
+  "hormone-therapy": { short: "Hormone Therapy", heading: "Hormone Therapy", blurb: "bioidentical hormone therapy (BHRT) and hormone optimization" },
   "mens-health": { short: "Men's Health", heading: "Men's Health", blurb: "testosterone therapy (TRT) and men's wellness" },
   "womens-health": { short: "Women's Health", heading: "Women's Health", blurb: "menopause care and hormone balance" },
-  "hair-restoration": { short: "Hair Restoration", heading: "Hair Restoration", blurb: "PRP hair therapy and hair loss treatments" },
+  "hair-restoration": { short: "Hair Restoration", heading: "Hair Restoration", blurb: "PRP hair restoration and hair loss treatments" },
+};
+
+/** Exact consumer search terms per category (from Search Console), for keyword targeting. */
+const SERVICE_TERMS: Record<TreatmentCategory, string[]> = {
+  injectables: ["botox", "dysport", "dermal fillers", "lip filler"],
+  lasers: ["laser hair removal", "co2 laser", "laser resurfacing", "vascular laser", "ipl"],
+  beauty: ["hydrafacial", "chemical peel", "microneedling", "facials"],
+  body: ["coolsculpting", "body contouring", "skin tightening"],
+  wellness: ["nad therapy", "peptide therapy"],
+  "iv-therapy": ["iv therapy", "iv drip"],
+  "weight-loss": ["medical weight loss", "semaglutide", "glp-1"],
+  "hormone-therapy": ["hormone therapy", "bhrt"],
+  "mens-health": ["trt", "testosterone therapy"],
+  "womens-health": ["menopause treatment", "hormone therapy"],
+  "hair-restoration": ["prp hair", "hair restoration"],
+};
+
+/** City name aliases people actually search (e.g. New York → NYC). */
+const CITY_ALIASES: Record<string, string[]> = {
+  "New York": ["NYC", "New York City", "Manhattan"],
 };
 
 function plural(n: number, one: string, many = `${one}s`): string {
@@ -80,7 +100,9 @@ export function cityContent(route: CityRoute, spas: Spa[]): CityContent {
   const rated = spas.filter((s) => formatGoogleRating(s));
   const providerWord = plural(providerCount, "provider");
 
-  const intro = `Compare ${providerCount} med ${plural(providerCount, "spa")} and medical aesthetics ${providerWord} in ${city}, ${stateLabel}. Browse ${categoryPhrase(cats)} — with public Google ratings, treatment menus, and medical director details where available.`;
+  const alias = CITY_ALIASES[city]?.[0];
+  const cityLabel = alias ? `${city} (${alias})` : city;
+  const intro = `Compare ${providerCount} med ${plural(providerCount, "spa")} and medical aesthetics ${providerWord} in ${cityLabel}, ${stateLabel}. Browse ${categoryPhrase(cats)} — with public Google ratings, treatment menus, and medical director details where available.`;
 
   const paragraphs: string[] = [];
   paragraphs.push(
@@ -120,25 +142,35 @@ export function cityPageMetadata(route: CityRoute, spas: Spa[]): Metadata {
   const title = serviceChips
     ? `${city} Med Spas — ${serviceChips} | Verity`
     : `${city} Med Spas — ${providerCount} Providers | Verity`;
-  const description = `Compare ${providerCount} of the best med spas in ${city}, ${stateLabel} for ${categoryPhrase(cats.slice(0, 3))}. Ratings, treatments, and locations — find ${city} ${SERVICE_META[cats[0] ?? "injectables"].short.toLowerCase()} near you.`;
+  const description = `Compare ${providerCount} of the best med spas in ${city}, ${stateLabel} for ${categoryPhrase(cats.slice(0, 3))}. Ratings, treatments & cost — find a ${city} medical spa (medspa) near you.`;
 
-  // Service + city long-tail keywords ("tampa botox", "tampa laser hair removal", ...).
-  const serviceKeywords = cats.map((c) => `${SERVICE_META[c].short.toLowerCase()} ${city}`);
+  // Exact service+city long-tail keywords, both phrasings ("botox palo alto" AND
+  // "palo alto botox"), plus the medspa/medical-spa/near-me + alias variants
+  // people actually search (from Search Console).
+  const names = [city, ...(CITY_ALIASES[city] ?? [])];
+  const serviceTerms = [...new Set(cats.flatMap((c) => SERVICE_TERMS[c]))];
+  const keywords = new Set<string>();
+  for (const name of names) {
+    keywords.add(`med spa ${name}`);
+    keywords.add(`${name} med spa`);
+    keywords.add(`medspa ${name}`);
+    keywords.add(`medical spa ${name}`);
+    keywords.add(`medical spa near me`);
+    for (const term of serviceTerms) {
+      keywords.add(`${term} ${name}`);
+      keywords.add(`${name} ${term}`);
+      keywords.add(`${term} near me`);
+    }
+  }
+  keywords.add(`med spa ${city} ${stateCode}`);
+  keywords.add(city);
+  keywords.add(stateLabel);
 
   return pageMetadata({
     title,
     description,
     path: buildCityPath(stateSlug, citySlug),
-    keywords: [
-      `med spa ${city}`,
-      `${city} med spa`,
-      `med spa ${city} ${stateCode}`,
-      `medical aesthetics ${city}`,
-      ...serviceKeywords,
-      `med spa near me`,
-      city,
-      stateLabel,
-    ],
+    keywords: [...keywords],
   });
 }
 
@@ -226,6 +258,10 @@ export function cityFaqs(route: CityRoute, spas: Spa[]): { question: string; ans
   faqs.push({
     question: `How many med spas are in ${city}?`,
     answer: `Verity currently lists ${providerCount} med ${plural(providerCount, "spa")} and medical aesthetics ${plural(providerCount, "provider")} in ${city}, ${stateLabel}, built from publicly sourced information.`,
+  });
+  faqs.push({
+    question: `How much do treatments cost at ${city} med spas?`,
+    answer: `Cost varies by provider and treatment — for example ${categoryPhrase(cats.slice(0, 2))}. Compare price tiers ($ to $$$$) and treatment menus on each ${city} listing to estimate pricing before you book.`,
   });
   return faqs;
 }
