@@ -30,6 +30,25 @@ const SERVICE_META: Record<TreatmentCategory, { short: string; heading: string; 
   "womens-health": { short: "Women's Health", heading: "Women's Health", blurb: "menopause care and hormone balance" },
   "hair-restoration": { short: "Hair Restoration", heading: "Hair Restoration", blurb: "PRP hair restoration and hair loss treatments" },
 };
+
+/** Exact consumer search terms per category (from Search Console), for keyword targeting. */
+const SERVICE_TERMS: Record<TreatmentCategory, string[]> = {
+  injectables: ["botox", "dysport", "dermal fillers", "lip filler"],
+  lasers: ["laser hair removal", "co2 laser", "laser resurfacing", "vascular laser", "ipl"],
+  beauty: ["hydrafacial", "chemical peel", "microneedling", "facials"],
+  body: ["coolsculpting", "body contouring", "skin tightening"],
+  wellness: ["nad therapy", "peptide therapy"],
+  "iv-therapy": ["iv therapy", "iv drip"],
+  "weight-loss": ["medical weight loss", "semaglutide", "glp-1"],
+  "hormone-therapy": ["hormone therapy", "bhrt"],
+  "mens-health": ["trt", "testosterone therapy"],
+  "womens-health": ["menopause treatment", "hormone therapy"],
+  "hair-restoration": ["prp hair", "hair restoration"],
+};
+
+/** City name aliases people actually search (e.g. New York → NYC). */
+const CITY_ALIASES: Record<string, string[]> = {
+  "New York": ["NYC", "New York City", "Manhattan"],
 };
 
 function plural(n: number, one: string, many = `${one}s`): string {
