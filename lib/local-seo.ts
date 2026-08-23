@@ -30,25 +30,6 @@ const SERVICE_META: Record<TreatmentCategory, { short: string; heading: string; 
   "womens-health": { short: "Women's Health", heading: "Women's Health", blurb: "menopause care and hormone balance" },
   "hair-restoration": { short: "Hair Restoration", heading: "Hair Restoration", blurb: "PRP hair restoration and hair loss treatments" },
 };
-
-/** Exact consumer search terms per category (from Search Console), for keyword targeting. */
-const SERVICE_TERMS: Record<TreatmentCategory, string[]> = {
-  injectables: ["botox", "dysport", "dermal fillers", "lip filler"],
-  lasers: ["laser hair removal", "co2 laser", "laser resurfacing", "vascular laser", "ipl"],
-  beauty: ["hydrafacial", "chemical peel", "microneedling", "facials"],
-  body: ["coolsculpting", "body contouring", "skin tightening"],
-  wellness: ["nad therapy", "peptide therapy"],
-  "iv-therapy": ["iv therapy", "iv drip"],
-  "weight-loss": ["medical weight loss", "semaglutide", "glp-1"],
-  "hormone-therapy": ["hormone therapy", "bhrt"],
-  "mens-health": ["trt", "testosterone therapy"],
-  "womens-health": ["menopause treatment", "hormone therapy"],
-  "hair-restoration": ["prp hair", "hair restoration"],
-};
-
-/** City name aliases people actually search (e.g. New York → NYC). */
-const CITY_ALIASES: Record<string, string[]> = {
-  "New York": ["NYC", "New York City", "Manhattan"],
 };
 
 function plural(n: number, one: string, many = `${one}s`): string {
@@ -142,11 +123,12 @@ export function cityPageMetadata(route: CityRoute, spas: Spa[]): Metadata {
   const title = serviceChips
     ? `${city} Med Spas — ${serviceChips} | Verity`
     : `${city} Med Spas — ${providerCount} Providers | Verity`;
-  const description = `Compare ${providerCount} of the best med spas in ${city}, ${stateLabel} for ${categoryPhrase(cats.slice(0, 3))}. Ratings, treatments & cost — find a ${city} medical spa (medspa) near you.`;
+  const description = `Compare ${providerCount} of the best med spas in ${city}, ${stateLabel} for ${categoryPhrase(cats.slice(0, 3))}. Ratings, treatments, and locations — find ${city} ${SERVICE_META[cats[0] ?? "injectables"].short.toLowerCase()} near you.`;
 
-  // Exact service+city long-tail keywords, both phrasings ("botox palo alto" AND
-  // "palo alto botox"), plus the medspa/medical-spa/near-me + alias variants
-  // people actually search (from Search Console).
+  // Service + city long-tail keywords ("tampa botox", "tampa laser hair removal", ...).
+  const serviceKeywords = cats.map((c) => `${SERVICE_META[c].short.toLowerCase()} ${city}`);
+
+  // Exact service+city long-tail keywords (from Search Console), both phrasings.
   const names = [city, ...(CITY_ALIASES[city] ?? [])];
   const serviceTerms = [...new Set(cats.flatMap((c) => SERVICE_TERMS[c]))];
   const keywords = new Set<string>();
@@ -165,6 +147,7 @@ export function cityPageMetadata(route: CityRoute, spas: Spa[]): Metadata {
   keywords.add(`med spa ${city} ${stateCode}`);
   keywords.add(city);
   keywords.add(stateLabel);
+  for (const sk of serviceKeywords) keywords.add(sk);
 
   return pageMetadata({
     title,
@@ -207,7 +190,6 @@ export function topRatedProviders(spas: Spa[], limit = 5): Spa[] {
     .sort((a, b) => (b.reviewSources?.google ?? b.rating) - (a.reviewSources?.google ?? a.rating))
     .slice(0, limit);
 }
-
 export interface CityService {
   category: TreatmentCategory;
   heading: string;

@@ -125,7 +125,6 @@ export default async function CityLandingPage({
           </div>
         )}
       </dl>
-
       {/* Treatment filters scoped to this city (treatment × location long-tail). */}
       {content.categories.length > 0 && (
         <div className="mt-5 flex flex-wrap gap-2">
@@ -174,7 +173,6 @@ export default async function CityLandingPage({
           </ul>
         </section>
       )}
-
       {services.length > 0 && (
         <section className="mt-14 border-t border-stone/10 pt-10">
           <h2 className="font-serif text-2xl text-charcoal">
